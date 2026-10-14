@@ -1,0 +1,13 @@
+{
+  "id": "profile-5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+  "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+  "full_name": "dharama",
+  "email": "suhi@gmail.com",
+  "preferred_language": "English",
+  "learning_goal": "Understand concepts",
+  "study_field": "Computer Science",
+  "daily_study_time_minutes": 30,
+  "onboarding_completed": true,
+  "created_at": "2026-10-02T05:55:55.984Z",
+  "updated_at": "2026-10-02T05:55:55.984Z"
+}

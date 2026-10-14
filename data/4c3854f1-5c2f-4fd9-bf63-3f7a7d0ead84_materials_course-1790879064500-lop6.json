@@ -1,0 +1,58 @@
+[
+  {
+    "id": "mat-1790879276779-gw50",
+    "course_id": "course-1790879064500-lop6",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "title": "Recording 2026-07-04 091831",
+    "file_name": "Recording 2026-07-04 091831.mp4",
+    "file_type": "lecture_video",
+    "file_size_bytes": 68113641,
+    "duration_seconds": 3600,
+    "status": "indexed",
+    "extracted_chunks_count": 42,
+    "uploaded_at": "2026-10-01T18:27:56.779Z",
+    "file_url": "/api/courses/course-1790879064500-lop6/materials/mat-1790879276779-gw50/file"
+  },
+  {
+    "id": "mat-1790879213338-wqud",
+    "course_id": "course-1790879064500-lop6",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+    "file_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0.docx",
+    "file_type": "notes",
+    "file_size_bytes": 56202,
+    "page_count": 12,
+    "status": "indexed",
+    "extracted_chunks_count": 42,
+    "uploaded_at": "2026-10-01T18:26:53.338Z",
+    "file_url": "/api/courses/course-1790879064500-lop6/materials/mat-1790879213338-wqud/file"
+  },
+  {
+    "id": "mat-1790879194107-4ll7",
+    "course_id": "course-1790879064500-lop6",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "title": "sih.pdf (5)",
+    "file_name": "sih.pdf (5).pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 3983262,
+    "page_count": 80,
+    "status": "indexed",
+    "extracted_chunks_count": 280,
+    "uploaded_at": "2026-10-01T18:26:34.107Z",
+    "file_url": "/api/courses/course-1790879064500-lop6/materials/mat-1790879194107-4ll7/file"
+  },
+  {
+    "id": "mat-1790879076254-5k88",
+    "course_id": "course-1790879064500-lop6",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "title": "hghx",
+    "file_name": "hghx.pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 524288,
+    "page_count": 12,
+    "status": "indexed",
+    "extracted_chunks_count": 42,
+    "uploaded_at": "2026-10-01T18:24:36.254Z",
+    "file_url": "/api/courses/course-1790879064500-lop6/materials/mat-1790879076254-5k88/file"
+  }
+]

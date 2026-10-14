@@ -1,0 +1,17 @@
+[
+  {
+    "id": "as-1790871583246",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "title": "DATA SCIENCE Diagnostic",
+    "status": "completed",
+    "total_questions": 5,
+    "completed_questions": 5,
+    "score_percentage": 60,
+    "started_at": "2026-10-01T16:19:43.246Z",
+    "completed_at": "2026-10-01T16:19:43.246Z",
+    "questions": [],
+    "current_index": 0,
+    "answers": {}
+  }
+]

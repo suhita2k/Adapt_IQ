@@ -1,0 +1,141 @@
+[
+  {
+    "id": "c-course-1790876522572-gxws-1",
+    "course_id": "course-1790876522572-gxws",
+    "name": "Asymptotic Growth Notation",
+    "description": "Asymptotic analysis provides a mathematical foundation for describing the limiting behavior of functions. It utilizes Big-O, Omega, and Theta notations to classify algorithms by their resource consumption.",
+    "category": "Foundations",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [
+      "Big-O Notation",
+      "Omega Notation",
+      "Theta Notation"
+    ],
+    "common_pitfalls": [
+      "Confusing worst-case performance with upper bounds",
+      "Ignoring constant factors when they matter practically"
+    ]
+  },
+  {
+    "id": "c-course-1790876522572-gxws-2",
+    "course_id": "course-1790876522572-gxws",
+    "name": "Formal Proofs of Correctness",
+    "description": "Establishing algorithmic correctness requires rigorous mathematical induction over structural or computational steps. This ensures that the algorithm terminates and yields the expected output for all valid inputs.",
+    "category": "Foundations",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Asymptotic Growth Notation"
+    ],
+    "subconcepts": [
+      "Mathematical Induction",
+      "Partial Correctness",
+      "Termination Proofs"
+    ],
+    "common_pitfalls": [
+      "Neglecting the base case in inductive proofs",
+      "Failing to prove algorithm termination"
+    ]
+  },
+  {
+    "id": "c-course-1790876522572-gxws-3",
+    "course_id": "course-1790876522572-gxws",
+    "name": "Loop Invariants",
+    "description": "Loop invariants are properties that hold true before and after each iteration of a loop. They serve as the primary mechanism for proving the correctness of iterative algorithms.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Formal Proofs of Correctness"
+    ],
+    "subconcepts": [
+      "Initialization",
+      "Maintenance",
+      "Termination"
+    ],
+    "common_pitfalls": [
+      "Weakening the invariant so it does not imply postconditions",
+      "Incorrectly establishing the maintenance step"
+    ]
+  },
+  {
+    "id": "c-course-1790876522572-gxws-4",
+    "course_id": "course-1790876522572-gxws",
+    "name": "Recursive Problem Solving",
+    "description": "Recursion involves breaking a problem down into smaller instances of the same problem until reaching a base case. It forms the algorithmic foundation for divide-and-conquer strategies.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Asymptotic Growth Notation"
+    ],
+    "subconcepts": [
+      "Base Cases",
+      "Recursive Steps",
+      "Call Stack Mechanics"
+    ],
+    "common_pitfalls": [
+      "Infinite recursion due to missing or flawed base cases",
+      "High memory overhead from unoptimized call stacks"
+    ]
+  },
+  {
+    "id": "c-course-1790876522572-gxws-5",
+    "course_id": "course-1790876522572-gxws",
+    "name": "Recursion Trees",
+    "description": "Recursion trees visually map out the cost of recursive function calls at each level of execution. They are instrumental in intuitively solving recurrences before applying formal methods.",
+    "category": "Core",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Recursive Problem Solving"
+    ],
+    "subconcepts": [
+      "Cost per Level",
+      "Total Depth",
+      "Summing Series"
+    ],
+    "common_pitfalls": [
+      "Miscalculating the number of leaves or tree height",
+      "Errors in summing the work done across levels"
+    ]
+  },
+  {
+    "id": "c-course-1790876522572-gxws-6",
+    "course_id": "course-1790876522572-gxws",
+    "name": "The Master Theorem",
+    "description": "The Master Theorem provides a cookbook method for resolving recurrence relations of the form commonly arising in divide-and-conquer algorithms. It categorizes asymptotic bounds based on parameters comparing work at different levels.",
+    "category": "Advanced",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Recursion Trees",
+      "Asymptotic Growth Notation"
+    ],
+    "subconcepts": [
+      "Case 1 Dominance",
+      "Case 2 Balance",
+      "Case 3 Leaf Dominance"
+    ],
+    "common_pitfalls": [
+      "Applying the theorem when the recurrence does not fit the standard form",
+      "Overlooking polynomial gaps between terms"
+    ]
+  },
+  {
+    "id": "c-course-1790876522572-gxws-7",
+    "course_id": "course-1790876522572-gxws",
+    "name": "Advanced Recurrence Relations",
+    "description": "Advanced recurrence analysis addresses complex dependencies where standard cookbook methods fail. Techniques such as substitution and generating functions are employed to derive tight bounds.",
+    "category": "Advanced",
+    "difficulty_level": 5,
+    "prerequisites": [
+      "The Master Theorem"
+    ],
+    "subconcepts": [
+      "Substitution Method",
+      "Change of Variables",
+      "Generating Functions"
+    ],
+    "common_pitfalls": [
+      "Guessing an incorrect inductive hypothesis in the substitution method",
+      "Algebraic errors during variable transformations"
+    ]
+  }
+]

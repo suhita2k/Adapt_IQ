@@ -1,0 +1,144 @@
+[
+  {
+    "id": "c-course-1790923123271-k16r-1",
+    "course_id": "course-1790923123271-k16r",
+    "name": "Syllabus Fundamentals",
+    "description": "Introduction to the core architecture of the course syllabus. Establishes the foundational scope and structural guidelines for subsequent modules.",
+    "category": "Course Overview",
+    "subtopic": "Foundations",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [
+      "Scope Definition",
+      "Module Mapping"
+    ],
+    "learning_objectives": [
+      "Identify core course objectives and administrative requirements.",
+      "Map syllabus milestones to curriculum timelines."
+    ],
+    "source_location": "Page 5",
+    "common_pitfalls": [
+      "Confusing administrative guidelines with technical deliverables."
+    ]
+  },
+  {
+    "id": "c-course-1790923123271-k16r-2",
+    "course_id": "course-1790923123271-k16r",
+    "name": "Reading Comprehension and Analysis",
+    "description": "Techniques for extracting critical information from textbook chapters. Focuses on thematic parsing and retention of complex academic material.",
+    "category": "Methodology",
+    "subtopic": "Textual Analysis",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Syllabus Fundamentals"
+    ],
+    "subconcepts": [
+      "Active Reading",
+      "Summarization Invariants"
+    ],
+    "learning_objectives": [
+      "Analyze text structure to isolate primary arguments and theorems.",
+      "Synthesize multi-page textbook content into concise summaries."
+    ],
+    "source_location": "Page 18",
+    "common_pitfalls": [
+      "Passive reading without identifying underlying formal invariants."
+    ]
+  },
+  {
+    "id": "c-course-1790923123271-k16r-3",
+    "course_id": "course-1790923123271-k16r",
+    "name": "Structural Frameworks",
+    "description": "Examination of organizational frameworks presented in multi-page texts. Establishes hierarchical dependencies among concepts.",
+    "category": "System Architecture",
+    "subtopic": "Hierarchical Design",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Reading Comprehension and Analysis"
+    ],
+    "subconcepts": [
+      "Modularity",
+      "Dependency Mapping"
+    ],
+    "learning_objectives": [
+      "Construct hierarchical dependency trees for complex text structures.",
+      "Evaluate modular boundaries within textbook chapters."
+    ],
+    "source_location": "Page 32",
+    "common_pitfalls": [
+      "Failing to recognize circular dependencies between subtopics."
+    ]
+  },
+  {
+    "id": "c-course-1790923123271-k16r-4",
+    "course_id": "course-1790923123271-k16r",
+    "name": "Empirical Verification",
+    "description": "Methods for validating textual assertions against empirical examples. Ensures logical consistency and practical applicability.",
+    "category": "Verification",
+    "subtopic": "Validation",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Structural Frameworks"
+    ],
+    "subconcepts": [
+      "Hypothesis Testing",
+      "Constraint Checking"
+    ],
+    "learning_objectives": [
+      "Test theoretical assertions against provided textbook case studies.",
+      "Verify constraint satisfaction across different scenarios."
+    ],
+    "source_location": "Page 45",
+    "common_pitfalls": [
+      "Accepting textbook assertions without verifying edge case conditions."
+    ]
+  },
+  {
+    "id": "c-course-1790923123271-k16r-5",
+    "course_id": "course-1790923123271-k16r",
+    "name": "Synthetical Integration",
+    "description": "Combining disparate textbook sections into a unified mental model. Integrates theory with practical problem-solving strategies.",
+    "category": "Synthesis",
+    "subtopic": "Cross-Module Integration",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Empirical Verification"
+    ],
+    "subconcepts": [
+      "Model Unification",
+      "Holistic Analysis"
+    ],
+    "learning_objectives": [
+      "Synthesize multiple chapters into a cohesive knowledge graph.",
+      "Apply integrated models to solve complex, multi-layered problems."
+    ],
+    "source_location": "Page 60",
+    "common_pitfalls": [
+      "Treating textbook chapters as isolated silos rather than connected modules."
+    ]
+  },
+  {
+    "id": "c-course-1790923123271-k16r-6",
+    "course_id": "course-1790923123271-k16r",
+    "name": "Advanced Curriculum Evaluation",
+    "description": "Critical review and meta-analysis of the course structure. Assesses the overall efficacy of the learning path and mastery levels.",
+    "category": "Evaluation",
+    "subtopic": "Meta-Analysis",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Synthetical Integration"
+    ],
+    "subconcepts": [
+      "Performance Metrics",
+      "Curriculum Audit"
+    ],
+    "learning_objectives": [
+      "Evaluate mastery levels against stated course objectives.",
+      "Perform a comprehensive curriculum audit of textbook materials."
+    ],
+    "source_location": "Page 74",
+    "common_pitfalls": [
+      "Neglecting quantitative metrics when assessing qualitative comprehension."
+    ]
+  }
+]

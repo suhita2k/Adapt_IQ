@@ -1,0 +1,62 @@
+[
+  {
+    "id": "src-1790879277620",
+    "course_id": "course-1790879064500-lop6",
+    "material_id": "mat-1790879276779-gw50",
+    "material_title": "Recording 2026-07-04 091831",
+    "material_type": "lecture_video",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831.",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "Recording 2026-07-04 091831.mp4",
+    "file_url": "/api/courses/course-1790879064500-lop6/materials/mat-1790879276779-gw50/file#page=1"
+  },
+  {
+    "id": "src-1790879213469",
+    "course_id": "course-1790879064500-lop6",
+    "material_id": "mat-1790879213338-wqud",
+    "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0.docx",
+    "file_url": "/api/courses/course-1790879064500-lop6/materials/mat-1790879213338-wqud/file#page=1"
+  },
+  {
+    "id": "src-1790879194406",
+    "course_id": "course-1790879064500-lop6",
+    "material_id": "mat-1790879194107-4ll7",
+    "material_title": "sih.pdf (5)",
+    "material_type": "textbook",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for sih.pdf (5).",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "sih.pdf (5).pdf",
+    "file_url": "/api/courses/course-1790879064500-lop6/materials/mat-1790879194107-4ll7/file#page=1"
+  },
+  {
+    "id": "src-1790879076364",
+    "course_id": "course-1790879064500-lop6",
+    "material_id": "mat-1790879076254-5k88",
+    "material_title": "hghx",
+    "material_type": "textbook",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for hghx.",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "hghx.pdf",
+    "file_url": "/api/courses/course-1790879064500-lop6/materials/mat-1790879076254-5k88/file#page=1"
+  }
+]

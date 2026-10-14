@@ -1,0 +1,54 @@
+{
+  "id": "plan-1790921052349",
+  "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+  "course_id": "course-1790920571661-vckg",
+  "title": "Adaptive Study Schedule for eee",
+  "daily_goal_minutes": 30,
+  "streak_days": 1,
+  "tasks": [
+    {
+      "id": "task-m-1790921052348",
+      "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+      "course_id": "course-1790920571661-vckg",
+      "concept_id": "c-course-1790920571661-vckg-1",
+      "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+      "title": "Repair Misconception: Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+      "task_type": "remediation",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-02",
+      "completed": false,
+      "reason": "Invariant violation detected in recent diagnostic quiz attempt."
+    },
+    {
+      "id": "task-rev-1790921052349",
+      "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+      "course_id": "course-1790920571661-vckg",
+      "concept_id": "concept-core",
+      "concept_name": "eee",
+      "title": "Complete SM-2 Flashcard Recall Session",
+      "task_type": "practice_quiz",
+      "estimated_minutes": 10,
+      "priority": "medium",
+      "due_date": "2026-10-02",
+      "completed": false,
+      "reason": "Ebbinghaus forgetting curve interval reached for due flashcards."
+    },
+    {
+      "id": "task-quiz-1790921052349",
+      "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+      "course_id": "course-1790920571661-vckg",
+      "concept_id": "concept-core",
+      "concept_name": "eee",
+      "title": "Daily 5-Question Adaptive Checkpoint",
+      "task_type": "practice_quiz",
+      "estimated_minutes": 15,
+      "priority": "medium",
+      "due_date": "2026-10-02",
+      "completed": false,
+      "reason": "Calibrate Bayesian Learning Twin across recent curriculum nodes."
+    }
+  ],
+  "created_at": "2026-10-02T06:04:12.349Z",
+  "updated_at": "2026-10-02T06:04:12.349Z"
+}

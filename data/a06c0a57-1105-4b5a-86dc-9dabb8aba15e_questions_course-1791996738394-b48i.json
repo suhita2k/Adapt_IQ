@@ -1,0 +1,686 @@
+[
+  {
+    "id": "q-mcq-1792000013108-0",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-2",
+    "concept_name": "System Invariants",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "System Properties",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Understand",
+    "question_text": "Which of the following best defines a persistent property that must remain true across a distributed environment, corresponding to the concept of System Invariants?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "A condition or property that must remain unconditionally true across all nodes in a distributed execution.",
+        "is_correct": true,
+        "explanation": "Correct. System invariants represent persistent properties that must always hold true to ensure system correctness."
+      },
+      {
+        "id": "opt-2",
+        "text": "The topological layout connecting worker nodes to master nodes.",
+        "is_correct": false,
+        "explanation": "Incorrect. This describes structural properties or architecture.",
+        "misconception_tag": "Confusing system invariants with network topology"
+      },
+      {
+        "id": "opt-3",
+        "text": "The election timeout duration in a Raft consensus cluster.",
+        "is_correct": false,
+        "explanation": "Incorrect. This is a configurable protocol parameter rather than a system invariant.",
+        "misconception_tag": "Confusing invariants with protocol parameters"
+      },
+      {
+        "id": "opt-4",
+        "text": "A mechanism for scheduling MapReduce tasks across worker nodes.",
+        "is_correct": false,
+        "explanation": "Incorrect. This describes a workload distribution strategy.",
+        "misconception_tag": "Confusing invariants with execution strategies"
+      }
+    ],
+    "correct_answer": "A condition or property that must remain unconditionally true across all nodes in a distributed execution.",
+    "explanation": "System invariants are essential constraints that must be preserved to guarantee system correctness during distributed computations.",
+    "learning_objective": "Recognize critical system invariants in distributed executions",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Foundational definitions, invariants, and structural properties extracted from Distributed Systems Principles Textbook."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "System invariants refer to conditions or properties that must be preserved across a distributed environment regardless of concurrent executions or network events."
+  },
+  {
+    "id": "q-mcq-1792000013108-1",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-3",
+    "concept_name": "Structural Properties",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Architecture",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "In the context of distributed system topologies and architectural organization, how are structural properties primarily categorized?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "By examining the architectural organization and topology characteristics of the distributed components.",
+        "is_correct": true,
+        "explanation": "Correct. Structural properties specifically define the architectural configuration and topology of a distributed system."
+      },
+      {
+        "id": "opt-2",
+        "text": "By calculating the exactLamport logical clock timestamps for concurrent events.",
+        "is_correct": false,
+        "explanation": "Incorrect. Lamport timestamps pertain to logical time and event ordering, not structural topology.",
+        "misconception_tag": "Confusing structural properties with logical time"
+      },
+      {
+        "id": "opt-3",
+        "text": "By measuring the vector clock divergence across conflicting replicas.",
+        "is_correct": false,
+        "explanation": "Incorrect. Vector clocks track causal versioning rather than system structure.",
+        "misconception_tag": "Confusing structural properties with versioning mechanisms"
+      },
+      {
+        "id": "opt-4",
+        "text": "By evaluating the anti-entropy background synchronization interval.",
+        "is_correct": false,
+        "explanation": "Incorrect. Synchronization intervals describe replica maintenance routines rather than system architecture.",
+        "misconception_tag": "Confusing structural properties with maintenance intervals"
+      }
+    ],
+    "correct_answer": "By examining the architectural organization and topology characteristics of the distributed components.",
+    "explanation": "Structural properties dictate how nodes are interconnected and organized within a distributed cloud or computing fabric.",
+    "learning_objective": "Analyze the structural properties of distributed system topologies",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Structural properties extracted from Distributed Systems Principles Textbook outlining the architectural organization and topology characteristics of distributed systems."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Structural properties outline topological configuration and organizational characteristics, differentiating between topologies like master-worker, peer-to-peer, or hierarchical layouts."
+  },
+  {
+    "id": "q-mcq-1792000013108-2",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-1",
+    "concept_name": "Foundational Definitions",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Fundamentals",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Understand",
+    "question_text": "Which component is explicitly responsible for partitioning intermediate keys using hash mod R and aggregating sorted keys in a MapReduce job?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Mappers partition intermediate keys using hash mod R and Reducers aggregate sorted keys.",
+        "is_correct": true,
+        "explanation": "Correct. This directly matches the functional definition of MapReduce master and worker node operations."
+      },
+      {
+        "id": "opt-2",
+        "text": "SSTables on GFS handle partitioning while vector clocks aggregate keys.",
+        "is_correct": false,
+        "explanation": "Incorrect. SSTables and vector clocks belong to storage and versioning systems, not MapReduce partitioning.",
+        "misconception_tag": "Mixing storage layers with MapReduce computation roles"
+      },
+      {
+        "id": "opt-3",
+        "text": "Candidates use RequestVote RPCs to aggregate sorted keys.",
+        "is_correct": false,
+        "explanation": "Incorrect. RequestVote RPCs are part of Raft leader election, not MapReduce aggregation.",
+        "misconception_tag": "Confusing consensus mechanisms with data processing tasks"
+      },
+      {
+        "id": "opt-4",
+        "text": "Merkle trees partition keys while gossip protocols aggregate them.",
+        "is_correct": false,
+        "explanation": "Incorrect. Merkle trees and gossip protocols are used for anti-entropy synchronization.",
+        "misconception_tag": "Confusing synchronization protocols with compute nodes"
+      }
+    ],
+    "correct_answer": "Mappers partition intermediate keys using hash mod R and Reducers aggregate sorted keys.",
+    "explanation": "In MapReduce, Mappers process input and partition intermediate keys via hash mod R, while Reducers collect and aggregate the sorted keys.",
+    "learning_objective": "Identify fundamental components of a distributed architecture",
+    "source_citation": {
+      "material_title": "Big Data Processing Slide Deck",
+      "reference": "Slide 2",
+      "quote": "MapReduce coordinates master and worker nodes where Mappers partition intermediate keys using hash mod R and Reducers aggregate sorted keys."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "According to the slide deck, Mappers partition intermediate keys using hash mod R, and Reducers aggregate sorted keys."
+  },
+  {
+    "id": "q-mcq-1792000013108-3",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-1",
+    "concept_name": "Foundational Definitions",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Fundamentals",
+    "question_type": "mcq",
+    "difficulty": "hard",
+    "bloom_level": "Evaluate",
+    "question_text": "What is the primary consequence defined by the FLP impossibility theorem in an asynchronous network?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "No deterministic consensus protocol can be guaranteed to reach agreement in an asynchronous network with even a single crash failure.",
+        "is_correct": true,
+        "explanation": "Correct. This is the precise statement of the FLP impossibility theorem."
+      },
+      {
+        "id": "opt-2",
+        "text": "A distributed store can achieve Consistency, Availability, and Partition Tolerance simultaneously without trade-offs.",
+        "is_correct": false,
+        "explanation": "Incorrect. This contradicts the CAP theorem.",
+        "misconception_tag": "Confusing FLP theorem with CAP theorem guarantees"
+      },
+      {
+        "id": "opt-3",
+        "text": "Lamport logical clocks eliminate all network partition delays.",
+        "is_correct": false,
+        "explanation": "Incorrect. Logical clocks only provide causal ordering, not delay elimination.",
+        "misconception_tag": "Misunderstanding the purpose of Lamport logical clocks"
+      },
+      {
+        "id": "opt-4",
+        "text": "Follower nodes never transition to Candidates during an election timeout.",
+        "is_correct": false,
+        "explanation": "Incorrect. Followers routinely transition to Candidates when election timeouts expire in Raft.",
+        "misconception_tag": "Confusing consensus timeout behavior with FLP results"
+      }
+    ],
+    "correct_answer": "No deterministic consensus protocol can be guaranteed to reach agreement in an asynchronous network with even a single crash failure.",
+    "explanation": "The FLP impossibility theorem demonstrates that asynchronous consensus is fundamentally impossible to guarantee deterministically if even one node can crash without prior warning.",
+    "learning_objective": "Define core terminology associated with distributed systems",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Lamport proved that no agreement can be reached in an asynchronous network with even one crash failure under the FLP impossibility theorem."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Lamport and FLP theorem prove that no deterministic consensus can be guaranteed in an asynchronous network with even one unannounced crash failure."
+  },
+  {
+    "id": "q-fill_in_the_blank-1792000013108-4",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-2",
+    "concept_name": "System Invariants",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "System Properties",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "A persistent property that must remain true across a distributed execution environment is known as a system ________.",
+    "options": [],
+    "correct_answer": "invariant",
+    "explanation": "System invariants are foundational conditions that must be continuously maintained to ensure correctness throughout distributed operations.",
+    "learning_objective": "Recognize critical system invariants in distributed executions",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "System invariants extracted from Distributed Systems Principles Textbook detailing persistent properties that must remain true across a distributed environment."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The missing term from the definition of persistent properties across distributed environments is 'invariant'."
+  },
+  {
+    "id": "q-fill_in_the_blank-1792000013108-5",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-3",
+    "concept_name": "Structural Properties",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Architecture",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "The architectural organization and topology characteristics of a distributed system are referred to as its ________ properties.",
+    "options": [],
+    "correct_answer": "structural",
+    "explanation": "Structural properties dictate the organizational layout and network topology of nodes in a distributed system.",
+    "learning_objective": "Analyze the structural properties of distributed system topologies",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Structural properties extracted from Distributed Systems Principles Textbook outlining the architectural organization and topology characteristics of distributed systems."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The term describing architectural organization and topology characteristics is 'structural'."
+  },
+  {
+    "id": "q-fill_in_the_blank-1792000013108-6",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-1",
+    "concept_name": "Foundational Definitions",
+    "topic": "Big Data Processing",
+    "subtopic": "Storage & Compute",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "Apache Spark utilizes Resilient Distributed Datasets featuring deterministic ________ graphs to enable in-memory fault tolerance.",
+    "options": [],
+    "correct_answer": "lineage",
+    "explanation": "Lineage graphs record the deterministic sequence of transformations applied to RDDs, permitting efficient in-memory recovery without disk replication.",
+    "learning_objective": "Define core terminology associated with distributed systems",
+    "source_citation": {
+      "material_title": "Big Data Processing Slide Deck",
+      "reference": "Slide 3",
+      "quote": "Apache Spark introduces Resilient Distributed Datasets (RDDs) with deterministic lineage graphs enabling in-memory fault tolerance without disk spills."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Spark RDDs use lineage graphs to track transformations and allow deterministic recomputation upon failure."
+  },
+  {
+    "id": "q-short_answer-1792000013108-7",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-2",
+    "concept_name": "System Invariants",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "System Properties",
+    "question_type": "short_answer",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "Explain why maintaining system invariants is critical when designing fault-tolerant distributed storage engines or consensus protocols.",
+    "options": [],
+    "correct_answer": "System invariants ensure that critical correctness conditions remain unbroken despite node failures, network delays, or concurrent operations, preserving overall system consistency and safety.",
+    "explanation": "In distributed systems, invariants act as non-negotiable boundaries. If an invariant is violated (e.g., two leaders elected in the same term), the system suffers catastrophic inconsistency.",
+    "learning_objective": "Explain the role of invariants in maintaining system correctness",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "System invariants extracted from Distributed Systems Principles Textbook detailing persistent properties that must remain true across a distributed environment."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Key criteria for correct response: 1. Explanation of system invariants as persistent correctness conditions. 2. Mention of how network partitions, node crashes, or concurrency challenge these properties. 3. Connection between invariants and state machine safety or consensus validity."
+  },
+  {
+    "id": "q-short_answer-1792000013108-8",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-3",
+    "concept_name": "Structural Properties",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Architecture",
+    "question_type": "short_answer",
+    "difficulty": "medium",
+    "bloom_level": "Analyze",
+    "question_text": "Compare and contrast hierarchical/master-worker topologies with peer-to-peer topologies in terms of structural properties and fault tolerance.",
+    "options": [],
+    "correct_answer": "Master-worker topologies rely on central coordinators for task assignment, creating a single point of failure but simplifying coordination. Peer-to-peer topologies distribute responsibility symmetrically across nodes, enhancing fault tolerance and scalability at the cost of increased coordination overhead.",
+    "explanation": "Structural properties dictate how failure domains and control paths are distributed across a cloud deployment, fundamentally affecting reliability and performance.",
+    "learning_objective": "Differentiate between various structural configurations in cloud computing",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Structural properties extracted from Distributed Systems Principles Textbook outlining the architectural organization and topology characteristics of distributed systems."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Key criteria: 1. Identify master-worker centralization vs peer-to-peer decentralization. 2. Discuss single points of failure in master nodes versus fault distribution in P2P. 3. Relate structural properties to scalability and coordination overhead."
+  },
+  {
+    "id": "q-numerical-1792000013108-9",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-1",
+    "concept_name": "Foundational Definitions",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Fundamentals",
+    "question_type": "numerical",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "Consider two events, event A and event B, occurring within the same process where event A happens before event B. If event A has a Lamport logical clock timestamp C(A) = 12, what is the minimum possible integer timestamp C(B) for event B, given that clock updates follow the rule C(e) = monotonically increasing integer?",
+    "options": [],
+    "correct_answer": "13",
+    "explanation": "Because Lamport logical clocks assign monotonically increasing integer timestamps and event A happened before event B within the same process, C(B) must be strictly greater than C(A). Thus, 12 + 1 = 13.",
+    "learning_objective": "Define core terminology associated with distributed systems",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 2",
+      "quote": "Lamport Logical Clocks assign a monotonically increasing integer timestamp C(e) to every event. If event a happens before b within the same process, C(a) < C(b)."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Lamport clocks assign monotonically increasing timestamps. If event A happens before event B in the same process, C(A) < C(B). Given C(A) = 12, the minimum next integer timestamp for C(B) is 12 + 1 = 13."
+  },
+  {
+    "id": "q-mcq-1792000013108-10",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-2",
+    "concept_name": "System Invariants",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "System Properties",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Which foundational component of a distributed architecture ensures that persistent properties remain true across a distributed environment despite asynchronous network conditions?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "System invariants",
+        "is_correct": true,
+        "explanation": "System invariants are persistent properties that must remain true across a distributed environment."
+      },
+      {
+        "id": "opt-2",
+        "text": "MapReduce worker nodes",
+        "is_correct": false,
+        "explanation": "MapReduce worker nodes handle parallel data processing, not persistent system-wide invariants.",
+        "misconception_tag": "Confusing computation nodes with system properties"
+      },
+      {
+        "id": "opt-3",
+        "text": "Resilient Distributed Datasets (RDDs)",
+        "is_correct": false,
+        "explanation": "RDDs are specific to Apache Spark for in-memory fault tolerance.",
+        "misconception_tag": "Confusing storage abstractions with architectural invariants"
+      },
+      {
+        "id": "opt-4",
+        "text": "Gossip protocols",
+        "is_correct": false,
+        "explanation": "Gossip protocols are communication mechanisms, not structural or invariant properties.",
+        "misconception_tag": "Confusing communication protocols with correctness properties"
+      }
+    ],
+    "correct_answer": "System invariants",
+    "explanation": "System invariants are core properties that must hold true throughout a distributed execution to guarantee safety and correctness.",
+    "learning_objective": "Recognize critical system invariants in distributed executions",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Foundational definitions, invariants, and structural properties extracted from Distributed Systems Principles Textbook."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "System invariants represent persistent properties that must remain true across a distributed environment, aligning directly with the textbook definitions."
+  },
+  {
+    "id": "q-mcq-1792000013109-11",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-3",
+    "concept_name": "Structural Properties",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Architecture",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "When analyzing the architectural organization and topology characteristics of distributed systems, which term specifically outlines these topological traits?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Structural properties",
+        "is_correct": true,
+        "explanation": "Structural properties outline the architectural organization and topology characteristics of distributed systems."
+      },
+      {
+        "id": "opt-2",
+        "text": "Vector clocks",
+        "is_correct": false,
+        "explanation": "Vector clocks are used for event versioning, not topology layout.",
+        "misconception_tag": "Confusing versioning mechanisms with architectural topology"
+      },
+      {
+        "id": "opt-3",
+        "text": "SSTables",
+        "is_correct": false,
+        "explanation": "SSTables are file formats used in BigTable storage, not system topologies.",
+        "misconception_tag": "Confusing storage file formats with system structure"
+      },
+      {
+        "id": "opt-4",
+        "text": "Merkle trees",
+        "is_correct": false,
+        "explanation": "Merkle trees are hash trees used for anti-entropy synchronization.",
+        "misconception_tag": "Confusing verification data structures with architecture"
+      }
+    ],
+    "correct_answer": "Structural properties",
+    "explanation": "Structural properties define how nodes and components are organized and connected within a distributed topology.",
+    "learning_objective": "Analyze the structural properties of distributed system topologies",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Foundational definitions, invariants, and structural properties extracted from Distributed Systems Principles Textbook."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Structural properties outline the architectural organization and topology characteristics of distributed systems."
+  },
+  {
+    "id": "q-mcq-1792000013109-12",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-1",
+    "concept_name": "Foundational Definitions",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Fundamentals",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "According to the FLP impossibility theorem, what is the maximum number of crash failures in an asynchronous network for which consensus can still be reliably reached?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Zero crash failures",
+        "is_correct": true,
+        "explanation": "FLP impossibility proves that no consensus can be reached in an asynchronous network with even one crash failure."
+      },
+      {
+        "id": "opt-2",
+        "text": "A simple majority of nodes",
+        "is_correct": false,
+        "explanation": "A majority is required in synchronous or partially synchronous models, but not under pure asynchronous FLP constraints.",
+        "misconception_tag": "Confusing synchronous quorums with asynchronous impossibility limits"
+      },
+      {
+        "id": "opt-3",
+        "text": "F <= N / 3",
+        "is_correct": false,
+        "explanation": "N/3 is the bound for Byzantine faults, not crash failures under asynchronous FLP.",
+        "misconception_tag": "Confusing Byzantine fault tolerance thresholds with FLP impossibility"
+      },
+      {
+        "id": "opt-4",
+        "text": "Unlimited crash failures",
+        "is_correct": false,
+        "explanation": "Asynchronous networks cannot tolerate any crash failures while guaranteeing safety and liveness.",
+        "misconception_tag": "Underestimating the constraints of asynchronous consensus"
+      }
+    ],
+    "correct_answer": "Zero crash failures",
+    "explanation": "The FLP impossibility theorem dictates that deterministic consensus is impossible in an asynchronous network even with a single unannounced process crash failure.",
+    "learning_objective": "Define core terminology associated with distributed systems",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Lamport proved that no agreement can be reached in an asynchronous network with even one crash failure under the FLP impossibility theorem."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Lamport proved that no agreement can be reached in an asynchronous network with even one crash failure under the FLP impossibility theorem. Thus, 0 is the maximum failures tolerated for guaranteed consensus."
+  },
+  {
+    "id": "q-mcq-1792000013109-13",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-3",
+    "concept_name": "Structural Properties",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Architecture",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "In a distributed consensus protocol, if a follower receives no communication over an election timeout, what state does it transition into?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Candidate",
+        "is_correct": true,
+        "explanation": "An expired election timeout prompts a follower to transition to Candidate and request votes."
+      },
+      {
+        "id": "opt-2",
+        "text": "Leader",
+        "is_correct": false,
+        "explanation": "A node must first become a candidate and win an election before becoming leader.",
+        "misconception_tag": "Skipping intermediate candidate state in leader election"
+      },
+      {
+        "id": "opt-3",
+        "text": "Observer",
+        "is_correct": false,
+        "explanation": "Observers do not participate in voting or timeout-triggered elections.",
+        "misconception_tag": "Confusing non-voting observers with active candidates"
+      },
+      {
+        "id": "opt-4",
+        "text": "Inactive",
+        "is_correct": false,
+        "explanation": "Nodes do not become inactive upon timeout; they initiate elections.",
+        "misconception_tag": "Assuming timeout implies node failure rather than state transition"
+      }
+    ],
+    "correct_answer": "Candidate",
+    "explanation": "Timeout expiration triggers the Raft candidate transition, allowing the node to solicit votes for the next term.",
+    "learning_objective": "Differentiate between various structural configurations in cloud computing",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 3",
+      "quote": "If a follower receives no communication over an election timeout, it transitions to Candidate and requests votes via RequestVote RPCs."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "According to Raft mechanics, when a follower experiences an election timeout without communication, it transitions to Candidate and issues RequestVote RPCs."
+  },
+  {
+    "id": "q-fill_in_the_blank-1792000013109-14",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-2",
+    "concept_name": "System Invariants",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "System Properties",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Persistent properties that must remain true across a distributed environment to ensure safety and correctness are known as system [BLANK]. (_____):",
+    "options": [],
+    "correct_answer": "invariants",
+    "explanation": "System invariants are the fundamental correctness guarantees maintained throughout distributed executions.",
+    "learning_objective": "Recognize critical system invariants in distributed executions",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "System invariants extracted from Distributed Systems Principles Textbook detailing persistent properties that must remain true across a distributed environment."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The textbook defines system invariants as persistent properties that remain true across a distributed environment."
+  },
+  {
+    "id": "q-fill_in_the_blank-1792000013109-15",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-2",
+    "concept_name": "System Invariants",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Architecture",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The architectural organization and topology characteristics of distributed systems are described as structural [BLANK]. (_____):",
+    "options": [],
+    "correct_answer": "properties",
+    "explanation": "Structural properties outline topological and organizational constraints in distributed systems.",
+    "learning_objective": "Analyze the structural properties of distributed system topologies",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "Structural properties extracted from Distributed Systems Principles Textbook outlining the architectural organization and topology characteristics of distributed systems."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Structural properties outline the architectural organization and topology characteristics."
+  },
+  {
+    "id": "q-fill_in_the_blank-1792000013109-16",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-1",
+    "concept_name": "Foundational Definitions",
+    "topic": "Big Data Processing",
+    "subtopic": "Storage and Processing",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "In distributed stream and big data processing, Apache Spark utilizes Resilient Distributed Datasets featuring deterministic lineage graphs that enable in-memory fault tolerance without disk [BLANK]. (_____):",
+    "options": [],
+    "correct_answer": "spills",
+    "explanation": "Deterministic lineage graphs allow RDDs to recompute lost partitions in memory without incurring expensive disk spills.",
+    "learning_objective": "Define core terminology associated with distributed systems",
+    "source_citation": {
+      "material_title": "Big Data Processing Slide Deck",
+      "reference": "Slide 3",
+      "quote": "Apache Spark introduces Resilient Distributed Datasets (RDDs) with deterministic lineage graphs enabling in-memory fault tolerance without disk spills."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Apache Spark RDDs enable in-memory fault tolerance without disk spills."
+  },
+  {
+    "id": "q-short_answer-1792000013109-17",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-2",
+    "concept_name": "System Invariants",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "System Properties",
+    "question_type": "short_answer",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "Explain how system invariants function as correctness guarantees in distributed environments, and contrast them with structural properties.",
+    "options": [],
+    "correct_answer": "System invariants are persistent conditions that must hold true to guarantee safety and correctness, whereas structural properties define the system's topological organization and architecture.",
+    "explanation": "Invariants govern behavioral correctness across distributed state transitions, while structural properties dictate node organization and network topologies.",
+    "learning_objective": "Explain the role of invariants in maintaining system correctness",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 1",
+      "quote": "System invariants extracted from Distributed Systems Principles Textbook detailing persistent properties that must remain true across a distributed environment."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "System invariants represent persistent logical conditions that must remain true across executions to ensure correctness (e.g., safety properties). Structural properties define the physical or logical topology and organizational setup of the system. Invariants ensure the behavioral correctness, whereas structural properties outline the topological layout."
+  },
+  {
+    "id": "q-short_answer-1792000013109-18",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-3",
+    "concept_name": "Structural Properties",
+    "topic": "Distributed Systems Principles",
+    "subtopic": "Architecture",
+    "question_type": "short_answer",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "Describe the two-phase round structure used in Classic Multi-Paxos to reach consensus across distinct log slots.",
+    "options": [],
+    "correct_answer": "Classic Multi-Paxos uses Phase 1 (Prepare and Promise) and Phase 2 (Accept and Accepted) rounds.",
+    "explanation": "Multi-Paxos organizes consensus into Phase 1 (Prepare/Promise) to establish ballot leadership and Phase 2 (Accept/Accepted) to commit values to log slots.",
+    "learning_objective": "Analyze the structural properties of distributed system topologies",
+    "source_citation": {
+      "material_title": "Distributed Systems Principles Textbook",
+      "reference": "Page 4",
+      "quote": "Classic Multi-Paxos reaches consensus across distinct log slots through two-phase rounds: Phase 1 Prepare and Promise, and Phase 2 Accept and Accepted."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Classic Multi-Paxos uses Phase 1 Prepare and Promise, followed by Phase 2 Accept and Accepted to reach consensus across log slots."
+  },
+  {
+    "id": "q-numerical-1792000013109-19",
+    "course_id": "course-1791996738394-b48i",
+    "concept_id": "c-course-1791996738394-b48i-1791996752441-1",
+    "concept_name": "Foundational Definitions",
+    "topic": "Big Data Processing",
+    "subtopic": "Parallel Processing",
+    "question_type": "numerical",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "In a MapReduce job with 16 intermediate keys generated by Mappers and configured with R = 4 Reducers, how many total distinct hash partitions are created by the Mappers to aggregate the sorted keys?",
+    "options": [],
+    "correct_answer": "4",
+    "explanation": "Regardless of the number of intermediate keys, Mappers route keys to R distinct reducer partitions using hash mod R. Since R = 4, there are 4 partitions.",
+    "learning_objective": "Identify fundamental components of a distributed architecture",
+    "source_citation": {
+      "material_title": "Big Data Processing Slide Deck",
+      "reference": "Slide 2",
+      "quote": "MapReduce coordinates master and worker nodes where Mappers partition intermediate keys using hash mod R and Reducers aggregate sorted keys."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Mappers partition intermediate keys using hash mod R. Since R = 4 (number of Reducers), the number of distinct partitions equals R, which is 4."
+  }
+]

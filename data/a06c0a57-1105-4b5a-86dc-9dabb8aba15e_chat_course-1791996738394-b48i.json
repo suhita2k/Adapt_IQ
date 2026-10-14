@@ -1,0 +1,253 @@
+[
+  {
+    "id": "msg-u-1791996755114",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "user",
+    "content": "How does Raft conduct leader election when a follower times out?",
+    "created_at": "2026-10-14T16:52:35.114Z"
+  },
+  {
+    "id": "msg-a-1791996755116",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nAccording to the course materials, Raft decomposes consensus into three independent subproblems, one of which is Leader Election (📄 Page 3). If a follower receives no communication over an election timeout, it transitions to the Candidate state and requests votes via RequestVote RPCs (📄 Page 3).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the course materials, Raft decomposes consensus into three independent subproblems, one of which is Leader Election (📄 Page 3). If a follower receives no communication over an election timeout, it transitions to the Candidate state and requests votes via RequestVote RPCs (📄 Page 3).",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-14T16:52:35.116Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791996755116-0",
+        "course_id": "course-1791996738394-b48i",
+        "material_id": "mat-1791996751529-39b6",
+        "material_title": "Distributed Systems Principles Textbook",
+        "material_type": "textbook",
+        "file_name": "Distributed_Systems_Principles.pdf",
+        "file_url": "/api/courses/course-1791996738394-b48i/materials/mat-1791996751529-39b6/file#page=3",
+        "page_number": 3,
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "Raft decomposes consensus into three independent subproblems: Leader Election, Log Replication, and Safety. If a follower receives no communication over an election timeout, it transitions to Candidate and requests votes via RequestVote RPCs.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This passage directly explains how a follower initiates a leader election by transitioning to a Candidate and sending RequestVote RPCs when an election timeout occurs.",
+        "topic": "Raft Consensus Protocol",
+        "concept": "Raft Consensus Protocol"
+      }
+    ],
+    "suggested_followups": [
+      "What are the other independent subproblems that Raft decomposes consensus into?",
+      "What happens after a candidate requests votes via RequestVote RPCs?"
+    ]
+  },
+  {
+    "id": "msg-u-1791996757885",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "user",
+    "content": "Explain Lamport logical clocks formula and timestamp updating",
+    "created_at": "2026-10-14T16:52:37.885Z"
+  },
+  {
+    "id": "msg-a-1791996757886",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nLamport Logical Clocks assign a monotonically increasing integer timestamp C(e) to every event. If event a happens before b within the same process, then C(a) < C(b). When a message is received, the receiver updates its clock using the formula: max(C(receive), C(send)) + 1 (📄 Page 2).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nLamport Logical Clocks assign a monotonically increasing integer timestamp C(e) to every event. If event a happens before b within the same process, then C(a) < C(b). When a message is received, the receiver updates its clock using the formula: max(C(receive), C(send)) + 1 (📄 Page 2).",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-14T16:52:37.886Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791996757886-0",
+        "course_id": "course-1791996738394-b48i",
+        "material_id": "mat-1791996751529-39b6",
+        "material_title": "Distributed Systems Principles Textbook",
+        "material_type": "textbook",
+        "file_name": "Distributed_Systems_Principles.pdf",
+        "file_url": "/api/courses/course-1791996738394-b48i/materials/mat-1791996751529-39b6/file#page=2",
+        "page_number": 2,
+        "location_type": "page",
+        "location_reference": "Page 2",
+        "snippet": "Lamport Logical Clocks assign a monotonically increasing integer timestamp C(e) to every event. If event a happens before b within the same process, C(a) < C(b). The receiver updates its clock to max(C(receive), C(send)) + 1.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Provides the exact formula and definition for how Lamport logical clocks assign timestamps and how receivers update their clocks.",
+        "topic": "Logical Clocks",
+        "concept": "Logical Clocks"
+      }
+    ],
+    "suggested_followups": [
+      "What is the FLP impossibility theorem related to asynchronous networks?",
+      "How does Amazon Dynamo use vector clocks for versioning?"
+    ]
+  },
+  {
+    "id": "msg-u-1791996760365",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "user",
+    "content": "How does Apache Spark achieve in-memory fault tolerance with RDD lineage graphs?",
+    "created_at": "2026-10-14T16:52:40.365Z"
+  },
+  {
+    "id": "msg-a-1791996760367",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nApache Spark achieves in-memory fault tolerance by utilizing Resilient Distributed Datasets (RDDs) equipped with deterministic lineage graphs, which enable in-memory fault tolerance without requiring disk spills (📊 Slide 3).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nApache Spark achieves in-memory fault tolerance by utilizing Resilient Distributed Datasets (RDDs) equipped with deterministic lineage graphs, which enable in-memory fault tolerance without requiring disk spills (📊 Slide 3).",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-14T16:52:40.367Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791996760367-0",
+        "course_id": "course-1791996738394-b48i",
+        "material_id": "mat-1791996751529-39b6",
+        "material_title": "Distributed Systems Principles Textbook",
+        "material_type": "textbook",
+        "file_name": "Distributed_Systems_Principles.pdf",
+        "file_url": "/api/courses/course-1791996738394-b48i/materials/mat-ds-slides/file#page=3",
+        "slide_number": 3,
+        "location_type": "slide",
+        "location_reference": "Slide 3",
+        "snippet": "Apache Spark introduces Resilient Distributed Datasets (RDDs) with deterministic lineage graphs enabling in-memory fault tolerance without disk spills.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This explicitly explains that Spark achieves in-memory fault tolerance using deterministic lineage graphs in RDDs without disk spills.",
+        "topic": "Spark RDD In-Memory Computing",
+        "concept": "Spark RDD In-Memory Computing"
+      }
+    ],
+    "suggested_followups": [
+      "What are deterministic lineage graphs in Apache Spark?",
+      "How do RDDs avoid disk spills during fault recovery?"
+    ]
+  },
+  {
+    "id": "msg-u-1791996763401",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "user",
+    "content": "Explain Apache Kafka consumer group offsets and distributed log compaction",
+    "created_at": "2026-10-14T16:52:43.401Z"
+  },
+  {
+    "id": "msg-a-1791996763402",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\n\nAccording to the course materials, Apache Kafka partitions distributed commit logs where consumer groups track committed offsets with zero-copy log compaction (📊 Slide 4).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\n\nAccording to the course materials, Apache Kafka partitions distributed commit logs where consumer groups track committed offsets with zero-copy log compaction (📊 Slide 4).",
+    "outside_knowledge_content": "### ADDITIONAL CONTEXT (EXTERNAL KNOWLEDGE)\n\nIn broader distributed systems design, consumer offsets allow systems to track message consumption progress across partitions, ensuring fault tolerance and reliable stream processing. Log compaction ensures that Kafka retains at least the last known value for each key within a log partition, preventing infinite log growth for mutable records.",
+    "created_at": "2026-10-14T16:52:43.402Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791996763402-0",
+        "course_id": "course-1791996738394-b48i",
+        "material_id": "mat-1791996751529-39b6",
+        "material_title": "Distributed Systems Principles Textbook",
+        "material_type": "textbook",
+        "file_name": "Distributed_Systems_Principles.pdf",
+        "file_url": "/api/courses/course-1791996738394-b48i/materials/mat-ds-slides/file#page=4",
+        "slide_number": 4,
+        "location_type": "slide",
+        "location_reference": "Slide 4",
+        "snippet": "Apache Kafka partitions distributed commit logs where consumer groups track committed offsets with zero-copy log compaction.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This directly explains how Apache Kafka handles consumer group offsets and log compaction through partitioned distributed commit logs.",
+        "topic": "Kafka Event Streaming",
+        "concept": "Kafka Event Streaming"
+      }
+    ],
+    "suggested_followups": [
+      "How does Apache Spark achieve in-memory fault tolerance?",
+      "What are Resilient Distributed Datasets (RDDs) in Apache Spark?"
+    ]
+  },
+  {
+    "id": "msg-u-1791996766373",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "user",
+    "content": "What is quantum entanglement and quantum teleportation in physics?",
+    "created_at": "2026-10-14T16:52:46.374Z"
+  },
+  {
+    "id": "msg-a-1791996766375",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "assistant",
+    "content": "I could not find sufficient evidence in your uploaded course materials to answer your question about quantum entanglement and quantum teleportation, as this course focuses strictly on distributed systems and cloud computing principles.",
+    "source_backed_content": "I could not find sufficient evidence in your uploaded course materials.",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-14T16:52:46.375Z",
+    "is_off_material": true,
+    "citations": [],
+    "suggested_followups": [
+      "What are the foundational definitions and structural properties in distributed systems?",
+      "Can you explain core invariants in distributed systems principles?"
+    ]
+  },
+  {
+    "id": "msg-u-1791999742310",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "user",
+    "content": "What are the foundational definitions and structural properties in distributed systems?",
+    "created_at": "2026-10-14T17:42:22.310Z"
+  },
+  {
+    "id": "msg-a-1791999742314",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "role": "assistant",
+    "content": "According to the uploaded course materials, foundational definitions, invariants, and structural properties are extracted directly from the Distributed Systems Principles Textbook (📄 Page 1). Furthermore, the Brewer CAP Theorem defines key structural properties of distributed data stores, stating they can simultaneously provide at most two of three guarantees: Consistency, Availability, and Partition Tolerance (📄 Page 5).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the uploaded course materials, foundational definitions, invariants, and structural properties are extracted from the Distributed Systems Principles Textbook (📄 Page 1). Additionally, the Brewer CAP Theorem outlines structural properties stating that any distributed data store can simultaneously provide at most two of three guarantees: Consistency, Availability, and Partition Tolerance (📄 Page 5).",
+    "outside_knowledge_content": "### ADDITIONAL CONTEXT (EXTERNAL KNOWLEDGE)\nIn broader computer science, distributed systems often require handling node failures, network delays, and achieving consensus using protocols like Paxos or Raft.",
+    "created_at": "2026-10-14T17:42:22.314Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791999742313-0",
+        "course_id": "course-1791996738394-b48i",
+        "material_id": "mat-1791996751529-39b6",
+        "material_title": "Distributed Systems Principles Textbook",
+        "material_type": "textbook",
+        "file_name": "Distributed_Systems_Principles.pdf",
+        "file_url": "/api/courses/course-1791996738394-b48i/materials/mat-1791996751529-39b6/file#page=1",
+        "page_number": 1,
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "Foundational definitions, invariants, and structural properties extracted from Distributed Systems Principles Textbook.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Directly mentions the foundational definitions, invariants, and structural properties in distributed systems.",
+        "topic": "Distributed Systems Principles Textbook",
+        "concept": "Distributed Systems Principles Textbook"
+      },
+      {
+        "id": "cite-1791999742314-1",
+        "course_id": "course-1791996738394-b48i",
+        "material_id": "mat-1791996751529-39b6",
+        "material_title": "Distributed Systems Principles Textbook",
+        "material_type": "textbook",
+        "file_name": "Distributed_Systems_Principles.pdf",
+        "file_url": "/api/courses/course-1791996738394-b48i/materials/mat-1791996751529-39b6/file#page=5",
+        "page_number": 5,
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "Brewer CAP Theorem states that any distributed data store can simultaneously provide at most two of three guarantees: Consistency, Availability, and Partition Tolerance.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Explains a core structural property regarding consistency, availability, and partition tolerance.",
+        "topic": "CAP Theorem",
+        "concept": "CAP Theorem"
+      }
+    ],
+    "suggested_followups": [
+      "What are the three guarantees of the Brewer CAP Theorem?",
+      "How do Resilient Distributed Datasets (RDDs) enable in-memory fault tolerance?"
+    ]
+  }
+]

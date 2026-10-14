@@ -1,0 +1,47 @@
+[
+  {
+    "id": "src-1790875543885-94xb",
+    "course_id": "course-1790875524635-vtcp",
+    "material_id": "mat-1790875524852-kavf",
+    "material_title": "Raft Consensus Invariants & Safety Proofs",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Raft Consensus Invariants & Safety Proofs (notes), Page 12",
+    "snippet": "A candidate cannot win an election unless its log is at least as up-to-date as any other node in the quorum.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Election Restriction Safety Proof",
+    "page_number": 12,
+    "file_name": "raft_notes.txt",
+    "file_url": "/api/courses/course-1790875524635-vtcp/materials/mat-1790875524852-kavf/file#page=12"
+  },
+  {
+    "id": "src-1790875543883-zc4t",
+    "course_id": "course-1790875524635-vtcp",
+    "material_id": "mat-1790875524852-kavf",
+    "material_title": "Raft Consensus Invariants & Safety Proofs",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Raft Consensus Invariants & Safety Proofs (notes), Page 4",
+    "snippet": "If a log entry is committed in a given term, then that entry will be present in the logs of the leaders for all higher-numbered terms.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Leader Completeness Property definition",
+    "page_number": 4,
+    "file_name": "raft_notes.txt",
+    "file_url": "/api/courses/course-1790875524635-vtcp/materials/mat-1790875524852-kavf/file#page=4"
+  },
+  {
+    "id": "src-1790875524964",
+    "course_id": "course-1790875524635-vtcp",
+    "material_id": "mat-1790875524852-kavf",
+    "material_title": "Raft Consensus Invariants & Safety Proofs",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for Raft Consensus Invariants & Safety Proofs.",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "raft_notes.txt",
+    "file_url": "/api/courses/course-1790875524635-vtcp/materials/mat-1790875524852-kavf/file#page=1"
+  }
+]

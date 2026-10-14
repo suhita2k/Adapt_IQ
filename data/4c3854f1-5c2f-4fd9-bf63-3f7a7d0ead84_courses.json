@@ -1,0 +1,17 @@
+[
+  {
+    "id": "course-1790879064500-lop6",
+    "owner_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "title": "data",
+    "code": "12345",
+    "description": "Comprehensive course syllabus.",
+    "category": "Computer Science",
+    "color": "#B1A15A",
+    "icon": "BookOpen",
+    "total_concepts": 0,
+    "mastered_concepts": 0,
+    "materials_count": 4,
+    "created_at": "2026-10-01T18:24:24.500Z",
+    "updated_at": "2026-10-01T18:27:57.617Z"
+  }
+]

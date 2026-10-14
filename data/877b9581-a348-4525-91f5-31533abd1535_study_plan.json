@@ -1,0 +1,69 @@
+{
+  "id": "plan-course-1790923123271-k16r",
+  "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+  "course_id": "course-1790923123271-k16r",
+  "title": "ghjjv Adaptive Study Plan",
+  "daily_goal_minutes": 60,
+  "streak_days": 0,
+  "tasks": [
+    {
+      "id": "task-1790923378318-0",
+      "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+      "course_id": "course-1790923123271-k16r",
+      "concept_id": "c-course-1790923123271-k16r-1",
+      "concept_name": "Syllabus Fundamentals",
+      "title": "Study Concept: Syllabus Fundamentals",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-02",
+      "completed": true,
+      "reason": "Calibrate understanding for Syllabus Fundamentals in ghjjv.",
+      "completed_at": "2026-10-02T06:43:45.765Z"
+    },
+    {
+      "id": "task-1790923378318-1",
+      "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+      "course_id": "course-1790923123271-k16r",
+      "concept_id": "c-course-1790923123271-k16r-2",
+      "concept_name": "Reading Comprehension and Analysis",
+      "title": "Study Concept: Reading Comprehension and Analysis",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "high",
+      "due_date": "2026-10-02",
+      "completed": false,
+      "reason": "Calibrate understanding for Reading Comprehension and Analysis in ghjjv."
+    },
+    {
+      "id": "task-1790923378318-2",
+      "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+      "course_id": "course-1790923123271-k16r",
+      "concept_id": "c-course-1790923123271-k16r-3",
+      "concept_name": "Structural Frameworks",
+      "title": "Study Concept: Structural Frameworks",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-02",
+      "completed": false,
+      "reason": "Calibrate understanding for Structural Frameworks in ghjjv."
+    },
+    {
+      "id": "task-1790923378318-3",
+      "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+      "course_id": "course-1790923123271-k16r",
+      "concept_id": "c-course-1790923123271-k16r-4",
+      "concept_name": "Empirical Verification",
+      "title": "Study Concept: Empirical Verification",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-02",
+      "completed": false,
+      "reason": "Calibrate understanding for Empirical Verification in ghjjv."
+    }
+  ],
+  "created_at": "2026-10-02T06:42:58.318Z",
+  "updated_at": "2026-10-02T06:42:58.318Z"
+}

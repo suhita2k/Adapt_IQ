@@ -1,0 +1,68 @@
+[
+  {
+    "id": "fc-course-1790871316162-9uas-1",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "concept_id": "c-course-1790871316162-9uas-1",
+    "front": "What is the core invariant of Introduction to Data Science Foundations?",
+    "back": "Explores the fundamental lifecycle of data science projects, encompassing problem formulation and data collection. It establishes the basic framework for understanding how data flows from raw inputs to actionable insights.",
+    "source_ref": "Recording 2026-07-04 091831 (lecture_video)",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.18,
+    "difficulty_rating": 2
+  },
+  {
+    "id": "fc-course-1790871316162-9uas-2",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "concept_id": "c-course-1790871316162-9uas-2",
+    "front": "What is the core invariant of Data Acquisition and Presentation?",
+    "back": "Focuses on gathering raw datasets from disparate sources and structuring them into standardized presentation formats. Students learn how to pitch data-driven ideas effectively using professional slides.",
+    "source_ref": "Recording 2026-07-04 091831 (lecture_video)",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790871316162-9uas-3",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "concept_id": "c-course-1790871316162-9uas-3",
+    "front": "What is the core invariant of Data Preprocessing and Cleaning?",
+    "back": "Addresses the essential task of handling missing values, outliers, and formatting inconsistencies in raw datasets. Proper preprocessing ensures that downstream analytical models receive clean and reliable inputs.",
+    "source_ref": "Recording 2026-07-04 091831 (lecture_video)",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790871316162-9uas-4",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "concept_id": "c-course-1790871316162-9uas-4",
+    "front": "What is the core invariant of Exploratory Data Analysis?",
+    "back": "Involves using statistical graphics and summary metrics to uncover underlying structures in data. It helps data scientists formulate hypotheses and discover anomalies prior to advanced modeling.",
+    "source_ref": "Recording 2026-07-04 091831 (lecture_video)",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790871316162-9uas-5",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "concept_id": "c-course-1790871316162-9uas-5",
+    "front": "What is the core invariant of Board Book Documentation and Project Governance?",
+    "back": "Covers the structural components of maintaining comprehensive project documentation and updated board books. It ensures transparency, accountability, and reproducibility throughout the project lifecycle.",
+    "source_ref": "Recording 2026-07-04 091831 (lecture_video)",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

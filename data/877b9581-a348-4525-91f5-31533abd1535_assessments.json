@@ -1,0 +1,1337 @@
+[
+  {
+    "id": "as-1790923299678-kpux",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "title": "ghjjv SHORT ANSWER Assessment",
+    "status": "in_progress",
+    "total_questions": 5,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-02T06:41:39.678Z",
+    "questions": [
+      {
+        "id": "q-short_answer-1790923299678-0",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "short_answer",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Define the primary core concepts introduced in the introductory chapter of the course material.",
+        "options": [],
+        "correct_answer": "The primary core concepts include the fundamental definitions, introductory diagrams, and core syllabus topics.",
+        "explanation": "The text establishes foundational definitions and diagrams on the first page.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Reviewing the introductory definitions provided on page 1 of the text."
+      },
+      {
+        "id": "q-short_answer-1790923299678-1",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "short_answer",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Explain the role and significance of the diagrams presented in the introductory section.",
+        "options": [],
+        "correct_answer": "Diagrams serve to visually represent core definitions and support the understanding of syllabus topics.",
+        "explanation": "Diagrams alongside core definitions help clarify the introductory syllabus topics.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Analyze the purpose of diagrams in introductory pedagogical materials."
+      },
+      {
+        "id": "q-short_answer-1790923299678-2",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "short_answer",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "How do the core definitions connect to the broader syllabus topics outlined in the text?",
+        "options": [],
+        "correct_answer": "Core definitions provide the foundational terminology and conceptual boundaries necessary for exploring the broader syllabus topics.",
+        "explanation": "Definitions establish the baseline terminology required to understand the syllabus.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesize the relationship between definitions and syllabus scope."
+      },
+      {
+        "id": "q-short_answer-1790923299678-3",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "Analyze how the integration of diagrams and definitions facilitates the comprehension of complex subject matter in 'chap'.",
+        "options": [],
+        "correct_answer": "The integration bridges abstract theoretical definitions with concrete visual representations, enabling multi-faceted cognitive processing and deeper analytical engagement with the syllabus topics.",
+        "explanation": "Combining visual and textual elements reinforces structural understanding.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Evaluate the pedagogical interaction between textual definitions and visual diagrams."
+      },
+      {
+        "id": "q-short_answer-1790923299678-4",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Evaluate the structural importance of establishing clear core definitions at the onset of the course material.",
+        "options": [],
+        "correct_answer": "Establishing clear core definitions prevents conceptual ambiguity, provides a standardized vocabulary, and sets a rigorous framework for evaluating advanced syllabus topics.",
+        "explanation": "Initial definitions act as the bedrock for all subsequent analytical evaluations.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Critically assess the necessity of initial definitions for subsequent learning outcomes."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790923281219-2inb",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "title": "ghjjv DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 5,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-02T06:41:21.219Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790923281219-0",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which of the following elements is primarily introduced in the core definitions and syllabus topics of chap?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Core definitions, diagrams, and syllabus topics",
+            "is_correct": true,
+            "explanation": "This matches the exact source citation from the material."
+          },
+          {
+            "id": "opt-2",
+            "text": "Advanced theoretical frameworks only",
+            "is_correct": false,
+            "explanation": "The text focuses on core definitions and diagrams, not exclusively advanced theoretical frameworks.",
+            "misconception_tag": "overcomplication"
+          },
+          {
+            "id": "opt-3",
+            "text": "Historical background without diagrams",
+            "is_correct": false,
+            "explanation": "Diagrams are explicitly mentioned in the source text.",
+            "misconception_tag": "incomplete_recall"
+          },
+          {
+            "id": "opt-4",
+            "text": "Numerical calculations exclusively",
+            "is_correct": false,
+            "explanation": "The material introduces core definitions and diagrams rather than exclusively numerical calculations.",
+            "misconception_tag": "narrow_focus"
+          }
+        ],
+        "correct_answer": "Core definitions, diagrams, and syllabus topics",
+        "explanation": "According to page 1 of the material, core definitions, diagrams, and syllabus topics are introduced for chap.",
+        "learning_objective": "Core mastery of basic definitions",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source text explicitly states that core definitions, diagrams, and syllabus topics are introduced for chap on Page 1."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790923281219-1",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The foundational concepts of the subject are primarily established through core definitions and _______ provided in the introductory material.",
+        "options": [],
+        "correct_answer": "diagrams",
+        "explanation": "The text explicitly mentions 'diagrams' alongside core definitions and syllabus topics.",
+        "learning_objective": "Core mastery of basic components",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Looking at the source evidence: 'Core definitions, diagrams, and syllabus topics introduced for chap.' The missing term corresponding to the visual aids is 'diagrams'."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790923281219-2",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In the context of the syllabus topics introduced in chap, the primary structural components presented are definitions, syllabus topics, and _______.",
+        "options": [],
+        "correct_answer": "diagrams",
+        "explanation": "The source material lists core definitions, diagrams, and syllabus topics as the foundational elements.",
+        "learning_objective": "Core mastery of structural syllabus elements",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Verifying the exact quote from Page 1: 'Core definitions, diagrams, and syllabus topics introduced for chap.' The third component listed is diagrams."
+      },
+      {
+        "id": "q-short_answer-1790923281219-3",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "short_answer",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Explain the significance of the core definitions and diagrams introduced in the initial section of the course material for chap.",
+        "options": [],
+        "correct_answer": "They establish the fundamental terminology and visual structural layout required to understand the syllabus topics in chap.",
+        "explanation": "Core definitions and diagrams serve as the foundational building blocks for mastering the subsequent syllabus topics.",
+        "learning_objective": "Core mastery of introductory material significance",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The response must mention establishing baseline terminology (core definitions) and visual structural understanding (diagrams) as outlined in the course syllabus for chap."
+      },
+      {
+        "id": "q-numerical-1790923281219-4",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "numerical",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "If a study module for chap contains 3 core definitions, 4 distinct diagrams, and 5 syllabus topics per chapter, calculate the total number of components presented if there are 2 chapters analyzed.",
+        "options": [],
+        "correct_answer": "24",
+        "explanation": "Sum the components per chapter (3 + 4 + 5 = 12) and multiply by the number of chapters (2) to get 24.",
+        "learning_objective": "Core mastery of quantitative synthesis of chapter components",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Components per chapter = 3 (definitions) + 4 (diagrams) + 5 (syllabus topics) = 12 components. For 2 chapters, total components = 12 * 2 = 24."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790923260033-v9wo",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "title": "ghjjv DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-02T06:41:00.033Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790923260032-0",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "What type of content is primarily introduced in the introductory section of chap?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Core definitions, diagrams, and syllabus topics",
+            "is_correct": true,
+            "explanation": "This matches the exact source citation from Page 1."
+          },
+          {
+            "id": "opt-2",
+            "text": "Advanced computational proofs only",
+            "is_correct": false,
+            "explanation": "Advanced proofs are not the primary introductory focus.",
+            "misconception_tag": "Scope Overestimation"
+          },
+          {
+            "id": "opt-3",
+            "text": "Historical background of unrelated fields",
+            "is_correct": false,
+            "explanation": "Unrelated historical background is not covered.",
+            "misconception_tag": "Irrelevant Content"
+          },
+          {
+            "id": "opt-4",
+            "text": "Concluding remarks and appendices",
+            "is_correct": false,
+            "explanation": "Appendices appear at the end, not the introductory section.",
+            "misconception_tag": "Positional Confusion"
+          }
+        ],
+        "correct_answer": "Core definitions, diagrams, and syllabus topics",
+        "explanation": "The text explicitly states on Page 1 that core definitions, diagrams, and syllabus topics are introduced.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Reviewing the first page of the material confirms the introduction of core definitions, diagrams, and syllabus topics."
+      },
+      {
+        "id": "q-mcq-1790923260032-1",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Which of the following is included alongside core definitions in the introductory material of chap?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Diagrams",
+            "is_correct": true,
+            "explanation": "Diagrams are explicitly mentioned in the source quote."
+          },
+          {
+            "id": "opt-2",
+            "text": "Source code repositories",
+            "is_correct": false,
+            "explanation": "Source code repositories are not mentioned in the source text.",
+            "misconception_tag": "Extraneous Information"
+          },
+          {
+            "id": "opt-3",
+            "text": "Audio transcripts",
+            "is_correct": false,
+            "explanation": "Audio transcripts are not part of the textbook text.",
+            "misconception_tag": "Extraneous Information"
+          },
+          {
+            "id": "opt-4",
+            "text": "Laboratory manuals",
+            "is_correct": false,
+            "explanation": "Laboratory manuals are not specified in the introduction.",
+            "misconception_tag": "Extraneous Information"
+          }
+        ],
+        "correct_answer": "Diagrams",
+        "explanation": "The source explicitly lists diagrams as part of the introductory material.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Checking the text reveals diagrams are listed along with definitions and syllabus topics."
+      },
+      {
+        "id": "q-mcq-1790923260032-2",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "How do core definitions and syllabus topics function when they are introduced together in the initial part of chap?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "They establish the foundational framework and scope of the subject matter.",
+            "is_correct": true,
+            "explanation": "Introductory definitions and syllabus topics set up the scope and framework."
+          },
+          {
+            "id": "opt-2",
+            "text": "They serve as a final examination rubric.",
+            "is_correct": false,
+            "explanation": "Rubrics are for grading, not initial syllabus introductions.",
+            "misconception_tag": "Functional Misunderstanding"
+          },
+          {
+            "id": "opt-3",
+            "text": "They replace all subsequent textbook chapters.",
+            "is_correct": false,
+            "explanation": "They introduce the text, not replace it.",
+            "misconception_tag": "Exaggeration"
+          },
+          {
+            "id": "opt-4",
+            "text": "They provide a chronological history of publishing.",
+            "is_correct": false,
+            "explanation": "The focus is subject matter, not publishing history.",
+            "misconception_tag": "Topical Misdirection"
+          }
+        ],
+        "correct_answer": "They establish the foundational framework and scope of the subject matter.",
+        "explanation": "Introducing core definitions and syllabus topics early establishes the foundation and scope for subsequent learning.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Applying the foundational text implies setting the conceptual baseline for the course."
+      },
+      {
+        "id": "q-mcq-1790923260032-3",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "What is the primary role of diagrams when introduced alongside core definitions according to the course materials?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To provide visual representation and reinforcement of core concepts.",
+            "is_correct": true,
+            "explanation": "Diagrams visually reinforce core definitions and topics."
+          },
+          {
+            "id": "opt-2",
+            "text": "To act as decorative artwork with no academic value.",
+            "is_correct": false,
+            "explanation": "Academic diagrams carry informational weight.",
+            "misconception_tag": "Undervaluation"
+          },
+          {
+            "id": "opt-3",
+            "text": "To replace all textual explanations entirely.",
+            "is_correct": false,
+            "explanation": "Diagrams complement text, they do not replace it.",
+            "misconception_tag": "Exclusionary Thinking"
+          },
+          {
+            "id": "opt-4",
+            "text": "To list the administrative staff of the course.",
+            "is_correct": false,
+            "explanation": "Staff lists are administrative, not diagrammatic.",
+            "misconception_tag": "Administrative Confusion"
+          }
+        ],
+        "correct_answer": "To provide visual representation and reinforcement of core concepts.",
+        "explanation": "Diagrams reinforce the core concepts introduced in the text.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Diagrams visually support the core definitions presented in the introduction."
+      },
+      {
+        "id": "q-mcq-1790923260032-4",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "Evaluate the inclusion of syllabus topics on Page 1 in terms of setting learning expectations for chap. Why is this structurally critical?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "It aligns learner goals with curriculum boundaries, setting clear navigational expectations.",
+            "is_correct": true,
+            "explanation": "Early syllabus presentation maps out learning trajectories and boundaries."
+          },
+          {
+            "id": "opt-2",
+            "text": "It obscures the main objectives to create surprise testing environments.",
+            "is_correct": false,
+            "explanation": "Syllabi clarify objectives rather than obscure them.",
+            "misconception_tag": "Pedagogical Inversion"
+          },
+          {
+            "id": "opt-3",
+            "text": "It serves exclusively as a legal disclaimer for the publisher.",
+            "is_correct": false,
+            "explanation": "The primary role is educational, not legal.",
+            "misconception_tag": "Legal Misinterpretation"
+          },
+          {
+            "id": "opt-4",
+            "text": "It dictates the exact clock time spent per page.",
+            "is_correct": false,
+            "explanation": "Syllabi outline topics, not micro-timing per page.",
+            "misconception_tag": "Granularity Confusion"
+          }
+        ],
+        "correct_answer": "It aligns learner goals with curriculum boundaries, setting clear navigational expectations.",
+        "explanation": "Establishing syllabus topics early helps structure the educational journey and align expectations.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Analyzing the pedagogical structure shows that early syllabus placement aligns learner goals with the curriculum."
+      },
+      {
+        "id": "q-mcq-1790923260032-5",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Analyze how core definitions interact with diagrams in the context of 'chap' on Page 1. Which analytical deduction is most robust?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Multi-modal presentation (textual definitions paired with visual diagrams) accelerates conceptual encoding.",
+            "is_correct": true,
+            "explanation": "Dual-coding theory supports that text plus diagrams accelerates comprehension."
+          },
+          {
+            "id": "opt-2",
+            "text": "They operate in completely isolated conceptual silos with no cross-reference.",
+            "is_correct": false,
+            "explanation": "Definitions and diagrams directly support each other.",
+            "misconception_tag": "Isolation Fallacy"
+          },
+          {
+            "id": "opt-3",
+            "text": "Diagrams contradict textual definitions to test critical thinking.",
+            "is_correct": false,
+            "explanation": "Introductory materials aim to clarify, not intentionally contradict.",
+            "misconception_tag": "Adversarial Misconception"
+          },
+          {
+            "id": "opt-4",
+            "text": "Textual definitions are merely captions with no independent meaning.",
+            "is_correct": false,
+            "explanation": "Definitions carry primary conceptual weight.",
+            "misconception_tag": "Subservience Fallacy"
+          }
+        ],
+        "correct_answer": "Multi-modal presentation (textual definitions paired with visual diagrams) accelerates conceptual encoding.",
+        "explanation": "Integrating definitions and diagrams provides a multi-modal foundation that enhances understanding.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Combining definitions and diagrams creates a multi-modal learning experience that enhances comprehension."
+      },
+      {
+        "id": "q-mcq-1790923260032-6",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "What kind of pedagogical components are introduced at the very beginning of the material to ground the subject 'chap'?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Core definitions, diagrams, and syllabus topics",
+            "is_correct": true,
+            "explanation": "Exact match to source text."
+          },
+          {
+            "id": "opt-2",
+            "text": "Advanced formulas and proofs",
+            "is_correct": false,
+            "explanation": "Not mentioned in the introductory quote.",
+            "misconception_tag": "Recall Error"
+          },
+          {
+            "id": "opt-3",
+            "text": "Case studies and exam questions",
+            "is_correct": false,
+            "explanation": "Not part of the baseline introduction.",
+            "misconception_tag": "Recall Error"
+          },
+          {
+            "id": "opt-4",
+            "text": "Glossary and index entries",
+            "is_correct": false,
+            "explanation": "Glossaries appear at the end, not the core introduction.",
+            "misconception_tag": "Recall Error"
+          }
+        ],
+        "correct_answer": "Core definitions, diagrams, and syllabus topics",
+        "explanation": "The course material introduces core definitions, diagrams, and syllabus topics right at the start.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Direct recall from Page 1 quote: core definitions, diagrams, and syllabus topics."
+      },
+      {
+        "id": "q-mcq-1790923260032-7",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Evaluate the effectiveness of introducing syllabus topics alongside core definitions on Page 1. Why does this benefit early learners?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "It gives learners an immediate roadmap to contextualize subsequent concepts.",
+            "is_correct": true,
+            "explanation": "Roadmaps help contextualize future learning."
+          },
+          {
+            "id": "opt-2",
+            "text": "It replaces the need for any further reading.",
+            "is_correct": false,
+            "explanation": "It is an introduction, not a replacement for study.",
+            "misconception_tag": "Exaggeration"
+          },
+          {
+            "id": "opt-3",
+            "text": "It acts as a grading rubric for instructors.",
+            "is_correct": false,
+            "explanation": "Syllabus topics guide learning rather than grade performance.",
+            "misconception_tag": "Role Confusion"
+          },
+          {
+            "id": "opt-4",
+            "text": "It provides historical trivia about the author.",
+            "is_correct": false,
+            "explanation": "Syllabi outline academic topics, not author trivia.",
+            "misconception_tag": "Content Mismatch"
+          }
+        ],
+        "correct_answer": "It gives learners an immediate roadmap to contextualize subsequent concepts.",
+        "explanation": "Introducing syllabus topics alongside definitions creates a roadmap for the course.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Early introduction provides a clear roadmap for learners to contextualize subsequent concepts."
+      },
+      {
+        "id": "q-mcq-1790923260032-8",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "According to the introductory material on Page 1, the core subject concepts are introduced through __________ and visual aids.",
+        "options": [
+          {
+            "id": "opt-8-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-8-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-8-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-8-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "The source explicitly states core definitions are introduced.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Text says: 'Core definitions, diagrams, and syllabus topics introduced for chap.' Filling in 'definitions'."
+      },
+      {
+        "id": "q-mcq-1790923260033-9",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The foundational components introduced on Page 1 include core definitions, __________, and syllabus topics.",
+        "options": [
+          {
+            "id": "opt-9-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-9-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-9-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-9-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "Diagrams are listed alongside definitions and syllabus topics.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "From the quote: 'Core definitions, diagrams, and syllabus topics...'. Filling in 'diagrams'."
+      },
+      {
+        "id": "q-mcq-1790923260033-10",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "To establish the scope of chap, the course material introduces core definitions, diagrams, and __________ topics on Page 1.",
+        "options": [
+          {
+            "id": "opt-10-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-10-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-10-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-10-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "The missing word is 'syllabus', completing 'syllabus topics'.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Source reference: 'syllabus topics'."
+      },
+      {
+        "id": "q-mcq-1790923260033-11",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "The primary subject area covered in the initial material is designated as __________.",
+        "options": [
+          {
+            "id": "opt-11-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-11-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-11-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-11-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "The subject name specified in the course material and prompt is chap.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Source reference: 'chap'."
+      },
+      {
+        "id": "q-mcq-1790923260033-12",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Apply",
+        "question_text": "When structuring an introductory chapter like chap, combining textual definitions with __________ creates an optimal multi-modal learning environment.",
+        "options": [
+          {
+            "id": "opt-12-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-12-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-12-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-12-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "Diagrams provide the visual counterpart to textual definitions.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Based on the course text, definitions are paired with diagrams."
+      },
+      {
+        "id": "q-mcq-1790923260033-13",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "The inclusion of __________ topics alongside core definitions on Page 1 serves to outline the curriculum boundaries for chap.",
+        "options": [
+          {
+            "id": "opt-13-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-13-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-13-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-13-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "Syllabus topics outline the curriculum boundaries.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Source reference: 'syllabus topics'."
+      },
+      {
+        "id": "q-mcq-1790923260033-14",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "List the three primary elements introduced for chap on Page 1 of the course material.",
+        "options": [
+          {
+            "id": "opt-14-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-14-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-14-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-14-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "The exact three elements are core definitions, diagrams, and syllabus topics.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Direct extraction from Page 1 quote."
+      },
+      {
+        "id": "q-mcq-1790923260033-15",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Explain the pedagogical purpose of introducing core definitions and syllabus topics at the very beginning of chap.",
+        "options": [
+          {
+            "id": "opt-15-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-15-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-15-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-15-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "Early definitions and syllabus topics set the framework and guide the student's learning path.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Establishing foundational terminology and navigational scope for learners."
+      },
+      {
+        "id": "q-mcq-1790923260033-16",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "Analyze how the integration of diagrams and core definitions on Page 1 supports cognitive retention and subject mastery in chap.",
+        "options": [
+          {
+            "id": "opt-16-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-16-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-16-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-16-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "Visual and textual integration aids cognitive processing and long-term retention.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Dual-coding theory links visual diagrams and text definitions to enhance memory retention and conceptual clarity."
+      },
+      {
+        "id": "q-mcq-1790923260033-17",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Apply",
+        "question_text": "If a textbook chapter spans 77 pages and Page 1 introduces 3 core instructional components (definitions, diagrams, syllabus topics), calculate the average number of introductory components per page for Page 1.",
+        "options": [
+          {
+            "id": "opt-17-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-17-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-17-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-17-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "On Page 1, there are 3 distinct categories of items introduced (definitions, diagrams, syllabus topics). Divided by 1 page, the result is 3.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "3 components / 1 page = 3 components per page."
+      },
+      {
+        "id": "q-mcq-1790923260033-18",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "If chap contains 77 pages in total and Page 1 introduces 3 core topics, what percentage of the total page count does Page 1 represent? (Round to two decimal places)",
+        "options": [
+          {
+            "id": "opt-18-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-18-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-18-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-18-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "Calculation: (1 page / 77 total pages) * 100 = 1.2987%, which rounds to 1.30%.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1 (and document metadata)",
+          "quote": "77 pages"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "(1 / 77) * 100 = 1.2987%. Rounded to two decimal places is 1.30%."
+      },
+      {
+        "id": "q-mcq-1790923260033-19",
+        "course_id": "course-1790923123271-k16r",
+        "concept_id": "c-course-1790923123271-k16r-1",
+        "concept_name": "chap",
+        "topic": "Core Topics",
+        "subtopic": "General",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "Suppose each of the 3 introductory components on Page 1 (definitions, diagrams, syllabus topics) requires 4 distinct sub-points for complete mastery, what is the total number of sub-points required to master Page 1?",
+        "options": [
+          {
+            "id": "opt-19-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-19-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-19-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-19-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "Multiplying the 3 introductory components by 4 sub-points each yields 12 total sub-points.",
+        "learning_objective": "Core mastery",
+        "source_citation": {
+          "material_title": "chap",
+          "reference": "Page 1",
+          "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "3 components * 4 sub-points = 12 sub-points."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  }
+]

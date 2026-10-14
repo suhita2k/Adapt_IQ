@@ -1,0 +1,13 @@
+{
+  "id": "profile-fresh-user-1790870928101",
+  "user_id": "fresh-user-1790870928101",
+  "full_name": "Elena Rostova",
+  "email": "student@university.edu",
+  "preferred_language": "English",
+  "learning_goal": "Exam preparation & concept mastery",
+  "study_field": "Distributed Systems",
+  "daily_study_time_minutes": 45,
+  "onboarding_completed": true,
+  "created_at": "2026-10-01T16:08:49.344Z",
+  "updated_at": "2026-10-01T16:08:49.344Z"
+}

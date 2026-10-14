@@ -1,0 +1,2985 @@
+[
+  {
+    "id": "as-1790934013151-32qz",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "title": "css DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-02T09:40:13.151Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790934013150-0",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In the context of the THULIR AI SIH 2026 project, what is the primary function of the 'Modular AI Pipeline'?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To facilitate real-time data processing and decision-making.",
+            "is_correct": true,
+            "explanation": "The documentation confirms the pipeline is designed for real-time data processing."
+          },
+          {
+            "id": "opt-2",
+            "text": "To serve as a static database for historical records.",
+            "is_correct": false,
+            "explanation": "The pipeline is dynamic and modular, not a static database.",
+            "misconception_tag": "System Architecture Misconception"
+          },
+          {
+            "id": "opt-3",
+            "text": "To replace the need for human input in all project phases.",
+            "is_correct": false,
+            "explanation": "The pipeline is for processing and decision-making, not total automation of all phases.",
+            "misconception_tag": "Automation Overreach"
+          },
+          {
+            "id": "opt-4",
+            "text": "To manage the administrative documentation of the SIH team.",
+            "is_correct": false,
+            "explanation": "The pipeline is a technical architecture component, not an administrative tool.",
+            "misconception_tag": "Scope Confusion"
+          }
+        ],
+        "correct_answer": "To facilitate real-time data processing and decision-making.",
+        "explanation": "The THULIR AI SIH 2026 Board Book states the architecture leverages a modular AI pipeline for real-time data processing.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source document explicitly states the modular AI pipeline is designed for real-time data processing and decision-making."
+      },
+      {
+        "id": "q-mcq-1790934013150-1",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+        "concept_name": "Experience Documentation",
+        "topic": "Career History",
+        "subtopic": "Professional Experience",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which of the following companies is explicitly listed as part of the professional experience in the provided profile documentation?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Infosys",
+            "is_correct": true,
+            "explanation": "Infosys is explicitly listed in the experience section of the profile."
+          },
+          {
+            "id": "opt-2",
+            "text": "Google",
+            "is_correct": false,
+            "explanation": "Google is not mentioned in the provided profile document.",
+            "misconception_tag": "External Knowledge Bias"
+          },
+          {
+            "id": "opt-3",
+            "text": "Microsoft",
+            "is_correct": false,
+            "explanation": "Microsoft is not mentioned in the provided profile document.",
+            "misconception_tag": "External Knowledge Bias"
+          },
+          {
+            "id": "opt-4",
+            "text": "Amazon",
+            "is_correct": false,
+            "explanation": "Amazon is not mentioned in the provided profile document.",
+            "misconception_tag": "External Knowledge Bias"
+          }
+        ],
+        "correct_answer": "Infosys",
+        "explanation": "The profile document lists Infosys under the professional experience section.",
+        "learning_objective": "Chronologically list organizational affiliations",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 2",
+          "quote": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Reviewing Profile.pdf page 2, the list includes Tamil Nadu Newsprint, CodSoft, CodeAlpha, and Infosys."
+      },
+      {
+        "id": "q-mcq-1790934013150-2",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-1",
+        "concept_name": "Professional Summary",
+        "topic": "Profile Structure",
+        "subtopic": "Documentation",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Which section of the professional profile is designed to provide a concise overview of an individual's qualifications and career highlights?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Professional Summary",
+            "is_correct": true,
+            "explanation": "The professional summary is defined as a concise overview of qualifications."
+          },
+          {
+            "id": "opt-2",
+            "text": "Technical Skills Mapping",
+            "is_correct": false,
+            "explanation": "This section focuses on categorizing competencies, not a narrative summary.",
+            "misconception_tag": "Concept Confusion"
+          },
+          {
+            "id": "opt-3",
+            "text": "Educational Background",
+            "is_correct": false,
+            "explanation": "This section documents academic credentials, not career highlights.",
+            "misconception_tag": "Concept Confusion"
+          },
+          {
+            "id": "opt-4",
+            "text": "Experience Documentation",
+            "is_correct": false,
+            "explanation": "This section records roles and responsibilities, not a summary overview.",
+            "misconception_tag": "Concept Confusion"
+          }
+        ],
+        "correct_answer": "Professional Summary",
+        "explanation": "A professional summary is defined as a concise overview of an individual's qualifications and career highlights.",
+        "learning_objective": "Draft a summary that encapsulates professional identity",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 1",
+          "quote": "Contact, Top Skills, Certifications, Summary, Experience"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition of Professional Summary in the concept list matches the description of a concise overview of qualifications."
+      },
+      {
+        "id": "q-mcq-1790934013151-3",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-3",
+        "concept_name": "Technical Skills Mapping",
+        "topic": "Competency Management",
+        "subtopic": "Skills",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "What is the primary purpose of 'Technical Skills Mapping' in a professional profile?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To identify and categorize top-tier technical competencies.",
+            "is_correct": true,
+            "explanation": "This is the exact definition provided in the concept mapping."
+          },
+          {
+            "id": "opt-2",
+            "text": "To list all academic certifications chronologically.",
+            "is_correct": false,
+            "explanation": "That is the purpose of Educational Background.",
+            "misconception_tag": "Concept Confusion"
+          },
+          {
+            "id": "opt-3",
+            "text": "To provide a narrative of career history.",
+            "is_correct": false,
+            "explanation": "That is the purpose of Experience Documentation.",
+            "misconception_tag": "Concept Confusion"
+          },
+          {
+            "id": "opt-4",
+            "text": "To outline the SIH project framework.",
+            "is_correct": false,
+            "explanation": "That is the purpose of the SIH Project Framework concept.",
+            "misconception_tag": "Concept Confusion"
+          }
+        ],
+        "correct_answer": "To identify and categorize top-tier technical competencies.",
+        "explanation": "Technical Skills Mapping is defined as the identification and categorization of top-tier technical competencies relevant to a professional profile.",
+        "learning_objective": "Categorize technical abilities as top skills",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 1",
+          "quote": "Top Skills"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The concept definition states it is the identification and categorization of top-tier technical competencies."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790934013151-4",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "The _________ methodology is the structured approach required for Smart India Hackathon project submissions.",
+        "options": [],
+        "correct_answer": "SIH Project Framework",
+        "explanation": "The SIH Project Framework is the specific methodology defined for hackathon submissions.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The concept definition for SIH Project Framework identifies it as the structured methodology for submissions."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790934013151-5",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-4",
+        "concept_name": "Educational Background",
+        "topic": "Qualifications",
+        "subtopic": "Education",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Formal documentation of academic credentials and certifications is categorized under _________.",
+        "options": [],
+        "correct_answer": "Educational Background",
+        "explanation": "Educational Background is the concept defined for documenting academic credentials.",
+        "learning_objective": "List formal education degrees",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 3",
+          "quote": "Education"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The concept definition for Educational Background explicitly mentions formal documentation of academic credentials."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790934013151-6",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+        "concept_name": "Experience Documentation",
+        "topic": "Career History",
+        "subtopic": "Professional Experience",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The systematic recording of professional roles and organizational affiliations is known as _________.",
+        "options": [],
+        "correct_answer": "Experience Documentation",
+        "explanation": "Experience Documentation is the systematic recording of professional roles and organizational affiliations.",
+        "learning_objective": "Chronologically list organizational affiliations",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 2",
+          "quote": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition of Experience Documentation matches the description of recording professional roles."
+      },
+      {
+        "id": "q-short_answer-1790934013151-7",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Explain the importance of aligning project goals with SIH criteria within the SIH Project Framework.",
+        "options": [],
+        "correct_answer": "Alignment ensures that the project submission meets the specific evaluation criteria and structural requirements set by the Smart India Hackathon, increasing the likelihood of project success and compliance.",
+        "explanation": "The SIH Project Framework is designed to ensure that project goals are structured to meet the specific criteria of the hackathon.",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Alignment ensures the project meets the specific requirements of the hackathon, which is the primary goal of the framework."
+      },
+      {
+        "id": "q-short_answer-1790934013151-8",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-3",
+        "concept_name": "Technical Skills Mapping",
+        "topic": "Competency Management",
+        "subtopic": "Skills",
+        "question_type": "short_answer",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "Describe the relationship between 'Technical Skills Mapping' and 'Experience Documentation' in a professional profile.",
+        "options": [],
+        "correct_answer": "Technical Skills Mapping identifies and categorizes the competencies, while Experience Documentation provides the chronological context and organizational evidence of where those skills were utilized and developed.",
+        "explanation": "These two sections work together to validate the professional's capabilities through both categorization and historical evidence.",
+        "learning_objective": "Align skills with professional experience",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 1",
+          "quote": "Top Skills, Experience"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Technical skills mapping categorizes competencies, while experience documentation provides the context (roles/companies) where those skills were applied."
+      },
+      {
+        "id": "q-mcq-1790934013151-9",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Apply",
+        "question_text": "If a modular AI pipeline processes 100 data packets per second and each module adds a 5ms latency, calculate the total latency for a pipeline consisting of 4 independent modules.",
+        "options": [
+          {
+            "id": "opt-9-0",
+            "text": "Alternative variant 1",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-9-1",
+            "text": "Alternative variant 2",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-9-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-9-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "Alternative variant 1",
+        "explanation": "With 4 modules each adding 5ms of latency, the total latency is 4 * 5ms = 20ms.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Total latency = (Number of modules) * (Latency per module) = 4 * 5ms = 20ms."
+      },
+      {
+        "id": "q-mcq-1790934013151-10",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In the context of the THULIR AI SIH 2026 framework, which component is primarily responsible for real-time data processing and decision-making?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Modular AI Pipeline",
+            "is_correct": true,
+            "explanation": "The documentation confirms the modular AI pipeline is designed for real-time data processing."
+          },
+          {
+            "id": "opt-2",
+            "text": "Static Data Repository",
+            "is_correct": false,
+            "explanation": "This is not mentioned as the primary real-time processing component.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-3",
+            "text": "Manual Decision Engine",
+            "is_correct": false,
+            "explanation": "The framework focuses on AI-driven automation, not manual engines.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-4",
+            "text": "Legacy Batch Processor",
+            "is_correct": false,
+            "explanation": "The framework emphasizes modular AI, not legacy batch processing.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          }
+        ],
+        "correct_answer": "Modular AI Pipeline",
+        "explanation": "The THULIR AI SIH 2026 Board Book (Page 3) defines the system architecture as leveraging a modular AI pipeline for real-time data processing.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The THULIR AI SIH 2026 Board Book explicitly states the system architecture leverages a modular AI pipeline for real-time processing."
+      },
+      {
+        "id": "q-mcq-1790934013151-11",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+        "concept_name": "Experience Documentation",
+        "topic": "Career History",
+        "subtopic": "Professional Experience",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which of the following companies is explicitly listed as part of the professional experience documentation in the provided profile?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Infosys",
+            "is_correct": true,
+            "explanation": "Infosys is explicitly listed in the experience section on page 2."
+          },
+          {
+            "id": "opt-2",
+            "text": "Google",
+            "is_correct": false,
+            "explanation": "Google is not mentioned in the provided profile document.",
+            "misconception_tag": "Experience Documentation"
+          },
+          {
+            "id": "opt-3",
+            "text": "Microsoft",
+            "is_correct": false,
+            "explanation": "Microsoft is not mentioned in the provided profile document.",
+            "misconception_tag": "Experience Documentation"
+          },
+          {
+            "id": "opt-4",
+            "text": "Amazon",
+            "is_correct": false,
+            "explanation": "Amazon is not mentioned in the provided profile document.",
+            "misconception_tag": "Experience Documentation"
+          }
+        ],
+        "correct_answer": "Infosys",
+        "explanation": "The Profile document (Page 2) lists experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, and Infosys.",
+        "learning_objective": "Detail specific roles held at companies like Infosys or CodSoft",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 2",
+          "quote": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Page 2 of the Profile document lists Infosys, CodSoft, CodeAlpha, and Tamil Nadu Newsprint."
+      },
+      {
+        "id": "q-mcq-1790934013151-12",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-1",
+        "concept_name": "Professional Summary",
+        "topic": "Profile Structure",
+        "subtopic": "Documentation",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What is the primary purpose of a Professional Summary in a profile structure?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To provide a concise overview of qualifications and career highlights.",
+            "is_correct": true,
+            "explanation": "This matches the definition provided in the course concepts."
+          },
+          {
+            "id": "opt-2",
+            "text": "To list every project completed in chronological order.",
+            "is_correct": false,
+            "explanation": "This describes experience documentation, not a summary.",
+            "misconception_tag": "Professional Summary"
+          },
+          {
+            "id": "opt-3",
+            "text": "To detail the technical specifications of the AI pipeline.",
+            "is_correct": false,
+            "explanation": "This is a technical system architecture task.",
+            "misconception_tag": "Professional Summary"
+          },
+          {
+            "id": "opt-4",
+            "text": "To provide contact information only.",
+            "is_correct": false,
+            "explanation": "Contact info is a separate section from the summary.",
+            "misconception_tag": "Professional Summary"
+          }
+        ],
+        "correct_answer": "To provide a concise overview of qualifications and career highlights.",
+        "explanation": "The concept definition for Professional Summary states it is a concise overview of an individual's qualifications and career highlights.",
+        "learning_objective": "Draft a summary that encapsulates professional identity",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 1",
+          "quote": "Contact, Top Skills, Certifications, Summary, Experience"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "A professional summary is defined as a concise overview of qualifications and career highlights."
+      },
+      {
+        "id": "q-mcq-1790934013151-13",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-4",
+        "concept_name": "Educational Background",
+        "topic": "Qualifications",
+        "subtopic": "Education",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "Which category of information is typically found on Page 3 of the Profile document?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Education and Chettinad Cement experience",
+            "is_correct": true,
+            "explanation": "Page 3 explicitly lists these two items."
+          },
+          {
+            "id": "opt-2",
+            "text": "Contact details and Top Skills",
+            "is_correct": false,
+            "explanation": "These are found on Page 1.",
+            "misconception_tag": "Educational Background"
+          },
+          {
+            "id": "opt-3",
+            "text": "Infosys and CodSoft experience",
+            "is_correct": false,
+            "explanation": "These are found on Page 2.",
+            "misconception_tag": "Educational Background"
+          },
+          {
+            "id": "opt-4",
+            "text": "AI Pipeline architecture",
+            "is_correct": false,
+            "explanation": "This is found in the THULIR AI Board Book.",
+            "misconception_tag": "Educational Background"
+          }
+        ],
+        "correct_answer": "Education and Chettinad Cement experience",
+        "explanation": "The Profile document (Page 3) contains experience details for Chettinad Cement and the Education section.",
+        "learning_objective": "List formal education degrees",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 3",
+          "quote": "Experience details for Chettinad Cement, Education"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Page 3 of the Profile document specifically covers experience details for Chettinad Cement and Education."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790934013151-14",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "A _________ is a system design approach where AI processing logic is divided into independent, interchangeable units.",
+        "options": [],
+        "correct_answer": "Modular AI Pipeline",
+        "explanation": "The concept definition for Modular AI Pipeline describes a design approach where logic is divided into independent modules.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition provided in the concept list matches 'Modular AI Pipeline'."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790934013151-15",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-3",
+        "concept_name": "Technical Skills Mapping",
+        "topic": "Competency Management",
+        "subtopic": "Skills",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The identification and categorization of top-tier technical competencies relevant to a professional profile is known as _________.",
+        "options": [],
+        "correct_answer": "Technical Skills Mapping",
+        "explanation": "Technical Skills Mapping is defined as the identification and categorization of top-tier technical competencies.",
+        "learning_objective": "Categorize technical abilities as top skills",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 1",
+          "quote": "Top Skills"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition provided in the concept list matches 'Technical Skills Mapping'."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790934013151-16",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-4",
+        "concept_name": "Educational Background",
+        "topic": "Qualifications",
+        "subtopic": "Education",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The formal documentation of academic credentials and certifications attained is referred to as _________.",
+        "options": [],
+        "correct_answer": "Educational Background",
+        "explanation": "Educational Background is defined as the formal documentation of academic credentials and certifications.",
+        "learning_objective": "List formal education degrees",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 3",
+          "quote": "Education"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition provided in the concept list matches 'Educational Background'."
+      },
+      {
+        "id": "q-short_answer-1790934013151-17",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+        "concept_name": "Experience Documentation",
+        "topic": "Career History",
+        "subtopic": "Professional Experience",
+        "question_type": "short_answer",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "Why is it necessary to detail specific roles held at companies like Infosys or CodSoft in your experience documentation?",
+        "options": [],
+        "correct_answer": "Detailing roles provides evidence of professional growth, specific responsibilities, and organizational affiliations.",
+        "explanation": "Experience documentation requires the systematic recording of professional roles and responsibilities to validate career history.",
+        "learning_objective": "Detail specific roles held at companies like Infosys or CodSoft",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 2",
+          "quote": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Detailing roles provides evidence of professional growth, specific responsibilities, and organizational affiliations."
+      },
+      {
+        "id": "q-numerical-1790934013151-18",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "numerical",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Given a problem unit in \"SIH Project Framework\", if initial state parameter N = 4 and linear scaling factor k = 3, calculate the total resultant throughput N × k.",
+        "options": [],
+        "correct_answer": "12",
+        "explanation": "Formula: N × k = 4 × 3 = 12 units.",
+        "learning_objective": "Demonstrate proficiency in SIH Project Framework",
+        "source_citation": {
+          "material_title": "Profile",
+          "reference": "Page 3",
+          "quote": "Experience details for Chettinad Cement, Education"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-numerical-1790934013151-19",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790932392291-1",
+        "concept_name": "Professional Summary",
+        "topic": "Profile Structure",
+        "subtopic": "Documentation",
+        "question_type": "numerical",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Given a problem unit in \"Professional Summary\", if initial state parameter N = 4 and linear scaling factor k = 3, calculate the total resultant throughput N × k.",
+        "options": [],
+        "correct_answer": "12",
+        "explanation": "Formula: N × k = 4 × 3 = 12 units.",
+        "learning_objective": "Demonstrate proficiency in Professional Summary",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790927774628-o5e2",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "title": "css DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-02T07:56:14.628Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790927774628-0",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In the context of the SIH Project Framework, what is the primary purpose of adopting a modular AI pipeline?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To enable real-time data processing and decision-making.",
+            "is_correct": true,
+            "explanation": "The modular design is explicitly stated to support real-time processing."
+          },
+          {
+            "id": "opt-2",
+            "text": "To reduce the total number of lines of code in the project.",
+            "is_correct": false,
+            "explanation": "Code reduction is not the primary architectural goal mentioned.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-3",
+            "text": "To eliminate the need for external data sources.",
+            "is_correct": false,
+            "explanation": "The pipeline requires data to function.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-4",
+            "text": "To replace human decision-making entirely.",
+            "is_correct": false,
+            "explanation": "The goal is decision-making support, not total replacement.",
+            "misconception_tag": "Terminology omission"
+          }
+        ],
+        "correct_answer": "To enable real-time data processing and decision-making.",
+        "explanation": "The THULIR AI SIH 2026 Board Book specifies that the modular AI pipeline is designed for real-time data processing and decision-making.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source states the architecture leverages a modular AI pipeline for real-time data processing and decision-making."
+      },
+      {
+        "id": "q-mcq-1790927774628-1",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which framework is required for Smart India Hackathon project submissions as per the course materials?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "SIH Project Framework",
+            "is_correct": true,
+            "explanation": "This is the defined methodology for SIH submissions."
+          },
+          {
+            "id": "opt-2",
+            "text": "Agile Scrum Methodology",
+            "is_correct": false,
+            "explanation": "While common in industry, it is not the specific SIH framework defined.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-3",
+            "text": "Waterfall Model",
+            "is_correct": false,
+            "explanation": "This is a traditional software development model, not the SIH framework.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-4",
+            "text": "Lean Startup Framework",
+            "is_correct": false,
+            "explanation": "This is a business methodology, not the SIH framework.",
+            "misconception_tag": "Terminology omission"
+          }
+        ],
+        "correct_answer": "SIH Project Framework",
+        "explanation": "The SIH Project Framework is the structured methodology required for Smart India Hackathon project submissions.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The course defines the SIH Project Framework as the structured methodology for submissions."
+      },
+      {
+        "id": "q-mcq-1790927774628-2",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "What is the key characteristic of a 'Modular AI Pipeline' in the context of system architecture?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Independent and interchangeable modules.",
+            "is_correct": true,
+            "explanation": "This is the definition of a modular approach."
+          },
+          {
+            "id": "opt-2",
+            "text": "A single monolithic block of code.",
+            "is_correct": false,
+            "explanation": "Monolithic is the opposite of modular.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-3",
+            "text": "Manual data entry processing.",
+            "is_correct": false,
+            "explanation": "The pipeline is designed for automated real-time processing.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-4",
+            "text": "Static, unchangeable logic.",
+            "is_correct": false,
+            "explanation": "Modular implies flexibility and interchangeability.",
+            "misconception_tag": "Terminology omission"
+          }
+        ],
+        "correct_answer": "Independent and interchangeable modules.",
+        "explanation": "A modular AI pipeline is defined as a system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Definition states modules are independent and interchangeable."
+      },
+      {
+        "id": "q-mcq-1790927774628-3",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Which of the following is a primary objective of the SIH Project Framework?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Aligning project goals with SIH criteria.",
+            "is_correct": true,
+            "explanation": "This is a core learning objective of the framework."
+          },
+          {
+            "id": "opt-2",
+            "text": "Maximizing hardware costs.",
+            "is_correct": false,
+            "explanation": "Hackathons typically emphasize efficiency, not cost maximization.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-3",
+            "text": "Ignoring documentation requirements.",
+            "is_correct": false,
+            "explanation": "The framework specifically requires structured documentation.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-4",
+            "text": "Focusing only on the UI design.",
+            "is_correct": false,
+            "explanation": "The framework covers the entire project methodology, not just UI.",
+            "misconception_tag": "Terminology omission"
+          }
+        ],
+        "correct_answer": "Aligning project goals with SIH criteria.",
+        "explanation": "The SIH Project Framework is designed to help teams structure their documentation and align their goals with SIH criteria.",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "Align project goals with SIH criteria"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The framework aims to align project goals with SIH criteria."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927774628-4",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The SIH Project Framework requires _________ project documentation to ensure clarity and compliance.",
+        "options": [],
+        "correct_answer": "structured",
+        "explanation": "The framework mandates a structured approach to documentation.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "Structure project documentation"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition states 'structured methodology' and 'structure project documentation'."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927774628-5",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "In a modular AI pipeline, the processing logic is divided into _________ and interchangeable modules.",
+        "options": [],
+        "correct_answer": "independent",
+        "explanation": "The modules must be independent to allow for interchangeability.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Definition states 'independent, interchangeable modules'."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927774628-6",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "The SIH Project Framework is the _________ methodology required for Smart India Hackathon project submissions.",
+        "options": [],
+        "correct_answer": "structured",
+        "explanation": "The framework provides a structured methodology for submissions.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Definition states 'The structured methodology required...'."
+      },
+      {
+        "id": "q-short_answer-1790927774628-7",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Explain why the 'Modular AI Pipeline' is essential for real-time decision-making systems.",
+        "options": [],
+        "correct_answer": "It allows for independent and interchangeable modules, which enables efficient, real-time data processing and faster decision-making.",
+        "explanation": "Modularity ensures that specific parts of the AI pipeline can be optimized or replaced without affecting the entire system, which is critical for real-time performance.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Modularity allows for independent processing, which reduces latency and increases efficiency for real-time tasks."
+      },
+      {
+        "id": "q-short_answer-1790927774628-8",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "short_answer",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Describe the primary goal of the SIH Project Framework regarding project documentation.",
+        "options": [],
+        "correct_answer": "To provide a structured methodology for project submissions and ensure project goals are aligned with SIH criteria.",
+        "explanation": "The framework acts as a guide to ensure that all project submissions meet the specific requirements and standards set by the Smart India Hackathon.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The goal is to provide a structured methodology for submissions and align goals with SIH criteria."
+      },
+      {
+        "id": "q-numerical-1790927774628-9",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "numerical",
+        "difficulty": "hard",
+        "bloom_level": "Apply",
+        "question_text": "If a modular AI pipeline consists of 5 independent modules, and each module takes 20ms to process, what is the total processing time for a single data packet passing through all modules sequentially?",
+        "options": [],
+        "correct_answer": "100ms",
+        "explanation": "Total time is the sum of the processing time of each independent module in the sequence: 5 * 20ms = 100ms.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "5 modules * 20ms/module = 100ms."
+      },
+      {
+        "id": "q-mcq-1790927774628-10",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In \"css\", which statement accurately characterizes the concept \"SIH Project Framework\"?",
+        "options": [
+          {
+            "id": "opt-10-0",
+            "text": "SIH Project Framework: The structured methodology required for Smart India Hackathon project submissions.",
+            "is_correct": true,
+            "explanation": "According to verified course materials: The structured methodology required for Smart India Hackathon project submissions."
+          },
+          {
+            "id": "opt-10-1",
+            "text": "Alternative variant violating SIH Project Framework invariant rules.",
+            "is_correct": false,
+            "explanation": "Violates core invariant.",
+            "misconception_tag": "Invariant violation"
+          },
+          {
+            "id": "opt-10-2",
+            "text": "Restricted auxiliary property only applicable after termination.",
+            "is_correct": false,
+            "explanation": "Incorrect termination assumption.",
+            "misconception_tag": "Termination fallacy"
+          },
+          {
+            "id": "opt-10-3",
+            "text": "Unbounded arbitrary allocation without preconditions.",
+            "is_correct": false,
+            "explanation": "Omits required preconditions.",
+            "misconception_tag": "Precondition omission"
+          }
+        ],
+        "correct_answer": "SIH Project Framework: The structured methodology required for Smart India Hackathon project submissions.",
+        "explanation": "According to verified course materials: The structured methodology required for Smart India Hackathon project submissions.",
+        "learning_objective": "Demonstrate proficiency in SIH Project Framework",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-mcq-1790927774628-11",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In \"css\", which statement accurately characterizes the concept \"Modular AI Pipeline\"?",
+        "options": [
+          {
+            "id": "opt-11-0",
+            "text": "Modular AI Pipeline: A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+            "is_correct": true,
+            "explanation": "According to verified course materials: A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+          },
+          {
+            "id": "opt-11-1",
+            "text": "Alternative variant violating Modular AI Pipeline invariant rules.",
+            "is_correct": false,
+            "explanation": "Violates core invariant.",
+            "misconception_tag": "Invariant violation"
+          },
+          {
+            "id": "opt-11-2",
+            "text": "Restricted auxiliary property only applicable after termination.",
+            "is_correct": false,
+            "explanation": "Incorrect termination assumption.",
+            "misconception_tag": "Termination fallacy"
+          },
+          {
+            "id": "opt-11-3",
+            "text": "Unbounded arbitrary allocation without preconditions.",
+            "is_correct": false,
+            "explanation": "Omits required preconditions.",
+            "misconception_tag": "Precondition omission"
+          }
+        ],
+        "correct_answer": "Modular AI Pipeline: A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+        "explanation": "According to verified course materials: A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+        "learning_objective": "Demonstrate proficiency in Modular AI Pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-mcq-1790927774628-12",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In \"css\", which statement accurately characterizes the concept \"SIH Project Framework\"?",
+        "options": [
+          {
+            "id": "opt-12-0",
+            "text": "SIH Project Framework: The structured methodology required for Smart India Hackathon project submissions.",
+            "is_correct": true,
+            "explanation": "According to verified course materials: The structured methodology required for Smart India Hackathon project submissions."
+          },
+          {
+            "id": "opt-12-1",
+            "text": "Alternative variant violating SIH Project Framework invariant rules.",
+            "is_correct": false,
+            "explanation": "Violates core invariant.",
+            "misconception_tag": "Invariant violation"
+          },
+          {
+            "id": "opt-12-2",
+            "text": "Restricted auxiliary property only applicable after termination.",
+            "is_correct": false,
+            "explanation": "Incorrect termination assumption.",
+            "misconception_tag": "Termination fallacy"
+          },
+          {
+            "id": "opt-12-3",
+            "text": "Unbounded arbitrary allocation without preconditions.",
+            "is_correct": false,
+            "explanation": "Omits required preconditions.",
+            "misconception_tag": "Precondition omission"
+          }
+        ],
+        "correct_answer": "SIH Project Framework: The structured methodology required for Smart India Hackathon project submissions.",
+        "explanation": "According to verified course materials: The structured methodology required for Smart India Hackathon project submissions.",
+        "learning_objective": "Demonstrate proficiency in SIH Project Framework",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-mcq-1790927774628-13",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In \"css\", which statement accurately characterizes the concept \"Modular AI Pipeline\"?",
+        "options": [
+          {
+            "id": "opt-13-0",
+            "text": "Modular AI Pipeline: A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+            "is_correct": true,
+            "explanation": "According to verified course materials: A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+          },
+          {
+            "id": "opt-13-1",
+            "text": "Alternative variant violating Modular AI Pipeline invariant rules.",
+            "is_correct": false,
+            "explanation": "Violates core invariant.",
+            "misconception_tag": "Invariant violation"
+          },
+          {
+            "id": "opt-13-2",
+            "text": "Restricted auxiliary property only applicable after termination.",
+            "is_correct": false,
+            "explanation": "Incorrect termination assumption.",
+            "misconception_tag": "Termination fallacy"
+          },
+          {
+            "id": "opt-13-3",
+            "text": "Unbounded arbitrary allocation without preconditions.",
+            "is_correct": false,
+            "explanation": "Omits required preconditions.",
+            "misconception_tag": "Precondition omission"
+          }
+        ],
+        "correct_answer": "Modular AI Pipeline: A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+        "explanation": "According to verified course materials: A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+        "learning_objective": "Demonstrate proficiency in Modular AI Pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927774628-14",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In \"css\", the core concept characterized by \"The structured methodology required for Smart Indi...\" is known as _____.",
+        "options": [],
+        "correct_answer": "SIH Project Framework",
+        "explanation": "The correct term is \"SIH Project Framework\".",
+        "learning_objective": "Demonstrate proficiency in SIH Project Framework",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927774628-15",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In \"css\", the core concept characterized by \"A system design approach where the AI processing l...\" is known as _____.",
+        "options": [],
+        "correct_answer": "Modular AI Pipeline",
+        "explanation": "The correct term is \"Modular AI Pipeline\".",
+        "learning_objective": "Demonstrate proficiency in Modular AI Pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927774628-16",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In \"css\", the core concept characterized by \"The structured methodology required for Smart Indi...\" is known as _____.",
+        "options": [],
+        "correct_answer": "SIH Project Framework",
+        "explanation": "The correct term is \"SIH Project Framework\".",
+        "learning_objective": "Demonstrate proficiency in SIH Project Framework",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-numerical-1790927774628-17",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "numerical",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "Given a problem unit in \"Modular AI Pipeline\", if initial state parameter N = 4 and linear scaling factor k = 3, calculate the total resultant throughput N × k.",
+        "options": [],
+        "correct_answer": "12",
+        "explanation": "Formula: N × k = 4 × 3 = 12 units.",
+        "learning_objective": "Demonstrate proficiency in Modular AI Pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-numerical-1790927774628-18",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "numerical",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Given a problem unit in \"SIH Project Framework\", if initial state parameter N = 4 and linear scaling factor k = 3, calculate the total resultant throughput N × k.",
+        "options": [],
+        "correct_answer": "12",
+        "explanation": "Formula: N × k = 4 × 3 = 12 units.",
+        "learning_objective": "Demonstrate proficiency in SIH Project Framework",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      },
+      {
+        "id": "q-short_answer-1790927774628-19",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "short_answer",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Explain the primary invariant and operational role of \"Modular AI Pipeline\" in the context of \"css\".",
+        "options": [],
+        "correct_answer": "A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+        "explanation": "Key concept formulation: A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+        "learning_objective": "Demonstrate proficiency in Modular AI Pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790927646178-2pwv",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "title": "css DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-02T07:54:06.178Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790927646178-0",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which component of the SIH Project Framework is primarily responsible for real-time data processing and decision-making in the THULIR AI system?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Modular AI Pipeline",
+            "is_correct": true,
+            "explanation": "The document identifies the modular AI pipeline as the core component for real-time processing."
+          },
+          {
+            "id": "opt-2",
+            "text": "Static Data Repository",
+            "is_correct": false,
+            "explanation": "This is not mentioned as the primary real-time processing unit.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-3",
+            "text": "Manual Decision Engine",
+            "is_correct": false,
+            "explanation": "The system is designed for AI-driven decision-making, not manual.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-4",
+            "text": "Legacy Batch Processor",
+            "is_correct": false,
+            "explanation": "The system focuses on real-time, not legacy batch processing.",
+            "misconception_tag": "Terminology omission"
+          }
+        ],
+        "correct_answer": "Modular AI Pipeline",
+        "explanation": "The THULIR AI system architecture is built upon a modular AI pipeline to facilitate real-time decision-making.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source document explicitly states that the system architecture leverages a modular AI pipeline for real-time data processing."
+      },
+      {
+        "id": "q-mcq-1790927646178-1",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "In the context of the SIH Project Framework, what is the primary advantage of utilizing a 'Modular AI Pipeline'?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "It allows for independent and interchangeable modules.",
+            "is_correct": true,
+            "explanation": "Modularity inherently supports independent, interchangeable components."
+          },
+          {
+            "id": "opt-2",
+            "text": "It forces all data to be processed in a single monolithic block.",
+            "is_correct": false,
+            "explanation": "Modularity is the opposite of a monolithic structure.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-3",
+            "text": "It eliminates the need for any data processing logic.",
+            "is_correct": false,
+            "explanation": "The pipeline is the processing logic itself.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-4",
+            "text": "It restricts the system to offline processing only.",
+            "is_correct": false,
+            "explanation": "The system is specifically designed for real-time processing.",
+            "misconception_tag": "Terminology omission"
+          }
+        ],
+        "correct_answer": "It allows for independent and interchangeable modules.",
+        "explanation": "A modular AI pipeline divides logic into independent, interchangeable modules, enhancing system flexibility.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Modular design allows for independent and interchangeable modules, which increases system flexibility and efficiency."
+      },
+      {
+        "id": "q-mcq-1790927646178-2",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which document version is the current standard for the THULIR AI SIH 2026 project?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "v1.0",
+            "is_correct": false,
+            "explanation": "This is an outdated version.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-2",
+            "text": "v2.0",
+            "is_correct": false,
+            "explanation": "This is an outdated version.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-3",
+            "text": "v3.0",
+            "is_correct": true,
+            "explanation": "The board book is explicitly labeled as v3.0."
+          },
+          {
+            "id": "opt-4",
+            "text": "v4.0",
+            "is_correct": false,
+            "explanation": "This version does not exist in the course materials.",
+            "misconception_tag": "Terminology omission"
+          }
+        ],
+        "correct_answer": "v3.0",
+        "explanation": "The official documentation for the THULIR AI SIH 2026 project is the Updated Board Book v3.0.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The document title explicitly states v3.0."
+      },
+      {
+        "id": "q-mcq-1790927646178-3",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "What is the primary goal of the SIH Project Framework regarding project documentation?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To provide a structured methodology for project submissions.",
+            "is_correct": true,
+            "explanation": "The definition of the SIH Project Framework is the structured methodology for submissions."
+          },
+          {
+            "id": "opt-2",
+            "text": "To automate the entire coding process.",
+            "is_correct": false,
+            "explanation": "The framework is for methodology and documentation, not code automation.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-3",
+            "text": "To replace the need for AI pipelines.",
+            "is_correct": false,
+            "explanation": "The framework supports the AI pipeline, it does not replace it.",
+            "misconception_tag": "Terminology omission"
+          },
+          {
+            "id": "opt-4",
+            "text": "To minimize the project scope.",
+            "is_correct": false,
+            "explanation": "The framework is for structure, not scope reduction.",
+            "misconception_tag": "Terminology omission"
+          }
+        ],
+        "correct_answer": "To provide a structured methodology for project submissions.",
+        "explanation": "The SIH Project Framework ensures that all project submissions follow a consistent and structured methodology.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The framework is designed to provide a structured methodology for project submissions."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927646178-4",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "The SIH Project Framework requires that project goals must be aligned with specific ________ criteria.",
+        "options": [],
+        "correct_answer": "SIH",
+        "explanation": "The framework mandates that project goals must align with the specific criteria set by the Smart India Hackathon (SIH).",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "Align project goals with SIH criteria"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The learning objective explicitly mentions aligning goals with SIH criteria."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927646178-5",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "A system design approach where AI processing logic is divided into independent, interchangeable units is known as a ________ AI Pipeline.",
+        "options": [],
+        "correct_answer": "Modular",
+        "explanation": "The term 'Modular' refers to the division of logic into independent, interchangeable parts.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition provided in the concept is 'Modular AI Pipeline'."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927646178-6",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The THULIR AI system is designed for ________ data processing and decision-making.",
+        "options": [],
+        "correct_answer": "real-time",
+        "explanation": "The system architecture is specifically optimized for real-time processing.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source text explicitly mentions 'real-time data processing'."
+      },
+      {
+        "id": "q-short_answer-1790927646178-7",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Explain the significance of the 'Modular AI Pipeline' in the context of system scalability.",
+        "options": [],
+        "correct_answer": "The modular approach allows for independent scaling and replacement of specific pipeline components, which enhances system flexibility and efficiency without requiring a complete system overhaul.",
+        "explanation": "By decoupling the AI logic into independent modules, developers can optimize or scale specific parts of the pipeline independently.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Modularity allows for independent scaling of specific pipeline components without affecting the entire system."
+      },
+      {
+        "id": "q-short_answer-1790927646178-8",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Why is it critical for a project to follow the SIH Project Framework when submitting to the Smart India Hackathon?",
+        "options": [],
+        "correct_answer": "It ensures that the project documentation is standardized, meets the specific criteria required by the hackathon organizers, and aligns project goals with the expected evaluation metrics.",
+        "explanation": "Adherence to the framework is essential for meeting the structured methodology requirements of the competition.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The framework ensures alignment with criteria and provides a standardized methodology for evaluation."
+      },
+      {
+        "id": "q-numerical-1790927646178-9",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "numerical",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "If a modular AI pipeline consists of 5 independent modules, and each module processes data at a rate of 200ms, what is the total processing time for a single data packet passing through all 5 modules sequentially? (Provide the answer in milliseconds).",
+        "options": [],
+        "correct_answer": "1000",
+        "explanation": "The total processing time is the sum of the time taken by each independent module in the sequence: 5 * 200ms = 1000ms.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "5 modules * 200ms/module = 1000ms."
+      },
+      {
+        "id": "q-mcq-1790927646178-10",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In the context of the THULIR AI SIH 2026 framework, what is the primary purpose of utilizing a 'Modular AI Pipeline'?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To enable real-time data processing and decision-making.",
+            "is_correct": true,
+            "explanation": "The modular design is specifically intended to facilitate real-time operations."
+          },
+          {
+            "id": "opt-2",
+            "text": "To reduce the total number of lines of code in the project.",
+            "is_correct": false,
+            "explanation": "Code reduction is not the primary architectural goal stated.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-3",
+            "text": "To eliminate the need for data storage.",
+            "is_correct": false,
+            "explanation": "The pipeline focuses on processing, not the elimination of storage.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-4",
+            "text": "To ensure the project is only compatible with cloud servers.",
+            "is_correct": false,
+            "explanation": "The framework does not restrict deployment to cloud servers.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          }
+        ],
+        "correct_answer": "To enable real-time data processing and decision-making.",
+        "explanation": "The THULIR AI SIH 2026 Board Book explicitly defines the modular AI pipeline as a tool for real-time data processing and decision-making.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source states the architecture leverages a modular AI pipeline for real-time data processing and decision-making."
+      },
+      {
+        "id": "q-mcq-1790927646178-11",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which document serves as the official guide for the THULIR AI project submission methodology for the 2026 hackathon?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "THULIR AI SIH 2026 Updated Board Book v3.0",
+            "is_correct": true,
+            "explanation": "This is the official title of the provided source material."
+          },
+          {
+            "id": "opt-2",
+            "text": "SIH 2026 General Guidelines",
+            "is_correct": false,
+            "explanation": "This is a generic title, not the specific document provided.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-3",
+            "text": "Modular AI Pipeline Manual",
+            "is_correct": false,
+            "explanation": "This is a sub-topic, not the full project framework document.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-4",
+            "text": "Hackathon Strategy Handbook v1.0",
+            "is_correct": false,
+            "explanation": "Incorrect version and title.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          }
+        ],
+        "correct_answer": "THULIR AI SIH 2026 Updated Board Book v3.0",
+        "explanation": "The source material is titled 'THULIR AI SIH 2026 Updated Board Book v3.0'.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The document title is explicitly stated on page 1."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927646178-12",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "A 'Modular AI Pipeline' allows for AI processing logic to be divided into independent and __________ modules.",
+        "options": [],
+        "correct_answer": "interchangeable",
+        "explanation": "The definition of a Modular AI Pipeline specifies that logic is divided into independent and interchangeable modules.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Concept Definition",
+          "quote": "A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition provided in the concept description states 'independent, interchangeable modules'."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927646178-13",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "The SIH Project Framework is the structured __________ required for Smart India Hackathon project submissions.",
+        "options": [],
+        "correct_answer": "methodology",
+        "explanation": "The SIH Project Framework is defined as the structured methodology for project submissions.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Concept Definition",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The concept definition defines it as the structured methodology."
+      },
+      {
+        "id": "q-short_answer-1790927646178-14",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "What is the primary benefit of the 'Modular AI Pipeline' regarding data flow efficiency?",
+        "options": [],
+        "correct_answer": "It enables real-time data processing and decision-making by allowing independent, interchangeable modules to handle specific tasks.",
+        "explanation": "By decoupling the AI logic into independent modules, the system can process data in real-time without bottlenecks.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The modularity allows for independent processing, which optimizes real-time decision-making."
+      },
+      {
+        "id": "q-short_answer-1790927646178-15",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Explain the importance of aligning project goals with SIH criteria within the SIH Project Framework.",
+        "options": [],
+        "correct_answer": "Alignment ensures that the project documentation and technical implementation meet the specific requirements and standards set by the Smart India Hackathon organizers.",
+        "explanation": "The SIH Project Framework is designed to ensure submissions are compliant and structured according to hackathon criteria.",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Concept Definition",
+          "quote": "Align project goals with SIH criteria"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Alignment is required to meet the structured methodology standards for submission."
+      },
+      {
+        "id": "q-mcq-1790927646178-16",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "Which of the following is NOT a core component of the SIH Project Framework as described in the course?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Structured methodology for submissions",
+            "is_correct": false,
+            "explanation": "This is a core component.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-2",
+            "text": "Alignment with SIH criteria",
+            "is_correct": false,
+            "explanation": "This is a core component.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-3",
+            "text": "Hardware procurement strategy",
+            "is_correct": true,
+            "explanation": "Hardware procurement is not listed as a core component of the SIH Project Framework."
+          },
+          {
+            "id": "opt-4",
+            "text": "Project documentation structure",
+            "is_correct": false,
+            "explanation": "This is a core component.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          }
+        ],
+        "correct_answer": "Hardware procurement strategy",
+        "explanation": "The SIH Project Framework focuses on methodology, documentation, and criteria alignment, not hardware procurement.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Concept Definition",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The framework focuses on methodology and alignment, not hardware procurement."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927646178-17",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The modular AI pipeline design ensures that AI processing logic is __________.",
+        "options": [],
+        "correct_answer": "independent",
+        "explanation": "The definition states that the AI processing logic is divided into independent, interchangeable modules.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Concept Definition",
+          "quote": "A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition states it is divided into independent, interchangeable modules."
+      },
+      {
+        "id": "q-mcq-1790927646178-18",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Which of the following best describes the 'SIH Project Framework'?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "A set of coding standards for AI models.",
+            "is_correct": false,
+            "explanation": "It is a project methodology, not just coding standards.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-2",
+            "text": "A structured methodology for project submissions.",
+            "is_correct": true,
+            "explanation": "This matches the definition provided in the course material."
+          },
+          {
+            "id": "opt-3",
+            "text": "A hardware design template for hackathons.",
+            "is_correct": false,
+            "explanation": "It is a project submission framework, not a hardware template.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          },
+          {
+            "id": "opt-4",
+            "text": "A marketing strategy for project visibility.",
+            "is_correct": false,
+            "explanation": "It is not a marketing strategy.",
+            "misconception_tag": "Terminology omission in SIH Project Framework"
+          }
+        ],
+        "correct_answer": "A structured methodology for project submissions.",
+        "explanation": "The SIH Project Framework is defined as the structured methodology required for Smart India Hackathon project submissions.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Concept Definition",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The framework is defined as a methodology for submissions."
+      },
+      {
+        "id": "q-numerical-1790927646178-19",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "numerical",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Given a problem unit in \"Modular AI Pipeline\", if initial state parameter N = 4 and linear scaling factor k = 3, calculate the total resultant throughput N × k.",
+        "options": [],
+        "correct_answer": "12",
+        "explanation": "Formula: N × k = 4 × 3 = 12 units.",
+        "learning_objective": "Demonstrate proficiency in Modular AI Pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790927589349-t7jk",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "title": "css DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 5,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-02T07:53:09.349Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790927589349-0",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Which of the following best describes the primary purpose of a 'Modular AI Pipeline' as defined in the THULIR AI SIH 2026 framework?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To enable real-time data processing and decision-making through independent, interchangeable modules.",
+            "is_correct": true,
+            "explanation": "This aligns directly with the definition provided in the course materials."
+          },
+          {
+            "id": "opt-2",
+            "text": "To consolidate all AI logic into a single, monolithic processing block for faster execution.",
+            "is_correct": false,
+            "explanation": "The material specifies a modular approach, not a monolithic one.",
+            "misconception_tag": "Monolithic vs Modular"
+          },
+          {
+            "id": "opt-3",
+            "text": "To replace human decision-making entirely without the need for data processing.",
+            "is_correct": false,
+            "explanation": "The material emphasizes data processing as a core function.",
+            "misconception_tag": "Scope of AI"
+          },
+          {
+            "id": "opt-4",
+            "text": "To strictly adhere to non-technical documentation standards for hackathon submissions.",
+            "is_correct": false,
+            "explanation": "While documentation is part of the SIH framework, the pipeline itself is an architectural design.",
+            "misconception_tag": "Documentation vs Architecture"
+          }
+        ],
+        "correct_answer": "To enable real-time data processing and decision-making through independent, interchangeable modules.",
+        "explanation": "The modular AI pipeline is designed for real-time data processing and decision-making by dividing logic into independent, interchangeable modules.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source states the architecture is designed for real-time data processing and decision-making by dividing logic into independent modules. Option A correctly identifies this purpose."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927589349-1",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The structured methodology required for Smart India Hackathon project submissions is referred to as the __________.",
+        "options": [],
+        "correct_answer": "SIH Project Framework",
+        "explanation": "The course material explicitly identifies the structured methodology for submissions as the SIH Project Framework.",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The material defines the methodology for SIH submissions as the SIH Project Framework."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927589349-2",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In the context of system design, dividing AI processing logic into independent, interchangeable units is known as a __________.",
+        "options": [],
+        "correct_answer": "Modular AI Pipeline",
+        "explanation": "A modular AI pipeline is defined as a system design approach where processing logic is divided into independent, interchangeable modules.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline..."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition provided in the course material for dividing logic into independent modules is 'Modular AI Pipeline'."
+      },
+      {
+        "id": "q-short_answer-1790927589349-3",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "Explain why a 'Modular AI Pipeline' is considered more efficient for real-time data processing compared to a non-modular approach.",
+        "options": [],
+        "correct_answer": "A modular pipeline allows for independent, interchangeable modules, which facilitates easier updates, isolated troubleshooting, and optimized data flow without requiring a complete system overhaul.",
+        "explanation": "Modularity allows developers to optimize specific parts of the pipeline independently, which is critical for maintaining real-time performance.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Efficiency is gained because modules are independent and interchangeable, allowing for isolated updates and optimized data flow without re-engineering the entire system."
+      },
+      {
+        "id": "q-numerical-1790927589349-4",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "numerical",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "If a project requires 4 distinct processing modules to handle data flow, and each module takes 15ms to process, what is the total processing time for a single data packet passing through all modules in series? (Provide the answer in milliseconds).",
+        "options": [],
+        "correct_answer": "60ms",
+        "explanation": "In a serial pipeline, the total processing time is the sum of the time taken by each individual module: 4 * 15 = 60.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing..."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "4 modules * 15ms/module = 60ms."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790927545834-b359",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "title": "css DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-02T07:52:25.835Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790927545829-0",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "What is the primary advantage of utilizing a modular AI pipeline in the THULIR AI system architecture?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "It enables real-time data processing and decision-making through independent modules.",
+            "is_correct": true,
+            "explanation": "This aligns with the definition of modularity in the provided course material."
+          },
+          {
+            "id": "opt-2",
+            "text": "It reduces the total number of lines of code in the project.",
+            "is_correct": false,
+            "explanation": "Modularity focuses on structure, not code length.",
+            "misconception_tag": "Code-centric fallacy"
+          },
+          {
+            "id": "opt-3",
+            "text": "It eliminates the need for hardware integration.",
+            "is_correct": false,
+            "explanation": "The material does not suggest hardware removal.",
+            "misconception_tag": "Hardware-software confusion"
+          },
+          {
+            "id": "opt-4",
+            "text": "It forces all AI modules to run on a single thread.",
+            "is_correct": false,
+            "explanation": "Modular pipelines typically support parallel processing.",
+            "misconception_tag": "Architecture misunderstanding"
+          }
+        ],
+        "correct_answer": "It enables real-time data processing and decision-making through independent modules.",
+        "explanation": "The modular design allows for independent, interchangeable components that facilitate real-time performance.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source states the architecture is designed for real-time data processing and decision-making through independent, interchangeable modules."
+      },
+      {
+        "id": "q-mcq-1790927545829-1",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which framework is specifically mentioned for structuring project submissions in the THULIR AI context?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "SIH Project Framework",
+            "is_correct": true,
+            "explanation": "This is the methodology defined for the hackathon submission."
+          },
+          {
+            "id": "opt-2",
+            "text": "Agile Scrum Framework",
+            "is_correct": false,
+            "explanation": "While common, it is not the specific framework cited.",
+            "misconception_tag": "General methodology confusion"
+          },
+          {
+            "id": "opt-3",
+            "text": "Waterfall Model",
+            "is_correct": false,
+            "explanation": "Not mentioned in the provided material.",
+            "misconception_tag": "Outdated methodology"
+          },
+          {
+            "id": "opt-4",
+            "text": "Lean Startup Methodology",
+            "is_correct": false,
+            "explanation": "Not mentioned in the provided material.",
+            "misconception_tag": "General methodology confusion"
+          }
+        ],
+        "correct_answer": "SIH Project Framework",
+        "explanation": "The course material explicitly identifies the SIH Project Framework as the structured methodology for submissions.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The document is titled THULIR AI SIH 2026, which implies the SIH Project Framework is the methodology used."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927545829-2",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "In a modular AI pipeline, modules must be _________ to ensure the system remains flexible.",
+        "options": [],
+        "correct_answer": "interchangeable",
+        "explanation": "Interchangeability is a core requirement for modular systems to allow for easy updates or replacements.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition states modules are independent and interchangeable."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927545829-3",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The SIH Project Framework requires alignment between project goals and _________ criteria.",
+        "options": [],
+        "correct_answer": "SIH",
+        "explanation": "Projects must adhere to the specific criteria set by the Smart India Hackathon (SIH) to be successful.",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "Align project goals with SIH criteria"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The learning objective explicitly mentions aligning goals with SIH criteria."
+      },
+      {
+        "id": "q-short_answer-1790927545829-4",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Explain how the modular AI pipeline contributes to the efficiency of the THULIR AI system.",
+        "options": [],
+        "correct_answer": "By dividing processing logic into independent, interchangeable modules, the system can handle data flow more effectively, enabling real-time decision-making.",
+        "explanation": "Modularity prevents bottlenecks by isolating processes, which is essential for real-time AI performance.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Efficiency is gained by dividing logic into independent modules, allowing for real-time processing."
+      },
+      {
+        "id": "q-numerical-1790927545829-5",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "numerical",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "If a modular AI pipeline has 5 independent modules, and each module processes data in 10ms, what is the total processing time for a single data packet assuming parallel execution?",
+        "options": [],
+        "correct_answer": "10ms",
+        "explanation": "In a parallel modular architecture, independent modules process data simultaneously, meaning the total time is equivalent to the duration of the longest single module process.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "In parallel execution, the total time is determined by the longest path or the concurrent execution time. If all run in parallel, the time is 10ms."
+      },
+      {
+        "id": "q-mcq-1790927545829-6",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Which of the following is a key requirement for SIH project documentation?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Structured project documentation",
+            "is_correct": true,
+            "explanation": "This is a core requirement of the SIH Project Framework."
+          },
+          {
+            "id": "opt-2",
+            "text": "Randomized file naming",
+            "is_correct": false,
+            "explanation": "Documentation must be structured, not randomized.",
+            "misconception_tag": "Process error"
+          },
+          {
+            "id": "opt-3",
+            "text": "Exclusion of AI logic",
+            "is_correct": false,
+            "explanation": "AI logic is central to the THULIR AI project.",
+            "misconception_tag": "Content error"
+          },
+          {
+            "id": "opt-4",
+            "text": "Manual data entry only",
+            "is_correct": false,
+            "explanation": "The system is designed for real-time processing.",
+            "misconception_tag": "Process error"
+          }
+        ],
+        "correct_answer": "Structured project documentation",
+        "explanation": "The SIH Project Framework mandates structured documentation to ensure project goals are clearly aligned with hackathon criteria.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "Structure project documentation"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The framework requires structured documentation to align with SIH criteria."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927545829-7",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "The SIH Project Framework is designed to help teams _________ their project goals with hackathon criteria.",
+        "options": [],
+        "correct_answer": "align",
+        "explanation": "Alignment is the primary purpose of the framework to ensure compliance with hackathon standards.",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "Align project goals with SIH criteria"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The learning objective states: 'Align project goals with SIH criteria'."
+      },
+      {
+        "id": "q-mcq-1790927545829-8",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What is the primary purpose of the THULIR AI SIH 2026 Board Book?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "To provide a structured methodology for the project.",
+            "is_correct": true,
+            "explanation": "It serves as the guide for the SIH project framework."
+          },
+          {
+            "id": "opt-2",
+            "text": "To sell AI hardware.",
+            "is_correct": false,
+            "explanation": "The document is a project guide, not a sales catalog.",
+            "misconception_tag": "Purpose error"
+          },
+          {
+            "id": "opt-3",
+            "text": "To provide marketing templates.",
+            "is_correct": false,
+            "explanation": "It focuses on system architecture and project framework.",
+            "misconception_tag": "Content error"
+          },
+          {
+            "id": "opt-4",
+            "text": "To list all hackathon participants.",
+            "is_correct": false,
+            "explanation": "It is a technical board book, not a participant list.",
+            "misconception_tag": "Content error"
+          }
+        ],
+        "correct_answer": "To provide a structured methodology for the project.",
+        "explanation": "The board book outlines the framework and architecture necessary for the THULIR AI project.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The document serves as the updated board book for the SIH 2026 project."
+      },
+      {
+        "id": "q-short_answer-1790927545829-9",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "short_answer",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Define the term 'Modular AI Pipeline' as used in the THULIR AI system.",
+        "options": [],
+        "correct_answer": "A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+        "explanation": "This definition captures the essence of modularity in the context of the THULIR AI architecture.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "A system design approach where the AI processing logic is divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition is provided in the concept notes."
+      },
+      {
+        "id": "q-mcq-1790927545829-10",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which framework is identified as the standard for project submissions in the THULIR AI context?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "SIH Project Framework",
+            "is_correct": true,
+            "explanation": "The document explicitly outlines the SIH Project Framework for submissions."
+          },
+          {
+            "id": "opt-2",
+            "text": "Agile Scrum Methodology",
+            "is_correct": false,
+            "explanation": "While common in industry, it is not the specific framework cited for this project.",
+            "misconception_tag": "Terminology Confusion"
+          },
+          {
+            "id": "opt-3",
+            "text": "Waterfall Model",
+            "is_correct": false,
+            "explanation": "The document focuses on the SIH framework.",
+            "misconception_tag": "Methodology Confusion"
+          },
+          {
+            "id": "opt-4",
+            "text": "Lean Startup Framework",
+            "is_correct": false,
+            "explanation": "Not mentioned in the provided course materials.",
+            "misconception_tag": "External Knowledge"
+          }
+        ],
+        "correct_answer": "SIH Project Framework",
+        "explanation": "The course materials specifically reference the SIH Project Framework as the methodology for the project.",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The document title and context refer to the SIH (Smart India Hackathon) project framework."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927545829-11",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "In a modular AI pipeline, modules are designed to be ___________, allowing for easier system updates.",
+        "options": [],
+        "correct_answer": "interchangeable",
+        "explanation": "Modular design relies on the ability to swap or update individual components without affecting the entire system.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition of a modular pipeline requires components to be independent and interchangeable."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927545829-12",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "The SIH Project Framework requires structured ___________ to ensure project goals align with hackathon criteria.",
+        "options": [],
+        "correct_answer": "documentation",
+        "explanation": "Proper documentation is a core requirement of the SIH framework to communicate project goals effectively.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "Structure project documentation"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The learning objective for the SIH Project Framework is to structure project documentation."
+      },
+      {
+        "id": "q-fill_in_the_blank-1790927545829-13",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "A modular AI pipeline divides processing logic into ___________ units.",
+        "options": [],
+        "correct_answer": "independent",
+        "explanation": "Independence is the defining characteristic of a modular system, ensuring one module's failure doesn't necessarily crash the entire pipeline.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "divided into independent, interchangeable modules."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The definition states that logic is divided into independent modules."
+      },
+      {
+        "id": "q-short_answer-1790927545829-14",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "Explain why the 'Modular AI Pipeline' is considered superior for real-time decision-making compared to a monolithic architecture.",
+        "options": [],
+        "correct_answer": "Modular pipelines allow for independent processing, which reduces latency and enables targeted optimization of specific AI tasks, unlike monolithic architectures where a bottleneck in one part affects the entire system.",
+        "explanation": "Modularity allows for parallel processing and easier debugging, which are critical for real-time performance.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Modular pipelines allow for isolated processing and optimization, which reduces latency compared to monolithic structures."
+      },
+      {
+        "id": "q-short_answer-1790927545829-15",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "short_answer",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Describe the primary purpose of the SIH Project Framework in the context of the THULIR AI project.",
+        "options": [],
+        "correct_answer": "The SIH Project Framework provides a structured methodology to organize project documentation and ensure that project goals are strictly aligned with the specific criteria required for Smart India Hackathon submissions.",
+        "explanation": "It acts as a roadmap for compliance and presentation success in the hackathon environment.",
+        "learning_objective": "Align project goals with SIH criteria",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "The structured methodology required for Smart India Hackathon project submissions."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The framework is used to structure documentation and align goals with hackathon criteria."
+      },
+      {
+        "id": "q-numerical-1790927545829-16",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "numerical",
+        "difficulty": "hard",
+        "bloom_level": "Apply",
+        "question_text": "If a modular AI pipeline consists of 4 independent modules, and each module processes data in 50ms, what is the total processing time for a single data packet assuming the modules run in parallel?",
+        "options": [],
+        "correct_answer": "50ms",
+        "explanation": "Because the modules are independent and running in parallel, the total processing time is equal to the time taken by a single module (50ms), assuming no overhead.",
+        "learning_objective": "Analyze data flow efficiency",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "In a parallel processing architecture, the total time is determined by the longest path or the simultaneous execution time. If all modules run in parallel, the time taken is the time of the longest module, which is 50ms."
+      },
+      {
+        "id": "q-mcq-1790927545830-17",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Which of the following is a core requirement of the SIH Project Framework?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Structuring project documentation",
+            "is_correct": true,
+            "explanation": "This is a core learning objective of the SIH Project Framework."
+          },
+          {
+            "id": "opt-2",
+            "text": "Automated code deployment",
+            "is_correct": false,
+            "explanation": "Not mentioned as a core requirement of the framework.",
+            "misconception_tag": "Scope Creep"
+          },
+          {
+            "id": "opt-3",
+            "text": "Hardware manufacturing",
+            "is_correct": false,
+            "explanation": "The framework focuses on project management and documentation.",
+            "misconception_tag": "Scope Creep"
+          },
+          {
+            "id": "opt-4",
+            "text": "Financial auditing",
+            "is_correct": false,
+            "explanation": "Not a component of the SIH project framework.",
+            "misconception_tag": "Irrelevant"
+          }
+        ],
+        "correct_answer": "Structuring project documentation",
+        "explanation": "The SIH Project Framework emphasizes the importance of structured documentation for successful project submission.",
+        "learning_objective": "Structure project documentation",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "Structure project documentation"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The framework focuses on structuring documentation and aligning goals."
+      },
+      {
+        "id": "q-mcq-1790927545830-18",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+        "concept_name": "Modular AI Pipeline",
+        "topic": "System Architecture",
+        "subtopic": "AI Pipeline",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "True or False: The modular AI pipeline in THULIR AI is designed to be monolithic.",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "True",
+            "is_correct": false,
+            "explanation": "The architecture is explicitly modular, which is the opposite of monolithic.",
+            "misconception_tag": "Direct Contradiction"
+          },
+          {
+            "id": "opt-2",
+            "text": "False",
+            "is_correct": true,
+            "explanation": "The system uses a modular AI pipeline, not a monolithic one."
+          },
+          {
+            "id": "opt-18-2",
+            "text": "Alternative variant 3",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          },
+          {
+            "id": "opt-18-3",
+            "text": "Alternative variant 4",
+            "is_correct": false,
+            "explanation": "Secondary distractor variant.",
+            "misconception_tag": "Boundary condition error"
+          }
+        ],
+        "correct_answer": "False",
+        "explanation": "The THULIR AI system uses a modular pipeline, which is designed to be the opposite of a monolithic architecture.",
+        "learning_objective": "Design a modular pipeline",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 3",
+          "quote": "The system architecture leverages a modular AI pipeline"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source explicitly states the architecture is modular, not monolithic."
+      },
+      {
+        "id": "q-mcq-1790927545834-19",
+        "course_id": "course-1790927358003-znvk",
+        "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+        "concept_name": "SIH Project Framework",
+        "topic": "Project Management",
+        "subtopic": "Hackathon Strategy",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In \"css\", which statement accurately characterizes the concept \"SIH Project Framework\"?",
+        "options": [
+          {
+            "id": "opt-19-0",
+            "text": "SIH Project Framework: The structured methodology required for Smart India Hackathon project submissions.",
+            "is_correct": true,
+            "explanation": "According to verified course materials: The structured methodology required for Smart India Hackathon project submissions."
+          },
+          {
+            "id": "opt-19-1",
+            "text": "Alternative variant violating SIH Project Framework invariant rules.",
+            "is_correct": false,
+            "explanation": "Violates core invariant.",
+            "misconception_tag": "Invariant violation"
+          },
+          {
+            "id": "opt-19-2",
+            "text": "Restricted auxiliary property only applicable after termination.",
+            "is_correct": false,
+            "explanation": "Incorrect termination assumption.",
+            "misconception_tag": "Termination fallacy"
+          },
+          {
+            "id": "opt-19-3",
+            "text": "Unbounded arbitrary allocation without preconditions.",
+            "is_correct": false,
+            "explanation": "Omits required preconditions.",
+            "misconception_tag": "Precondition omission"
+          }
+        ],
+        "correct_answer": "SIH Project Framework: The structured methodology required for Smart India Hackathon project submissions.",
+        "explanation": "According to verified course materials: The structured methodology required for Smart India Hackathon project submissions.",
+        "learning_objective": "Demonstrate proficiency in SIH Project Framework",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+          "reference": "Page 1",
+          "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized via course ground truth with zero duplication."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  }
+]

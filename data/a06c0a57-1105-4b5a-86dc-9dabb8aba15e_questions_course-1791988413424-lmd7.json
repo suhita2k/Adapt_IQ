@@ -1,0 +1,663 @@
+[
+  {
+    "id": "q-mcq-1791993395251-0",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-1",
+    "concept_name": "Project Thulir Architecture",
+    "topic": "System Engineering",
+    "subtopic": "Architectural Design",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Which component in Project Thulir establishes the foundational system architecture and stakeholder framework designed for grassroots innovation management?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Project Thulir Architecture",
+        "is_correct": true,
+        "explanation": "Project Thulir Architecture specifically provides the foundational system architecture and stakeholder framework."
+      },
+      {
+        "id": "opt-2",
+        "text": "Innovation Pipeline Integration",
+        "is_correct": false,
+        "explanation": "This handles processing raw ideation inputs into deployment proposals.",
+        "misconception_tag": "pipeline_vs_architecture"
+      },
+      {
+        "id": "opt-3",
+        "text": "Deployment and Scalability Strategy",
+        "is_correct": false,
+        "explanation": "This focuses on infrastructure scaling blueprints and containerization patterns.",
+        "misconception_tag": "deployment_vs_architecture"
+      },
+      {
+        "id": "opt-4",
+        "text": "Security and Compliance Protocols",
+        "is_correct": false,
+        "explanation": "This governs data privacy and role-based access control.",
+        "misconception_tag": "security_vs_architecture"
+      }
+    ],
+    "correct_answer": "Project Thulir Architecture",
+    "explanation": "Project Thulir Architecture is the core conceptual module establishing the overall system invariant through structured data flow and module separation.",
+    "learning_objective": "Analyze the high-level system components of Project Thulir; Map stakeholder interactions to architectural boundaries",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 5",
+      "quote": "Foundational system architecture and stakeholder framework designed for grassroots innovation management."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "According to the course materials, Project Thulir Architecture is defined as the foundational system architecture and stakeholder framework designed for grassroots innovation management."
+  },
+  {
+    "id": "q-mcq-1791993395252-1",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-2",
+    "concept_name": "Innovation Pipeline Integration",
+    "topic": "Workflow Management",
+    "subtopic": "Pipeline Processing",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "In the context of the innovation workflow, what is the primary purpose of the end-to-end processing pipeline?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "To transform raw ideation inputs into validated deployment proposals through rigorous state validation rules.",
+        "is_correct": true,
+        "explanation": "This accurately reflects the definition of Innovation Pipeline Integration."
+      },
+      {
+        "id": "opt-2",
+        "text": "To configure load balancing parameters for high-availability cloud setups.",
+        "is_correct": false,
+        "explanation": "This describes deployment and scalability infrastructure tasks.",
+        "misconception_tag": "pipeline_vs_deployment"
+      },
+      {
+        "id": "opt-3",
+        "text": "To implement role-based access control matrices for platform users.",
+        "is_correct": false,
+        "explanation": "This pertains to security and compliance protocols.",
+        "misconception_tag": "pipeline_vs_security"
+      },
+      {
+        "id": "opt-4",
+        "text": "To aggregate telemetry transmission protocols over constrained cellular links.",
+        "is_correct": false,
+        "explanation": "This relates to telemetry transmission, not the core innovation pipeline workflow.",
+        "misconception_tag": "pipeline_vs_telemetry"
+      }
+    ],
+    "correct_answer": "To transform raw ideation inputs into validated deployment proposals through rigorous state validation rules.",
+    "explanation": "Innovation Pipeline Integration oversees the journey of an idea from ingestion to deployment proposals.",
+    "learning_objective": "Trace an innovation idea through ingestion and filtering stages; Apply stage-gate evaluation criteria to assess project viability",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 18",
+      "quote": "End-to-end processing pipeline that takes raw ideation inputs and transforms them into validated deployment proposals."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The pipeline takes raw ideation inputs and transforms them into validated deployment proposals by enforcing rigorous state validation rules."
+  },
+  {
+    "id": "q-mcq-1791993395252-2",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-3",
+    "concept_name": "Data Management and Evaluation Metrics",
+    "topic": "Analytics & Metrics",
+    "subtopic": "Impact Assessment",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "Which quantitative framework is utilized for assessing project impact, resource utilization, and feedback loops across administrative dashboards?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Data Management and Evaluation Metrics",
+        "is_correct": true,
+        "explanation": "This framework relies on metric aggregation invariants to ensure consistent reporting across administrative dashboards."
+      },
+      {
+        "id": "opt-2",
+        "text": "User Engagement and Collaboration Interfaces",
+        "is_correct": false,
+        "explanation": "This focuses on user experience and accessibility compliance.",
+        "misconception_tag": "metrics_vs_hci"
+      },
+      {
+        "id": "opt-3",
+        "text": "Project Thulir Architecture",
+        "is_correct": false,
+        "explanation": "This establishes high-level modular boundaries and stakeholder interfaces.",
+        "misconception_tag": "metrics_vs_architecture"
+      },
+      {
+        "id": "opt-4",
+        "text": "Security and Compliance Protocols",
+        "is_correct": false,
+        "explanation": "This handles encryption and role-based access control.",
+        "misconception_tag": "metrics_vs_security"
+      }
+    ],
+    "correct_answer": "Data Management and Evaluation Metrics",
+    "explanation": "The quantitative framework is formally named Data Management and Evaluation Metrics.",
+    "learning_objective": "Formulate key performance indicators for grassroots initiatives; Analyze aggregate data reports for anomaly detection",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Slide 12",
+      "quote": "Quantitative framework for assessing project impact, resource utilization, and feedback loops."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Data Management and Evaluation Metrics provide the quantitative framework for assessing impact, resource utilization, and feedback loops."
+  },
+  {
+    "id": "q-mcq-1791993395252-3",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-4",
+    "concept_name": "User Engagement and Collaboration Interfaces",
+    "topic": "Human-Computer Interaction",
+    "subtopic": "Interface Design",
+    "question_type": "mcq",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "What is the key design invariant enforced by User Engagement and Collaboration Interfaces to maximize participation among rural innovators and mentors?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Accessibility and low-latency interaction",
+        "is_correct": true,
+        "explanation": "The design invariant specifically guarantees accessibility and low-latency interaction for rural users."
+      },
+      {
+        "id": "opt-2",
+        "text": "Zero-downtime deployments and regional failovers",
+        "is_correct": false,
+        "explanation": "These are infrastructure and scalability strategy invariants.",
+        "misconception_tag": "hci_vs_deployment"
+      },
+      {
+        "id": "opt-3",
+        "text": "Rigorous state validation and stage-gate rules",
+        "is_correct": false,
+        "explanation": "These belong to the innovation pipeline workflow.",
+        "misconception_tag": "hci_vs_pipeline"
+      },
+      {
+        "id": "opt-4",
+        "text": "Strict metric aggregation and anomaly reporting",
+        "is_correct": false,
+        "explanation": "These are characteristics of the analytics and metrics framework.",
+        "misconception_tag": "hci_vs_metrics"
+      }
+    ],
+    "correct_answer": "Accessibility and low-latency interaction",
+    "explanation": "Rural user accessibility and low-latency interaction are the core invariants for User Engagement and Collaboration Interfaces.",
+    "learning_objective": "Evaluate interface accessibility compliance for diverse user bases; Design effective mentor-mentee interaction workflows",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Slide 25",
+      "quote": "The design invariant ensures accessibility and low-latency interaction."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The design invariant for User Engagement and Collaboration Interfaces ensures accessibility and low-latency interaction."
+  },
+  {
+    "id": "q-fill_in_the_blank-1791993395252-4",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-5",
+    "concept_name": "Security and Compliance Protocols",
+    "topic": "Information Security",
+    "subtopic": "Access Control",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The protocol invariant for safeguarding sensitive user submissions guarantees strict adherence to data protection standards using encryption, data privacy regulations, and ________ access control mechanisms.",
+    "options": [],
+    "correct_answer": "role-based",
+    "explanation": "Role-based access control (RBAC) mechanisms are a central part of the security and compliance protocols.",
+    "learning_objective": "Implement role-based access control matrices for platform users; Verify data encryption standards for stored intellectual property",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 34",
+      "quote": "Robust encryption, data privacy regulations, and role-based access control mechanisms that safeguard sensitive user submissions."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Security and Compliance Protocols rely on robust encryption, data privacy regulations, and role-based access control mechanisms."
+  },
+  {
+    "id": "q-fill_in_the_blank-1791993395252-5",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-6",
+    "concept_name": "Deployment and Scalability Strategy",
+    "topic": "Infrastructure",
+    "subtopic": "Cloud Deployment",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "To support growing user loads across multiple regions, infrastructure scaling blueprints rely on containerization patterns and ________ deployment layouts.",
+    "options": [],
+    "correct_answer": "containerized",
+    "explanation": "Containerized deployment layouts ensure zero-downtime deployments and fault tolerance across regions.",
+    "learning_objective": "Design a containerized deployment layout for cloud environments; Configure load balancing parameters for high-availability setups",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Slide 42",
+      "quote": "Infrastructure scaling blueprints and containerization patterns to support growing user loads across multiple regions."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Deployment and Scalability Strategy uses infrastructure scaling blueprints and containerization patterns to support growing loads."
+  },
+  {
+    "id": "q-fill_in_the_blank-1791993395252-6",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-2",
+    "concept_name": "Innovation Pipeline Integration",
+    "topic": "Workflow Management",
+    "subtopic": "Pipeline Processing",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "The end-to-end processing pipeline takes raw ideation inputs and transforms them into validated deployment proposals by enforcing rigorous ________ validation rules at each transition stage.",
+    "options": [],
+    "correct_answer": "state",
+    "explanation": "State validation rules ensure that ideas transition successfully through each stage of the pipeline.",
+    "learning_objective": "Trace an innovation idea through ingestion and filtering stages; Apply stage-gate evaluation criteria to assess project viability",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 18",
+      "quote": "The pipeline enforces rigorous state validation rules at each transition stage."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The innovation pipeline enforces rigorous state validation rules at each transition stage."
+  },
+  {
+    "id": "q-short_answer-1791993395252-7",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-1",
+    "concept_name": "Project Thulir Architecture",
+    "topic": "System Engineering",
+    "subtopic": "Architectural Design",
+    "question_type": "short_answer",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "Explain how Project Thulir Architecture achieves overall system invariance across its modular boundaries.",
+    "options": [],
+    "correct_answer": "Structured data flow and clear module separation.",
+    "explanation": "Module separation and structured data flow are essential to maintaining system invariants across stakeholder interfaces.",
+    "learning_objective": "Analyze the high-level system components of Project Thulir; Map stakeholder interactions to architectural boundaries",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 5",
+      "quote": "This component establishes the overall system invariant through structured data flow and module separation."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Project Thulir Architecture establishes system invariance through structured data flow and module separation between stakeholders and administrative components."
+  },
+  {
+    "id": "q-short_answer-1791993395252-8",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-4",
+    "concept_name": "User Engagement and Collaboration Interfaces",
+    "topic": "Human-Computer Interaction",
+    "subtopic": "Interface Design",
+    "question_type": "short_answer",
+    "difficulty": "hard",
+    "bloom_level": "Evaluate",
+    "question_text": "What specific user experience paradigms are incorporated into User Engagement and Collaboration Interfaces to cater to rural innovators?",
+    "options": [],
+    "correct_answer": "Accessibility and low-latency interaction paradigms.",
+    "explanation": "Rural innovator participation is driven by interface designs that ensure high accessibility and low-latency interactions.",
+    "learning_objective": "Evaluate interface accessibility compliance for diverse user bases; Design effective mentor-mentee interaction workflows",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Slide 25",
+      "quote": "User experience paradigms and interface specifications designed to maximize participation among rural innovators and mentors."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The interface specifications maximize participation among rural innovators and mentors by prioritizing accessibility and low-latency interaction invariants."
+  },
+  {
+    "id": "q-numerical-1791993395252-9",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-6",
+    "concept_name": "Deployment and Scalability Strategy",
+    "topic": "Infrastructure",
+    "subtopic": "Cloud Deployment",
+    "question_type": "numerical",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "If a cloud environment experiences a surge in regional user load, and container clusters require load balancing across 4 distinct agrarian districts with each district routing 2,500 concurrent requests per minute, what is the total system concurrent request throughput per minute?",
+    "options": [],
+    "correct_answer": "10000",
+    "explanation": "Multiplying the 4 distinct regional districts by 2,500 requests per minute yields a total throughput of 10,000 requests per minute.",
+    "learning_objective": "Design a containerized deployment layout for cloud environments; Configure load balancing parameters for high-availability setups",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 42",
+      "quote": "Infrastructure scaling blueprints and containerization patterns to support growing user loads across multiple regions."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "4 districts * 2,500 requests/minute per district = 10,000 requests per minute total throughput."
+  },
+  {
+    "id": "q-mcq-1791993395252-10",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-1",
+    "concept_name": "Project Thulir Architecture",
+    "topic": "System Engineering",
+    "subtopic": "Architectural Design",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Which component of Project Thulir's architecture establishes the overall system invariant through structured data flow and module separation?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Foundational system architecture and stakeholder framework",
+        "is_correct": true,
+        "explanation": "Project Thulir Architecture defines the foundational system architecture and stakeholder framework for grassroots innovation management."
+      },
+      {
+        "id": "opt-2",
+        "text": "End-to-end ideation pipeline processor",
+        "is_correct": false,
+        "explanation": "This refers to the innovation pipeline integration rather than the baseline architectural framework.",
+        "misconception_tag": "pipeline_confusal"
+      },
+      {
+        "id": "opt-3",
+        "text": "Role-based access control encryption matrix",
+        "is_correct": false,
+        "explanation": "This describes security protocols rather than overall system architecture.",
+        "misconception_tag": "security_confusal"
+      },
+      {
+        "id": "opt-4",
+        "text": "Cloud container cluster deployment scaler",
+        "is_correct": false,
+        "explanation": "This relates to scalability and infrastructure strategy rather than foundational architecture.",
+        "misconception_tag": "infrastructure_confusal"
+      }
+    ],
+    "correct_answer": "Foundational system architecture and stakeholder framework",
+    "explanation": "Project Thulir Architecture serves as the foundational system architecture and stakeholder framework designed for grassroots innovation management, establishing system invariants.",
+    "learning_objective": "Analyze the high-level system components of Project Thulir",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 5",
+      "quote": "High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Identify the core system design framework from course materials. 2. Match the foundational system architecture concept to Project Thulir Architecture. 3. Confirm option text alignment."
+  },
+  {
+    "id": "q-mcq-1791993395252-11",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-2",
+    "concept_name": "Innovation Pipeline Integration",
+    "topic": "Workflow Management",
+    "subtopic": "Pipeline Processing",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "In the innovation pipeline integration, what primary function is performed when raw ideation inputs transition through stage-gate evaluation criteria?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "They are transformed into validated deployment proposals through rigorous state validation rules.",
+        "is_correct": true,
+        "explanation": "The pipeline enforces rigorous state validation rules at each transition stage to convert raw ideas into viable deployment proposals."
+      },
+      {
+        "id": "opt-2",
+        "text": "They are automatically encrypted using role-based access control matrices.",
+        "is_correct": false,
+        "explanation": "Encryption and access control fall under security protocols, not pipeline state transitions.",
+        "misconception_tag": "security_pipeline_mixup"
+      },
+      {
+        "id": "opt-3",
+        "text": "They are deployed directly to cloud container clusters with zero downtime.",
+        "is_correct": false,
+        "explanation": "Cloud deployment is managed by the scalability strategy, prior to which ideas must clear stage-gate evaluations.",
+        "misconception_tag": "deployment_pipeline_mixup"
+      },
+      {
+        "id": "opt-4",
+        "text": "They are evaluated exclusively via MQTT telemetry transmission over cellular links.",
+        "is_correct": false,
+        "explanation": "MQTT telemetry is used for soil moisture and valve controllers, not ideation stage-gates.",
+        "misconception_tag": "telemetry_pipeline_mixup"
+      }
+    ],
+    "correct_answer": "They are transformed into validated deployment proposals through rigorous state validation rules.",
+    "explanation": "Innovation pipeline integration takes raw ideation inputs and transforms them into validated deployment proposals by enforcing rigorous state validation rules at each transition stage.",
+    "learning_objective": "Apply stage-gate evaluation criteria to assess project viability",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 18",
+      "quote": "Stage-gate evaluation flowchart mapping ideation filtering down to prototyping approval."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Review pipeline processing flow. 2. Trace raw ideation inputs transforming into validated deployment proposals. 3. Match transition stage validation to project viability assessment."
+  },
+  {
+    "id": "q-mcq-1791993395252-12",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-3",
+    "concept_name": "Data Management and Evaluation Metrics",
+    "topic": "Analytics & Metrics",
+    "subtopic": "Impact Assessment",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "What quantitative framework relies on metric aggregation invariants to ensure consistent reporting across administrative dashboards?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Data Management and Evaluation Metrics framework",
+        "is_correct": true,
+        "explanation": "This quantitative framework assesses project impact, resource utilization, and feedback loops using metric aggregation invariants."
+      },
+      {
+        "id": "opt-2",
+        "text": "User Engagement and Collaboration Interface design",
+        "is_correct": false,
+        "explanation": "User engagement focuses on UX paradigms and accessibility, not quantitative metric aggregation.",
+        "misconception_tag": "ux_metrics_mixup"
+      },
+      {
+        "id": "opt-3",
+        "text": "Deployment and Scalability Strategy infrastructure",
+        "is_correct": false,
+        "explanation": "Scalability strategy handles container clusters and cloud loads, not dashboard metric invariants.",
+        "misconception_tag": "infrastructure_metrics_mixup"
+      },
+      {
+        "id": "opt-4",
+        "text": "Project Thulir Architectural Design invariant",
+        "is_correct": false,
+        "explanation": "Architectural design covers modular boundaries and stakeholder frameworks, not specific impact metrics.",
+        "misconception_tag": "architecture_metrics_mixup"
+      }
+    ],
+    "correct_answer": "Data Management and Evaluation Metrics framework",
+    "explanation": "The Data Management and Evaluation Metrics framework provides quantitative assessment for project impact, resource utilization, and feedback loops across administrative dashboards.",
+    "learning_objective": "Formulate key performance indicators for grassroots initiatives",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Slide 12",
+      "quote": "Dashboard mockup displaying key performance indicators, impact metrics, and feedback aggregation charts."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Locate data management and metrics definitions. 2. Identify the quantitative framework assessing project impact, resource utilization, and feedback loops. 3. Confirm metric aggregation invariants role."
+  },
+  {
+    "id": "q-mcq-1791993395252-13",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-4",
+    "concept_name": "User Engagement and Collaboration Interfaces",
+    "topic": "Human-Computer Interaction",
+    "subtopic": "Interface Design",
+    "question_type": "mcq",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "Which design invariant is explicitly prioritized in user engagement and collaboration interfaces to maximize participation among rural innovators and mentors?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Accessibility and low-latency interaction",
+        "is_correct": true,
+        "explanation": "The design invariant for rural users ensures accessibility (such as voice-first navigation) and low-latency interaction."
+      },
+      {
+        "id": "opt-2",
+        "text": "High-density cryptographic token authentication",
+        "is_correct": false,
+        "explanation": "Token authentication relates to security protocols, not rural interface accessibility.",
+        "misconception_tag": "security_ux_confusal"
+      },
+      {
+        "id": "opt-3",
+        "text": "Automated regional server failover and load balancing",
+        "is_correct": false,
+        "explanation": "Failover and load balancing are infrastructure deployment concerns.",
+        "misconception_tag": "infrastructure_ux_confusal"
+      },
+      {
+        "id": "opt-4",
+        "text": "Rigorous state-gate ideation filtering rules",
+        "is_correct": false,
+        "explanation": "Stage-gate filtering belongs to the innovation workflow pipeline.",
+        "misconception_tag": "workflow_ux_confusal"
+      }
+    ],
+    "correct_answer": "Accessibility and low-latency interaction",
+    "explanation": "User engagement and collaboration interfaces are governed by design invariants ensuring accessibility and low-latency interaction tailored to rural innovators.",
+    "learning_objective": "Evaluate interface accessibility compliance for diverse user bases",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Slide 25",
+      "quote": "Design frameworks emphasizing voice-first navigation for rural user accessibility."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Examine human-computer interaction concepts for rural users. 2. Identify accessibility and low-latency interaction as core design invariants. 3. Verify against wireframes and voice-first navigation notes."
+  },
+  {
+    "id": "q-fill_in_the_blank-1791993395252-14",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-5",
+    "concept_name": "Security and Compliance Protocols",
+    "topic": "Information Security",
+    "subtopic": "Access Control",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The security and compliance protocol enforces role-based access control and robust encryption to safeguard sensitive user submissions and protect stored intellectual ______.",
+    "options": [],
+    "correct_answer": "property",
+    "explanation": "Security and compliance protocols safeguard sensitive user submissions and guarantee strict adherence to data protection standards for stored intellectual property.",
+    "learning_objective": "Verify data encryption standards for stored intellectual property",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 34",
+      "quote": "Access control matrix detailing role hierarchies, permissions, and data encryption standards."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Look up security and compliance protocol definition. 2. Identify target term protecting user submissions and intellectual property. 3. Confirm missing word is 'property'."
+  },
+  {
+    "id": "q-fill_in_the_blank-1791993395252-15",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-6",
+    "concept_name": "Deployment and Scalability Strategy",
+    "topic": "Infrastructure",
+    "subtopic": "Cloud Deployment",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "To support growing user loads across multiple agrarian districts with zero-downtime deployments, the deployment and scalability strategy utilizes containerization patterns and infrastructure scaling ______.",
+    "options": [],
+    "correct_answer": "blueprints",
+    "explanation": "The deployment and scalability strategy relies on infrastructure scaling blueprints and containerization patterns to achieve zero-downtime deployments and fault tolerance.",
+    "learning_objective": "Design a containerized deployment layout for cloud environments",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Slide 42",
+      "quote": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Review scalability strategy definition and cloud deployment topology. 2. Identify infrastructure scaling patterns/blueprints. 3. Confirm missing word is 'blueprints' or 'strategies' (accepted term: blueprints)."
+  },
+  {
+    "id": "q-fill_in_the_blank-1791993395252-16",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-2",
+    "concept_name": "Innovation Pipeline Integration",
+    "topic": "Workflow Management",
+    "subtopic": "Pipeline Processing",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "Extracted document parsing and innovation pipeline processing rely on rigorous state validation rules during each transition stage to convert raw ideation into validated deployment ______.",
+    "options": [],
+    "correct_answer": "proposals",
+    "explanation": "The end-to-end processing pipeline takes raw ideation inputs and transforms them into validated deployment proposals by enforcing state validation rules.",
+    "learning_objective": "Trace an innovation idea through ingestion and filtering stages",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 18",
+      "quote": "Stage-gate evaluation flowchart mapping ideation filtering down to prototyping approval."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Check pipeline processing definition. 2. Note output of pipeline processing. 3. Confirm missing term is 'proposals'."
+  },
+  {
+    "id": "q-short_answer-1791993395252-17",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-2",
+    "concept_name": "Innovation Pipeline Integration",
+    "topic": "Workflow Management",
+    "subtopic": "Pipeline Processing",
+    "question_type": "short_answer",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "Explain how the stage-gate evaluation flowchart in Project Thulir connects raw ideation filtering to prototyping approval within the workflow pipeline.",
+    "options": [],
+    "correct_answer": "The stage-gate evaluation workflow processes raw ideation inputs through sequential filtering stages, applying rigorous state validation rules at each transition point to determine project viability before granting prototyping approval.",
+    "explanation": "Innovation pipeline integration ensures that raw ideas are systematically filtered and validated against stage-gate criteria, transforming them into viable prototyping proposals.",
+    "learning_objective": "Trace an innovation idea through ingestion and filtering stages",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Page 18",
+      "quote": "Stage-gate evaluation flowchart mapping ideation filtering down to prototyping approval."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Reference stage-gate evaluation flowchart on Page 18. 2. Formulate rubric including: ingestion, rigorous state validation, filtering criteria, and transition to prototyping approval."
+  },
+  {
+    "id": "q-short_answer-1791993395252-18",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-3",
+    "concept_name": "Data Management and Evaluation Metrics",
+    "topic": "Analytics & Metrics",
+    "subtopic": "Impact Assessment",
+    "question_type": "short_answer",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "Describe the role of metric aggregation invariants within the data management and evaluation metrics framework in maintaining dashboard consistency.",
+    "options": [],
+    "correct_answer": "Metric aggregation invariants ensure that quantitative data regarding project impact, resource utilization, and feedback loops are processed uniformly, guaranteeing consistent reporting and accurate anomaly detection across administrative dashboards.",
+    "explanation": "Metric aggregation invariants provide a standardized mathematical basis for combining distributed impact indicators, ensuring reliable reporting across administrative interfaces.",
+    "learning_objective": "Analyze aggregate data reports for anomaly detection",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+      "reference": "Slide 12",
+      "quote": "Dashboard mockup displaying key performance indicators, impact metrics, and feedback aggregation charts."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "1. Review data management and evaluation metrics definition. 2. Formulate rubric covering: quantitative assessment of project impact, resource utilization, feedback loops, and consistent reporting via aggregation invariants."
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "fc-course-1790876667602-wtpg-1",
+    "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+    "course_id": "course-1790876667602-wtpg",
+    "concept_id": "c-course-1790876667602-wtpg-1",
+    "front": "What is the core invariant of Asymptotic Analysis Basics?",
+    "back": "Fundamental framework for evaluating algorithm efficiency using Big-O, Omega, and Theta notations. Provides mathematical rigor for comparing growth rates of functions.",
+    "source_ref": "Algorithms Syllabus (notes), Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876667602-wtpg-2",
+    "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+    "course_id": "course-1790876667602-wtpg",
+    "concept_id": "c-course-1790876667602-wtpg-2",
+    "front": "What is the core invariant of Loop Invariants?",
+    "back": "Technique for proving the correctness of iterative algorithms by establishing a property that holds before and after each iteration. Ensures the algorithm achieves its desired post-condition.",
+    "source_ref": "Algorithms Syllabus (notes), Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876667602-wtpg-3",
+    "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+    "course_id": "course-1790876667602-wtpg",
+    "concept_id": "c-course-1790876667602-wtpg-3",
+    "front": "What is the core invariant of Mathematical Induction?",
+    "back": "Proof technique used to establish the truth of an infinite sequence of statements, heavily relied upon in both loop invariants and recursive algorithm analysis. Forms the logical backbone of algorithm correctness proofs.",
+    "source_ref": "Algorithms Syllabus (notes), Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876667602-wtpg-4",
+    "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+    "course_id": "course-1790876667602-wtpg",
+    "concept_id": "c-course-1790876667602-wtpg-4",
+    "front": "What is the core invariant of Recursion Fundamentals?",
+    "back": "Programming and mathematical paradigm where a function calls itself to solve smaller instances of the same problem. Requires a well-defined base case to prevent infinite execution.",
+    "source_ref": "Algorithms Syllabus (notes), Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876667602-wtpg-5",
+    "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+    "course_id": "course-1790876667602-wtpg",
+    "concept_id": "c-course-1790876667602-wtpg-5",
+    "front": "What is the core invariant of Recursion Trees?",
+    "back": "Graphical representation of the costs incurred by recursive function calls at each level of execution. Used to visualize and sum the total work done by divide-and-conquer algorithms.",
+    "source_ref": "Algorithms Syllabus (notes), Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

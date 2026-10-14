@@ -1,0 +1,40 @@
+[
+  {
+    "id": "misc-1790876968650-c-course-1790876934634-rnpr-1",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "concept_id": "c-course-1790876934634-rnpr-1",
+    "concept_name": "Asymptotic Analysis Basics",
+    "title": "Loop Termination Confusion",
+    "description": "மாணவர் மடக்கு நிபந்தனை (Loop condition) எப்போது சரிபார்க்கப்படுகிறது என்பதில் குழப்பம் அடைந்துள்ளார். மடக்கு முடியும் போது மட்டுமே நிபந்தனை சரிபார்க்கப்படும் என்று அவர் தவறாக நம்புகிறார். ஆனால், ஒவ்வொரு முறை மடக்கு இயங்கும் முன்பும் (Iteration-க்கு முன்பு) இந்த நிபந்தனை சரிபார்க்கப்படுகிறது என்பதை அவருக்கு விளக்க வேண்டும்.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fb-1790876961324. Selected erroneous hypothesis: மடக்கு முடியும் போது மட்டுமே இந்த நிபந்தனை சரிபார்க்கப்படும்..",
+    "severity": "high",
+    "detected_at": "2026-10-01T17:49:28.650Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "மடக்கு நிபந்தனை சரிபார்ப்பு நேரம்",
+        "explanation": "மடக்கின் நிபந்தனை மடக்கு முடியும் போது மட்டும் சோதிக்கப்படுவதில்லை. ஒவ்வொரு புதிய சுற்று தொடங்குவதற்கும் முன்பும், ஆரம்ப நிலையிலும் இது சரிபார்க்கப்படுகிறது.",
+        "verified_quote": "The loop condition is evaluated before each iteration.",
+        "source_ref": "அத்தியாயம் 2 - மடக்கு முறைகள்"
+      },
+      {
+        "step_number": 2,
+        "title": "நிரல் எடுத்துக்காட்டுடன் புரிந்துகொள்ளுதல்",
+        "explanation": "கீழே உள்ள எடுத்துக்காட்டில், i மதிப்பு ஒவ்வொரு முறையும் மாறும்போது நிபந்தனை உண்மையாக உள்ளதா எனச் சரிபார்க்கப்படுகிறது.",
+        "code_example": "for (int i = 0; i < n; i++) { // இங்கு ஒவ்வொரு சுற்றிலும் i < n சரிபார்க்கப்படுகிறது }",
+        "verified_quote": "Loop invariants hold true before and after each iteration.",
+        "source_ref": "பாடநூல், பக்கம் 45"
+      },
+      {
+        "step_number": 3,
+        "title": "சுய பரிசோதனை பயிற்சி",
+        "explanation": "நிபந்தனை தவறு என எப்போது முதல் முறை மதிப்பிடப்படுகிறதோ, உடனே மடக்கு நின்றுவிடும் என்பதை நினைவில் கொள்ளுங்கள்.",
+        "verified_quote": "Iteration terminates when the condition evaluates to false.",
+        "source_ref": "சுருக்கக் குறிப்புகள்"
+      }
+    ],
+    "verification_question_id": "retest-1790876968650"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "misc-1790875579817-c-course-1790875524635-vtcp-1",
+    "user_id": "fresh-user-1790875522651",
+    "course_id": "course-1790875524635-vtcp",
+    "concept_id": "c-course-1790875524635-vtcp-1",
+    "concept_name": "State Machine Replication",
+    "title": "Network-layer timing confusion",
+    "description": "Student selected: \"To ensure that non-deterministic system time calls and local thread scheduling do not affect network packet transmission speeds.\". This reveals a fundamental misunderstanding of State Machine Replication.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-1790875579731-0. Selected erroneous hypothesis: To ensure that non-deterministic system time calls and local thread scheduling do not affect network packet transmission speeds..",
+    "severity": "high",
+    "detected_at": "2026-10-01T17:26:19.817Z",
+    "status": "retested_pass",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Counter-Example",
+        "explanation": "Consider what happens when this assumption is applied to an edge case. The invariant breaks because intermediate states are not preserved.",
+        "verified_quote": "A loop invariant must satisfy initialization, maintenance, and termination.",
+        "source_ref": "CLRS Chapter 2.1, Page 19"
+      },
+      {
+        "step_number": 2,
+        "title": "Formal Invariant Formulation",
+        "explanation": "Notice that each stack frame allocates independent local registers and return pointers.",
+        "code_example": "def recurse(n):\n    if n <= 0: return\n    # Each invocation creates an isolated O(1) frame\n    recurse(n - 1)",
+        "verified_quote": "Activation records are pushed to the execution call stack sequentially.",
+        "source_ref": "Computer Systems: A Programmer Perspective, Page 242"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Explanation & Invariant Verification",
+        "explanation": "Verify that both base conditions and induction hypotheses hold for all N >= 1.",
+        "verified_quote": "Inductive step proves truth for N+1 from N.",
+        "source_ref": "Discrete Mathematics and Its Applications, Page 315"
+      }
+    ],
+    "verification_question_id": "retest-1790875579817"
+  }
+]

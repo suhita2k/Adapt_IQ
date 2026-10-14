@@ -1,0 +1,2060 @@
+[
+  {
+    "id": "as-1790879708354-qwji",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "title": "data Adaptive Diagnostic Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-01T18:35:08.354Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790879708353-0",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "रिकॉर्डिंग 2026-07-04 091831 में मुख्य रूप से किस प्रकार की सामग्री और पाठ्यक्रम विषयों का परिचय दिया गया है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "कोर परिभाषाएँ और पाठ्यक्रम के विषय",
+            "is_correct": true,
+            "explanation": "यह रिकॉर्डिंग सीधे तौर पर पाठ्यक्रम की मूल परिभाषाओं और विषयों का परिचय देती है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "उन्नत प्रोग्रामिंग सिंटैक्स",
+            "is_correct": false,
+            "explanation": "रिकॉर्डिंग में उन्नत प्रोग्रामिंग सिंटैक्स का उल्लेख नहीं है।",
+            "misconception_tag": "अति-उन्नत प्रोग्रामिंग की धारणा"
+          },
+          {
+            "id": "opt-3",
+            "text": "केवल वित्तीय लेखांकन",
+            "is_correct": false,
+            "explanation": "यह विषय वित्त से संबंधित नहीं है।",
+            "misconception_tag": "विषय क्षेत्र की भ्रमित समझ"
+          },
+          {
+            "id": "opt-4",
+            "text": "हार्डवेयर नेटवर्किंग",
+            "is_correct": false,
+            "explanation": "इसमें हार्डवेयर नेटवर्किंग शामिल नहीं है।",
+            "misconception_tag": "नेटवर्किंग अवधारणाओं का भ्रम"
+          }
+        ],
+        "correct_answer": "कोर परिभाषाएँ और पाठ्यक्रम के विषय",
+        "explanation": "प्रदान की गई सामग्री के अनुसार, यह रिकॉर्डिंग मुख्य परिभाषाओं और पाठ्यक्रम विषयों से जुड़ी है।",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708353-1",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 दस्तावेज़ में किस प्रकार की जानकारी को प्राथमिकता दी गई है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "कोर परिभाषाएँ और पाठ्यक्रम विषय",
+            "is_correct": true,
+            "explanation": "दस्तावेज़ में बोर्ड बुक के संदर्भ में कोर परिभाषाओं और पाठ्यक्रम विषयों को शामिल किया गया है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "ऐतिहासिक उपन्यास",
+            "is_correct": false,
+            "explanation": "यह दस्तावेज़ तकनीकी और पाठ्यक्रम आधारित है, न कि ऐतिहासिक।",
+            "misconception_tag": "साहित्यिक सामग्री का भ्रम"
+          },
+          {
+            "id": "opt-3",
+            "text": "चिकित्सा विज्ञान के नुस्खे",
+            "is_correct": false,
+            "explanation": "इसका चिकित्सा से कोई संबंध नहीं है।",
+            "misconception_tag": "चिकित्सा क्षेत्र का भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "भौतिकी के प्रयोग",
+            "is_correct": false,
+            "explanation": "भौतिकी प्रयोगशाला प्रयोगों से संबंधित कोई साक्ष्य नहीं है।",
+            "misconception_tag": "विज्ञान विषयों का संलयन"
+          }
+        ],
+        "correct_answer": "कोर परिभाषाएँ और पाठ्यक्रम विषय",
+        "explanation": "यह बोर्ड बुक पाठ्यक्रम के मुख्य विषयों और परिभाषाओं पर आधारित है।",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708353-2",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "sih.pdf (5) पाठ्यपुस्तक सामग्री का मुख्य उद्देश्य क्या इंगित करता है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "पाठ्यक्रम विषयों और कोर परिभाषाओं का परिचय",
+            "is_correct": true,
+            "explanation": "sih.pdf (5) पाठ्यपुस्तक भी कोर परिभाषाओं और पाठ्यक्रम विषयों के परिचय पर केंद्रित है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "संगीत रचनाएँ",
+            "is_correct": false,
+            "explanation": "इसका संगीत से कोई लेना-देना नहीं है।",
+            "misconception_tag": "कला और संगीत का भ्रम"
+          },
+          {
+            "id": "opt-3",
+            "text": "भोजन और पोषण चार्ट",
+            "is_correct": false,
+            "explanation": "पोषण से संबंधित कोई जानकारी नहीं दी गई है।",
+            "misconception_tag": "पोषण विज्ञान का भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "वास्तु कला योजनाएँ",
+            "is_correct": false,
+            "explanation": "वास्तु कला से इसका कोई संबंध नहीं है।",
+            "misconception_tag": "इंजीनियरिंग डिज़ाइन का भ्रम"
+          }
+        ],
+        "correct_answer": "पाठ्यक्रम विषयों और कोर परिभाषाओं का परिचय",
+        "explanation": "सामग्री के साक्ष्य के अनुसार यह पाठ्यपुस्तक पाठ्यक्रम विषयों का परिचय देती है।",
+        "source_citation": {
+          "material_title": "sih.pdf (5)",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for sih.pdf (5)."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708353-3",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "hghx पाठ्यपुस्तक सामग्री के संदर्भ में निम्नलिखित में से क्या सत्य है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "इसमें कोर परिभाषाएँ और पाठ्यक्रम विषय प्रस्तुत किए गए हैं",
+            "is_correct": true,
+            "explanation": "hghx सामग्री में भी अन्य सामग्रियों की तरह पाठ्यक्रम और कोर परिभाषाओं को प्रस्तुत किया गया है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "यह केवल एक फिक्शन उपन्यास है",
+            "is_correct": false,
+            "explanation": "यह पाठ्यक्रम की एक पाठ्यपुस्तक है, न कि फिक्शन।",
+            "misconception_tag": "साहित्यिक विधा का भ्रम"
+          },
+          {
+            "id": "opt-3",
+            "text": "यह मौसम की भविष्यवाणी से संबंधित है",
+            "is_correct": false,
+            "explanation": "मौसम विज्ञान से इसका कोई संबंध नहीं है।",
+            "misconception_tag": "पर्यावरण विज्ञान का भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "यह ऑटोमोबाइल रिपेयर मैनुअल है",
+            "is_correct": false,
+            "explanation": "ऑटोमोबाइल से संबंधित कोई विवरण नहीं है।",
+            "misconception_tag": "मैकेनिकल मैनुअल का भ्रम"
+          }
+        ],
+        "correct_answer": "इसमें कोर परिभाषाएँ और पाठ्यक्रम विषय प्रस्तुत किए गए हैं",
+        "explanation": "दिए गए संदर्भ के अनुसार hghx में कोर परिभाषाएँ और विषय हैं।",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708353-4",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "पाठ्यक्रम के सभी संकलित स्रोतों (रिकॉर्डिंग, बोर्ड बुक, और पाठ्यपुस्तकें) में मुख्य रूप से किस बात पर जोर दिया गया है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "कोर परिभाषाएँ और पाठ्यक्रम विषय",
+            "is_correct": true,
+            "explanation": "सभी चारों स्रोतों के साक्ष्य समान रूप से 'कोर परिभाषाओं और पाठ्यक्रम विषयों' के परिचय पर आधारित हैं।"
+          },
+          {
+            "id": "opt-2",
+            "text": "उन्नत डेटा माइनिंग एल्गोरिदम",
+            "is_correct": false,
+            "explanation": "विशिष्ट एल्गोरिदम का उल्लेख साक्ष्यों में नहीं है।",
+            "misconception_tag": "विशिष्ट तकनीकी गहराई का भ्रम"
+          },
+          {
+            "id": "opt-3",
+            "text": "वैश्विक आर्थिक नीतियां",
+            "is_correct": false,
+            "explanation": "आर्थिक नीतियों का कोई संदर्भ नहीं है।",
+            "misconception_tag": "अर्थशास्त्र का भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "अंतरिक्ष अनुसंधान की रूपरेखा",
+            "is_correct": false,
+            "explanation": "अंतरिक्ष विज्ञान पाठ्यक्रम का हिस्सा नहीं बताया गया है।",
+            "misconception_tag": "खगोल विज्ञान का भ्रम"
+          }
+        ],
+        "correct_answer": "कोर परिभाषाएँ और पाठ्यक्रम विषय",
+        "explanation": "विश्लेषण से स्पष्ट है कि पाठ्यक्रम की सभी सामग्रियों का मूल आधार कोर परिभाषाएँ और पाठ्यक्रम विषय हैं।",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708353-5",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 के पृष्ठ 1 के अनुसार मुख्य विषय क्या है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "कोर परिभाषाएँ और पाठ्यक्रम के विषय",
+            "is_correct": true,
+            "explanation": "बोर्ड बुक के पृष्ठ 1 पर स्पष्ट रूप से कोर परिभाषाओं और पाठ्यक्रम विषयों का उल्लेख है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "केवल प्रैक्टिकल कोडिंग अभ्यास",
+            "is_correct": false,
+            "explanation": "यह केवल कोडिंग अभ्यास नहीं बल्कि परिभाषाओं और विषयों से जुड़ा है।",
+            "misconception_tag": "प्रैक्टिकल-ओनली भ्रम"
+          },
+          {
+            "id": "opt-3",
+            "text": "व्यापारिक विपणन रणनीतियाँ",
+            "is_correct": false,
+            "explanation": "विपणन रणनीतियों का कोई उल्लेख नहीं है।",
+            "misconception_tag": "व्यापार अध्ययन का भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "मनोवैज्ञानिक परीक्षण",
+            "is_correct": false,
+            "explanation": "मनोविज्ञान से इसका कोई संबंध नहीं है।",
+            "misconception_tag": "मनोविज्ञान का भ्रम"
+          }
+        ],
+        "correct_answer": "कोर परिभाषाएँ और पाठ्यक्रम के विषय",
+        "explanation": "उद्धृत साक्ष्य सीधे तौर पर कोर परिभाषाओं और पाठ्यक्रम विषयों की बात करता है।",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708353-6",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Analyze",
+        "question_text": "पाठ्यक्रम सामग्री 'Recording 2026-07-04 091831' और 'THULIR_AI_SIH2026_Updated_Board_Book_v3.0' में क्या समानता है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "दोनों में कोर परिभाषाएँ और पाठ्यक्रम के विषय प्रस्तुत किए गए हैं",
+            "is_correct": true,
+            "explanation": "दोनों ही सामग्रियों के साक्ष्य बताते हैं कि वे कोर परिभाषाओं और पाठ्यक्रम विषयों से संबंधित हैं।"
+          },
+          {
+            "id": "opt-2",
+            "text": "दोनों केवल परीक्षा के प्रश्न पत्र हैं",
+            "is_correct": false,
+            "explanation": "वे केवल प्रश्न पत्र नहीं बल्कि पाठ्यक्रम सामग्री और रिकॉर्डिंग हैं।",
+            "misconception_tag": "परीक्षा पत्र का भ्रम"
+          },
+          {
+            "id": "opt-3",
+            "text": "दोनों वीडियो रिकॉर्डिंग हैं",
+            "is_correct": false,
+            "explanation": "बोर्ड बुक एक दस्तावेज़ है, केवल रिकॉर्डिंग वीडियो है।",
+            "misconception_tag": "मीडिया प्रारूप का भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "दोनों का संबंध केवल वित्त से है",
+            "is_correct": false,
+            "explanation": "वित्त से कोई संबंध नहीं है।",
+            "misconception_tag": "वित्तीय क्षेत्र का भ्रम"
+          }
+        ],
+        "correct_answer": "दोनों में कोर परिभाषाएँ और पाठ्यक्रम के विषय प्रस्तुत किए गए हैं",
+        "explanation": "दोनों स्रोतों के साक्ष्यों का विश्लेषण करने पर उनकी विषयवस्तु में यह समानता स्पष्ट होती है।",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708353-7",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"hghx\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-7-0",
+            "text": "hghx: Core subject concepts extracted from hghx.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from hghx."
+          },
+          {
+            "id": "opt-7-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-7-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-7-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "hghx: Core subject concepts extracted from hghx.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708354-8",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"Recording 2026-07-04 091831\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-8-0",
+            "text": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831."
+          },
+          {
+            "id": "opt-8-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-8-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-8-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879708354-9",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"THULIR_AI_SIH2026_Updated_Board_Book_v3\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-9-0",
+            "text": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+          },
+          {
+            "id": "opt-9-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-9-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-9-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-0",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "पाठ्यक्रम की रिकॉर्डing 2026-07-04 091831 में पेश किए गए विषयों का मुख्य उद्देश्य _____ को समझना है।",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "पाठ्यक्रम विषय",
+        "explanation": "सामग्री के अनुसार रिकॉर्डिंग में पाठ्यक्रम विषयों का परिचय दिया गया है।",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-1",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from THULIR_AI_SIH2026_Updat...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार THULIR_AI_SIH2026_Updated_Board_Book_v3 की परिभाषा: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-2",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from sih.pdf (5)....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "sih",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार sih की परिभाषा: Core subject concepts extracted from sih.pdf (5).",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-3",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from hghx....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "hghx",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार hghx की परिभाषा: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-4",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from Recording 2026-07-04 09...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "Recording 2026-07-04 091831",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार Recording 2026-07-04 091831 की परिभाषा: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-5",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from THULIR_AI_SIH2026_Updat...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार THULIR_AI_SIH2026_Updated_Board_Book_v3 की परिभाषा: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-6",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from sih.pdf (5)....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "sih",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार sih की परिभाषा: Core subject concepts extracted from sih.pdf (5).",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-7",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from hghx....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "hghx",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार hghx की परिभाषा: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-8",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from Recording 2026-07-04 09...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "Recording 2026-07-04 091831",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार Recording 2026-07-04 091831 की परिभाषा: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879708354-9",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from THULIR_AI_SIH2026_Updat...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार THULIR_AI_SIH2026_Updated_Board_Book_v3 की परिभाषा: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790879706049-9r8x",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "title": "data Adaptive Diagnostic Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-01T18:35:06.049Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790879706047-0",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"Recording 2026-07-04 091831\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-0-0",
+            "text": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831."
+          },
+          {
+            "id": "opt-0-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-0-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-0-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706047-1",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"THULIR_AI_SIH2026_Updated_Board_Book_v3\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-1-0",
+            "text": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+          },
+          {
+            "id": "opt-1-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-1-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-1-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706047-2",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"sih\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-2-0",
+            "text": "sih: Core subject concepts extracted from sih.pdf (5).",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from sih.pdf (5)."
+          },
+          {
+            "id": "opt-2-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-2-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-2-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "sih: Core subject concepts extracted from sih.pdf (5).",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from sih.pdf (5).",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706047-3",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"hghx\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-3-0",
+            "text": "hghx: Core subject concepts extracted from hghx.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from hghx."
+          },
+          {
+            "id": "opt-3-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-3-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-3-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "hghx: Core subject concepts extracted from hghx.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706047-4",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"Recording 2026-07-04 091831\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-4-0",
+            "text": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831."
+          },
+          {
+            "id": "opt-4-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-4-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-4-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706047-5",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"THULIR_AI_SIH2026_Updated_Board_Book_v3\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-5-0",
+            "text": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+          },
+          {
+            "id": "opt-5-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-5-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-5-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706047-6",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"sih\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-6-0",
+            "text": "sih: Core subject concepts extracted from sih.pdf (5).",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from sih.pdf (5)."
+          },
+          {
+            "id": "opt-6-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-6-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-6-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "sih: Core subject concepts extracted from sih.pdf (5).",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from sih.pdf (5).",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706047-7",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"hghx\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-7-0",
+            "text": "hghx: Core subject concepts extracted from hghx.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from hghx."
+          },
+          {
+            "id": "opt-7-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-7-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-7-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "hghx: Core subject concepts extracted from hghx.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706047-8",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"Recording 2026-07-04 091831\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-8-0",
+            "text": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831."
+          },
+          {
+            "id": "opt-8-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-8-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-8-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879706048-9",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"THULIR_AI_SIH2026_Updated_Board_Book_v3\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-9-0",
+            "text": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+          },
+          {
+            "id": "opt-9-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-9-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-9-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706048-0",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "रिकॉर्डिंग 2026-07-04 091831 के पाठ्यक्रम के अनुसार, कोर विषयों और परिभाषाओं को _____ कहा जाता है।",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "बुनियादी अवधारणाएं",
+        "explanation": "यह रिकॉर्डिंग 2026-07-04 091831 सामग्री के अंतर्गत मुख्य पाठ्यक्रम विषयों और परिभाषाओं से संबंधित है।",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706048-1",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 दस्तावेज़ के अनुसार, इस बोर्ड बुक में _____ विषयों और परिभाषाओं को प्रस्तुत किया गया है।",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "कोर",
+        "explanation": "यह प्रश्न THULIR_AI_SIH2026_Updated_Board_Book_v3.0 सामग्री की मुख्य परिभाषाओं पर आधारित है।",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706048-2",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "sih.pdf (5) पाठ्यपुस्तक के अनुसार, पाठ्यक्रम के विषयों को _____ के रूप में पेश किया गया है।",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "परिभाषाएं",
+        "explanation": "sih.pdf (5) के पहले पृष्ठ पर कोर परिभाषाओं और पाठ्यक्रम विषयों का परिचय दिया गया है।",
+        "source_citation": {
+          "material_title": "sih.pdf (5)",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for sih.pdf (5)."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706048-3",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "hghx पाठ्यपुस्तक के संदर्भ में, प्रस्तुत अध्ययन सामग्री में मुख्य _____ और विषयों को शामिल किया गया है।",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "परिभाषाएं",
+        "explanation": "hghx सामग्री के अनुसार पाठ्यक्रम के विषयों और परिभाषाओं का उल्लेख किया गया है।",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706049-4",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from Recording 2026-07-04 09...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "Recording 2026-07-04 091831",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार Recording 2026-07-04 091831 की परिभाषा: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706049-5",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from THULIR_AI_SIH2026_Updat...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार THULIR_AI_SIH2026_Updated_Board_Book_v3 की परिभाषा: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706049-6",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from sih.pdf (5)....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "sih",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार sih की परिभाषा: Core subject concepts extracted from sih.pdf (5).",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706049-7",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from hghx....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "hghx",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार hghx की परिभाषा: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706049-8",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from Recording 2026-07-04 09...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "Recording 2026-07-04 091831",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार Recording 2026-07-04 091831 की परिभाषा: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879706049-9",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from THULIR_AI_SIH2026_Updat...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार THULIR_AI_SIH2026_Updated_Board_Book_v3 की परिभाषा: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790879566893",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "title": "data Diagnostic",
+    "status": "completed",
+    "total_questions": 20,
+    "completed_questions": 20,
+    "score_percentage": 45,
+    "started_at": "2026-10-01T18:32:46.893Z",
+    "completed_at": "2026-10-01T18:32:46.893Z",
+    "questions": [],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1790879328548-p91p",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "title": "data Adaptive Diagnostic Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-01T18:28:48.548Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790879328541-0",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "रिकॉर्डिंग 2026-07-04 091831 के अनुसार मुख्य पाठ्यक्रम विषयों का मुख्य उद्देश्य क्या है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "मूल परिभाषाओं और पाठ्यक्रम विषयों का परिचय देना",
+            "is_correct": true,
+            "explanation": "रिकॉर्डिंग और पाठ्यक्रम के अनुसार यह मुख्य अवधारणाओं को पेश करने के लिए है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "केवल उन्नत कोडिंग सिखाना",
+            "is_correct": false,
+            "explanation": "सामग्री केवल उन्नत कोडिंग तक सीमित नहीं है।",
+            "misconception_tag": "कोडिंग का अति-सामान्यीकरण"
+          },
+          {
+            "id": "opt-3",
+            "text": "डेटाबेस प्रबंधन को हटाना",
+            "is_correct": false,
+            "explanation": "सामग्री में ऐसा कोई उल्लेख नहीं है।",
+            "misconception_tag": "गलत धारणा"
+          },
+          {
+            "id": "opt-4",
+            "text": "केवल थ्योरी परीक्षा आयोजित करना",
+            "is_correct": false,
+            "explanation": "यह केवल परीक्षा आयोजित करने के बारे में नहीं है।",
+            "misconception_tag": "परीक्षा केंद्रित भ्रम"
+          }
+        ],
+        "correct_answer": "मूल परिभाषाओं और पाठ्यक्रम विषयों का परिचय देना",
+        "explanation": "यह पाठ्यक्रम के प्रारंभिक परिचय से संबंधित है जैसा कि रिकॉर्डिंग 2026-07-04 091831 में बताया गया है।",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328541-1",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 के अंतर्गत किस प्रकार के विषयों पर मुख्य रूप से ध्यान केंद्रित किया गया है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "बोर्ड बुक में दिए गए कोर परिभाषा और पाठ्यक्रम विषय",
+            "is_correct": true,
+            "explanation": "बोर्ड बुक दस्तावेज़ में मुख्य रूप से इन विषयों को परिभाषित किया गया है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "केवल वित्तीय लेखांकन",
+            "is_correct": false,
+            "explanation": "वित्तीय लेखांकन इस बोर्ड बुक का मुख्य विषय नहीं है।",
+            "misconception_tag": "विषय की गलत पहचान"
+          },
+          {
+            "id": "opt-3",
+            "text": "हार्डवेयर नेटवर्किंग",
+            "is_correct": false,
+            "explanation": "बोर्ड बुक में हार्डवेयर नेटवर्किंग प्राथमिक विषय नहीं है।",
+            "misconception_tag": "तकनीकी भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "केवल बाहरी प्रोजेक्ट्स",
+            "is_correct": false,
+            "explanation": "यह सामग्री बोर्ड बुक के पाठ्यक्रम और परिभाषाओं से जुड़ी है।",
+            "misconception_tag": "प्रोजेक्ट का भ्रम"
+          }
+        ],
+        "correct_answer": "बोर्ड बुक में दिए गए कोर परिभाषा और पाठ्यक्रम विषय",
+        "explanation": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 के अनुसार मुख्य परिभाषाएँ और पाठ्यक्रम विषय प्रस्तुत किए गए हैं।",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328541-2",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "sih.pdf (5) दस्तावेज़ से प्राप्त साक्ष्य के अनुसार पाठ्यक्रम में मुख्य रूप से क्या शामिल है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "कोर परिभाषाएँ और पाठ्यक्रम विषय",
+            "is_correct": true,
+            "explanation": "sih.pdf (5) के साक्ष्य के अनुसार यह कोर परिभाषाओं और विषयों पर आधारित है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "केवल ग्राफिक्स डिजाइनिंग",
+            "is_correct": false,
+            "explanation": "ग्राफिक्स डिजाइनिंग इस पाठ्यपुस्तक का केंद्रीय विषय नहीं है।",
+            "misconception_tag": "असंगत विषय"
+          },
+          {
+            "id": "opt-3",
+            "text": "ऐतिहासिक घटनाएँ",
+            "is_correct": false,
+            "explanation": "दस्तावेज़ ऐतिहासिक घटनाओं के बारे में नहीं है।",
+            "misconception_tag": "इतिहास का भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "सिर्फ मौखिक परीक्षा के निर्देश",
+            "is_correct": false,
+            "explanation": "यह केवल मौखिक परीक्षा के निर्देश नहीं हैं।",
+            "misconception_tag": "निर्देश भ्रम"
+          }
+        ],
+        "correct_answer": "कोर परिभाषाएँ और पाठ्यक्रम विषय",
+        "explanation": "दस्तावेज़ sih.pdf (5) स्पष्ट रूप से कोर परिभाषाओं और पाठ्यक्रम विषयों के परिचय को इंगित करता है।",
+        "source_citation": {
+          "material_title": "sih.pdf (5)",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for sih.pdf (5)."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328541-3",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "hghx पाठ्यपुस्तक सामग्री के संदर्भ में किस प्रकार के विषयों की चर्चा की गई है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "hghx के लिए पेश किए गए मुख्य परिभाषा और पाठ्यक्रम विषय",
+            "is_correct": true,
+            "explanation": "hghx सामग्री मुख्य रूप से इसके पाठ्यक्रम विषयों और परिभाषाओं से जुड़ी है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "केवल जैविक विज्ञान",
+            "is_correct": false,
+            "explanation": "जैविक विज्ञान पाठ्यक्रम का विशिष्ट हिस्सा नहीं है।",
+            "misconception_tag": "विज्ञान विषयक भ्रम"
+          },
+          {
+            "id": "opt-3",
+            "text": "संगीत सिद्धांत",
+            "is_correct": false,
+            "explanation": "संगीत सिद्धांत से इसका कोई संबंध नहीं है।",
+            "misconception_tag": "कला विषयक भ्रम"
+          },
+          {
+            "id": "opt-4",
+            "text": "केवल खेल नियम",
+            "is_correct": false,
+            "explanation": "यह खेल नियमों से संबंधित नहीं है।",
+            "misconception_tag": "खेल विषयक भ्रम"
+          }
+        ],
+        "correct_answer": "hghx के लिए पेश किए गए मुख्य परिभाषा और पाठ्यक्रम विषय",
+        "explanation": "hghx सामग्री के साक्ष्य के अनुसार कोर परिभाषाएँ और पाठ्यक्रम विषय प्रस्तुत किए गए हैं।",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328541-4",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "दी गई सभी सामग्रियों (रिकॉर्डिंग, बोर्ड बुक, sih, hghx) में मुख्य समानता क्या है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "सभी में कोर परिभाषाओं और पाठ्यक्रम विषयों का परिचय दिया गया है",
+            "is_correct": true,
+            "explanation": "प्रत्येक सामग्री के साक्ष्य में कोर परिभाषाओं और पाठ्यक्रम विषयों के परिचय का उल्लेख है।"
+          },
+          {
+            "id": "opt-2",
+            "text": "सभी में केवल प्रोग्रामिंग कोड दिए गए हैं",
+            "is_correct": false,
+            "explanation": "सभी सामग्रियों में केवल प्रोग्रामिंग कोड नहीं हैं।",
+            "misconception_tag": "संकलन त्रुटि"
+          },
+          {
+            "id": "opt-3",
+            "text": "सभी केवल वीडियो रिकॉर्डिंग हैं",
+            "is_correct": false,
+            "explanation": "दस्तावेज़, पीडीएफ और बोर्ड बुक भी शामिल हैं, केवल वीडियो नहीं।",
+            "misconception_tag": "माध्यम की गलतफहमी"
+          },
+          {
+            "id": "opt-4",
+            "text": "सभी का पाठ्यक्रम से कोई संबंध नहीं है",
+            "is_correct": false,
+            "explanation": "सभी सामग्रियां पाठ्यक्रम का एक अनिवार्य हिस्सा हैं।",
+            "misconception_tag": "प्रासंगिकता का अभाव"
+          }
+        ],
+        "correct_answer": "सभी में कोर परिभाषाओं और पाठ्यक्रम विषयों का परिचय दिया गया है",
+        "explanation": "विश्लेषण से पता चलता है कि हर सामग्री का मुख्य आधार पाठ्यक्रम और उसकी परिभाषाएँ हैं।",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328541-5",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Evaluate",
+        "question_text": "दी गई पाठ्यक्रम सामग्री में 'Core definitions' (कोर परिभाषाओं) का क्या महत्व है?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "वे पाठ्यक्रम की नींव रखती हैं और विषयों को समझने में मदद करती हैं",
+            "is_correct": true,
+            "explanation": "कोर परिभाषाएँ किसी भी विषय को समझने के लिए आधार का काम करती हैं।"
+          },
+          {
+            "id": "opt-2",
+            "text": "इनका पाठ्यक्रम से कोई लेना-देना नहीं होता",
+            "is_correct": false,
+            "explanation": "परिभाषाएँ पाठ्यक्रम का केंद्र बिंदु हैं।",
+            "misconception_tag": "महत्वहीनता का भ्रम"
+          },
+          {
+            "id": "opt-3",
+            "text": "वे केवल समय बर्बाद करती हैं",
+            "is_correct": false,
+            "explanation": "परिभाषाएँ अध्ययन को सरल बनाती हैं।",
+            "misconception_tag": "नकारात्मक मूल्यांकन"
+          },
+          {
+            "id": "opt-4",
+            "text": "वे केवल सजावट के लिए होती हैं",
+            "is_correct": false,
+            "explanation": "वे शैक्षणिक रूप से अत्यंत महत्वपूर्ण हैं।",
+            "misconception_tag": "सतही मूल्यांकन"
+          }
+        ],
+        "correct_answer": "वे पाठ्यक्रम की नींव रखती हैं और विषयों को समझने में मदद करती हैं",
+        "explanation": "सभी साक्ष्यों (रिकॉर्डिंग, बोर्ड बुक, sih, hghx) में कोर परिभाषाओं और विषयों के परिचय को प्राथमिकता दी गई है।",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328547-6",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"sih\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-6-0",
+            "text": "sih: Core subject concepts extracted from sih.pdf (5).",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from sih.pdf (5)."
+          },
+          {
+            "id": "opt-6-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-6-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-6-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "sih: Core subject concepts extracted from sih.pdf (5).",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from sih.pdf (5).",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328547-7",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"hghx\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-7-0",
+            "text": "hghx: Core subject concepts extracted from hghx.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from hghx."
+          },
+          {
+            "id": "opt-7-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-7-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-7-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "hghx: Core subject concepts extracted from hghx.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328547-8",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"Recording 2026-07-04 091831\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-8-0",
+            "text": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831."
+          },
+          {
+            "id": "opt-8-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-8-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-8-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "Recording 2026-07-04 091831: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-mcq-1790879328547-9",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "\"data\" पाठ्यक्रम में \"THULIR_AI_SIH2026_Updated_Board_Book_v3\" के संबंध में कौन सा कथन सही है?",
+        "options": [
+          {
+            "id": "opt-9-0",
+            "text": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+            "is_correct": true,
+            "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+          },
+          {
+            "id": "opt-9-1",
+            "text": "यह केवल समाप्ति की स्थिति में लागू होता है और प्रक्रिया में मान्य नहीं होता।",
+            "is_correct": false,
+            "explanation": "Incorrect conceptual assumption.",
+            "misconception_tag": "Scope Fallacy"
+          },
+          {
+            "id": "opt-9-2",
+            "text": "यह एक बाह्य मॉड्यूल है जिसका मुख्य मेमोरी से कोई संबंध नहीं है।",
+            "is_correct": false,
+            "explanation": "Violates continuous invariant maintenance.",
+            "misconception_tag": "Invariant Misconception"
+          },
+          {
+            "id": "opt-9-3",
+            "text": "यह बिना किसी आधार शर्त के अनिश्चित काल तक निष्पादित होता है।",
+            "is_correct": false,
+            "explanation": "Omits termination guard requirement.",
+            "misconception_tag": "Base Condition Omission"
+          }
+        ],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328547-0",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from Recording 2026-07-04 09...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "Recording 2026-07-04 091831",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार Recording 2026-07-04 091831 की परिभाषा: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328547-1",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from THULIR_AI_SIH2026_Updat...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार THULIR_AI_SIH2026_Updated_Board_Book_v3 की परिभाषा: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328548-2",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from sih.pdf (5)....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "sih",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार sih की परिभाषा: Core subject concepts extracted from sih.pdf (5).",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328548-3",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from hghx....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "hghx",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार hghx की परिभाषा: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328548-4",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from Recording 2026-07-04 09...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "Recording 2026-07-04 091831",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार Recording 2026-07-04 091831 की परिभाषा: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328548-5",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from THULIR_AI_SIH2026_Updat...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार THULIR_AI_SIH2026_Updated_Board_Book_v3 की परिभाषा: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328548-6",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-3",
+        "concept_name": "sih",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from sih.pdf (5)....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "sih",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार sih की परिभाषा: Core subject concepts extracted from sih.pdf (5).",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328548-7",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-4",
+        "concept_name": "hghx",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from hghx....\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "hghx",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार hghx की परिभाषा: Core subject concepts extracted from hghx.",
+        "source_citation": {
+          "material_title": "hghx",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for hghx."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328548-8",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-1",
+        "concept_name": "Recording 2026-07-04 091831",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from Recording 2026-07-04 09...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "Recording 2026-07-04 091831",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार Recording 2026-07-04 091831 की परिभाषा: Core subject concepts extracted from Recording 2026-07-04 091831.",
+        "source_citation": {
+          "material_title": "Recording 2026-07-04 091831",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831."
+        }
+      },
+      {
+        "id": "q-fitb-1790879328548-9",
+        "course_id": "course-1790879064500-lop6",
+        "concept_id": "c-course-1790879064500-lop6-2",
+        "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "topic": "Core Topics",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "\"data\" में, \"Core subject concepts extracted from THULIR_AI_SIH2026_Updat...\" के रूप में परिभाषित मूल संकल्पना _____ है।",
+        "options": [],
+        "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+        "explanation": "पाठ्यक्रम सामग्री के अनुसार THULIR_AI_SIH2026_Updated_Board_Book_v3 की परिभाषा: Core subject concepts extracted from THULIR_AI_SIH2026_Updated_Board_Book_v3.0.",
+        "source_citation": {
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "reference": "Page 1",
+          "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0."
+        }
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  }
+]

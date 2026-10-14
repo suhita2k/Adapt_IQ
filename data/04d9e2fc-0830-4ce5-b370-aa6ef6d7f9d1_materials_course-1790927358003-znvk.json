@@ -1,0 +1,52 @@
+[
+  {
+    "id": "mat-1790932391305-z7n7",
+    "course_id": "course-1790927358003-znvk",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "title": "Profile",
+    "file_name": "Profile.pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 56972,
+    "visual_elements_count": 0,
+    "status": "indexed",
+    "extracted_chunks_count": 3,
+    "uploaded_at": "2026-10-02T09:13:11.305Z",
+    "file_url": "/api/courses/course-1790927358003-znvk/materials/mat-1790932391305-z7n7/file"
+  },
+  {
+    "id": "mat-1790928323408-soug",
+    "course_id": "course-1790927358003-znvk",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "title": "Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD",
+    "file_name": "Recording 2026-07-04 091831.mp4",
+    "file_type": "lecture_video",
+    "file_size_bytes": 68113641,
+    "duration_seconds": 2700,
+    "video_timestamps": [
+      {
+        "time": "00:00",
+        "label": "Media content start"
+      }
+    ],
+    "visual_elements_count": 3,
+    "status": "indexed",
+    "extracted_chunks_count": 6,
+    "uploaded_at": "2026-10-02T08:05:23.409Z",
+    "file_url": "/api/courses/course-1790927358003-znvk/materials/mat-1790928323408-soug/file"
+  },
+  {
+    "id": "mat-1790927383337-vvyo",
+    "course_id": "course-1790927358003-znvk",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+    "file_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1).docx",
+    "file_type": "notes",
+    "file_size_bytes": 56202,
+    "page_count": 12,
+    "visual_elements_count": 2,
+    "status": "indexed",
+    "extracted_chunks_count": 2,
+    "uploaded_at": "2026-10-02T07:49:43.337Z",
+    "file_url": "/api/courses/course-1790927358003-znvk/materials/mat-1790927383337-vvyo/file"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "profile-92971cd5-b94b-40c0-ac4d-d21290ea108c",
+  "user_id": "92971cd5-b94b-40c0-ac4d-d21290ea108c",
+  "full_name": "asdf",
+  "email": "nthil@gmail.com",
+  "preferred_language": "Tamil",
+  "learning_goal": "Understand concepts",
+  "study_field": "Computer Science",
+  "daily_study_time_minutes": 30,
+  "onboarding_completed": true,
+  "created_at": "2026-10-01T17:53:10.487Z",
+  "updated_at": "2026-10-01T17:53:10.487Z"
+}

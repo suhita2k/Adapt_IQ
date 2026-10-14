@@ -1,0 +1,38 @@
+[
+  {
+    "id": "msg-u-1790876678294",
+    "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+    "course_id": "course-1790876667602-wtpg",
+    "role": "user",
+    "content": "What is a loop invariant and what conditions must it satisfy?",
+    "created_at": "2026-10-01T17:44:38.294Z"
+  },
+  {
+    "id": "msg-a-1790876678297",
+    "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+    "course_id": "course-1790876667602-wtpg",
+    "role": "assistant",
+    "content": "லூப் இன்வேரியன்ட் (Loop invariant) என்பது ஒவ்வொரு லூப் இயக்கத்தின் போதும் உண்மை என நிலைநிறுத்தப்படும் ஒரு நிபந்தனை ஆகும். இது பின்வரும் மூன்று முக்கிய நிபந்தனைகளைப் பூர்த்தி செய்ய வேண்டும்: 1. முதல் மறுநிகழ்வுக்கு (iteration) முன்பு அது உண்மையாக இருக்க வேண்டும். 2. அடுத்தடுத்த மறுநிகழ்வுகளுக்கு முன்பும் அது உண்மையாகவே தொடர வேண்டும். 3. லூப் முடிவடையும் போது, அது பிந்தைய நிபந்தனையை (postcondition) உறுதிப்படுத்த வேண்டும் [Algorithms Syllabus (notes), Page 12].",
+    "created_at": "2026-10-01T17:44:38.297Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790876678297-0",
+        "course_id": "course-1790876667602-wtpg",
+        "material_id": "mat-1790876667847-f18x",
+        "material_title": "Algorithms Syllabus",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Algorithms Syllabus (notes), Page 12",
+        "snippet": "A loop invariant must hold true prior to the first iteration, remain true before subsequent iterations, and establish the postcondition upon termination.",
+        "confidence_score": 0.96,
+        "relevance_reason": "லூப் இன்வேரியன்ட்டின் வரையறை மற்றும் அதன் மூன்று நிபந்தனைகளை விளக்குகிறது."
+      }
+    ],
+    "suggested_followups": [
+      "லூப் இன்வேரியன்ட் அல்காரிதம்களின் சரியான தன்மையை நிரூபிக்க எவ்வாறு உதவுகிறது?",
+      "லூப் இன்வேரியன்ட்டுக்கும் கணித தூண்டலுக்கும் (Mathematical Induction) உள்ள தொடர்பு என்ன?",
+      "ஒரு எளிய வரிசைப்படுத்தும் அல்காரிதமிற்கு லூப் இன்வேரியன்ட்டை எவ்வாறு பயன்படுத்துவது?"
+    ]
+  }
+]

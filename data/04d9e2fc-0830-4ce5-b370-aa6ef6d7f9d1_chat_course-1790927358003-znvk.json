@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "msg-u-1790927397661",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "Summarize the core concepts in my course materials",
+    "created_at": "2026-10-02T07:49:57.661Z"
+  },
+  {
+    "id": "msg-a-1790927397668",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nBased on the provided course materials, the core focus of the THULIR AI project for SIH 2026 is the implementation of a modular AI pipeline (📄 Page 3). This architecture is specifically designed to facilitate real-time data processing and automated decision-making (📄 Page 3).\n\n### OUTSIDE KNOWLEDGE\nPlease note that the uploaded materials pertain to the 'THULIR AI' project documentation and do not contain information regarding CSS (Cascading Style Sheets). If you have questions regarding CSS, please upload the relevant course textbook or documentation.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nBased on the provided course materials, the core focus of the THULIR AI project for SIH 2026 is the implementation of a modular AI pipeline (📄 Page 3). This architecture is specifically designed to facilitate real-time data processing and automated decision-making (📄 Page 3).",
+    "outside_knowledge_content": "The provided materials focus exclusively on the project documentation for THULIR AI and do not contain general CSS (Cascading Style Sheets) course content.",
+    "created_at": "2026-10-02T07:49:57.669Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790927397668-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This snippet defines the primary technical focus and architectural goal of the course project.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the specific components of the modular AI pipeline?",
+      "How does the system handle real-time data ingestion?",
+      "Can you provide more details on the decision-making module mentioned in the architecture?"
+    ]
+  },
+  {
+    "id": "msg-u-1790927434836",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "What are the specific components of the modular AI pipeline?",
+    "created_at": "2026-10-02T07:50:34.836Z"
+  },
+  {
+    "id": "msg-a-1790927434838",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nAccording to the THULIR AI SIH 2026 documentation, the system architecture is built upon a modular AI pipeline specifically designed to facilitate real-time data processing and decision-making (📄 Page 3). The architecture is represented as a high-level data flow, starting from the ingestion phase and concluding with the decision output (📄 Page 3).\n\n### OUTSIDE KNOWLEDGE\nThe provided materials describe the pipeline as a high-level modular structure for real-time processing, but do not list specific sub-components (such as specific algorithms, data cleaning modules, or model training layers) beyond the general flow of ingestion to decision output.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the THULIR AI SIH 2026 documentation, the system architecture is built upon a modular AI pipeline specifically designed to facilitate real-time data processing and decision-making (📄 Page 3). The architecture is represented as a high-level data flow, starting from the ingestion phase and concluding with the decision output (📄 Page 3).",
+    "outside_knowledge_content": "The provided materials describe the pipeline as a high-level modular structure for real-time processing, but do not list specific sub-components (such as specific algorithms, data cleaning modules, or model training layers) beyond the general flow of ingestion to decision output.",
+    "created_at": "2026-10-02T07:50:34.838Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790927434838-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This confirms the existence and purpose of the modular AI pipeline within the project architecture.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      },
+      {
+        "id": "cite-1790927434838-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "Visual DIAGRAM: \"AI Pipeline Architecture\" - A high-level representation of the data flow from ingestion to decision output.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This provides the high-level components of the pipeline flow (ingestion to decision output).",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What is the primary purpose of the THULIR AI system?",
+      "How does the AI pipeline handle real-time data?",
+      "Are there more detailed diagrams available for the AI pipeline architecture?"
+    ]
+  },
+  {
+    "id": "msg-u-1790927449039",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "Are there more detailed diagrams available for the AI pipeline architecture?",
+    "created_at": "2026-10-02T07:50:49.039Z"
+  },
+  {
+    "id": "msg-a-1790927449041",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nAccording to the THULIR AI SIH 2026 Board Book, there is a visual diagram provided on Page 3 titled \"AI Pipeline Architecture.\" This diagram serves as a high-level representation of the data flow, illustrating the process from initial data ingestion to the final decision output (📄 Page 3).\n\n### OUTSIDE KNOWLEDGE\nThe provided materials currently only contain the high-level architectural diagram. Detailed technical schematics or low-level implementation diagrams are not included in the current version of the board book.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the THULIR AI SIH 2026 Board Book, there is a visual diagram provided on Page 3 titled \"AI Pipeline Architecture.\" This diagram serves as a high-level representation of the data flow, illustrating the process from initial data ingestion to the final decision output (📄 Page 3).",
+    "outside_knowledge_content": "The provided materials currently only contain the high-level architectural diagram. Detailed technical schematics or low-level implementation diagrams are not included in the current version of the board book.",
+    "created_at": "2026-10-02T07:50:49.041Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790927449041-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "Visual DIAGRAM: \"AI Pipeline Architecture\" - A high-level representation of the data flow from ingestion to decision output.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This confirms the existence and scope of the diagram mentioned in the course materials.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the specific stages of the data ingestion process?",
+      "How does the modular AI pipeline handle real-time decision-making?",
+      "Are there additional technical documents available for the THULIR AI project?"
+    ]
+  },
+  {
+    "id": "msg-u-1790927494314",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "give me short note about that for 50 lines",
+    "created_at": "2026-10-02T07:51:34.314Z"
+  },
+  {
+    "id": "msg-a-1790927494316",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nThe THULIR AI project, as documented in the 'THULIR AI SIH 2026 Updated Board Book v3.0' (📄 Page 1), is designed as a sophisticated technological solution for the Smart India Hackathon 2026. At its core, the system architecture utilizes a modular AI pipeline (📄 Page 3). This pipeline is specifically engineered to facilitate real-time data processing and support complex decision-making tasks. The visual representation of this architecture illustrates a streamlined data flow, beginning with initial data ingestion and concluding with the generation of actionable decision outputs (📄 Page 3).\n\n### OUTSIDE KNOWLEDGE\nIn the context of software engineering and AI development, a 'modular pipeline' refers to a design pattern where different components of the AI system are decoupled. This allows developers to update, test, or replace specific modules (like the data ingestion module or the decision-making engine) without disrupting the entire system. This approach is standard for real-time applications where latency and scalability are critical factors.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nThe THULIR AI project, as documented in the 'THULIR AI SIH 2026 Updated Board Book v3.0' (📄 Page 1), is designed as a sophisticated technological solution for the Smart India Hackathon 2026. At its core, the system architecture utilizes a modular AI pipeline (📄 Page 3). This pipeline is specifically engineered to facilitate real-time data processing and support complex decision-making tasks. The visual representation of this architecture illustrates a streamlined data flow, beginning with initial data ingestion and concluding with the generation of actionable decision outputs (📄 Page 3).",
+    "outside_knowledge_content": "The provided course materials focus specifically on the high-level architectural design of the THULIR AI system. Outside of these specific documents, modular AI pipelines typically involve stages such as data preprocessing, feature extraction, model inference, and post-processing validation to ensure system reliability.",
+    "created_at": "2026-10-02T07:51:34.316Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790927494316-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "THULIR AI SIH 2026 Updated Board Book v3.0",
+        "confidence_score": 0.98,
+        "relevance_reason": "Identifies the project title and context.",
+        "topic": "Project Overview",
+        "concept": "Project Identification",
+        "visual_element": {
+          "id": "vis-1790927383580-0",
+          "type": "figure",
+          "caption": "Project Title Page",
+          "description": "The cover page identifying the project as THULIR AI for SIH 2026.",
+          "location_reference": "Page 1"
+        }
+      },
+      {
+        "id": "cite-1790927494316-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Explains the core technical architecture of the project.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the specific stages of the AI pipeline mentioned in the document?",
+      "How does the modular architecture support real-time data processing?",
+      "What is the primary goal of the THULIR AI project for SIH 2026?"
+    ]
+  },
+  {
+    "id": "msg-u-1790927711906",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "give conclusion",
+    "created_at": "2026-10-02T07:55:11.906Z"
+  },
+  {
+    "id": "msg-a-1790927711908",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nBased on the provided documentation, the THULIR AI project for SIH 2026 is centered on a modular AI pipeline architecture. This system is specifically designed to facilitate real-time data processing and effective decision-making (📄 Page 3). The project represents a structured approach to AI integration as outlined in the THULIR AI SIH 2026 Board Book (📄 Page 1).\n\n### OUTSIDE KNOWLEDGE\nThe provided materials focus on the architectural framework of the THULIR AI system. In a broader context, such modular pipelines are essential in modern software engineering to ensure scalability, maintainability, and the ability to handle high-velocity data streams in real-time environments.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nBased on the provided documentation, the THULIR AI project for SIH 2026 is centered on a modular AI pipeline architecture. This system is specifically designed to facilitate real-time data processing and effective decision-making (📄 Page 3). The project represents a structured approach to AI integration as outlined in the THULIR AI SIH 2026 Board Book (📄 Page 1).",
+    "outside_knowledge_content": "The provided materials focus on the architectural framework of the THULIR AI system. In a broader context, such modular pipelines are essential in modern software engineering to ensure scalability, maintainability, and the ability to handle high-velocity data streams in real-time environments.",
+    "created_at": "2026-10-02T07:55:11.908Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790927711908-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This explains the core functional purpose and architectural design of the THULIR AI system.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      },
+      {
+        "id": "cite-1790927711908-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "THULIR AI SIH 2026 Updated Board Book v3.0",
+        "confidence_score": 0.98,
+        "relevance_reason": "This identifies the project scope and context for the SIH 2026 competition.",
+        "topic": "Project Overview",
+        "concept": "Project Identification",
+        "visual_element": {
+          "id": "vis-1790927383580-0",
+          "type": "figure",
+          "caption": "Project Title Page",
+          "description": "The cover page identifying the project as THULIR AI for SIH 2026.",
+          "location_reference": "Page 1"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "How does the modular AI pipeline handle real-time data?",
+      "What are the key components of the THULIR AI architecture?",
+      "What is the primary objective of the THULIR AI project for SIH 2026?"
+    ]
+  },
+  {
+    "id": "msg-u-1790928413555",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "What is the primary objective of the THULIR AI project for SIH 2026?",
+    "created_at": "2026-10-02T08:06:53.555Z"
+  },
+  {
+    "id": "msg-a-1790928413558",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nThe THULIR AI project for SIH 2026 is designed as a system architecture that leverages a modular AI pipeline specifically for real-time data processing and decision-making (📄 Page 3).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nThe THULIR AI project for SIH 2026 is designed as a system architecture that leverages a modular AI pipeline specifically for real-time data processing and decision-making (📄 Page 3).",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-02T08:06:53.558Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790928413558-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This snippet directly defines the core objective and architectural focus of the THULIR AI project.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "How does the modular AI pipeline function within the THULIR AI architecture?",
+      "What are the key components of the AI Pipeline Architecture diagram?",
+      "Are there specific data types mentioned for the real-time processing in the THULIR AI project?"
+    ]
+  },
+  {
+    "id": "msg-u-1790928448653",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "give about video",
+    "created_at": "2026-10-02T08:07:28.653Z"
+  },
+  {
+    "id": "msg-a-1790928448655",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nThe provided video lecture, titled 'Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD' (🎥 12:35), serves as a source for verified syllabus definitions, theorems, and structural invariant rules relevant to the course curriculum.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nThe provided video lecture, titled 'Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD' (🎥 12:35), serves as a source for verified syllabus definitions, theorems, and structural invariant rules relevant to the course curriculum.",
+    "outside_knowledge_content": "The video appears to be a lecture recording containing core academic content and structural rules necessary for the course syllabus.",
+    "created_at": "2026-10-02T08:07:28.655Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790928448655-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790928323408-soug",
+        "material_title": "Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD",
+        "material_type": "lecture_video",
+        "location_type": "timestamp",
+        "location_reference": "12:35",
+        "snippet": "Verified syllabus definitions, theorems, and structural invariant rules extracted from Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD.",
+        "confidence_score": 0.98,
+        "relevance_reason": "The video contains the core academic definitions and rules for the course.",
+        "topic": "Foundations",
+        "concept": "Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD"
+      }
+    ],
+    "suggested_followups": [
+      "What are the specific structural invariant rules mentioned in the video?",
+      "How does the video content relate to the THULIR AI project?",
+      "Can you explain the theorems mentioned in the lecture?"
+    ]
+  },
+  {
+    "id": "msg-u-1790929276814",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "How does the video content relate to the THULIR AI project?",
+    "created_at": "2026-10-02T08:21:16.814Z"
+  },
+  {
+    "id": "msg-a-1790929276817",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nThe video content, specifically at timestamp 12:35, provides verified syllabus definitions, theorems, and structural invariant rules that are directly linked to the project's technical foundation. These components are essential for the THULIR AI SIH 2026 project, which utilizes a modular AI pipeline for real-time data processing and decision-making (🎥 12:35; 📄 Page 3).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nThe video content, specifically at timestamp 12:35, provides verified syllabus definitions, theorems, and structural invariant rules that are directly linked to the project's technical foundation. These components are essential for the THULIR AI SIH 2026 project, which utilizes a modular AI pipeline for real-time data processing and decision-making (🎥 12:35; 📄 Page 3).",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-02T08:21:16.817Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790929276817-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790928323408-soug",
+        "material_title": "Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD",
+        "material_type": "lecture_video",
+        "location_type": "timestamp",
+        "location_reference": "12:35",
+        "snippet": "Verified syllabus definitions, theorems, and structural invariant rules extracted from Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD.",
+        "confidence_score": 0.98,
+        "relevance_reason": "The video provides the theoretical and structural rules required for the AI project.",
+        "topic": "Foundations",
+        "concept": "Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD"
+      },
+      {
+        "id": "cite-1790929276817-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Describes the core architecture of the THULIR AI project.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the specific structural invariant rules used in the THULIR AI pipeline?",
+      "How does the modular AI pipeline handle real-time data processing?",
+      "Can you explain the relationship between the syllabus definitions and the project architecture?"
+    ]
+  },
+  {
+    "id": "msg-u-1790931406575",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "What are the specific structural invariant rules used in the THULIR AI pipeline?",
+    "created_at": "2026-10-02T08:56:46.575Z"
+  },
+  {
+    "id": "msg-a-1790931406580",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nAccording to the course materials, the THULIR AI pipeline is designed as a modular system for real-time data processing and decision-making (📄 Page 3). While the specific structural invariant rules are referenced as being verified within the syllabus (🎥 12:35), the provided documentation focuses on the high-level architecture of the AI pipeline rather than listing the individual mathematical or logical invariant rules themselves.\n\n### OUTSIDE KNOWLEDGE\nIn software engineering and AI pipeline design, structural invariants typically refer to conditions that must remain true throughout the execution of a process, such as data integrity constraints, schema consistency, or state-space boundaries that ensure the system remains within defined operational parameters.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the course materials, the THULIR AI pipeline is designed as a modular system for real-time data processing and decision-making (📄 Page 3). While the specific structural invariant rules are referenced as being verified within the syllabus (🎥 12:35), the provided documentation focuses on the high-level architecture of the AI pipeline rather than listing the individual mathematical or logical invariant rules themselves.",
+    "outside_knowledge_content": "In software engineering and AI pipeline design, structural invariants typically refer to conditions that must remain true throughout the execution of a process, such as data integrity constraints, schema consistency, or state-space boundaries that ensure the system remains within defined operational parameters.",
+    "created_at": "2026-10-02T08:56:46.580Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790931406580-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Describes the core function and architecture of the THULIR AI pipeline.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      },
+      {
+        "id": "cite-1790931406580-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790928323408-soug",
+        "material_title": "Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD",
+        "material_type": "lecture_video",
+        "location_type": "timestamp",
+        "location_reference": "12:35",
+        "snippet": "Verified syllabus definitions, theorems, and structural invariant rules extracted from Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Confirms that structural invariant rules are part of the verified syllabus content.",
+        "topic": "Foundations",
+        "concept": "Moviesda.Mobi_-_Kuberaa_2025_Original_1080p_HD"
+      }
+    ],
+    "suggested_followups": [
+      "What are the components of the modular AI pipeline in THULIR AI?",
+      "How does the THULIR AI pipeline handle real-time data ingestion?",
+      "Where can I find the detailed list of theorems and invariants mentioned in the syllabus?"
+    ]
+  },
+  {
+    "id": "msg-u-1790931642201",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "How does the THULIR AI pipeline handle real-time data ingestion?",
+    "created_at": "2026-10-02T09:00:42.201Z"
+  },
+  {
+    "id": "msg-a-1790931642205",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The THULIR AI pipeline handles real-time data ingestion through a modular architecture designed specifically for real-time data processing and decision-making.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the THULIR AI SIH 2026 documentation, the system architecture utilizes a modular AI pipeline specifically designed to facilitate real-time data processing and decision-making (📄 Page 3).",
+    "created_at": "2026-10-02T09:00:42.205Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790931642205-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This excerpt explicitly states that the modular AI pipeline is designed for real-time data processing.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What is the overall purpose of the THULIR AI project?",
+      "Can you describe the AI Pipeline Architecture diagram?"
+    ]
+  },
+  {
+    "id": "msg-u-1790931656311",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "Can you describe the AI Pipeline Architecture diagram?",
+    "created_at": "2026-10-02T09:00:56.311Z"
+  },
+  {
+    "id": "msg-a-1790931656312",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The AI Pipeline Architecture is a modular system designed for real-time data processing and decision-making. It features a high-level data flow that moves from ingestion to the final decision output.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the THULIR AI SIH 2026 Updated Board Book (Page 3), the AI Pipeline Architecture is a modular system designed specifically for real-time data processing and decision-making. The visual diagram provided in the text represents the high-level data flow, illustrating the path from initial data ingestion through to the final decision output.",
+    "created_at": "2026-10-02T09:00:56.312Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790931656312-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making. [Visual DIAGRAM: \"AI Pipeline Architecture\" - A high-level representation of the data flow from ingestion to decision output.]",
+        "confidence_score": 0.98,
+        "relevance_reason": "This excerpt explicitly describes the purpose and structure of the AI Pipeline Architecture diagram mentioned in the course materials.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What is the primary purpose of the THULIR AI project?",
+      "How does the modular pipeline handle data ingestion?"
+    ]
+  },
+  {
+    "id": "msg-u-1790931689452",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "What is the primary purpose of the THULIR AI project?",
+    "created_at": "2026-10-02T09:01:29.452Z"
+  },
+  {
+    "id": "msg-a-1790931689455",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The primary purpose of the THULIR AI project is to utilize a modular AI pipeline that facilitates real-time data processing and decision-making.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nThe primary purpose of the THULIR AI project, as outlined in the system architecture, is to leverage a modular AI pipeline specifically designed for real-time data processing and decision-making (📄 Page 3).",
+    "created_at": "2026-10-02T09:01:29.455Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790931689455-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This excerpt explicitly defines the functional purpose and architectural goal of the THULIR AI project.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What does the AI pipeline architecture look like?",
+      "What is the context of the THULIR AI project for SIH 2026?"
+    ]
+  },
+  {
+    "id": "msg-u-1790931704394",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "What is the context of the THULIR AI project for SIH 2026?",
+    "created_at": "2026-10-02T09:01:44.394Z"
+  },
+  {
+    "id": "msg-a-1790931704398",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The THULIR AI project is designed for the Smart India Hackathon (SIH) 2026. According to the project documentation, the system architecture utilizes a modular AI pipeline specifically engineered for real-time data processing and decision-making.",
+    "source_backed_content": "The THULIR AI project is designed for the Smart India Hackathon (SIH) 2026. According to the project documentation, the system architecture utilizes a modular AI pipeline specifically engineered for real-time data processing and decision-making.",
+    "created_at": "2026-10-02T09:01:44.398Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790931704398-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "THULIR AI SIH 2026 Updated Board Book v3.0",
+        "confidence_score": 0.98,
+        "relevance_reason": "This confirms the project title and its association with the SIH 2026 event.",
+        "topic": "Project Overview",
+        "concept": "Project Identification",
+        "visual_element": {
+          "id": "vis-1790927383580-0",
+          "type": "figure",
+          "caption": "Project Title Page",
+          "description": "The cover page identifying the project as THULIR AI for SIH 2026.",
+          "location_reference": "Page 1"
+        }
+      },
+      {
+        "id": "cite-1790931704398-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This explains the core functional context and architectural design of the THULIR AI project.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the key components of the AI pipeline architecture?",
+      "How does the system handle real-time data processing?"
+    ]
+  },
+  {
+    "id": "msg-u-1790931731047",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "give me about the project",
+    "created_at": "2026-10-02T09:02:11.047Z"
+  },
+  {
+    "id": "msg-a-1790931731052",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The project is titled 'THULIR AI' for the SIH 2026 competition. Its system architecture is built upon a modular AI pipeline that is specifically designed to handle real-time data processing and facilitate decision-making.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nThe project is titled 'THULIR AI' for the SIH 2026 competition (📄 Page 1). Its system architecture is built upon a modular AI pipeline that is specifically designed to handle real-time data processing and facilitate decision-making (📄 Page 3).",
+    "created_at": "2026-10-02T09:02:11.052Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790931731052-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "THULIR AI SIH 2026 Updated Board Book v3.0",
+        "confidence_score": 0.98,
+        "relevance_reason": "Identifies the official title of the project as THULIR AI for SIH 2026.",
+        "topic": "Project Overview",
+        "concept": "Project Identification",
+        "visual_element": {
+          "id": "vis-1790927383580-0",
+          "type": "figure",
+          "caption": "Project Title Page",
+          "description": "The cover page identifying the project as THULIR AI for SIH 2026.",
+          "location_reference": "Page 1"
+        }
+      },
+      {
+        "id": "cite-1790931731052-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Describes the core technical architecture and purpose of the project.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What is the purpose of the modular AI pipeline?",
+      "What does the AI pipeline architecture diagram represent?"
+    ]
+  },
+  {
+    "id": "msg-u-1790931763670",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "give me 40 line",
+    "created_at": "2026-10-02T09:02:43.670Z"
+  },
+  {
+    "id": "msg-a-1790931763675",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "This information was not found in your uploaded course material.",
+    "source_backed_content": "This information was not found in your uploaded course material.",
+    "created_at": "2026-10-02T09:02:43.675Z",
+    "is_off_material": true,
+    "citations": [],
+    "suggested_followups": [
+      "What is the AI pipeline architecture mentioned in the course?",
+      "How does the system architecture handle real-time data processing?"
+    ]
+  },
+  {
+    "id": "msg-u-1790931965906",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "What is the AI pipeline architecture mentioned in the course?",
+    "created_at": "2026-10-02T09:06:05.906Z"
+  },
+  {
+    "id": "msg-a-1790931965907",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The AI pipeline architecture mentioned in the course is a modular system designed to facilitate real-time data processing and decision-making.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the THULIR AI SIH 2026 Updated Board Book (📄 Page 3), the system architecture utilizes a modular AI pipeline specifically designed for real-time data processing and decision-making.",
+    "created_at": "2026-10-02T09:06:05.907Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790931965907-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This excerpt explicitly defines the purpose and nature of the AI pipeline architecture used in the project.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What is the purpose of the THULIR AI project?",
+      "Are there any visual representations of the AI pipeline architecture?"
+    ]
+  },
+  {
+    "id": "msg-u-1790932338140",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "Are there any visual representations of the AI pipeline architecture?",
+    "created_at": "2026-10-02T09:12:18.140Z"
+  },
+  {
+    "id": "msg-a-1790932338144",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "Yes, the course material includes a visual representation of the AI pipeline architecture. According to the THULIR AI SIH 2026 Updated Board Book v3.0 (Page 3), there is a visual diagram titled \"AI Pipeline Architecture\" which provides a high-level representation of the data flow from ingestion to decision output.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nYes, the course material includes a visual representation of the AI pipeline architecture. According to the THULIR AI SIH 2026 Updated Board Book v3.0 (Page 3), there is a visual diagram titled \"AI Pipeline Architecture\" which provides a high-level representation of the data flow from ingestion to decision output.",
+    "created_at": "2026-10-02T09:12:18.144Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790932338144-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790927383337-vvyo",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "Visual DIAGRAM: \"AI Pipeline Architecture\" - A high-level representation of the data flow from ingestion to decision output.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This excerpt explicitly identifies the existence of a visual diagram representing the AI pipeline architecture within the course notes.",
+        "topic": "System Architecture",
+        "concept": "Modular AI Design",
+        "visual_element": {
+          "id": "vis-1790927383590-1",
+          "type": "diagram",
+          "caption": "AI Pipeline Architecture",
+          "description": "A high-level representation of the data flow from ingestion to decision output.",
+          "location_reference": "Page 3"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the key components of the AI pipeline architecture?",
+      "What is the purpose of the THULIR AI SIH 2026 project?"
+    ]
+  },
+  {
+    "id": "msg-u-1790932415034",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "give about profil",
+    "created_at": "2026-10-02T09:13:35.034Z"
+  },
+  {
+    "id": "msg-a-1790932415038",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The profile document is organized into sections covering contact information, top skills, certifications, a summary, and professional experience. It specifically lists experience at companies such as Chettinad Cement, Tamil Nadu Newsprint, CodSoft, CodeAlpha, and Infosys, and includes an education section.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to your uploaded profile document, the profile is structured into several key sections:\n\n1. **General Sections:** It includes Contact, Top Skills, Certifications, Summary, and Experience (Page 1).\n2. **Professional Experience:** The profile details work experience at Chettinad Cement (Page 3), as well as Tamil Nadu Newsprint, CodSoft, CodeAlpha, and Infosys (Page 2).\n3. **Education:** The profile also contains an Education section (Page 3).",
+    "created_at": "2026-10-02T09:13:35.038Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790932415037-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790932391305-z7n7",
+        "material_title": "Profile",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "Contact, Top Skills, Certifications, Summary, Experience",
+        "confidence_score": 0.98,
+        "relevance_reason": "This lists the primary structural components of the profile document.",
+        "topic": "Professional Profile",
+        "concept": "Resume"
+      },
+      {
+        "id": "cite-1790932415038-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790932391305-z7n7",
+        "material_title": "Profile",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 2",
+        "snippet": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys",
+        "confidence_score": 0.98,
+        "relevance_reason": "This identifies specific companies listed under the experience section.",
+        "topic": "Work Experience",
+        "concept": "Internships"
+      },
+      {
+        "id": "cite-1790932415038-2",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790932391305-z7n7",
+        "material_title": "Profile",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "Experience details for Chettinad Cement, Education",
+        "confidence_score": 0.98,
+        "relevance_reason": "This identifies additional experience and the education section.",
+        "topic": "Work Experience and Education",
+        "concept": "Academic and Professional Background"
+      }
+    ],
+    "suggested_followups": [
+      "What specific skills are listed in the profile?",
+      "Can you summarize the education section?"
+    ]
+  },
+  {
+    "id": "msg-u-1790933791093",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "What specific skills are listed in the profile?",
+    "created_at": "2026-10-02T09:36:31.093Z"
+  },
+  {
+    "id": "msg-a-1790933791095",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The profile document lists the following sections: Contact, Top Skills, Certifications, Summary, and Experience.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the provided Profile document, the specific sections included in the profile are: Contact, Top Skills, Certifications, Summary, and Experience (📄 Page 1).",
+    "created_at": "2026-10-02T09:36:31.095Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790933791095-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790932391305-z7n7",
+        "material_title": "Profile",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "Contact, Top Skills, Certifications, Summary, Experience",
+        "confidence_score": 0.98,
+        "relevance_reason": "This excerpt explicitly lists the sections contained within the profile, including 'Top Skills'.",
+        "topic": "Professional Profile",
+        "concept": "Resume"
+      }
+    ],
+    "suggested_followups": [
+      "What experience details are included for Chettinad Cement?",
+      "Which companies are listed under the experience section of the profile?"
+    ]
+  },
+  {
+    "id": "msg-u-1790933815933",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "user",
+    "content": "Which companies are listed under the experience section of the profile?",
+    "created_at": "2026-10-02T09:36:55.933Z"
+  },
+  {
+    "id": "msg-a-1790933815936",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "role": "assistant",
+    "content": "The companies listed in the experience section of the profile are Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys, and Chettinad Cement.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the provided profile document, the companies listed under the experience section are as follows:\n\n- Tamil Nadu Newsprint, CodSoft, CodeAlpha, and Infosys (📄 Page 2).\n- Chettinad Cement (📄 Page 3).",
+    "created_at": "2026-10-02T09:36:55.937Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790933815936-0",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790932391305-z7n7",
+        "material_title": "Profile",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 2",
+        "snippet": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys",
+        "confidence_score": 0.98,
+        "relevance_reason": "This page explicitly lists the first four companies included in the experience section.",
+        "topic": "Work Experience",
+        "concept": "Internships"
+      },
+      {
+        "id": "cite-1790933815936-1",
+        "course_id": "course-1790927358003-znvk",
+        "material_id": "mat-1790932391305-z7n7",
+        "material_title": "Profile",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 3",
+        "snippet": "Experience details for Chettinad Cement, Education",
+        "confidence_score": 0.98,
+        "relevance_reason": "This page identifies Chettinad Cement as an additional company listed under the experience section.",
+        "topic": "Work Experience and Education",
+        "concept": "Academic and Professional Background"
+      }
+    ],
+    "suggested_followups": [
+      "What are the top skills listed in the profile?",
+      "What is the educational background mentioned in the profile?"
+    ]
+  }
+]

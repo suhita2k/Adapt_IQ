@@ -1,0 +1,114 @@
+[
+  {
+    "id": "msg-u-1790923179712",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "role": "user",
+    "content": "Summarize the core concepts in my course materials",
+    "created_at": "2026-10-02T06:39:39.712Z"
+  },
+  {
+    "id": "msg-a-1790923179715",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nBased on your course materials for \"chap\", the document introduces the core definitions, diagrams, and syllabus topics relevant to the course 📄 Page 1.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nBased on your course materials for \"chap\", the document introduces the core definitions, diagrams, and syllabus topics relevant to the course 📄 Page 1.",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-02T06:39:39.715Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790923179715-0",
+        "course_id": "course-1790923123271-k16r",
+        "material_id": "mat-1790923161618-cv27",
+        "material_title": "chap",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "Core definitions, diagrams, and syllabus topics introduced for chap.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Provides the overall summary of the topics introduced in the course materials."
+      }
+    ],
+    "suggested_followups": [
+      "What specific core definitions are covered in the syllabus?",
+      "Can you explain the diagrams introduced in the course materials?",
+      "What are the main syllabus topics for this course?"
+    ]
+  },
+  {
+    "id": "msg-u-1790923202148",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "role": "user",
+    "content": "What specific core definitions are covered in the syllabus?",
+    "created_at": "2026-10-02T06:40:02.148Z"
+  },
+  {
+    "id": "msg-a-1790923202168",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nAccording to the course materials, the chapter introduces core definitions, diagrams, and syllabus topics (📄 Page 1).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the course materials, the chapter introduces core definitions, diagrams, and syllabus topics (📄 Page 1).",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-02T06:40:02.168Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790923202168-0",
+        "course_id": "course-1790923123271-k16r",
+        "material_id": "mat-1790923161618-cv27",
+        "material_title": "chap",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "Core definitions, diagrams, and syllabus topics introduced for chap.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Provides the exact list of core elements introduced in the chapter."
+      }
+    ],
+    "suggested_followups": [
+      "What specific diagrams are included in the chapter?",
+      "What are the main syllabus topics covered for chap?"
+    ]
+  },
+  {
+    "id": "msg-u-1790923224440",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "role": "user",
+    "content": "What specific diagrams are included in the chapter?",
+    "created_at": "2026-10-02T06:40:24.440Z"
+  },
+  {
+    "id": "msg-a-1790923224442",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "role": "assistant",
+    "content": "### SOURCE-BACKED ANSWER\nAccording to the uploaded chapter materials, the chapter introduces core definitions, diagrams, and syllabus topics (📄 Page 1). However, the specific visual contents or labels of those diagrams are not detailed in the text excerpt.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the uploaded chapter materials, the chapter introduces core definitions, diagrams, and syllabus topics (📄 Page 1). However, the specific visual contents or labels of those diagrams are not detailed in the text excerpt.",
+    "outside_knowledge_content": "",
+    "created_at": "2026-10-02T06:40:24.442Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790923224441-0",
+        "course_id": "course-1790923123271-k16r",
+        "material_id": "mat-1790923161618-cv27",
+        "material_title": "chap",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "Core definitions, diagrams, and syllabus topics introduced for chap.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Mentions that diagrams are introduced in the chapter."
+      }
+    ],
+    "suggested_followups": [
+      "What core definitions are introduced in the chapter?",
+      "What syllabus topics are covered in chap?"
+    ]
+  }
+]

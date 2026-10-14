@@ -1,0 +1,715 @@
+[
+  {
+    "id": "q-mcq-1790934013150-0",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+    "concept_name": "Modular AI Pipeline",
+    "topic": "System Architecture",
+    "subtopic": "AI Pipeline",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "In the context of the THULIR AI SIH 2026 project, what is the primary function of the 'Modular AI Pipeline'?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "To facilitate real-time data processing and decision-making.",
+        "is_correct": true,
+        "explanation": "The documentation confirms the pipeline is designed for real-time data processing."
+      },
+      {
+        "id": "opt-2",
+        "text": "To serve as a static database for historical records.",
+        "is_correct": false,
+        "explanation": "The pipeline is dynamic and modular, not a static database.",
+        "misconception_tag": "System Architecture Misconception"
+      },
+      {
+        "id": "opt-3",
+        "text": "To replace the need for human input in all project phases.",
+        "is_correct": false,
+        "explanation": "The pipeline is for processing and decision-making, not total automation of all phases.",
+        "misconception_tag": "Automation Overreach"
+      },
+      {
+        "id": "opt-4",
+        "text": "To manage the administrative documentation of the SIH team.",
+        "is_correct": false,
+        "explanation": "The pipeline is a technical architecture component, not an administrative tool.",
+        "misconception_tag": "Scope Confusion"
+      }
+    ],
+    "correct_answer": "To facilitate real-time data processing and decision-making.",
+    "explanation": "The THULIR AI SIH 2026 Board Book states the architecture leverages a modular AI pipeline for real-time data processing.",
+    "learning_objective": "Analyze data flow efficiency",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 3",
+      "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The source document explicitly states the modular AI pipeline is designed for real-time data processing and decision-making."
+  },
+  {
+    "id": "q-mcq-1790934013150-1",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+    "concept_name": "Experience Documentation",
+    "topic": "Career History",
+    "subtopic": "Professional Experience",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Which of the following companies is explicitly listed as part of the professional experience in the provided profile documentation?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Infosys",
+        "is_correct": true,
+        "explanation": "Infosys is explicitly listed in the experience section of the profile."
+      },
+      {
+        "id": "opt-2",
+        "text": "Google",
+        "is_correct": false,
+        "explanation": "Google is not mentioned in the provided profile document.",
+        "misconception_tag": "External Knowledge Bias"
+      },
+      {
+        "id": "opt-3",
+        "text": "Microsoft",
+        "is_correct": false,
+        "explanation": "Microsoft is not mentioned in the provided profile document.",
+        "misconception_tag": "External Knowledge Bias"
+      },
+      {
+        "id": "opt-4",
+        "text": "Amazon",
+        "is_correct": false,
+        "explanation": "Amazon is not mentioned in the provided profile document.",
+        "misconception_tag": "External Knowledge Bias"
+      }
+    ],
+    "correct_answer": "Infosys",
+    "explanation": "The profile document lists Infosys under the professional experience section.",
+    "learning_objective": "Chronologically list organizational affiliations",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 2",
+      "quote": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Reviewing Profile.pdf page 2, the list includes Tamil Nadu Newsprint, CodSoft, CodeAlpha, and Infosys."
+  },
+  {
+    "id": "q-mcq-1790934013150-2",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-1",
+    "concept_name": "Professional Summary",
+    "topic": "Profile Structure",
+    "subtopic": "Documentation",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Understand",
+    "question_text": "Which section of the professional profile is designed to provide a concise overview of an individual's qualifications and career highlights?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Professional Summary",
+        "is_correct": true,
+        "explanation": "The professional summary is defined as a concise overview of qualifications."
+      },
+      {
+        "id": "opt-2",
+        "text": "Technical Skills Mapping",
+        "is_correct": false,
+        "explanation": "This section focuses on categorizing competencies, not a narrative summary.",
+        "misconception_tag": "Concept Confusion"
+      },
+      {
+        "id": "opt-3",
+        "text": "Educational Background",
+        "is_correct": false,
+        "explanation": "This section documents academic credentials, not career highlights.",
+        "misconception_tag": "Concept Confusion"
+      },
+      {
+        "id": "opt-4",
+        "text": "Experience Documentation",
+        "is_correct": false,
+        "explanation": "This section records roles and responsibilities, not a summary overview.",
+        "misconception_tag": "Concept Confusion"
+      }
+    ],
+    "correct_answer": "Professional Summary",
+    "explanation": "A professional summary is defined as a concise overview of an individual's qualifications and career highlights.",
+    "learning_objective": "Draft a summary that encapsulates professional identity",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 1",
+      "quote": "Contact, Top Skills, Certifications, Summary, Experience"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The definition of Professional Summary in the concept list matches the description of a concise overview of qualifications."
+  },
+  {
+    "id": "q-mcq-1790934013151-3",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-3",
+    "concept_name": "Technical Skills Mapping",
+    "topic": "Competency Management",
+    "subtopic": "Skills",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Analyze",
+    "question_text": "What is the primary purpose of 'Technical Skills Mapping' in a professional profile?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "To identify and categorize top-tier technical competencies.",
+        "is_correct": true,
+        "explanation": "This is the exact definition provided in the concept mapping."
+      },
+      {
+        "id": "opt-2",
+        "text": "To list all academic certifications chronologically.",
+        "is_correct": false,
+        "explanation": "That is the purpose of Educational Background.",
+        "misconception_tag": "Concept Confusion"
+      },
+      {
+        "id": "opt-3",
+        "text": "To provide a narrative of career history.",
+        "is_correct": false,
+        "explanation": "That is the purpose of Experience Documentation.",
+        "misconception_tag": "Concept Confusion"
+      },
+      {
+        "id": "opt-4",
+        "text": "To outline the SIH project framework.",
+        "is_correct": false,
+        "explanation": "That is the purpose of the SIH Project Framework concept.",
+        "misconception_tag": "Concept Confusion"
+      }
+    ],
+    "correct_answer": "To identify and categorize top-tier technical competencies.",
+    "explanation": "Technical Skills Mapping is defined as the identification and categorization of top-tier technical competencies relevant to a professional profile.",
+    "learning_objective": "Categorize technical abilities as top skills",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 1",
+      "quote": "Top Skills"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The concept definition states it is the identification and categorization of top-tier technical competencies."
+  },
+  {
+    "id": "q-fill_in_the_blank-1790934013151-4",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+    "concept_name": "SIH Project Framework",
+    "topic": "Project Management",
+    "subtopic": "Hackathon Strategy",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "The _________ methodology is the structured approach required for Smart India Hackathon project submissions.",
+    "options": [],
+    "correct_answer": "SIH Project Framework",
+    "explanation": "The SIH Project Framework is the specific methodology defined for hackathon submissions.",
+    "learning_objective": "Structure project documentation",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The concept definition for SIH Project Framework identifies it as the structured methodology for submissions."
+  },
+  {
+    "id": "q-fill_in_the_blank-1790934013151-5",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-4",
+    "concept_name": "Educational Background",
+    "topic": "Qualifications",
+    "subtopic": "Education",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Formal documentation of academic credentials and certifications is categorized under _________.",
+    "options": [],
+    "correct_answer": "Educational Background",
+    "explanation": "Educational Background is the concept defined for documenting academic credentials.",
+    "learning_objective": "List formal education degrees",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 3",
+      "quote": "Education"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The concept definition for Educational Background explicitly mentions formal documentation of academic credentials."
+  },
+  {
+    "id": "q-fill_in_the_blank-1790934013151-6",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+    "concept_name": "Experience Documentation",
+    "topic": "Career History",
+    "subtopic": "Professional Experience",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The systematic recording of professional roles and organizational affiliations is known as _________.",
+    "options": [],
+    "correct_answer": "Experience Documentation",
+    "explanation": "Experience Documentation is the systematic recording of professional roles and organizational affiliations.",
+    "learning_objective": "Chronologically list organizational affiliations",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 2",
+      "quote": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The definition of Experience Documentation matches the description of recording professional roles."
+  },
+  {
+    "id": "q-short_answer-1790934013151-7",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+    "concept_name": "SIH Project Framework",
+    "topic": "Project Management",
+    "subtopic": "Hackathon Strategy",
+    "question_type": "short_answer",
+    "difficulty": "hard",
+    "bloom_level": "Evaluate",
+    "question_text": "Explain the importance of aligning project goals with SIH criteria within the SIH Project Framework.",
+    "options": [],
+    "correct_answer": "Alignment ensures that the project submission meets the specific evaluation criteria and structural requirements set by the Smart India Hackathon, increasing the likelihood of project success and compliance.",
+    "explanation": "The SIH Project Framework is designed to ensure that project goals are structured to meet the specific criteria of the hackathon.",
+    "learning_objective": "Align project goals with SIH criteria",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "THULIR AI SIH 2026 Updated Board Book v3.0"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Alignment ensures the project meets the specific requirements of the hackathon, which is the primary goal of the framework."
+  },
+  {
+    "id": "q-short_answer-1790934013151-8",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-3",
+    "concept_name": "Technical Skills Mapping",
+    "topic": "Competency Management",
+    "subtopic": "Skills",
+    "question_type": "short_answer",
+    "difficulty": "medium",
+    "bloom_level": "Analyze",
+    "question_text": "Describe the relationship between 'Technical Skills Mapping' and 'Experience Documentation' in a professional profile.",
+    "options": [],
+    "correct_answer": "Technical Skills Mapping identifies and categorizes the competencies, while Experience Documentation provides the chronological context and organizational evidence of where those skills were utilized and developed.",
+    "explanation": "These two sections work together to validate the professional's capabilities through both categorization and historical evidence.",
+    "learning_objective": "Align skills with professional experience",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 1",
+      "quote": "Top Skills, Experience"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Technical skills mapping categorizes competencies, while experience documentation provides the context (roles/companies) where those skills were applied."
+  },
+  {
+    "id": "q-mcq-1790934013151-9",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+    "concept_name": "Modular AI Pipeline",
+    "topic": "System Architecture",
+    "subtopic": "AI Pipeline",
+    "question_type": "mcq",
+    "difficulty": "hard",
+    "bloom_level": "Apply",
+    "question_text": "If a modular AI pipeline processes 100 data packets per second and each module adds a 5ms latency, calculate the total latency for a pipeline consisting of 4 independent modules.",
+    "options": [
+      {
+        "id": "opt-9-0",
+        "text": "Alternative variant 1",
+        "is_correct": false,
+        "explanation": "Secondary distractor variant.",
+        "misconception_tag": "Boundary condition error"
+      },
+      {
+        "id": "opt-9-1",
+        "text": "Alternative variant 2",
+        "is_correct": false,
+        "explanation": "Secondary distractor variant.",
+        "misconception_tag": "Boundary condition error"
+      },
+      {
+        "id": "opt-9-2",
+        "text": "Alternative variant 3",
+        "is_correct": false,
+        "explanation": "Secondary distractor variant.",
+        "misconception_tag": "Boundary condition error"
+      },
+      {
+        "id": "opt-9-3",
+        "text": "Alternative variant 4",
+        "is_correct": false,
+        "explanation": "Secondary distractor variant.",
+        "misconception_tag": "Boundary condition error"
+      }
+    ],
+    "correct_answer": "Alternative variant 1",
+    "explanation": "With 4 modules each adding 5ms of latency, the total latency is 4 * 5ms = 20ms.",
+    "learning_objective": "Analyze data flow efficiency",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 3",
+      "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Total latency = (Number of modules) * (Latency per module) = 4 * 5ms = 20ms."
+  },
+  {
+    "id": "q-mcq-1790934013151-10",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+    "concept_name": "Modular AI Pipeline",
+    "topic": "Project Management",
+    "subtopic": "Hackathon Strategy",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "In the context of the THULIR AI SIH 2026 framework, which component is primarily responsible for real-time data processing and decision-making?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Modular AI Pipeline",
+        "is_correct": true,
+        "explanation": "The documentation confirms the modular AI pipeline is designed for real-time data processing."
+      },
+      {
+        "id": "opt-2",
+        "text": "Static Data Repository",
+        "is_correct": false,
+        "explanation": "This is not mentioned as the primary real-time processing component.",
+        "misconception_tag": "Terminology omission in SIH Project Framework"
+      },
+      {
+        "id": "opt-3",
+        "text": "Manual Decision Engine",
+        "is_correct": false,
+        "explanation": "The framework focuses on AI-driven automation, not manual engines.",
+        "misconception_tag": "Terminology omission in SIH Project Framework"
+      },
+      {
+        "id": "opt-4",
+        "text": "Legacy Batch Processor",
+        "is_correct": false,
+        "explanation": "The framework emphasizes modular AI, not legacy batch processing.",
+        "misconception_tag": "Terminology omission in SIH Project Framework"
+      }
+    ],
+    "correct_answer": "Modular AI Pipeline",
+    "explanation": "The THULIR AI SIH 2026 Board Book (Page 3) defines the system architecture as leveraging a modular AI pipeline for real-time data processing.",
+    "learning_objective": "Analyze data flow efficiency",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 3",
+      "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The THULIR AI SIH 2026 Board Book explicitly states the system architecture leverages a modular AI pipeline for real-time processing."
+  },
+  {
+    "id": "q-mcq-1790934013151-11",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+    "concept_name": "Experience Documentation",
+    "topic": "Career History",
+    "subtopic": "Professional Experience",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Which of the following companies is explicitly listed as part of the professional experience documentation in the provided profile?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Infosys",
+        "is_correct": true,
+        "explanation": "Infosys is explicitly listed in the experience section on page 2."
+      },
+      {
+        "id": "opt-2",
+        "text": "Google",
+        "is_correct": false,
+        "explanation": "Google is not mentioned in the provided profile document.",
+        "misconception_tag": "Experience Documentation"
+      },
+      {
+        "id": "opt-3",
+        "text": "Microsoft",
+        "is_correct": false,
+        "explanation": "Microsoft is not mentioned in the provided profile document.",
+        "misconception_tag": "Experience Documentation"
+      },
+      {
+        "id": "opt-4",
+        "text": "Amazon",
+        "is_correct": false,
+        "explanation": "Amazon is not mentioned in the provided profile document.",
+        "misconception_tag": "Experience Documentation"
+      }
+    ],
+    "correct_answer": "Infosys",
+    "explanation": "The Profile document (Page 2) lists experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, and Infosys.",
+    "learning_objective": "Detail specific roles held at companies like Infosys or CodSoft",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 2",
+      "quote": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Page 2 of the Profile document lists Infosys, CodSoft, CodeAlpha, and Tamil Nadu Newsprint."
+  },
+  {
+    "id": "q-mcq-1790934013151-12",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-1",
+    "concept_name": "Professional Summary",
+    "topic": "Profile Structure",
+    "subtopic": "Documentation",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Understand",
+    "question_text": "What is the primary purpose of a Professional Summary in a profile structure?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "To provide a concise overview of qualifications and career highlights.",
+        "is_correct": true,
+        "explanation": "This matches the definition provided in the course concepts."
+      },
+      {
+        "id": "opt-2",
+        "text": "To list every project completed in chronological order.",
+        "is_correct": false,
+        "explanation": "This describes experience documentation, not a summary.",
+        "misconception_tag": "Professional Summary"
+      },
+      {
+        "id": "opt-3",
+        "text": "To detail the technical specifications of the AI pipeline.",
+        "is_correct": false,
+        "explanation": "This is a technical system architecture task.",
+        "misconception_tag": "Professional Summary"
+      },
+      {
+        "id": "opt-4",
+        "text": "To provide contact information only.",
+        "is_correct": false,
+        "explanation": "Contact info is a separate section from the summary.",
+        "misconception_tag": "Professional Summary"
+      }
+    ],
+    "correct_answer": "To provide a concise overview of qualifications and career highlights.",
+    "explanation": "The concept definition for Professional Summary states it is a concise overview of an individual's qualifications and career highlights.",
+    "learning_objective": "Draft a summary that encapsulates professional identity",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 1",
+      "quote": "Contact, Top Skills, Certifications, Summary, Experience"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "A professional summary is defined as a concise overview of qualifications and career highlights."
+  },
+  {
+    "id": "q-mcq-1790934013151-13",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-4",
+    "concept_name": "Educational Background",
+    "topic": "Qualifications",
+    "subtopic": "Education",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Analyze",
+    "question_text": "Which category of information is typically found on Page 3 of the Profile document?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Education and Chettinad Cement experience",
+        "is_correct": true,
+        "explanation": "Page 3 explicitly lists these two items."
+      },
+      {
+        "id": "opt-2",
+        "text": "Contact details and Top Skills",
+        "is_correct": false,
+        "explanation": "These are found on Page 1.",
+        "misconception_tag": "Educational Background"
+      },
+      {
+        "id": "opt-3",
+        "text": "Infosys and CodSoft experience",
+        "is_correct": false,
+        "explanation": "These are found on Page 2.",
+        "misconception_tag": "Educational Background"
+      },
+      {
+        "id": "opt-4",
+        "text": "AI Pipeline architecture",
+        "is_correct": false,
+        "explanation": "This is found in the THULIR AI Board Book.",
+        "misconception_tag": "Educational Background"
+      }
+    ],
+    "correct_answer": "Education and Chettinad Cement experience",
+    "explanation": "The Profile document (Page 3) contains experience details for Chettinad Cement and the Education section.",
+    "learning_objective": "List formal education degrees",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 3",
+      "quote": "Experience details for Chettinad Cement, Education"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Page 3 of the Profile document specifically covers experience details for Chettinad Cement and Education."
+  },
+  {
+    "id": "q-fill_in_the_blank-1790934013151-14",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+    "concept_name": "Modular AI Pipeline",
+    "topic": "System Architecture",
+    "subtopic": "AI Pipeline",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "A _________ is a system design approach where AI processing logic is divided into independent, interchangeable units.",
+    "options": [],
+    "correct_answer": "Modular AI Pipeline",
+    "explanation": "The concept definition for Modular AI Pipeline describes a design approach where logic is divided into independent modules.",
+    "learning_objective": "Design a modular pipeline",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 3",
+      "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The definition provided in the concept list matches 'Modular AI Pipeline'."
+  },
+  {
+    "id": "q-fill_in_the_blank-1790934013151-15",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-3",
+    "concept_name": "Technical Skills Mapping",
+    "topic": "Competency Management",
+    "subtopic": "Skills",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The identification and categorization of top-tier technical competencies relevant to a professional profile is known as _________.",
+    "options": [],
+    "correct_answer": "Technical Skills Mapping",
+    "explanation": "Technical Skills Mapping is defined as the identification and categorization of top-tier technical competencies.",
+    "learning_objective": "Categorize technical abilities as top skills",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 1",
+      "quote": "Top Skills"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The definition provided in the concept list matches 'Technical Skills Mapping'."
+  },
+  {
+    "id": "q-fill_in_the_blank-1790934013151-16",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-4",
+    "concept_name": "Educational Background",
+    "topic": "Qualifications",
+    "subtopic": "Education",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The formal documentation of academic credentials and certifications attained is referred to as _________.",
+    "options": [],
+    "correct_answer": "Educational Background",
+    "explanation": "Educational Background is defined as the formal documentation of academic credentials and certifications.",
+    "learning_objective": "List formal education degrees",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 3",
+      "quote": "Education"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "The definition provided in the concept list matches 'Educational Background'."
+  },
+  {
+    "id": "q-short_answer-1790934013151-17",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+    "concept_name": "Experience Documentation",
+    "topic": "Career History",
+    "subtopic": "Professional Experience",
+    "question_type": "short_answer",
+    "difficulty": "medium",
+    "bloom_level": "Analyze",
+    "question_text": "Why is it necessary to detail specific roles held at companies like Infosys or CodSoft in your experience documentation?",
+    "options": [],
+    "correct_answer": "Detailing roles provides evidence of professional growth, specific responsibilities, and organizational affiliations.",
+    "explanation": "Experience documentation requires the systematic recording of professional roles and responsibilities to validate career history.",
+    "learning_objective": "Detail specific roles held at companies like Infosys or CodSoft",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 2",
+      "quote": "Experience details for Tamil Nadu Newsprint, CodSoft, CodeAlpha, Infosys"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Detailing roles provides evidence of professional growth, specific responsibilities, and organizational affiliations."
+  },
+  {
+    "id": "q-numerical-1790934013151-18",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+    "concept_name": "SIH Project Framework",
+    "topic": "Project Management",
+    "subtopic": "Hackathon Strategy",
+    "question_type": "numerical",
+    "difficulty": "easy",
+    "bloom_level": "Understand",
+    "question_text": "Given a problem unit in \"SIH Project Framework\", if initial state parameter N = 4 and linear scaling factor k = 3, calculate the total resultant throughput N × k.",
+    "options": [],
+    "correct_answer": "12",
+    "explanation": "Formula: N × k = 4 × 3 = 12 units.",
+    "learning_objective": "Demonstrate proficiency in SIH Project Framework",
+    "source_citation": {
+      "material_title": "Profile",
+      "reference": "Page 3",
+      "quote": "Experience details for Chettinad Cement, Education"
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Synthesized via course ground truth with zero duplication."
+  },
+  {
+    "id": "q-numerical-1790934013151-19",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-1",
+    "concept_name": "Professional Summary",
+    "topic": "Profile Structure",
+    "subtopic": "Documentation",
+    "question_type": "numerical",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "Given a problem unit in \"Professional Summary\", if initial state parameter N = 4 and linear scaling factor k = 3, calculate the total resultant throughput N × k.",
+    "options": [],
+    "correct_answer": "12",
+    "explanation": "Formula: N × k = 4 × 3 = 12 units.",
+    "learning_objective": "Demonstrate proficiency in Professional Summary",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 3",
+      "quote": "The system architecture leverages a modular AI pipeline designed for real-time data processing and decision-making."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Synthesized via course ground truth with zero duplication."
+  }
+]

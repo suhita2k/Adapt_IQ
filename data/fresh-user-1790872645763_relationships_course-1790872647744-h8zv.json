@@ -1,0 +1,44 @@
+[
+  {
+    "id": "rel-1",
+    "source_concept_id": "State Machine Replication (SMR)",
+    "target_concept_id": "Paxos Consensus Protocol",
+    "relationship_type": "prerequisite",
+    "strength": 0.8
+  },
+  {
+    "id": "rel-2",
+    "source_concept_id": "State Machine Replication (SMR)",
+    "target_concept_id": "Raft Leader Election",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "id": "rel-3",
+    "source_concept_id": "Raft Leader Election",
+    "target_concept_id": "Raft Log Replication",
+    "relationship_type": "prerequisite",
+    "strength": 0.95
+  },
+  {
+    "id": "rel-4",
+    "source_concept_id": "Raft Log Replication",
+    "target_concept_id": "Raft Log Invariants",
+    "relationship_type": "prerequisite",
+    "strength": 0.85
+  },
+  {
+    "id": "rel-5",
+    "source_concept_id": "Raft Log Invariants",
+    "target_concept_id": "Raft Leader Completeness",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "id": "rel-6",
+    "source_concept_id": "Raft Leader Completeness",
+    "target_concept_id": "Raft State Machine Safety",
+    "relationship_type": "prerequisite",
+    "strength": 0.95
+  }
+]

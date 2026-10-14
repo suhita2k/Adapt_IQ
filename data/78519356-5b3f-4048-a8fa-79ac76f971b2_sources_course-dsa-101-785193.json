@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ev-textbook-73",
+    "course_id": "course-dsa-101-785193",
+    "material_id": "mat-textbook-01",
+    "material_title": "Introduction to Algorithms (CLRS 4th Ed)",
+    "material_type": "textbook",
+    "location_type": "page",
+    "location_reference": "Page 73",
+    "snippet": "Section 3.2: \"Every recursive algorithm requires at least one base case that produces a direct result without generating further recursive subproblems. Without an explicit base case, call stack frames accumulate monotonically until a stack overflow exception halts the runtime.\"",
+    "confidence_score": 0.99,
+    "relevance_reason": "Direct formal definition of recursive base case requirement and stack overflow mechanisms.",
+    "page_number": 73,
+    "file_name": "CLRS_Algorithms_4th_Ed.pdf",
+    "file_url": "/api/courses/course-dsa-101-785193/materials/mat-textbook-01/file#page=73"
+  },
+  {
+    "id": "ev-slides-18",
+    "course_id": "course-dsa-101-785193",
+    "material_id": "mat-slides-01",
+    "material_title": "Lecture 07 - Recursion & Call Stacks",
+    "material_type": "slides",
+    "location_type": "slide",
+    "location_reference": "Slide 18",
+    "snippet": "Slide 18: \"Rules of Recursive Invariants:\n1. Establish Base Case (simplest atomic input where answer is known)\n2. Recurrence Step: Ensure arguments strictly converge towards base case\n3. Activation Records: Every recursive invocation pushes a new stack frame containing local variables and return address.\"",
+    "confidence_score": 0.97,
+    "relevance_reason": "Step-by-step guideline and memory layout diagram for recursive functions.",
+    "slide_number": 18,
+    "file_name": "Lecture07_Recursion_and_CallStacks.pptx",
+    "file_url": "/api/courses/course-dsa-101-785193/materials/mat-slides-01/file#page=18"
+  },
+  {
+    "id": "ev-lecture-3821",
+    "course_id": "course-dsa-101-785193",
+    "material_id": "mat-lecture-01",
+    "material_title": "CS201 Lecture 12: Tree Traversals",
+    "material_type": "lecture_video",
+    "location_type": "timestamp",
+    "location_reference": "38:21",
+    "snippet": "Prof. Miller at 38:21: \"Watch the debugger here: if you omit the `if (node == null) return;` guard in pre-order traversal, the instruction pointer will blindly dereference a null pointer or enter an infinite loop pushing frames until memory exhaustion. Always check your base case first!\"",
+    "confidence_score": 0.95,
+    "relevance_reason": "Live lecture walkthrough debugging stack overflows and base case omissions.",
+    "timestamp": "38:21",
+    "file_name": "CS201_Lec12_TreeTraversals.mp4",
+    "file_url": "/api/courses/course-dsa-101-785193/materials/mat-lecture-01/file"
+  }
+]

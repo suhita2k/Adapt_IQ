@@ -1,0 +1,37 @@
+[
+  {
+    "id": "rel-1",
+    "source_concept_id": "Introduction to Data Science Foundations",
+    "target_concept_id": "Data Acquisition and Presentation",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "id": "rel-2",
+    "source_concept_id": "Data Acquisition and Presentation",
+    "target_concept_id": "Data Preprocessing and Cleaning",
+    "relationship_type": "prerequisite",
+    "strength": 0.85
+  },
+  {
+    "id": "rel-3",
+    "source_concept_id": "Data Preprocessing and Cleaning",
+    "target_concept_id": "Exploratory Data Analysis",
+    "relationship_type": "prerequisite",
+    "strength": 0.95
+  },
+  {
+    "id": "rel-4",
+    "source_concept_id": "Exploratory Data Analysis",
+    "target_concept_id": "Board Book Documentation and Project Governance",
+    "relationship_type": "prerequisite",
+    "strength": 0.75
+  },
+  {
+    "id": "rel-5",
+    "source_concept_id": "Board Book Documentation and Project Governance",
+    "target_concept_id": "Advanced Predictive Modeling and Evaluation",
+    "relationship_type": "prerequisite",
+    "strength": 0.8
+  }
+]

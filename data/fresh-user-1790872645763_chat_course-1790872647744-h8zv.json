@@ -1,0 +1,62 @@
+[
+  {
+    "id": "msg-u-1790872672202",
+    "user_id": "fresh-user-1790872645763",
+    "course_id": "course-1790872647744-h8zv",
+    "role": "user",
+    "content": "What is the Leader Completeness property in Raft and why does it prevent committed entries from being lost?",
+    "created_at": "2026-10-01T16:37:52.202Z"
+  },
+  {
+    "id": "msg-a-1790872672205",
+    "user_id": "fresh-user-1790872645763",
+    "course_id": "course-1790872647744-h8zv",
+    "role": "assistant",
+    "content": "The **Leader Completeness** property is a core safety invariant in the Raft consensus protocol. It states that **if a log entry is committed in a given term, that entry will be present in the logs of the leaders for all higher-numbered terms** [Page 8].\n\n### Why It Prevents Committed Entries from Being Lost:\n1. **No Overwriting by Leaders:** In Raft, a leader never overwrites or deletes entries in its own log; it only appends new ones. \n2. **Election Restriction:** Raft's leader election process ensures that a candidate can only be elected if its log is at least as up-to-date as a majority of the cluster. Because a committed entry must exist on a majority of servers, any winning leader must contain that committed entry (or a more recent one) to secure a majority of votes.\n3. **Log Preservation:** Since any newly elected leader in a higher term is guaranteed to have all previously committed entries [Page 8], and because of the **Log Matching Property** (which ensures identical preceding entries if index and term match [Page 4]), these committed entries are safely propagated to all other followers and are never overwritten. This guarantees deterministic execution across all replicas in State Machine Replication [Slide 12].",
+    "created_at": "2026-10-01T16:37:52.205Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790872672205-0",
+        "course_id": "course-1790872647744-h8zv",
+        "material_id": "mat-1790872648017-qxto",
+        "material_title": "Raft Consensus Invariants & Safety Proofs",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 8, Raft Consensus Invariants & Safety Proofs (notes)",
+        "snippet": "Leader Completeness: If a log entry is committed in a given term, that entry will be present in the logs of the leaders for all higher-numbered terms.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Directly defines the Leader Completeness property."
+      },
+      {
+        "id": "cite-1790872672205-1",
+        "course_id": "course-1790872647744-h8zv",
+        "material_id": "mat-1790872648017-qxto",
+        "material_title": "Raft Consensus Invariants & Safety Proofs",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 4, Raft Consensus Invariants & Safety Proofs (notes)",
+        "snippet": "The Log Matching Property: If two logs contain an entry with the same index and term, then they store the same command, and their logs are identical in all preceding entries.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Explains how matching logs ensure consistency of preceding entries, supporting the preservation of committed logs."
+      },
+      {
+        "id": "cite-1790872672205-2",
+        "course_id": "course-1790872647744-h8zv",
+        "material_id": "mat-1790872648017-qxto",
+        "material_title": "Raft Consensus Invariants & Safety Proofs",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Slide 12, Lecture Notes",
+        "snippet": "State Machine Replication requires deterministic execution of commands to ensure all replicas transition to identical states.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Explains the ultimate goal of preserving committed entries for State Machine Replication."
+      }
+    ],
+    "suggested_followups": [
+      "How does Raft's leader election mechanism physically enforce the Leader Completeness property?",
+      "What is the Log Matching Property, and how does it interact with Leader Completeness to guarantee safety?",
+      "What would happen to committed entries if a leader could overwrite its own log entries?"
+    ]
+  }
+]

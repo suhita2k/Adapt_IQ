@@ -1,0 +1,17 @@
+[
+  {
+    "id": "course-1790876667602-wtpg",
+    "owner_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+    "title": "Advanced Algorithms & Invariants",
+    "code": "CS301",
+    "description": "Loop invariants, recursion trees, and asymptotic analysis.",
+    "category": "Computer Science",
+    "color": "#B1A15A",
+    "icon": "BookOpen",
+    "total_concepts": 7,
+    "mastered_concepts": 0,
+    "materials_count": 1,
+    "created_at": "2026-10-01T17:44:27.603Z",
+    "updated_at": "2026-10-01T17:44:27.956Z"
+  }
+]

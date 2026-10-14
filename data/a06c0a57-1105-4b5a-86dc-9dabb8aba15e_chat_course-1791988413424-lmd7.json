@@ -1,0 +1,636 @@
+[
+  {
+    "id": "msg-u-1791988508299",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "Generate a diagnostic check on the latest topics",
+    "created_at": "2026-10-14T14:35:08.299Z"
+  },
+  {
+    "id": "msg-a-1791988508302",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "Based on your uploaded course materials (📊 Slide 1), the current foundational topics cover foundational definitions, invariants, and structural properties extracted from sih.pdf (4). \n\nHere is a quick diagnostic check:\n1. Can you define the core foundational definitions presented in the course?\n2. What are the key invariants and structural properties identified in the material?\n\nReference: 📊 Slide 1",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nBased on your uploaded course materials (📄 Slide 1), the current foundational topics cover foundational definitions, invariants, and structural properties extracted from sih.pdf (4). \n\nHere is a quick diagnostic check:\n1. Can you define the core foundational definitions presented in the course?\n2. What are the key invariants and structural properties identified in the material?\n\nReference: 📊 Slide 1",
+    "created_at": "2026-10-14T14:35:08.302Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791988508302-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791988470727-ktqb",
+        "material_title": "sih.pdf (4)",
+        "material_type": "slides",
+        "location_type": "slide",
+        "location_reference": "Slide 1",
+        "snippet": "Foundational definitions, invariants, and structural properties extracted from sih.pdf (4).",
+        "confidence_score": 0.98,
+        "relevance_reason": "Provides the foundational topics and structural properties used to create the diagnostic check.",
+        "topic": "sih.pdf (4)",
+        "concept": "sih.pdf (4)"
+      }
+    ],
+    "suggested_followups": [
+      "What are the foundational definitions mentioned in Slide 1?",
+      "Can you explain the structural properties and invariants from the course material?"
+    ]
+  },
+  {
+    "id": "msg-u-1791991329086",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "What are the main concepts and goals in this course?",
+    "created_at": "2026-10-14T15:22:09.086Z"
+  },
+  {
+    "id": "msg-a-1791991329090",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "According to your uploaded materials, the course covers foundational definitions, invariants, and structural properties extracted from the course document (📊 Slide 1).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to your uploaded materials, the course covers foundational definitions, invariants, and structural properties extracted from the course document (📊 Slide 1).",
+    "created_at": "2026-10-14T15:22:09.090Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791991329090-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791988470727-ktqb",
+        "material_title": "sih.pdf (4)",
+        "material_type": "slides",
+        "location_type": "slide",
+        "location_reference": "Slide 1",
+        "snippet": "Foundational definitions, invariants, and structural properties extracted from sih.pdf (4).",
+        "confidence_score": 0.98,
+        "relevance_reason": "It explicitly outlines the foundational concepts and structural properties covered in the course.",
+        "topic": "sih.pdf (4)",
+        "concept": "sih.pdf (4)"
+      }
+    ],
+    "suggested_followups": [
+      "What specific foundational definitions are covered in the course?",
+      "Can you explain the structural properties mentioned in the material?"
+    ]
+  },
+  {
+    "id": "msg-u-1791991397330",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "What are the main concepts and goals in this course?",
+    "created_at": "2026-10-14T15:23:17.330Z"
+  },
+  {
+    "id": "msg-a-1791991397331",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "According to your course materials, the uploaded document focuses on foundational definitions, invariants, and structural properties (📊 Slide 1).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to your course materials, the uploaded document focuses on foundational definitions, invariants, and structural properties (📊 Slide 1).",
+    "created_at": "2026-10-14T15:23:17.331Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791991397331-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791988470727-ktqb",
+        "material_title": "sih.pdf (4)",
+        "material_type": "slides",
+        "location_type": "slide",
+        "location_reference": "Slide 1",
+        "snippet": "Foundational definitions, invariants, and structural properties extracted from sih.pdf (4).",
+        "confidence_score": 0.98,
+        "relevance_reason": "This slide outlines the foundational definitions, invariants, and structural properties covered in the course material.",
+        "topic": "sih.pdf (4)",
+        "concept": "sih.pdf (4)"
+      }
+    ],
+    "suggested_followups": [
+      "What specific foundational definitions are covered in the course?",
+      "Can you explain the structural properties mentioned in the material?"
+    ]
+  },
+  {
+    "id": "msg-u-1791991906405",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "What specific foundational definitions are covered in the course?",
+    "created_at": "2026-10-14T15:31:46.405Z"
+  },
+  {
+    "id": "msg-a-1791991906408",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "According to the provided course materials, foundational definitions, invariants, and structural properties are outlined in the course introduction from \"sih.pdf (4)\" (📊 Slide 1).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the provided course materials, the specific foundational definitions, invariants, and structural properties are extracted from the document \"sih.pdf (4)\" (📊 Slide 1).",
+    "created_at": "2026-10-14T15:31:46.408Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791991906408-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "slide",
+        "location_reference": "Slide 1",
+        "snippet": "Foundational definitions, invariants, and structural properties extracted from sih.pdf (4).",
+        "confidence_score": 0.98,
+        "relevance_reason": "This slide explicitly states what foundational definitions and properties are covered in the course material.",
+        "topic": "sih.pdf (4)",
+        "concept": "sih.pdf (4)"
+      }
+    ],
+    "suggested_followups": [
+      "What are the invariants and structural properties mentioned in the slides?",
+      "Can you provide more details from the course board book?"
+    ]
+  },
+  {
+    "id": "msg-u-1791991987626",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "Can you provide more details from the course board book?",
+    "created_at": "2026-10-14T15:33:07.626Z"
+  },
+  {
+    "id": "msg-a-1791991987627",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "The course board book provides structural properties, foundational definitions, and the comprehensive architectural layout of the THULIR initiative, highlighting core systemic integration and data exchange between edge devices, cloud backend, and user applications.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\n\nThe course board book for the THULIR initiative contains structural properties and a comprehensive architectural layout demonstrating core systemic integration (📄 Page 5), which includes a flowchart showing data exchange between edge devices, cloud backend, and user applications.",
+    "created_at": "2026-10-14T15:33:07.627Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791991987627-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "Comprehensive architectural layout of the THULIR initiative demonstrating core systemic integration.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This details the core system architecture and integration layout presented in the board book.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the details of the THULIR System Architecture Block Diagram?",
+      "How do edge devices and the cloud backend interact according to the board book?"
+    ]
+  },
+  {
+    "id": "msg-u-1791992035023",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "How do edge devices and the cloud backend interact according to the board book?",
+    "created_at": "2026-10-14T15:33:55.023Z"
+  },
+  {
+    "id": "msg-a-1791992035025",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "According to the board book, edge devices and the cloud backend interact through data exchange as part of the core systemic integration shown in the system architecture block diagram.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to the THULIR initiative documentation, edge devices and the cloud backend interact through core systemic integration, which involves data exchange between the edge devices, the cloud backend, and user applications as demonstrated in the THULIR System Architecture Block Diagram (📄 Page 5).",
+    "created_at": "2026-10-14T15:33:55.025Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791992035025-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "Comprehensive architectural layout of the THULIR initiative demonstrating core systemic integration. [Visual DIAGRAM: \"THULIR System Architecture Block Diagram\" - Flowchart showing data exchange between edge devices, cloud backend, and user applications.]",
+        "confidence_score": 0.98,
+        "relevance_reason": "This diagram explicitly shows the data exchange and interaction between edge devices and the cloud backend within the THULIR system architecture.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the core modules illustrated in Project Thulir's system architecture?",
+      "How does the cloud deployment topology handle container clusters and regional failovers?"
+    ]
+  },
+  {
+    "id": "msg-u-1791993547263",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "What are the core modules illustrated in Project Thulir's system architecture?",
+    "created_at": "2026-10-14T15:59:07.263Z"
+  },
+  {
+    "id": "msg-a-1791993547265",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "Project Thulir's system architecture features core modular boundaries, data ingest layers, and stakeholder interfaces, including data exchange between edge devices, a cloud backend, and user applications as illustrated in the system architecture block diagram (📄 Page 5).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nProject Thulir's system architecture features core modular boundaries, data ingest layers, and stakeholder interfaces, including data exchange between edge devices, a cloud backend, and user applications as illustrated in the system architecture block diagram (📄 Page 5).",
+    "created_at": "2026-10-14T15:59:07.265Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791993547265-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Identifies the core modular boundaries and stakeholder interfaces described in the system architecture.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      },
+      {
+        "id": "cite-1791993547265-1",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "Figure 1.1: Project Thulir System Architecture - Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Explicitly details the core modules, data ingest layers, and stakeholder integration portals of the system architecture.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What specific data exchange mechanisms exist between edge devices and the cloud backend?",
+      "Who are the stakeholders interacting with the Project Thulir integration portals?"
+    ]
+  },
+  {
+    "id": "msg-u-1791993565056",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "Who are the stakeholders interacting with the Project Thulir integration portals?",
+    "created_at": "2026-10-14T15:59:25.056Z"
+  },
+  {
+    "id": "msg-a-1791993565059",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "The stakeholders interacting with the Project Thulir integration portals are detailed within the high-level system design and architectural block diagram for Project Thulir (📄 Page 5).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\n\nThe stakeholders interacting with the Project Thulir integration portals are showcased in the high-level system design block diagram (📄 Page 5).\n\n**Citations:**\n- 📄 **Page 5**: \"High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir.\"\n- 📄 **Page 5**: \"Figure 1.1: Project Thulir System Architecture - Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.\"",
+    "created_at": "2026-10-14T15:59:25.059Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791993565059-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Identifies the stakeholder interfaces and integration portals in the system design.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      },
+      {
+        "id": "cite-1791993565059-1",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "Figure 1.1: Project Thulir System Architecture - Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+        "confidence_score": 0.98,
+        "relevance_reason": "Shows how stakeholder integration portals fit into the Project Thulir architecture.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the core modules of the Project Thulir system architecture?",
+      "How do data ingest layers function in Project Thulir?"
+    ]
+  },
+  {
+    "id": "msg-u-1791993588630",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "How do data ingest layers function in Project Thulir?",
+    "created_at": "2026-10-14T15:59:48.630Z"
+  },
+  {
+    "id": "msg-a-1791993588632",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "The data ingest layers in Project Thulir function as part of the high-level system design that handles core modular boundaries and stakeholder interfaces. As shown in the system architecture block diagrams, they are involved in the data exchange pipeline operating between edge devices, the cloud backend, and user applications.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nAccording to Project Thulir's system architecture documentation, the data ingest layers are a part of the high-level system design that showcases core modular boundaries and stakeholder interfaces. They are illustrated within the system architecture block diagram (📄 Page 5, THULIR_AI_SIH2026_Updated_Board_Book_v3.0) along with core modules and stakeholder integration portals, showing how data is exchanged between edge devices, cloud backend, and user applications.",
+    "created_at": "2026-10-14T15:59:48.632Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791993588632-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir. [Visual DIAGRAM: \"Figure 1.1: Project Thulir System Architecture\" - Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.]",
+        "confidence_score": 0.98,
+        "relevance_reason": "Explicitly identifies data ingest layers as part of the high-level system design and architecture block diagram.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      },
+      {
+        "id": "cite-1791993588632-1",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "Comprehensive architectural layout of the THULIR initiative demonstrating core systemic integration. [Visual DIAGRAM: \"THULIR System Architecture Block Diagram\" - Flowchart showing data exchange between edge devices, cloud backend, and user applications.]",
+        "confidence_score": 0.98,
+        "relevance_reason": "Describes the systemic integration and data exchange mechanisms connected to the architecture.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the core modules and stakeholder integration portals in Project Thulir's architecture?",
+      "How do edge devices and cloud backends interact within the Thulir system architecture?"
+    ]
+  },
+  {
+    "id": "msg-u-1791994839533",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "How do edge devices and cloud backends interact within the Thulir system architecture?",
+    "created_at": "2026-10-14T16:20:39.533Z"
+  },
+  {
+    "id": "msg-a-1791994839535",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "Within the THULIR system architecture, edge devices and cloud backends interact through systemic integration, exchanging data with user applications as demonstrated in the system architecture block diagram (📄 Page 5). Furthermore, high-level system designs illustrate that these modules and data ingest layers connect across core stakeholder integration portals (📄 Page 5).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\n\nWithin the THULIR system architecture, edge devices and cloud backends interact through systemic integration, exchanging data with user applications as demonstrated in the system architecture block diagram (📄 Page 5). Furthermore, high-level system designs illustrate that these modules and data ingest layers connect across core stakeholder integration portals (📄 Page 5).",
+    "created_at": "2026-10-14T16:20:39.535Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791994839535-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "Comprehensive architectural layout of the THULIR initiative demonstrating core systemic integration. [Visual DIAGRAM: \"THULIR System Architecture Block Diagram\" - Flowchart showing data exchange between edge devices, cloud backend, and user applications.]",
+        "confidence_score": 0.98,
+        "relevance_reason": "This excerpt directly explains the data exchange and interaction between edge devices, cloud backends, and user applications within the THULIR architecture.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      },
+      {
+        "id": "cite-1791994839535-1",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "[Visual DIAGRAM: \"Figure 1.1: Project Thulir System Architecture\" - Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.]",
+        "confidence_score": 0.98,
+        "relevance_reason": "This confirms the modular design and interaction channels involving data ingest layers within Project Thulir's architecture.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What role do user applications play in the THULIR system architecture?",
+      "How does the cloud deployment topology support the system?"
+    ]
+  },
+  {
+    "id": "msg-u-1791995830970",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "How does the cloud deployment topology support the system?",
+    "created_at": "2026-10-14T16:37:10.970Z"
+  },
+  {
+    "id": "msg-a-1791995830973",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "The cloud deployment topology supports the system through container clusters, load balancers, and regional failovers as detailed in Slide 42.",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\n\nThe cloud deployment topology supports the system by utilizing container clusters, load balancers, and regional failovers (📄 Slide 42).",
+    "created_at": "2026-10-14T16:37:10.973Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791995830973-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "slide",
+        "location_reference": "Slide 42",
+        "snippet": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers.",
+        "confidence_score": 0.98,
+        "relevance_reason": "This excerpt directly details the components and support mechanisms of the cloud deployment topology within the THULIR initiative.",
+        "topic": "Infrastructure",
+        "concept": "Deployment and Scalability Strategy"
+      }
+    ],
+    "suggested_followups": [
+      "What are the core components of the THULIR system architecture block diagram?",
+      "How do edge devices and the cloud backend exchange data?"
+    ]
+  },
+  {
+    "id": "msg-u-1791995866068",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "How do edge devices and the cloud backend exchange data?",
+    "created_at": "2026-10-14T16:37:46.068Z"
+  },
+  {
+    "id": "msg-a-1791995866071",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "Edge devices and the cloud backend exchange data as demonstrated in the system architecture block diagram for the THULIR initiative (📄 Page 5).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\n\nEdge devices and the cloud backend exchange data as demonstrated in the system architecture block diagram for the THULIR initiative (📄 Page 5).",
+    "created_at": "2026-10-14T16:37:46.071Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791995866071-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "[Visual DIAGRAM: \"THULIR System Architecture Block Diagram\" - Flowchart showing data exchange between edge devices, cloud backend, and user applications.]",
+        "confidence_score": 0.98,
+        "relevance_reason": "This diagram directly illustrates the data exchange mechanism between edge devices and the cloud backend within the THULIR system architecture.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What are the core modules involved in Project Thulir's system architecture?",
+      "How do user applications interact with the cloud backend?"
+    ]
+  },
+  {
+    "id": "msg-u-1791995890763",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "user",
+    "content": "How do user applications interact with the cloud backend?",
+    "created_at": "2026-10-14T16:38:10.764Z"
+  },
+  {
+    "id": "msg-a-1791995890767",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "role": "assistant",
+    "content": "User applications interact with the cloud backend through core systemic integration, as demonstrated by data exchange pathways between edge devices, the cloud backend, and user applications (📄 Page 5).",
+    "source_backed_content": "### SOURCE-BACKED ANSWER\nUser applications interact with the cloud backend through core systemic integration, as demonstrated by data exchange pathways between edge devices, the cloud backend, and user applications (📄 Page 5).",
+    "created_at": "2026-10-14T16:38:10.767Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1791995890767-0",
+        "course_id": "course-1791988413424-lmd7",
+        "material_id": "mat-1791991602775-vilr",
+        "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "material_type": "notes",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "Comprehensive architectural layout of the THULIR initiative demonstrating core systemic integration. [Visual DIAGRAM: \"THULIR System Architecture Block Diagram\" - Flowchart showing data exchange between edge devices, cloud backend, and user applications.]",
+        "confidence_score": 0.98,
+        "relevance_reason": "This shows the systemic integration and data exchange between edge devices, the cloud backend, and user applications.",
+        "topic": "System Engineering",
+        "concept": "Project Thulir Architecture",
+        "visual_element": {
+          "id": "vis-1791991972774-5pu",
+          "type": "diagram",
+          "caption": "Figure 1.1: Project Thulir System Architecture",
+          "description": "Block diagram illustrating core modules, data ingest layers, and stakeholder integration portals.",
+          "location_reference": "Page 5"
+        }
+      }
+    ],
+    "suggested_followups": [
+      "What is the role of edge devices in the THULIR system architecture?",
+      "How does the cloud deployment topology handle container clusters and failovers?"
+    ]
+  }
+]

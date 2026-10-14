@@ -1,0 +1,51 @@
+[
+  {
+    "id": "rel-1",
+    "source_concept_id": "Asymptotic Growth Notation",
+    "target_concept_id": "Formal Proofs of Correctness",
+    "relationship_type": "prerequisite",
+    "strength": 0.75
+  },
+  {
+    "id": "rel-2",
+    "source_concept_id": "Formal Proofs of Correctness",
+    "target_concept_id": "Loop Invariants",
+    "relationship_type": "prerequisite",
+    "strength": 0.95
+  },
+  {
+    "id": "rel-3",
+    "source_concept_id": "Asymptotic Growth Notation",
+    "target_concept_id": "Recursive Problem Solving",
+    "relationship_type": "prerequisite",
+    "strength": 0.8
+  },
+  {
+    "id": "rel-4",
+    "source_concept_id": "Recursive Problem Solving",
+    "target_concept_id": "Recursion Trees",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "id": "rel-5",
+    "source_concept_id": "Recursion Trees",
+    "target_concept_id": "The Master Theorem",
+    "relationship_type": "prerequisite",
+    "strength": 0.85
+  },
+  {
+    "id": "rel-6",
+    "source_concept_id": "Asymptotic Growth Notation",
+    "target_concept_id": "The Master Theorem",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "id": "rel-7",
+    "source_concept_id": "The Master Theorem",
+    "target_concept_id": "Advanced Recurrence Relations",
+    "relationship_type": "prerequisite",
+    "strength": 0.85
+  }
+]

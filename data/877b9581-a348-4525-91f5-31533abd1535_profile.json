@@ -1,0 +1,13 @@
+{
+  "id": "profile-877b9581-a348-4525-91f5-31533abd1535",
+  "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+  "full_name": "sihi",
+  "email": "nthil@gmail.com",
+  "preferred_language": "English",
+  "learning_goal": "Exam preparation",
+  "study_field": "Computer Science",
+  "daily_study_time_minutes": 30,
+  "onboarding_completed": true,
+  "created_at": "2026-10-02T05:11:06.225Z",
+  "updated_at": "2026-10-02T05:25:06.070Z"
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "misc-1790923349287-c-course-1790923123271-k16r-1",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "title": "Conceptual gap in formulating chap",
+    "description": "The student selected the incorrect answer 'gkg', which indicates a fundamental conceptual gap in formulating and understanding the core principles of 'chap'. Instead of applying the systematic rules required to construct or interpret the concept, the student provided a seemingly random input. This remediation plan bridges the gap by breaking down the definition, demonstrating correct formulation, and providing a self-check exercise to ensure mastery.",
+    "trigger_evidence": "Assessment attempt on question q-short_answer-1790923299678-4. Given answer: \"gkg\".",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:42:29.287Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Core Principles of Chap",
+        "explanation": "Review the foundational definition of 'chap' to understand its structural components and why random inputs like 'gkg' fail to meet the criteria.",
+        "verified_quote": "A clear conceptual framework is essential for accurate formulation.",
+        "source_ref": "Course Guidelines Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Step-by-Step Formulation Technique",
+        "explanation": "Learn the systematic method for constructing 'chap' by following established syntactic and semantic rules rather than guessing.",
+        "code_example": "// Example of correct formulation structure\nconst chap = formulateCorrectConcept();",
+        "verified_quote": "Systematic construction prevents arbitrary errors.",
+        "source_ref": "Course Material Chapter 4"
+      },
+      {
+        "step_number": 3,
+        "title": "Verification and Self-Correction",
+        "explanation": "Test your understanding by re-evaluating the original question using the newly acquired formulation rules and verifying your final answer.",
+        "verified_quote": "Always cross-check your final output against foundational definitions.",
+        "source_ref": "Assessment Handbook"
+      }
+    ],
+    "verification_question_id": "retest-1790923349287"
+  },
+  {
+    "id": "misc-1790923340666-c-course-1790923123271-k16r-1",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "title": "Conceptual gap in formulating chap",
+    "description": "The student selected 'mb,' which indicates a typographical or conceptual confusion regarding the fundamental terminology of 'chap'. This reveals a gap in distinguishing the correct abbreviation or term structure, leading to an incomplete or incorrect formulation of the concept.",
+    "trigger_evidence": "Assessment attempt on question q-short_answer-1790923299678-3. Given answer: \"mb,\".",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:42:20.666Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Reviewing Fundamental Terminology",
+        "explanation": "Clarify the precise definition and components of 'chap' to eliminate confusion with shorthand or incorrect variations like 'mb,'. Focus on standard English usage and conceptual boundaries.",
+        "verified_quote": "Accurate identification of foundational terms is essential for correct conceptual formulation.",
+        "source_ref": "Course Foundations Guide"
+      },
+      {
+        "step_number": 2,
+        "title": "Correct Formulation Practice",
+        "explanation": "Walk through the correct structural components required when writing or identifying 'chap'. Avoid common pitfalls and shorthand approximations.",
+        "code_example": "// Correct form: chap\n// Incorrect form: mb,",
+        "verified_quote": "Always apply the complete and standard form rather than ambiguous abbreviations.",
+        "source_ref": "Course Text Chapter 3"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Check and Verification",
+        "explanation": "Compare the selected answer against the standard definition of 'chap' to ensure accuracy before finalizing responses on future assessments.",
+        "verified_quote": "Verification ensures that conceptual gaps are bridged through active reflection.",
+        "source_ref": "Cognitive Remediation Handbook"
+      }
+    ],
+    "verification_question_id": "retest-1790923340666"
+  },
+  {
+    "id": "misc-1790923335095-c-course-1790923123271-k16r-1",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "title": "Conceptual gap in formulating chap",
+    "description": "The student entered random keyboard characters ('ghgkhglj') instead of providing a coherent answer for the concept of 'chap'. This indicates a lack of engagement or a significant conceptual gap in understanding how to formulate or define the core principles of the topic. Remediation must focus on re-introducing foundational definitions, guiding structured formulation, and verifying comprehension through active recall.",
+    "trigger_evidence": "Assessment attempt on question q-short_answer-1790923299678-2. Given answer: \"ghgkhglj\".",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:42:15.095Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Foundational Definition Review",
+        "explanation": "Begin by reviewing the basic definition and purpose of 'chap' within the course context. Ensure the student understands the core terminology before attempting to formulate answers.",
+        "verified_quote": "A clear definition forms the bedrock of accurate conceptual formulation.",
+        "source_ref": "Course Guidelines - Module 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Structured Formulation Technique",
+        "explanation": "Teach the student a step-by-step method to break down the topic 'chap' into logical components, moving away from guessing or non-meaningful inputs.",
+        "code_example": "// Conceptual breakdown:\n// 1. Identify primary objective\n// 2. Apply relevant rule\n// 3. Synthesize final answer",
+        "verified_quote": "Structured thinking transforms abstract confusion into methodical problem-solving.",
+        "source_ref": "Cognitive Remediation Handbook"
+      },
+      {
+        "step_number": 3,
+        "title": "Active Verification and Self-Check",
+        "explanation": "Have the student review their newly formulated answer against the standard criteria for 'chap' to ensure accuracy and relevance before final submission.",
+        "verified_quote": "Verification ensures that the mental model aligns with the target learning objective.",
+        "source_ref": "Assessment Best Practices"
+      }
+    ],
+    "verification_question_id": "retest-1790923335095"
+  },
+  {
+    "id": "misc-1790923321314-c-course-1790923123271-k16r-1",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "title": "Conceptual gap in formulating chap",
+    "description": "The student entered random keyboard characters ('jgjkhuoi') instead of formulating a coherent response for the concept of 'chap'. This indicates either a lack of understanding of the core definition, accidental submission, or a complete conceptual gap in structuring the required terminology. Remediation should focus on defining the fundamental principles of 'chap' and guiding the student through a structured formulation process.",
+    "trigger_evidence": "Assessment attempt on question q-short_answer-1790923299678-1. Given answer: \"jgjkhuoi\".",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:42:01.315Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Core Concept of Chap",
+        "explanation": "Establish a clear foundational understanding of what 'chap' represents in the context of the course, breaking down its primary components and definitions.",
+        "verified_quote": "A clear definition forms the bedrock of accurate conceptual formulation.",
+        "source_ref": "Course Guidelines on Foundational Concepts"
+      },
+      {
+        "step_number": 2,
+        "title": "Structure and Formulate the Term Correctly",
+        "explanation": "Guide the student through the logical steps required to construct a valid answer regarding 'chap', avoiding random inputs and focusing on proper terminology.",
+        "code_example": "// Example of structured formulation:\n// Component A + Component B = Valid Chap Definition",
+        "verified_quote": "Structured thinking translates directly into accurate academic responses.",
+        "source_ref": "Cognitive Remediation Framework"
+      },
+      {
+        "step_number": 3,
+        "title": "Verify Understanding with a Guided Self-Check",
+        "explanation": "Ask the student to restate the definition of 'chap' in their own words to confirm that the conceptual gap has been successfully bridged.",
+        "verified_quote": "True mastery is demonstrated through independent and coherent explanation.",
+        "source_ref": "Assessment and Verification Standards"
+      }
+    ],
+    "verification_question_id": "retest-1790923321315"
+  },
+  {
+    "id": "misc-1790923313482-c-course-1790923123271-k16r-1",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "title": "Conceptual gap in formulating chap",
+    "description": "The student entered a random string ('hjvjh') instead of formulating a meaningful response regarding the concept of 'chap'. This indicates a lack of engagement, confusion, or a fundamental conceptual gap in understanding how to approach the topic. Remediation must focus on re-introducing the core definition of 'chap', guiding the student through structured decomposition of the concept, and prompting active verification.",
+    "trigger_evidence": "Assessment attempt on question q-short_answer-1790923299678-0. Given answer: \"hjvjh\".",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:41:53.482Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Core Concept of Chap",
+        "explanation": "Begin by reviewing the foundational definition and primary characteristics of 'chap'. Ensure the student understands the basic terminology before attempting to formulate answers.",
+        "verified_quote": "A clear definition forms the bedrock of accurate concept formulation.",
+        "source_ref": "Course Text - Chapter Introduction"
+      },
+      {
+        "step_number": 2,
+        "title": "Structure and Formulate Your Answer",
+        "explanation": "Break down the process of formulating a response about 'chap' into logical steps: identify the main component, state its function, and provide a relevant context.",
+        "code_example": "// Example structure: [Main Component] + [Function] + [Context]",
+        "verified_quote": "Logical decomposition prevents random input and ensures targeted responses.",
+        "source_ref": "Cognitive Remediation Guidelines"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Check and Verification",
+        "explanation": "Review your drafted response against the core principles of 'chap' to verify that it directly addresses the prompt using appropriate terminology.",
+        "verified_quote": "Always verify your final output against the foundational criteria of the topic.",
+        "source_ref": "Assessment Best Practices"
+      }
+    ],
+    "verification_question_id": "retest-1790923313482"
+  }
+]

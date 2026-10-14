@@ -1,26 +1,169 @@
 @import "tailwindcss";
 
+@theme {
+  --color-warm-bg: #F8F2E3;
+  --color-card-bg: #FFFDF7;
+  --color-olive: #B1A15A;
+  --color-olive-hover: #9E8F4B;
+  --color-slate-dark: #5E6A7A;
+  --color-slate-hover: #4F5A68;
+  --color-deep-text: #26313D;
+  --color-secondary-text: #6F7782;
+  --color-border-warm: #DDD6C5;
+  --color-success-warm: #6D9B73;
+  --color-error-warm: #B85C5C;
+  --color-active-nav: #E8E0C9;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #F8F2E3;
+  --foreground: #26313D;
+  --card: #FFFDF7;
+  --card-foreground: #26313D;
+  --popover: #FFFDF7;
+  --popover-foreground: #26313D;
+  --primary: #B1A15A;
+  --primary-foreground: #26313D;
+  --secondary: #5E6A7A;
+  --secondary-foreground: #FFFFFF;
+  --muted: #EFE8D6;
+  --muted-foreground: #6F7782;
+  --accent: #E8E0C9;
+  --accent-foreground: #26313D;
+  --destructive: #B85C5C;
+  --destructive-foreground: #FFFFFF;
+  --border: #DDD6C5;
+  --input: #DDD6C5;
+  --ring: #B1A15A;
+  --success: #6D9B73;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F2E3;
+  color: #26313D;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Antigravity Minimal Academic Cards */
+.card-warm {
+  background-color: #FFFDF7;
+  border: 1px solid #DDD6C5;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.card-warm-subtle {
+  background-color: #FAF5E9;
+  border: 1px solid #E4DCCB;
+  border-radius: 0.75rem;
+}
+
+/* Primary and Secondary button classes for standard consistency */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #B1A15A;
+  color: #26313D;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn-primary:hover {
+  background-color: #9E8F4B;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #5E6A7A;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn-secondary:hover {
+  background-color: #4F5A68;
+}
+
+.btn-outline-warm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #FFFDF7;
+  border: 1px solid #DDD6C5;
+  color: #26313D;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+}
+.btn-outline-warm:hover {
+  background-color: #E8E0C9;
+}
+
+/* Custom warm scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F2E3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDD6C5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B1A15A;
+}
+
+/* Print Styles for Exam Question Papers */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  header, aside, .no-print {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .printable-paper {
+    border: none !important;
+    box-shadow: none !important;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    padding: 0 !important;
+  }
+  .page-break-before {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+  .avoid-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}
+

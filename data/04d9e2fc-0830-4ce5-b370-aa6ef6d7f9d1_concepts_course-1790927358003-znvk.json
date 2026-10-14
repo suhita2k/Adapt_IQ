@@ -1,0 +1,129 @@
+[
+  {
+    "id": "c-course-1790927358003-znvk-1790927383607-1",
+    "course_id": "course-1790927358003-znvk",
+    "name": "Modular AI Pipeline",
+    "description": "A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+    "category": "System Architecture",
+    "subtopic": "AI Pipeline",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Basic AI Concepts",
+      "System Design Principles"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Design a modular pipeline",
+      "Analyze data flow efficiency"
+    ],
+    "source_location": "Page 3",
+    "common_pitfalls": [
+      "Over-complicating module interfaces",
+      "Ignoring latency between modules"
+    ]
+  },
+  {
+    "id": "c-course-1790927358003-znvk-1790927383607-2",
+    "course_id": "course-1790927358003-znvk",
+    "name": "SIH Project Framework",
+    "description": "The structured methodology required for Smart India Hackathon project submissions.",
+    "category": "Project Management",
+    "subtopic": "Hackathon Strategy",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Project Management Basics"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Structure project documentation",
+      "Align project goals with SIH criteria"
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Misalignment with problem statements",
+      "Incomplete documentation"
+    ]
+  },
+  {
+    "id": "c-course-1790927358003-znvk-1790932392291-1",
+    "course_id": "course-1790927358003-znvk",
+    "name": "Professional Summary",
+    "description": "A concise overview of an individual's qualifications and career highlights.",
+    "category": "Profile Structure",
+    "subtopic": "Documentation",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Draft a summary that encapsulates professional identity",
+      "Identify key career achievements for inclusion"
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Making the summary too long",
+      "Including irrelevant personal information"
+    ]
+  },
+  {
+    "id": "c-course-1790927358003-znvk-1790932392291-2",
+    "course_id": "course-1790927358003-znvk",
+    "name": "Experience Documentation",
+    "description": "The systematic recording of professional roles, responsibilities, and organizational affiliations.",
+    "category": "Career History",
+    "subtopic": "Professional Experience",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Professional Summary"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Chronologically list organizational affiliations",
+      "Detail specific roles held at companies like Infosys or CodSoft"
+    ],
+    "source_location": "Page 2",
+    "common_pitfalls": [
+      "Omitting dates of employment",
+      "Failing to specify organizational context"
+    ]
+  },
+  {
+    "id": "c-course-1790927358003-znvk-1790932392291-3",
+    "course_id": "course-1790927358003-znvk",
+    "name": "Technical Skills Mapping",
+    "description": "The identification and categorization of top-tier technical competencies relevant to a professional profile.",
+    "category": "Competency Management",
+    "subtopic": "Skills",
+    "difficulty_level": 2,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Categorize technical abilities as top skills",
+      "Align skills with professional experience"
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Listing outdated technologies",
+      "Overestimating proficiency levels"
+    ]
+  },
+  {
+    "id": "c-course-1790927358003-znvk-1790932392291-4",
+    "course_id": "course-1790927358003-znvk",
+    "name": "Educational Background",
+    "description": "The formal documentation of academic credentials and certifications attained.",
+    "category": "Qualifications",
+    "subtopic": "Education",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "List formal education degrees",
+      "Integrate certifications into the profile structure"
+    ],
+    "source_location": "Page 3",
+    "common_pitfalls": [
+      "Incorrectly formatting degree titles",
+      "Excluding relevant professional certifications"
+    ]
+  }
+]

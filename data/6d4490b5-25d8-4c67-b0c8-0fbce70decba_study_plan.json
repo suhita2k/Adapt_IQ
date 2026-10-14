@@ -1,0 +1,68 @@
+{
+  "id": "plan-course-1790876667602-wtpg",
+  "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+  "course_id": "course-1790876667602-wtpg",
+  "title": "Advanced Algorithms & Invariants Adaptive Study Plan",
+  "daily_goal_minutes": 60,
+  "streak_days": 0,
+  "tasks": [
+    {
+      "id": "task-1790876674833-0",
+      "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+      "course_id": "course-1790876667602-wtpg",
+      "concept_id": "c-course-1790876667602-wtpg-1",
+      "concept_name": "Asymptotic Analysis Basics",
+      "title": "Study Concept: Asymptotic Analysis Basics",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Asymptotic Analysis Basics in Advanced Algorithms & Invariants."
+    },
+    {
+      "id": "task-1790876674833-1",
+      "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+      "course_id": "course-1790876667602-wtpg",
+      "concept_id": "c-course-1790876667602-wtpg-2",
+      "concept_name": "Loop Invariants",
+      "title": "Study Concept: Loop Invariants",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "high",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Loop Invariants in Advanced Algorithms & Invariants."
+    },
+    {
+      "id": "task-1790876674833-2",
+      "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+      "course_id": "course-1790876667602-wtpg",
+      "concept_id": "c-course-1790876667602-wtpg-3",
+      "concept_name": "Mathematical Induction",
+      "title": "Study Concept: Mathematical Induction",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Mathematical Induction in Advanced Algorithms & Invariants."
+    },
+    {
+      "id": "task-1790876674833-3",
+      "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+      "course_id": "course-1790876667602-wtpg",
+      "concept_id": "c-course-1790876667602-wtpg-4",
+      "concept_name": "Recursion Fundamentals",
+      "title": "Study Concept: Recursion Fundamentals",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Recursion Fundamentals in Advanced Algorithms & Invariants."
+    }
+  ],
+  "created_at": "2026-10-01T17:44:34.833Z",
+  "updated_at": "2026-10-01T17:44:34.833Z"
+}

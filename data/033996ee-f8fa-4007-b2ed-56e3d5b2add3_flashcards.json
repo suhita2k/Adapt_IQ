@@ -1,0 +1,67 @@
+[
+  {
+    "id": "fc-course-1790876934634-rnpr-1",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "concept_id": "c-course-1790876934634-rnpr-1",
+    "front": "What is the core invariant of Asymptotic Analysis Basics?",
+    "back": "Asymptotic analysis evaluates the resource efficiency of algorithms as input sizes grow arbitrarily large. It utilizes Big-O, Omega, and Theta notations to abstract hardware differences and classify algorithmic performance.",
+    "source_ref": "Algorithms Syllabus, Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876934634-rnpr-2",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "concept_id": "c-course-1790876934634-rnpr-2",
+    "front": "What is the core invariant of Mathematical Induction?",
+    "back": "Mathematical induction is a proof technique used to establish the truth of an infinite sequence of propositions. It relies on a base case and an inductive step to prove correctness across all integers.",
+    "source_ref": "Algorithms Syllabus, Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876934634-rnpr-3",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "concept_id": "c-course-1790876934634-rnpr-3",
+    "front": "What is the core invariant of Loop Invariants?",
+    "back": "A loop invariant is a property of a program loop that is true before and after each iteration. It is heavily used in conjunction with induction to formally prove the correctness of iterative algorithms.",
+    "source_ref": "Algorithms Syllabus, Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876934634-rnpr-4",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "concept_id": "c-course-1790876934634-rnpr-4",
+    "front": "What is the core invariant of Recursive Problem Solving?",
+    "back": "Recursion involves breaking a problem down into smaller instances of the same problem until reaching a trivial base case. It forms the foundation for divide-and-conquer paradigms and recursive tree analysis.",
+    "source_ref": "Algorithms Syllabus, Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876934634-rnpr-5",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "concept_id": "c-course-1790876934634-rnpr-5",
+    "front": "What is the core invariant of Recursion Trees?",
+    "back": "Recursion trees visually map out the cost of recursive function calls by showing work done at each level of execution. They are critical for intuitively solving recurrence relations and estimating running times.",
+    "source_ref": "Algorithms Syllabus, Page 12",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

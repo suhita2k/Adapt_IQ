@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mat-1790871444212-kwea",
+    "course_id": "course-1790871316162-9uas",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "title": "Recording 2026-07-04 091831",
+    "file_name": "Recording 2026-07-04 091831.mp4",
+    "file_type": "lecture_video",
+    "file_size_bytes": 68113641,
+    "duration_seconds": 3600,
+    "status": "indexed",
+    "extracted_chunks_count": 42,
+    "uploaded_at": "2026-10-01T16:17:24.212Z",
+    "file_url": "/api/courses/course-1790871316162-9uas/materials/mat-1790871444212-kwea/file"
+  },
+  {
+    "id": "mat-1790871379583-y9qz",
+    "course_id": "course-1790871316162-9uas",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "title": "SIH2026-IDEA-Presentation-Format.pptx (4)",
+    "file_name": "SIH2026-IDEA-Presentation-Format.pptx (4).pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 8230990,
+    "page_count": 165,
+    "status": "indexed",
+    "extracted_chunks_count": 578,
+    "uploaded_at": "2026-10-01T16:16:19.583Z",
+    "file_url": "/api/courses/course-1790871316162-9uas/materials/mat-1790871379583-y9qz/file"
+  },
+  {
+    "id": "mat-1790871355477-j6a8",
+    "course_id": "course-1790871316162-9uas",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+    "file_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0.docx",
+    "file_type": "notes",
+    "file_size_bytes": 56202,
+    "page_count": 12,
+    "status": "indexed",
+    "extracted_chunks_count": 42,
+    "uploaded_at": "2026-10-01T16:15:55.477Z",
+    "file_url": "/api/courses/course-1790871316162-9uas/materials/mat-1790871355477-j6a8/file"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "msg-u-1790876952550",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "user",
+    "content": "What is a loop invariant and what conditions must it satisfy?",
+    "created_at": "2026-10-01T17:49:12.550Z"
+  },
+  {
+    "id": "msg-a-1790876952556",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "assistant",
+    "content": "ஒரு சுழற்சி மாறிலி (loop invariant) என்பது லூப் சரியாக இயங்குகிறதா என்பதை நிரூபிக்க உதவும் ஒரு நிபந்தனை ஆகும். அதை நிரூபிக்க நாம் மூன்று முக்கிய நிலைகளைப் பூர்த்தி செய்ய வேண்டும்: 1. தொடக்கத்திற்கு முன்பு (prior to initialization), 2. லூப் இயங்கும் போது (during maintenance), 3. லூப் முடியும் போது (at termination) [Page 28].",
+    "created_at": "2026-10-01T17:49:12.556Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790876952556-0",
+        "course_id": "course-1790876934634-rnpr",
+        "material_id": "mat-1790876934845-na7d",
+        "material_title": "Algorithms Syllabus",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 28",
+        "snippet": "To prove an iterative algorithm correct, we must show that a loop invariant holds true prior to initialization, during maintenance, and at termination.",
+        "confidence_score": 0.96,
+        "relevance_reason": "சுழற்சி மாறிலியின் மூன்று நிபந்தனைகளை விளக்குகிறது."
+      }
+    ],
+    "suggested_followups": [
+      "மறுபக்க வழிமுறைகளில் (recursion trees) செய்யப்படும் வேலைகளை எப்படி கணக்கிடுவது?",
+      "தொடக்க நிலை (Initialization) ஏன் மிகவும் முக்கியமானது?",
+      "அசிம்போடிக் குறியீடு (Asymptotic notation) என்றால் என்ன?"
+    ]
+  },
+  {
+    "id": "msg-u-1790876976454",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "user",
+    "content": "What is loop invariant?",
+    "created_at": "2026-10-01T17:49:36.455Z"
+  },
+  {
+    "id": "msg-a-1790876976457",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "assistant",
+    "content": "लूप इनवेरिएंट (Loop Invariant) एक ऐसी स्थिति या गुण है जिसे हमें यह सिद्ध करने के लिए उपयोग करना होता है कि कोई पुनरावृत्ति (iterative) एल्गोरिथ्म सही है या नहीं [Page 28]। लूप इनवेरिएंट को सही साबित करने के लिए तीन चरणों का पालन करना होता है:\n1. **आरंभ (Initialization):** लूप शुरू होने से पहले यह सत्य होना चाहिए [Page 28]।\n2. **रखरखाव (Maintenance):** यदि यह लूप के एक पुनरावृत्ति से पहले सत्य है, तो अगली पुनरावृत्ति से पहले भी सत्य रहना चाहिए [Page 28]।\n3. **समाप्ति (Termination):** जब लूप समाप्त होता है, तो यह इनवेरिएंट हमें एल्गोरिथ्म की शुद्धता (correctness) दिखाने में मदद करता है [Page 28।",
+    "created_at": "2026-10-01T17:49:36.457Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790876976457-0",
+        "course_id": "course-1790876934634-rnpr",
+        "material_id": "mat-1790876934845-na7d",
+        "material_title": "Algorithms Syllabus",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 28",
+        "snippet": "To prove an iterative algorithm correct, we must show that a loop invariant holds true prior to initialization, during maintenance, and at termination.",
+        "confidence_score": 0.96,
+        "relevance_reason": "यह उद्धरण लूप इनवेरिएंट की परिभाषा और उसके तीन मुख्य चरणों (आरंभ, रखरखाव, और समाप्ति) को स्पष्ट रूप से समझाता है।"
+      }
+    ],
+    "suggested_followups": [
+      "लूप इनवेरिएंट के तीन चरण (Initialization, Maintenance, Termination) को विस्तार से समझाइए?",
+      "किसी इटरेटिव एल्गोरिथ्म की शुद्धता साबित करने के लिए लूप इनवेरिएंट क्यों आवश्यक है?",
+      "क्या आप लूप इनवेरिएंट का उपयोग करके किसी सरल एल्गोरिथ्म का उदाहरण दे सकते हैं?"
+    ]
+  },
+  {
+    "id": "msg-u-1790876983368",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "user",
+    "content": "What is a loop invariant?",
+    "created_at": "2026-10-01T17:49:43.368Z"
+  },
+  {
+    "id": "msg-a-1790876983373",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "assistant",
+    "content": "Un invariante de bucle es una propiedad fundamental que se utiliza para demostrar la corrección de un algoritmo iterativo [Page 28]. Para probar que un algoritmo de este tipo es correcto, debemos demostrar que el invariante se cumple en tres momentos clave: antes de la inicialización, durante la fase de mantenimiento y al llegar a la terminación [Page 28].",
+    "created_at": "2026-10-01T17:49:43.373Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790876983373-0",
+        "course_id": "course-1790876934634-rnpr",
+        "material_id": "mat-1790876934845-na7d",
+        "material_title": "Algorithms Syllabus",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 28",
+        "snippet": "To prove an iterative algorithm correct, we must show that a loop invariant holds true prior to initialization, during maintenance, and at termination.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Explica los tres requisitos necesarios para demostrar la corrección de un algoritmo iterativo mediante un invariante de bucle."
+      }
+    ],
+    "suggested_followups": [
+      "¿Cuáles son las tres condiciones que debe cumplir un invariante de bucle y por qué son importantes?",
+      "¿Cómo se relaciona la inicialización de un bucle con la demostración de su invariante?",
+      "¿Puedes dar un ejemplo de cómo se aplica la fase de mantenimiento en un algoritmo iterativo?"
+    ]
+  },
+  {
+    "id": "msg-u-1790876990666",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "user",
+    "content": "What is a loop invariant?",
+    "created_at": "2026-10-01T17:49:50.666Z"
+  },
+  {
+    "id": "msg-a-1790876990668",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "assistant",
+    "content": "Un invariant de boucle est une condition ou une propriété qui doit être vraie avant l'initialisation de la boucle, maintenue vraie à chaque itération (pendant la maintenance), et qui garantit la correction de l'algorithme lorsqu'elle est combinée avec la condition d'arrêt (à la terminaison) [Page 28].",
+    "created_at": "2026-10-01T17:49:50.668Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790876990668-0",
+        "course_id": "course-1790876934634-rnpr",
+        "material_id": "mat-1790876934845-na7d",
+        "material_title": "Algorithms Syllabus",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 28",
+        "snippet": "To prove an iterative algorithm correct, we must show that a loop invariant holds true prior to initialization, during maintenance, and at termination.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Définit les trois étapes clés pour prouver la correction d'un algorithme itératif à l'aide d'un invariant de boucle."
+      }
+    ],
+    "suggested_followups": [
+      "Quelles sont les trois étapes fondamentales pour prouver qu'un invariant de boucle est correct ?",
+      "Comment l'invariant de boucle garantit-il la terminaison et la correction d'un algorithme ?",
+      "Pouvez-vous donner un exemple d'application d'un invariant de boucle sur un algorithme itératif simple ?"
+    ]
+  },
+  {
+    "id": "msg-u-1790876997332",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "user",
+    "content": "What is a loop invariant?",
+    "created_at": "2026-10-01T17:49:57.333Z"
+  },
+  {
+    "id": "msg-a-1790876997335",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "course_id": "course-1790876934634-rnpr",
+    "role": "assistant",
+    "content": "A loop invariant is a property or condition that must be shown to hold true prior to initialization, during maintenance (each iteration), and at termination in order to prove that an iterative algorithm is correct [Page 28].",
+    "created_at": "2026-10-01T17:49:57.335Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790876997335-0",
+        "course_id": "course-1790876934634-rnpr",
+        "material_id": "mat-1790876934845-na7d",
+        "material_title": "Algorithms Syllabus",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 28",
+        "snippet": "To prove an iterative algorithm correct, we must show that a loop invariant holds true prior to initialization, during maintenance, and at termination.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Defines the exact requirements for a loop invariant in iterative algorithms."
+      }
+    ],
+    "suggested_followups": [
+      "What are the three essential steps required to prove an algorithm correct using a loop invariant?",
+      "How does the maintenance step ensure the loop invariant holds across iterations?",
+      "Why is the termination condition critical when evaluating a loop invariant?"
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "id": "c-course-1790876934634-rnpr-1",
+    "course_id": "course-1790876934634-rnpr",
+    "name": "Asymptotic Analysis Basics",
+    "description": "Asymptotic analysis evaluates the resource efficiency of algorithms as input sizes grow arbitrarily large. It utilizes Big-O, Omega, and Theta notations to abstract hardware differences and classify algorithmic performance.",
+    "category": "Foundations",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [
+      "Big-O Notation",
+      "Growth Rates",
+      "Worst-case vs Average-case"
+    ],
+    "common_pitfalls": [
+      "Confusing Big-O upper bounds with tight bounds.",
+      "Ignoring constant factors when they dominate small inputs."
+    ]
+  },
+  {
+    "id": "c-course-1790876934634-rnpr-2",
+    "course_id": "course-1790876934634-rnpr",
+    "name": "Mathematical Induction",
+    "description": "Mathematical induction is a proof technique used to establish the truth of an infinite sequence of propositions. It relies on a base case and an inductive step to prove correctness across all integers.",
+    "category": "Foundations",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Asymptotic Analysis Basics"
+    ],
+    "subconcepts": [
+      "Base Case",
+      "Inductive Hypothesis",
+      "Strong Induction"
+    ],
+    "common_pitfalls": [
+      "Assuming the inductive step holds without verifying the base case.",
+      "Failing to properly state the inductive hypothesis."
+    ]
+  },
+  {
+    "id": "c-course-1790876934634-rnpr-3",
+    "course_id": "course-1790876934634-rnpr",
+    "name": "Loop Invariants",
+    "description": "A loop invariant is a property of a program loop that is true before and after each iteration. It is heavily used in conjunction with induction to formally prove the correctness of iterative algorithms.",
+    "category": "Core",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Mathematical Induction"
+    ],
+    "subconcepts": [
+      "Initialization",
+      "Maintenance",
+      "Termination"
+    ],
+    "common_pitfalls": [
+      "Writing an invariant that does not hold at loop termination.",
+      "Forgetting to prove the maintenance step."
+    ]
+  },
+  {
+    "id": "c-course-1790876934634-rnpr-4",
+    "course_id": "course-1790876934634-rnpr",
+    "name": "Recursive Problem Solving",
+    "description": "Recursion involves breaking a problem down into smaller instances of the same problem until reaching a trivial base case. It forms the foundation for divide-and-conquer paradigms and recursive tree analysis.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Asymptotic Analysis Basics"
+    ],
+    "subconcepts": [
+      "Base Cases",
+      "Recursive Steps",
+      "Call Stack Mechanics"
+    ],
+    "common_pitfalls": [
+      "Infinite recursion due to missing or incorrect base cases.",
+      "Stack overflow errors from overly deep recursion trees."
+    ]
+  },
+  {
+    "id": "c-course-1790876934634-rnpr-5",
+    "course_id": "course-1790876934634-rnpr",
+    "name": "Recursion Trees",
+    "description": "Recursion trees visually map out the cost of recursive function calls by showing work done at each level of execution. They are critical for intuitively solving recurrence relations and estimating running times.",
+    "category": "Advanced",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Recursive Problem Solving",
+      "Asymptotic Analysis Basics"
+    ],
+    "subconcepts": [
+      "Node Cost Calculation",
+      "Tree Height",
+      "Summing Levels"
+    ],
+    "common_pitfalls": [
+      "Miscalculating the branching factor or the height of the tree.",
+      "Incorrectly summing the work done across all levels."
+    ]
+  },
+  {
+    "id": "c-course-1790876934634-rnpr-6",
+    "course_id": "course-1790876934634-rnpr",
+    "name": "Master Theorem",
+    "description": "The Master Theorem provides a cookbook method for resolving recurrence relations of the form T(n) = aT(n/b) + f(n). It allows rapid asymptotic classification of divide-and-conquer algorithms without full expansion.",
+    "category": "Advanced",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Recursion Trees",
+      "Asymptotic Analysis Basics"
+    ],
+    "subconcepts": [
+      "Polynomial Comparison",
+      "Case 1",
+      "Case 2",
+      "Case 3"
+    ],
+    "common_pitfalls": [
+      "Applying the theorem when the recurrence does not fit the standard form.",
+      "Overlooking polynomial regularity conditions."
+    ]
+  }
+]

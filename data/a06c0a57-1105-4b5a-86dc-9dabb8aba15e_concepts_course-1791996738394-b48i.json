@@ -1,0 +1,63 @@
+[
+  {
+    "id": "c-course-1791996738394-b48i-1791996752441-1",
+    "course_id": "course-1791996738394-b48i",
+    "name": "Foundational Definitions",
+    "description": "Foundational definitions extracted from Distributed Systems Principles Textbook establishing baseline terminology for distributed systems.",
+    "category": "Distributed Systems Principles",
+    "subtopic": "Fundamentals",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Define core terminology associated with distributed systems",
+      "Identify fundamental components of a distributed architecture"
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Confusing distributed system definitions with centralized computing models"
+    ]
+  },
+  {
+    "id": "c-course-1791996738394-b48i-1791996752441-2",
+    "course_id": "course-1791996738394-b48i",
+    "name": "System Invariants",
+    "description": "System invariants extracted from Distributed Systems Principles Textbook detailing persistent properties that must remain true across a distributed environment.",
+    "category": "Distributed Systems Principles",
+    "subtopic": "System Properties",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Foundational Definitions"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Recognize critical system invariants in distributed executions",
+      "Explain the role of invariants in maintaining system correctness"
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Assuming local invariants automatically guarantee global system invariants"
+    ]
+  },
+  {
+    "id": "c-course-1791996738394-b48i-1791996752441-3",
+    "course_id": "course-1791996738394-b48i",
+    "name": "Structural Properties",
+    "description": "Structural properties extracted from Distributed Systems Principles Textbook outlining the architectural organization and topology characteristics of distributed systems.",
+    "category": "Distributed Systems Principles",
+    "subtopic": "Architecture",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Foundational Definitions"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Analyze the structural properties of distributed system topologies",
+      "Differentiate between various structural configurations in cloud computing"
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Overlooking network topology constraints when analyzing structural properties"
+    ]
+  }
+]

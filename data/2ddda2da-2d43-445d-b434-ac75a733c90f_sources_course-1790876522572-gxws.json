@@ -1,0 +1,62 @@
+[
+  {
+    "id": "src-1790876530927-85by",
+    "course_id": "course-1790876522572-gxws",
+    "material_id": "mat-1790876522843-3n4q",
+    "material_title": "Algorithms Syllabus",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Algorithms Syllabus (notes) - Page 27",
+    "snippet": "The Master Theorem provides asymptotic bounds for recurrences of the form T(n) = aT(n/b) + f(n).",
+    "confidence_score": 0.94,
+    "relevance_reason": "Core theorem for solving divide-and-conquer recurrences.",
+    "page_number": 27,
+    "file_name": "syllabus.txt",
+    "file_url": "/api/courses/course-1790876522572-gxws/materials/mat-1790876522843-3n4q/file#page=27"
+  },
+  {
+    "id": "src-1790876530923-mxcm",
+    "course_id": "course-1790876522572-gxws",
+    "material_id": "mat-1790876522843-3n4q",
+    "material_title": "Algorithms Syllabus",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Algorithms Syllabus (notes) - Page 18",
+    "snippet": "Recursion trees illustrate the work done at each level of a divide-and-conquer algorithm.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Introduces visual complexity analysis for recursive structures.",
+    "page_number": 18,
+    "file_name": "syllabus.txt",
+    "file_url": "/api/courses/course-1790876522572-gxws/materials/mat-1790876522843-3n4q/file#page=18"
+  },
+  {
+    "id": "src-1790876530919-ja30",
+    "course_id": "course-1790876522572-gxws",
+    "material_id": "mat-1790876522843-3n4q",
+    "material_title": "Algorithms Syllabus",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Algorithms Syllabus (notes) - Page 5",
+    "snippet": "A loop invariant must satisfy three properties: initialization, maintenance, and termination.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Defines the core methodology for iterative correctness.",
+    "page_number": 5,
+    "file_name": "syllabus.txt",
+    "file_url": "/api/courses/course-1790876522572-gxws/materials/mat-1790876522843-3n4q/file#page=5"
+  },
+  {
+    "id": "src-1790876522971",
+    "course_id": "course-1790876522572-gxws",
+    "material_id": "mat-1790876522843-3n4q",
+    "material_title": "Algorithms Syllabus",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for Algorithms Syllabus.",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "syllabus.txt",
+    "file_url": "/api/courses/course-1790876522572-gxws/materials/mat-1790876522843-3n4q/file#page=1"
+  }
+]

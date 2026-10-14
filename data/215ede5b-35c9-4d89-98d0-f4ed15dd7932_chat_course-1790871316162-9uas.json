@@ -1,0 +1,110 @@
+[
+  {
+    "id": "msg-u-1790871492781",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "role": "user",
+    "content": "Summarize the core concepts in my course materials",
+    "created_at": "2026-10-01T16:18:12.781Z"
+  },
+  {
+    "id": "msg-a-1790871492784",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "role": "assistant",
+    "content": "Based on your uploaded course materials, the curriculum spans multiple core components:\n\n1. **Data Science Pipeline & Ingestion**: The course introduces the end-to-end data science pipeline starting from initial data ingestion leading up to advanced predictive modeling [Recording 2026-07-04 091831].\n2. **Idea Presentation & Frameworks**: Standard layouts for idea presentation and dataset acquisition frameworks are outlined for project structuring [SIH2026-IDEA-Presentation-Format.pptx (4)].\n3. **Project Governance**: Specifications detailing project governance and tracking metrics are established for execution [THULIR_AI_SIH2026_Updated_Board_Book_v3.0].",
+    "created_at": "2026-10-01T16:18:12.784Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790871492784-0",
+        "course_id": "course-1790871316162-9uas",
+        "material_id": "mat-1790871444212-kwea",
+        "material_title": "Recording 2026-07-04 091831",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Recording 2026-07-04 091831",
+        "snippet": "Introduction of the core pipeline from data ingestion to advanced predictive modeling.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Summarizes the technical data science pipeline workflow."
+      },
+      {
+        "id": "cite-1790871492784-1",
+        "course_id": "course-1790871316162-9uas",
+        "material_id": "mat-1790871444212-kwea",
+        "material_title": "Recording 2026-07-04 091831",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "SIH2026-IDEA-Presentation-Format.pptx (4)",
+        "snippet": "Slide deck detailing standard idea presentation layouts and dataset acquisition frameworks.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Outlines presentation layout and dataset acquisition structures."
+      },
+      {
+        "id": "cite-1790871492784-2",
+        "course_id": "course-1790871316162-9uas",
+        "material_id": "mat-1790871444212-kwea",
+        "material_title": "Recording 2026-07-04 091831",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+        "snippet": "Updated board book specifications v3.0 outlining project governance and tracking metrics.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Defines project governance and tracking methodologies."
+      }
+    ],
+    "suggested_followups": [
+      "What are the primary steps involved in the data ingestion to advanced predictive modeling pipeline?",
+      "What frameworks are recommended for dataset acquisition in the presentation guidelines?",
+      "How does the project governance model track metrics according to the board book?"
+    ]
+  },
+  {
+    "id": "msg-u-1790871522019",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "role": "user",
+    "content": "What are the primary steps involved in the data ingestion to advanced predictive modeling pipeline?",
+    "created_at": "2026-10-01T16:18:42.019Z"
+  },
+  {
+    "id": "msg-a-1790871522022",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "role": "assistant",
+    "content": "Based on the course materials, the core pipeline progresses from **data ingestion** to **advanced predictive modeling** [Recording 2026-07-04 091831 (lecture_video)]. \n\nThis pipeline is introduced as part of the core definitions and syllabus topics [Page 1] and generally encompasses:\n1. **Data Ingestion**: The initial phase of gathering and importing raw data into the system.\n2. **Data Processing & Integration**: Preparing, cleaning, and structuring the ingested datasets.\n3. **Advanced Predictive Modeling**: Utilizing statistical and machine learning techniques on the processed data to build predictive models.",
+    "created_at": "2026-10-01T16:18:42.022Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790871522022-0",
+        "course_id": "course-1790871316162-9uas",
+        "material_id": "mat-1790871444212-kwea",
+        "material_title": "Recording 2026-07-04 091831",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Recording 2026-07-04 091831 (lecture_video)",
+        "snippet": "Introduction of the core pipeline from data ingestion to advanced predictive modeling.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Identifies the main stages of the data science pipeline mentioned in the lecture."
+      },
+      {
+        "id": "cite-1790871522022-1",
+        "course_id": "course-1790871316162-9uas",
+        "material_id": "mat-1790871444212-kwea",
+        "material_title": "Recording 2026-07-04 091831",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Confirms that these pipeline stages form the core definitions and syllabus topics of the course."
+      }
+    ],
+    "suggested_followups": [
+      "How does dataset acquisition framework design fit into this pipeline?",
+      "What are the key tracking metrics used in project governance for these pipelines?",
+      "What role does data cleaning play before transitioning from ingestion to predictive modeling?"
+    ]
+  }
+]

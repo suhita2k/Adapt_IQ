@@ -1,0 +1,68 @@
+[
+  {
+    "id": "fc-course-1790872647744-h8zv-1",
+    "user_id": "fresh-user-1790872645763",
+    "course_id": "course-1790872647744-h8zv",
+    "concept_id": "c-course-1790872647744-h8zv-1",
+    "front": "What is the core invariant of State Machine Replication (SMR)?",
+    "back": "A fundamental technique for building fault-tolerant distributed systems by running an identical deterministic state machine on multiple physical nodes. Every replica processes the exact same sequence of inputs in the same order to guarantee consistent state transitions.",
+    "source_ref": "Page 4, Raft Consensus Invariants & Safety Proofs (notes)",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 1,
+    "ease_factor": 2.5,
+    "difficulty_rating": 4
+  },
+  {
+    "id": "fc-course-1790872647744-h8zv-2",
+    "user_id": "fresh-user-1790872645763",
+    "course_id": "course-1790872647744-h8zv",
+    "concept_id": "c-course-1790872647744-h8zv-2",
+    "front": "What is the core invariant of Paxos Consensus Protocol?",
+    "back": "The classic consensus protocol designed to achieve agreement on a single value among a set of potentially unreliable nodes. It serves as the theoretical foundation for modern consensus protocols, though it is notoriously difficult to implement in practice.",
+    "source_ref": "Page 4, Raft Consensus Invariants & Safety Proofs (notes)",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790872647744-h8zv-3",
+    "user_id": "fresh-user-1790872645763",
+    "course_id": "course-1790872647744-h8zv",
+    "concept_id": "c-course-1790872647744-h8zv-3",
+    "front": "What is the core invariant of Raft Leader Election?",
+    "back": "The mechanism by which a Raft cluster dynamically selects a single coordinator node, known as the leader, to manage the replicated log. It utilizes randomized election timeouts to prevent split votes and ensure liveness.",
+    "source_ref": "Page 4, Raft Consensus Invariants & Safety Proofs (notes)",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790872647744-h8zv-4",
+    "user_id": "fresh-user-1790872645763",
+    "course_id": "course-1790872647744-h8zv",
+    "concept_id": "c-course-1790872647744-h8zv-4",
+    "front": "What is the core invariant of Raft Log Replication?",
+    "back": "The process where the elected leader accepts client commands, appends them to its local log, and propagates them to follower nodes. The leader ensures that all followers eventually apply the exact same sequence of entries.",
+    "source_ref": "Page 4, Raft Consensus Invariants & Safety Proofs (notes)",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790872647744-h8zv-5",
+    "user_id": "fresh-user-1790872645763",
+    "course_id": "course-1790872647744-h8zv",
+    "concept_id": "c-course-1790872647744-h8zv-5",
+    "front": "What is the core invariant of Raft Log Invariants?",
+    "back": "The structural rules that guarantee logs remain consistent across different nodes over time. Specifically, if two logs contain an entry with the same index and term, they are guaranteed to store the same command and be identical up to that index.",
+    "source_ref": "Page 4, Raft Consensus Invariants & Safety Proofs (notes)",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

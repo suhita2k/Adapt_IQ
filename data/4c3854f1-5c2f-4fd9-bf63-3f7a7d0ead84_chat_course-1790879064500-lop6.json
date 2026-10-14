@@ -1,0 +1,38 @@
+[
+  {
+    "id": "msg-u-1790879295908",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "role": "user",
+    "content": "मेरी अध्ययन सामग्री के मुख्य सिद्धांतों का सारांश दें",
+    "created_at": "2026-10-01T18:28:15.908Z"
+  },
+  {
+    "id": "msg-a-1790879295912",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "role": "assistant",
+    "content": "आपकी अपलोड की गई अध्ययन सामग्री और पाठ्यपुस्तकों में डेटा पाठ्यक्रम के मुख्य सिद्धांतों और पाठ्यक्रम के विषयों का परिचय दिया गया है [Page 1]। यह सामग्री विभिन्न शिक्षण संसाधनों जैसे 'Recording 2026-07-04 091831', 'THULIR_AI_SIH2026_Updated_Board_Book_v3.0' और अन्य पाठ्यपुस्तकों पर आधारित है [Page 1]।",
+    "created_at": "2026-10-01T18:28:15.912Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790879295912-0",
+        "course_id": "course-1790879064500-lop6",
+        "material_id": "mat-1790879276779-gw50",
+        "material_title": "Recording 2026-07-04 091831",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 1",
+        "snippet": "Core definitions and syllabus topics introduced for Recording 2026-07-04 091831.",
+        "confidence_score": 0.96,
+        "relevance_reason": "यह सामग्री पाठ्यक्रम की मुख्य परिभाषाओं और विषयों का परिचय देती है।"
+      }
+    ],
+    "suggested_followups": [
+      "रिकॉर्डिंग और पाठ्यपुस्तकों में कौन से मुख्य विषय शामिल हैं?",
+      "डेटा पाठ्यक्रम के तहत किन कोर परिभाषाओं का अध्ययन किया जाता है?",
+      "क्या आप इस पाठ्यक्रम के विशिष्ट अध्यायों के बारे में अधिक जानना चाहते हैं?"
+    ]
+  }
+]

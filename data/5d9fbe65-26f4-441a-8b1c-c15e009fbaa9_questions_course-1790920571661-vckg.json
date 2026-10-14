@@ -1,0 +1,682 @@
+[
+  {
+    "id": "q-mcq-1790920845061-0",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "What is the primary focus of the THULIR_AI_SIH2026_Updated_Board_Book_v3.0 material according to the syllabus context?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Core definitions and syllabus topics",
+        "is_correct": true,
+        "explanation": "The text explicitly introduces core definitions and syllabus topics for the board book."
+      },
+      {
+        "id": "opt-2",
+        "text": "Advanced hardware architecture design",
+        "is_correct": false,
+        "explanation": "Hardware architecture is not mentioned as the primary focus in the text citation.",
+        "misconception_tag": "Confusing general course material with specific advanced engineering subfields."
+      },
+      {
+        "id": "opt-3",
+        "text": "Financial accounting principles",
+        "is_correct": false,
+        "explanation": "Financial accounting is completely outside the scope of the provided document citation.",
+        "misconception_tag": "Assuming business contexts in technical course materials."
+      },
+      {
+        "id": "opt-4",
+        "text": "Legislative compliance guidelines",
+        "is_correct": false,
+        "explanation": "The source material focuses on syllabus topics rather than legislative compliance.",
+        "misconception_tag": "Misinterpreting educational board books as legal documents."
+      }
+    ],
+    "correct_answer": "Core definitions and syllabus topics",
+    "explanation": "The source material explicitly states that core definitions and syllabus topics are introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1).",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-1",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Which specific document version is referenced for the core definitions in the course context?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "is_correct": true,
+        "explanation": "This is the exact title and version provided in the course context and source evidence."
+      },
+      {
+        "id": "opt-2",
+        "text": "THULIR_AI_SIH2026_Updated_Board_Book_v1.0",
+        "is_correct": false,
+        "explanation": "Version 1.0 is outdated and not referenced in the current material.",
+        "misconception_tag": "Confusing version numbers of the board book."
+      },
+      {
+        "id": "opt-3",
+        "text": "THULIR_AI_SIH2026_Final_Report_v2.0",
+        "is_correct": false,
+        "explanation": "The document is a board book, not a final report.",
+        "misconception_tag": "Confusing document types."
+      },
+      {
+        "id": "opt-4",
+        "text": "THULIR_AI_SIH Syllabus v4.0",
+        "is_correct": false,
+        "explanation": "This version is not supported by the uploaded material citation.",
+        "misconception_tag": "Assuming higher version numbers than provided."
+      }
+    ],
+    "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+    "explanation": "The reference clearly points to THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1).",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-2",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "What type of content is primarily introduced on Page 1 of the referenced board book?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Core definitions and syllabus topics",
+        "is_correct": true,
+        "explanation": "Page 1 specifically introduces core definitions and syllabus topics."
+      },
+      {
+        "id": "opt-2",
+        "text": "Advanced laboratory procedures",
+        "is_correct": false,
+        "explanation": "Laboratory procedures are not mentioned in the source excerpt.",
+        "misconception_tag": "Assuming practical lab instructions exist where only definitions are provided."
+      },
+      {
+        "id": "opt-3",
+        "text": "Comprehensive bibliography and references",
+        "is_correct": false,
+        "explanation": "Bibliographies are typically at the end, not introduced as core syllabus topics on Page 1.",
+        "misconception_tag": "Confusing foundational definitions with end-matter references."
+      },
+      {
+        "id": "opt-4",
+        "text": "Student grading rubrics",
+        "is_correct": false,
+        "explanation": "Grading rubrics are not cited in the course evidence.",
+        "misconception_tag": "Confusing syllabus core content with administrative grading criteria."
+      }
+    ],
+    "correct_answer": "Core definitions and syllabus topics",
+    "explanation": "The evidence explicitly states that core definitions and syllabus topics are introduced on Page 1.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-3",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "How does the course material categorize the syllabus topics for THULIR_AI_SIH2026?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "As core definitions and syllabus topics",
+        "is_correct": true,
+        "explanation": "The text directly categorizes them as core definitions and syllabus topics."
+      },
+      {
+        "id": "opt-2",
+        "text": "As elective project modules",
+        "is_correct": false,
+        "explanation": "The materials present them as core topics, not electives.",
+        "misconception_tag": "Treating core foundational topics as optional electives."
+      },
+      {
+        "id": "opt-3",
+        "text": "As historical case studies",
+        "is_correct": false,
+        "explanation": "Case studies are not referenced in the source snippet.",
+        "misconception_tag": "Assuming educational board books consist solely of case studies."
+      },
+      {
+        "id": "opt-4",
+        "text": "As extracurricular activities",
+        "is_correct": false,
+        "explanation": "Extracurriculars are outside the formal syllabus framework.",
+        "misconception_tag": "Confusing academic syllabus topics with extracurricular programs."
+      }
+    ],
+    "correct_answer": "As core definitions and syllabus topics",
+    "explanation": "The course material frames the contents precisely around core definitions and syllabus topics.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-4",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Analyze",
+    "question_text": "Based on the provided course context, what is the level associated with the 'THULIR_AI_SIH2026_Updated_Board_Book_v3' concept?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "3/5",
+        "is_correct": true,
+        "explanation": "The concept definition explicitly specifies a difficulty/competency level of 3/5."
+      },
+      {
+        "id": "opt-2",
+        "text": "1/5",
+        "is_correct": false,
+        "explanation": "Level 1/5 is too low for the specified concept profile.",
+        "misconception_tag": "Underestimating the complexity level of the board book concept."
+      },
+      {
+        "id": "opt-3",
+        "text": "5/5",
+        "is_correct": false,
+        "explanation": "Level 5/5 exceeds the defined level in the concept specification.",
+        "misconception_tag": "Overestimating the difficulty rating of the foundational concept."
+      },
+      {
+        "id": "opt-4",
+        "text": "2/5",
+        "is_correct": false,
+        "explanation": "Level 2/5 does not match the metadata definition.",
+        "misconception_tag": "Confusing concept levels in metadata."
+      }
+    ],
+    "correct_answer": "3/5",
+    "explanation": "The concept profile explicitly defines the level as 3/5.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-5",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "What subconcepts are listed under the concept 'THULIR_AI_SIH2026_Updated_Board_Book_v3' in the course outline?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "None",
+        "is_correct": true,
+        "explanation": "The concept metadata explicitly states 'Subconcepts: None'."
+      },
+      {
+        "id": "opt-2",
+        "text": "Introduction, Body, and Conclusion",
+        "is_correct": false,
+        "explanation": "Standard document sections are not listed as formal subconcepts.",
+        "misconception_tag": "Assuming standard document structure applies to formal concept subcategories."
+      },
+      {
+        "id": "opt-3",
+        "text": "Hardware and Software modules",
+        "is_correct": false,
+        "explanation": "Hardware and software subconcepts are not present in the material definition.",
+        "misconception_tag": "Injecting external technical divisions into the syllabus structure."
+      },
+      {
+        "id": "opt-4",
+        "text": "Phase 1, Phase 2, and Phase 3",
+        "is_correct": false,
+        "explanation": "Phases are not part of the defined subconcepts.",
+        "misconception_tag": "Inventing project phases not supported by metadata."
+      }
+    ],
+    "correct_answer": "None",
+    "explanation": "The extracted concepts section clearly indicates that there are no subconcepts for this entry.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-6",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Which material serves as the sole source of evidence for the course 'eee' in this diagnostic assessment?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+        "is_correct": true,
+        "explanation": "The uploaded material listed is 'THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)'."
+      },
+      {
+        "id": "opt-2",
+        "text": "IEEE Standard Transactions",
+        "is_correct": false,
+        "explanation": "IEEE transactions are not mentioned in the uploaded materials.",
+        "misconception_tag": "Assuming course name 'eee' stands for IEEE publications."
+      },
+      {
+        "id": "opt-3",
+        "text": "Course Syllabus Handbook 2025",
+        "is_correct": false,
+        "explanation": "The handbook title does not match the uploaded material.",
+        "misconception_tag": "Confusing generic handbooks with specific board books."
+      },
+      {
+        "id": "opt-4",
+        "text": "AI Research Whitepaper",
+        "is_correct": false,
+        "explanation": "Whitepapers are not part of the provided source list.",
+        "misconception_tag": "Mistaking board books for general research papers."
+      }
+    ],
+    "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+    "explanation": "The uploaded materials section exclusively references 'THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)' (12 pages).",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-7",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "What is the category/topic classification for the concept 'THULIR_AI_SIH2026_Updated_Board_Book_v3'?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Core Topics",
+        "is_correct": true,
+        "explanation": "The topic/category is explicitly defined as 'Core Topics'."
+      },
+      {
+        "id": "opt-2",
+        "text": "Advanced Research",
+        "is_correct": false,
+        "explanation": "Advanced Research is not the specified category.",
+        "misconception_tag": "Misclassifying core syllabus topics as advanced research."
+      },
+      {
+        "id": "opt-3",
+        "text": "Administrative Guidelines",
+        "is_correct": false,
+        "explanation": "Administrative Guidelines is not the listed topic category.",
+        "misconception_tag": "Confusing academic content topics with administration."
+      },
+      {
+        "id": "opt-4",
+        "text": "Introductory Lab Work",
+        "is_correct": false,
+        "explanation": "Introductory Lab Work does not match the category definition.",
+        "misconception_tag": "Assuming all board book materials pertain to lab work."
+      }
+    ],
+    "correct_answer": "Core Topics",
+    "explanation": "The extracted concept metadata lists the Topic/Category as 'Core Topics'.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-8",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "hard",
+    "bloom_level": "Remember",
+    "question_text": "How many pages long is the uploaded material 'THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)'?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "12 pages",
+        "is_correct": true,
+        "explanation": "The uploaded materials description explicitly notes '(12 pages)'."
+      },
+      {
+        "id": "opt-2",
+        "text": "5 pages",
+        "is_correct": false,
+        "explanation": "5 pages is incorrect based on the file metadata.",
+        "misconception_tag": "Underestimating the page count of the board book."
+      },
+      {
+        "id": "opt-3",
+        "text": "25 pages",
+        "is_correct": false,
+        "explanation": "25 pages exceeds the document length specified in the course context.",
+        "misconception_tag": "Overestimating document length."
+      },
+      {
+        "id": "opt-4",
+        "text": "50 pages",
+        "is_correct": false,
+        "explanation": "50 pages is not supported by the document profile.",
+        "misconception_tag": "Confusing book length with full textbooks."
+      }
+    ],
+    "correct_answer": "12 pages",
+    "explanation": "The uploaded material description states that it is 12 pages long.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-mcq-1790920845061-9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "mcq",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "What is the overarching course title provided in the course context?",
+    "code_snippet": null,
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "eee",
+        "is_correct": true,
+        "explanation": "The course title is explicitly stated as 'eee'."
+      },
+      {
+        "id": "opt-2",
+        "text": "Artificial Intelligence Engineering",
+        "is_correct": false,
+        "explanation": "While AI is in the document title, the course title is explicitly given as 'eee'.",
+        "misconception_tag": "Confusing document keywords with the official course title."
+      },
+      {
+        "id": "opt-3",
+        "text": "Smart India Hackathon Preparation",
+        "is_correct": false,
+        "explanation": "SIH is part of the document name but not the formal course title.",
+        "misconception_tag": "Confusing event names with course titles."
+      },
+      {
+        "id": "opt-4",
+        "text": "Board Book Studies",
+        "is_correct": false,
+        "explanation": "Board Book Studies is a fabricated course title.",
+        "misconception_tag": "Assuming descriptive titles over the formal course code/name."
+      }
+    ],
+    "correct_answer": "eee",
+    "explanation": "The course context explicitly defines the Course Title as 'eee'.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845061-0",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The foundational document and board book for the project is titled _____.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+    "explanation": "The uploaded material establishes the core board book reference for the course.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845061-1",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Core definitions and syllabus topics were introduced specifically for _____.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+    "explanation": "The source material explicitly states that core definitions and syllabus topics are introduced for this document.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845061-2",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "According to the course material, _____ definitions and syllabus topics are introduced on page 1.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "Core",
+    "explanation": "The text begins by detailing core definitions and syllabus topics.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845061-3",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "The primary material utilized for this curriculum provides syllabus _____.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "topics",
+    "explanation": "The uploaded document introduces core definitions and syllabus topics.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845061-4",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "In the context of the course materials, essential terms are established through _____ definitions.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "core",
+    "explanation": "The materials specifically use the descriptor core for foundational definitions.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845061-5",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The document version referenced in the course materials is version _____.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "3.0 (1)",
+    "explanation": "The exact versioning from the filename and text citation is v3.0 (1).",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845061-6",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "The overarching board book material for the course is identified by the prefix _____.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "THULIR_AI_SIH2026",
+    "explanation": "The board book identifier begins with THULIR_AI_SIH2026.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845061-7",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "Syllabus _____ are introduced alongside core definitions in the introductory material.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "topics",
+    "explanation": "Syllabus topics are directly paired with core definitions in the source text.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845062-8",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "The updated board book serves as the primary source for _____ definitions.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "core",
+    "explanation": "The updated board book provides core definitions for the syllabus.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  },
+  {
+    "id": "q-fitb-1790920845062-9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "topic": "Core Topics",
+    "question_type": "fill_in_the_blank",
+    "difficulty": "medium",
+    "bloom_level": "Understand",
+    "question_text": "Within the course outline, _____ are introduced for the specified board book.",
+    "code_snippet": null,
+    "options": [],
+    "correct_answer": "Core definitions and syllabus topics",
+    "explanation": "The exact phrase from the source text indicates that core definitions and syllabus topics are introduced.",
+    "source_citation": {
+      "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+      "reference": "Page 1",
+      "quote": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)."
+    }
+  }
+]

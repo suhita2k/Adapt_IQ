@@ -1,0 +1,54 @@
+{
+  "id": "plan-1792000256095",
+  "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+  "course_id": "course-1791988413424-lmd7",
+  "title": "Adaptive Study Schedule for thulir",
+  "daily_goal_minutes": 30,
+  "streak_days": 1,
+  "tasks": [
+    {
+      "id": "task-m-1792000256095",
+      "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+      "course_id": "course-1791988413424-lmd7",
+      "concept_id": "c-course-1791988413424-lmd7-5",
+      "concept_name": "Security and Compliance Protocols",
+      "title": "Repair Misconception: Terminology omission in Security and Compliance Protocols",
+      "task_type": "remediation",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-14",
+      "completed": false,
+      "reason": "Invariant violation detected in recent diagnostic quiz attempt."
+    },
+    {
+      "id": "task-rev-1792000256095",
+      "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+      "course_id": "course-1791988413424-lmd7",
+      "concept_id": "c-course-1791988413424-lmd7-1",
+      "concept_name": "Project Thulir Architecture",
+      "title": "Complete SM-2 Flashcard Recall Session",
+      "task_type": "practice_quiz",
+      "estimated_minutes": 10,
+      "priority": "medium",
+      "due_date": "2026-10-14",
+      "completed": false,
+      "reason": "Ebbinghaus forgetting curve interval reached for due flashcards."
+    },
+    {
+      "id": "task-quiz-1792000256095",
+      "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+      "course_id": "course-1791988413424-lmd7",
+      "concept_id": "c-course-1791988413424-lmd7-1",
+      "concept_name": "Project Thulir Architecture",
+      "title": "Daily 5-Question Adaptive Checkpoint",
+      "task_type": "practice_quiz",
+      "estimated_minutes": 15,
+      "priority": "medium",
+      "due_date": "2026-10-14",
+      "completed": false,
+      "reason": "Calibrate Bayesian Learning Twin across recent curriculum nodes."
+    }
+  ],
+  "created_at": "2026-10-14T17:50:56.096Z",
+  "updated_at": "2026-10-14T17:50:56.096Z"
+}

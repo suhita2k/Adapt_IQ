@@ -1,0 +1,68 @@
+{
+  "id": "plan-course-1790875524635-vtcp",
+  "user_id": "fresh-user-1790875522651",
+  "course_id": "course-1790875524635-vtcp",
+  "title": "Distributed Consensus & Raft Protocols Adaptive Study Plan",
+  "daily_goal_minutes": 60,
+  "streak_days": 0,
+  "tasks": [
+    {
+      "id": "task-1790875543902-0",
+      "user_id": "fresh-user-1790875522651",
+      "course_id": "course-1790875524635-vtcp",
+      "concept_id": "c-course-1790875524635-vtcp-1",
+      "concept_name": "State Machine Replication",
+      "title": "Study Concept: State Machine Replication",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for State Machine Replication in Distributed Consensus & Raft Protocols."
+    },
+    {
+      "id": "task-1790875543903-1",
+      "user_id": "fresh-user-1790875522651",
+      "course_id": "course-1790875524635-vtcp",
+      "concept_id": "c-course-1790875524635-vtcp-2",
+      "concept_name": "Distributed Consensus Foundations",
+      "title": "Study Concept: Distributed Consensus Foundations",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "high",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Distributed Consensus Foundations in Distributed Consensus & Raft Protocols."
+    },
+    {
+      "id": "task-1790875543903-2",
+      "user_id": "fresh-user-1790875522651",
+      "course_id": "course-1790875524635-vtcp",
+      "concept_id": "c-course-1790875524635-vtcp-3",
+      "concept_name": "Paxos Protocol",
+      "title": "Study Concept: Paxos Protocol",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Paxos Protocol in Distributed Consensus & Raft Protocols."
+    },
+    {
+      "id": "task-1790875543903-3",
+      "user_id": "fresh-user-1790875522651",
+      "course_id": "course-1790875524635-vtcp",
+      "concept_id": "c-course-1790875524635-vtcp-4",
+      "concept_name": "Raft Leader Election",
+      "title": "Study Concept: Raft Leader Election",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Raft Leader Election in Distributed Consensus & Raft Protocols."
+    }
+  ],
+  "created_at": "2026-10-01T17:25:43.904Z",
+  "updated_at": "2026-10-01T17:25:43.904Z"
+}

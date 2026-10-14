@@ -1,0 +1,67 @@
+[
+  {
+    "id": "fc-course-1790923123271-k16r-1",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "front": "What is the core invariant of Syllabus Fundamentals?",
+    "back": "Introduction to the core architecture of the course syllabus. Establishes the foundational scope and structural guidelines for subsequent modules.",
+    "source_ref": "Page 5",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790923123271-k16r-2",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-2",
+    "front": "What is the core invariant of Reading Comprehension and Analysis?",
+    "back": "Techniques for extracting critical information from textbook chapters. Focuses on thematic parsing and retention of complex academic material.",
+    "source_ref": "Page 5",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790923123271-k16r-3",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-3",
+    "front": "What is the core invariant of Structural Frameworks?",
+    "back": "Examination of organizational frameworks presented in multi-page texts. Establishes hierarchical dependencies among concepts.",
+    "source_ref": "Page 5",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790923123271-k16r-4",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-4",
+    "front": "What is the core invariant of Empirical Verification?",
+    "back": "Methods for validating textual assertions against empirical examples. Ensures logical consistency and practical applicability.",
+    "source_ref": "Page 5",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790923123271-k16r-5",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-5",
+    "front": "What is the core invariant of Synthetical Integration?",
+    "back": "Combining disparate textbook sections into a unified mental model. Integrates theory with practical problem-solving strategies.",
+    "source_ref": "Page 5",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

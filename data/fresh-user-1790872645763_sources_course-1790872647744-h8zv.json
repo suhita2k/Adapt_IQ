@@ -1,0 +1,62 @@
+[
+  {
+    "id": "src-1790872663799-nyhj",
+    "course_id": "course-1790872647744-h8zv",
+    "material_id": "mat-1790872648017-qxto",
+    "material_title": "Raft Consensus Invariants & Safety Proofs",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Slide 12, Lecture Notes",
+    "snippet": "State Machine Replication requires deterministic execution of commands to ensure all replicas transition to identical states.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Foundational requirement for SMR.",
+    "page_number": 12,
+    "file_name": "raft_notes.txt",
+    "file_url": "/api/courses/course-1790872647744-h8zv/materials/mat-1790872648017-qxto/file#page=12"
+  },
+  {
+    "id": "src-1790872663792-b2mr",
+    "course_id": "course-1790872647744-h8zv",
+    "material_id": "mat-1790872648017-qxto",
+    "material_title": "Raft Consensus Invariants & Safety Proofs",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Page 8, Raft Consensus Invariants & Safety Proofs (notes)",
+    "snippet": "Leader Completeness: If a log entry is committed in a given term, that entry will be present in the logs of the leaders for all higher-numbered terms.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Establishes the inductive step required to prove Raft's state machine safety.",
+    "page_number": 8,
+    "file_name": "raft_notes.txt",
+    "file_url": "/api/courses/course-1790872647744-h8zv/materials/mat-1790872648017-qxto/file#page=8"
+  },
+  {
+    "id": "src-1790872663789-ou1q",
+    "course_id": "course-1790872647744-h8zv",
+    "material_id": "mat-1790872648017-qxto",
+    "material_title": "Raft Consensus Invariants & Safety Proofs",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Page 4, Raft Consensus Invariants & Safety Proofs (notes)",
+    "snippet": "The Log Matching Property: If two logs contain an entry with the same index and term, then they store the same command, and their logs are identical in all preceding entries.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Defines the core structural invariant of the Raft log.",
+    "page_number": 4,
+    "file_name": "raft_notes.txt",
+    "file_url": "/api/courses/course-1790872647744-h8zv/materials/mat-1790872648017-qxto/file#page=4"
+  },
+  {
+    "id": "src-1790872648136",
+    "course_id": "course-1790872647744-h8zv",
+    "material_id": "mat-1790872648017-qxto",
+    "material_title": "Raft Consensus Invariants & Safety Proofs",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for Raft Consensus Invariants & Safety Proofs.",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "raft_notes.txt",
+    "file_url": "/api/courses/course-1790872647744-h8zv/materials/mat-1790872648017-qxto/file#page=1"
+  }
+]

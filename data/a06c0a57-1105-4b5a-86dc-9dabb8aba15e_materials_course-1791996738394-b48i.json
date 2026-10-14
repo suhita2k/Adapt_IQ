@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mat-1791996751529-39b6",
+    "course_id": "course-1791996738394-b48i",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "title": "Distributed Systems Principles Textbook",
+    "file_name": "Distributed_Systems_Principles.pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 2048500,
+    "file_url": "/api/courses/course-1791996738394-b48i/materials/mat-1791996751529-39b6/file",
+    "visual_elements_count": 0,
+    "status": "indexed",
+    "extracted_chunks_count": 1,
+    "uploaded_at": "2026-10-14T16:52:31.531Z"
+  }
+]

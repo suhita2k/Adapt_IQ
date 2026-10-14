@@ -1,0 +1,78 @@
+[
+  {
+    "id": "misc-1790871563148-c-course-1790871316162-9uas-1",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "concept_id": "c-course-1790871316162-9uas-1",
+    "concept_name": "Introduction to Data Science Foundations",
+    "title": "Database optimization conflated with data lineage",
+    "description": "Student selected: \"To optimize database query performance by indexing the primary keys of raw data tables during ingestion.\". This reveals a fundamental misunderstanding of Introduction to Data Science Foundations.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-1790871534643-2. Selected erroneous hypothesis: To optimize database query performance by indexing the primary keys of raw data tables during ingestion..",
+    "severity": "high",
+    "detected_at": "2026-10-01T16:19:23.148Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Counter-Example",
+        "explanation": "Consider what happens when this assumption is applied to an edge case. The invariant breaks because intermediate states are not preserved.",
+        "verified_quote": "A loop invariant must satisfy initialization, maintenance, and termination.",
+        "source_ref": "CLRS Chapter 2.1, Page 19"
+      },
+      {
+        "step_number": 2,
+        "title": "Formal Invariant Formulation",
+        "explanation": "Notice that each stack frame allocates independent local registers and return pointers.",
+        "code_example": "def recurse(n):\n    if n <= 0: return\n    # Each invocation creates an isolated O(1) frame\n    recurse(n - 1)",
+        "verified_quote": "Activation records are pushed to the execution call stack sequentially.",
+        "source_ref": "Computer Systems: A Programmer Perspective, Page 242"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Explanation & Invariant Verification",
+        "explanation": "Verify that both base conditions and induction hypotheses hold for all N >= 1.",
+        "verified_quote": "Inductive step proves truth for N+1 from N.",
+        "source_ref": "Discrete Mathematics and Its Applications, Page 315"
+      }
+    ],
+    "verification_question_id": "retest-1790871563148"
+  },
+  {
+    "id": "misc-1790871551444-c-course-1790871316162-9uas-1",
+    "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+    "course_id": "course-1790871316162-9uas",
+    "concept_id": "c-course-1790871316162-9uas-1",
+    "concept_name": "Introduction to Data Science Foundations",
+    "title": "Clustering-as-classification confusion",
+    "description": "Student selected: \"Formulate as an unsupervised clustering task to group customers by activity levels, assuming the smallest cluster represents the customers most likely to churn.\". This reveals a fundamental misunderstanding of Introduction to Data Science Foundations.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-1790871534642-0. Selected erroneous hypothesis: Formulate as an unsupervised clustering task to group customers by activity levels, assuming the smallest cluster represents the customers most likely to churn..",
+    "severity": "high",
+    "detected_at": "2026-10-01T16:19:11.444Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Counter-Example",
+        "explanation": "Consider what happens when this assumption is applied to an edge case. The invariant breaks because intermediate states are not preserved.",
+        "verified_quote": "A loop invariant must satisfy initialization, maintenance, and termination.",
+        "source_ref": "CLRS Chapter 2.1, Page 19"
+      },
+      {
+        "step_number": 2,
+        "title": "Formal Invariant Formulation",
+        "explanation": "Notice that each stack frame allocates independent local registers and return pointers.",
+        "code_example": "def recurse(n):\n    if n <= 0: return\n    # Each invocation creates an isolated O(1) frame\n    recurse(n - 1)",
+        "verified_quote": "Activation records are pushed to the execution call stack sequentially.",
+        "source_ref": "Computer Systems: A Programmer Perspective, Page 242"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Explanation & Invariant Verification",
+        "explanation": "Verify that both base conditions and induction hypotheses hold for all N >= 1.",
+        "verified_quote": "Inductive step proves truth for N+1 from N.",
+        "source_ref": "Discrete Mathematics and Its Applications, Page 315"
+      }
+    ],
+    "verification_question_id": "retest-1790871551444"
+  }
+]

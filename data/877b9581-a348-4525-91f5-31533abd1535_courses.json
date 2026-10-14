@@ -1,0 +1,17 @@
+[
+  {
+    "id": "course-1790923123271-k16r",
+    "owner_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "title": "ghjjv",
+    "code": "567",
+    "description": "Comprehensive course syllabus.",
+    "category": "Computer Science",
+    "color": "#B1A15A",
+    "icon": "BookOpen",
+    "total_concepts": 6,
+    "mastered_concepts": 0,
+    "materials_count": 1,
+    "created_at": "2026-10-02T06:38:43.271Z",
+    "updated_at": "2026-10-02T06:39:21.726Z"
+  }
+]

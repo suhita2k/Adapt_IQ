@@ -1,0 +1,144 @@
+[
+  {
+    "id": "c-course-1791988413424-lmd7-1",
+    "course_id": "course-1791988413424-lmd7",
+    "name": "Project Thulir Architecture",
+    "description": "Foundational system architecture and stakeholder framework designed for grassroots innovation management. This component establishes the overall system invariant through structured data flow and module separation.",
+    "category": "System Engineering",
+    "subtopic": "Architectural Design",
+    "difficulty_level": 2,
+    "prerequisites": [],
+    "subconcepts": [
+      "Stakeholder Mapping",
+      "Module Separation"
+    ],
+    "learning_objectives": [
+      "Analyze the high-level system components of Project Thulir",
+      "Map stakeholder interactions to architectural boundaries"
+    ],
+    "source_location": "Page 5",
+    "common_pitfalls": [
+      "Confusing database schema with architectural workflow layers"
+    ]
+  },
+  {
+    "id": "c-course-1791988413424-lmd7-2",
+    "course_id": "course-1791988413424-lmd7",
+    "name": "Innovation Pipeline Integration",
+    "description": "End-to-end processing pipeline that takes raw ideation inputs and transforms them into validated deployment proposals. The pipeline enforces rigorous state validation rules at each transition stage.",
+    "category": "Workflow Management",
+    "subtopic": "Pipeline Processing",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Project Thulir Architecture"
+    ],
+    "subconcepts": [
+      "Idea Ingestion",
+      "Stage-Gate Evaluation"
+    ],
+    "learning_objectives": [
+      "Trace an innovation idea through ingestion and filtering stages",
+      "Apply stage-gate evaluation criteria to assess project viability"
+    ],
+    "source_location": "Page 18",
+    "common_pitfalls": [
+      "Bypassing stage-gate validation checks during rapid prototyping"
+    ]
+  },
+  {
+    "id": "c-course-1791988413424-lmd7-3",
+    "course_id": "course-1791988413424-lmd7",
+    "name": "Data Management and Evaluation Metrics",
+    "description": "Quantitative framework for assessing project impact, resource utilization, and feedback loops. It relies on metric aggregation invariants to ensure consistent reporting across administrative dashboards.",
+    "category": "Analytics & Metrics",
+    "subtopic": "Impact Assessment",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Innovation Pipeline Integration"
+    ],
+    "subconcepts": [
+      "Key Performance Indicators",
+      "Feedback Aggregation"
+    ],
+    "learning_objectives": [
+      "Formulate key performance indicators for grassroots initiatives",
+      "Analyze aggregate data reports for anomaly detection"
+    ],
+    "source_location": "Slide 12",
+    "common_pitfalls": [
+      "Overlooking qualitative feedback in favor of purely quantitative metrics"
+    ]
+  },
+  {
+    "id": "c-course-1791988413424-lmd7-4",
+    "course_id": "course-1791988413424-lmd7",
+    "name": "User Engagement and Collaboration Interfaces",
+    "description": "User experience paradigms and interface specifications designed to maximize participation among rural innovators and mentors. The design invariant ensures accessibility and low-latency interaction.",
+    "category": "Human-Computer Interaction",
+    "subtopic": "Interface Design",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Project Thulir Architecture"
+    ],
+    "subconcepts": [
+      "Accessibility Guidelines",
+      "Mentor-Mentee Matching"
+    ],
+    "learning_objectives": [
+      "Evaluate interface accessibility compliance for diverse user bases",
+      "Design effective mentor-mentee interaction workflows"
+    ],
+    "source_location": "Slide 25",
+    "common_pitfalls": [
+      "Assuming high-bandwidth connectivity for all remote participants"
+    ]
+  },
+  {
+    "id": "c-course-1791988413424-lmd7-5",
+    "course_id": "course-1791988413424-lmd7",
+    "name": "Security and Compliance Protocols",
+    "description": "Robust encryption, data privacy regulations, and role-based access control mechanisms that safeguard sensitive user submissions. The protocol invariant guarantees strict adherence to data protection standards.",
+    "category": "Information Security",
+    "subtopic": "Access Control",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Project Thulir Architecture"
+    ],
+    "subconcepts": [
+      "Role-Based Access Control",
+      "Data Encryption Standards"
+    ],
+    "learning_objectives": [
+      "Implement role-based access control matrices for platform users",
+      "Verify data encryption standards for stored intellectual property"
+    ],
+    "source_location": "Page 34",
+    "common_pitfalls": [
+      "Assigning overly permissive default roles to standard users"
+    ]
+  },
+  {
+    "id": "c-course-1791988413424-lmd7-6",
+    "course_id": "course-1791988413424-lmd7",
+    "name": "Deployment and Scalability Strategy",
+    "description": "Infrastructure scaling blueprints and containerization patterns to support growing user loads across multiple regions. This strategy ensures zero-downtime deployments and fault tolerance.",
+    "category": "Infrastructure",
+    "subtopic": "Cloud Deployment",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Security and Compliance Protocols"
+    ],
+    "subconcepts": [
+      "Containerization",
+      "Load Balancing"
+    ],
+    "learning_objectives": [
+      "Design a containerized deployment layout for cloud environments",
+      "Configure load balancing parameters for high-availability setups"
+    ],
+    "source_location": "Slide 42",
+    "common_pitfalls": [
+      "Failing to account for regional network latency variations"
+    ]
+  }
+]

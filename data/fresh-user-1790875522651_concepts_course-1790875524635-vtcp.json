@@ -1,0 +1,111 @@
+[
+  {
+    "id": "c-course-1790875524635-vtcp-1",
+    "course_id": "course-1790875524635-vtcp",
+    "name": "State Machine Replication",
+    "description": "Foundational paradigm for building fault-tolerant services by executing the same sequence of deterministic commands on multiple replica nodes. Ensures consistency across distributed systems even when individual nodes experience failures.",
+    "category": "Foundations",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [
+      "Deterministic Execution",
+      "Log Consistency"
+    ],
+    "common_pitfalls": [
+      "Assuming non-deterministic operations will naturally converge without coordination."
+    ]
+  },
+  {
+    "id": "c-course-1790875524635-vtcp-2",
+    "course_id": "course-1790875524635-vtcp",
+    "name": "Distributed Consensus Foundations",
+    "description": "Core theoretical principles required for multiple independent processes to agree on a single data value or execution path. Encompasses models of partial synchrony and crash-fault tolerance (CFT).",
+    "category": "Foundations",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "State Machine Replication"
+    ],
+    "subconcepts": [
+      "Crash-Fault Tolerance",
+      "FLP Impossibility"
+    ],
+    "common_pitfalls": [
+      "Confusing consensus safety properties with liveness guarantees."
+    ]
+  },
+  {
+    "id": "c-course-1790875524635-vtcp-3",
+    "course_id": "course-1790875524635-vtcp",
+    "name": "Paxos Protocol",
+    "description": "The classic family of protocols for solving consensus in a network of unreliable processors. Establishes distributed agreement through proposer, acceptor, and learner roles utilizing ballot numbers.",
+    "category": "Core",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Distributed Consensus Foundations"
+    ],
+    "subconcepts": [
+      "Prepare-Promise Phase",
+      "Accept-Accepted Phase"
+    ],
+    "common_pitfalls": [
+      "Overlooking the complexity of multi-Paxos implementations for log replication."
+    ]
+  },
+  {
+    "id": "c-course-1790875524635-vtcp-4",
+    "course_id": "course-1790875524635-vtcp",
+    "name": "Raft Leader Election",
+    "description": "The foundational mechanism in Raft where nodes transition between follower, candidate, and leader states. Utilizes randomized timeouts to prevent split votes and ensure timely cluster management.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "State Machine Replication"
+    ],
+    "subconcepts": [
+      "Randomized Timeouts",
+      "Term Numbers",
+      "Vote Granting"
+    ],
+    "common_pitfalls": [
+      "Assuming multiple leaders cannot emerge if network partitions occur improperly."
+    ]
+  },
+  {
+    "id": "c-course-1790875524635-vtcp-5",
+    "course_id": "course-1790875524635-vtcp",
+    "name": "Raft Log Replication",
+    "description": "Process by which the designated leader accepts client commands, appends them to its log, and forces followers to mirror the entries. Guarantees that consistent log prefixes imply identical state machine execution.",
+    "category": "Core",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Raft Leader Election"
+    ],
+    "subconcepts": [
+      "AppendEntries RPC",
+      "NextIndex and MatchIndex",
+      "Conflict Resolution"
+    ],
+    "common_pitfalls": [
+      "Failing to handle lagging follower logs correctly during network reconvergences."
+    ]
+  },
+  {
+    "id": "c-course-1790875524635-vtcp-6",
+    "course_id": "course-1790875524635-vtcp",
+    "name": "Log Invariants & Safety Proofs",
+    "description": "Mathematical guarantees ensuring that once a log entry is committed, it will persist across all future leaders. Enforces properties such as Leader Completeness and State Machine Safety.",
+    "category": "Advanced",
+    "difficulty_level": 5,
+    "prerequisites": [
+      "Raft Log Replication"
+    ],
+    "subconcepts": [
+      "Leader Completeness",
+      "Election Restriction",
+      "Committed Entry Definition"
+    ],
+    "common_pitfalls": [
+      "Assuming uncommitted entries from past terms are automatically safe to overwrite without constraints."
+    ]
+  }
+]

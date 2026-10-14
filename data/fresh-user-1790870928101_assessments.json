@@ -1,0 +1,17 @@
+[
+  {
+    "id": "as-1790871029987",
+    "user_id": "fresh-user-1790870928101",
+    "course_id": "course-1790870929539-395i",
+    "title": "Distributed Consensus & Raft Protocols Diagnostic",
+    "status": "completed",
+    "total_questions": 3,
+    "completed_questions": 3,
+    "score_percentage": 67,
+    "started_at": "2026-10-01T16:10:29.987Z",
+    "completed_at": "2026-10-01T16:10:29.987Z",
+    "questions": [],
+    "current_index": 0,
+    "answers": {}
+  }
+]

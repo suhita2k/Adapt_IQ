@@ -1,0 +1,40 @@
+[
+  {
+    "id": "misc-1790927619041-c-course-1790927358003-znvk-1790927383607-2",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+    "concept_name": "SIH Project Framework",
+    "title": "Terminology omission in SIH Project Framework",
+    "description": "Student response: \"hjg\". This reveals a conceptual misconception regarding SIH Project Framework.",
+    "trigger_evidence": "Assessment attempt on question q-fill_in_the_blank-1790927589349-1. Given answer: \"hjg\".",
+    "severity": "high",
+    "detected_at": "2026-10-02T07:53:39.041Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Counter-Example",
+        "explanation": "Examine boundary conditions where this assumption fails.",
+        "verified_quote": "THULIR AI SIH 2026 Updated Board Book v3.0",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1) (Page 1)"
+      },
+      {
+        "step_number": 2,
+        "title": "Formal Concept Formulation",
+        "explanation": "Trace the formal definition and verified properties in the course materials.",
+        "code_example": "// Core Invariant Verification\nassert condition == True",
+        "verified_quote": "The course material explicitly identifies the structured methodology for submissions as the SIH Project Framework.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1) (Page 1)"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Explanation & Validation",
+        "explanation": "Articulate why the correct rule holds for all inputs and state transitions.",
+        "verified_quote": "Verified grounding against course syllabus.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)"
+      }
+    ],
+    "verification_question_id": "retest-1790927619041"
+  }
+]

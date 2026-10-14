@@ -1,0 +1,17 @@
+[
+  {
+    "id": "src-1790920715386",
+    "course_id": "course-1790920571661-vckg",
+    "material_id": "mat-1790920715218-ukwc",
+    "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1)",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1).",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0 (1).docx",
+    "file_url": "/api/courses/course-1790920571661-vckg/materials/mat-1790920715218-ukwc/file#page=1"
+  }
+]

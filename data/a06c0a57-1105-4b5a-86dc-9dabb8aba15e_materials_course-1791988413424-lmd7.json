@@ -1,0 +1,31 @@
+[
+  {
+    "id": "mat-1791991602775-vilr",
+    "course_id": "course-1791988413424-lmd7",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+    "file_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0.docx",
+    "file_type": "notes",
+    "file_size_bytes": 56202,
+    "visual_elements_count": 1,
+    "status": "indexed",
+    "extracted_chunks_count": 1,
+    "uploaded_at": "2026-10-14T15:26:42.775Z",
+    "file_url": "/api/courses/course-1791988413424-lmd7/materials/mat-1791991602775-vilr/file"
+  },
+  {
+    "id": "mat-1791988470727-ktqb",
+    "course_id": "course-1791988413424-lmd7",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "title": "sih.pdf (4)",
+    "file_name": "sih.pdf (4).pptx",
+    "file_type": "slides",
+    "file_size_bytes": 4905014,
+    "slide_count": 60,
+    "visual_elements_count": 0,
+    "status": "indexed",
+    "extracted_chunks_count": 1,
+    "uploaded_at": "2026-10-14T14:34:30.727Z",
+    "file_url": "/api/courses/course-1791988413424-lmd7/materials/mat-1791988470727-ktqb/file"
+  }
+]

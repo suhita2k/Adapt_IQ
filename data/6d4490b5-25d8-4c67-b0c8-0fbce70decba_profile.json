@@ -1,0 +1,13 @@
+{
+  "id": "profile-6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+  "user_id": "6d4490b5-25d8-4c67-b0c8-0fbce70decba",
+  "full_name": "Language Learner",
+  "email": "lang_test_1790876665679@example.com",
+  "preferred_language": "Tamil",
+  "learning_goal": "Exam preparation",
+  "study_field": "Computer Science",
+  "daily_study_time_minutes": 60,
+  "onboarding_completed": true,
+  "created_at": "2026-10-01T17:44:26.809Z",
+  "updated_at": "2026-10-01T17:44:26.809Z"
+}

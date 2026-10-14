@@ -1,0 +1,37 @@
+[
+  {
+    "id": "rel-1",
+    "source_concept_id": "Project Thulir Architecture",
+    "target_concept_id": "Innovation Pipeline Integration",
+    "relationship_type": "prerequisite",
+    "strength": 0.95
+  },
+  {
+    "id": "rel-2",
+    "source_concept_id": "Project Thulir Architecture",
+    "target_concept_id": "User Engagement and Collaboration Interfaces",
+    "relationship_type": "prerequisite",
+    "strength": 0.85
+  },
+  {
+    "id": "rel-3",
+    "source_concept_id": "Project Thulir Architecture",
+    "target_concept_id": "Security and Compliance Protocols",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "id": "rel-4",
+    "source_concept_id": "Innovation Pipeline Integration",
+    "target_concept_id": "Data Management and Evaluation Metrics",
+    "relationship_type": "prerequisite",
+    "strength": 0.88
+  },
+  {
+    "id": "rel-5",
+    "source_concept_id": "Security and Compliance Protocols",
+    "target_concept_id": "Deployment and Scalability Strategy",
+    "relationship_type": "prerequisite",
+    "strength": 0.8
+  }
+]

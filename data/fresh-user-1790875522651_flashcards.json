@@ -1,0 +1,68 @@
+[
+  {
+    "id": "fc-course-1790875524635-vtcp-1",
+    "user_id": "fresh-user-1790875522651",
+    "course_id": "course-1790875524635-vtcp",
+    "concept_id": "c-course-1790875524635-vtcp-1",
+    "front": "What is the core invariant of State Machine Replication?",
+    "back": "Foundational paradigm for building fault-tolerant services by executing the same sequence of deterministic commands on multiple replica nodes. Ensures consistency across distributed systems even when individual nodes experience failures.",
+    "source_ref": "Raft Consensus Invariants & Safety Proofs (notes), Page 4",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 1,
+    "ease_factor": 2.5,
+    "difficulty_rating": 4
+  },
+  {
+    "id": "fc-course-1790875524635-vtcp-2",
+    "user_id": "fresh-user-1790875522651",
+    "course_id": "course-1790875524635-vtcp",
+    "concept_id": "c-course-1790875524635-vtcp-2",
+    "front": "What is the core invariant of Distributed Consensus Foundations?",
+    "back": "Core theoretical principles required for multiple independent processes to agree on a single data value or execution path. Encompasses models of partial synchrony and crash-fault tolerance (CFT).",
+    "source_ref": "Raft Consensus Invariants & Safety Proofs (notes), Page 4",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790875524635-vtcp-3",
+    "user_id": "fresh-user-1790875522651",
+    "course_id": "course-1790875524635-vtcp",
+    "concept_id": "c-course-1790875524635-vtcp-3",
+    "front": "What is the core invariant of Paxos Protocol?",
+    "back": "The classic family of protocols for solving consensus in a network of unreliable processors. Establishes distributed agreement through proposer, acceptor, and learner roles utilizing ballot numbers.",
+    "source_ref": "Raft Consensus Invariants & Safety Proofs (notes), Page 4",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790875524635-vtcp-4",
+    "user_id": "fresh-user-1790875522651",
+    "course_id": "course-1790875524635-vtcp",
+    "concept_id": "c-course-1790875524635-vtcp-4",
+    "front": "What is the core invariant of Raft Leader Election?",
+    "back": "The foundational mechanism in Raft where nodes transition between follower, candidate, and leader states. Utilizes randomized timeouts to prevent split votes and ensure timely cluster management.",
+    "source_ref": "Raft Consensus Invariants & Safety Proofs (notes), Page 4",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790875524635-vtcp-5",
+    "user_id": "fresh-user-1790875522651",
+    "course_id": "course-1790875524635-vtcp",
+    "concept_id": "c-course-1790875524635-vtcp-5",
+    "front": "What is the core invariant of Raft Log Replication?",
+    "back": "Process by which the designated leader accepts client commands, appends them to its log, and forces followers to mirror the entries. Guarantees that consistent log prefixes imply identical state machine execution.",
+    "source_ref": "Raft Consensus Invariants & Safety Proofs (notes), Page 4",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

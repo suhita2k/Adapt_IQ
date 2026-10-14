@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mat-1790872648017-qxto",
+    "course_id": "course-1790872647744-h8zv",
+    "user_id": "fresh-user-1790872645763",
+    "title": "Raft Consensus Invariants & Safety Proofs",
+    "file_name": "raft_notes.txt",
+    "file_type": "notes",
+    "file_size_bytes": 1098,
+    "page_count": 12,
+    "status": "indexed",
+    "extracted_chunks_count": 42,
+    "uploaded_at": "2026-10-01T16:37:28.017Z",
+    "file_url": "/api/courses/course-1790872647744-h8zv/materials/mat-1790872648017-qxto/file"
+  }
+]

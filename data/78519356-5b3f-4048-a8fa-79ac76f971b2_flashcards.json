@@ -1,0 +1,46 @@
+[
+  {
+    "id": "fc-1",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-dsa-101",
+    "concept_id": "c-recursion",
+    "front": "What is the exact purpose of a Base Case in a recursive function?",
+    "back": "A base case provides an explicit condition where the function returns an immediate value without making further recursive calls, preventing infinite call stack allocation.",
+    "code_front": "function factorial(n) {\n  if (n <= 1) return 1; // What is this line called?\n  return n * factorial(n - 1);\n}",
+    "code_back": "// This is the Base Case Guard preventing infinite recursion.",
+    "source_ref": "CLRS 4th Ed, Page 73",
+    "difficulty_rating": 5,
+    "next_review_date": "2026-10-04",
+    "interval_days": 3,
+    "repetitions": 4,
+    "ease_factor": 2.6
+  },
+  {
+    "id": "fc-2",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-dsa-101",
+    "concept_id": "c-bst",
+    "front": "State the Binary Search Tree (BST) property for any node X.",
+    "back": "For every node X, all keys in the left subtree of X are strictly LESS than X.key, and all keys in the right subtree of X are strictly GREATER than X.key.",
+    "source_ref": "CLRS 4th Ed, Page 287",
+    "difficulty_rating": 3,
+    "next_review_date": "2026-10-03",
+    "interval_days": 2,
+    "repetitions": 2,
+    "ease_factor": 2.4
+  },
+  {
+    "id": "fc-3",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-dsa-101",
+    "concept_id": "c-dp",
+    "front": "What is the primary difference between Memoization and Tabulation?",
+    "back": "Memoization is Top-Down: solves recursively on demand and caches answers in a hash map/array. Tabulation is Bottom-Up: fills an iterative table starting from base subproblems.",
+    "source_ref": "Lecture 07, Slide 18",
+    "difficulty_rating": 3,
+    "next_review_date": "2026-10-04",
+    "interval_days": 3,
+    "repetitions": 4,
+    "ease_factor": 2.6
+  }
+]

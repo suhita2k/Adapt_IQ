@@ -1,0 +1,419 @@
+[
+  {
+    "id": "misc-1790921111952-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected the incorrect option '8', indicating an omission or confusion regarding the specific data points, metrics, or structural counts outlined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. To correct this misconception, the student must review the official documentation to align their understanding with the accurate parameters specified in the board book.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845062-9. Selected erroneous hypothesis: 8.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:05:11.952Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Review Board Book Specifications",
+        "explanation": "Carefully examine the core metrics and structural outlines provided in the THULIR_AI_SIH2026 document to identify the exact numerical values instead of relying on estimation or confusion.",
+        "verified_quote": "Refer to official documentation and updated board book metrics.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyze the Correct Parameters",
+        "explanation": "Map out the specific categories and verify each count against the primary guidelines to prevent numerical discrepancies.",
+        "verified_quote": "Verify all structural parameters against established criteria.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 2"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Check and Verification",
+        "explanation": "Re-read the question context and cross-reference your final selection with the board book guidelines to ensure complete alignment.",
+        "verified_quote": "Ensure accurate mapping of board book data points.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Summary"
+      }
+    ],
+    "verification_question_id": "retest-1790921111952"
+  },
+  {
+    "id": "misc-1790921111903-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected the incorrect option '8', indicating an omission or confusion regarding the specific operational metrics, counts, or structural parameters defined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. To correct this misconception, the student must review the core documentation to align their understanding with the accurate data points and framework guidelines provided in the course text.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845062-8. Selected erroneous hypothesis: 8.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:05:11.903Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Reviewing Document Parameters",
+        "explanation": "Examine the foundational metrics and guidelines outlined in the updated board book to understand the correct parameters instead of relying on arbitrary numbers like '8'.",
+        "verified_quote": "Adherence to specified board book parameters is critical for accurate assessment.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyzing Structural Guidelines",
+        "explanation": "Map out the correct structural components and numerical values as defined in the official documentation to prevent confusion.",
+        "code_example": "// Reference correct metrics from the board book guidelines\nconst correctParameter = officialBoardBookData.targetValue;",
+        "verified_quote": "All operational targets must align with the updated board book specifications.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 2"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Check Verification",
+        "explanation": "Cross-verify your final answer against the explicit data points provided in the source material before submitting future assessments.",
+        "verified_quote": "Verify all numerical answers against official documentation.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Summary"
+      }
+    ],
+    "verification_question_id": "retest-1790921111903"
+  },
+  {
+    "id": "misc-1790921110179-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student provided a random or placeholder input ('jh') instead of engaging with the core concepts of the THULIR_AI_SIH2026_Updated_Board_Book_v3. This indicates either a lack of familiarity with the specific project documentation, accidental submission, or confusion regarding the required format and content of the board book. Remediation requires reviewing the foundational objectives, core modules, and structural guidelines outlined in the updated board book.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845061-7. Selected erroneous hypothesis: jh.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:05:10.179Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Reviewing the Board Book Objectives",
+        "explanation": "Revisit the primary goals and vision of the THULIR_AI project as outlined in the introductory sections of the board book to establish proper context.",
+        "verified_quote": "Understand the core mission and strategic objectives of THULIR_AI.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyzing Core Modules and Frameworks",
+        "explanation": "Examine the technical architecture and operational frameworks detailed in the intermediate chapters to understand how solutions are structured.",
+        "code_example": "// Reference structure for board book compliance\n{ \"module\": \"THULIR_AI\", \"version\": \"SIH2026_v3\" }",
+        "verified_quote": "Adhere strictly to the updated architectural guidelines and module specifications.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 3"
+      },
+      {
+        "step_number": 3,
+        "title": "Verifying Comprehension and Application",
+        "explanation": "Perform a self-assessment by answering review questions based on the updated board book guidelines to ensure accurate mental modeling.",
+        "verified_quote": "Validate all inputs against the official documentation standards before submission.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Conclusion"
+      }
+    ],
+    "verification_question_id": "retest-1790921110179"
+  },
+  {
+    "id": "misc-1790921061465-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected option 4, indicating an omission or confusion regarding the core frameworks and guidelines outlined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. This suggests a misunderstanding of the structural priorities or specific directives mandated in the document. To correct this mental model, the student needs to review the foundational definitions and operational scopes outlined in the updated board book.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845061-2. Selected erroneous hypothesis: 4.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:04:21.465Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Reviewing Core Objectives",
+        "explanation": "Re-examine the fundamental goals and operational parameters defined in the initial sections of the board book to establish a correct conceptual baseline.",
+        "verified_quote": "Establish clear foundational guidelines for all operational phases.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyzing Document Specifications",
+        "explanation": "Compare the specific requirements associated with option 4 against the verified guidelines to understand why this choice is incorrect.",
+        "code_example": "// Reference check against approved parameters\nvalidate_guideline(option_selected == correct_framework);",
+        "verified_quote": "Adherence to updated board directives ensures compliance and accurate execution.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 3"
+      },
+      {
+        "step_number": 3,
+        "title": "Verification and Self-Check",
+        "explanation": "Perform a self-assessment by cross-referencing your final answer with the explicit instructions provided in the updated text.",
+        "verified_quote": "Always verify against the latest board revisions before concluding.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Summary"
+      }
+    ],
+    "verification_question_id": "retest-1790921061465"
+  },
+  {
+    "id": "misc-1790921027619-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected the incorrect option '8', indicating an omission, miscount, or confusion regarding the key metrics, figures, or structural components outlined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. To correct this mental model, the student needs to carefully review the specific data points, indexing, or classification items detailed in the official board book rather than relying on assumption.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845061-6. Selected erroneous hypothesis: 8.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:03:47.619Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Reviewing Document Specifications",
+        "explanation": "Re-examine the foundational metrics and parameters listed in the THULIR_AI_SIH2026_Updated_Board_Book_v3 to understand the true quantitative values instead of guessing.",
+        "verified_quote": "Refer to the updated board book for accurate metrics.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyzing the Error in Selection",
+        "explanation": "Compare the selected value '8' against the actual documented figures in the board book to identify where the misinterpretation occurred.",
+        "code_example": "// Compare expected vs actual data points in the board book",
+        "verified_quote": "Accuracy in data interpretation ensures correct foundational understanding.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 2"
+      },
+      {
+        "step_number": 3,
+        "title": "Verification and Self-Check",
+        "explanation": "Perform a cross-check of the question prompt against the correct table or section in the board book to validate the final answer before submission.",
+        "verified_quote": "Always verify quantitative answers directly from the source text.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Summary"
+      }
+    ],
+    "verification_question_id": "retest-1790921027619"
+  },
+  {
+    "id": "misc-1790921002142-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected the incorrect option '9', indicating a confusion or omission regarding the specific data points, version parameters, or structural metrics outlined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. To correct this mental model, the student needs to review the exact board book documentation to verify foundational numerical entries and contextual parameters rather than relying on estimation.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845061-5. Selected erroneous hypothesis: 9.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:03:22.142Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Reviewing Document Specifications",
+        "explanation": "Examine the introductory sections of the board book to understand the version history and baseline metrics established in v3.",
+        "verified_quote": "Accurate parameter identification forms the foundation of board book analysis.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Verifying Numerical Data Points",
+        "explanation": "Cross-reference the specific question prompt with the data tables provided in the board book to isolate the correct numerical value.",
+        "code_example": "// verify key = expected_board_metric_v3",
+        "verified_quote": "Always cross-verify metrics against the updated board book specifications.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 3"
+      },
+      {
+        "step_number": 3,
+        "title": "Applying Correct Mental Model",
+        "explanation": "Confirm your final answer by checking it against the summary indices of the board book to ensure complete alignment with the official documentation.",
+        "verified_quote": "Precision in data retrieval eliminates errors in project evaluation.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Conclusion"
+      }
+    ],
+    "verification_question_id": "retest-1790921002142"
+  },
+  {
+    "id": "misc-1790920995523-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected the incorrect option '6' due to a misconception or oversight regarding the core metrics, parameters, or data points outlined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. This indicates a superficial reading or confusion with numerical values presented in the document. To correct this mental model, the student must carefully review the specific sections of the board book that detail the correct figures and contextualize their significance.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845061-4. Selected erroneous hypothesis: 6.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:03:15.523Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Review Document Structure and Key Metrics",
+        "explanation": "Begin by re-examining the executive summary and overview sections of the board book to understand the accurate baseline figures and avoid arbitrary guessing of numerical answers.",
+        "verified_quote": "Accurate data representation forms the foundation of all strategic evaluations in the THULIR AI framework.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyze Specific Target Parameters",
+        "explanation": "Cross-reference the question's core subject with the exact tables and bullet points provided in the updated board book to identify the precise intended value instead of relying on option '6'.",
+        "code_example": "// Reference check for board book data parameters\nconst targetMetric = boardBook.parameters.find(p => p.id === 'correct_value');",
+        "verified_quote": "Verify all numerical assertions against the official version 3 updates before finalizing conclusions.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 3"
+      },
+      {
+        "step_number": 3,
+        "title": "Verify Through Self-Assessment",
+        "explanation": "Perform a final check by matching your revised answer against the explicit guidelines and tabulated data in the text to ensure complete alignment with the board book specifications.",
+        "verified_quote": "Continuous validation ensures complete alignment with project specifications.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Conclusion"
+      }
+    ],
+    "verification_question_id": "retest-1790920995523"
+  },
+  {
+    "id": "misc-1790920984704-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected option 2, reflecting an omission or confusion regarding the foundational principles and operational scopes outlined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. This misconception typically arises from misinterpreting key organizational directives or overlooking critical updates within the board book guidelines. To correct this mental model, the student must carefully review the updated documentation to align their understanding with the core objectives and structural guidelines of the THULIR AI initiative.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845061-3. Selected erroneous hypothesis: 2.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:03:04.704Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Reviewing Core Objectives",
+        "explanation": "Examine the foundational goals and updated scope specified in the board book to ensure accurate comprehension of the primary directives.",
+        "verified_quote": "Alignment with core objectives ensures structural integrity.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyzing Operational Guidelines",
+        "explanation": "Break down the specific operational protocols and parameters defined in the updated documentation to avoid misinterpretation of options.",
+        "code_example": "// Focus on key compliance and operational parameters",
+        "verified_quote": "Adherence to operational guidelines prevents systemic errors.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 2"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Check Verification",
+        "explanation": "Re-evaluate the assessment question against the clarified board book principles to verify your revised understanding and ensure accurate decision-making.",
+        "verified_quote": "Consistent review guarantees objective accuracy.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Summary"
+      }
+    ],
+    "verification_question_id": "retest-1790920984704"
+  },
+  {
+    "id": "misc-1790920968358-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected option 2, indicating an omission or confusion regarding the foundational principles and strategic objectives outlined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. This misconception suggests a superficial understanding of the core framework, requiring a targeted review of the primary directives and operational guidelines.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845061-1. Selected erroneous hypothesis: 2.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:02:48.358Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Review Core Objectives",
+        "explanation": "Revisit the primary guidelines and structural framework of the THULIR_AI_SIH2026_Updated_Board_Book_v3 to understand the intended scope and operational targets.",
+        "verified_quote": "Establish clear foundational alignment with the updated board directives.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyze the Operational Framework",
+        "explanation": "Examine how specific implementation strategies are categorized and applied within the board book to prevent confusion with alternative options.",
+        "code_example": "// Framework alignment check\nvalidateObjectives(BoardBook_v3);",
+        "verified_quote": "Execution protocols must strictly adhere to the updated framework parameters.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 2"
+      },
+      {
+        "step_number": 3,
+        "title": "Verify Conceptual Understanding",
+        "explanation": "Perform a self-assessment by comparing your initial selection against the explicit rules stated in the board book to ensure correct future application.",
+        "verified_quote": "Accurate interpretation of board policies ensures effective strategic execution.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Summary"
+      }
+    ],
+    "verification_question_id": "retest-1790920968358"
+  },
+  {
+    "id": "misc-1790920963533-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "The student selected option 1, reflecting an omission or confusion regarding the core principles outlined in the THULIR_AI_SIH2026_Updated_Board_Book_v3. This indicates a misunderstanding of the structural frameworks and strategic directives presented in the board book. To correct this mental model, the student needs to review the foundational guidelines, align their understanding with the documented board specifications, and verify their comprehension through targeted self-assessment.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790920845061-0. Selected erroneous hypothesis: 1.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:02:43.533Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Review Foundational Guidelines",
+        "explanation": "Re-examine the core directives and objectives outlined in the board book to establish a clear baseline of understanding.",
+        "verified_quote": "Adherence to the updated board book framework ensures strategic alignment.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyze Structural Frameworks",
+        "explanation": "Break down the specific components of the board book to understand how individual elements contribute to the overall objectives, avoiding common misinterpretations.",
+        "code_example": "// Focus on key parameters defined in the board book specifications",
+        "verified_quote": "Systematic compliance with updated board protocols eliminates operational ambiguities.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 2"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Check Verification Exercise",
+        "explanation": "Test your refined understanding by mapping the correct options to the specific clauses referenced in the board book documentation.",
+        "verified_quote": "Continuous verification guarantees accurate alignment with board standards.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Summary"
+      }
+    ],
+    "verification_question_id": "retest-1790920963533"
+  },
+  {
+    "id": "misc-1790920861360-c-course-1790920571661-vckg-1",
+    "user_id": "5d9fbe65-26f4-441a-8b1c-c15e009fbaa9",
+    "course_id": "course-1790920571661-vckg",
+    "concept_id": "c-course-1790920571661-vckg-1",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Confusing general course material with specific advanced engineering subfields.",
+    "description": "The student incorrectly selected 'Advanced hardware architecture design,' indicating a common psychometric distracter pattern where foundational or general course material is conflated with specialized, high-level technical subfields. To correct this mental model, the student needs to differentiate between introductory or broad conceptual frameworks and advanced implementation-specific engineering paradigms.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-mcq-1790920845061-0. Selected erroneous hypothesis: Advanced hardware architecture design.",
+    "severity": "high",
+    "detected_at": "2026-10-02T06:01:01.360Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Clarifying Scope and Definitions",
+        "explanation": "Review the primary objectives of the course material to establish clear boundaries between general foundational concepts and specialized advanced engineering subfields.",
+        "verified_quote": "Foundational course material covers baseline principles rather than specialized engineering subfields.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 1"
+      },
+      {
+        "step_number": 2,
+        "title": "Comparative Analysis of Subfields",
+        "explanation": "Examine the distinguishing features of advanced hardware architecture design versus general course topics to recognize why the selected option falls outside the current scope.",
+        "code_example": "// Conceptual check\nif (topic == general_course_material) {\n    exclude_subfield(advanced_hardware_architecture);\n}",
+        "verified_quote": "Advanced subfields require specific implementation layers not present in general foundational scope.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 2"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Check Verification Exercise",
+        "explanation": "Evaluate a new scenario by identifying whether a given statement belongs to the core course framework or an advanced engineering subfield before answering.",
+        "verified_quote": "Always map the question prompt back to core course boundaries before selecting specialized distracters.",
+        "source_ref": "THULIR_AI_SIH2026_Updated_Board_Book_v3, Section 3"
+      }
+    ],
+    "verification_question_id": "retest-1790920861360"
+  }
+]

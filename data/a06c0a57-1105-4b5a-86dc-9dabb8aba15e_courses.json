@@ -1,0 +1,32 @@
+[
+  {
+    "id": "course-1791996738394-b48i",
+    "owner_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "title": "Distributed Systems & Cloud Computing",
+    "code": "CS-401",
+    "description": "Advanced distributed consensus, storage engines, and stream processing.",
+    "category": "Computer Science",
+    "color": "#B1A15A",
+    "icon": "Server",
+    "total_concepts": 3,
+    "mastered_concepts": 0,
+    "materials_count": 1,
+    "created_at": "2026-10-14T16:52:18.394Z",
+    "updated_at": "2026-10-14T16:52:32.035Z"
+  },
+  {
+    "id": "course-1791988413424-lmd7",
+    "owner_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "title": "thulir",
+    "code": "123",
+    "description": "Comprehensive course syllabus.",
+    "category": "Computer Science",
+    "color": "#B1A15A",
+    "icon": "BookOpen",
+    "total_concepts": 6,
+    "mastered_concepts": 0,
+    "materials_count": 2,
+    "created_at": "2026-10-14T14:33:33.424Z",
+    "updated_at": "2026-10-14T15:26:42.898Z"
+  }
+]

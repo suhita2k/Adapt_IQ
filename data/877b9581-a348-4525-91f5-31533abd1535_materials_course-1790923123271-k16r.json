@@ -1,0 +1,17 @@
+[
+  {
+    "id": "mat-1790923161618-cv27",
+    "course_id": "course-1790923123271-k16r",
+    "user_id": "877b9581-a348-4525-91f5-31533abd1535",
+    "title": "chap",
+    "file_name": "sih.pdf (2).pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 3848372,
+    "page_count": 77,
+    "visual_elements_count": 62,
+    "status": "indexed",
+    "extracted_chunks_count": 270,
+    "uploaded_at": "2026-10-02T06:39:21.618Z",
+    "file_url": "/api/courses/course-1790923123271-k16r/materials/mat-1790923161618-cv27/file"
+  }
+]

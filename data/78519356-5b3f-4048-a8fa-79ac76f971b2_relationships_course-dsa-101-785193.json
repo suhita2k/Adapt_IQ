@@ -1,0 +1,65 @@
+[
+  {
+    "id": "rel-1",
+    "source_concept_id": "c-arrays",
+    "target_concept_id": "c-linked-lists",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "id": "rel-2",
+    "source_concept_id": "c-linked-lists",
+    "target_concept_id": "c-stacks",
+    "relationship_type": "prerequisite",
+    "strength": 0.85
+  },
+  {
+    "id": "rel-3",
+    "source_concept_id": "c-stacks",
+    "target_concept_id": "c-recursion",
+    "relationship_type": "prerequisite",
+    "strength": 0.95
+  },
+  {
+    "id": "rel-4",
+    "source_concept_id": "c-stacks",
+    "target_concept_id": "c-trees",
+    "relationship_type": "prerequisite",
+    "strength": 0.8
+  },
+  {
+    "id": "rel-5",
+    "source_concept_id": "c-trees",
+    "target_concept_id": "c-bst",
+    "relationship_type": "prerequisite",
+    "strength": 0.95
+  },
+  {
+    "id": "rel-6",
+    "source_concept_id": "c-recursion",
+    "target_concept_id": "c-dp",
+    "relationship_type": "prerequisite",
+    "strength": 0.98
+  },
+  {
+    "id": "rel-7",
+    "source_concept_id": "c-arrays",
+    "target_concept_id": "c-dp",
+    "relationship_type": "prerequisite",
+    "strength": 0.75
+  },
+  {
+    "id": "rel-8",
+    "source_concept_id": "c-trees",
+    "target_concept_id": "c-graphs",
+    "relationship_type": "prerequisite",
+    "strength": 0.85
+  },
+  {
+    "id": "rel-9",
+    "source_concept_id": "c-recursion",
+    "target_concept_id": "c-graphs",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  }
+]

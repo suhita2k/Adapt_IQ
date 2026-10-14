@@ -1,0 +1,108 @@
+[
+  {
+    "id": "c-course-1790870929539-395i-1",
+    "course_id": "course-1790870929539-395i",
+    "name": "State Machine Replication",
+    "description": "Foundational paradigm for building fault-tolerant services by executing identical replica state machines across a distributed cluster. Ensures that any deterministic state machine starting from the same initial state and processing the exact same sequence of inputs will arrive at identical final states.",
+    "category": "Foundations",
+    "difficulty_level": 2,
+    "prerequisites": [],
+    "subconcepts": [
+      "Deterministic Execution",
+      "Log-based Replication"
+    ],
+    "common_pitfalls": [
+      "Assuming non-deterministic state transitions can be safely replicated without explicit coordination."
+    ]
+  },
+  {
+    "id": "c-course-1790870929539-395i-2",
+    "course_id": "course-1790870929539-395i",
+    "name": "Distributed Consensus Fundamentals",
+    "description": "Study of agreeing on values or execution sequences among a network of independent nodes susceptible to crash-stop or crash-fault failures. It establishes the theoretical limits of agreement under asynchronous network conditions.",
+    "category": "Foundations",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "State Machine Replication"
+    ],
+    "subconcepts": [
+      "Safety vs Liveness",
+      "FLP Impossibility Result"
+    ],
+    "common_pitfalls": [
+      "Confusing consensus with atomic broadcast or simple distributed locking mechanisms."
+    ]
+  },
+  {
+    "id": "c-course-1790870929539-395i-3",
+    "course_id": "course-1790870929539-395i",
+    "name": "Classic Paxos Protocol",
+    "description": "Classic consensus algorithm designed by Leslie Lamport that achieves agreement in a network of unreliable processors. It operates through propose, promise, accept, and accepted phases to guarantee consensus safety.",
+    "category": "Core",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Distributed Consensus Fundamentals"
+    ],
+    "subconcepts": [
+      "Prepare-Promise Phase",
+      "Accept-Accepted Phase"
+    ],
+    "common_pitfalls": [
+      "Failing to understand how Paxos handles split-brain scenarios and overlapping proposer quorums."
+    ]
+  },
+  {
+    "id": "c-course-1790870929539-395i-4",
+    "course_id": "course-1790870929539-395i",
+    "name": "Raft Leader Election",
+    "description": "Decomposition of consensus into distinct sub-problems, beginning with electing a single authoritative leader to manage the replicated log. Utilizes randomized timeouts to prevent split votes during simultaneous candidate campaigns.",
+    "category": "Core",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Distributed Consensus Fundamentals"
+    ],
+    "subconcepts": [
+      "Term Numbers",
+      "Randomized Election Timeouts"
+    ],
+    "common_pitfalls": [
+      "Setting election timeouts too short, resulting in frequent disruptions and perpetual leader churn."
+    ]
+  },
+  {
+    "id": "c-course-1790870929539-395i-5",
+    "course_id": "course-1790870929539-395i",
+    "name": "Log Replication & AppendEntries",
+    "description": "Mechanism by which the elected leader accepts client commands, appends them to its local log, and issues AppendEntries RPCs to replicate them across followers. Enforces consistency checks to ensure follower logs align with the leader's log.",
+    "category": "Core",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Raft Leader Election"
+    ],
+    "subconcepts": [
+      "Previous Log Index & Term",
+      "Commit Index Advancement"
+    ],
+    "common_pitfalls": [
+      "Assuming followers automatically overwrite conflicting entries without validating log matching properties."
+    ]
+  },
+  {
+    "id": "c-course-1790870929539-395i-6",
+    "course_id": "course-1790870929539-395i",
+    "name": "Raft Safety Invariants",
+    "description": "Set of rigorous mathematical rules and invariants ensuring that Raft safety properties are never violated under any combination of network partitions or node failures. Includes election safety, leader append-only, log matching, and leader completeness properties.",
+    "category": "Advanced",
+    "difficulty_level": 5,
+    "prerequisites": [
+      "Log Replication & AppendEntries"
+    ],
+    "subconcepts": [
+      "Leader Completeness Property",
+      "Log Matching Invariant"
+    ],
+    "common_pitfalls": [
+      "Committing entries from previous terms by counting replicas directly instead of using current term entries."
+    ]
+  }
+]

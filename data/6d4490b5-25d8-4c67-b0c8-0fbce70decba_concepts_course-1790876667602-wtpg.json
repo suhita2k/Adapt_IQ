@@ -1,0 +1,135 @@
+[
+  {
+    "id": "c-course-1790876667602-wtpg-1",
+    "course_id": "course-1790876667602-wtpg",
+    "name": "Asymptotic Analysis Basics",
+    "description": "Fundamental framework for evaluating algorithm efficiency using Big-O, Omega, and Theta notations. Provides mathematical rigor for comparing growth rates of functions.",
+    "category": "Foundations",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [
+      "Big-O Notation",
+      "Growth Rates",
+      "Limit Tests"
+    ],
+    "common_pitfalls": [
+      "Confusing worst-case performance with upper bounds"
+    ]
+  },
+  {
+    "id": "c-course-1790876667602-wtpg-2",
+    "course_id": "course-1790876667602-wtpg",
+    "name": "Loop Invariants",
+    "description": "Technique for proving the correctness of iterative algorithms by establishing a property that holds before and after each iteration. Ensures the algorithm achieves its desired post-condition.",
+    "category": "Foundations",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Asymptotic Analysis Basics"
+    ],
+    "subconcepts": [
+      "Initialization",
+      "Maintenance",
+      "Termination"
+    ],
+    "common_pitfalls": [
+      "Failing to maintain the invariant during the final transition step"
+    ]
+  },
+  {
+    "id": "c-course-1790876667602-wtpg-3",
+    "course_id": "course-1790876667602-wtpg",
+    "name": "Mathematical Induction",
+    "description": "Proof technique used to establish the truth of an infinite sequence of statements, heavily relied upon in both loop invariants and recursive algorithm analysis. Forms the logical backbone of algorithm correctness proofs.",
+    "category": "Foundations",
+    "difficulty_level": 2,
+    "prerequisites": [],
+    "subconcepts": [
+      "Base Case",
+      "Inductive Hypothesis",
+      "Inductive Step"
+    ],
+    "common_pitfalls": [
+      "Assuming the inductive hypothesis for the base case"
+    ]
+  },
+  {
+    "id": "c-course-1790876667602-wtpg-4",
+    "course_id": "course-1790876667602-wtpg",
+    "name": "Recursion Fundamentals",
+    "description": "Programming and mathematical paradigm where a function calls itself to solve smaller instances of the same problem. Requires a well-defined base case to prevent infinite execution.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Mathematical Induction"
+    ],
+    "subconcepts": [
+      "Base Cases",
+      "Recursive Steps",
+      "Call Stack Mechanics"
+    ],
+    "common_pitfalls": [
+      "Omitting or incorrectly defining the base case"
+    ]
+  },
+  {
+    "id": "c-course-1790876667602-wtpg-5",
+    "course_id": "course-1790876667602-wtpg",
+    "name": "Recursion Trees",
+    "description": "Graphical representation of the costs incurred by recursive function calls at each level of execution. Used to visualize and sum the total work done by divide-and-conquer algorithms.",
+    "category": "Core",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Recursion Fundamentals",
+      "Asymptotic Analysis Basics"
+    ],
+    "subconcepts": [
+      "Work per Level",
+      "Height of Tree",
+      "Total Cost Summation"
+    ],
+    "common_pitfalls": [
+      "Miscalculating the number of leaves or the branching factor"
+    ]
+  },
+  {
+    "id": "c-course-1790876667602-wtpg-6",
+    "course_id": "course-1790876667602-wtpg",
+    "name": "Master Theorem",
+    "description": "Formulaic method for solving recurrence relations common in divide-and-conquer algorithms. Quickens the asymptotic analysis of algorithms without requiring deep expansion steps.",
+    "category": "Advanced",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Recursion Trees",
+      "Asymptotic Analysis Basics"
+    ],
+    "subconcepts": [
+      "Recurrence Relations",
+      "Case Conditions",
+      "Polynomial Comparisons"
+    ],
+    "common_pitfalls": [
+      "Applying the theorem when the recurrence is not in the standard form"
+    ]
+  },
+  {
+    "id": "c-course-1790876667602-wtpg-7",
+    "course_id": "course-1790876667602-wtpg",
+    "name": "Advanced Algorithm Verification",
+    "description": "Synthesis of loop invariants and inductive proofs to guarantee absolute correctness and complexity bounds for complex computational routines. Combines structural and asymptotic properties.",
+    "category": "Advanced",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Loop Invariants",
+      "Recursion Trees",
+      "Master Theorem"
+    ],
+    "subconcepts": [
+      "Partial Correctness",
+      "Total Correctness",
+      "Amortized Verification"
+    ],
+    "common_pitfalls": [
+      "Conflating termination with correctness"
+    ]
+  }
+]

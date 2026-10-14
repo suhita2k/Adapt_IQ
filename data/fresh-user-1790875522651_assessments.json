@@ -1,0 +1,17 @@
+[
+  {
+    "id": "as-1790875579921",
+    "user_id": "fresh-user-1790875522651",
+    "course_id": "course-1790875524635-vtcp",
+    "title": "Distributed Consensus & Raft Protocols Diagnostic",
+    "status": "completed",
+    "total_questions": 3,
+    "completed_questions": 3,
+    "score_percentage": 67,
+    "started_at": "2026-10-01T17:26:19.921Z",
+    "completed_at": "2026-10-01T17:26:19.921Z",
+    "questions": [],
+    "current_index": 0,
+    "answers": {}
+  }
+]

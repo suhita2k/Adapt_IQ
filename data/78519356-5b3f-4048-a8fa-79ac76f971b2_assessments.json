@@ -1,0 +1,697 @@
+[
+  {
+    "id": "as-1790878685742-oyyv",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-dsa-101-785193",
+    "title": "Data Structures & Algorithms Adaptive Diagnostic Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-01T18:18:05.742Z",
+    "questions": [
+      {
+        "id": "q-mcq-1790878685738-0",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-recursion",
+        "concept_name": "Recursion",
+        "topic": "Algorithmic Paradigms",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What is the primary consequence of omitting a base case in a recursive algorithm according to CLRS?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "The algorithm will terminate immediately.",
+            "is_correct": false,
+            "explanation": "Without a base case, the algorithm continues to recurse.",
+            "misconception_tag": "Misunderstanding termination conditions"
+          },
+          {
+            "id": "opt-2",
+            "text": "Call stack frames accumulate until a stack overflow exception occurs.",
+            "is_correct": true,
+            "explanation": "CLRS states that without a base case, call stack frames accumulate monotonically until a stack overflow exception halts the runtime."
+          },
+          {
+            "id": "opt-3",
+            "text": "The algorithm will automatically optimize into tail recursion.",
+            "is_correct": false,
+            "explanation": "Tail recursion is a specific structural pattern, not an automatic result of missing base cases.",
+            "misconception_tag": "Confusing compiler optimization with runtime error"
+          },
+          {
+            "id": "opt-4",
+            "text": "The algorithm will return a null value.",
+            "is_correct": false,
+            "explanation": "The algorithm will not reach a return statement if it never hits a base case.",
+            "misconception_tag": "Assuming default return behavior"
+          }
+        ],
+        "correct_answer": "Call stack frames accumulate until a stack overflow exception occurs.",
+        "explanation": "CLRS 4th Edition, page 73, explicitly warns that recursive algorithms require base cases to prevent stack overflow exceptions caused by infinite frame accumulation.",
+        "source_citation": {
+          "material_title": "Introduction to Algorithms (CLRS 4th Edition)",
+          "reference": "Page 73",
+          "quote": "Without an explicit base case, call stack frames accumulate monotonically until a stack overflow exception halts the runtime."
+        }
+      },
+      {
+        "id": "q-mcq-1790878685738-1",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-recursion",
+        "concept_name": "Recursion",
+        "topic": "Algorithmic Paradigms",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "In the context of recursive activation records, what information is stored in a new stack frame?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Only the return address.",
+            "is_correct": false,
+            "explanation": "Frames contain more than just the return address.",
+            "misconception_tag": "Incomplete understanding of stack frame contents"
+          },
+          {
+            "id": "opt-2",
+            "text": "Local variables and the return address.",
+            "is_correct": true,
+            "explanation": "Lecture 07 states that every recursive invocation pushes a new stack frame containing local variables and the return address."
+          },
+          {
+            "id": "opt-3",
+            "text": "The global heap pointer and the base case.",
+            "is_correct": false,
+            "explanation": "Heap pointers are not stored in individual stack frames.",
+            "misconception_tag": "Confusing stack and heap memory"
+          },
+          {
+            "id": "opt-4",
+            "text": "The entire input array.",
+            "is_correct": false,
+            "explanation": "Passing large data structures by value is inefficient; frames typically store references or local state.",
+            "misconception_tag": "Overestimating frame capacity"
+          }
+        ],
+        "correct_answer": "Local variables and the return address.",
+        "explanation": "According to Lecture 07, Slide 18, activation records are created for each recursive call to manage local state and control flow.",
+        "source_citation": {
+          "material_title": "Lecture 07 - Recursion, Call Stacks & Recurrences",
+          "reference": "Slide 18",
+          "quote": "Every recursive invocation pushes a new stack frame containing local variables and return address."
+        }
+      },
+      {
+        "id": "q-mcq-1790878685738-2",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-trees",
+        "concept_name": "Trees",
+        "topic": "Hierarchical Structures",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Why is the 'if (node == null) return;' guard critical in a tree traversal?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "It improves the time complexity from O(n) to O(log n).",
+            "is_correct": false,
+            "explanation": "Traversal complexity is dependent on the number of nodes, not the base case guard.",
+            "misconception_tag": "Confusing base case with algorithmic complexity"
+          },
+          {
+            "id": "opt-2",
+            "text": "It prevents the instruction pointer from dereferencing a null pointer.",
+            "is_correct": true,
+            "explanation": "Prof. Miller notes that omitting this guard leads to null pointer dereferencing or infinite recursion."
+          },
+          {
+            "id": "opt-3",
+            "text": "It forces the traversal to be iterative.",
+            "is_correct": false,
+            "explanation": "The guard is a standard part of recursive traversal, not a conversion to iteration.",
+            "misconception_tag": "Confusing recursion with iteration"
+          },
+          {
+            "id": "opt-4",
+            "text": "It ensures the tree is balanced.",
+            "is_correct": false,
+            "explanation": "Tree balance is a property of the tree structure, not the traversal logic.",
+            "misconception_tag": "Confusing traversal with tree maintenance"
+          }
+        ],
+        "correct_answer": "It prevents the instruction pointer from dereferencing a null pointer.",
+        "explanation": "As stated in CS201 Lecture 12, the guard is essential to stop the recursive process when reaching leaf children, preventing memory errors.",
+        "source_citation": {
+          "material_title": "CS201 Lecture 12: Tree Traversals & Stack Depth Limits",
+          "reference": "38:21",
+          "quote": "if you omit the `if (node == null) return;` guard in pre-order traversal, the instruction pointer will blindly dereference a null pointer or enter an infinite loop"
+        }
+      },
+      {
+        "id": "q-mcq-1790878685738-3",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-arrays",
+        "concept_name": "Arrays",
+        "topic": "Linear Structures",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "What is the defining characteristic of an array's memory layout?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Non-contiguous memory allocation.",
+            "is_correct": false,
+            "explanation": "Arrays are defined by contiguous memory.",
+            "misconception_tag": "Confusing arrays with linked lists"
+          },
+          {
+            "id": "opt-2",
+            "text": "Contiguous memory sequences.",
+            "is_correct": true,
+            "explanation": "Arrays are defined as contiguous memory sequences allowing O(1) random access."
+          },
+          {
+            "id": "opt-3",
+            "text": "Dynamic pointer-based nodes.",
+            "is_correct": false,
+            "explanation": "This describes linked lists.",
+            "misconception_tag": "Confusing arrays with linked lists"
+          },
+          {
+            "id": "opt-4",
+            "text": "LIFO access pattern.",
+            "is_correct": false,
+            "explanation": "LIFO describes stacks.",
+            "misconception_tag": "Confusing arrays with stacks"
+          }
+        ],
+        "correct_answer": "Contiguous memory sequences.",
+        "explanation": "The course definition for arrays specifies they are contiguous memory sequences.",
+        "source_citation": {
+          "material_title": "Course Concept Definitions",
+          "reference": "Concept [ID: c-arrays]",
+          "quote": "Contiguous memory sequences with O(1) random index access"
+        }
+      },
+      {
+        "id": "q-mcq-1790878685738-4",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-stacks",
+        "concept_name": "Stacks",
+        "topic": "Linear Structures",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which data structure is best described as a LIFO container?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Queue",
+            "is_correct": false,
+            "explanation": "Queues are FIFO.",
+            "misconception_tag": "Confusing LIFO with FIFO"
+          },
+          {
+            "id": "opt-2",
+            "text": "Stack",
+            "is_correct": true,
+            "explanation": "Stacks are defined as LIFO containers."
+          },
+          {
+            "id": "opt-3",
+            "text": "Binary Search Tree",
+            "is_correct": false,
+            "explanation": "BSTs are hierarchical structures.",
+            "misconception_tag": "Confusing linear with hierarchical"
+          },
+          {
+            "id": "opt-4",
+            "text": "Array",
+            "is_correct": false,
+            "explanation": "Arrays allow random access.",
+            "misconception_tag": "Confusing random access with LIFO"
+          }
+        ],
+        "correct_answer": "Stack",
+        "explanation": "The course definition for stacks identifies them as LIFO (Last In, First Out) containers.",
+        "source_citation": {
+          "material_title": "Course Concept Definitions",
+          "reference": "Concept [ID: c-stacks]",
+          "quote": "LIFO (Last In, First Out) linear data container"
+        }
+      },
+      {
+        "id": "q-mcq-1790878685738-5",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-bst",
+        "concept_name": "Binary Search Trees (BST)",
+        "topic": "Hierarchical Structures",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "What is the primary advantage of a Binary Search Tree (BST) over an unsorted array?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "O(1) random access.",
+            "is_correct": false,
+            "explanation": "Arrays provide O(1) access; BSTs do not.",
+            "misconception_tag": "Confusing BST access with array access"
+          },
+          {
+            "id": "opt-2",
+            "text": "O(log n) lookup.",
+            "is_correct": true,
+            "explanation": "BSTs enable O(log n) lookup due to their ordered structure."
+          },
+          {
+            "id": "opt-3",
+            "text": "Contiguous memory usage.",
+            "is_correct": false,
+            "explanation": "BSTs use node-based memory, not contiguous.",
+            "misconception_tag": "Confusing BST memory with array memory"
+          },
+          {
+            "id": "opt-4",
+            "text": "O(1) insertion.",
+            "is_correct": false,
+            "explanation": "BST insertion is typically O(log n).",
+            "misconception_tag": "Overestimating BST performance"
+          }
+        ],
+        "correct_answer": "O(log n) lookup.",
+        "explanation": "The BST invariant (left < node < right) enables efficient O(log n) search operations.",
+        "source_citation": {
+          "material_title": "Course Concept Definitions",
+          "reference": "Concept [ID: c-bst]",
+          "quote": "Ordered binary trees where left subtree keys < node key < right subtree keys, enabling O(log n) lookup."
+        }
+      },
+      {
+        "id": "q-mcq-1790878685738-6",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-dp",
+        "concept_name": "Dynamic Programming",
+        "topic": "Algorithmic Paradigms",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Understand",
+        "question_text": "Which algorithmic paradigm is characterized by breaking problems into overlapping subproblems?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Recursion",
+            "is_correct": false,
+            "explanation": "Recursion is a technique, but DP specifically addresses overlapping subproblems.",
+            "misconception_tag": "Confusing general recursion with DP"
+          },
+          {
+            "id": "opt-2",
+            "text": "Dynamic Programming",
+            "is_correct": true,
+            "explanation": "DP is defined by solving overlapping subproblems with optimal substructure."
+          },
+          {
+            "id": "opt-3",
+            "text": "Divide and Conquer",
+            "is_correct": false,
+            "explanation": "Divide and Conquer assumes subproblems are independent.",
+            "misconception_tag": "Confusing DP with Divide and Conquer"
+          },
+          {
+            "id": "opt-4",
+            "text": "Greedy Algorithms",
+            "is_correct": false,
+            "explanation": "Greedy algorithms make locally optimal choices.",
+            "misconception_tag": "Confusing DP with Greedy"
+          }
+        ],
+        "correct_answer": "Dynamic Programming",
+        "explanation": "Dynamic Programming is the optimization paradigm specifically designed for overlapping subproblems.",
+        "source_citation": {
+          "material_title": "Course Concept Definitions",
+          "reference": "Concept [ID: c-dp]",
+          "quote": "Optimization paradigm breaking problems into overlapping subproblems with optimal substructure."
+        }
+      },
+      {
+        "id": "q-mcq-1790878685738-7",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-dp",
+        "concept_name": "Dynamic Programming",
+        "topic": "Algorithmic Paradigms",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "What is the main difference between Memoization and Tabulation in Dynamic Programming?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Memoization is bottom-up, Tabulation is top-down.",
+            "is_correct": false,
+            "explanation": "It is the reverse.",
+            "misconception_tag": "Reversing DP definitions"
+          },
+          {
+            "id": "opt-2",
+            "text": "Memoization is top-down, Tabulation is bottom-up.",
+            "is_correct": true,
+            "explanation": "Memoization uses top-down recursion; Tabulation uses bottom-up iterative filling."
+          },
+          {
+            "id": "opt-3",
+            "text": "Memoization uses more memory.",
+            "is_correct": false,
+            "explanation": "Memory usage depends on the specific problem implementation.",
+            "misconception_tag": "Generalizing memory usage"
+          },
+          {
+            "id": "opt-4",
+            "text": "Tabulation is only for graphs.",
+            "is_correct": false,
+            "explanation": "Tabulation is a general DP technique.",
+            "misconception_tag": "Limiting scope of DP"
+          }
+        ],
+        "correct_answer": "Memoization is top-down, Tabulation is bottom-up.",
+        "explanation": "The course defines Memoization as top-down and Tabulation as bottom-up approaches to DP.",
+        "source_citation": {
+          "material_title": "Course Concept Definitions",
+          "reference": "Concept [ID: c-dp]",
+          "quote": "Memoization (Top-down), Tabulation (Bottom-up)"
+        }
+      },
+      {
+        "id": "q-mcq-1790878685739-8",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-graphs",
+        "concept_name": "Graph Traversals",
+        "topic": "Graph Algorithms",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Remember",
+        "question_text": "Which algorithm is typically used for Breadth-First Search (BFS) in graphs?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Stack",
+            "is_correct": false,
+            "explanation": "Stacks are used for DFS.",
+            "misconception_tag": "Confusing BFS and DFS data structures"
+          },
+          {
+            "id": "opt-2",
+            "text": "Queue",
+            "is_correct": true,
+            "explanation": "BFS uses a queue for systematic exploration."
+          },
+          {
+            "id": "opt-3",
+            "text": "Priority Queue",
+            "is_correct": false,
+            "explanation": "Priority queues are used for Dijkstra's algorithm.",
+            "misconception_tag": "Confusing BFS with shortest path algorithms"
+          },
+          {
+            "id": "opt-4",
+            "text": "Linked List",
+            "is_correct": false,
+            "explanation": "Linked lists are not the primary structure for BFS traversal.",
+            "misconception_tag": "Confusing storage with traversal mechanism"
+          }
+        ],
+        "correct_answer": "Queue",
+        "explanation": "The course defines BFS as using a queue for systematic exploration of vertices.",
+        "source_citation": {
+          "material_title": "Course Concept Definitions",
+          "reference": "Concept [ID: c-graphs]",
+          "quote": "BFS (Queue)"
+        }
+      },
+      {
+        "id": "q-mcq-1790878685739-9",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-linked-lists",
+        "concept_name": "Linked Lists",
+        "topic": "Linear Structures",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "What is the primary benefit of using a Doubly Linked List over a Singly Linked List?",
+        "code_snippet": null,
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "O(1) random access.",
+            "is_correct": false,
+            "explanation": "Linked lists do not support O(1) random access.",
+            "misconception_tag": "Confusing linked list access with array access"
+          },
+          {
+            "id": "opt-2",
+            "text": "Bidirectional traversal.",
+            "is_correct": true,
+            "explanation": "Doubly linked lists allow traversal in both directions."
+          },
+          {
+            "id": "opt-3",
+            "text": "Reduced memory usage.",
+            "is_correct": false,
+            "explanation": "Doubly linked lists use more memory due to the extra pointer.",
+            "misconception_tag": "Underestimating memory overhead"
+          },
+          {
+            "id": "opt-4",
+            "text": "O(log n) search.",
+            "is_correct": false,
+            "explanation": "Linked list search is O(n).",
+            "misconception_tag": "Overestimating search performance"
+          }
+        ],
+        "correct_answer": "Bidirectional traversal.",
+        "explanation": "Doubly linked lists contain pointers to both the next and previous nodes, facilitating bidirectional traversal.",
+        "source_citation": {
+          "material_title": "Course Concept Definitions",
+          "reference": "Concept [ID: c-linked-lists]",
+          "quote": "Node-based linear chains connected by pointers"
+        }
+      },
+      {
+        "id": "q-fitb-1790878685740-0",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-recursion",
+        "concept_name": "Recursion",
+        "topic": "Algorithmic Paradigms",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "In recursive function execution, every function requires at least one _____ to terminate recursion and prevent stack overflow.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "base case",
+        "explanation": "According to CLRS, every recursive algorithm requires at least one base case to produce a direct result without generating further subproblems.",
+        "source_citation": {
+          "material_title": "Introduction to Algorithms (CLRS 4th Edition)",
+          "reference": "Page 73",
+          "quote": "Every recursive algorithm requires at least one base case that produces a direct result without generating further recursive subproblems."
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-1",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-recursion",
+        "concept_name": "Recursion",
+        "topic": "Algorithmic Paradigms",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Every recursive invocation pushes a new _____ onto the call stack, which contains local variables and the return address.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "stack frame",
+        "explanation": "Lecture 07 notes that activation records, or stack frames, are pushed onto the stack for every recursive call.",
+        "source_citation": {
+          "material_title": "Lecture 07 - Recursion, Call Stacks & Recurrences",
+          "reference": "Slide 18",
+          "quote": "Every recursive invocation pushes a new stack frame containing local variables and the return address."
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-2",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-trees",
+        "concept_name": "Trees",
+        "topic": "Hierarchical Structures",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "If a recursive tree traversal omits the _____ guard, the instruction pointer may dereference a null pointer or cause memory exhaustion.",
+        "code_snippet": "if (node == null) return;",
+        "options": [],
+        "correct_answer": "base case",
+        "explanation": "Prof. Miller emphasizes that the null check acts as the base case to prevent infinite recursion and stack overflow.",
+        "source_citation": {
+          "material_title": "CS201 Lecture 12: Tree Traversals & Stack Depth Limits",
+          "reference": "38:21",
+          "quote": "if you omit the `if (node == null) return;` guard in pre-order traversal, the instruction pointer will blindly dereference a null pointer or enter an infinite loop"
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-3",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-arrays",
+        "concept_name": "Arrays",
+        "topic": "Linear Structures",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Arrays are defined as _____ memory sequences that provide O(1) random index access.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "contiguous",
+        "explanation": "Arrays are characterized by their contiguous memory layout, which allows for efficient random access.",
+        "source_citation": {
+          "material_title": "Introduction to Algorithms (CLRS 4th Edition)",
+          "reference": "Concept Definition",
+          "quote": "Contiguous memory sequences with O(1) random index access and O(n) insertions/deletions."
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-4",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-stacks",
+        "concept_name": "Stacks",
+        "topic": "Linear Structures",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "A _____ data structure follows the LIFO principle, making it ideal for managing execution frames in recursion.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "Stack",
+        "explanation": "Stacks are LIFO (Last In, First Out) containers used to manage the call stack during recursive execution.",
+        "source_citation": {
+          "material_title": "Lecture 07 - Recursion, Call Stacks & Recurrences",
+          "reference": "Concept Definition",
+          "quote": "LIFO (Last In, First Out) linear data container representing execution frames and monotonic buffers."
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-5",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-bst",
+        "concept_name": "Binary Search Trees (BST)",
+        "topic": "Hierarchical Structures",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "In a Binary Search Tree, the _____ invariant ensures that all keys in the left subtree are smaller than the node's key.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "BST",
+        "explanation": "The BST invariant defines the ordering property: left < node < right.",
+        "source_citation": {
+          "material_title": "Introduction to Algorithms (CLRS 4th Edition)",
+          "reference": "Concept Definition",
+          "quote": "Ordered binary trees where left subtree keys < node key < right subtree keys, enabling O(log n) lookup."
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-6",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-dp",
+        "concept_name": "Dynamic Programming",
+        "topic": "Algorithmic Paradigms",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Understand",
+        "question_text": "_____ is an optimization paradigm that solves problems by breaking them into overlapping subproblems with optimal substructure.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "Dynamic Programming",
+        "explanation": "Dynamic programming is specifically designed to handle overlapping subproblems efficiently using memoization or tabulation.",
+        "source_citation": {
+          "material_title": "Introduction to Algorithms (CLRS 4th Edition)",
+          "reference": "Concept Definition",
+          "quote": "Optimization paradigm breaking problems into overlapping subproblems with optimal substructure."
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-7",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-linked-lists",
+        "concept_name": "Linked Lists",
+        "topic": "Linear Structures",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Apply",
+        "question_text": "To detect cycles in a linked list, one can use _____ algorithm, which employs two pointers moving at different speeds.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "Floyd's",
+        "explanation": "Floyd's cycle-finding algorithm (tortoise and hare) is the standard method for detecting cycles in linked structures.",
+        "source_citation": {
+          "material_title": "Introduction to Algorithms (CLRS 4th Edition)",
+          "reference": "Concept Definition",
+          "quote": "Node-based linear chains connected by pointers... Subconcepts: Singly Linked, Doubly Linked, Cycle Detection (Floyd)"
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-8",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-graphs",
+        "concept_name": "Graph Traversals",
+        "topic": "Graph Algorithms",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Breadth-First Search (BFS) typically utilizes a _____ to manage the frontier of nodes to be visited.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "queue",
+        "explanation": "BFS explores nodes level-by-level, which requires a FIFO queue structure.",
+        "source_citation": {
+          "material_title": "Introduction to Algorithms (CLRS 4th Edition)",
+          "reference": "Concept Definition",
+          "quote": "Systematic exploration of vertices and edges in arbitrary networks using Breadth-First and Depth-First searches... BFS (Queue)"
+        }
+      },
+      {
+        "id": "q-fitb-1790878685741-9",
+        "course_id": "course-dsa-101-785193",
+        "concept_id": "c-recursion",
+        "concept_name": "Recursion",
+        "topic": "Algorithmic Paradigms",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In the context of recursion, the _____ step must ensure that arguments strictly converge towards the base case.",
+        "code_snippet": null,
+        "options": [],
+        "correct_answer": "recurrence",
+        "explanation": "The recurrence step is the phase where the problem is reduced to a smaller instance, ensuring eventual termination.",
+        "source_citation": {
+          "material_title": "Lecture 07 - Recursion, Call Stacks & Recurrences",
+          "reference": "Slide 18",
+          "quote": "Recurrence Step: Ensure arguments strictly converge towards base case"
+        }
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  }
+]

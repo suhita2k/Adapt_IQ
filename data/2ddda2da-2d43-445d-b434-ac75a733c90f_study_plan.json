@@ -1,0 +1,68 @@
+{
+  "id": "plan-course-1790876522572-gxws",
+  "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+  "course_id": "course-1790876522572-gxws",
+  "title": "Advanced Algorithms & Invariants Adaptive Study Plan",
+  "daily_goal_minutes": 60,
+  "streak_days": 0,
+  "tasks": [
+    {
+      "id": "task-1790876530940-0",
+      "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+      "course_id": "course-1790876522572-gxws",
+      "concept_id": "c-course-1790876522572-gxws-1",
+      "concept_name": "Asymptotic Growth Notation",
+      "title": "Study Concept: Asymptotic Growth Notation",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Asymptotic Growth Notation in Advanced Algorithms & Invariants."
+    },
+    {
+      "id": "task-1790876530940-1",
+      "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+      "course_id": "course-1790876522572-gxws",
+      "concept_id": "c-course-1790876522572-gxws-2",
+      "concept_name": "Formal Proofs of Correctness",
+      "title": "Study Concept: Formal Proofs of Correctness",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "high",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Formal Proofs of Correctness in Advanced Algorithms & Invariants."
+    },
+    {
+      "id": "task-1790876530940-2",
+      "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+      "course_id": "course-1790876522572-gxws",
+      "concept_id": "c-course-1790876522572-gxws-3",
+      "concept_name": "Loop Invariants",
+      "title": "Study Concept: Loop Invariants",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Loop Invariants in Advanced Algorithms & Invariants."
+    },
+    {
+      "id": "task-1790876530940-3",
+      "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+      "course_id": "course-1790876522572-gxws",
+      "concept_id": "c-course-1790876522572-gxws-4",
+      "concept_name": "Recursive Problem Solving",
+      "title": "Study Concept: Recursive Problem Solving",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Recursive Problem Solving in Advanced Algorithms & Invariants."
+    }
+  ],
+  "created_at": "2026-10-01T17:42:10.940Z",
+  "updated_at": "2026-10-01T17:42:10.940Z"
+}

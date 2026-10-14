@@ -1,0 +1,38 @@
+[
+  {
+    "id": "msg-u-1790876538237",
+    "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+    "course_id": "course-1790876522572-gxws",
+    "role": "user",
+    "content": "What is a loop invariant and what conditions must it satisfy?",
+    "created_at": "2026-10-01T17:42:18.237Z"
+  },
+  {
+    "id": "msg-a-1790876538240",
+    "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+    "course_id": "course-1790876522572-gxws",
+    "role": "assistant",
+    "content": "லூப் இன்வேரியன்ட் (Loop invariant) என்பது ஒரு சுழற்சியின் (loop) ஒவ்வொரு படியிலும் மற்றும் அது முடியும் போதும் உண்மையாக இருக்க வேண்டிய ஒரு நிபந்தனை அல்லது கூற்று ஆகும். இது ஒரு அல்காரிதமின் சரியான தன்மையை (correctness) நிரூபிக்க உதவுகிறது [Page 5]. ஒரு லூப் இன்வேரியன்ட் மூன்று முக்கியமான பண்புகளை நிறைவு செய்ய வேண்டும் [Page 5]:\n\n1. **தொடக்க நிலை (Initialization):** சுழற்சி தொடங்குவதற்கு முன்பு (முதல் முறை இயங்குவதற்கு முன்) அது உண்மையாக இருக்க வேண்டும் [Page 5].\n2. **பராமரிப்பு (Maintenance):** சுழற்சியின் ஒரு படிநிலையில் அது உண்மையாக இருந்தால், அடுத்த படிநிலையிலும் அது உண்மையாகவே தொடர வேண்டும் [Page 5].\n3. **முடிவு நிலை (Termination):** சுழற்சி முடியும் போது, அல்காரிதம் சரியான முடிவை வழங்க இந்த இன்வேரியன்ட் உதவ வேண்டும் [Page 5].",
+    "created_at": "2026-10-01T17:42:18.240Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790876538239-0",
+        "course_id": "course-1790876522572-gxws",
+        "material_id": "mat-1790876522843-3n4q",
+        "material_title": "Algorithms Syllabus",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Page 5",
+        "snippet": "A loop invariant must satisfy three properties: initialization, maintenance, and termination.",
+        "confidence_score": 0.96,
+        "relevance_reason": "லூப் இன்வேரியன்ட் என்றால் என்ன மற்றும் அது பூர்த்தி செய்ய வேண்டிய மூன்று பண்புகள் என்ன என்பதை விளக்க இந்த ஆதாரம் பயன்படுகிறது."
+      }
+    ],
+    "suggested_followups": [
+      "லூப் இன்வேரியன்ட்டின் மூன்று பண்புகளில் 'Maintenance' ஏன் மிகவும் முக்கியமானது?",
+      "ஒரு குறிப்பிட்ட வரிசைப்படுத்தும் அல்காரிதத்திற்கு (sorting algorithm) லூப் இன்வேரியன்ட்டை எவ்வாறு பயன்படுத்துவது?",
+      "இன்வேரியன்ட் மற்றும் பேஸ் கேஸ் (base case) ஆகியவற்றுக்கு இடையே உள்ள தொடர்பு என்ன?"
+    ]
+  }
+]

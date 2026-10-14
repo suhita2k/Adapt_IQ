@@ -1,0 +1,80 @@
+[
+  {
+    "id": "fc-course-1790927358003-znvk-1790927383623-0",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-1",
+    "front": "What is the core principle and definition of Modular AI Pipeline?",
+    "back": "A system design approach where the AI processing logic is divided into independent, interchangeable modules.",
+    "source_ref": "Page 3",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790927358003-znvk-1790927383623-1",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790927383607-2",
+    "front": "What is the core principle and definition of SIH Project Framework?",
+    "back": "The structured methodology required for Smart India Hackathon project submissions.",
+    "source_ref": "Page 1",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790927358003-znvk-1790932392306-0",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-1",
+    "front": "What is the core principle and definition of Professional Summary?",
+    "back": "A concise overview of an individual's qualifications and career highlights.",
+    "source_ref": "Page 1",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790927358003-znvk-1790932392306-1",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-2",
+    "front": "What is the core principle and definition of Experience Documentation?",
+    "back": "The systematic recording of professional roles, responsibilities, and organizational affiliations.",
+    "source_ref": "Page 2",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790927358003-znvk-1790932392306-2",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-3",
+    "front": "What is the core principle and definition of Technical Skills Mapping?",
+    "back": "The identification and categorization of top-tier technical competencies relevant to a professional profile.",
+    "source_ref": "Page 1",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790927358003-znvk-1790932392306-3",
+    "user_id": "04d9e2fc-0830-4ce5-b370-aa6ef6d7f9d1",
+    "course_id": "course-1790927358003-znvk",
+    "concept_id": "c-course-1790927358003-znvk-1790932392291-4",
+    "front": "What is the core principle and definition of Educational Background?",
+    "back": "The formal documentation of academic credentials and certifications attained.",
+    "source_ref": "Page 3",
+    "next_review_date": "2026-10-02",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

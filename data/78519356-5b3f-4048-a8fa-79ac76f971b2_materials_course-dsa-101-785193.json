@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mat-textbook-01",
+    "course_id": "course-dsa-101-785193",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "title": "Introduction to Algorithms (CLRS 4th Edition)",
+    "file_name": "CLRS_Algorithms_4th_Ed.pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 38400000,
+    "page_count": 620,
+    "status": "indexed",
+    "extracted_chunks_count": 1420,
+    "uploaded_at": "2026-09-01T09:30:00Z",
+    "file_url": "/api/courses/course-dsa-101-785193/materials/mat-textbook-01/file"
+  },
+  {
+    "id": "mat-slides-01",
+    "course_id": "course-dsa-101-785193",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "title": "Lecture 07 - Recursion, Call Stacks & Recurrences",
+    "file_name": "Lecture07_Recursion_and_CallStacks.pptx",
+    "file_type": "slides",
+    "file_size_bytes": 14200000,
+    "slide_count": 42,
+    "status": "indexed",
+    "extracted_chunks_count": 180,
+    "uploaded_at": "2026-09-02T10:00:00Z",
+    "file_url": "/api/courses/course-dsa-101-785193/materials/mat-slides-01/file"
+  },
+  {
+    "id": "mat-lecture-01",
+    "course_id": "course-dsa-101-785193",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "title": "CS201 Lecture 12: Tree Traversals & Stack Depth Limits",
+    "file_name": "CS201_Lec12_TreeTraversals.mp4",
+    "file_type": "lecture_video",
+    "file_size_bytes": 320000000,
+    "duration_seconds": 3240,
+    "status": "indexed",
+    "extracted_chunks_count": 310,
+    "uploaded_at": "2026-09-03T14:00:00Z",
+    "file_url": "/api/courses/course-dsa-101-785193/materials/mat-lecture-01/file"
+  }
+]

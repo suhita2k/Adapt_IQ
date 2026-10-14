@@ -1,0 +1,62 @@
+[
+  {
+    "id": "src-1790876674823-klhu",
+    "course_id": "course-1790876667602-wtpg",
+    "material_id": "mat-1790876667847-f18x",
+    "material_title": "Algorithms Syllabus",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Algorithms Syllabus (notes), Page 45",
+    "snippet": "The Master Theorem provides asymptotic bounds for recurrences of the form T(n) = aT(n/b) + f(n).",
+    "confidence_score": 0.94,
+    "relevance_reason": "Outlines the foundational conditions for applying rapid recurrence solving.",
+    "page_number": 45,
+    "file_name": "syllabus.txt",
+    "file_url": "/api/courses/course-1790876667602-wtpg/materials/mat-1790876667847-f18x/file#page=45"
+  },
+  {
+    "id": "src-1790876674820-npri",
+    "course_id": "course-1790876667602-wtpg",
+    "material_id": "mat-1790876667847-f18x",
+    "material_title": "Algorithms Syllabus",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Algorithms Syllabus (notes), Slide 25",
+    "snippet": "Recursion trees expand recurrence relations into a graph where node values represent work at a given subproblem level.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Introduces visual estimation techniques for divide-and-conquer runtimes.",
+    "page_number": 25,
+    "file_name": "syllabus.txt",
+    "file_url": "/api/courses/course-1790876667602-wtpg/materials/mat-1790876667847-f18x/file#page=25"
+  },
+  {
+    "id": "src-1790876674818-46t3",
+    "course_id": "course-1790876667602-wtpg",
+    "material_id": "mat-1790876667847-f18x",
+    "material_title": "Algorithms Syllabus",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Algorithms Syllabus (notes), Page 12",
+    "snippet": "A loop invariant must hold true prior to the first iteration, remain true before subsequent iterations, and establish the postcondition upon termination.",
+    "confidence_score": 0.94,
+    "relevance_reason": "Defines the core three-step process of loop invariant validation.",
+    "page_number": 12,
+    "file_name": "syllabus.txt",
+    "file_url": "/api/courses/course-1790876667602-wtpg/materials/mat-1790876667847-f18x/file#page=12"
+  },
+  {
+    "id": "src-1790876667959",
+    "course_id": "course-1790876667602-wtpg",
+    "material_id": "mat-1790876667847-f18x",
+    "material_title": "Algorithms Syllabus",
+    "material_type": "notes",
+    "location_type": "page",
+    "location_reference": "Page 1",
+    "snippet": "Core definitions and syllabus topics introduced for Algorithms Syllabus.",
+    "confidence_score": 0.96,
+    "relevance_reason": "Primary chapter definition and foundational terminology.",
+    "page_number": 1,
+    "file_name": "syllabus.txt",
+    "file_url": "/api/courses/course-1790876667602-wtpg/materials/mat-1790876667847-f18x/file#page=1"
+  }
+]

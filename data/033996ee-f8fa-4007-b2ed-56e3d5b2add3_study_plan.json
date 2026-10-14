@@ -1,0 +1,82 @@
+{
+  "id": "plan-1790876969275",
+  "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+  "course_id": "course-1790876934634-rnpr",
+  "title": "தழுவல் தேர்வு தயாரிப்பு அட்டவணை",
+  "daily_goal_minutes": 60,
+  "streak_days": 3,
+  "tasks": [
+    {
+      "id": "task-m-1790876969274",
+      "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+      "course_id": "course-1790876934634-rnpr",
+      "concept_id": "c-course-1790876934634-rnpr-1",
+      "concept_name": "Asymptotic Analysis Basics",
+      "title": "தவறான கருத்தை சரிசெய்க: Loop Termination Confusion",
+      "task_type": "remediation",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "சமீபத்திய சோதனையில் தவறான அனுமானம் கண்டறியப்பட்டுள்ளது."
+    },
+    {
+      "id": "task-w-1790876969274-0",
+      "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+      "course_id": "course-1790876934634-rnpr",
+      "concept_id": "c-course-1790876934634-rnpr-1",
+      "concept_name": "Asymptotic Analysis Basics",
+      "title": "பலவீனமான கருத்தை மதிப்பாய்வு செய்க: Asymptotic Analysis Basics",
+      "task_type": "concept_review",
+      "estimated_minutes": 15,
+      "priority": "high",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "கற்றல் தேர்ச்சி குறைவாக உள்ளது (24%). AI ஆசிரியரிடம் விளக்கம் பெறவும்."
+    },
+    {
+      "id": "task-w-1790876969274-1",
+      "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+      "course_id": "course-1790876934634-rnpr",
+      "concept_id": "c-course-1790876934634-rnpr-2",
+      "concept_name": "Mathematical Induction",
+      "title": "பலவீனமான கருத்தை மதிப்பாய்வு செய்க: Mathematical Induction",
+      "task_type": "concept_review",
+      "estimated_minutes": 15,
+      "priority": "high",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "கற்றல் தேர்ச்சி குறைவாக உள்ளது (50%). AI ஆசிரியரிடம் விளக்கம் பெறவும்."
+    },
+    {
+      "id": "task-rev-1790876969274",
+      "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+      "course_id": "course-1790876934634-rnpr",
+      "concept_id": "concept-spaced",
+      "concept_name": "Cumulative Recall",
+      "title": "SM-2 ஃபிளாஷ்கார்டு நினைவுகூர்தல் அமர்வை முடிக்கவும்",
+      "task_type": "practice_quiz",
+      "estimated_minutes": 10,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "எபிங்ஹாஸ் நினைவக இழப்பு கால அளவு அடைந்துள்ளது."
+    },
+    {
+      "id": "task-quiz-1790876969274",
+      "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+      "course_id": "course-1790876934634-rnpr",
+      "concept_id": "concept-eval",
+      "concept_name": "Daily Diagnostic",
+      "title": "தினசரி 5-கேள்வி தழுவல் மதிப்பீடு",
+      "task_type": "practice_quiz",
+      "estimated_minutes": 15,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "சமீபத்திய பாடப்பிரிவுகளுக்கான கற்றல் இரட்டையை புதுப்பிக்கவும்."
+    }
+  ],
+  "created_at": "2026-10-01T17:49:29.275Z",
+  "updated_at": "2026-10-01T17:49:29.275Z"
+}

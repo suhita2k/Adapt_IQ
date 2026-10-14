@@ -1,0 +1,67 @@
+[
+  {
+    "id": "fc-course-1790876522572-gxws-1",
+    "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+    "course_id": "course-1790876522572-gxws",
+    "concept_id": "c-course-1790876522572-gxws-1",
+    "front": "What is the core invariant of Asymptotic Growth Notation?",
+    "back": "Asymptotic analysis provides a mathematical foundation for describing the limiting behavior of functions. It utilizes Big-O, Omega, and Theta notations to classify algorithms by their resource consumption.",
+    "source_ref": "Algorithms Syllabus (notes) - Page 5",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876522572-gxws-2",
+    "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+    "course_id": "course-1790876522572-gxws",
+    "concept_id": "c-course-1790876522572-gxws-2",
+    "front": "What is the core invariant of Formal Proofs of Correctness?",
+    "back": "Establishing algorithmic correctness requires rigorous mathematical induction over structural or computational steps. This ensures that the algorithm terminates and yields the expected output for all valid inputs.",
+    "source_ref": "Algorithms Syllabus (notes) - Page 5",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876522572-gxws-3",
+    "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+    "course_id": "course-1790876522572-gxws",
+    "concept_id": "c-course-1790876522572-gxws-3",
+    "front": "What is the core invariant of Loop Invariants?",
+    "back": "Loop invariants are properties that hold true before and after each iteration of a loop. They serve as the primary mechanism for proving the correctness of iterative algorithms.",
+    "source_ref": "Algorithms Syllabus (notes) - Page 5",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876522572-gxws-4",
+    "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+    "course_id": "course-1790876522572-gxws",
+    "concept_id": "c-course-1790876522572-gxws-4",
+    "front": "What is the core invariant of Recursive Problem Solving?",
+    "back": "Recursion involves breaking a problem down into smaller instances of the same problem until reaching a base case. It forms the algorithmic foundation for divide-and-conquer strategies.",
+    "source_ref": "Algorithms Syllabus (notes) - Page 5",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1790876522572-gxws-5",
+    "user_id": "2ddda2da-2d43-445d-b434-ac75a733c90f",
+    "course_id": "course-1790876522572-gxws",
+    "concept_id": "c-course-1790876522572-gxws-5",
+    "front": "What is the core invariant of Recursion Trees?",
+    "back": "Recursion trees visually map out the cost of recursive function calls at each level of execution. They are instrumental in intuitively solving recurrences before applying formal methods.",
+    "source_ref": "Algorithms Syllabus (notes) - Page 5",
+    "next_review_date": "2026-10-01",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

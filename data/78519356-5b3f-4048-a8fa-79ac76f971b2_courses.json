@@ -1,0 +1,49 @@
+[
+  {
+    "id": "course-1790878780921-1jz2",
+    "owner_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "title": "Quantum Computing Empty Test",
+    "code": "",
+    "description": "Testing zero materials",
+    "category": "Computer Science",
+    "color": "#B1A15A",
+    "icon": "BookOpen",
+    "total_concepts": 0,
+    "mastered_concepts": 0,
+    "materials_count": 0,
+    "created_at": "2026-10-01T18:19:40.921Z",
+    "updated_at": "2026-10-01T18:19:40.921Z"
+  },
+  {
+    "id": "course-dsa-101-785193",
+    "owner_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "title": "Data Structures & Algorithms",
+    "code": "CS201",
+    "description": "Master core algorithmic problem solving, recursion, dynamic programming, and hierarchical data structures with verified textbook grounding.",
+    "category": "Computer Science",
+    "color": "indigo",
+    "icon": "Brain",
+    "total_concepts": 8,
+    "mastered_concepts": 3,
+    "created_at": "2026-10-01T15:44:48.835Z",
+    "updated_at": "2026-10-01T15:44:48.835Z",
+    "materials_count": 3,
+    "last_studied": "2 hours ago"
+  },
+  {
+    "id": "course-ml-201-785193",
+    "owner_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "title": "Machine Learning Systems",
+    "code": "CS340",
+    "description": "Foundations of gradient descent, neural network backpropagation, and loss surface optimization.",
+    "category": "Artificial Intelligence",
+    "color": "emerald",
+    "icon": "Cpu",
+    "total_concepts": 6,
+    "mastered_concepts": 4,
+    "created_at": "2026-10-01T15:44:48.835Z",
+    "updated_at": "2026-10-01T15:44:48.836Z",
+    "materials_count": 2,
+    "last_studied": "3 days ago"
+  }
+]

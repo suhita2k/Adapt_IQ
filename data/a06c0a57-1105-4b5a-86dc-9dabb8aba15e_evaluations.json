@@ -1,0 +1,38 @@
+[
+  {
+    "id": "eval-1792000298377",
+    "category": "RAG Grounding",
+    "title": "Live Gemini RAGAS Verification Run",
+    "input_prompt": "Evaluate binary search tree balance factor and AVL rotation invariants with exact citations",
+    "expected_outcome": "Evidence Gate verified definition with exact citation.",
+    "actual_outcome": "Based on the provided course context, there is no mention of binary search tree balance factors, AVL rotation invariants, or data structures. The available text...",
+    "status": "passed",
+    "metric_score": 1,
+    "latency_ms": 1947,
+    "verified_at": "2026-10-14T17:51:38.377Z"
+  },
+  {
+    "id": "eval-1791991416394",
+    "category": "RAG Grounding",
+    "title": "Live Gemini RAGAS Verification Run",
+    "input_prompt": "Explain the core principles and invariants verified in the course.",
+    "expected_outcome": "Evidence Gate verified definition with exact citation.",
+    "actual_outcome": "Based on the provided course context, the core principles and invariants verified in the course involve foundational definitions, structural properties, and inv...",
+    "status": "passed",
+    "metric_score": 1,
+    "latency_ms": 1820,
+    "verified_at": "2026-10-14T15:23:36.394Z"
+  },
+  {
+    "id": "eval-1791991347554",
+    "category": "RAG Grounding",
+    "title": "Live Gemini RAGAS Verification Run",
+    "input_prompt": "Explain the core principles and invariants verified in the course.",
+    "expected_outcome": "Evidence Gate verified definition with exact citation.",
+    "actual_outcome": "Based on the provided course context, the core principles and structural invariants verified in the course pertain to foundational definitions and structural pr...",
+    "status": "passed",
+    "metric_score": 1,
+    "latency_ms": 1255,
+    "verified_at": "2026-10-14T15:22:27.554Z"
+  }
+]

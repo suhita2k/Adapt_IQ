@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mat-1790876934845-na7d",
+    "course_id": "course-1790876934634-rnpr",
+    "user_id": "033996ee-f8fa-4007-b2ed-56e3d5b2add3",
+    "title": "Algorithms Syllabus",
+    "file_name": "syllabus.txt",
+    "file_type": "notes",
+    "file_size_bytes": 344,
+    "page_count": 12,
+    "status": "indexed",
+    "extracted_chunks_count": 42,
+    "uploaded_at": "2026-10-01T17:48:54.845Z",
+    "file_url": "/api/courses/course-1790876934634-rnpr/materials/mat-1790876934845-na7d/file"
+  }
+]

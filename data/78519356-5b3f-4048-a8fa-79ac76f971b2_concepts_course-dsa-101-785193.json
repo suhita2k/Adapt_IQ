@@ -1,0 +1,141 @@
+[
+  {
+    "id": "c-arrays",
+    "course_id": "course-dsa-101-785193",
+    "name": "Arrays",
+    "description": "Contiguous memory sequences with O(1) random index access and O(n) insertions/deletions.",
+    "category": "Linear Structures",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [
+      "Dynamic Arrays",
+      "Prefix Sums",
+      "Two Pointers"
+    ]
+  },
+  {
+    "id": "c-linked-lists",
+    "course_id": "course-dsa-101-785193",
+    "name": "Linked Lists",
+    "description": "Node-based linear chains connected by pointers, facilitating O(1) pointer updates.",
+    "category": "Linear Structures",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "c-arrays"
+    ],
+    "subconcepts": [
+      "Singly Linked",
+      "Doubly Linked",
+      "Cycle Detection (Floyd)"
+    ]
+  },
+  {
+    "id": "c-stacks",
+    "course_id": "course-dsa-101-785193",
+    "name": "Stacks",
+    "description": "LIFO (Last In, First Out) linear data container representing execution frames and monotonic buffers.",
+    "category": "Linear Structures",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "c-arrays",
+      "c-linked-lists"
+    ],
+    "subconcepts": [
+      "Call Stack",
+      "Monotonic Stack",
+      "Expression Parsing"
+    ]
+  },
+  {
+    "id": "c-trees",
+    "course_id": "course-dsa-101-785193",
+    "name": "Trees",
+    "description": "Hierarchical acyclic connected graphs with root nodes, parent-child edges, and leaf nodes.",
+    "category": "Hierarchical Structures",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "c-linked-lists",
+      "c-stacks"
+    ],
+    "subconcepts": [
+      "Binary Trees",
+      "Tree Traversals (DFS/BFS)",
+      "Height & Depth"
+    ]
+  },
+  {
+    "id": "c-bst",
+    "course_id": "course-dsa-101-785193",
+    "name": "Binary Search Trees (BST)",
+    "description": "Ordered binary trees where left subtree keys < node key < right subtree keys, enabling O(log n) lookup.",
+    "category": "Hierarchical Structures",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "c-trees"
+    ],
+    "subconcepts": [
+      "BST Invariant",
+      "Successor/Predecessor",
+      "Balanced BSTs (AVL, Red-Black)"
+    ]
+  },
+  {
+    "id": "c-recursion",
+    "course_id": "course-dsa-101-785193",
+    "name": "Recursion",
+    "description": "Self-referential algorithmic technique solving problems by reducing them to smaller identical subproblems.",
+    "category": "Algorithmic Paradigms",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "c-stacks"
+    ],
+    "subconcepts": [
+      "Base Cases",
+      "Call Stack Frames",
+      "Divide and Conquer",
+      "Tail Recursion"
+    ],
+    "common_pitfalls": [
+      "Missing base case",
+      "Infinite stack recursion",
+      "Off-by-one subproblem reduction"
+    ]
+  },
+  {
+    "id": "c-dp",
+    "course_id": "course-dsa-101-785193",
+    "name": "Dynamic Programming",
+    "description": "Optimization paradigm breaking problems into overlapping subproblems with optimal substructure.",
+    "category": "Algorithmic Paradigms",
+    "difficulty_level": 5,
+    "prerequisites": [
+      "c-recursion",
+      "c-arrays"
+    ],
+    "subconcepts": [
+      "Memoization (Top-down)",
+      "Tabulation (Bottom-up)",
+      "State Transitions",
+      "Space Optimization"
+    ]
+  },
+  {
+    "id": "c-graphs",
+    "course_id": "course-dsa-101-785193",
+    "name": "Graph Traversals",
+    "description": "Systematic exploration of vertices and edges in arbitrary networks using Breadth-First and Depth-First searches.",
+    "category": "Graph Algorithms",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "c-trees",
+      "c-recursion",
+      "c-stacks"
+    ],
+    "subconcepts": [
+      "BFS (Queue)",
+      "DFS (Recursion/Stack)",
+      "Topological Sort",
+      "Cycle Detection"
+    ]
+  }
+]

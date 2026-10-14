@@ -1,0 +1,68 @@
+{
+  "id": "plan-course-1790872647744-h8zv",
+  "user_id": "fresh-user-1790872645763",
+  "course_id": "course-1790872647744-h8zv",
+  "title": "Distributed Consensus & Raft Protocols Adaptive Study Plan",
+  "daily_goal_minutes": 60,
+  "streak_days": 0,
+  "tasks": [
+    {
+      "id": "task-1790872663810-0",
+      "user_id": "fresh-user-1790872645763",
+      "course_id": "course-1790872647744-h8zv",
+      "concept_id": "c-course-1790872647744-h8zv-1",
+      "concept_name": "State Machine Replication (SMR)",
+      "title": "Study Concept: State Machine Replication (SMR)",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for State Machine Replication (SMR) in Distributed Consensus & Raft Protocols."
+    },
+    {
+      "id": "task-1790872663811-1",
+      "user_id": "fresh-user-1790872645763",
+      "course_id": "course-1790872647744-h8zv",
+      "concept_id": "c-course-1790872647744-h8zv-2",
+      "concept_name": "Paxos Consensus Protocol",
+      "title": "Study Concept: Paxos Consensus Protocol",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "high",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Paxos Consensus Protocol in Distributed Consensus & Raft Protocols."
+    },
+    {
+      "id": "task-1790872663811-2",
+      "user_id": "fresh-user-1790872645763",
+      "course_id": "course-1790872647744-h8zv",
+      "concept_id": "c-course-1790872647744-h8zv-3",
+      "concept_name": "Raft Leader Election",
+      "title": "Study Concept: Raft Leader Election",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Raft Leader Election in Distributed Consensus & Raft Protocols."
+    },
+    {
+      "id": "task-1790872663811-3",
+      "user_id": "fresh-user-1790872645763",
+      "course_id": "course-1790872647744-h8zv",
+      "concept_id": "c-course-1790872647744-h8zv-4",
+      "concept_name": "Raft Log Replication",
+      "title": "Study Concept: Raft Log Replication",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Raft Log Replication in Distributed Consensus & Raft Protocols."
+    }
+  ],
+  "created_at": "2026-10-01T16:37:43.811Z",
+  "updated_at": "2026-10-01T16:37:43.811Z"
+}

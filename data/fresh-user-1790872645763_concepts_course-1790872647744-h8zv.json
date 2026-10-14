@@ -1,0 +1,132 @@
+[
+  {
+    "id": "c-course-1790872647744-h8zv-1",
+    "course_id": "course-1790872647744-h8zv",
+    "name": "State Machine Replication (SMR)",
+    "description": "A fundamental technique for building fault-tolerant distributed systems by running an identical deterministic state machine on multiple physical nodes. Every replica processes the exact same sequence of inputs in the same order to guarantee consistent state transitions.",
+    "category": "Foundations",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [
+      "Deterministic State Machines",
+      "Command Logging",
+      "Active Replication"
+    ],
+    "common_pitfalls": [
+      "Assuming state machines can safely execute non-deterministic operations like reading local system time or generating random numbers."
+    ]
+  },
+  {
+    "id": "c-course-1790872647744-h8zv-2",
+    "course_id": "course-1790872647744-h8zv",
+    "name": "Paxos Consensus Protocol",
+    "description": "The classic consensus protocol designed to achieve agreement on a single value among a set of potentially unreliable nodes. It serves as the theoretical foundation for modern consensus protocols, though it is notoriously difficult to implement in practice.",
+    "category": "Foundations",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "State Machine Replication (SMR)"
+    ],
+    "subconcepts": [
+      "Single-Decree Paxos",
+      "Multi-Paxos",
+      "Proposer, Acceptor, and Learner Roles"
+    ],
+    "common_pitfalls": [
+      "Confusing Single-Decree Paxos (which agrees on only one value) with Multi-Paxos (which manages a continuous log of values)."
+    ]
+  },
+  {
+    "id": "c-course-1790872647744-h8zv-3",
+    "course_id": "course-1790872647744-h8zv",
+    "name": "Raft Leader Election",
+    "description": "The mechanism by which a Raft cluster dynamically selects a single coordinator node, known as the leader, to manage the replicated log. It utilizes randomized election timeouts to prevent split votes and ensure liveness.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "State Machine Replication (SMR)"
+    ],
+    "subconcepts": [
+      "Randomized Election Timeouts",
+      "RequestVote RPC",
+      "Term Numbers"
+    ],
+    "common_pitfalls": [
+      "Failing to randomize election timeouts, which leads to persistent split votes where no candidate can achieve a majority."
+    ]
+  },
+  {
+    "id": "c-course-1790872647744-h8zv-4",
+    "course_id": "course-1790872647744-h8zv",
+    "name": "Raft Log Replication",
+    "description": "The process where the elected leader accepts client commands, appends them to its local log, and propagates them to follower nodes. The leader ensures that all followers eventually apply the exact same sequence of entries.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Raft Leader Election"
+    ],
+    "subconcepts": [
+      "AppendEntries RPC",
+      "Commit Index",
+      "Log Entry Matching"
+    ],
+    "common_pitfalls": [
+      "Assuming a log entry is safely committed as soon as a majority of nodes write it to disk, without verifying if it was created during the leader's current term."
+    ]
+  },
+  {
+    "id": "c-course-1790872647744-h8zv-5",
+    "course_id": "course-1790872647744-h8zv",
+    "name": "Raft Log Invariants",
+    "description": "The structural rules that guarantee logs remain consistent across different nodes over time. Specifically, if two logs contain an entry with the same index and term, they are guaranteed to store the same command and be identical up to that index.",
+    "category": "Advanced",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Raft Log Replication"
+    ],
+    "subconcepts": [
+      "Log Matching Property",
+      "Election Safety"
+    ],
+    "common_pitfalls": [
+      "Believing that conflicting log entries can persist indefinitely, when in reality they are systematically overwritten by the leader's authoritative log."
+    ]
+  },
+  {
+    "id": "c-course-1790872647744-h8zv-6",
+    "course_id": "course-1790872647744-h8zv",
+    "name": "Raft Leader Completeness",
+    "description": "A critical safety property ensuring that if a log entry is committed in a given term, that entry will be present in the logs of the leaders for all higher-numbered terms. This prevents a newly elected leader from overwriting committed data.",
+    "category": "Advanced",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Raft Leader Election",
+      "Raft Log Invariants"
+    ],
+    "subconcepts": [
+      "Up-to-Date Election Restriction",
+      "Commitment of Past Terms"
+    ],
+    "common_pitfalls": [
+      "Forgetting that a candidate must have a log that is at least as up-to-date as any other node in the majority to win an election."
+    ]
+  },
+  {
+    "id": "c-course-1790872647744-h8zv-7",
+    "course_id": "course-1790872647744-h8zv",
+    "name": "Raft State Machine Safety",
+    "description": "The ultimate safety guarantee of the Raft protocol stating that if a server has applied a log entry at a given index to its state machine, no other server will ever apply a different log entry for the same index. This ensures linearizable execution across the cluster.",
+    "category": "Advanced",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Raft Leader Completeness",
+      "Raft Log Replication"
+    ],
+    "subconcepts": [
+      "Safety Proof Induction",
+      "Linearizable Reads"
+    ],
+    "common_pitfalls": [
+      "Applying uncommitted log entries to the local state machine prematurely, leading to state divergence when those entries are overwritten."
+    ]
+  }
+]

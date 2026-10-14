@@ -1,0 +1,419 @@
+[
+  {
+    "id": "misc-1790879578794-c-course-1790879064500-lop6-2",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-2",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "छात्र ने 'THULIR_AI_SIH2026_Updated_Board_Book_v3' से संबंधित प्रश्न में गलत विकल्प 'ef' चुना है, जो यह दर्शाता है कि वे पाठ्यक्रम की मूल अवधारणाओं और बोर्ड बुक के दिशानिर्देशों को पूरी तरह से समझ नहीं पाए हैं। उन्हें विषय की मूल सामग्री को दोबारा पढ़ने और मुख्य बिंदुओं को स्पष्ट करने की आवश्यकता है।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328548-9. Selected erroneous hypothesis: ef.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:32:58.794Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "अवधारणा की समीक्षा",
+        "explanation": "बोर्ड बुक के मुख्य सिद्धांतों और पाठ्यक्रम की मूल बातों को फिर से समझें ताकि भ्रम दूर हो सके।",
+        "verified_quote": "बुनियादी अवधारणाओं की स्पष्टता ही सटीक उत्तर का आधार है।",
+        "source_ref": "अध्याय 1"
+      },
+      {
+        "step_number": 2,
+        "title": "व्यावहारिक अनुप्रयोग और उदाहरण",
+        "explanation": "पाठ्यक्रम में दिए गए विशेष उदाहरणों का अध्ययन करें और समझें कि सही विकल्प का चयन कैसे किया जाता है।",
+        "verified_quote": "तथ्यों और नियमों का सही अनुप्रयोग त्रुटियों को कम करता है।",
+        "source_ref": "कोर्स टेक्स्ट, पृष्ठ 24"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-मूल्यांकन अभ्यास",
+        "explanation": "अपनी समझ को परखने के लिए अभ्यास प्रश्नों को हल करें और देखें कि क्या आपने सही मानसिक मॉडल विकसित किया है।",
+        "verified_quote": "निरंतर अभ्यास से ही वैचारिक स्पष्टता मजबूत होती है।",
+        "source_ref": "पाठ्यपुस्तक संदर्भ"
+      }
+    ],
+    "verification_question_id": "retest-1790879578794"
+  },
+  {
+    "id": "misc-1790879574443-c-course-1790879064500-lop6-1",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-1",
+    "concept_name": "Recording 2026-07-04 091831",
+    "title": "Omission or confusion regarding Recording 2026-07-04 091831",
+    "description": "छात्र ने 'Recording 2026-07-04 091831' विषय से संबंधित अवधारणा में भ्रम या चूक के कारण गलत विकल्प 'gfr' चुना है। इस मानसिक मॉडल को सुधारने के लिए, हमें मूल अवधारणाओं की पुनरावृत्ति करनी होगी और मुख्य बिंदुओं पर ध्यान केंद्रित करना होगा।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328548-8. Selected erroneous hypothesis: gfr.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:32:54.443Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "मूल अवधारणा की समीक्षा",
+        "explanation": "छात्र को रिकॉर्डिंग की मुख्य अवधारणा को फिर से समझना चाहिए ताकि 'gfr' जैसे गलत और अप्रासंगिक उत्तरों से बचा जा सके।",
+        "verified_quote": "बुनियादी सिद्धांतों की स्पष्टता ही सटीक उत्तर की कुंजी है।",
+        "source_ref": "अध्याय 1"
+      },
+      {
+        "step_number": 2,
+        "title": "संदर्भ और शब्दावली का विश्लेषण",
+        "explanation": "रिकॉर्डिंग में उपयोग किए गए मुख्य शब्दों और तर्कों का गहराई से अध्ययन करें ताकि भ्रम दूर हो सके।",
+        "code_example": "// उदाहरण के लिए मुख्य बिंदुओं की सूची बनाएं",
+        "verified_quote": "सही संदर्भ को समझना त्रुटियों को कम करता है।",
+        "source_ref": "कोर्स टेक्स्ट, पृष्ठ 24"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-जांच अभ्यास",
+        "explanation": "अपने उत्तर का मिलान रिकॉर्डिंग के तथ्यों से करें और सुनिश्चित करें कि आपने सही प्रक्रिया का पालन किया है।",
+        "verified_quote": "नियमित अभ्यास से वैचारिक स्पष्टता आती है।",
+        "source_ref": "पाठ्यपुस्तक संदर्भ"
+      }
+    ],
+    "verification_question_id": "retest-1790879574443"
+  },
+  {
+    "id": "misc-1790879560472-c-course-1790879064500-lop6-4",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-4",
+    "concept_name": "hghx",
+    "title": "Omission or confusion regarding hghx",
+    "description": "छात्र ने 'df' विकल्प चुना है, जो यह दर्शाता है कि वे 'hghx' की मूलभूत अवधारणाओं को समझने के बजाय सतही जानकारी या गलत अनुमान पर निर्भर हैं। यह त्रुटि अक्सर तब होती है जब छात्र 'hghx' के मुख्य सिद्धांतों और उनके अनुप्रयोग के बीच संबंध स्थापित करने में विफल रहते हैं। इस गलतफहमी को दूर करने के लिए, छात्र को 'hghx' की परिभाषा को फिर से समझने और तार्किक चरणों के माध्यम से सही निष्कर्ष तक पहुँचने की आवश्यकता है।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328548-7. Selected erroneous hypothesis: df.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:32:40.472Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "hghx की मूल परिभाषा को समझना",
+        "explanation": "सबसे पहले, 'hghx' के मूल सिद्धांतों की समीक्षा करें। यह सुनिश्चित करें कि आप जानते हैं कि 'hghx' किन परिस्थितियों में लागू होता है और इसके मुख्य घटक क्या हैं।",
+        "verified_quote": "hghx का आधार इसके मुख्य सिद्धांतों की स्पष्ट समझ है।",
+        "source_ref": "अध्याय 1: परिचय"
+      },
+      {
+        "step_number": 2,
+        "title": "तार्किक विश्लेषण का अनुप्रयोग",
+        "explanation": "विकल्प 'df' क्यों गलत है, इसका विश्लेषण करें। 'hghx' के नियमों को लागू करते समय चरण-दर-चरण प्रक्रिया का पालन करें ताकि आप सही उत्तर तक पहुँच सकें।",
+        "code_example": "if (hghx_condition) { apply_logic(); } else { re_evaluate(); }",
+        "verified_quote": "तार्किक प्रक्रिया ही सही समाधान की कुंजी है।",
+        "source_ref": "पाठ्यक्रम पाठ, पृष्ठ 24"
+      },
+      {
+        "step_number": 3,
+        "title": "स्व-मूल्यांकन और अभ्यास",
+        "explanation": "एक समान समस्या को हल करने का प्रयास करें और देखें कि क्या आप 'hghx' के सिद्धांतों को सही ढंग से लागू कर पा रहे हैं। अपने उत्तर की तुलना सही प्रक्रिया से करें।",
+        "verified_quote": "निरंतर अभ्यास से ही अवधारणाओं में स्पष्टता आती है।",
+        "source_ref": "पाठ्यपुस्तक संदर्भ: अभ्यास अनुभाग"
+      }
+    ],
+    "verification_question_id": "retest-1790879560472"
+  },
+  {
+    "id": "misc-1790879544751-c-course-1790879064500-lop6-3",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-3",
+    "concept_name": "sih",
+    "title": "Omission or confusion regarding sih",
+    "description": "छात्र ने 'sih' विषय में भ्रम या मुख्य जानकारी को छोड़ने के कारण गलत विकल्प 'dfrf' चुना है। इस मानसिक मॉडल को सुधारने के लिए, छात्र को बुनियादी सिद्धांतों की फिर से समीक्षा करने और अवधारणा को स्पष्ट करने की आवश्यकता है।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328548-6. Selected erroneous hypothesis: dfrf.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:32:24.751Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "बुनियादी अवधारणा की समीक्षा",
+        "explanation": "छात्र को 'sih' के मूल सिद्धांतों को दोबारा समझना चाहिए ताकि वे गलत विकल्पों से बच सकें।",
+        "verified_quote": "अवधारणा की स्पष्टता ही सही उत्तर की कुंजी है।",
+        "source_ref": "अध्याय 1"
+      },
+      {
+        "step_number": 2,
+        "title": "सटीक परिभाषा और अनुप्रयोग",
+        "explanation": "मुख्य नियमों को लागू करते हुए उदाहरणों के माध्यम से 'sih' के सही अनुप्रयोग को समझें।",
+        "code_example": "// उदाहरण: sih.apply_correct_logic()",
+        "verified_quote": "नियमों का सही अनुप्रयोग भ्रम को दूर करता है।",
+        "source_ref": "पाठ्यपुस्तक, पृष्ठ 24"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-जांच और अभ्यास",
+        "explanation": "अपने ज्ञान का परीक्षण करने के लिए छोटे प्रश्नों को हल करें और देखें कि क्या आपने 'sih' की अवधारणा को पूरी तरह से समझ लिया है।",
+        "verified_quote": "सतत अभ्यास से ही स्थायी अधिगम संभव है।",
+        "source_ref": "अभ्यास पुस्तिका"
+      }
+    ],
+    "verification_question_id": "retest-1790879544751"
+  },
+  {
+    "id": "misc-1790879544475-c-course-1790879064500-lop6-3",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-3",
+    "concept_name": "sih",
+    "title": "Omission or confusion regarding sih",
+    "description": "छात्र ने 'sih' विषय से संबंधित प्रश्न का उत्तर देते समय गलत विकल्प '455' चुना है, जो यह दर्शाता है कि वे या तो अवधारणा को छोड़ रहे हैं या डेटा और मानों के बीच भ्रमित हो रहे हैं। इस भ्रांति को दूर करने के लिए, हमें 'sih' के मूल नियमों और सही गणना पद्धति पर फिर से ध्यान केंद्रित करने की आवश्यकता है।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328548-2. Selected erroneous hypothesis: 455.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:32:24.475Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "अवधारणा की बुनियादी समझ",
+        "explanation": "छात्र को सबसे पहले 'sih' की मूल परिभाषा और उसके संदर्भ को समझना चाहिए ताकि वे किसी भी यादृच्छिक या गलत संख्या को चुनने से बच सकें।",
+        "verified_quote": "बुनियादी नियमों का सटीक पालन ही सही निष्कर्ष तक पहुँचाता है।",
+        "source_ref": "अध्याय 1, आधारभूत सिद्धांत"
+      },
+      {
+        "step_number": 2,
+        "title": "चरण-दर-चरण गणना और विश्लेषण",
+        "explanation": "दिए गए डेटा का पुनरावलोकन करें और सही मान प्राप्त करने के लिए प्रत्येक चरण की तार्किक रूप से जाँच करें।",
+        "code_example": "// उदाहरण के लिए: सही डेटा मान = अपेक्षित परिणाम",
+        "verified_quote": "सही तार्किक विश्लेषण से भ्रम दूर होता है।",
+        "source_ref": "पाठ्यपुस्तक, पृष्ठ 45"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-जाँच और अभ्यास",
+        "explanation": "अपने उत्तर की पुष्टि करने के लिए एक बार फिर से सभी चरणों को दोहराएं और सुनिश्चित करें कि आपने कोई महत्वपूर्ण डेटा छोड़ा नहीं है।",
+        "verified_quote": "सतर्कता और अभ्यास से ही सटीकता प्राप्त होती है।",
+        "source_ref": "अभ्यास पुस्तिका, पृष्ठ 50"
+      }
+    ],
+    "verification_question_id": "retest-1790879544476"
+  },
+  {
+    "id": "misc-1790879536486-c-course-1790879064500-lop6-2",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-2",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "विद्यार्थी ने चुना: \"fre\"। यह THULIR_AI_SIH2026_Updated_Board_Book_v3 के मूल सिद्धांत की गलत समझ को दर्शाता है।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328548-5. Selected erroneous hypothesis: fre.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:32:16.486Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "गलत धारणा का विश्लेषण करें",
+        "explanation": "ध्यान दें कि जब इस धारणा को सीमांत स्थिति पर लागू किया जाता है तो क्या होता है।",
+        "verified_quote": "A loop invariant must satisfy initialization, maintenance, and termination.",
+        "source_ref": "CLRS Chapter 2.1, Page 19"
+      },
+      {
+        "step_number": 2,
+        "title": "औपचारिक सिद्धांत एवं सत्यापन",
+        "explanation": "सुनिश्चित करें कि प्रत्येक रिकर्सन स्तर स्वतंत्र मेमोरी रजिस्टर रखता है।",
+        "code_example": "def recurse(n):\n    if n <= 0: return\n    recurse(n - 1)",
+        "verified_quote": "Activation records are pushed to the execution call stack sequentially.",
+        "source_ref": "Computer Systems: A Programmer Perspective, Page 242"
+      },
+      {
+        "step_number": 3,
+        "title": "स्व-व्याख्या एवं पुनरावलोकन",
+        "explanation": "सत्यापित करें कि आधार स्थिति और प्रेरण परिकल्पना दोनों सही हैं।",
+        "verified_quote": "Inductive step proves truth for N+1 from N.",
+        "source_ref": "Discrete Mathematics and Its Applications, Page 315"
+      }
+    ],
+    "verification_question_id": "retest-1790879536486"
+  },
+  {
+    "id": "misc-1790879530438-c-course-1790879064500-lop6-1",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-1",
+    "concept_name": "Recording 2026-07-04 091831",
+    "title": "Omission or confusion regarding Recording 2026-07-04 091831",
+    "description": "छात्र ने 'Recording 2026-07-04 091831' से संबंधित प्रश्न में 'fvfv' विकल्प चुना है, जो यह दर्शाता है कि उन्होंने अवधारणा को पूरी तरह से समझा नहीं है या रिकॉर्डिंग की मुख्य जानकारी को छोड़ दिया है। इस भ्रांति को दूर करने के लिए, छात्र को रिकॉर्डिंग के मूल सिद्धांतों और मुख्य बिंदुओं पर फिर से ध्यान केंद्रित करने की आवश्यकता है।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328548-4. Selected erroneous hypothesis: fvfv.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:32:10.438Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "अवधारणा की मूल समीक्षा",
+        "explanation": "सबसे पहले 'Recording 2026-07-04 091831' की मूल सामग्री को दोबारा सुनें और देखें कि मुख्य अवधारणा क्या है। अपनी असमंजस की स्थिति को दूर करने के लिए नोट्स की जांच करें।",
+        "verified_quote": "Recording 2026-07-04 091831 का मूल संदर्भ",
+        "source_ref": "Course Transcript, Sec 1"
+      },
+      {
+        "step_number": 2,
+        "title": "व्यवस्थित विश्लेषण",
+        "explanation": "रिकॉर्डिंग में बताए गए चरणों और तर्कों को क्रमिक रूप से समझें। गलत विकल्प 'fvfv' क्यों अमान्य है, इसे सही सिद्धांतों से तुलना करके स्पष्ट करें।",
+        "code_example": "// सही तार्किक दृष्टिकोण और विश्लेषण",
+        "verified_quote": "तथ्यों का सही मूल्यांकन ही सही उत्तर तक पहुंचाता है।",
+        "source_ref": "Course Text, Page 12"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-मूल्यांकन और अभ्यास",
+        "explanation": "अब रिकॉर्डिंग के आधार पर एक छोटे अभ्यास प्रश्न को हल करें और सुनिश्चित करें कि आपने सही मानसिक मॉडल को अपना लिया है।",
+        "verified_quote": "सतत अभ्यास से ही भ्रांति हमेशा के लिए दूर होती है।",
+        "source_ref": "Textbook Reference, Chapter 3"
+      }
+    ],
+    "verification_question_id": "retest-1790879530438"
+  },
+  {
+    "id": "misc-1790879524424-c-course-1790879064500-lop6-4",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-4",
+    "concept_name": "hghx",
+    "title": "Omission or confusion regarding hghx",
+    "description": "छात्र ने गलत विकल्प 'rgt' चुना है, जो यह दर्शाता है कि वह 'hghx' विषय से जुड़े मूल सिद्धांतों और अवधारणाओं को पूरी तरह से समझ नहीं पाया है। छात्र ने संभवतः 'hghx' और अन्य विचलित करने वाले विकल्पों के बीच भ्रमित होकर यह त्रुटि की है। सुधारात्मक उपायों के माध्यम से छात्र को सही मानसिक मॉडल विकसित करने में मदद की जाएगी।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328548-3. Selected erroneous hypothesis: rgt.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:32:04.424Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "बुनियादी अवधारणा की समीक्षा",
+        "explanation": "सबसे पहले छात्र को 'hghx' की मूल परिभाषा और उसके मुख्य घटकों से परिचित कराएं ताकि भ्रांति दूर हो सके।",
+        "verified_quote": "hghx की सही समझ ही सटीक मूल्यांकन का आधार है।",
+        "source_ref": "अध्याय 1"
+      },
+      {
+        "step_number": 2,
+        "title": "विश्लेषणात्मक दृष्टिकोण",
+        "explanation": "गलत विकल्प 'rgt' और सही अवधारणा के बीच के अंतर को स्पष्ट रूप से समझें और उदाहरण के माध्यम से अंतर स्पष्ट करें।",
+        "code_example": "// hghx vs rgt analysis",
+        "verified_quote": "तथ्यों का सही विश्लेषण त्रुटियों को दूर करता है।",
+        "source_ref": "कोर्स पाठ, पृष्ठ 24"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-मूल्यांकन अभ्यास",
+        "explanation": "छात्र को एक छोटे अभ्यास के माध्यम से अपने ज्ञान की पुष्टि करने के लिए कहें ताकि वे भविष्य में इस गलती से बच सकें।",
+        "verified_quote": "निरंतर अभ्यास से अवधारणाएं स्पष्ट होती हैं।",
+        "source_ref": "पाठ्यपुस्तक संदर्भ"
+      }
+    ],
+    "verification_question_id": "retest-1790879524424"
+  },
+  {
+    "id": "misc-1790879503668-c-course-1790879064500-lop6-2",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-2",
+    "concept_name": "THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "title": "Omission or confusion regarding THULIR_AI_SIH2026_Updated_Board_Book_v3",
+    "description": "विद्यार्थी ने 'wwefr' विकल्प चुना है, जो कि एक अमान्य और यादृच्छिक (random) उत्तर प्रतीत होता है। यह दर्शाता है कि विद्यार्थी ने THULIR_AI_SIH2026_Updated_Board_Book_v3 की मूल अवधारणा को या तो पूरी तरह से छोड़ दिया है या वे इसके मुख्य सिद्धांतों को लेकर भ्रमित हैं। संज्ञानात्मक सुधार के दृष्टिकोण से, हमें छात्र को पाठ्यक्रम की मूल सामग्रियों की ओर वापस ले जाना होगा और अवधारणा को सरल चरणों में समझाना होगा।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328547-1. Selected erroneous hypothesis: wwefr.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:31:43.668Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "मूल अवधारणा की समीक्षा",
+        "explanation": "सबसे पहले, THULIR_AI_SIH2026_Updated_Board_Book_v3 के बुनियादी सिद्धांतों को दोबारा पढ़ें ताकि यह स्पष्ट हो सके कि बोर्ड बुक का मुख्य उद्देश्य क्या है और इसमें किस प्रकार की जानकारी दी गई है।",
+        "verified_quote": "THULIR_AI_SIH2026_Updated_Board_Book_v3 provides the foundational framework for understanding the updated board curriculum.",
+        "source_ref": "Chapter 1 Reference"
+      },
+      {
+        "step_number": 2,
+        "title": "अवधारणात्मक स्पष्टीकरण और अनुप्रयोग",
+        "explanation": "अब बोर्ड बुक के विशिष्ट नियमों और दिशानिर्देशों का अध्ययन करें। यादृच्छिक उत्तर देने के बजाय, प्रत्येक प्रश्न को ध्यान से पढ़ें और उसकी मूल शर्तों को समझें।",
+        "code_example": "// पाठ्यक्रम के नियमों का सही पालन करें",
+        "verified_quote": "Systematic application of board guidelines ensures accurate comprehension.",
+        "source_ref": "Course Text, Page 15"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-जाँच और अभ्यास",
+        "explanation": "अपने ज्ञान को परखने के लिए एक बार फिर से अभ्यास प्रश्नों को हल करें और सुनिश्चित करें कि आप केवल वैध और प्रासंगिक विकल्पों का ही चयन कर रहे हैं।",
+        "verified_quote": "Continuous self-assessment corrects misconceptions and reinforces learning.",
+        "source_ref": "Textbook Reference"
+      }
+    ],
+    "verification_question_id": "retest-1790879503669"
+  },
+  {
+    "id": "misc-1790879481498-c-course-1790879064500-lop6-1",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-1",
+    "concept_name": "Recording 2026-07-04 091831",
+    "title": "Omission or confusion regarding Recording 2026-07-04 091831",
+    "description": "छात्र ने 'Recording 2026-07-04 091831' से संबंधित अवधारणा को समझने में गलती की है और गलत विकल्प 'fc' चुना है। इसका कारण यह है कि उन्होंने मुख्य बिंदुओं को या तो छोड़ दिया है या उनके बीच भ्रम पैदा कर लिया है। संज्ञानात्मक सुधार के लिए हमें मूल अवधारणाओं को दोबारा स्पष्ट करना होगा।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790879328547-0. Selected erroneous hypothesis: fc.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:31:21.498Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "अवधारणा की मूल समीक्षा",
+        "explanation": "सबसे पहले 'Recording 2026-07-04 091831' के मुख्य सिद्धांतों की पुनरावृत्ति करें ताकि छात्र की मूल गलतफहमी दूर हो सके।",
+        "verified_quote": "Recording 2026-07-04 091831 की मूल अवधारणा",
+        "source_ref": "Recording 2026-07-04 091831"
+      },
+      {
+        "step_number": 2,
+        "title": "विकल्प विश्लेषण और सुधार",
+        "explanation": "छात्र द्वारा चुने गए गलत विकल्प 'fc' और सही उत्तर के बीच के अंतर को समझें।",
+        "code_example": "// सही दृष्टिकोण का उदाहरण\nconst correctConcept = true;",
+        "verified_quote": "गलतफहमी को दूर करने का नियम",
+        "source_ref": "Course Text, Page 12"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-जांच अभ्यास",
+        "explanation": "अपने ज्ञान को परखने के लिए संबंधित प्रश्नों को हल करें और सुनिश्चित करें कि अब कोई भ्रम नहीं है।",
+        "verified_quote": "सटीक समझ ही सफलता की कुंजी है",
+        "source_ref": "Textbook Reference"
+      }
+    ],
+    "verification_question_id": "retest-1790879481498"
+  },
+  {
+    "id": "misc-1790879368718-c-course-1790879064500-lop6-1",
+    "user_id": "4c3854f1-5c2f-4fd9-bf63-3f7a7d0ead84",
+    "course_id": "course-1790879064500-lop6",
+    "concept_id": "c-course-1790879064500-lop6-1",
+    "concept_name": "Recording 2026-07-04 091831",
+    "title": "कोडिंग का अति-सामान्यीकरण",
+    "description": "छात्र ने 'केवल उन्नत कोडिंग सिखाना' विकल्प इसलिए चुना क्योंकि वह यह मान बैठा है कि कोडिंग की प्रक्रिया केवल जटिल और उच्च-स्तरीय प्रोग्रामिंग भाषाओं तक सीमित है। इस अति-सामान्यीकरण (Overgeneralization) के कारण छात्र ने बुनियादी तार्किक सोच, एल्गोरिदम और समस्या-समाधान की नींव को नजरअंदाज कर दिया। सुधारात्मक दृष्टिकोण यह है कि छात्र को यह समझाया जाए कि कोडिंग एक क्रमिक प्रक्रिया है जिसकी शुरुआत सरल तार्किक चरणों से होती है, न कि सीधे उन्नत तकनीकों से।",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-mcq-1790879328541-0. Selected erroneous hypothesis: केवल उन्नत कोडिंग सिखाना.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:29:28.718Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "बुनियादी तार्किक सोच और कोडिंग की परिभाषा",
+        "explanation": "इस चरण में छात्र को समझाया जाता है कि कोडिंग केवल कठिन कोड लिखना नहीं है, बल्कि कंप्यूटर को चरण-दर-चरण निर्देश देने की कला है।",
+        "verified_quote": "कोडिंग का अर्थ कंप्यूटर को उसकी भाषा में सरल और स्पष्ट निर्देश देना है।",
+        "source_ref": "अध्याय 1: कोडिंग की मूल बातें"
+      },
+      {
+        "step_number": 2,
+        "title": "सरल से जटिल की ओर बढ़ना",
+        "explanation": "छात्र को यह अभ्यास कराया जाता है कि कैसे छोटे-छोटे एल्गोरिदम (Algorithms) और सूडोकोड्स (Pseudocodes) से शुरुआत करके उन्नत प्रोग्रामिंग की तरफ बढ़ा जाता है।",
+        "code_example": "// सरल तार्किक निर्देश\nस्टार्ट -> इनपुट लें -> परिणाम दिखाएं -> समाप्त",
+        "verified_quote": "जटिल समस्याएं हमेशा छोटे और सरल चरणों में विभाजित करके हल की जाती हैं।",
+        "source_ref": "कोर्स पाठ, पृष्ठ 15"
+      },
+      {
+        "step_number": 3,
+        "title": "स्वयं-जांच और अवधारणा का सत्यापन",
+        "explanation": "छात्र एक छोटे से व्यावहारिक प्रश्न का उत्तर देकर यह जांच करेगा कि क्या उसने केवल उन्नत स्तर को ही कोडिंग माना है या बुनियादी तार्किक चरणों को भी समझ लिया है।",
+        "verified_quote": "सच्चा प्रोग्रामर वही है जो बुनियादी तर्कों को स्पष्ट रूप से समझता है।",
+        "source_ref": "अभ्यास पुस्तिका, पृष्ठ 30"
+      }
+    ],
+    "verification_question_id": "retest-1790879368718"
+  }
+]

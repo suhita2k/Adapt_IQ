@@ -1,0 +1,223 @@
+[
+  {
+    "id": "misc-1790878696631-c-recursion",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-dsa-101-785193",
+    "concept_id": "c-recursion",
+    "concept_name": "Recursion",
+    "title": "Base case omission in recursive calls",
+    "description": "The student likely selected the 'Incorrect hypothesis string' because they are focusing on the syntax or the data type of the input rather than the structural logic of the recursion. By omitting the base case, the student fails to recognize that a recursive function requires a termination condition to prevent infinite execution. The student's focus on the 'hypothesis string' suggests they are misinterpreting the error as a data validation issue rather than a fundamental flaw in the recursive control flow.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-fitb-1790878685740-0. Selected erroneous hypothesis: Incorrect hypothesis string.",
+    "severity": "high",
+    "detected_at": "2026-10-01T18:18:16.632Z",
+    "status": "retested_pass",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Understanding the Role of the Base Case",
+        "explanation": "A recursive function must have at least one base case that returns a value without making further recursive calls. Without this, the function will continue to call itself indefinitely, leading to a stack overflow error.",
+        "verified_quote": "Every recursive function must have a base case to terminate the recursion.",
+        "source_ref": "Chapter 4: Fundamentals of Recursion"
+      },
+      {
+        "step_number": 2,
+        "title": "Identifying the Termination Condition",
+        "explanation": "Analyze the problem to determine the simplest possible input for which the answer is known. This is your base case. Ensure that every recursive path eventually reaches this state.",
+        "code_example": "if (n == 0) return 1; // Base case",
+        "verified_quote": "The base case is the condition that stops the recursive process.",
+        "source_ref": "Course Text, Page 42"
+      },
+      {
+        "step_number": 3,
+        "title": "Verification through Trace Analysis",
+        "explanation": "Perform a manual trace of your function with a small input. If the function does not reach a return statement that does not involve a recursive call, your base case is missing or unreachable.",
+        "verified_quote": "Always verify that the recursive step moves the input closer to the base case.",
+        "source_ref": "Textbook Appendix B: Debugging Recursive Logic"
+      }
+    ],
+    "verification_question_id": "retest-1790878696632"
+  },
+  {
+    "id": "misc-1790869585640-c-arrays",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-cs201",
+    "concept_id": "c-arrays",
+    "concept_name": "Arrays",
+    "title": "random-access-broken-by-zeroing-confusion",
+    "description": "Student selected: \"It violates O(1) random access rules, causing subsequent index lookups to throw runtime exceptions.\". This reveals a fundamental misunderstanding of Arrays.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-1790869553983-4. Selected erroneous hypothesis: It violates O(1) random access rules, causing subsequent index lookups to throw runtime exceptions..",
+    "severity": "high",
+    "detected_at": "2026-10-01T15:46:25.640Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Counter-Example",
+        "explanation": "Consider what happens when this assumption is applied to an edge case. The invariant breaks because intermediate states are not preserved.",
+        "verified_quote": "A loop invariant must satisfy initialization, maintenance, and termination.",
+        "source_ref": "CLRS Chapter 2.1, Page 19"
+      },
+      {
+        "step_number": 2,
+        "title": "Formal Invariant Formulation",
+        "explanation": "Notice that each stack frame allocates independent local registers and return pointers.",
+        "code_example": "def recurse(n):\n    if n <= 0: return\n    # Each invocation creates an isolated O(1) frame\n    recurse(n - 1)",
+        "verified_quote": "Activation records are pushed to the execution call stack sequentially.",
+        "source_ref": "Computer Systems: A Programmer Perspective, Page 242"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Explanation & Invariant Verification",
+        "explanation": "Verify that both base conditions and induction hypotheses hold for all N >= 1.",
+        "verified_quote": "Inductive step proves truth for N+1 from N.",
+        "source_ref": "Discrete Mathematics and Its Applications, Page 315"
+      }
+    ],
+    "verification_question_id": "retest-1790869585640"
+  },
+  {
+    "id": "misc-1790869579996-c-arrays",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-cs201",
+    "concept_id": "c-arrays",
+    "concept_name": "Arrays",
+    "title": "temporal-vs-spatial-locality-confusion",
+    "description": "Student selected: \"Temporal locality: frequently accessed indices are stored in CPU registers permanently by the compiler.\". This reveals a fundamental misunderstanding of Arrays.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-1790869553983-3. Selected erroneous hypothesis: Temporal locality: frequently accessed indices are stored in CPU registers permanently by the compiler..",
+    "severity": "high",
+    "detected_at": "2026-10-01T15:46:19.996Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Counter-Example",
+        "explanation": "Consider what happens when this assumption is applied to an edge case. The invariant breaks because intermediate states are not preserved.",
+        "verified_quote": "A loop invariant must satisfy initialization, maintenance, and termination.",
+        "source_ref": "CLRS Chapter 2.1, Page 19"
+      },
+      {
+        "step_number": 2,
+        "title": "Formal Invariant Formulation",
+        "explanation": "Notice that each stack frame allocates independent local registers and return pointers.",
+        "code_example": "def recurse(n):\n    if n <= 0: return\n    # Each invocation creates an isolated O(1) frame\n    recurse(n - 1)",
+        "verified_quote": "Activation records are pushed to the execution call stack sequentially.",
+        "source_ref": "Computer Systems: A Programmer Perspective, Page 242"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Explanation & Invariant Verification",
+        "explanation": "Verify that both base conditions and induction hypotheses hold for all N >= 1.",
+        "verified_quote": "Inductive step proves truth for N+1 from N.",
+        "source_ref": "Discrete Mathematics and Its Applications, Page 315"
+      }
+    ],
+    "verification_question_id": "retest-1790869579997"
+  },
+  {
+    "id": "misc-1790869572126-c-arrays",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-cs201",
+    "concept_id": "c-arrays",
+    "concept_name": "Arrays",
+    "title": "automatic-stack-resizing-assumption",
+    "description": "Student selected: \"Appends will automatically trigger memory reallocation on the stack, causing severe stack overflow exceptions.\". This reveals a fundamental misunderstanding of Arrays.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-1790869553983-2. Selected erroneous hypothesis: Appends will automatically trigger memory reallocation on the stack, causing severe stack overflow exceptions..",
+    "severity": "high",
+    "detected_at": "2026-10-01T15:46:12.126Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Counter-Example",
+        "explanation": "Consider what happens when this assumption is applied to an edge case. The invariant breaks because intermediate states are not preserved.",
+        "verified_quote": "A loop invariant must satisfy initialization, maintenance, and termination.",
+        "source_ref": "CLRS Chapter 2.1, Page 19"
+      },
+      {
+        "step_number": 2,
+        "title": "Formal Invariant Formulation",
+        "explanation": "Notice that each stack frame allocates independent local registers and return pointers.",
+        "code_example": "def recurse(n):\n    if n <= 0: return\n    # Each invocation creates an isolated O(1) frame\n    recurse(n - 1)",
+        "verified_quote": "Activation records are pushed to the execution call stack sequentially.",
+        "source_ref": "Computer Systems: A Programmer Perspective, Page 242"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Explanation & Invariant Verification",
+        "explanation": "Verify that both base conditions and induction hypotheses hold for all N >= 1.",
+        "verified_quote": "Inductive step proves truth for N+1 from N.",
+        "source_ref": "Discrete Mathematics and Its Applications, Page 315"
+      }
+    ],
+    "verification_question_id": "retest-1790869572126"
+  },
+  {
+    "id": "misc-1790869561394-c-arrays",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-cs201",
+    "concept_id": "c-arrays",
+    "concept_name": "Arrays",
+    "title": "hardware-hash-table-confusion",
+    "description": "Student selected: \"The CPU maintains a hardware hash table that maps every array index directly to its physical cache line.\". This reveals a fundamental misunderstanding of Arrays.",
+    "trigger_evidence": "Diagnostic quiz attempt on Question q-1790869553983-0. Selected erroneous hypothesis: The CPU maintains a hardware hash table that maps every array index directly to its physical cache line..",
+    "severity": "high",
+    "detected_at": "2026-10-01T15:46:01.394Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Counter-Example",
+        "explanation": "Consider what happens when this assumption is applied to an edge case. The invariant breaks because intermediate states are not preserved.",
+        "verified_quote": "A loop invariant must satisfy initialization, maintenance, and termination.",
+        "source_ref": "CLRS Chapter 2.1, Page 19"
+      },
+      {
+        "step_number": 2,
+        "title": "Formal Invariant Formulation",
+        "explanation": "Notice that each stack frame allocates independent local registers and return pointers.",
+        "code_example": "def recurse(n):\n    if n <= 0: return\n    # Each invocation creates an isolated O(1) frame\n    recurse(n - 1)",
+        "verified_quote": "Activation records are pushed to the execution call stack sequentially.",
+        "source_ref": "Computer Systems: A Programmer Perspective, Page 242"
+      },
+      {
+        "step_number": 3,
+        "title": "Self-Explanation & Invariant Verification",
+        "explanation": "Verify that both base conditions and induction hypotheses hold for all N >= 1.",
+        "verified_quote": "Inductive step proves truth for N+1 from N.",
+        "source_ref": "Discrete Mathematics and Its Applications, Page 315"
+      }
+    ],
+    "verification_question_id": "retest-1790869561394"
+  },
+  {
+    "id": "misc-recursion-basecase-01",
+    "user_id": "78519356-5b3f-4048-a8fa-79ac76f971b2",
+    "course_id": "course-dsa-101",
+    "concept_id": "c-recursion",
+    "concept_name": "Recursion",
+    "title": "Missing or Non-Terminating Base Case Assumption",
+    "description": "Believing recursive execution terminates automatically without an explicit return statement or that function calls safely unwind when memory limits are reached.",
+    "trigger_evidence": "In Quiz #4 (Question 3), selected: \"The recursion will safely exit once the local variables go out of scope, even without an if-statement base case.\"",
+    "severity": "high",
+    "detected_at": "2026-10-01T09:15:00Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "The Call Stack Architecture",
+        "explanation": "Every time a function invokes itself, the operating system allocates a fresh Stack Frame containing local parameters and the return instruction address. Without a base condition, stack frames grow until StackOverflowError.",
+        "verified_quote": "CLRS 4th Ed, Page 73: \"Without an explicit base case, call stack frames accumulate monotonically until a stack overflow exception halts the runtime.\"",
+        "source_ref": "Textbook — Page 73"
+      },
+      {
+        "step_number": 2,
+        "title": "The Invariant Guard Pattern",
+        "explanation": "Always place your base case check at the very first line of your recursive function before doing any work or spawning child calls.",
+        "code_example": "// ❌ DANGEROUS: No base case\nfunction countdown(n) {\n  console.log(n);\n  countdown(n - 1); // Infinite stack frames!\n}\n\n// ✅ CORRECT: Explicit base case guard\nfunction countdown(n) {\n  if (n <= 0) { // Base Case\n    console.log(\"Done!\");\n    return;\n  }\n  console.log(n);\n  countdown(n - 1); // Converges toward base case\n}",
+        "verified_quote": "Lecture 07, Slide 18: \"1. Establish Base Case (simplest atomic input where answer is known). 2. Ensure arguments strictly converge towards base case.\"",
+        "source_ref": "Slides — Slide 18"
+      }
+    ],
+    "verification_question_id": "q-retest-rec-01"
+  }
+]

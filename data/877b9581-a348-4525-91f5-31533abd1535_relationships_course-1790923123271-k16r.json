@@ -1,0 +1,37 @@
+[
+  {
+    "id": "rel-1",
+    "source_concept_id": "Syllabus Fundamentals",
+    "target_concept_id": "Reading Comprehension and Analysis",
+    "relationship_type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "id": "rel-2",
+    "source_concept_id": "Reading Comprehension and Analysis",
+    "target_concept_id": "Structural Frameworks",
+    "relationship_type": "prerequisite",
+    "strength": 0.85
+  },
+  {
+    "id": "rel-3",
+    "source_concept_id": "Structural Frameworks",
+    "target_concept_id": "Empirical Verification",
+    "relationship_type": "prerequisite",
+    "strength": 0.8
+  },
+  {
+    "id": "rel-4",
+    "source_concept_id": "Empirical Verification",
+    "target_concept_id": "Synthetical Integration",
+    "relationship_type": "prerequisite",
+    "strength": 0.88
+  },
+  {
+    "id": "rel-5",
+    "source_concept_id": "Synthetical Integration",
+    "target_concept_id": "Advanced Curriculum Evaluation",
+    "relationship_type": "prerequisite",
+    "strength": 0.92
+  }
+]

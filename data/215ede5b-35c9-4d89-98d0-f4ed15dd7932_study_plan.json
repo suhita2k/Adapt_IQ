@@ -1,0 +1,70 @@
+{
+  "id": "plan-course-1790871316162-9uas",
+  "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+  "course_id": "course-1790871316162-9uas",
+  "title": "DATA SCIENCE Adaptive Study Plan",
+  "daily_goal_minutes": 60,
+  "streak_days": 0,
+  "tasks": [
+    {
+      "id": "task-1790871461181-0",
+      "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+      "course_id": "course-1790871316162-9uas",
+      "concept_id": "c-course-1790871316162-9uas-1",
+      "concept_name": "Introduction to Data Science Foundations",
+      "title": "Study Concept: Introduction to Data Science Foundations",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-01",
+      "completed": true,
+      "reason": "Calibrate understanding for Introduction to Data Science Foundations in DATA SCIENCE.",
+      "completed_at": "2026-10-01T16:20:37.108Z"
+    },
+    {
+      "id": "task-1790871461182-1",
+      "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+      "course_id": "course-1790871316162-9uas",
+      "concept_id": "c-course-1790871316162-9uas-2",
+      "concept_name": "Data Acquisition and Presentation",
+      "title": "Study Concept: Data Acquisition and Presentation",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "high",
+      "due_date": "2026-10-01",
+      "completed": true,
+      "reason": "Calibrate understanding for Data Acquisition and Presentation in DATA SCIENCE.",
+      "completed_at": "2026-10-01T16:20:39.031Z"
+    },
+    {
+      "id": "task-1790871461182-2",
+      "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+      "course_id": "course-1790871316162-9uas",
+      "concept_id": "c-course-1790871316162-9uas-3",
+      "concept_name": "Data Preprocessing and Cleaning",
+      "title": "Study Concept: Data Preprocessing and Cleaning",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Data Preprocessing and Cleaning in DATA SCIENCE."
+    },
+    {
+      "id": "task-1790871461182-3",
+      "user_id": "215ede5b-35c9-4d89-98d0-f4ed15dd7932",
+      "course_id": "course-1790871316162-9uas",
+      "concept_id": "c-course-1790871316162-9uas-4",
+      "concept_name": "Exploratory Data Analysis",
+      "title": "Study Concept: Exploratory Data Analysis",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-01",
+      "completed": false,
+      "reason": "Calibrate understanding for Exploratory Data Analysis in DATA SCIENCE."
+    }
+  ],
+  "created_at": "2026-10-01T16:17:41.182Z",
+  "updated_at": "2026-10-01T16:17:41.182Z"
+}

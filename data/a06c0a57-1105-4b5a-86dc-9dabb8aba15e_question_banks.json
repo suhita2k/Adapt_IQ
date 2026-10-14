@@ -1,0 +1,1318 @@
+[
+  {
+    "id": "qb-16m-1791999885939",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "course_title": "Distributed Systems & Cloud Computing",
+    "title": "Distributed Systems & Cloud Computing - 16-Mark Comprehensive Question Paper with Solutions",
+    "description": "In-depth 16-mark architectural and essay questions with evaluated solutions analyzed from 1 course material(s).",
+    "topics": [
+      "Distributed Systems Principles & Logical Clocks",
+      "Raft Consensus & CAP Theorem"
+    ],
+    "total_questions": 2,
+    "total_marks": 32,
+    "config": {
+      "course_id": "course-1791996738394-b48i",
+      "title": "Distributed Systems & Cloud Computing - 16-Mark Question Paper",
+      "question_types": [
+        "16_mark"
+      ],
+      "total_questions": 2,
+      "difficulty": "hard",
+      "include_answers": true,
+      "include_sources": true,
+      "max_marks": 32
+    },
+    "questions": [
+      {
+        "id": "sq-16m-1791999885722-1-pj38",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 1,
+        "question_text": "Analyze the structural properties and foundational definitions of distributed systems, and evaluate how Lamport Logical Clocks address causality tracking across asynchronous networks under the FLP impossibility theorem constraints.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "Distributed Systems Principles & Logical Clocks",
+        "difficulty": "hard",
+        "answer": "Comprehensive evaluation of foundational properties and Lamport Logical Clocks.",
+        "structured_16_mark": {
+          "introduction": "Distributed systems require rigorous foundational definitions and structural properties to manage concurrency, partial failures, and asynchronous communications. As established by Lamport, achieving deterministic consensus in an asynchronous network is bounded by the FLP impossibility theorem, which dictates that no deterministic consensus protocol can guarantee safety and liveness in an asynchronous network with even a single crash failure. Consequently, systems rely on causal tracking mechanisms such as Lamport Logical Clocks to order events across distributed nodes without relying on physical time synchronization.",
+          "headings": [
+            {
+              "title": "Foundational Definitions and Structural Properties",
+              "content": "Distributed systems comprise autonomous computing nodes that communicate over a shared network and coordinate their actions by passing messages. Structural properties govern how nodes maintain invariant states despite message delays, out-of-order deliveries, and hardware faults.",
+              "bullet_points": [
+                "Nodes maintain independent local states and local memory spaces.",
+                "Communication occurs exclusively through message passing over unreliable or asynchronous channels.",
+                "Foundational invariants enforce causal relationships across distributed entity states."
+              ]
+            },
+            {
+              "title": "Lamport Logical Clocks and Causality Tracking",
+              "content": "Lamport Logical Clocks assign a monotonically increasing integer timestamp C(e) to every event e. The algorithm enforces the 'happens-before' relation (->). If event a happens before b within the same process, then C(a) < C(b). When a message is transmitted, the sender attaches its current clock value, and the receiver updates its clock according to max(C(receive), C(send)) + 1.",
+              "bullet_points": [
+                "Monotonically increasing integer timestamps are assigned to every local event.",
+                "Message passing piggybacks the sender's current logical timestamp.",
+                "Receiving nodes update their local clock using the maximum of local and received timestamps plus one."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Lamport Logical Clock Propagation across Distributed Processes",
+              "description": "Visualizes message passing between Process P1 and Process P2, illustrating how timestamps are incremented and synchronized using the max rule.",
+              "ascii_representation": "P1: (C=1) ---- e1 ---- (C=2) --[Msg(C=2)]--> (C=3) e3\nP2: (C=0) -------------- (C=3) <-- [Recv] --- (C=2)"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Lamport Clock Synchronization Walkthrough",
+              "steps": [
+                "Step 1: Process P1 has local clock C_1 = 4 and executes event e1, updating C_1 to 5.",
+                "Step 2: P1 sends message m with timestamp 5 to Process P2.",
+                "Step 3: Process P2 has local clock C_2 = 2 upon receiving message m.",
+                "Step 4: P2 updates its clock using max(C_2, timestamp(m)) + 1 = max(2, 5) + 1 = 6."
+              ],
+              "result": "Process P2 updates its logical clock to 6."
+            }
+          ],
+          "advantages": [
+            "Provides a consistent partial ordering of events across distributed nodes without physical clock synchronization.",
+            "Ensures accurate tracking of causal dependencies in asynchronous environments."
+          ],
+          "disadvantages": [
+            "Does not capture strict mutual causality (i.e., if C(a) < C(b), it does not imply a -> b, requiring Vector Clocks for complete causal history)."
+          ],
+          "conclusion": "Lamport Logical Clocks establish a foundational mechanism for ordering events in distributed systems, overcoming the limitations imposed by physical clock skew and providing robust causality tracking despite asynchronous network constraints.",
+          "source_citation": {
+            "material_title": "Distributed Systems Principles Textbook",
+            "reference": "Page 1 & Page 2",
+            "quote": "Lamport proved that no agreement can be reached in an asynchronous network with even one crash failure under the FLP impossibility theorem... Lamport Logical Clocks assign a monotonically increasing integer timestamp C(e) to every event."
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 1 & Page 2",
+          "quote": "Lamport proved that no agreement can be reached in an asynchronous network with even one crash failure under the FLP impossibility theorem.",
+          "verified": true
+        },
+        "bloom_level": "Analyze",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.722Z"
+      },
+      {
+        "id": "sq-16m-1791999885722-2-k9f8",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 2,
+        "question_text": "Examine the mechanics of Raft Leader Election and Log Replication, and analyze how Brewer's CAP Theorem impacts the design choices between consistency-focused and availability-focused distributed architectures.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "Raft Consensus & CAP Theorem",
+        "difficulty": "hard",
+        "answer": "Comprehensive evaluation of Raft consensus and the CAP theorem trade-offs.",
+        "structured_16_mark": {
+          "introduction": "Distributed data stores and consensus protocols must navigate fundamental trade-offs between consistency, availability, and partition tolerance as defined by Brewer's CAP Theorem. Protocols such as Raft decompose the complex problem of state machine replication into manageable subproblems—Leader Election, Log Replication, and Safety—ensuring strong consistency in partitioned network environments at the cost of availability during total network splits.",
+          "headings": [
+            {
+              "title": "Raft Consensus Protocol Decomposition",
+              "content": "Raft decomposes consensus into three independent subproblems to simplify understanding and implementation correctness. Leader Election governs how nodes choose a single authority to manage log replication. Log Replication ensures that the leader accepts client commands, appends them to its log, and replicates them across all followers. Safety guarantees state machine consistency across all cluster nodes.",
+              "bullet_points": [
+                "Followers transition to Candidate status if no communication is received within an election timeout.",
+                "Candidates request votes via RequestVote RPCs across the cluster.",
+                "Log replication appends entries sequentially and commits them once a quorum acknowledges receipt."
+              ]
+            },
+            {
+              "title": "Brewer's CAP Theorem and AP/CP Trade-offs",
+              "content": "Brewer's CAP Theorem states that any distributed data store can simultaneously provide at most two of three guarantees: Consistency, Availability, and Partition Tolerance. Because network partitions are inevitable in distributed infrastructures, systems must choose between Consistency (CP) and Availability (AP).",
+              "bullet_points": [
+                "CP systems reject requests or block until partitions resolve to maintain strict linearizability.",
+                "AP systems maintain availability by serving local stale data, relying on versioning and background synchronization.",
+                "Dynamo-style architectures leverage consistent hashing, vector clocks, and Merkle trees via gossip protocols to achieve AP guarantees."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Raft State Transition and Leader Election Workflow",
+              "description": "Illustrates the state transitions between Follower, Candidate, and Leader during Raft consensus rounds.",
+              "ascii_representation": "[Follower] --(Election Timeout)--> [Candidate] --(Wins Majority Votes)--> [Leader]\n    ^                                                                      |\n    +------------------------- (Discovers Higher Term) --------------------+"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Raft Quorum Election Calculation",
+              "steps": [
+                "Step 1: Consider a Raft cluster with N = 5 nodes.",
+                "Step 2: Determine the quorum size required to elect a leader: Q = floor(N / 2) + 1.",
+                "Step 3: Calculate Q = floor(5 / 2) + 1 = 2 + 1 = 3 nodes.",
+                "Step 4: Verify that a candidate must receive at least 3 votes to successfully transition to Leader."
+              ],
+              "result": "Required quorum for a 5-node cluster is 3 votes."
+            }
+          ],
+          "advantages": [
+            "Raft provides clear, understandable decomposition of consensus, simplifying debugging and formal verification.",
+            "CAP theorem framework clarifies system design boundaries for partition resilience."
+          ],
+          "disadvantages": [
+            "Strict CP systems sacrifice availability during network partitions, impacting client request success rates.",
+            "AP systems introduce eventual consistency challenges, requiring conflict resolution mechanisms."
+          ],
+          "conclusion": "Mastering consensus protocols like Raft and understanding CAP theorem boundaries are essential for architecting reliable, fault-tolerant distributed cloud systems capable of handling real-world network partitions.",
+          "source_citation": {
+            "material_title": "Distributed Systems Principles Textbook",
+            "reference": "Page 3 & Page 5",
+            "quote": "Raft decomposes consensus into three independent subproblems: Leader Election, Log Replication, and Safety... Brewer CAP Theorem states that any distributed data store can simultaneously provide at most two of three guarantees: Consistency, Availability, and Partition Tolerance."
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 3 & Page 5",
+          "quote": "Raft decomposes consensus into three independent subproblems: Leader Election, Log Replication, and Safety.",
+          "verified": true
+        },
+        "bloom_level": "Analyze",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.722Z"
+      }
+    ],
+    "created_at": "2026-10-14T17:44:45.940Z",
+    "updated_at": "2026-10-14T17:44:45.940Z"
+  },
+  {
+    "id": "qb-2m-1791999885939",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791996738394-b48i",
+    "course_title": "Distributed Systems & Cloud Computing",
+    "title": "Distributed Systems & Cloud Computing - 2-Mark Question Paper with Answers",
+    "description": "Comprehensive 2-mark diagnostic questions with verified answers analyzed from 1 course material(s).",
+    "topics": [
+      "Byzantine Fault Tolerance",
+      "Logical Clocks",
+      "Raft Consensus Protocol",
+      "Paxos State Machine Replication",
+      "CAP Theorem",
+      "DynamoDB Gossip Protocol"
+    ],
+    "total_questions": 7,
+    "total_marks": 14,
+    "config": {
+      "course_id": "course-1791996738394-b48i",
+      "title": "Distributed Systems & Cloud Computing - 2-Mark Question Paper",
+      "question_types": [
+        "2_mark"
+      ],
+      "total_questions": 7,
+      "difficulty": "medium",
+      "include_answers": true,
+      "include_sources": true,
+      "max_marks": 14
+    },
+    "questions": [
+      {
+        "id": "sq-2m-1791999885721-1-w270",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 1,
+        "question_text": "State the FLP impossibility theorem regarding consensus in distributed systems.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Byzantine Fault Tolerance",
+        "difficulty": "hard",
+        "answer": "Lamport proved that no agreement can be reached in an asynchronous network with even one crash failure under the FLP impossibility theorem. This fundamental theorem highlights the limits of fault tolerance in asynchronous distributed systems.",
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 1",
+          "quote": "Lamport proved that no agreement can be reached in an asynchronous network with even one crash failure under the FLP impossibility theorem.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.721Z"
+      },
+      {
+        "id": "sq-2m-1791999885722-2-70f0",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 2,
+        "question_text": "How do Lamport Logical Clocks update timestamps when receiving an event from another process?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Logical Clocks",
+        "difficulty": "medium",
+        "answer": "Lamport Logical Clocks assign a monotonically increasing integer timestamp C(e) to every event. When a message is received, the receiver updates its clock to the maximum of its current local clock and the received timestamp, plus one: max(C(receive), C(send)) + 1.",
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 2",
+          "quote": "Lamport Logical Clocks assign a monotonically increasing integer timestamp C(e) to every event. If event a happens before b within the same process, C(a) < C(b). The receiver updates its clock to max(C(receive), C(send)) + 1.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.722Z"
+      },
+      {
+        "id": "sq-2m-1791999885722-3-rq31",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 3,
+        "question_text": "What are the three independent subproblems into which the Raft consensus protocol decomposes consensus?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Raft Consensus Protocol",
+        "difficulty": "easy",
+        "answer": "Raft decomposes consensus into three independent subproblems: Leader Election, Log Replication, and Safety. This modular approach simplifies the design and understanding of the consensus mechanism.",
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 3",
+          "quote": "Raft decomposes consensus into three independent subproblems: Leader Election, Log Replication, and Safety.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.722Z"
+      },
+      {
+        "id": "sq-2m-1791999885722-4-e5wb",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 4,
+        "question_text": "What triggers a follower node to transition to a Candidate state in the Raft protocol?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Raft Consensus Protocol",
+        "difficulty": "medium",
+        "answer": "If a follower receives no communication over an election timeout, it transitions to the Candidate state and begins requesting votes via RequestVote RPCs.",
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 3",
+          "quote": "If a follower receives no communication over an election timeout, it transitions to Candidate and requests votes via RequestVote RPCs.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.722Z"
+      },
+      {
+        "id": "sq-2m-1791999885722-5-2ra7",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 5,
+        "question_text": "Name the two-phase rounds used by Classic Multi-Paxos to reach consensus across distinct log slots.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Paxos State Machine Replication",
+        "difficulty": "medium",
+        "answer": "Classic Multi-Paxos reaches consensus across distinct log slots through two distinct two-phase rounds: Phase 1 Prepare and Promise, followed by Phase 2 Accept and Accepted.",
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 4",
+          "quote": "Classic Multi-Paxos reaches consensus across distinct log slots through two-phase rounds: Phase 1 Prepare and Promise, and Phase 2 Accept and Accepted.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.722Z"
+      },
+      {
+        "id": "sq-2m-1791999885722-6-2jft",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 6,
+        "question_text": "State the Brewer CAP Theorem.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "CAP Theorem",
+        "difficulty": "easy",
+        "answer": "Brewer's CAP Theorem states that any distributed data store can simultaneously provide at most two of three foundational guarantees: Consistency, Availability, and Partition Tolerance.",
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 5",
+          "quote": "Brewer CAP Theorem states that any distributed data store can simultaneously provide at most two of three guarantees: Consistency, Availability, and Partition Tolerance.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.722Z"
+      },
+      {
+        "id": "sq-2m-1791999885722-7-iejt",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791996738394-b48i",
+        "question_number": 7,
+        "question_text": "How does Amazon Dynamo implement anti-entropy background synchronization?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "DynamoDB Gossip Protocol",
+        "difficulty": "medium",
+        "answer": "Amazon Dynamo adopts an AP model that implements anti-entropy background synchronization using Merkle trees communicated via gossip protocols, alongside consistent hashing and vector clocks for versioning.",
+        "source_citation": {
+          "material_id": "mat-1791996751529-39b6",
+          "material_title": "Distributed Systems Principles Textbook",
+          "material_type": "textbook",
+          "reference": "Page 6",
+          "quote": "Amazon Dynamo adopts an AP model using consistent hashing, vector clocks for versioning, and anti-entropy background synchronization using Merkle trees via gossip protocols.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T17:44:45.722Z"
+      }
+    ],
+    "created_at": "2026-10-14T17:44:45.940Z",
+    "updated_at": "2026-10-14T17:44:45.940Z"
+  },
+  {
+    "id": "qb-16m-1791994267921",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "course_title": "thulir",
+    "title": "thulir - 16-Mark Comprehensive Question Paper with Solutions",
+    "description": "In-depth 16-mark architectural and essay questions with evaluated solutions analyzed from 2 course material(s).",
+    "topics": [
+      "System Engineering & Workflow Management",
+      "Information Security & Human-Computer Interaction"
+    ],
+    "total_questions": 2,
+    "total_marks": 32,
+    "config": {
+      "course_id": "course-1791988413424-lmd7",
+      "title": "thulir - 16-Mark Question Paper",
+      "question_types": [
+        "16_mark"
+      ],
+      "total_questions": 2,
+      "difficulty": "hard",
+      "include_answers": true,
+      "include_sources": true,
+      "max_marks": 32
+    },
+    "questions": [
+      {
+        "id": "sq-16m-1791994267845-1-a0lq",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 1,
+        "question_text": "Examine the end-to-end Project Thulir architecture and workflow management pipeline, detailing how raw ideation inputs are transformed through stage-gate evaluation flowcharts into validated deployment proposals. Analyze the systemic module separation, state validation rules, and container cluster topologies required for multi-district agrarian scaling.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "System Engineering & Workflow Management",
+        "difficulty": "hard",
+        "answer": "Comprehensive 16-mark essay addressing Project Thulir's architecture, innovation pipeline, and cloud deployment topology.",
+        "structured_16_mark": {
+          "introduction": "Project Thulir establishes a robust foundational system architecture and stakeholder framework explicitly engineered for grassroots innovation management. The architecture governs the end-to-end processing pipeline, taking raw ideation inputs and transforming them into validated deployment proposals. By enforcing strict state validation rules at each transition stage and leveraging scalable cloud deployment topologies, Project Thulir guarantees reliable processing across multiple agrarian districts.",
+          "headings": [
+            {
+              "title": "Systemic Module Separation and Stakeholder Interfaces",
+              "content": "The system design establishes clear modular boundaries separating user engagement layers, workflow evaluation engines, telemetry transmission links, and automated feedback loops. Stakeholder interfaces cater to rural innovators, mentors, and administrators through specialized dashboards and voice-first navigation frameworks.",
+              "bullet_points": [
+                "Enforces strict data encapsulation and module isolation across core processing boundaries.",
+                "Supports diverse stakeholder interfaces including mentor-mentee matching dashboards and accessibility tools."
+              ]
+            },
+            {
+              "title": "Stage-Gate Evaluation Flowchart and Innovation Pipeline",
+              "content": "The workflow management engine maps ideation filtering down to prototyping approval through rigorous stage-gate validation protocols. Each transition invariant checks completeness, feasibility, and impact metrics before advancing submissions through the processing pipeline.",
+              "bullet_points": [
+                "Automates raw idea filtration based on preliminary scoring and resource feasibility.",
+                "Applies strict validation checkpoints prior to authorizing prototype development phases."
+              ]
+            },
+            {
+              "title": "Cloud Deployment Topology and Regional Failovers",
+              "content": "To support growing user loads across constrained cellular links and agrarian regions, the infrastructure utilizes container clusters, load balancers, and regional failover mechanisms. Telemetry data is reliably transmitted using MQTT protocols over lightweight cellular channels.",
+              "bullet_points": [
+                "Deploys containerized microservices ensuring zero-downtime rolling updates and high availability.",
+                "Implements regional failover policies and MQTT telemetry streams for robust rural networking."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Project Thulir High-Level Architecture & Workflow Pipeline",
+              "description": "Architectural schema illustrating the progression from raw ideation through stage-gate filtering to containerized cloud deployment.",
+              "ascii_representation": "[Rural Innovators / Sensors] --> (MQTT Gateway) --> [Stage-Gate Pipeline] --> [Validation Engine] --> [Container Cluster / Load Balancer]"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Stage-Gate Idea Filtering and State Validation Workflow",
+              "steps": [
+                "Step 1: Capture raw ideation input and sensor telemetry via MQTT protocol.",
+                "Step 2: Evaluate input against baseline feasibility metrics and role-based access rules.",
+                "Step 3: Execute stage-gate transition check; verify score > threshold.",
+                "Step 4: Output validated prototyping proposal for regional deployment cluster."
+              ],
+              "result": "Proposal successfully approved and routed to the containerized staging cluster with state verified."
+            }
+          ],
+          "advantages": [
+            "Ensures rigorous quality control through automated stage-gate evaluation.",
+            "High scalability and fault tolerance via container clustering and regional failovers."
+          ],
+          "disadvantages": [
+            "High initial complexity in managing multi-container orchestration across constrained networks.",
+            "Strict validation rules may introduce latency for rural innovators submitting incomplete telemetry."
+          ],
+          "conclusion": "Project Thulir's integrated system architecture effectively bridges grassroots innovation management with scalable cloud infrastructure. By combining structured workflow pipelines with resilient container topologies, the platform ensures dependable execution across diverse agrarian environments.",
+          "source_citation": {
+            "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+            "reference": "Page 5 & Page 18",
+            "quote": "High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir."
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 42",
+          "quote": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers.",
+          "verified": true
+        },
+        "bloom_level": "Analyze",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.845Z"
+      },
+      {
+        "id": "sq-16m-1791994267847-2-fzy5",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 2,
+        "question_text": "Analyze the information security protocols, role-based access control (RBAC) matrices, and human-computer interaction paradigms implemented within Project Thulir. Evaluate how voice-first navigation and encryption standards safeguard sensitive user submissions across rural deployment zones.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "Information Security & Human-Computer Interaction",
+        "difficulty": "hard",
+        "answer": "Comprehensive 16-mark essay detailing security compliance, RBAC, and HCI accessibility frameworks.",
+        "structured_16_mark": {
+          "introduction": "Information security and user accessibility represent critical pillars of Project Thulir. To safeguard sensitive user submissions and support diverse agrarian participants, the platform integrates comprehensive role-based access control (RBAC) matrices, stringent data encryption standards, and innovative human-computer interaction (HCI) paradigms including voice-first navigation.",
+          "headings": [
+            {
+              "title": "Access Control Matrices and Data Encryption Standards",
+              "content": "The security architecture relies on detailed role hierarchies and explicit permission grants to restrict unauthorized access. Data encryption standards are enforced both in transit across constrained cellular links and at rest within regional storage clusters.",
+              "bullet_points": [
+                "Enforces granular role-based access control to protect sensitive user submissions and profile data.",
+                "Applies end-to-end encryption protocols to secure telemetry and administrative communications."
+              ]
+            },
+            {
+              "title": "Human-Computer Interaction and Voice-First Navigation",
+              "content": "To maximize participation among rural innovators and mentors, UI wireframes emphasize intuitive mentor-mentee matching dashboards and voice-first navigation frameworks. These design invariants lower the digital literacy barrier and ensure low-latency interaction.",
+              "bullet_points": [
+                "Integrates voice-first navigation for seamless accessibility among rural users.",
+                "Provides responsive dashboards for streamlined mentor-mentee collaboration and feedback aggregation."
+              ]
+            },
+            {
+              "title": "Analytics, Metrics, and Automated Feedback Loops",
+              "content": "The quantitative evaluation framework assesses project impact and resource utilization through metric aggregation invariants. Automated feedback loops govern connected devices, such as water valve controllers, based on real-time sensor metrics.",
+              "bullet_points": [
+                "Aggregates key performance indicators and impact metrics into unified administrative dashboards.",
+                "Executes automated control loops driven by real-time environmental data."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Security & HCI Integration Schema in Project Thulir",
+              "description": "Schematic showing the interaction between encrypted user interfaces, RBAC layers, and automated feedback loops.",
+              "ascii_representation": "[Voice / UI Client] --> [Encrypted TLS / MQTT] --> [RBAC Security Gateway] --> [Validation & Analytics Engine]"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Role-Based Access Control and Encryption Verification",
+              "steps": [
+                "Step 1: User initiates login request via voice-first navigation interface.",
+                "Step 2: Security gateway evaluates user token against the RBAC permission matrix.",
+                "Step 3: Encrypted payload transmitted over MQTT/TLS channel.",
+                "Step 4: Access granted or denied based on role hierarchy."
+              ],
+              "result": "Request successfully authenticated, authorized, and logged with zero security leakage."
+            }
+          ],
+          "advantages": [
+            "Robust data privacy compliance protects sensitive grassroots innovations.",
+            "High accessibility via voice-first navigation fosters inclusive participation across rural communities."
+          ],
+          "disadvantages": [
+            "Strict access control hierarchies may require careful administrative overhead during role updates.",
+            "Voice recognition systems face challenges in highly noisy or remote agrarian field environments."
+          ],
+          "conclusion": "Project Thulir successfully harmonizes rigorous information security protocols with user-centric HCI design. By combining robust encryption and RBAC with intuitive voice navigation, the platform ensures both data integrity and widespread accessibility.",
+          "source_citation": {
+            "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+            "reference": "Page 34 & Slide 25",
+            "quote": "Access control matrix detailing role hierarchies, permissions, and data encryption standards."
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 42",
+          "quote": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers.",
+          "verified": true
+        },
+        "bloom_level": "Evaluate",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.847Z"
+      }
+    ],
+    "created_at": "2026-10-14T16:11:07.921Z",
+    "updated_at": "2026-10-14T16:11:07.921Z"
+  },
+  {
+    "id": "qb-2m-1791994267921",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "course_title": "thulir",
+    "title": "thulir - 2-Mark Question Paper with Answers",
+    "description": "Comprehensive 2-mark diagnostic questions with verified answers analyzed from 2 course material(s).",
+    "topics": [
+      "System Engineering",
+      "Workflow Management",
+      "Analytics & Metrics",
+      "Information Security",
+      "Infrastructure",
+      "Human-Computer Interaction",
+      "Networking"
+    ],
+    "total_questions": 7,
+    "total_marks": 14,
+    "config": {
+      "course_id": "course-1791988413424-lmd7",
+      "title": "thulir - 2-Mark Question Paper",
+      "question_types": [
+        "2_mark"
+      ],
+      "total_questions": 7,
+      "difficulty": "medium",
+      "include_answers": true,
+      "include_sources": true,
+      "max_marks": 14
+    },
+    "questions": [
+      {
+        "id": "sq-2m-1791994267843-1-1sv5",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 1,
+        "question_text": "Define the primary purpose of the Project Thulir system architecture and its stakeholder interfaces.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "System Engineering",
+        "difficulty": "easy",
+        "answer": "The system architecture establishes foundational modular boundaries and stakeholder interfaces for Project Thulir. It provides a comprehensive architectural layout demonstrating core systemic integration designed for grassroots innovation management.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 5",
+          "quote": "High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.843Z"
+      },
+      {
+        "id": "sq-2m-1791994267843-2-zk7p",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 2,
+        "question_text": "Describe the operational stages involved in the workflow management evaluation flowchart.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Workflow Management",
+        "difficulty": "medium",
+        "answer": "The stage-gate evaluation flowchart maps the systematic filtering process of raw inputs. Specifically, it governs the progression from initial ideation filtering all the way down to prototyping approval.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 18",
+          "quote": "Stage-gate evaluation flowchart mapping ideation filtering down to prototyping approval.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.843Z"
+      },
+      {
+        "id": "sq-2m-1791994267843-3-6dvo",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 3,
+        "question_text": "What are the core components displayed on the analytics and metrics dashboard mockup?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Analytics & Metrics",
+        "difficulty": "easy",
+        "answer": "The dashboard mockup integrates key performance indicators (KPIs), quantitative impact metrics, and feedback aggregation charts. These elements form the metric framework for evaluating project success.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 12",
+          "quote": "Dashboard mockup displaying key performance indicators, impact metrics, and feedback aggregation charts.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.843Z"
+      },
+      {
+        "id": "sq-2m-1791994267843-4-k6q9",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 4,
+        "question_text": "Explain the role-based mechanisms specified in the information security access control matrix.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Information Security",
+        "difficulty": "medium",
+        "answer": "The access control matrix outlines security measures by detailing role hierarchies, specific system permissions, and mandatory data encryption standards. These protocols protect sensitive user data.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 34",
+          "quote": "Access control matrix detailing role hierarchies, permissions, and data encryption standards.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.843Z"
+      },
+      {
+        "id": "sq-2m-1791994267843-5-pq5p",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 5,
+        "question_text": "Identify the core architectural components that make up the cloud deployment topology.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Infrastructure",
+        "difficulty": "easy",
+        "answer": "The cloud deployment topology comprises scalable container clusters, high-availability load balancers, and regional failover mechanisms. Together, they ensure fault tolerance and system reliability.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 42",
+          "quote": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.843Z"
+      },
+      {
+        "id": "sq-2m-1791994267843-6-zl1o",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 6,
+        "question_text": "How do design frameworks enhance rural user accessibility in Human-Computer Interaction for Project Thulir?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Human-Computer Interaction",
+        "difficulty": "medium",
+        "answer": "Accessibility for rural users is optimized through design frameworks that incorporate voice-first navigation. Additionally, UI wireframes highlight mentor-mentee matching dashboards to streamline user engagement.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 25",
+          "quote": "Design frameworks emphasizing voice-first navigation for rural user accessibility.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.843Z"
+      },
+      {
+        "id": "sq-2m-1791994267843-7-q00v",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 7,
+        "question_text": "State the telemetry transmission protocol utilized over constrained cellular links.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Networking",
+        "difficulty": "easy",
+        "answer": "Telemetry transmission over constrained cellular links relies on the MQTT protocol. This lightweight protocol is optimized for low-bandwidth, high-latency remote environments.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 30",
+          "quote": "Telemetry transmission protocols utilizing MQTT over constrained cellular links.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T16:11:07.843Z"
+      }
+    ],
+    "created_at": "2026-10-14T16:11:07.921Z",
+    "updated_at": "2026-10-14T16:11:07.921Z"
+  },
+  {
+    "id": "qb-16m-1791993278599",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "course_title": "thulir",
+    "title": "thulir - 16-Mark Comprehensive Question Paper with Solutions",
+    "description": "In-depth 16-mark architectural and essay questions with evaluated solutions analyzed from 2 course material(s).",
+    "topics": [
+      "System Engineering & Architecture",
+      "Workflow Management & Innovation Pipeline",
+      "Information Security & Access Control"
+    ],
+    "total_questions": 3,
+    "total_marks": 48,
+    "questions": [
+      {
+        "id": "sq-16m-1791993278278-1-qft5",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 1,
+        "question_text": "Examine the architectural design, core modular boundaries, and stakeholder interfaces of Project Thulir for grassroots innovation management. Provide a detailed analysis of how the foundational system invariants support structured data flow and module separation across distributed environments.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "System Engineering & Architecture",
+        "difficulty": "hard",
+        "answer": "Comprehensive 16-mark essay analyzing the core modular boundaries, stakeholder interfaces, and foundational system invariants of Project Thulir.",
+        "structured_16_mark": {
+          "introduction": "Project Thulir represents a comprehensive grassroots innovation management framework engineered to bridge the gap between rural ideation and structured technological deployment. The fundamental problem addressed by its system architecture is the fragmentation of rural innovation data, lack of transparent evaluation channels, and the need for seamless communication across diverse stakeholder tiers (e.g., innovators, mentors, evaluators, and administrators). By enforcing rigorous system invariants and strict module separation, Project Thulir guarantees data integrity, operational predictability, and low-latency interaction across all operational tiers.",
+          "headings": [
+            {
+              "title": "Core Modular Boundaries and Separation of Concerns",
+              "content": "The system architecture partitions functionality into decoupled modules: the Ideation Ingestion Engine, the Workflow Management Tier, the Analytics Aggregator, and the Security & Access Control Matrix. Each module operates within well-defined boundaries with explicit APIs, preventing cross-module leakage and ensuring maintainability.",
+              "bullet_points": [
+                "Enforces strict domain-driven design principles to separate business logic from persistence layers.",
+                "Utilizes asynchronous event messaging for inter-module communication, minimizing tight coupling.",
+                "Maintains isolated execution environments via containerization clusters."
+              ]
+            },
+            {
+              "title": "Stakeholder Interface Design and Interaction Protocols",
+              "content": "Stakeholder interfaces are tailored to specific user profiles, incorporating voice-first navigation for rural innovators and comprehensive multi-metric dashboards for administrators and mentors. Interaction protocols are designed around constraint-aware transmission models.",
+              "bullet_points": [
+                "Provides role-tailored dashboard views adhering to precise access control matrices.",
+                "Implements voice-first navigation paradigms to enhance accessibility for rural participants.",
+                "Optimizes payload sizes and relies on efficient telemetry transmission protocols over constrained cellular networks."
+              ]
+            },
+            {
+              "title": "System Invariants and Data Flow Integrity",
+              "content": "To preserve state consistency throughout the innovation lifecycle, the architecture enforces mathematical and logical invariants at every pipeline junction. Data flows unidirectionally from ingestion through validation stages, eliminating race conditions and unintended state mutations.",
+              "bullet_points": [
+                "Guarantees transactional atomicity during stage-gate evaluation transitions.",
+                "Enforces cryptographic checksums on telemetry data streams from embedded valve and sensor nodes.",
+                "Maintains comprehensive audit logs for all administrative overrides and state modifications."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Project Thulir High-Level System Architecture and Modular Boundaries",
+              "description": "Schematic illustrating the separation between stakeholder interfaces, API gateways, core modular engines, and regional deployment clusters.",
+              "ascii_representation": "[Rural Innovators / Mentors] ---> (Voice/Web UI) ---> [API Gateway / Load Balancer]\n                                                            |\n         +--------------------------------------------------+--------------------------------------------------+\n         |                                                  |                                                  |\n         v                                                  v                                                  v\n[Ingestion & Workflow Engine]                     [Analytics & Metrics Engine]               [Security & Access Control]\n         |                                                  |                                                  |\n         +--------------------------------------------------+--------------------------------------------------+\n                                                            |\n                                                            v\n                                            [Containerized Cloud Deployment Clusters]"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Execution Proof: Stage-Gate Evaluation Flow Validation",
+              "steps": [
+                "Step 1: Raw ideation submission payload received from mobile client with signature hash H_in.",
+                "Step 2: Workflow engine verifies schema compliance and computes evaluation score S_eval = sum(W_i * Metric_i).",
+                "Step 3: If S_eval >= Threshold_Approval (0.75), transition state from 'Ideation' to 'Prototyping Approval'; else route to 'Revision Loop'."
+              ],
+              "result": "State successfully mutated to 'Prototyping Approval' with immutable audit trail entry ID #TH-9842."
+            }
+          ],
+          "advantages": [
+            "High modular independence allows independent scaling of resource-heavy analytics and lightweight ingestion services.",
+            "Strict invariant enforcement eliminates data corruption across distributed administrative districts.",
+            "Enhanced accessibility features ensure high adoption rates among non-technical rural innovators."
+          ],
+          "disadvantages": [
+            "Increased architectural complexity requires rigorous automated testing frameworks to manage inter-module event contracts.",
+            "High initial setup overhead for container orchestration clusters across regional deployment nodes."
+          ],
+          "conclusion": "Project Thulir's modular system architecture successfully unifies grassroots innovation management through rigorous boundary definitions and robust stakeholder interfaces. By maintaining strict data flow invariants, the platform ensures scalability, security, and equitable access across agrarian districts.",
+          "source_citation": {
+            "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+            "reference": "Page 5",
+            "quote": "High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir."
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 42",
+          "quote": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers.",
+          "verified": true
+        },
+        "bloom_level": "Analyze",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.278Z"
+      },
+      {
+        "id": "sq-16m-1791993278280-2-cx9y",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 2,
+        "question_text": "Analyze the end-to-end Innovation Pipeline Integration and Stage-Gate Evaluation framework within Project Thulir. Detail how raw ideation inputs are filtered, validated, and transformed into validated deployment proposals while maintaining strict state transition rules.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "Workflow Management & Innovation Pipeline",
+        "difficulty": "hard",
+        "answer": "Comprehensive 16-mark essay detailing the innovation pipeline, state validation rules, and stage-gate evaluation flowcharts.",
+        "structured_16_mark": {
+          "introduction": "The innovation lifecycle in Project Thulir requires a systematic, multi-stage filtration mechanism capable of transforming raw, unstructured grassroots ideas into viable, deployment-ready technological proposals. The primary challenge lies in objectively evaluating subjective submissions while managing resource constraints across agrarian districts. The Workflow Management component solves this by implementing a stage-gate evaluation flowchart that enforces strict criteria at every transition boundary.",
+          "headings": [
+            {
+              "title": "Ideation Ingestion and Initial Filtering",
+              "content": "The pipeline initiates with the intake of raw ideas via multimodal channels, including voice inputs and structured mobile forms. Initial filters perform automated spam detection, duplicate removal, and preliminary feasibility scoring based on predefined resource availability matrices.",
+              "bullet_points": [
+                "Applies Natural Language Processing (NLP) classifiers to categorize incoming textual and voice transcriptions.",
+                "Filters out non-compliant or redundant submissions using similarity threshold algorithms.",
+                "Assigns a unique tracking identifier and timestamps every ingestion event."
+              ]
+            },
+            {
+              "title": "Stage-Gate Evaluation Flowchart Logic",
+              "content": "Submissions progress through sequential evaluation gates: Ideation Screening, Feasibility Analysis, Mentor Review, and Prototyping Approval. Each gate represents a logical checkpoint requiring specific quantitative and qualitative thresholds to be met before state advancement.",
+              "bullet_points": [
+                "Mandates peer review and expert mentor scoring before unlocking prototyping funding.",
+                "Enforces automatic rejection or feedback loops for proposals failing feasibility metrics.",
+                "Maintains strict state machine invariants to prevent unauthorized or skipped workflow stages."
+              ]
+            },
+            {
+              "title": "Transformation into Deployment Proposals",
+              "content": "Once a project successfully clears the prototyping approval gate, the workflow engine synthesizes aggregated impact metrics, design schematics, and resource estimates into a standardized deployment proposal ready for district-level rollout.",
+              "bullet_points": [
+                "Generates comprehensive PDF proposal dossiers automatically from verified database records.",
+                "Links resource allocation requests directly to regional logistics and inventory databases.",
+                "Notifies administrative stakeholders via secure messaging channels upon proposal finalization."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Project Thulir Stage-Gate Evaluation Flowchart",
+              "description": "Sequential flowchart mapping raw ideation filtering down to prototyping approval and deployment proposal generation.",
+              "ascii_representation": "[Raw Ideation Input] ---> [Automated Ingestion Filter] ---> [Gate 1: Feasibility Check]\n                                                                      |\n                                                                      v\n[Deployment Proposal] <--- [Prototyping Approval] <--- [Gate 2: Mentor Review]"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Worked Example: Stage-Gate Score Calculation and State Transition",
+              "steps": [
+                "Step 1: Input proposal receives scores: Feasibility (F) = 0.82, Impact (I) = 0.90, Cost-Efficiency (C) = 0.70.",
+                "Step 2: Compute composite score: C_score = (0.4 * F) + (0.4 * I) + (0.2 * C) = (0.328) + (0.36) + (0.14) = 0.828.",
+                "Step 3: Evaluate against Gate Threshold T_gate = 0.75. Since 0.828 >= 0.75, permit transition to Prototyping Approval."
+              ],
+              "result": "Composite score 0.828 exceeds threshold; state successfully advanced to Prototyping Approval."
+            }
+          ],
+          "advantages": [
+            "Reduces administrative bottleneck through automated preliminary filtration.",
+            "Ensures objective and transparent evaluation using quantifiable metric formulas.",
+            "Provides clear feedback pathways for innovators whose proposals require revision."
+          ],
+          "disadvantages": [
+            "Rigid stage-gate structures may occasionally delay highly unorthodox innovations that do not fit standard evaluation rubrics.",
+            "High dependency on mentor availability for qualitative gate sign-offs."
+          ],
+          "conclusion": "The innovation pipeline and stage-gate evaluation framework provide a disciplined, transparent mechanism for nurturing grassroots ideas. By combining automated filtering with rigorous human expert reviews, Project Thulir ensures optimal resource deployment and high project success rates.",
+          "source_citation": {
+            "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+            "reference": "Page 18",
+            "quote": "Stage-gate evaluation flowchart mapping ideation filtering down to prototyping approval."
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 42",
+          "quote": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers.",
+          "verified": true
+        },
+        "bloom_level": "Synthesize",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.280Z"
+      },
+      {
+        "id": "sq-16m-1791993278282-3-0aha",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 3,
+        "question_text": "Evaluate the Information Security, Role-Based Access Control (RBAC), and Data Encryption standards implemented within Project Thulir. Analyze how the access control matrix and cryptographic protocols safeguard sensitive user submissions and ensure regulatory compliance.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "Information Security & Access Control",
+        "difficulty": "hard",
+        "answer": "Comprehensive 16-mark essay evaluating the access control matrix, role hierarchies, encryption standards, and compliance protocols.",
+        "structured_16_mark": {
+          "introduction": "Information security within Project Thulir is paramount due to the sensitivity of grassroots innovation intellectual property, personal user data, and telemetry links governing agrarian infrastructure. The core security motivation is to prevent unauthorized access, data tampering, and privacy breaches across distributed rural deployment nodes. This is achieved through a comprehensive access control matrix, strict role hierarchies, and industry-standard data encryption protocols.",
+          "headings": [
+            {
+              "title": "Role-Based Access Control (RBAC) Hierarchies",
+              "content": "The system defines a granular role hierarchy distinguishing between Rural Innovators, Mentors, District Evaluators, and System Administrators. Each role is mapped to specific permission vectors within the access control matrix, enforcing the principle of least privilege.",
+              "bullet_points": [
+                "Innovators possess read/write access exclusively to their own project submissions and personal profiles.",
+                "Mentors are granted review and commenting rights over assigned innovation pipelines within their domain.",
+                "Administrators retain system-wide configuration rights while being restricted from altering immutable evaluation audit logs."
+              ]
+            },
+            {
+              "title": "Data Encryption Standards and Cryptographic Protocols",
+              "content": "To protect data at rest and in transit, Project Thulir mandates robust cryptographic algorithms. All database fields containing personally identifiable information (PII) or proprietary innovation descriptions are encrypted using AES-256.",
+              "bullet_points": [
+                "Data in transit across cellular and internet links is secured via TLS 1.3 protocol enforcement.",
+                "Database storage volumes utilize transparent data encryption (TDE) with hardware-backed key management services.",
+                "Telemetry payloads from IoT water valve controllers are signed with HMAC-SHA256 to prevent spoofing."
+              ]
+            },
+            {
+              "title": "Compliance, Auditing, and Threat Mitigation",
+              "content": "The security architecture incorporates continuous monitoring and automated auditing to detect anomalous access patterns or brute-force attempts against authentication endpoints.",
+              "bullet_points": [
+                "Maintains tamper-evident audit logs using cryptographic chaining for all administrative actions.",
+                "Implements rate limiting and multi-factor authentication (MFA) for high-privilege accounts.",
+                "Conducts automated vulnerability scans on container images and API gateways prior to deployment."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Project Thulir Access Control Matrix and Encryption Layer",
+              "description": "Architectural layering demonstrating how user requests pass through RBAC verification and encryption boundaries before hitting storage.",
+              "ascii_representation": "[Client Request] ---> [TLS 1.3 Encryption In Transit] ---> [API Gateway & RBAC Matrix]\n                                                                         |\n                                              +--------------------------+--------------------------+\n                                              | (Authorized)                                        | (Unauthorized)\n                                              v                                                     v\n                                [AES-256 Storage Encryption]                                 [Access Denied / Log Event]"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Worked Example: RBAC Permission Evaluation Algorithm",
+              "steps": [
+                "Step 1: Incoming request from User U with Role R attempts Action A on Resource ID Res_X.",
+                "Step 2: Query Access Control Matrix M(R, A) -> returns Boolean permission flag.",
+                "Step 3: If M(Role_Mentor, Modify_Submission) == False, deny request and log security event."
+              ],
+              "result": "Access request denied successfully, preventing unauthorized modification of innovator submission."
+            }
+          ],
+          "advantages": [
+            "Robust adherence to the principle of least privilege minimizes the attack surface.",
+            "End-to-end encryption ensures data confidentiality even if network boundaries are compromised.",
+            "Tamper-evident audit trails provide accountability and satisfy regulatory compliance requirements."
+          ],
+          "disadvantages": [
+            "Strict cryptographic and RBAC checks introduce minor latency overhead during high-frequency API calls.",
+            "Key management complexity requires secure backup and rotation procedures to prevent permanent data lockouts."
+          ],
+          "conclusion": "Project Thulir’s security framework successfully integrates granular RBAC hierarchies with uncompromising encryption standards. By enforcing rigorous access control matrices and proactive compliance monitoring, the platform safeguards sensitive intellectual property and maintains absolute user trust.",
+          "source_citation": {
+            "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+            "reference": "Page 34",
+            "quote": "Access control matrix detailing role hierarchies, permissions, and data encryption standards."
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 42",
+          "quote": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers.",
+          "verified": true
+        },
+        "bloom_level": "Evaluate",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.282Z"
+      }
+    ],
+    "created_at": "2026-10-14T15:54:38.599Z",
+    "updated_at": "2026-10-14T15:54:38.599Z"
+  },
+  {
+    "id": "qb-2m-1791993278599",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "course_title": "thulir",
+    "title": "thulir - 2-Mark Question Paper with Answers",
+    "description": "Comprehensive 2-mark diagnostic questions with verified answers analyzed from 2 course material(s).",
+    "topics": [
+      "Infrastructure",
+      "Information Security",
+      "Human-Computer Interaction",
+      "Analytics & Metrics",
+      "Workflow Management",
+      "System Engineering",
+      "Project Management",
+      "Networking",
+      "Embedded Systems"
+    ],
+    "total_questions": 10,
+    "total_marks": 20,
+    "questions": [
+      {
+        "id": "sq-2m-1791993278275-1-xcfx",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 1,
+        "question_text": "Define the Cloud Deployment Topology in Project Thulir.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Infrastructure",
+        "difficulty": "easy",
+        "answer": "The cloud deployment topology outlines the structured arrangement of container clusters, load balancers, and regional failovers. It guarantees high availability and robust scalability across multiple operational regions.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 42",
+          "quote": "Cloud deployment topology illustrating container clusters, load balancers, and regional failovers.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.275Z"
+      },
+      {
+        "id": "sq-2m-1791993278275-2-a56e",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 2,
+        "question_text": "What is the function of the Access Control Matrix in information security?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Information Security",
+        "difficulty": "easy",
+        "answer": "The access control matrix details role hierarchies, permission assignments, and data encryption standards. It enforces strict compliance and security measures to protect sensitive user submissions.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 34",
+          "quote": "Access control matrix detailing role hierarchies, permissions, and data encryption standards.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.275Z"
+      },
+      {
+        "id": "sq-2m-1791993278275-3-itqh",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 3,
+        "question_text": "Describe the core UI wireframe components for user engagement.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Human-Computer Interaction",
+        "difficulty": "easy",
+        "answer": "UI wireframes highlight mentor-mentee matching dashboards and built-in accessibility features. These components are designed to maximize rural user participation and low-latency interaction.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 25",
+          "quote": "UI wireframes highlighting mentor-mentee matching dashboards and accessibility features.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.275Z"
+      },
+      {
+        "id": "sq-2m-1791993278275-4-a5vp",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 4,
+        "question_text": "Identify the primary elements displayed in the analytics dashboard mockup.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Analytics & Metrics",
+        "difficulty": "easy",
+        "answer": "The dashboard mockup displays key performance indicators (KPIs), impact metrics, and feedback aggregation charts. These elements provide a quantitative framework for assessing project outcomes.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 12",
+          "quote": "Dashboard mockup displaying key performance indicators, impact metrics, and feedback aggregation charts.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.275Z"
+      },
+      {
+        "id": "sq-2m-1791993278275-5-4ajc",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 5,
+        "question_text": "Explain the role of the stage-gate evaluation flowchart in workflow management.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Workflow Management",
+        "difficulty": "medium",
+        "answer": "The stage-gate evaluation flowchart maps out ideation filtering down to prototyping approval. It acts as an end-to-end processing pipeline that enforces rigorous state validation rules at each transition stage.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 18",
+          "quote": "Stage-gate evaluation flowchart mapping ideation filtering down to prototyping approval.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.276Z"
+      },
+      {
+        "id": "sq-2m-1791993278276-6-mq0d",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 6,
+        "question_text": "What does the high-level system design of Project Thulir showcase?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "System Engineering",
+        "difficulty": "easy",
+        "answer": "It showcases core modular boundaries and stakeholder interfaces for Project Thulir. This establishes the overall system invariant through structured data flow and module separation.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 5",
+          "quote": "High-level system design showcasing core modular boundaries and stakeholder interfaces for Project Thulir.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.276Z"
+      },
+      {
+        "id": "sq-2m-1791993278276-7-8uk4",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 7,
+        "question_text": "What logistical considerations are outlined in the deployment roadmap?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Project Management",
+        "difficulty": "medium",
+        "answer": "The deployment roadmap covers infrastructure scaling blueprints and logistical steps necessary for scaling operations across multiple agrarian districts.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 42",
+          "quote": "Deployment roadmap and logistical considerations for scaling across multiple agrarian districts.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.276Z"
+      },
+      {
+        "id": "sq-2m-1791993278276-8-4x0n",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 8,
+        "question_text": "How do design frameworks enhance rural user accessibility in the system?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Human-Computer Interaction",
+        "difficulty": "easy",
+        "answer": "Design frameworks emphasize voice-first navigation paradigms to overcome literacy barriers and maximize participation among rural innovators and mentors.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 25",
+          "quote": "Design frameworks emphasizing voice-first navigation for rural user accessibility.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.276Z"
+      },
+      {
+        "id": "sq-2m-1791993278276-9-vxcb",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 9,
+        "question_text": "State the telemetry transmission protocols utilized for networking in constrained environments.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Networking",
+        "difficulty": "easy",
+        "answer": "The system utilizes MQTT protocols operating over constrained cellular links for efficient telemetry transmission.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Page 30",
+          "quote": "Telemetry transmission protocols utilizing MQTT over constrained cellular links.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.276Z"
+      },
+      {
+        "id": "sq-2m-1791993278276-10-veew",
+        "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+        "course_id": "course-1791988413424-lmd7",
+        "question_number": 10,
+        "question_text": "Describe the function of automated feedback loops in embedded systems.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Embedded Systems",
+        "difficulty": "medium",
+        "answer": "Automated feedback loops govern water valve controllers based on real-time soil moisture metrics, ensuring precise resource utilization and responsive agrarian management.",
+        "source_citation": {
+          "material_id": "mat-1791991602775-vilr",
+          "material_title": "THULIR_AI_SIH2026_Updated_Board_Book_v3.0",
+          "material_type": "notes",
+          "reference": "Slide 12",
+          "quote": "Automated feedback loops governing water valve controllers based on real-time soil moisture metrics.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T15:54:38.276Z"
+      }
+    ],
+    "created_at": "2026-10-14T15:54:38.599Z",
+    "updated_at": "2026-10-14T15:54:38.599Z"
+  }
+]

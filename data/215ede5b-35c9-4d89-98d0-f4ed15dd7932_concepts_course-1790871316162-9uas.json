@@ -1,0 +1,108 @@
+[
+  {
+    "id": "c-course-1790871316162-9uas-1",
+    "course_id": "course-1790871316162-9uas",
+    "name": "Introduction to Data Science Foundations",
+    "description": "Explores the fundamental lifecycle of data science projects, encompassing problem formulation and data collection. It establishes the basic framework for understanding how data flows from raw inputs to actionable insights.",
+    "category": "Foundations",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [
+      "Data Lifecycle",
+      "Problem Formulation"
+    ],
+    "common_pitfalls": [
+      "Confusing correlation with causation during early exploratory phases."
+    ]
+  },
+  {
+    "id": "c-course-1790871316162-9uas-2",
+    "course_id": "course-1790871316162-9uas",
+    "name": "Data Acquisition and Presentation",
+    "description": "Focuses on gathering raw datasets from disparate sources and structuring them into standardized presentation formats. Students learn how to pitch data-driven ideas effectively using professional slides.",
+    "category": "Foundations",
+    "difficulty_level": 1,
+    "prerequisites": [
+      "Introduction to Data Science Foundations"
+    ],
+    "subconcepts": [
+      "Idea Presentation Formats",
+      "Source Ingestion"
+    ],
+    "common_pitfalls": [
+      "Failing to validate the integrity and authenticity of the ingested data sources."
+    ]
+  },
+  {
+    "id": "c-course-1790871316162-9uas-3",
+    "course_id": "course-1790871316162-9uas",
+    "name": "Data Preprocessing and Cleaning",
+    "description": "Addresses the essential task of handling missing values, outliers, and formatting inconsistencies in raw datasets. Proper preprocessing ensures that downstream analytical models receive clean and reliable inputs.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Data Acquisition and Presentation"
+    ],
+    "subconcepts": [
+      "Missing Value Imputation",
+      "Outlier Detection"
+    ],
+    "common_pitfalls": [
+      "Over-imputing data which can introduce artificial bias into the model."
+    ]
+  },
+  {
+    "id": "c-course-1790871316162-9uas-4",
+    "course_id": "course-1790871316162-9uas",
+    "name": "Exploratory Data Analysis",
+    "description": "Involves using statistical graphics and summary metrics to uncover underlying structures in data. It helps data scientists formulate hypotheses and discover anomalies prior to advanced modeling.",
+    "category": "Core",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Data Preprocessing and Cleaning"
+    ],
+    "subconcepts": [
+      "Data Visualization",
+      "Summary Statistics"
+    ],
+    "common_pitfalls": [
+      "Relying solely on summary statistics without visualizing the raw distribution."
+    ]
+  },
+  {
+    "id": "c-course-1790871316162-9uas-5",
+    "course_id": "course-1790871316162-9uas",
+    "name": "Board Book Documentation and Project Governance",
+    "description": "Covers the structural components of maintaining comprehensive project documentation and updated board books. It ensures transparency, accountability, and reproducibility throughout the project lifecycle.",
+    "category": "Core",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Exploratory Data Analysis"
+    ],
+    "subconcepts": [
+      "Version Control of Board Books",
+      "Stakeholder Reporting"
+    ],
+    "common_pitfalls": [
+      "Treating documentation as an afterthought rather than an iterative process."
+    ]
+  },
+  {
+    "id": "c-course-1790871316162-9uas-6",
+    "course_id": "course-1790871316162-9uas",
+    "name": "Advanced Predictive Modeling and Evaluation",
+    "description": "Focuses on training machine learning algorithms to make predictions on unseen data and rigorously evaluating their performance. Students learn to optimize hyperparameters and avoid overfitting.",
+    "category": "Advanced",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Board Book Documentation and Project Governance"
+    ],
+    "subconcepts": [
+      "Model Training",
+      "Cross-Validation"
+    ],
+    "common_pitfalls": [
+      "Evaluating model performance exclusively on the training dataset."
+    ]
+  }
+]

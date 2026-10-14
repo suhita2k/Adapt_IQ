@@ -1,0 +1,38 @@
+[
+  {
+    "id": "msg-u-1790871011043",
+    "user_id": "fresh-user-1790870928101",
+    "course_id": "course-1790870929539-395i",
+    "role": "user",
+    "content": "What is the Leader Completeness property in Raft and why does it prevent committed entries from being lost?",
+    "created_at": "2026-10-01T16:10:11.043Z"
+  },
+  {
+    "id": "msg-a-1790871011045",
+    "user_id": "fresh-user-1790870928101",
+    "course_id": "course-1790870929539-395i",
+    "role": "assistant",
+    "content": "The Leader Completeness property ensures that if a log entry is committed in a given term, that entry will be present in the logs of the leaders for all higher-numbered terms [Raft Consensus Invariants & Safety Proofs (notes), Page 4]. This prevents committed entries from being lost because Raft's election restriction prevents a candidate from winning an election unless its log contains all committed entries. Consequently, a new leader always starts its term with all previously committed entries intact.",
+    "created_at": "2026-10-01T16:10:11.045Z",
+    "is_off_material": false,
+    "citations": [
+      {
+        "id": "cite-1790871011045-0",
+        "course_id": "course-1790870929539-395i",
+        "material_id": "mat-1790870933463-01pt",
+        "material_title": "Raft Consensus Invariants & Safety Proofs",
+        "material_type": "textbook",
+        "location_type": "page",
+        "location_reference": "Raft Consensus Invariants & Safety Proofs (notes), Page 4",
+        "snippet": "If a log entry is committed in a given term, that entry will be present in the logs of the leaders for all higher-numbered terms.",
+        "confidence_score": 0.96,
+        "relevance_reason": "Directly defines the Leader Completeness property and its guarantee regarding higher-numbered term leaders."
+      }
+    ],
+    "suggested_followups": [
+      "How does the Raft election restriction mechanism enforce Leader Completeness during candidate voting?",
+      "What role does the Log Matching Property play in ensuring safety alongside Leader Completeness?",
+      "What happens if a candidate with an incomplete log attempts to request votes from a quorum?"
+    ]
+  }
+]

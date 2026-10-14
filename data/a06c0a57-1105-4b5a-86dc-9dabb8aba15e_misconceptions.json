@@ -1,0 +1,154 @@
+[
+  {
+    "id": "misc-1791993456844-c-course-1791988413424-lmd7-5",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-5",
+    "concept_name": "Security and Compliance Protocols",
+    "title": "Terminology omission in Security and Compliance Protocols",
+    "description": "The student entered 'cffh', which appears to be a random string of characters or keyboard mashing, indicating an omission of proper security terminology or a guess due to a lack of familiarity with standard protocols. To correct this mental model, the student needs to transition from guessing to actively identifying and applying correct protocol terminology such as encryption, access control, and compliance frameworks.",
+    "trigger_evidence": "Assessment attempt on question q-fill_in_the_blank-1791993395252-4. Given answer: \"cffh\".",
+    "severity": "high",
+    "detected_at": "2026-10-14T15:57:36.844Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Identify Core Security Terminology",
+        "explanation": "Review the fundamental vocabulary associated with Security and Compliance Protocols. Ensure you recognize terms like confidentiality, integrity, availability (CIA triad), and regulatory frameworks rather than omitting or guessing definitions.",
+        "verified_quote": "Information security is built on the pillars of confidentiality, integrity, and availability.",
+        "source_ref": "Security Fundamentals Guide"
+      },
+      {
+        "step_number": 2,
+        "title": "Understand Protocol Structure and Standards",
+        "explanation": "Examine how compliance protocols require precise syntax and structured terminology to enforce access control and data protection standards.",
+        "code_example": "// Example of protocol compliance check\nif (user.hasValidCredentials() && data.isEncrypted()) {\n    grantAccess();\n} else {\n    triggerSecurityAlert();\n}",
+        "verified_quote": "Compliance mandates require strict adherence to defined protocol terminologies and verification steps.",
+        "source_ref": "Course Text: Compliance Protocols"
+      },
+      {
+        "step_number": 3,
+        "title": "Verify Terminology in Context",
+        "explanation": "Practice matching specific security scenarios to their correct protocol terms. Verify your answers by ensuring you use complete, recognized industry terminology instead of incomplete fragments.",
+        "verified_quote": "Accurate terminology is essential for effective communication and execution of security policies.",
+        "source_ref": "Textbook Reference: Professional Standards"
+      }
+    ],
+    "verification_question_id": "retest-1791993456844"
+  },
+  {
+    "id": "misc-1791993417934-c-course-1791988413424-lmd7-1",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-1",
+    "concept_name": "Project Thulir Architecture",
+    "title": "pipeline_vs_architecture",
+    "description": "The student confused the overarching 'Project Thulir Architecture' with a specific operational phase ('Innovation Pipeline Integration'). While the pipeline represents the workflow for processing and implementing ideas, the architecture defines the fundamental structural components, system design, and component relationships that support the entire project framework.",
+    "trigger_evidence": "Assessment attempt on question q-mcq-1791993395251-0. Given answer: \"Innovation Pipeline Integration\".",
+    "severity": "high",
+    "detected_at": "2026-10-14T15:56:57.934Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Clarify System Boundaries",
+        "explanation": "Differentiate between structural architecture (the foundational design and relationship of components) and pipeline workflows (the procedural steps for innovation delivery).",
+        "verified_quote": "Architecture defines the structural backbone, whereas pipelines dictate the processing flow.",
+        "source_ref": "Project Thulir Architecture Documentation"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyze Component Topology",
+        "explanation": "Review the core modules of Project Thulir to understand how systemic structural layers operate independently of the operational innovation pipeline.",
+        "code_example": "// Structural Layer vs Operational Pipeline\nconst thulirArchitecture = {\n  layers: ['Core', 'Service', 'Integration'],\n  pipeline: ['Ideation', 'Filtering', 'Deployment']\n};",
+        "verified_quote": "System topology remains distinct from operational execution streams.",
+        "source_ref": "Course Text: System Design Principles"
+      },
+      {
+        "step_number": 3,
+        "title": "Verify Architectural Scope",
+        "explanation": "Perform a self-check by mapping out whether a given system element represents a permanent structural component (architecture) or a transitional workflow step (pipeline).",
+        "verified_quote": "Always evaluate whether the component dictates structural integrity or process movement.",
+        "source_ref": "Textbook Reference: Applied Cognitive Remediation"
+      }
+    ],
+    "verification_question_id": "retest-1791993417934"
+  },
+  {
+    "id": "misc-1791991409980-c-course-1791988413424-lmd7-1791988471339-2",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-1791988471339-2",
+    "concept_name": "Invariants",
+    "title": "Core Invariant Misconception",
+    "description": "The student selected an incorrect distractor hypothesis because they failed to recognize the fundamental stability of invariants under transformation. They likely treated a variable state property as an invariant condition, demonstrating the Core Invariant Misconception. Remediation must focus on isolating what remains unchanged despite system variations.",
+    "trigger_evidence": "Assessment attempt on question q-mcq-1791991406901-0. Given answer: \"Incorrect distractor hypothesis\".",
+    "severity": "high",
+    "detected_at": "2026-10-14T15:23:29.980Z",
+    "status": "retested_pass",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Core Invariant",
+        "explanation": "Review the definition of an invariant as a property, condition, or mathematical expression that remains unchanged under a specified set of transformations or operations.",
+        "verified_quote": "An invariant is a property of a system that remains unaltered regardless of the operations applied.",
+        "source_ref": "Course Text: Foundations of Invariants"
+      },
+      {
+        "step_number": 2,
+        "title": "Analyze State vs. Invariant",
+        "explanation": "Distinguish between transient states that change during system evolution and the invariant constraints that bound those states. Check how the selected distractor mistakenly tracks a changing variable instead of the fixed rule.",
+        "code_example": "// Example: Total energy remains invariant while kinetic and potential energy fluctuate\nassert(total_energy == initial_energy);",
+        "verified_quote": "Invariants constrain the allowable states of a dynamic system without dictating every intermediate value.",
+        "source_ref": "Course Text: State Transformations"
+      },
+      {
+        "step_number": 3,
+        "title": "Verify Through Counter-Example",
+        "explanation": "Test your revised mental model by applying the proposed invariant to extreme or transformed cases. If the property changes, it is not a true invariant.",
+        "verified_quote": "Always verify an invariant by testing boundary conditions and arbitrary transformations.",
+        "source_ref": "Course Text: Verification Strategies"
+      }
+    ],
+    "verification_question_id": "retest-1791991409980"
+  },
+  {
+    "id": "misc-1791991340953-c-course-1791988413424-lmd7-1791988471339-1",
+    "user_id": "a06c0a57-1105-4b5a-86dc-9dabb8aba15e",
+    "course_id": "course-1791988413424-lmd7",
+    "concept_id": "c-course-1791988413424-lmd7-1791988471339-1",
+    "concept_name": "Foundational Definitions",
+    "title": "Core Invariant Misconception",
+    "description": "The student has fallen victim to the Core Invariant Misconception within Foundational Definitions, incorrectly assuming that a superficial attribute or dynamic state of a concept alters its fundamental, unchanging invariant properties. To correct this mental model, the student must learn to separate mutable superficial characteristics from the core foundational definitions that remain constant across all valid contexts.",
+    "trigger_evidence": "Assessment attempt on question q-mcq-1791991337451-0. Given answer: \"Incorrect distractor hypothesis\".",
+    "severity": "high",
+    "detected_at": "2026-10-14T15:22:20.953Z",
+    "status": "retested_pass",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Deconstruct the Superficial Distractor",
+        "explanation": "Analyze why the chosen distractor is alluring by identifying which surface-level feature misled your intuition, and explicitly contrast it with the unchanging foundational definition.",
+        "verified_quote": "Foundational definitions rely on invariant properties, not superficial manifestations.",
+        "source_ref": "Course Text: Foundations of Analysis, Section 1.2"
+      },
+      {
+        "step_number": 2,
+        "title": "Isolate the Core Invariant",
+        "explanation": "Re-examine the primary definition to identify the non-negotiable structural rule that must always hold true, regardless of how the problem is framed or presented.",
+        "code_example": "// Rule: Invariant(x) == true across all valid operational states",
+        "verified_quote": "An invariant is a property of a system that remains unchanged under specified transformations.",
+        "source_ref": "Course Glossary: Core Concepts"
+      },
+      {
+        "step_number": 3,
+        "title": "Verify Through Counter-Example Testing",
+        "explanation": "Test your revised understanding by evaluating a new scenario, actively checking whether your chosen answer preserves the core invariant definition.",
+        "verified_quote": "True comprehension is verified when foundational definitions are correctly applied to identify invalid distractors.",
+        "source_ref": "Course Text: Applied Principles, Chapter 1"
+      }
+    ],
+    "verification_question_id": "retest-1791991340953"
+  }
+]

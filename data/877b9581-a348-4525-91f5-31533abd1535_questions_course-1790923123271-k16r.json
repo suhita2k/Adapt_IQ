@@ -1,0 +1,117 @@
+[
+  {
+    "id": "q-short_answer-1790923299678-0",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "topic": "Core Topics",
+    "subtopic": "General",
+    "question_type": "short_answer",
+    "difficulty": "easy",
+    "bloom_level": "Remember",
+    "question_text": "Define the primary core concepts introduced in the introductory chapter of the course material.",
+    "options": [],
+    "correct_answer": "The primary core concepts include the fundamental definitions, introductory diagrams, and core syllabus topics.",
+    "explanation": "The text establishes foundational definitions and diagrams on the first page.",
+    "learning_objective": "Core mastery",
+    "source_citation": {
+      "material_title": "chap",
+      "reference": "Page 1",
+      "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Reviewing the introductory definitions provided on page 1 of the text."
+  },
+  {
+    "id": "q-short_answer-1790923299678-1",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "topic": "Core Topics",
+    "subtopic": "General",
+    "question_type": "short_answer",
+    "difficulty": "easy",
+    "bloom_level": "Understand",
+    "question_text": "Explain the role and significance of the diagrams presented in the introductory section.",
+    "options": [],
+    "correct_answer": "Diagrams serve to visually represent core definitions and support the understanding of syllabus topics.",
+    "explanation": "Diagrams alongside core definitions help clarify the introductory syllabus topics.",
+    "learning_objective": "Core mastery",
+    "source_citation": {
+      "material_title": "chap",
+      "reference": "Page 1",
+      "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Analyze the purpose of diagrams in introductory pedagogical materials."
+  },
+  {
+    "id": "q-short_answer-1790923299678-2",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "topic": "Core Topics",
+    "subtopic": "General",
+    "question_type": "short_answer",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "How do the core definitions connect to the broader syllabus topics outlined in the text?",
+    "options": [],
+    "correct_answer": "Core definitions provide the foundational terminology and conceptual boundaries necessary for exploring the broader syllabus topics.",
+    "explanation": "Definitions establish the baseline terminology required to understand the syllabus.",
+    "learning_objective": "Core mastery",
+    "source_citation": {
+      "material_title": "chap",
+      "reference": "Page 1",
+      "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Synthesize the relationship between definitions and syllabus scope."
+  },
+  {
+    "id": "q-short_answer-1790923299678-3",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "topic": "Core Topics",
+    "subtopic": "General",
+    "question_type": "short_answer",
+    "difficulty": "hard",
+    "bloom_level": "Analyze",
+    "question_text": "Analyze how the integration of diagrams and definitions facilitates the comprehension of complex subject matter in 'chap'.",
+    "options": [],
+    "correct_answer": "The integration bridges abstract theoretical definitions with concrete visual representations, enabling multi-faceted cognitive processing and deeper analytical engagement with the syllabus topics.",
+    "explanation": "Combining visual and textual elements reinforces structural understanding.",
+    "learning_objective": "Core mastery",
+    "source_citation": {
+      "material_title": "chap",
+      "reference": "Page 1",
+      "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Evaluate the pedagogical interaction between textual definitions and visual diagrams."
+  },
+  {
+    "id": "q-short_answer-1790923299678-4",
+    "course_id": "course-1790923123271-k16r",
+    "concept_id": "c-course-1790923123271-k16r-1",
+    "concept_name": "chap",
+    "topic": "Core Topics",
+    "subtopic": "General",
+    "question_type": "short_answer",
+    "difficulty": "hard",
+    "bloom_level": "Evaluate",
+    "question_text": "Evaluate the structural importance of establishing clear core definitions at the onset of the course material.",
+    "options": [],
+    "correct_answer": "Establishing clear core definitions prevents conceptual ambiguity, provides a standardized vocabulary, and sets a rigorous framework for evaluating advanced syllabus topics.",
+    "explanation": "Initial definitions act as the bedrock for all subsequent analytical evaluations.",
+    "learning_objective": "Core mastery",
+    "source_citation": {
+      "material_title": "chap",
+      "reference": "Page 1",
+      "quote": "Core definitions, diagrams, and syllabus topics introduced for chap."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Critically assess the necessity of initial definitions for subsequent learning outcomes."
+  }
+]
