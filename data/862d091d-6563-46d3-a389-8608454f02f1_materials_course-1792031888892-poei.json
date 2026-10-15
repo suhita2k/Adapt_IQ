@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mat-1792031950038-kjiu",
+    "course_id": "course-1792031888892-poei",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "title": "16_Mark_Questions_and_Answers",
+    "file_name": "16_Mark_Questions_and_Answers.pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 14044,
+    "file_url": "/api/courses/course-1792031888892-poei/materials/mat-1792031950038-kjiu/file",
+    "visual_elements_count": 2,
+    "status": "indexed",
+    "extracted_chunks_count": 2,
+    "uploaded_at": "2026-10-15T02:39:10.064Z"
+  }
+]

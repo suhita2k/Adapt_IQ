@@ -1,0 +1,1650 @@
+[
+  {
+    "id": "as-1792039535922-m4ki",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "title": "uj Diagnostic Assessment",
+    "status": "in_progress",
+    "total_questions": 1,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-15T04:45:35.922Z",
+    "questions": [
+      {
+        "id": "q-mcq-1792039535922-0",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Interference Analysis",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "Which of the following aspects is explicitly analyzed alongside Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders according to the course materials?",
+        "options": [
+          {
+            "id": "opt-0-0-xj3l",
+            "text": "Output Back-Off (OBO) in Low-Noise Amplifiers",
+            "is_correct": false,
+            "explanation": "Output Back-Off (OBO) is associated with High-Power Amplifiers rather than this specific combination with Low-Noise Amplifiers.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-0-1-eflo",
+            "text": "Satellite circuit interference",
+            "is_correct": true,
+            "explanation": "The course materials explicitly list satellite circuit interference as part of the analysis involving Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders."
+          },
+          {
+            "id": "opt-0-2-ux4p",
+            "text": "Terrestrial waveguide dispersion losses",
+            "is_correct": false,
+            "explanation": "Terrestrial waveguide dispersion losses are not mentioned in the context of bent-pipe transponder C/N ratios in the text.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-0-3-1m05",
+            "text": "Tropospheric scintillation index calculations",
+            "is_correct": false,
+            "explanation": "Tropospheric scintillation index calculations are outside the scope of the cited operational characteristics.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Satellite circuit interference",
+        "explanation": "The text explicitly mentions the analysis of mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference.",
+        "learning_objective": "Demonstrate mastery of Satellite Circuit Interference.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1792039433622-yupm",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "title": "uj Diagnostic Assessment",
+    "status": "completed",
+    "total_questions": 5,
+    "completed_questions": 5,
+    "score_percentage": 60,
+    "started_at": "2026-10-15T04:43:53.622Z",
+    "questions": [
+      {
+        "id": "q-mcq-1792039433621-0",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What does OBO stand for in the context of High-Power Amplifiers within satellite communication systems?",
+        "options": [
+          {
+            "id": "opt-0-0-b39i",
+            "text": "Over-Boost Oscillator",
+            "is_correct": false,
+            "explanation": "This is incorrect terminology for amplifier architectures.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-0-1-c42u",
+            "text": "Output Back-Off",
+            "is_correct": true,
+            "explanation": "OBO is defined as Output Back-Off in High-Power Amplifiers."
+          },
+          {
+            "id": "opt-0-2-d3nr",
+            "text": "Optical Binary Output",
+            "is_correct": false,
+            "explanation": "This does not relate to High-Power Amplifier characteristics.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-0-3-6kkk",
+            "text": "Operational Bandwidth Optimization",
+            "is_correct": false,
+            "explanation": "This is not the definition of OBO in this context.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Output Back-Off",
+        "explanation": "The course materials define OBO as Output Back-Off in High-Power Amplifiers.",
+        "learning_objective": "Demonstrate mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      },
+      {
+        "id": "q-mcq-1792039433621-1",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-2",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Propagation",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Which of the following is examined in relation to transmission characteristics in satellite communication systems?",
+        "options": [
+          {
+            "id": "opt-1-0-pty6",
+            "text": "Free Space Transmission Loss",
+            "is_correct": true,
+            "explanation": "Free Space Transmission Loss calculation is a key part of the course material."
+          },
+          {
+            "id": "opt-1-1-zmpm",
+            "text": "Terrestrial Cable Impedance",
+            "is_correct": false,
+            "explanation": "This refers to wired systems rather than free space satellite links.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-1-2-6dim",
+            "text": "Atmospheric Gravity Drag",
+            "is_correct": false,
+            "explanation": "This is unrelated to transmission loss calculations.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-1-3-fpph",
+            "text": "Subterranean Signal Echo",
+            "is_correct": false,
+            "explanation": "This is not a covered concept.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Free Space Transmission Loss",
+        "explanation": "Free Space Transmission Loss calculation is explicitly mentioned in the course materials.",
+        "learning_objective": "Demonstrate mastery of Free Space Transmission Loss.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      },
+      {
+        "id": "q-mcq-1792039433621-2",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+        "concept_name": "Received Carrier Power and C/N Ratios",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Performance",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What type of transponders are associated with the analysis of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios?",
+        "options": [
+          {
+            "id": "opt-2-0-83ec",
+            "text": "Quantum entanglement transponders",
+            "is_correct": false,
+            "explanation": "This is fictional and not from the course context.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-2-1-8785",
+            "text": "Baseband switching transponders",
+            "is_correct": false,
+            "explanation": "The course material targets bent-pipe transponders.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-2-2-sff4",
+            "text": "Regenerative digital transponders",
+            "is_correct": false,
+            "explanation": "Bent-pipe transponders are specifically referenced in the source material.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-2-3-ie9z",
+            "text": "Bent-pipe transponders",
+            "is_correct": true,
+            "explanation": "The text explicitly mentions bent-pipe transponders in relation to C/N ratios and Received Carrier Power."
+          }
+        ],
+        "correct_answer": "Bent-pipe transponders",
+        "explanation": "The course material analyzes C/N ratios specifically in bent-pipe transponders.",
+        "learning_objective": "Demonstrate mastery of Received Carrier Power and C/N Ratios.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      },
+      {
+        "id": "q-mcq-1792039433622-3",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Interference Analysis",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Which operational characteristic is analyzed alongside Received Carrier Power and C/N ratios according to the course material?",
+        "options": [
+          {
+            "id": "opt-3-0-4s1c",
+            "text": "Spacecraft thermal balance",
+            "is_correct": false,
+            "explanation": "Thermal balance is outside the scope of this transmission metric.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-3-1-o1ke",
+            "text": "Satellite circuit interference",
+            "is_correct": true,
+            "explanation": "Satellite circuit interference is directly analyzed alongside C/N ratios."
+          },
+          {
+            "id": "opt-3-2-ar6v",
+            "text": "Launcher trajectory deviation",
+            "is_correct": false,
+            "explanation": "This relates to rocketry rather than circuit interference.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-3-3-432u",
+            "text": "Solar panel degradation",
+            "is_correct": false,
+            "explanation": "Solar panels are not the focus of this specific interference analysis.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Satellite circuit interference",
+        "explanation": "Satellite circuit interference is analyzed along with carrier power and C/N ratios.",
+        "learning_objective": "Demonstrate mastery of Satellite Circuit Interference.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      },
+      {
+        "id": "q-mcq-1792039433622-4",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What architectural role is examined in relation to High-Power Amplifiers within satellite communication systems?",
+        "options": [
+          {
+            "id": "opt-4-0-8rh0",
+            "text": "On-board computer clocks",
+            "is_correct": false,
+            "explanation": "This is not mentioned as part of the amplifier architecture.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-4-1-5j74",
+            "text": "Uplinks",
+            "is_correct": true,
+            "explanation": "The architectural role of uplinks is examined alongside High-Power Amplifiers."
+          },
+          {
+            "id": "opt-4-2-x3eg",
+            "text": "User terminal displays",
+            "is_correct": false,
+            "explanation": "User displays are not part of the uplink and amplifier architecture.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-4-3-m1do",
+            "text": "Downlink multiplexers",
+            "is_correct": false,
+            "explanation": "The focus in this context is on uplinks.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Uplinks",
+        "explanation": "The material examines the architectural role of uplinks in satellite communication systems.",
+        "learning_objective": "Demonstrate mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      }
+    ],
+    "current_index": 0,
+    "answers": {
+      "q-mcq-1792039433621-0": "opt-0-1-c42u",
+      "q-mcq-1792039433621-1": "opt-1-0-pty6",
+      "q-mcq-1792039433621-2": "opt-2-2-sff4",
+      "q-mcq-1792039433622-3": "opt-3-2-ar6v",
+      "q-mcq-1792039433622-4": "opt-4-1-5j74"
+    },
+    "completed_at": "2026-10-15T04:44:33.650Z"
+  },
+  {
+    "id": "as-1792039433622-yupm",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "title": "uj Diagnostic Assessment",
+    "status": "in_progress",
+    "total_questions": 5,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-15T04:43:53.622Z",
+    "questions": [
+      {
+        "id": "q-mcq-1792039433621-0",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What does OBO stand for in the context of High-Power Amplifiers within satellite communication systems?",
+        "options": [
+          {
+            "id": "opt-0-0-b39i",
+            "text": "Over-Boost Oscillator",
+            "is_correct": false,
+            "explanation": "This is incorrect terminology for amplifier architectures.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-0-1-c42u",
+            "text": "Output Back-Off",
+            "is_correct": true,
+            "explanation": "OBO is defined as Output Back-Off in High-Power Amplifiers."
+          },
+          {
+            "id": "opt-0-2-d3nr",
+            "text": "Optical Binary Output",
+            "is_correct": false,
+            "explanation": "This does not relate to High-Power Amplifier characteristics.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-0-3-6kkk",
+            "text": "Operational Bandwidth Optimization",
+            "is_correct": false,
+            "explanation": "This is not the definition of OBO in this context.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Output Back-Off",
+        "explanation": "The course materials define OBO as Output Back-Off in High-Power Amplifiers.",
+        "learning_objective": "Demonstrate mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      },
+      {
+        "id": "q-mcq-1792039433621-1",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-2",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Propagation",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Which of the following is examined in relation to transmission characteristics in satellite communication systems?",
+        "options": [
+          {
+            "id": "opt-1-0-pty6",
+            "text": "Free Space Transmission Loss",
+            "is_correct": true,
+            "explanation": "Free Space Transmission Loss calculation is a key part of the course material."
+          },
+          {
+            "id": "opt-1-1-zmpm",
+            "text": "Terrestrial Cable Impedance",
+            "is_correct": false,
+            "explanation": "This refers to wired systems rather than free space satellite links.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-1-2-6dim",
+            "text": "Atmospheric Gravity Drag",
+            "is_correct": false,
+            "explanation": "This is unrelated to transmission loss calculations.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-1-3-fpph",
+            "text": "Subterranean Signal Echo",
+            "is_correct": false,
+            "explanation": "This is not a covered concept.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Free Space Transmission Loss",
+        "explanation": "Free Space Transmission Loss calculation is explicitly mentioned in the course materials.",
+        "learning_objective": "Demonstrate mastery of Free Space Transmission Loss.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      },
+      {
+        "id": "q-mcq-1792039433621-2",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+        "concept_name": "Received Carrier Power and C/N Ratios",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Performance",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What type of transponders are associated with the analysis of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios?",
+        "options": [
+          {
+            "id": "opt-2-0-83ec",
+            "text": "Quantum entanglement transponders",
+            "is_correct": false,
+            "explanation": "This is fictional and not from the course context.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-2-1-8785",
+            "text": "Baseband switching transponders",
+            "is_correct": false,
+            "explanation": "The course material targets bent-pipe transponders.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-2-2-sff4",
+            "text": "Regenerative digital transponders",
+            "is_correct": false,
+            "explanation": "Bent-pipe transponders are specifically referenced in the source material.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-2-3-ie9z",
+            "text": "Bent-pipe transponders",
+            "is_correct": true,
+            "explanation": "The text explicitly mentions bent-pipe transponders in relation to C/N ratios and Received Carrier Power."
+          }
+        ],
+        "correct_answer": "Bent-pipe transponders",
+        "explanation": "The course material analyzes C/N ratios specifically in bent-pipe transponders.",
+        "learning_objective": "Demonstrate mastery of Received Carrier Power and C/N Ratios.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      },
+      {
+        "id": "q-mcq-1792039433622-3",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Interference Analysis",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "Which operational characteristic is analyzed alongside Received Carrier Power and C/N ratios according to the course material?",
+        "options": [
+          {
+            "id": "opt-3-0-4s1c",
+            "text": "Spacecraft thermal balance",
+            "is_correct": false,
+            "explanation": "Thermal balance is outside the scope of this transmission metric.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-3-1-o1ke",
+            "text": "Satellite circuit interference",
+            "is_correct": true,
+            "explanation": "Satellite circuit interference is directly analyzed alongside C/N ratios."
+          },
+          {
+            "id": "opt-3-2-ar6v",
+            "text": "Launcher trajectory deviation",
+            "is_correct": false,
+            "explanation": "This relates to rocketry rather than circuit interference.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-3-3-432u",
+            "text": "Solar panel degradation",
+            "is_correct": false,
+            "explanation": "Solar panels are not the focus of this specific interference analysis.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Satellite circuit interference",
+        "explanation": "Satellite circuit interference is analyzed along with carrier power and C/N ratios.",
+        "learning_objective": "Demonstrate mastery of Satellite Circuit Interference.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      },
+      {
+        "id": "q-mcq-1792039433622-4",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What architectural role is examined in relation to High-Power Amplifiers within satellite communication systems?",
+        "options": [
+          {
+            "id": "opt-4-0-8rh0",
+            "text": "On-board computer clocks",
+            "is_correct": false,
+            "explanation": "This is not mentioned as part of the amplifier architecture.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-4-1-5j74",
+            "text": "Uplinks",
+            "is_correct": true,
+            "explanation": "The architectural role of uplinks is examined alongside High-Power Amplifiers."
+          },
+          {
+            "id": "opt-4-2-x3eg",
+            "text": "User terminal displays",
+            "is_correct": false,
+            "explanation": "User displays are not part of the uplink and amplifier architecture.",
+            "misconception_tag": "Conceptual confusion"
+          },
+          {
+            "id": "opt-4-3-m1do",
+            "text": "Downlink multiplexers",
+            "is_correct": false,
+            "explanation": "The focus in this context is on uplinks.",
+            "misconception_tag": "Conceptual confusion"
+          }
+        ],
+        "correct_answer": "Uplinks",
+        "explanation": "The material examines the architectural role of uplinks in satellite communication systems.",
+        "learning_objective": "Demonstrate mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Independently solved and source-grounded."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  },
+  {
+    "id": "as-1792032039103-5f2n",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "title": "uj DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 20,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-15T02:40:39.104Z",
+    "questions": [
+      {
+        "id": "q-mcq-fb-1792032039102-0",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In uj, which of the following accurately describes \"Uplinks and High-Power Amplifiers Architecture\"?",
+        "options": [
+          {
+            "id": "opt-2",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-1",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+          },
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          }
+        ],
+        "correct_answer": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039102-1",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-2",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Propagation",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In uj, which of the following accurately describes \"Free Space Transmission Loss\"?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Calculation of Free Space Transmission Loss within satellite communication systems."
+          },
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          }
+        ],
+        "correct_answer": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 1).",
+        "learning_objective": "Demonstrate foundational mastery of Free Space Transmission Loss.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Q1. Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039102-2",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+        "concept_name": "Received Carrier Power and C/N Ratios",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Performance",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In uj, which of the following accurately describes \"Received Carrier Power and C/N Ratios\"?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": true,
+            "explanation": "Correct. Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders."
+          },
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          }
+        ],
+        "correct_answer": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Received Carrier Power and C/N Ratios.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039102-3",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Interference Analysis",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In uj, which of the following accurately describes \"Satellite Circuit Interference\"?",
+        "options": [
+          {
+            "id": "opt-4",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-1",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": true,
+            "explanation": "Correct. Analysis of operational characteristics regarding satellite circuit interference."
+          }
+        ],
+        "correct_answer": "Analysis of operational characteristics regarding satellite circuit interference.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Satellite Circuit Interference.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039102-4",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In uj, which of the following accurately describes \"Uplinks and High-Power Amplifiers Architecture\"?",
+        "options": [
+          {
+            "id": "opt-2",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-1",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+          }
+        ],
+        "correct_answer": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039102-5",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-2",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Propagation",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In uj, which of the following accurately describes \"Free Space Transmission Loss\"?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Calculation of Free Space Transmission Loss within satellite communication systems."
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          }
+        ],
+        "correct_answer": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 1).",
+        "learning_objective": "Demonstrate foundational mastery of Free Space Transmission Loss.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Q1. Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-6",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+        "concept_name": "Received Carrier Power and C/N Ratios",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Performance",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In uj, which of the following accurately describes \"Received Carrier Power and C/N Ratios\"?",
+        "options": [
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-1",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": true,
+            "explanation": "Correct. Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders."
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          }
+        ],
+        "correct_answer": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Received Carrier Power and C/N Ratios.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-7",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Interference Analysis",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In uj, which of the following accurately describes \"Satellite Circuit Interference\"?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": true,
+            "explanation": "Correct. Analysis of operational characteristics regarding satellite circuit interference."
+          },
+          {
+            "id": "opt-4",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          }
+        ],
+        "correct_answer": "Analysis of operational characteristics regarding satellite circuit interference.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Satellite Circuit Interference.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-8",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In uj, which of the following accurately describes \"Uplinks and High-Power Amplifiers Architecture\"?",
+        "options": [
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-1",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+          },
+          {
+            "id": "opt-2",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          }
+        ],
+        "correct_answer": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-9",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-2",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Propagation",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In uj, which of the following accurately describes \"Free Space Transmission Loss\"?",
+        "options": [
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-1",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Calculation of Free Space Transmission Loss within satellite communication systems."
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          }
+        ],
+        "correct_answer": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 1).",
+        "learning_objective": "Demonstrate foundational mastery of Free Space Transmission Loss.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Q1. Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-10",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+        "concept_name": "Received Carrier Power and C/N Ratios",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Performance",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In uj, which of the following accurately describes \"Received Carrier Power and C/N Ratios\"?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": true,
+            "explanation": "Correct. Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders."
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          }
+        ],
+        "correct_answer": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Received Carrier Power and C/N Ratios.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-11",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Interference Analysis",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In uj, which of the following accurately describes \"Satellite Circuit Interference\"?",
+        "options": [
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-1",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": true,
+            "explanation": "Correct. Analysis of operational characteristics regarding satellite circuit interference."
+          },
+          {
+            "id": "opt-4",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          }
+        ],
+        "correct_answer": "Analysis of operational characteristics regarding satellite circuit interference.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Satellite Circuit Interference.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-12",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In uj, which of the following accurately describes \"Uplinks and High-Power Amplifiers Architecture\"?",
+        "options": [
+          {
+            "id": "opt-2",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-1",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+          }
+        ],
+        "correct_answer": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-13",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-2",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Propagation",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In uj, which of the following accurately describes \"Free Space Transmission Loss\"?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Calculation of Free Space Transmission Loss within satellite communication systems."
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          }
+        ],
+        "correct_answer": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 1).",
+        "learning_objective": "Demonstrate foundational mastery of Free Space Transmission Loss.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Q1. Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-14",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+        "concept_name": "Received Carrier Power and C/N Ratios",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Performance",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In uj, which of the following accurately describes \"Received Carrier Power and C/N Ratios\"?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": true,
+            "explanation": "Correct. Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders."
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          }
+        ],
+        "correct_answer": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Received Carrier Power and C/N Ratios.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-15",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Interference Analysis",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In uj, which of the following accurately describes \"Satellite Circuit Interference\"?",
+        "options": [
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-4",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-1",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": true,
+            "explanation": "Correct. Analysis of operational characteristics regarding satellite circuit interference."
+          },
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          }
+        ],
+        "correct_answer": "Analysis of operational characteristics regarding satellite circuit interference.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Satellite Circuit Interference.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-16",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+        "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Amplifier Architecture",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In uj, which of the following accurately describes \"Uplinks and High-Power Amplifiers Architecture\"?",
+        "options": [
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-2",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Uplinks and High-Power Amplifiers Architecture"
+          },
+          {
+            "id": "opt-1",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+          }
+        ],
+        "correct_answer": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Uplinks and High-Power Amplifiers Architecture.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-17",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-2",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Propagation",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "In uj, which of the following accurately describes \"Free Space Transmission Loss\"?",
+        "options": [
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-3",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Free Space Transmission Loss"
+          },
+          {
+            "id": "opt-1",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": true,
+            "explanation": "Correct. Calculation of Free Space Transmission Loss within satellite communication systems."
+          }
+        ],
+        "correct_answer": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 1).",
+        "learning_objective": "Demonstrate foundational mastery of Free Space Transmission Loss.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 1",
+          "quote": "Q1. Examine in detail the architectural role of uplinks, the calculation of Free Space Transmission Loss, and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-18",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+        "concept_name": "Received Carrier Power and C/N Ratios",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Signal Performance",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "In uj, which of the following accurately describes \"Received Carrier Power and C/N Ratios\"?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": true,
+            "explanation": "Correct. Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders."
+          },
+          {
+            "id": "opt-4",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          },
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Received Carrier Power and C/N Ratios"
+          }
+        ],
+        "correct_answer": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Received Carrier Power and C/N Ratios.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      },
+      {
+        "id": "q-mcq-fb-1792032039103-19",
+        "course_id": "course-1792031888892-poei",
+        "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communication Systems",
+        "subtopic": "Interference Analysis",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Apply",
+        "question_text": "In uj, which of the following accurately describes \"Satellite Circuit Interference\"?",
+        "options": [
+          {
+            "id": "opt-2",
+            "text": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-4",
+            "text": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          },
+          {
+            "id": "opt-1",
+            "text": "Analysis of operational characteristics regarding satellite circuit interference.",
+            "is_correct": true,
+            "explanation": "Correct. Analysis of operational characteristics regarding satellite circuit interference."
+          },
+          {
+            "id": "opt-3",
+            "text": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+            "is_correct": false,
+            "explanation": "Incorrect. This relates to alternative components or invalid formulations.",
+            "misconception_tag": "Misunderstanding of Satellite Circuit Interference"
+          }
+        ],
+        "correct_answer": "Analysis of operational characteristics regarding satellite circuit interference.",
+        "explanation": "Accurately grounded in 16_Mark_Questions_and_Answers (Page 2).",
+        "learning_objective": "Demonstrate foundational mastery of Satellite Circuit Interference.",
+        "source_citation": {
+          "material_title": "16_Mark_Questions_and_Answers",
+          "reference": "Page 2",
+          "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Synthesized from verified course concepts and source evidence."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  }
+]

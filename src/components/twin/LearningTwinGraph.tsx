@@ -1,32 +1,32 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import {
   Brain,
-  AlertTriangle,
+  BookOpen,
+  Award,
   CheckCircle2,
-  Clock,
+  AlertTriangle,
   ArrowRight,
   TrendingUp,
   Activity,
-  Zap,
   Sparkles,
-  BookOpen,
-  Target,
   BarChart2,
   RefreshCw,
-  Award,
+  Clock,
+  ArrowUpRight,
+  ZoomIn,
+  ZoomOut,
+  Maximize2,
+  RotateCcw,
   Layers,
-  ShieldAlert,
   HelpCircle,
-  FolderOpen,
 } from 'lucide-react';
 import {
   Concept,
   ConceptRelationship,
   StudentMastery,
-  TopicMastery,
   LearningTwinMetrics,
   Misconception,
   Assessment,
@@ -36,6 +36,8 @@ import {
 interface LearningTwinGraphProps {
   course?: Course;
   allCourses?: Course[];
+  selectedCourseId?: string;
+  onSelectCourse?: (courseId: string) => void;
   concepts?: Concept[];
   relationships?: ConceptRelationship[];
   masteryList: StudentMastery[];
@@ -61,7 +63,7 @@ function formatRelativeTime(dateStr?: string): string {
     const diffDays = Math.floor(diffHours / 24);
     if (diffDays === 1) return 'Yesterday';
     if (diffDays < 7) return `${diffDays}d ago`;
-    return date.toLocaleDateString();
+    return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
   } catch {
     return dateStr;
   }
@@ -70,6 +72,8 @@ function formatRelativeTime(dateStr?: string): string {
 export default function LearningTwinGraph({
   course,
   allCourses = [],
+  selectedCourseId,
+  onSelectCourse,
   concepts = [],
   relationships = [],
   masteryList = [],
@@ -82,8 +86,14 @@ export default function LearningTwinGraph({
   const [selectedConceptId, setSelectedConceptId] = useState<string>(
     concepts.length > 0 ? concepts[0].id : ''
   );
-  const [viewMode, setViewMode] = useState<'graph' | 'matrix' | 'retention' | 'topics'>('graph');
   const [isRefreshing, setIsRefreshing] = useState(false);
+
+  // Graph Canvas View State (Zoom, Pan, Drag)
+  const [zoom, setZoom] = useState(1);
+  const [pan, setPan] = useState({ x: 20, y: 20 });
+  const [isDragging, setIsDragging] = useState(false);
+  const dragStartRef = useRef({ x: 0, y: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const handleRefresh = async () => {
     if (!onRefresh) return;
@@ -95,53 +105,9 @@ export default function LearningTwinGraph({
     }
   };
 
-  if (concepts.length === 0) {
-    return (
-      <div className="rounded-2xl border border-dashed border-[#DDD6C5] bg-[#FFFDF7] p-12 text-center space-y-3 shadow-xs">
-        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#FAF5E8] border border-[#DDD6C5] mx-auto">
-          <Brain className="h-6 w-6 text-[#B1A15A]" />
-        </div>
-        <h3 className="text-base font-bold text-[#26313D]">No data available yet.</h3>
-        <p className="text-xs text-[#6F7782] max-w-sm mx-auto">
-          Upload your course materials to get started.
-        </p>
-        <Link
-          href="/courses"
-          className="inline-flex items-center gap-2 rounded-xl bg-[#B1A15A] px-4 py-2 text-xs font-bold text-[#26313D] hover:bg-[#9E8F4B] transition-all shadow-xs mt-2"
-        >
-          <BookOpen className="w-4 h-4" /> Go to Courses
-        </Link>
-      </div>
-    );
-  }
-
-  // --- Dynamic Layout Calculation for Graph View ---
-  const nodePositions: Record<string, { x: number; y: number }> = {};
-  const cols = Math.min(4, Math.max(2, Math.ceil(Math.sqrt(concepts.length))));
-  const spacingX = Math.floor(640 / Math.max(1, cols - 1));
-  const spacingY = 120;
-
-  concepts.forEach((concept, idx) => {
-    const col = idx % cols;
-    const row = Math.floor(idx / cols);
-    nodePositions[concept.id] = {
-      x: 70 + col * spacingX,
-      y: 70 + row * spacingY,
-    };
-  });
-
-  const activeSelectedId =
-    selectedConceptId && concepts.some((c) => c.id === selectedConceptId)
-      ? selectedConceptId
-      : concepts[0].id;
-
-  const selectedConcept = concepts.find((c) => c.id === activeSelectedId);
-  const selectedMastery = masteryList.find((m) => m.concept_id === activeSelectedId);
-
-  // --- Metrics Computation (Direct from live mastery data & attempts) ---
+  // --- Real Mastery Calculations ---
   const totalAttempts = masteryList.reduce((acc, m) => acc + (m.attempt_count || 0), 0);
   const totalCorrect = masteryList.reduce((acc, m) => acc + (m.correct_count || 0), 0);
-  const totalIncorrect = masteryList.reduce((acc, m) => acc + (m.incorrect_count || 0), 0);
   const overallAccuracy =
     totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
 
@@ -159,900 +125,1235 @@ export default function LearningTwinGraph({
       ? metrics.overall_mastery
       : courseMasteryPercentage;
 
-  const averageConfidence =
-    masteryList.length > 0
-      ? Math.round(
-          (masteryList.reduce((acc, m) => acc + (m.confidence || 0.5), 0) /
-            masteryList.length) *
-            100
-        )
-      : 50;
+  // --- Formatted Topics List with Exact Mastery Indicators ---
+  // Green: Strong (80-100%), Gold: Improving (50-79%), Red: Needs Practice (0-49%), Grey: Not Assessed
+  const formattedTopics = useMemo(() => {
+    return concepts.map((concept) => {
+      const mastery = masteryList.find(
+        (m) =>
+          m.concept_id === concept.id ||
+          m.concept_name.toLowerCase().trim() === concept.name.toLowerCase().trim()
+      );
+      const attemptCount = mastery?.attempt_count || 0;
+      const correctCount = mastery?.correct_count || 0;
+      const prob = mastery ? mastery.mastery_probability : 0.5;
+      const masteryPct = Math.round(prob * 100);
 
-  // --- Topic-Wise Grouping & Mastery Calculation ---
-  const distinctCategories = new Set(
-    masteryList.map((m) => m.category).filter((c) => c && c !== 'Core' && c !== 'General')
-  );
-  const useCategory = distinctCategories.size > 1;
-
-  const topicGroups: Record<
-    string,
-    {
-      topic: string;
-      mastery_sum: number;
-      concept_count: number;
-      attempt_count: number;
-      correct_count: number;
-      incorrect_count: number;
-    }
-  > = {};
-
-  masteryList.forEach((m) => {
-    const topicName = (useCategory && m.category && m.category !== 'Core' && m.category !== 'General')
-      ? m.category
-      : (m.concept_name || m.category || 'Core Topics');
-
-    if (!topicGroups[topicName]) {
-      topicGroups[topicName] = {
-        topic: topicName,
-        mastery_sum: 0,
-        concept_count: 0,
-        attempt_count: 0,
-        correct_count: 0,
-        incorrect_count: 0,
+      let statusLabel: 'Strong' | 'Improving' | 'Needs Practice' | 'Not Assessed';
+      let statusColor: {
+        bg: string;
+        text: string;
+        border: string;
+        dot: string;
+        bar: string;
+        stroke: string;
+        pillBg: string;
       };
-    }
-    topicGroups[topicName].mastery_sum += m.mastery_probability || 0;
-    topicGroups[topicName].concept_count += 1;
-    topicGroups[topicName].attempt_count += m.attempt_count || 0;
-    topicGroups[topicName].correct_count += m.correct_count || 0;
-    topicGroups[topicName].incorrect_count += m.incorrect_count || 0;
-  });
 
-  const topicMasteryList: TopicMastery[] = Object.values(topicGroups).map((t) => {
-    const masteryPct =
-      t.concept_count > 0 ? Math.round((t.mastery_sum / t.concept_count) * 100) : 50;
-    const acc =
-      t.attempt_count > 0 ? Math.round((t.correct_count / t.attempt_count) * 100) : 0;
-    return {
-      topic: t.topic,
-      course_id: course?.id || '',
-      mastery_percentage: masteryPct,
-      attempt_count: t.attempt_count,
-      correct_count: t.correct_count,
-      incorrect_count: t.incorrect_count,
-      accuracy: acc,
-      concept_count: t.concept_count,
-      status:
-        masteryPct >= 75 ? 'mastered' : masteryPct >= 50 ? 'developing' : 'weak',
-    };
-  });
+      if (attemptCount === 0) {
+        statusLabel = 'Not Assessed';
+        statusColor = {
+          bg: 'bg-slate-100',
+          text: 'text-slate-600',
+          border: 'border-slate-300',
+          dot: 'bg-slate-400',
+          bar: 'bg-slate-300',
+          stroke: '#94A3B8',
+          pillBg: '#F1F5F9',
+        };
+      } else if (masteryPct >= 80) {
+        statusLabel = 'Strong';
+        statusColor = {
+          bg: 'bg-[#6D9B73]/15',
+          text: 'text-[#6D9B73]',
+          border: 'border-[#6D9B73]/30',
+          dot: 'bg-[#6D9B73]',
+          bar: 'bg-[#6D9B73]',
+          stroke: '#6D9B73',
+          pillBg: '#EBF4EC',
+        };
+      } else if (masteryPct >= 50) {
+        statusLabel = 'Improving';
+        statusColor = {
+          bg: 'bg-[#B1A15A]/15',
+          text: 'text-[#8E7F3B]',
+          border: 'border-[#B1A15A]/30',
+          dot: 'bg-[#B1A15A]',
+          bar: 'bg-[#B1A15A]',
+          stroke: '#B1A15A',
+          pillBg: '#F9F6EA',
+        };
+      } else {
+        statusLabel = 'Needs Practice';
+        statusColor = {
+          bg: 'bg-[#B85C5C]/15',
+          text: 'text-[#B85C5C]',
+          border: 'border-[#B85C5C]/30',
+          dot: 'bg-[#B85C5C]',
+          bar: 'bg-[#B85C5C]',
+          stroke: '#B85C5C',
+          pillBg: '#FDF2F2',
+        };
+      }
 
-  // Weak (< 65%) vs Strong (>= 75%) concepts
-  const weakConcepts = masteryList
-    .filter((m) => (m.mastery_probability || 0) < 0.65)
-    .sort((a, b) => a.mastery_probability - b.mastery_probability);
+      return {
+        id: concept.id,
+        name: concept.name,
+        category: concept.category || 'Core Concept',
+        description: concept.description,
+        prerequisites: concept.prerequisites || [],
+        masteryPercentage: masteryPct,
+        statusLabel,
+        statusColor,
+        attemptCount,
+        correctCount,
+        accuracy: attemptCount > 0 ? Math.round((correctCount / attemptCount) * 100) : 0,
+        lastPracticed: formatRelativeTime(mastery?.last_practiced),
+        forgettingRisk: mastery?.forgetting_risk || 'medium',
+      };
+    });
+  }, [concepts, masteryList]);
 
-  const strongConcepts = masteryList
-    .filter((m) => (m.mastery_probability || 0) >= 0.75)
-    .sort((a, b) => b.mastery_probability - a.mastery_probability);
+  // Topics needing improvement (< 50% or "Needs Practice")
+  const topicsToImproveCount = formattedTopics.filter(
+    (t) => t.statusLabel === 'Needs Practice'
+  ).length;
 
-  // Selected concept metrics
-  const selectedAttempts = selectedMastery?.attempt_count || 0;
-  const selectedCorrect = selectedMastery?.correct_count || 0;
-  const selectedIncorrect = selectedMastery?.incorrect_count || 0;
-  const selectedAccuracy =
-    selectedAttempts > 0 ? Math.round((selectedCorrect / selectedAttempts) * 100) : 0;
-  const selectedConfidence = Math.round((selectedMastery?.confidence || 0.5) * 100);
-  const selectedRisk = selectedMastery?.forgetting_risk || 'medium';
-  const selectedLastPracticedStr = formatRelativeTime(selectedMastery?.last_practiced);
+  // Selected concept for inspector
+  const activeSelectedId =
+    selectedConceptId && concepts.some((c) => c.id === selectedConceptId)
+      ? selectedConceptId
+      : concepts.length > 0
+      ? concepts[0].id
+      : '';
 
-  const selectedConceptMisconceptions = misconceptions.filter(
+  const selectedTopic = formattedTopics.find((t) => t.id === activeSelectedId);
+
+  // --- Real Prerequisite Edges Matching (By ID and By Concept Name) ---
+  const activeEdges = useMemo(() => {
+    const list: Array<{
+      id: string;
+      sourceId: string;
+      targetId: string;
+      sourceName: string;
+      targetName: string;
+    }> = [];
+
+    const nameToId = new Map<string, string>();
+    concepts.forEach((c) => {
+      nameToId.set(c.id, c.id);
+      nameToId.set(c.name.toLowerCase().trim(), c.id);
+    });
+
+    // 1. From relationships table
+    relationships.forEach((rel, idx) => {
+      if (rel.relationship_type === 'prerequisite' || !rel.relationship_type) {
+        const srcId = nameToId.get(rel.source_concept_id) || nameToId.get(rel.source_concept_id.toLowerCase().trim());
+        const tgtId = nameToId.get(rel.target_concept_id) || nameToId.get(rel.target_concept_id.toLowerCase().trim());
+        if (srcId && tgtId && srcId !== tgtId) {
+          list.push({
+            id: rel.id || `rel-${idx}`,
+            sourceId: srcId,
+            targetId: tgtId,
+            sourceName: rel.source_concept_id,
+            targetName: rel.target_concept_id,
+          });
+        }
+      }
+    });
+
+    // 2. From concept.prerequisites arrays
+    concepts.forEach((concept) => {
+      if (Array.isArray(concept.prerequisites)) {
+        concept.prerequisites.forEach((pName, pIdx) => {
+          const srcId = nameToId.get(pName) || nameToId.get(pName.toLowerCase().trim());
+          if (srcId && srcId !== concept.id) {
+            // Avoid duplicates
+            if (!list.some((e) => e.sourceId === srcId && e.targetId === concept.id)) {
+              list.push({
+                id: `prereq-${concept.id}-${pIdx}`,
+                sourceId: srcId,
+                targetId: concept.id,
+                sourceName: pName,
+                targetName: concept.name,
+              });
+            }
+          }
+        });
+      }
+    });
+
+    return list;
+  }, [concepts, relationships]);
+
+  // Selected Topic Prerequisites and Dependents
+  const selectedPrereqs = useMemo(() => {
+    if (!activeSelectedId) return [];
+    const prereqIds = activeEdges
+      .filter((e) => e.targetId === activeSelectedId)
+      .map((e) => e.sourceId);
+    return formattedTopics.filter((t) => prereqIds.includes(t.id));
+  }, [activeSelectedId, activeEdges, formattedTopics]);
+
+  const selectedDependents = useMemo(() => {
+    if (!activeSelectedId) return [];
+    const depIds = activeEdges
+      .filter((e) => e.sourceId === activeSelectedId)
+      .map((e) => e.targetId);
+    return formattedTopics.filter((t) => depIds.includes(t.id));
+  }, [activeSelectedId, activeEdges, formattedTopics]);
+
+  // Misconception for selected topic
+  const selectedTopicMisconception = misconceptions.find(
     (m) =>
       m.concept_id === activeSelectedId ||
-      m.concept_name.toLowerCase() === (selectedConcept?.name || '').toLowerCase()
+      m.concept_name.toLowerCase().trim() === (selectedTopic?.name || '').toLowerCase().trim()
   );
 
-  const getMasteryColor = (prob: number) => {
-    if (prob >= 0.85)
-      return {
-        bg: 'bg-[#6D9B73]/15',
-        border: 'border-[#6D9B73]',
-        text: 'text-[#6D9B73]',
-        stroke: '#6D9B73',
-      };
-    if (prob >= 0.65)
-      return {
-        bg: 'bg-[#B1A15A]/15',
-        border: 'border-[#B1A15A]',
-        text: 'text-[#B1A15A]',
-        stroke: '#B1A15A',
-      };
-    if (prob >= 0.45)
-      return {
-        bg: 'bg-[#D4A359]/15',
-        border: 'border-[#D4A359]',
-        text: 'text-[#D4A359]',
-        stroke: '#D4A359',
-      };
+  // --- Topological Level DAG Layout for Learning Graph ---
+  const NODE_WIDTH = 180;
+  const NODE_HEIGHT = 64;
+  const COL_SPACING = 90;
+  const ROW_SPACING = 28;
+
+  const { nodePositions, totalWidth, totalHeight } = useMemo(() => {
+    if (concepts.length === 0) {
+      return { nodePositions: {}, totalWidth: 700, totalHeight: 400 };
+    }
+
+    // Calculate in-degree and adjacency
+    const inDegree: Record<string, number> = {};
+    const adj: Record<string, string[]> = {};
+    concepts.forEach((c) => {
+      inDegree[c.id] = 0;
+      adj[c.id] = [];
+    });
+
+    activeEdges.forEach((e) => {
+      if (inDegree[e.targetId] !== undefined) {
+        inDegree[e.targetId] += 1;
+      }
+      if (adj[e.sourceId]) {
+        adj[e.sourceId].push(e.targetId);
+      }
+    });
+
+    // Topological Levels calculation
+    const levels: Record<string, number> = {};
+    concepts.forEach((c) => {
+      levels[c.id] = inDegree[c.id] === 0 ? 0 : 1;
+    });
+
+    // Propagate levels forward (Prerequisites -> Fundamentals Level 0 -> Level 1 -> Level 2)
+    let changed = true;
+    let iterations = 0;
+    while (changed && iterations < 10) {
+      changed = false;
+      iterations++;
+      activeEdges.forEach((e) => {
+        const srcLevel = levels[e.sourceId] || 0;
+        const tgtLevel = levels[e.targetId] || 0;
+        if (tgtLevel <= srcLevel) {
+          levels[e.targetId] = srcLevel + 1;
+          changed = true;
+        }
+      });
+    }
+
+    // Group nodes by level
+    const levelGroups: Record<number, string[]> = {};
+    concepts.forEach((c) => {
+      const lvl = levels[c.id] || 0;
+      if (!levelGroups[lvl]) levelGroups[lvl] = [];
+      levelGroups[lvl].push(c.id);
+    });
+
+    const maxLevel = Math.max(0, ...Object.keys(levelGroups).map(Number));
+    const maxNodesInAnyCol = Math.max(1, ...Object.values(levelGroups).map((g) => g.length));
+
+    const canvasWidth = Math.max(760, (maxLevel + 1) * (NODE_WIDTH + COL_SPACING) + 80);
+    const canvasHeight = Math.max(400, maxNodesInAnyCol * (NODE_HEIGHT + ROW_SPACING) + 80);
+
+    const positions: Record<string, { x: number; y: number; width: number; height: number }> = {};
+
+    Object.entries(levelGroups).forEach(([lvlStr, nodeIds]) => {
+      const lvl = Number(lvlStr);
+      const colHeight = nodeIds.length * NODE_HEIGHT + (nodeIds.length - 1) * ROW_SPACING;
+      const startY = Math.max(40, (canvasHeight - colHeight) / 2);
+      const x = 40 + lvl * (NODE_WIDTH + COL_SPACING);
+
+      nodeIds.forEach((id, idx) => {
+        const y = startY + idx * (NODE_HEIGHT + ROW_SPACING);
+        positions[id] = {
+          x,
+          y,
+          width: NODE_WIDTH,
+          height: NODE_HEIGHT,
+        };
+      });
+    });
+
     return {
-      bg: 'bg-[#B85C5C]/15',
-      border: 'border-[#B85C5C]',
-      text: 'text-[#B85C5C]',
-      stroke: '#B85C5C',
+      nodePositions: positions,
+      totalWidth: canvasWidth,
+      totalHeight: canvasHeight,
     };
+  }, [concepts, activeEdges]);
+
+  // --- Graph Controls: Fit to Screen, Zoom In, Zoom Out, Reset View ---
+  const fitToScreen = useCallback(() => {
+    if (!containerRef.current || totalWidth === 0 || totalHeight === 0) return;
+    const contW = containerRef.current.clientWidth || 700;
+    const contH = containerRef.current.clientHeight || 400;
+
+    const scaleX = (contW - 60) / totalWidth;
+    const scaleY = (contH - 60) / totalHeight;
+    const fitScale = Math.min(1.2, Math.max(0.45, Math.min(scaleX, scaleY)));
+
+    setZoom(fitScale);
+    setPan({
+      x: Math.max(20, (contW - totalWidth * fitScale) / 2),
+      y: Math.max(20, (contH - totalHeight * fitScale) / 2),
+    });
+  }, [totalWidth, totalHeight]);
+
+  // Auto fit when course changes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      fitToScreen();
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [selectedCourseId, concepts.length, fitToScreen]);
+
+  const handleZoomIn = () => setZoom((prev) => Math.min(2.2, prev + 0.15));
+  const handleZoomOut = () => setZoom((prev) => Math.max(0.4, prev - 0.15));
+  const handleResetView = () => {
+    setZoom(1);
+    setPan({ x: 30, y: 30 });
   };
 
-  const svgHeight = Math.max(440, (Math.ceil(concepts.length / cols) + 1) * spacingY);
+  // Mouse drag panning
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (e.button !== 0) return;
+    const targetTag = (e.target as HTMLElement).tagName;
+    if (targetTag === 'svg' || targetTag === 'DIV' || targetTag === 'line' || targetTag === 'path') {
+      setIsDragging(true);
+      dragStartRef.current = { x: e.clientX - pan.x, y: e.clientY - pan.y };
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    setPan({
+      x: e.clientX - dragStartRef.current.x,
+      y: e.clientY - dragStartRef.current.y,
+    });
+  };
+
+  const handleMouseUp = () => setIsDragging(false);
+
+  const handleWheel = (e: React.WheelEvent) => {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? -0.06 : 0.06;
+    setZoom((prev) => Math.min(2.2, Math.max(0.4, prev + delta)));
+  };
+
+  // --- 7. Personalized Recommendation Computation ---
+  const recommendation = useMemo(() => {
+    const activeMisc = misconceptions.find(
+      (m) => m.status === 'active' || (m.status as string) === 'Detected'
+    );
+    if (activeMisc) {
+      return {
+        topic: activeMisc.concept_name,
+        conceptId: activeMisc.concept_id,
+        reason: `Diagnosed misconception: "${activeMisc.title}". Resolving this cognitive conflict will eliminate repeated errors in assessments.`,
+        badgeText: 'Diagnosed Misconception',
+        actionText: 'Resolve Misconception',
+        actionHref: `/misconceptions?id=${activeMisc.id}`,
+        urgency: 'high' as const,
+      };
+    }
+
+    const weakConceptIds = new Set(
+      formattedTopics.filter((t) => t.statusLabel === 'Needs Practice').map((t) => t.id)
+    );
+    const blockingRel = activeEdges.find((e) => weakConceptIds.has(e.sourceId));
+    if (blockingRel) {
+      const prereq = formattedTopics.find((t) => t.id === blockingRel.sourceId);
+      const target = formattedTopics.find((t) => t.id === blockingRel.targetId);
+      if (prereq) {
+        return {
+          topic: prereq.name,
+          conceptId: prereq.id,
+          reason: `Foundational prerequisite for "${target ? target.name : 'advanced topics'}". Mastering this topic will unlock advanced concepts.`,
+          badgeText: 'Prerequisite Gap',
+          actionText: 'Practice Prerequisite',
+          actionHref: `/assessment?concept=${prereq.id}&courseId=${course?.id || ''}`,
+          urgency: 'high' as const,
+        };
+      }
+    }
+
+    const unassessed = formattedTopics.find((t) => t.statusLabel === 'Not Assessed');
+    if (unassessed) {
+      return {
+        topic: unassessed.name,
+        conceptId: unassessed.id,
+        reason: `Not yet assessed. Take a quick diagnostic quiz to calibrate your initial concept mastery.`,
+        badgeText: 'Baseline Assessment',
+        actionText: 'Take Diagnostic',
+        actionHref: `/assessment?concept=${unassessed.id}&courseId=${course?.id || ''}`,
+        urgency: 'medium' as const,
+      };
+    }
+
+    const lowest = [...formattedTopics].sort(
+      (a, b) => a.masteryPercentage - b.masteryPercentage
+    )[0];
+    if (lowest && lowest.masteryPercentage < 80) {
+      return {
+        topic: lowest.name,
+        conceptId: lowest.id,
+        reason: `Current topic mastery is ${lowest.masteryPercentage}%. A targeted practice session will advance this concept into the Strong mastery bracket.`,
+        badgeText: 'Skill Reinforcement',
+        actionText: 'Practice Topic',
+        actionHref: `/assessment?concept=${lowest.id}&courseId=${course?.id || ''}`,
+        urgency: 'medium' as const,
+      };
+    }
+
+    if (formattedTopics.length > 0) {
+      const firstTopic = formattedTopics[0];
+      return {
+        topic: firstTopic.name,
+        conceptId: firstTopic.id,
+        reason: `Great mastery across all modules! Reinforce long-term retention with spaced practice.`,
+        badgeText: 'Retention Review',
+        actionText: 'Start Spaced Revision',
+        actionHref: `/revision?courseId=${course?.id || ''}`,
+        urgency: 'low' as const,
+      };
+    }
+
+    return null;
+  }, [misconceptions, formattedTopics, activeEdges, course?.id]);
+
+  // --- Assessment History Processing ---
+  const completedAssessments = useMemo(() => {
+    return [...recentAssessments]
+      .filter((a) => a.status === 'completed' || a.score_percentage !== undefined)
+      .sort((a, b) => new Date(a.started_at).getTime() - new Date(b.started_at).getTime());
+  }, [recentAssessments]);
 
   return (
     <div className="space-y-6">
-      {/* 1. TOP OVERVIEW METRICS PANEL (Real Live Assessment Mastery Data) */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+      {/* 1. Course Selector Bar */}
+      {allCourses.length > 0 && (
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-4 text-xs shadow-xs">
+          <div className="flex items-center gap-2.5">
+            <BookOpen className="w-4 h-4 text-[#B1A15A]" />
+            <span className="text-[#6F7782] font-semibold">Select Course:</span>
+            <select
+              id="twin-course-selector"
+              value={selectedCourseId || course?.id}
+              onChange={(e) => onSelectCourse?.(e.target.value)}
+              className="rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] px-3 py-1.5 font-bold text-[#26313D] text-xs focus:outline-none focus:ring-1 focus:ring-[#B1A15A] transition-all cursor-pointer"
+            >
+              {allCourses.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.title} {c.code ? `(${c.code})` : ''}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <span className="text-[11px] text-[#6F7782]">
+              <strong>{concepts.length}</strong> topics mapped from course materials
+            </span>
+            {onRefresh && (
+              <button
+                onClick={handleRefresh}
+                disabled={isRefreshing}
+                title="Synchronize with latest assessment results"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] px-3 py-1.5 text-xs font-bold text-[#26313D] hover:bg-[#E8E0C9] transition-all"
+              >
+                <RefreshCw className={`w-3.5 h-3.5 text-[#B1A15A] ${isRefreshing ? 'animate-spin' : ''}`} />
+                <span>Refresh Data</span>
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* 2. Four Compact Progress Cards in One Row */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Card 1: Overall Mastery */}
-        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-3.5 shadow-xs flex flex-col justify-between">
+        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-4 shadow-xs flex flex-col justify-between">
           <div className="flex items-center justify-between text-[#6F7782]">
             <span className="text-[11px] font-bold uppercase tracking-wider">Overall Mastery</span>
-            <Brain className="w-3.5 h-3.5 text-[#B1A15A]" />
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FAF5E8] border border-[#DDD6C5]">
+              <Award className="w-4 h-4 text-[#B1A15A]" />
+            </div>
           </div>
-          <div className="mt-2 flex items-baseline justify-between">
-            <span className="text-xl font-black text-[#26313D]">{overallMasteryPercentage}%</span>
-            <span className="text-[10px] font-semibold text-[#6F7782]">All Subjects</span>
-          </div>
-          <div className="mt-2 h-1.5 w-full rounded-full bg-[#EFE8D6] overflow-hidden">
-            <div
-              className="h-full rounded-full bg-[#B1A15A] transition-all"
-              style={{ width: `${overallMasteryPercentage}%` }}
-            />
+          <div className="mt-3">
+            <div className="flex items-baseline justify-between">
+              <span className="text-2xl font-black text-[#26313D]">{overallMasteryPercentage}%</span>
+              <span className="text-[10px] font-semibold text-[#6F7782]">Bayesian Model</span>
+            </div>
+            <div className="mt-2.5 h-1.5 w-full rounded-full bg-[#EFE8D6] overflow-hidden">
+              <div
+                className="h-full rounded-full bg-[#B1A15A] transition-all duration-500"
+                style={{ width: `${overallMasteryPercentage}%` }}
+              />
+            </div>
           </div>
         </div>
 
-        {/* Card 2: Course-wise Mastery */}
-        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-3.5 shadow-xs flex flex-col justify-between">
+        {/* Card 2: Questions Attempted */}
+        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-4 shadow-xs flex flex-col justify-between">
           <div className="flex items-center justify-between text-[#6F7782]">
-            <span className="text-[11px] font-bold uppercase tracking-wider">Course Mastery</span>
-            <BookOpen className="w-3.5 h-3.5 text-[#B1A15A]" />
+            <span className="text-[11px] font-bold uppercase tracking-wider">Questions Attempted</span>
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FAF5E8] border border-[#DDD6C5]">
+              <Activity className="w-4 h-4 text-[#5E6A7A]" />
+            </div>
           </div>
-          <div className="mt-2 flex items-baseline justify-between">
-            <span className="text-xl font-black text-[#B1A15A]">{courseMasteryPercentage}%</span>
-            <span className="text-[10px] font-semibold text-[#6F7782] truncate max-w-[80px]">
-              {course?.title || 'Active'}
-            </span>
-          </div>
-          <div className="mt-2 h-1.5 w-full rounded-full bg-[#EFE8D6] overflow-hidden">
-            <div
-              className="h-full rounded-full bg-[#B1A15A] transition-all"
-              style={{ width: `${courseMasteryPercentage}%` }}
-            />
-          </div>
-        </div>
-
-        {/* Card 3: Total Attempts */}
-        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-3.5 shadow-xs flex flex-col justify-between">
-          <div className="flex items-center justify-between text-[#6F7782]">
-            <span className="text-[11px] font-bold uppercase tracking-wider">Total Attempts</span>
-            <Activity className="w-3.5 h-3.5 text-[#5E6A7A]" />
-          </div>
-          <div className="mt-2 flex items-baseline justify-between">
-            <span className="text-xl font-black text-[#26313D]">{totalAttempts}</span>
-            <span className="text-[10px] font-semibold text-[#6F7782]">Answered</span>
-          </div>
-          <p className="mt-1 text-[10px] text-[#6F7782]">
-            {recentAssessments.length} assessment session{recentAssessments.length === 1 ? '' : 's'}
-          </p>
-        </div>
-
-        {/* Card 4: Correct / Incorrect */}
-        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-3.5 shadow-xs flex flex-col justify-between">
-          <div className="flex items-center justify-between text-[#6F7782]">
-            <span className="text-[11px] font-bold uppercase tracking-wider">Correct / Wrong</span>
-            <CheckCircle2 className="w-3.5 h-3.5 text-[#6D9B73]" />
-          </div>
-          <div className="mt-2 flex items-baseline gap-1.5">
-            <span className="text-lg font-black text-[#6D9B73]">{totalCorrect}</span>
-            <span className="text-xs text-[#6F7782]">/</span>
-            <span className="text-lg font-black text-[#B85C5C]">{totalIncorrect}</span>
-          </div>
-          <div className="mt-1 flex items-center justify-between text-[10px] text-[#6F7782]">
-            <span>{totalCorrect} correct</span>
-            <span>{totalIncorrect} wrong</span>
-          </div>
-        </div>
-
-        {/* Card 5: Accuracy */}
-        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-3.5 shadow-xs flex flex-col justify-between">
-          <div className="flex items-center justify-between text-[#6F7782]">
-            <span className="text-[11px] font-bold uppercase tracking-wider">Accuracy</span>
-            <Target className="w-3.5 h-3.5 text-[#B1A15A]" />
-          </div>
-          <div className="mt-2 flex items-baseline justify-between">
-            <span className="text-xl font-black text-[#26313D]">{overallAccuracy}%</span>
-            <span className="text-[10px] font-semibold text-[#6F7782]">Empirical</span>
-          </div>
-          <div className="mt-2 h-1.5 w-full rounded-full bg-[#EFE8D6] overflow-hidden">
-            <div
-              className={`h-full rounded-full transition-all ${
-                overallAccuracy >= 75 ? 'bg-[#6D9B73]' : overallAccuracy >= 50 ? 'bg-[#B1A15A]' : 'bg-[#B85C5C]'
-              }`}
-              style={{ width: `${overallAccuracy}%` }}
-            />
-          </div>
-        </div>
-
-        {/* Card 6: Confidence */}
-        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-3.5 shadow-xs flex flex-col justify-between">
-          <div className="flex items-center justify-between text-[#6F7782]">
-            <span className="text-[11px] font-bold uppercase tracking-wider">Confidence</span>
-            <TrendingUp className="w-3.5 h-3.5 text-[#B1A15A]" />
-          </div>
-          <div className="mt-2 flex items-baseline justify-between">
-            <span className="text-xl font-black text-[#26313D]">{averageConfidence}%</span>
-            <span className="text-[10px] font-semibold text-[#6F7782]">Cognitive</span>
-          </div>
-          <p className="mt-1 text-[10px] text-[#6F7782] truncate">
-            {weakConcepts.length} weak concept{weakConcepts.length === 1 ? '' : 's'}
-          </p>
-        </div>
-      </div>
-
-      {/* 2. Top Controls & Status Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-4 shadow-xs">
-        <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FAF5E8] border border-[#DDD6C5]">
-            <Brain className="h-5 w-5 text-[#B1A15A]" />
-          </div>
-          <div>
-            <h3 className="text-sm font-bold text-[#26313D] flex items-center gap-2">
-              Neural Concept Knowledge Graph
-              <span className="rounded-md bg-[#E8E0C9] px-2 py-0.5 text-[10px] font-bold text-[#26313D] border border-[#DDD6C5]">
-                Live Supabase Bayesian Twin
-              </span>
-            </h3>
-            <p className="text-xs text-[#6F7782]">
-              Real-time prerequisite topology, empirical diagnostic accuracy, and cognitive decay rates.
+          <div className="mt-3">
+            <div className="flex items-baseline justify-between">
+              <span className="text-2xl font-black text-[#26313D]">{totalAttempts}</span>
+              <span className="text-[10px] font-semibold text-[#6F7782]">Total Questions</span>
+            </div>
+            <p className="mt-2 text-[11px] text-[#6F7782]">
+              {recentAssessments.length} assessment session{recentAssessments.length === 1 ? '' : 's'}
             </p>
           </div>
         </div>
 
-        {/* View Switcher & Live Refresh Button */}
-        <div className="flex items-center gap-2 flex-wrap">
-          {onRefresh && (
-            <button
-              onClick={handleRefresh}
-              disabled={isRefreshing}
-              title="Synchronize with latest assessment results"
-              className="inline-flex items-center gap-1.5 rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] px-3 py-1.5 text-xs font-bold text-[#26313D] hover:bg-[#E8E0C9] transition-all"
-            >
-              <RefreshCw className={`w-3.5 h-3.5 text-[#B1A15A] ${isRefreshing ? 'animate-spin' : ''}`} />
-              Sync Results
-            </button>
-          )}
+        {/* Card 3: Correct Answers */}
+        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-4 shadow-xs flex flex-col justify-between">
+          <div className="flex items-center justify-between text-[#6F7782]">
+            <span className="text-[11px] font-bold uppercase tracking-wider">Correct Answers</span>
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#6D9B73]/15 border border-[#6D9B73]/30">
+              <CheckCircle2 className="w-4 h-4 text-[#6D9B73]" />
+            </div>
+          </div>
+          <div className="mt-3">
+            <div className="flex items-baseline justify-between">
+              <span className="text-2xl font-black text-[#6D9B73]">{totalCorrect}</span>
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#6D9B73]/15 text-[#6D9B73] border border-[#6D9B73]/30">
+                {overallAccuracy}% Accuracy
+              </span>
+            </div>
+            <p className="mt-2 text-[11px] text-[#6F7782]">
+              {totalAttempts - totalCorrect} incorrect out of {totalAttempts}
+            </p>
+          </div>
+        </div>
 
-          <div className="flex items-center gap-1 rounded-xl bg-[#FAF5E8] p-1 border border-[#DDD6C5]">
-            <button
-              onClick={() => setViewMode('graph')}
-              className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-all ${
-                viewMode === 'graph'
-                  ? 'bg-[#B1A15A] text-[#26313D] shadow-xs'
-                  : 'text-[#5E6A7A] hover:text-[#26313D]'
+        {/* Card 4: Topics to Improve */}
+        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-4 shadow-xs flex flex-col justify-between">
+          <div className="flex items-center justify-between text-[#6F7782]">
+            <span className="text-[11px] font-bold uppercase tracking-wider">Topics to Improve</span>
+            <div
+              className={`flex h-7 w-7 items-center justify-center rounded-lg ${
+                topicsToImproveCount > 0
+                  ? 'bg-[#B85C5C]/15 border border-[#B85C5C]/30'
+                  : 'bg-[#6D9B73]/15 border border-[#6D9B73]/30'
               }`}
             >
-              Graph View
-            </button>
-            <button
-              onClick={() => setViewMode('matrix')}
-              className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-all ${
-                viewMode === 'matrix'
-                  ? 'bg-[#B1A15A] text-[#26313D] shadow-xs'
-                  : 'text-[#5E6A7A] hover:text-[#26313D]'
-              }`}
-            >
-              Mastery Matrix
-            </button>
-            <button
-              onClick={() => setViewMode('retention')}
-              className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-all ${
-                viewMode === 'retention'
-                  ? 'bg-[#B1A15A] text-[#26313D] shadow-xs'
-                  : 'text-[#5E6A7A] hover:text-[#26313D]'
-              }`}
-            >
-              Forgetting Curves
-            </button>
-            <button
-              onClick={() => setViewMode('topics')}
-              className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-all ${
-                viewMode === 'topics'
-                  ? 'bg-[#B1A15A] text-[#26313D] shadow-xs'
-                  : 'text-[#5E6A7A] hover:text-[#26313D]'
-              }`}
-            >
-              Topic Breakdown
-            </button>
+              {topicsToImproveCount > 0 ? (
+                <AlertTriangle className="w-4 h-4 text-[#B85C5C]" />
+              ) : (
+                <CheckCircle2 className="w-4 h-4 text-[#6D9B73]" />
+              )}
+            </div>
+          </div>
+          <div className="mt-3">
+            <div className="flex items-baseline justify-between">
+              <span
+                className={`text-2xl font-black ${
+                  topicsToImproveCount > 0 ? 'text-[#B85C5C]' : 'text-[#6D9B73]'
+                }`}
+              >
+                {topicsToImproveCount}
+              </span>
+              <span className="text-[10px] font-semibold text-[#6F7782]">
+                {topicsToImproveCount > 0 ? 'Needs Attention' : 'All On Track'}
+              </span>
+            </div>
+            <p className="mt-2 text-[11px] text-[#6F7782]">
+              {topicsToImproveCount > 0
+                ? `${topicsToImproveCount} topic${topicsToImproveCount === 1 ? '' : 's'} under 50% mastery`
+                : 'All topics meet or exceed 50%'}
+            </p>
           </div>
         </div>
       </div>
 
-      {/* 3. Main Grid: Graph / Matrix / Topics + Inspector Drawer */}
+      {/* 3. Highlighted Personalized Recommendations ("What should I learn next?") */}
+      {recommendation && (
+        <div className="rounded-2xl border-2 border-[#B1A15A]/40 bg-gradient-to-r from-[#FFFDF7] to-[#FAF5E8] p-5 shadow-xs relative overflow-hidden">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="space-y-1.5 flex-1">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#B1A15A]/15 text-[#8E7F3B] border border-[#B1A15A]/30">
+                  <Sparkles className="w-3 h-3 text-[#B1A15A]" />
+                  What should I learn next?
+                </span>
+                <span
+                  className={`text-[10px] font-bold px-2 py-0.5 rounded-md ${
+                    recommendation.urgency === 'high'
+                      ? 'bg-[#B85C5C]/15 text-[#B85C5C] border border-[#B85C5C]/30'
+                      : 'bg-[#B1A15A]/10 text-[#8E7F3B]'
+                  }`}
+                >
+                  {recommendation.badgeText}
+                </span>
+              </div>
+              <h3 className="text-base font-bold text-[#26313D] flex items-center gap-2">
+                Recommended Focus: <span>{recommendation.topic}</span>
+              </h3>
+              <p className="text-xs text-[#6F7782] leading-relaxed max-w-2xl">
+                {recommendation.reason}
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2 flex-wrap">
+              <Link
+                href={recommendation.actionHref}
+                className="inline-flex items-center gap-1.5 rounded-xl bg-[#B1A15A] px-4 py-2 text-xs font-bold text-[#26313D] hover:bg-[#9E8F4B] transition-all shadow-xs"
+              >
+                <span>{recommendation.actionText}</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+              {recommendation.conceptId && (
+                <Link
+                  href={`/tutor?concept=${recommendation.conceptId}&courseId=${course?.id || ''}`}
+                  className="inline-flex items-center gap-1 rounded-xl bg-[#FFFDF7] border border-[#DDD6C5] px-3.5 py-2 text-xs font-bold text-[#26313D] hover:bg-[#FAF5E8] transition-all shadow-xs"
+                >
+                  <span>Ask Tutor</span>
+                </Link>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 4. Redesigned & Fixed Interactive Learning Graph Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Visual Graph Canvas / Matrix / Retention / Topics */}
-        <div className="lg:col-span-8 rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-4 relative overflow-hidden min-h-[460px] flex flex-col justify-between shadow-xs">
-          {/* VIEW A: GRAPH VIEW */}
-          {viewMode === 'graph' && (
-            <div className="relative w-full h-[440px] flex items-center justify-center overflow-x-auto bg-[#FAF5E8] rounded-xl border border-[#DDD6C5]/60">
-              <svg className="w-[780px]" height={svgHeight} viewBox={`0 0 780 ${svgHeight}`}>
+        {/* Main Graph Canvas Card */}
+        <div className="lg:col-span-8 rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-5 shadow-xs flex flex-col justify-between">
+          {/* Header with Title and Graph Controls */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#DDD6C5]">
+            <div className="flex items-center gap-2">
+              <Brain className="w-4 h-4 text-[#B1A15A]" />
+              <h4 className="text-sm font-bold text-[#26313D]">Learning Graph</h4>
+              <span className="text-[10px] font-bold text-[#6F7782] bg-[#FAF5E8] px-2 py-0.5 rounded border border-[#DDD6C5]">
+                {concepts.length} Topics • {activeEdges.length} Prerequisite Links
+              </span>
+            </div>
+
+            {/* Graph Controls Toolbar: Fit to Screen, Zoom In, Zoom Out, Reset View */}
+            <div className="flex items-center gap-1 bg-[#FAF5E8] p-1 rounded-xl border border-[#DDD6C5]">
+              <button
+                type="button"
+                onClick={handleZoomIn}
+                title="Zoom In (+)"
+                className="p-1.5 rounded-lg text-[#26313D] hover:bg-[#E8E0C9] transition-colors"
+              >
+                <ZoomIn className="w-3.5 h-3.5" />
+              </button>
+              <button
+                type="button"
+                onClick={handleZoomOut}
+                title="Zoom Out (-)"
+                className="p-1.5 rounded-lg text-[#26313D] hover:bg-[#E8E0C9] transition-colors"
+              >
+                <ZoomOut className="w-3.5 h-3.5" />
+              </button>
+              <div className="h-4 w-px bg-[#DDD6C5] mx-0.5" />
+              <button
+                type="button"
+                onClick={fitToScreen}
+                title="Fit to Screen"
+                className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-bold text-[#26313D] hover:bg-[#E8E0C9] transition-colors"
+              >
+                <Maximize2 className="w-3 h-3 text-[#B1A15A]" />
+                <span>Fit</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleResetView}
+                title="Reset View"
+                className="p-1.5 rounded-lg text-[#26313D] hover:bg-[#E8E0C9] transition-colors"
+              >
+                <RotateCcw className="w-3 h-3" />
+              </button>
+            </div>
+          </div>
+
+          {/* Graph Interactive Container */}
+          {concepts.length === 0 ? (
+            <div className="my-10 text-center py-12 rounded-xl bg-[#FAF5E8] border border-dashed border-[#DDD6C5] p-6 space-y-3">
+              <Layers className="w-8 h-8 text-[#B1A15A] mx-auto opacity-60" />
+              <h5 className="text-sm font-bold text-[#26313D]">No Topics Found for this Course</h5>
+              <p className="text-xs text-[#6F7782] max-w-sm mx-auto">
+                Upload your syllabus, PDF slides, or lecture materials in Courses to automatically extract prerequisite concepts and generate your interactive learning graph.
+              </p>
+              <Link
+                href="/courses"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-[#B1A15A] px-4 py-2 text-xs font-bold text-[#26313D] hover:bg-[#9E8F4B] transition-all shadow-xs"
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Upload Materials</span>
+              </Link>
+            </div>
+          ) : (
+            <div
+              ref={containerRef}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
+              onWheel={handleWheel}
+              className="mt-3 relative w-full h-[400px] overflow-hidden bg-[#FAF5E8] rounded-xl border border-[#DDD6C5]/60 cursor-grab active:cursor-grabbing select-none"
+            >
+              <svg
+                className="w-full h-full"
+                style={{ overflow: 'visible' }}
+              >
                 <defs>
+                  {/* Arrowhead marker for prerequisite connections */}
                   <marker
-                    id="arrowhead"
-                    markerWidth="8"
-                    markerHeight="6"
-                    refX="7"
-                    refY="3"
+                    id="graph-arrow"
+                    markerWidth="9"
+                    markerHeight="7"
+                    refX="8"
+                    refY="3.5"
                     orient="auto"
                   >
-                    <polygon points="0 0, 8 3, 0 6" fill="#DDD6C5" />
+                    <polygon points="0 0, 9 3.5, 0 7" fill="#C4B89F" />
                   </marker>
                   <marker
-                    id="arrowhead-active"
-                    markerWidth="8"
-                    markerHeight="6"
-                    refX="7"
-                    refY="3"
+                    id="graph-arrow-active"
+                    markerWidth="9"
+                    markerHeight="7"
+                    refX="8"
+                    refY="3.5"
                     orient="auto"
                   >
-                    <polygon points="0 0, 8 3, 0 6" fill="#B1A15A" />
+                    <polygon points="0 0, 9 3.5, 0 7" fill="#B1A15A" />
                   </marker>
                 </defs>
 
-                {/* Prerequisite Edges */}
-                {relationships.map((rel) => {
-                  const source = nodePositions[rel.source_concept_id];
-                  const target = nodePositions[rel.target_concept_id];
-                  if (!source || !target) return null;
+                <g transform={`translate(${pan.x}, ${pan.y}) scale(${zoom})`}>
+                  {/* Prerequisite Connection Curved Lines (Source Right -> Target Left) */}
+                  {activeEdges.map((edge) => {
+                    const srcPos = nodePositions[edge.sourceId];
+                    const tgtPos = nodePositions[edge.targetId];
+                    if (!srcPos || !tgtPos) return null;
 
-                  const isConnectedToSelected =
-                    rel.source_concept_id === activeSelectedId ||
-                    rel.target_concept_id === activeSelectedId;
+                    const isConnected =
+                      edge.sourceId === activeSelectedId || edge.targetId === activeSelectedId;
 
-                  return (
-                    <g key={rel.id}>
-                      <line
-                        x1={source.x}
-                        y1={source.y}
-                        x2={target.x}
-                        y2={target.y}
-                        stroke={isConnectedToSelected ? '#B1A15A' : '#DDD6C5'}
-                        strokeWidth={isConnectedToSelected ? 2.5 : 1.5}
-                        strokeDasharray={rel.relationship_type === 'prerequisite' ? 'none' : '4 4'}
-                        markerEnd={
-                          isConnectedToSelected
-                            ? 'url(#arrowhead-active)'
-                            : 'url(#arrowhead)'
-                        }
-                      />
-                    </g>
-                  );
-                })}
+                    const startX = srcPos.x + srcPos.width;
+                    const startY = srcPos.y + srcPos.height / 2;
+                    const endX = tgtPos.x;
+                    const endY = tgtPos.y + tgtPos.height / 2;
+                    const dx = Math.max(35, Math.abs(endX - startX) / 2);
 
-                {/* Interactive Concept Nodes */}
-                {concepts.map((concept) => {
-                  const pos = nodePositions[concept.id];
-                  if (!pos) return null;
-                  const mastery = masteryList.find((m) => m.concept_id === concept.id);
-                  const prob = mastery ? mastery.mastery_probability : 0.5;
-                  const styling = getMasteryColor(prob);
-                  const isSelected = concept.id === activeSelectedId;
-                  const isCritical = mastery?.forgetting_risk === 'critical';
+                    const pathD = `M ${startX} ${startY} C ${startX + dx} ${startY}, ${endX - dx} ${endY}, ${endX} ${endY}`;
 
-                  return (
-                    <g
-                      key={concept.id}
-                      className="cursor-pointer transition-transform hover:scale-105"
-                      onClick={() => {
-                        setSelectedConceptId(concept.id);
-                        onSelectConcept?.(concept.id);
-                      }}
-                    >
-                      {/* Critical Misconception Pulse Aura */}
-                      {isCritical && (
-                        <circle
-                          cx={pos.x}
-                          cy={pos.y}
-                          r="36"
+                    return (
+                      <g key={`edge-${edge.id}`}>
+                        <path
+                          d={pathD}
                           fill="none"
-                          stroke="#B85C5C"
-                          strokeWidth="2"
-                          className="animate-ping opacity-75"
+                          stroke={isConnected ? '#B1A15A' : '#DDD6C5'}
+                          strokeWidth={isConnected ? 2.5 : 1.75}
+                          markerEnd={isConnected ? 'url(#graph-arrow-active)' : 'url(#graph-arrow)'}
                         />
-                      )}
+                      </g>
+                    );
+                  })}
 
-                      {/* Selection Glow */}
-                      {isSelected && (
-                        <circle
-                          cx={pos.x}
-                          cy={pos.y}
-                          r="34"
-                          fill="none"
-                          stroke="#B1A15A"
-                          strokeWidth="2.5"
-                          strokeDasharray="4 4"
+                  {/* Clean Formatted Card Nodes */}
+                  {formattedTopics.map((topic) => {
+                    const pos = nodePositions[topic.id];
+                    if (!pos) return null;
+                    const isSelected = topic.id === activeSelectedId;
+
+                    return (
+                      <g
+                        key={`node-${topic.id}`}
+                        className="cursor-pointer transition-transform"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedConceptId(topic.id);
+                          onSelectConcept?.(topic.id);
+                        }}
+                      >
+                        {/* Selected Outline Aura */}
+                        {isSelected && (
+                          <rect
+                            x={pos.x - 4}
+                            y={pos.y - 4}
+                            width={pos.width + 8}
+                            height={pos.height + 8}
+                            rx="16"
+                            ry="16"
+                            fill="none"
+                            stroke="#B1A15A"
+                            strokeWidth="2.5"
+                            strokeDasharray="4 4"
+                          />
+                        )}
+
+                        {/* Main Topic Node Card */}
+                        <rect
+                          x={pos.x}
+                          y={pos.y}
+                          width={pos.width}
+                          height={pos.height}
+                          rx="12"
+                          ry="12"
+                          fill="#FFFDF7"
+                          stroke={topic.statusColor.stroke}
+                          strokeWidth={isSelected ? 2.5 : 2}
+                          className="drop-shadow-xs"
                         />
-                      )}
 
-                      {/* Main Node Circle */}
-                      <circle
-                        cx={pos.x}
-                        cy={pos.y}
-                        r="26"
-                        fill="#FFFDF7"
-                        stroke={styling.stroke}
-                        strokeWidth="3.5"
-                      />
+                        {/* Topic Name */}
+                        <text
+                          x={pos.x + 12}
+                          y={pos.y + 24}
+                          fill="#26313D"
+                          fontSize="11"
+                          fontWeight="bold"
+                        >
+                          {topic.name.length > 20 ? `${topic.name.slice(0, 18)}…` : topic.name}
+                        </text>
 
-                      {/* Mastery percentage text inside node */}
-                      <text
-                        x={pos.x}
-                        y={pos.y + 4}
-                        textAnchor="middle"
-                        fill="#26313D"
-                        fontSize="11"
-                        fontWeight="bold"
-                      >
-                        {Math.round(prob * 100)}%
-                      </text>
+                        {/* Category Label */}
+                        <text
+                          x={pos.x + 12}
+                          y={pos.y + 46}
+                          fill="#6F7782"
+                          fontSize="9"
+                          fontWeight="500"
+                        >
+                          {topic.category.length > 15 ? `${topic.category.slice(0, 13)}…` : topic.category}
+                        </text>
 
-                      {/* Node Title Label */}
-                      <text
-                        x={pos.x}
-                        y={pos.y + 42}
-                        textAnchor="middle"
-                        fill={isSelected ? '#B1A15A' : '#26313D'}
-                        fontSize="11"
-                        fontWeight={isSelected ? 'bold' : '600'}
-                      >
-                        {concept.name}
-                      </text>
-                    </g>
-                  );
-                })}
+                        {/* Mastery Percentage Pill on Node */}
+                        <rect
+                          x={pos.x + pos.width - 56}
+                          y={pos.y + 32}
+                          width="46"
+                          height="18"
+                          rx="9"
+                          ry="9"
+                          fill={topic.statusColor.pillBg}
+                          stroke={topic.statusColor.stroke}
+                          strokeWidth="1"
+                        />
+                        <text
+                          x={pos.x + pos.width - 33}
+                          y={pos.y + 45}
+                          textAnchor="middle"
+                          fill={topic.statusColor.stroke}
+                          fontSize="10"
+                          fontWeight="bold"
+                        >
+                          {topic.attemptCount === 0 ? '—' : `${topic.masteryPercentage}%`}
+                        </text>
+                      </g>
+                    );
+                  })}
+                </g>
               </svg>
             </div>
           )}
 
-          {/* VIEW B: MASTERY MATRIX */}
-          {viewMode === 'matrix' && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 py-2">
-              {concepts.map((concept) => {
-                const mastery = masteryList.find((m) => m.concept_id === concept.id);
-                const prob = mastery?.mastery_probability || 0.5;
-                const styling = getMasteryColor(prob);
-                const isSelected = concept.id === activeSelectedId;
-                const attempts = mastery?.attempt_count || 0;
-                const correct = mastery?.correct_count || 0;
-
-                return (
-                  <div
-                    key={concept.id}
-                    onClick={() => setSelectedConceptId(concept.id)}
-                    className={`cursor-pointer rounded-xl border p-3.5 transition-all ${
-                      isSelected
-                        ? 'border-[#B1A15A] bg-[#E8E0C9]/40'
-                        : 'border-[#DDD6C5] bg-[#FAF5E8] hover:border-[#B1A15A]'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-xs text-[#26313D]">{concept.name}</span>
-                      <span className={`text-xs font-bold ${styling.text}`}>
-                        {Math.round(prob * 100)}%
-                      </span>
-                    </div>
-                    <div className="mt-2 h-1.5 w-full rounded-full bg-[#EFE8D6]">
-                      <div
-                        className="h-full rounded-full"
-                        style={{
-                          width: `${Math.round(prob * 100)}%`,
-                          backgroundColor: styling.stroke,
-                        }}
-                      />
-                    </div>
-                    <div className="mt-2.5 flex items-center justify-between text-[11px] text-[#6F7782]">
-                      <span className="font-medium">
-                        {attempts > 0 ? `${correct}/${attempts} correct (${Math.round((correct / attempts) * 100)}%)` : 'Unassessed'}
-                      </span>
-                      <span className="capitalize font-semibold">{mastery?.forgetting_risk || 'medium'} risk</span>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-
-          {/* VIEW C: RETENTION CURVES */}
-          {viewMode === 'retention' && (
-            <div className="space-y-4 py-3">
-              <div className="rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] p-4 text-xs text-[#26313D]">
-                <p className="font-bold text-[#26313D]">Ebbinghaus Forgetting Curve Simulation</p>
-                <p className="text-[11px] text-[#6F7782] mt-1 leading-relaxed">
-                  Memory retention decays logarithmically over time. ADAPTIQ calculates review intervals to intercept forgetting before recall drops below 60%.
-                </p>
-              </div>
-
-              <div className="space-y-2.5">
-                {masteryList.map((m) => (
-                  <div
-                    key={m.id}
-                    onClick={() => setSelectedConceptId(m.concept_id)}
-                    className={`cursor-pointer flex items-center justify-between rounded-xl p-3 border text-xs transition-all ${
-                      m.concept_id === activeSelectedId
-                        ? 'border-[#B1A15A] bg-[#E8E0C9]/40'
-                        : 'border-[#DDD6C5] bg-[#FAF5E8] hover:border-[#B1A15A]'
-                    }`}
-                  >
-                    <div>
-                      <p className="font-bold text-[#26313D]">{m.concept_name}</p>
-                      <p className="text-[11px] text-[#6F7782]">
-                        Last practiced: {formatRelativeTime(m.last_practiced)} • {m.attempt_count} attempts
-                      </p>
-                    </div>
-                    <div className="text-right">
-                      <p
-                        className={`font-bold ${
-                          m.forgetting_risk === 'critical'
-                            ? 'text-[#B85C5C]'
-                            : m.forgetting_risk === 'high'
-                            ? 'text-[#D4A359]'
-                            : 'text-[#6D9B73]'
-                        }`}
-                      >
-                        Retention: {Math.round(m.retention_strength * 100)}%
-                      </p>
-                      <span className="text-[10px] uppercase font-bold text-[#6F7782]">
-                        {m.forgetting_risk} risk
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* VIEW D: TOPIC BREAKDOWN VIEW */}
-          {viewMode === 'topics' && (
-            <div className="space-y-3 py-2">
-              <div className="rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] p-3 text-xs text-[#26313D]">
-                <p className="font-bold">Topic-Level Diagnostic Breakdown</p>
-                <p className="text-[11px] text-[#6F7782] mt-0.5">
-                  Aggregated mastery and empirical accuracy calculated across all questions in each topic area.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {topicMasteryList.map((topic) => {
-                  const styling = getMasteryColor(topic.mastery_percentage / 100);
-                  return (
-                    <div
-                      key={topic.topic}
-                      className="rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] p-3.5 space-y-2.5 shadow-xs"
-                    >
-                      <div className="flex items-center justify-between">
-                        <span className="font-bold text-xs text-[#26313D]">{topic.topic}</span>
-                        <span className={`text-xs font-black ${styling.text}`}>
-                          {topic.mastery_percentage}%
-                        </span>
-                      </div>
-                      <div className="h-1.5 w-full rounded-full bg-[#EFE8D6] overflow-hidden">
-                        <div
-                          className="h-full rounded-full"
-                          style={{
-                            width: `${topic.mastery_percentage}%`,
-                            backgroundColor: styling.stroke,
-                          }}
-                        />
-                      </div>
-                      <div className="grid grid-cols-3 gap-2 pt-1 text-center text-[10px]">
-                        <div className="rounded-md bg-[#FFFDF7] p-1 border border-[#DDD6C5]/50">
-                          <span className="text-[#6F7782] block">Attempts</span>
-                          <strong className="text-[#26313D] font-bold">{topic.attempt_count}</strong>
-                        </div>
-                        <div className="rounded-md bg-[#FFFDF7] p-1 border border-[#DDD6C5]/50">
-                          <span className="text-[#6F7782] block">Correct</span>
-                          <strong className="text-[#6D9B73] font-bold">
-                            {topic.correct_count}/{topic.attempt_count}
-                          </strong>
-                        </div>
-                        <div className="rounded-md bg-[#FFFDF7] p-1 border border-[#DDD6C5]/50">
-                          <span className="text-[#6F7782] block">Accuracy</span>
-                          <strong className="text-[#26313D] font-bold">{topic.accuracy}%</strong>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Canvas Legend */}
-          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[#DDD6C5] pt-3 text-[11px] text-[#6F7782]">
-            <div className="flex items-center gap-4">
+          {/* Graph Legend (Strict Requirement 4 & 6) */}
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 border-t border-[#DDD6C5] pt-3 text-[11px] text-[#6F7782]">
+            <div className="flex items-center gap-4 flex-wrap">
               <span className="flex items-center gap-1.5 font-semibold">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#6D9B73]" /> &gt;85% Mastered
+                <span className="h-2.5 w-2.5 rounded-full bg-[#6D9B73]" /> Strong (80–100%)
               </span>
               <span className="flex items-center gap-1.5 font-semibold">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#B1A15A]" /> 65-84% Competent
+                <span className="h-2.5 w-2.5 rounded-full bg-[#B1A15A]" /> Improving (50–79%)
               </span>
               <span className="flex items-center gap-1.5 font-semibold">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#D4A359]" /> 45-64% Developing
+                <span className="h-2.5 w-2.5 rounded-full bg-[#B85C5C]" /> Needs Practice (0–49%)
               </span>
               <span className="flex items-center gap-1.5 font-semibold">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#B85C5C]" /> &lt;45% Critical Gap
+                <span className="h-2.5 w-2.5 rounded-full bg-slate-400" /> Not Assessed
               </span>
             </div>
-            <span className="font-medium">Click any node to inspect</span>
+            <span className="text-[10px] text-[#6F7782]">
+              Drag to pan • Scroll to zoom • Arrows show prerequisite flow
+            </span>
           </div>
         </div>
 
-        {/* 4. Selected Concept Deep Inspector Drawer */}
-        <div className="lg:col-span-4 space-y-4">
-          {selectedConcept ? (
-            <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-5 space-y-4 shadow-xs">
-              <div className="flex items-start justify-between">
+        {/* Selected Topic Inspector Drawer (Strict Requirement 5) */}
+        <div className="lg:col-span-4 rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-5 shadow-xs flex flex-col justify-between">
+          {selectedTopic ? (
+            <div className="space-y-4">
+              <div className="flex items-start justify-between pb-3 border-b border-[#DDD6C5]">
                 <div>
                   <span className="text-[10px] uppercase font-bold tracking-wider text-[#26313D] bg-[#E8E0C9] px-2 py-0.5 rounded-md border border-[#DDD6C5]">
-                    {selectedConcept.category || 'Core Concept'}
+                    {selectedTopic.category}
                   </span>
-                  <h4 className="text-base font-bold text-[#26313D] mt-1.5">{selectedConcept.name}</h4>
+                  <h4 className="text-base font-bold text-[#26313D] mt-1.5">{selectedTopic.name}</h4>
                 </div>
                 <div className="text-right">
-                  <span className="text-2xl font-black text-[#B1A15A]">
-                    {Math.round((selectedMastery?.mastery_probability || 0.5) * 100)}%
+                  <span className={`text-xl font-black ${selectedTopic.statusColor.text}`}>
+                    {selectedTopic.attemptCount === 0 ? '—' : `${selectedTopic.masteryPercentage}%`}
                   </span>
-                  <p className="text-[10px] text-[#6F7782] font-semibold">Concept Mastery</p>
+                  <span
+                    className={`block text-[10px] font-bold px-1.5 py-0.5 rounded ${selectedTopic.statusColor.bg} ${selectedTopic.statusColor.text} mt-0.5`}
+                  >
+                    {selectedTopic.statusLabel}
+                  </span>
                 </div>
               </div>
 
-              {/* Statistics Grid */}
+              {/* Quick Metrics Grid */}
               <div className="grid grid-cols-2 gap-2 text-xs">
                 <div className="rounded-xl bg-[#FAF5E8] p-2.5 border border-[#DDD6C5]">
-                  <span className="text-[10px] text-[#6F7782] block font-semibold">Attempts</span>
-                  <span className="text-sm font-bold text-[#26313D]">{selectedAttempts}</span>
+                  <span className="text-[10px] text-[#6F7782] block font-semibold">Questions Attempted</span>
+                  <span className="text-sm font-bold text-[#26313D]">{selectedTopic.attemptCount}</span>
                 </div>
                 <div className="rounded-xl bg-[#FAF5E8] p-2.5 border border-[#DDD6C5]">
-                  <span className="text-[10px] text-[#6F7782] block font-semibold">Correct / Wrong</span>
+                  <span className="text-[10px] text-[#6F7782] block font-semibold">Accuracy</span>
                   <span className="text-sm font-bold text-[#26313D]">
-                    <span className="text-[#6D9B73]">{selectedCorrect}</span> / <span className="text-[#B85C5C]">{selectedIncorrect}</span>
+                    {selectedTopic.attemptCount > 0 ? `${selectedTopic.accuracy}%` : 'Unassessed'}
                   </span>
                 </div>
                 <div className="rounded-xl bg-[#FAF5E8] p-2.5 border border-[#DDD6C5]">
-                  <span className="text-[10px] text-[#6F7782] block font-semibold">Empirical Accuracy</span>
-                  <span className="text-sm font-bold text-[#B1A15A]">{selectedAccuracy}%</span>
-                </div>
-                <div className="rounded-xl bg-[#FAF5E8] p-2.5 border border-[#DDD6C5]">
-                  <span className="text-[10px] text-[#6F7782] block font-semibold">Confidence</span>
-                  <span className="text-sm font-bold text-[#26313D]">{selectedConfidence}%</span>
-                </div>
-                <div className="rounded-xl bg-[#FAF5E8] p-2.5 border border-[#DDD6C5]">
-                  <span className="text-[10px] text-[#6F7782] block font-semibold">Forgetting Risk</span>
-                  <span className={`text-xs font-bold capitalize ${
-                    selectedRisk === 'critical' ? 'text-[#B85C5C]' : selectedRisk === 'high' ? 'text-[#D4A359]' : 'text-[#6D9B73]'
-                  }`}>
-                    {selectedRisk} risk
-                  </span>
+                  <span className="text-[10px] text-[#6F7782] block font-semibold">Correct Answers</span>
+                  <span className="text-sm font-bold text-[#6D9B73]">{selectedTopic.correctCount}</span>
                 </div>
                 <div className="rounded-xl bg-[#FAF5E8] p-2.5 border border-[#DDD6C5]">
                   <span className="text-[10px] text-[#6F7782] block font-semibold">Last Practiced</span>
                   <span className="text-xs font-bold text-[#26313D] truncate block">
-                    {selectedLastPracticedStr}
+                    {selectedTopic.lastPracticed}
                   </span>
                 </div>
               </div>
 
-              {/* Misconception Alert if active for this concept */}
-              {selectedConceptMisconceptions.length > 0 && (
-                <div className="rounded-xl border border-[#B85C5C]/40 bg-[#B85C5C]/10 p-3 space-y-1 text-xs">
-                  <div className="flex items-center gap-1.5 font-bold text-[#B85C5C]">
-                    <AlertTriangle className="w-3.5 h-3.5" />
-                    <span>Diagnosed Misconception ({selectedConceptMisconceptions[0].status})</span>
+              {/* Prerequisites Connected */}
+              {selectedPrereqs.length > 0 && (
+                <div className="text-xs space-y-1">
+                  <span className="text-[10px] font-bold text-[#6F7782] uppercase tracking-wider">
+                    Required Prerequisites:
+                  </span>
+                  <div className="flex flex-wrap gap-1.5 pt-0.5">
+                    {selectedPrereqs.map((pr, idx) => (
+                      <button
+                        key={`prereq-${pr.id}-${idx}`}
+                        type="button"
+                        onClick={() => setSelectedConceptId(pr.id)}
+                        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-[#FAF5E8] border border-[#DDD6C5] text-[11px] font-semibold text-[#26313D] hover:border-[#B1A15A]"
+                      >
+                        <span className={`w-1.5 h-1.5 rounded-full ${pr.statusColor.dot}`} />
+                        {pr.name}
+                      </button>
+                    ))}
                   </div>
-                  <p className="text-[11px] text-[#26313D]">
-                    {selectedConceptMisconceptions[0].title}
-                  </p>
-                  <Link
-                    href="/misconceptions"
-                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[#B85C5C] hover:underline pt-1"
-                  >
-                    Open Repair Workshop <ArrowRight className="w-3 h-3" />
-                  </Link>
                 </div>
               )}
 
-              <p className="text-xs text-[#6F7782] leading-relaxed">{selectedConcept.description}</p>
+              {/* Dependent Topics Unlocked */}
+              {selectedDependents.length > 0 && (
+                <div className="text-xs space-y-1">
+                  <span className="text-[10px] font-bold text-[#6F7782] uppercase tracking-wider">
+                    Unlocks Downstream Topics:
+                  </span>
+                  <div className="flex flex-wrap gap-1.5 pt-0.5">
+                    {selectedDependents.map((dep, idx) => (
+                      <button
+                        key={`dep-${dep.id}-${idx}`}
+                        type="button"
+                        onClick={() => setSelectedConceptId(dep.id)}
+                        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-[#FAF5E8] border border-[#DDD6C5] text-[11px] font-semibold text-[#26313D] hover:border-[#B1A15A]"
+                      >
+                        <span className={`w-1.5 h-1.5 rounded-full ${dep.statusColor.dot}`} />
+                        {dep.name}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Recommended Next Action */}
+              <div className="rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] p-3 text-xs space-y-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#B1A15A] block">
+                  Recommended Next Action
+                </span>
+                <p className="text-[11px] text-[#26313D] leading-relaxed">
+                  {selectedTopic.attemptCount === 0
+                    ? 'Establish your initial baseline by taking a diagnostic assessment for this topic.'
+                    : selectedTopic.masteryPercentage < 50
+                    ? 'Targeted priority gap: Review core principles with AI Tutor and practice remedial questions.'
+                    : selectedTopic.masteryPercentage < 80
+                    ? 'Competency developing: Complete adaptive practice drills to reinforce topic mastery.'
+                    : 'High mastery consolidated: Schedule periodic spaced repetition to maintain memory retention.'}
+                </p>
+              </div>
 
               {/* Action Buttons */}
-              <div className="flex items-center gap-2 pt-1">
+              <div className="flex items-center gap-2 pt-2">
                 <Link
-                  href={`/assessment?concept=${selectedConcept.id}&courseId=${selectedConcept.course_id || course?.id}`}
+                  href={`/assessment?concept=${selectedTopic.id}&courseId=${course?.id || ''}`}
                   className="flex-1 rounded-xl bg-[#B1A15A] py-2 text-center text-xs font-bold text-[#26313D] hover:bg-[#9E8F4B] transition-all shadow-xs"
                 >
-                  Practice Quiz
+                  Practice Topic
                 </Link>
                 <Link
-                  href={`/revision?courseId=${selectedConcept.course_id || course?.id}`}
-                  className="flex-1 rounded-xl bg-[#5E6A7A] py-2 text-center text-xs font-bold text-white hover:bg-[#4F5A68] transition-all shadow-xs"
+                  href={`/tutor?concept=${selectedTopic.id}&courseId=${course?.id || ''}`}
+                  className="rounded-xl bg-[#FAF5E8] border border-[#DDD6C5] px-3.5 py-2 text-center text-xs font-bold text-[#26313D] hover:bg-[#E8E0C9] transition-all shadow-xs"
                 >
-                  Spaced Revision
-                </Link>
-                <Link
-                  href={`/tutor?concept=${selectedConcept.id}&courseId=${selectedConcept.course_id || course?.id}`}
-                  className="rounded-xl bg-[#FAF5E8] border border-[#DDD6C5] px-3 py-2 text-center text-xs font-bold text-[#26313D] hover:bg-[#E8E0C9] transition-all shadow-xs"
-                  title="Ask AI Tutor"
-                >
-                  Tutor
+                  Ask Tutor
                 </Link>
               </div>
             </div>
           ) : (
-            <div className="rounded-2xl border border-dashed border-[#DDD6C5] bg-[#FFFDF7] p-8 text-center text-xs text-[#6F7782]">
-              Select a concept node to view cognitive metrics.
+            <div className="text-center py-12 text-xs text-[#6F7782] space-y-2">
+              <Brain className="w-8 h-8 text-[#B1A15A] mx-auto opacity-60" />
+              <p>Select any concept node in the graph to view details.</p>
             </div>
           )}
         </div>
       </div>
 
-      {/* 5. TOPIC-WISE MASTERY SECTION (Example: Data Structures 10/10, Trees 3/10, Recursion 4/10) */}
+      {/* 5. Topic Mastery Section (Clean List with Progress Bar and Status Label) */}
       <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-5 space-y-4 shadow-xs">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
+        <div className="flex items-center justify-between pb-3 border-b border-[#DDD6C5]">
+          <div className="flex items-center gap-2">
             <BarChart2 className="w-4 h-4 text-[#B1A15A]" />
-            <div>
-              <h4 className="text-sm font-bold text-[#26313D]">Topic-Wise Adaptive Mastery</h4>
-              <p className="text-xs text-[#6F7782]">
-                Actual performance and mastery calculated per curriculum topic area.
-              </p>
-            </div>
+            <h4 className="text-sm font-bold text-[#26313D]">Topic Mastery</h4>
           </div>
           <span className="text-xs font-semibold text-[#6F7782]">
-            {topicMasteryList.length} Topic Areas
+            {formattedTopics.length} Curriculum Topics
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-          {topicMasteryList.map((t) => {
-            const styling = getMasteryColor(t.mastery_percentage / 100);
-            return (
+        {formattedTopics.length === 0 ? (
+          <div className="text-center py-8 text-xs text-[#6F7782]">
+            No topics available for this course syllabus.
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {formattedTopics.map((topic) => (
               <div
-                key={t.topic}
-                className="rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] p-3.5 space-y-2 shadow-xs"
+                key={topic.id}
+                onClick={() => setSelectedConceptId(topic.id)}
+                className={`flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 rounded-xl border transition-all cursor-pointer ${
+                  topic.id === activeSelectedId
+                    ? 'border-[#B1A15A] bg-[#FAF5E8]'
+                    : 'border-[#DDD6C5] bg-[#FFFDF7] hover:border-[#B1A15A]/60'
+                }`}
               >
-                <div className="flex items-center justify-between">
-                  <span className="font-bold text-xs text-[#26313D] truncate">{t.topic}</span>
-                  <span className={`text-xs font-bold ${styling.text}`}>
-                    {t.mastery_percentage}%
+                <div className="sm:w-1/3">
+                  <div className="flex items-center gap-2">
+                    <span className="font-bold text-xs text-[#26313D]">{topic.name}</span>
+                    <span className="text-[10px] text-[#6F7782] bg-[#FAF5E8] px-1.5 py-0.5 rounded border border-[#DDD6C5]">
+                      {topic.category}
+                    </span>
+                  </div>
+                  <span className="text-[10px] text-[#6F7782] block mt-0.5">
+                    {topic.attemptCount > 0
+                      ? `${topic.correctCount} of ${topic.attemptCount} correct (${topic.accuracy}%)`
+                      : 'Not yet assessed'}
                   </span>
                 </div>
-                <div className="h-1.5 w-full rounded-full bg-[#EFE8D6] overflow-hidden">
-                  <div
-                    className="h-full rounded-full"
-                    style={{
-                      width: `${t.mastery_percentage}%`,
-                      backgroundColor: styling.stroke,
-                    }}
-                  />
+
+                <div className="flex-1 max-w-md flex items-center gap-3">
+                  <div className="h-2 flex-1 rounded-full bg-[#EFE8D6] overflow-hidden">
+                    <div
+                      className={`h-full rounded-full ${topic.statusColor.bar} transition-all duration-300`}
+                      style={{ width: `${topic.attemptCount === 0 ? 0 : topic.masteryPercentage}%` }}
+                    />
+                  </div>
+                  <span className="font-bold text-xs text-[#26313D] w-12 text-right">
+                    {topic.attemptCount === 0 ? '—' : `${topic.masteryPercentage}%`}
+                  </span>
                 </div>
-                <div className="flex items-center justify-between text-[11px] text-[#6F7782]">
-                  <span>
-                    {t.attempt_count > 0 ? (
-                      <strong>{t.correct_count}/{t.attempt_count} correct</strong>
-                    ) : (
-                      '0 attempts'
-                    )}
+
+                <div className="flex items-center justify-between sm:justify-end gap-3 sm:w-48">
+                  <span
+                    className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold border ${topic.statusColor.bg} ${topic.statusColor.text} ${topic.statusColor.border}`}
+                  >
+                    <span className={`w-1.5 h-1.5 rounded-full ${topic.statusColor.dot}`} />
+                    {topic.statusLabel}
                   </span>
-                  <span className={`font-bold capitalize ${
-                    t.status === 'mastered' ? 'text-[#6D9B73]' : t.status === 'developing' ? 'text-[#B1A15A]' : 'text-[#B85C5C]'
-                  }`}>
-                    {t.status === 'mastered' ? 'High Mastery' : t.status === 'developing' ? 'Competent' : 'Low Mastery'}
-                  </span>
+                  <Link
+                    href={`/assessment?concept=${topic.id}&courseId=${course?.id || ''}`}
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[#B1A15A] hover:underline"
+                  >
+                    Practice <ArrowUpRight className="w-3 h-3" />
+                  </Link>
                 </div>
               </div>
-            );
-          })}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* 6. WEAK CONCEPTS vs STRONG CONCEPTS CARDS */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Weak Concepts / Priority Gaps */}
-        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-5 space-y-3 shadow-xs">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <AlertTriangle className="w-4 h-4 text-[#B85C5C]" />
-              <h4 className="text-sm font-bold text-[#26313D]">Weak Concepts & Gaps</h4>
-            </div>
-            <span className="rounded-md bg-[#B85C5C]/15 px-2 py-0.5 text-[10px] font-bold text-[#B85C5C] border border-[#B85C5C]/30">
-              {weakConcepts.length} Priority
-            </span>
+      {/* 6. Progress History Section (Simple Chart Showing Actual Mastery Changes After Assessments) */}
+      <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-5 space-y-4 shadow-xs">
+        <div className="flex items-center justify-between pb-3 border-b border-[#DDD6C5]">
+          <div className="flex items-center gap-2">
+            <TrendingUp className="w-4 h-4 text-[#B1A15A]" />
+            <h4 className="text-sm font-bold text-[#26313D]">Progress History</h4>
           </div>
-          <p className="text-xs text-[#6F7782]">
-            Concepts below 65% mastery or with repeated mistakes requiring immediate diagnostic review.
-          </p>
+          <span className="text-xs font-semibold text-[#6F7782]">
+            {completedAssessments.length} Completed Session{completedAssessments.length === 1 ? '' : 's'}
+          </span>
+        </div>
 
-          {weakConcepts.length === 0 ? (
-            <div className="rounded-xl bg-[#FAF5E8] p-4 text-center text-xs text-[#6D9B73] font-semibold border border-[#DDD6C5]">
-              No critical gaps identified! All assessed concepts meet competency standards.
+        {completedAssessments.length === 0 ? (
+          <div className="text-center py-10 rounded-xl bg-[#FAF5E8] border border-dashed border-[#DDD6C5] p-6 space-y-3">
+            <Activity className="w-7 h-7 text-[#B1A15A] mx-auto opacity-60" />
+            <h5 className="text-xs font-bold text-[#26313D]">No Assessment History Recorded Yet</h5>
+            <p className="text-[11px] text-[#6F7782] max-w-md mx-auto">
+              Take your first adaptive diagnostic or practice assessment to generate your cognitive progress curve.
+            </p>
+            <Link
+              href="/assessment"
+              className="inline-flex items-center gap-1.5 rounded-xl bg-[#B1A15A] px-4 py-2 text-xs font-bold text-[#26313D] hover:bg-[#9E8F4B] transition-all shadow-xs mt-1"
+            >
+              Start First Assessment <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        ) : (
+          <div className="space-y-4">
+            {/* SVG Trend Line Chart */}
+            <div className="rounded-xl bg-[#FAF5E8] border border-[#DDD6C5] p-4">
+              <div className="flex items-center justify-between text-xs text-[#6F7782] mb-3">
+                <span className="font-semibold text-[#26313D]">Assessment Score Trajectory</span>
+                <span>Chronological Session Performance</span>
+              </div>
+
+              <div className="relative w-full h-[140px] flex items-center justify-center">
+                <svg className="w-full h-full" viewBox="0 0 600 120" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="history-grad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#B1A15A" stopOpacity="0.25" />
+                      <stop offset="100%" stopColor="#B1A15A" stopOpacity="0.0" />
+                    </linearGradient>
+                  </defs>
+
+                  {/* Horizontal Guidelines at 50% and 80% */}
+                  <line x1="20" y1="60" x2="580" y2="60" stroke="#DDD6C5" strokeDasharray="3 3" />
+                  <line x1="20" y1="28" x2="580" y2="28" stroke="#DDD6C5" strokeDasharray="3 3" />
+
+                  {/* Points Calculation */}
+                  {(() => {
+                    const count = completedAssessments.length;
+                    const stepX = count > 1 ? 540 / (count - 1) : 0;
+                    const points = completedAssessments.map((a, i) => {
+                      const score = a.score_percentage ?? 0;
+                      // Y ranges from 100 at 0% to 20 at 100%
+                      const y = 100 - (score / 100) * 80;
+                      const x = count === 1 ? 300 : 30 + i * stepX;
+                      return { x, y, score, title: a.title, date: a.started_at };
+                    });
+
+                    const polylinePoints = points.map((p) => `${p.x},${p.y}`).join(' ');
+                    const areaPoints = `${points[0].x},110 ${polylinePoints} ${points[points.length - 1].x},110`;
+
+                    return (
+                      <>
+                        {/* Shaded Area */}
+                        {count > 1 && (
+                          <polygon points={areaPoints} fill="url(#history-grad)" />
+                        )}
+
+                        {/* Connecting Line */}
+                        {count > 1 && (
+                          <polyline
+                            points={polylinePoints}
+                            fill="none"
+                            stroke="#B1A15A"
+                            strokeWidth="2.5"
+                          />
+                        )}
+
+                        {/* Individual Points and Badges */}
+                        {points.map((pt, idx) => (
+                          <g key={`pt-${idx}`}>
+                            <circle
+                              cx={pt.x}
+                              cy={pt.y}
+                              r="5"
+                              fill="#FFFDF7"
+                              stroke={pt.score >= 80 ? '#6D9B73' : pt.score >= 50 ? '#B1A15A' : '#B85C5C'}
+                              strokeWidth="2.5"
+                            />
+                            <text
+                              x={pt.x}
+                              y={pt.y - 10}
+                              textAnchor="middle"
+                              fontSize="10"
+                              fontWeight="bold"
+                              fill="#26313D"
+                            >
+                              {pt.score}%
+                            </text>
+                            <text
+                              x={pt.x}
+                              y="118"
+                              textAnchor="middle"
+                              fontSize="9"
+                              fill="#6F7782"
+                            >
+                              {formatRelativeTime(pt.date)}
+                            </text>
+                          </g>
+                        ))}
+                      </>
+                    );
+                  })()}
+                </svg>
+              </div>
             </div>
-          ) : (
-            <div className="space-y-2">
-              {weakConcepts.slice(0, 4).map((c) => (
+
+            {/* Recent Sessions List */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+              {completedAssessments.slice(-3).reverse().map((session, idx) => (
                 <div
-                  key={c.id}
-                  onClick={() => setSelectedConceptId(c.concept_id)}
-                  className="cursor-pointer flex items-center justify-between rounded-xl bg-[#FAF5E8] p-3 border border-[#DDD6C5] text-xs hover:border-[#B1A15A] transition-all"
+                  key={`session-${session.id || 'item'}-${idx}`}
+                  className="rounded-xl border border-[#DDD6C5] bg-[#FAF5E8] p-3 text-xs space-y-1.5"
                 >
-                  <div>
-                    <span className="font-bold text-[#26313D] block">{c.concept_name}</span>
-                    <span className="text-[10px] text-[#6F7782]">
-                      {c.attempt_count > 0 ? `${c.correct_count}/${c.attempt_count} correct (${Math.round((c.correct_count / c.attempt_count) * 100)}%)` : 'Not yet tested'}
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-[#26313D] truncate">{session.title}</span>
+                    <span
+                      className={`font-black text-xs ${
+                        (session.score_percentage ?? 0) >= 80
+                          ? 'text-[#6D9B73]'
+                          : (session.score_percentage ?? 0) >= 50
+                          ? 'text-[#8E7F3B]'
+                          : 'text-[#B85C5C]'
+                      }`}
+                    >
+                      {session.score_percentage ?? 0}%
                     </span>
                   </div>
-                  <div className="text-right">
-                    <span className="text-xs font-black text-[#B85C5C]">
-                      {Math.round(c.mastery_probability * 100)}%
-                    </span>
-                    <span className="text-[10px] text-[#B85C5C] block capitalize font-semibold">
-                      {c.forgetting_risk} risk
-                    </span>
+                  <div className="flex items-center justify-between text-[10px] text-[#6F7782]">
+                    <span>{session.completed_questions || session.total_questions || 0} questions</span>
+                    <span>{formatRelativeTime(session.started_at)}</span>
                   </div>
                 </div>
               ))}
             </div>
-          )}
-        </div>
-
-        {/* Strong Concepts / Mastered */}
-        <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-5 space-y-3 shadow-xs">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Award className="w-4 h-4 text-[#6D9B73]" />
-              <h4 className="text-sm font-bold text-[#26313D]">Strong Concepts (Mastered)</h4>
-            </div>
-            <span className="rounded-md bg-[#6D9B73]/15 px-2 py-0.5 text-[10px] font-bold text-[#6D9B73] border border-[#6D9B73]/30">
-              {strongConcepts.length} Mastered
-            </span>
           </div>
-          <p className="text-xs text-[#6F7782]">
-            Concepts with 75%+ mastery, high accuracy, and strong retention characteristics.
-          </p>
-
-          {strongConcepts.length === 0 ? (
-            <div className="rounded-xl bg-[#FAF5E8] p-4 text-center text-xs text-[#6F7782] border border-[#DDD6C5]">
-              Take adaptive assessments to calibrate and demonstrate concept mastery.
-            </div>
-          ) : (
-            <div className="space-y-2">
-              {strongConcepts.slice(0, 4).map((c) => (
-                <div
-                  key={c.id}
-                  onClick={() => setSelectedConceptId(c.concept_id)}
-                  className="cursor-pointer flex items-center justify-between rounded-xl bg-[#FAF5E8] p-3 border border-[#DDD6C5] text-xs hover:border-[#6D9B73] transition-all"
-                >
-                  <div>
-                    <span className="font-bold text-[#26313D] block">{c.concept_name}</span>
-                    <span className="text-[10px] text-[#6F7782]">
-                      {c.attempt_count > 0 ? `${c.correct_count}/${c.attempt_count} correct (${Math.round((c.correct_count / c.attempt_count) * 100)}%)` : 'Consolidated'}
-                    </span>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-xs font-black text-[#6D9B73]">
-                      {Math.round(c.mastery_probability * 100)}%
-                    </span>
-                    <span className="text-[10px] text-[#6D9B73] block font-semibold">
-                      {Math.round((c.retention_strength || 0.85) * 100)}% retention
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        )}
       </div>
     </div>
   );

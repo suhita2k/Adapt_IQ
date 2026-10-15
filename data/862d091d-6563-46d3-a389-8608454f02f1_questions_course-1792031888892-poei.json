@@ -1,0 +1,53 @@
+[
+  {
+    "id": "q-mcq-1792039535922-0",
+    "course_id": "course-1792031888892-poei",
+    "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+    "concept_name": "Satellite Circuit Interference",
+    "topic": "Satellite Communication Systems",
+    "subtopic": "Interference Analysis",
+    "question_type": "mcq",
+    "difficulty": "medium",
+    "bloom_level": "Apply",
+    "question_text": "Which of the following aspects is explicitly analyzed alongside Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders according to the course materials?",
+    "options": [
+      {
+        "id": "opt-0-0-xj3l",
+        "text": "Output Back-Off (OBO) in Low-Noise Amplifiers",
+        "is_correct": false,
+        "explanation": "Output Back-Off (OBO) is associated with High-Power Amplifiers rather than this specific combination with Low-Noise Amplifiers.",
+        "misconception_tag": "Conceptual confusion"
+      },
+      {
+        "id": "opt-0-1-eflo",
+        "text": "Satellite circuit interference",
+        "is_correct": true,
+        "explanation": "The course materials explicitly list satellite circuit interference as part of the analysis involving Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders."
+      },
+      {
+        "id": "opt-0-2-ux4p",
+        "text": "Terrestrial waveguide dispersion losses",
+        "is_correct": false,
+        "explanation": "Terrestrial waveguide dispersion losses are not mentioned in the context of bent-pipe transponder C/N ratios in the text.",
+        "misconception_tag": "Conceptual confusion"
+      },
+      {
+        "id": "opt-0-3-1m05",
+        "text": "Tropospheric scintillation index calculations",
+        "is_correct": false,
+        "explanation": "Tropospheric scintillation index calculations are outside the scope of the cited operational characteristics.",
+        "misconception_tag": "Conceptual confusion"
+      }
+    ],
+    "correct_answer": "Satellite circuit interference",
+    "explanation": "The text explicitly mentions the analysis of mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference.",
+    "learning_objective": "Demonstrate mastery of Satellite Circuit Interference.",
+    "source_citation": {
+      "material_title": "16_Mark_Questions_and_Answers",
+      "reference": "Page 2",
+      "quote": "Q2. Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference."
+    },
+    "verification_status": "verified",
+    "verifier_notes": "Independently solved and source-grounded."
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "id": "c-course-1792001712774-9snj-1792001776449-1",
+    "course_id": "course-1792001712774-9snj",
+    "name": "Satellite Circuit Interference",
+    "description": "When many satellite circuits (transponders) are used in the same frequency band, the signal from one circuit may interfere with another circuit.",
+    "category": "Satellite Communications",
+    "subtopic": "Interference Management",
+    "difficulty_level": 2,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Explain how multiple satellite circuits operating in the same frequency band cause signal interference.",
+      "Identify the operational challenges of frequency band sharing among transponders."
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Assuming different transponders in the same frequency band never affect each other."
+    ]
+  },
+  {
+    "id": "c-course-1792001712774-9snj-1792001776449-2",
+    "course_id": "course-1792001712774-9snj",
+    "name": "Received Carrier Power Equation",
+    "description": "C = P_T G_T G_R \\left( \frac{\\lambda}{4\\pi R} \right)^2 \frac{1}{L_T L_R L_s L_{atm}}",
+    "category": "Satellite Communications",
+    "subtopic": "Link Budget",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Satellite Circuit Interference"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Calculate the received carrier power using transmit power, antenna gains, wavelength, and distance.",
+      "Account for various system and atmospheric losses in the link budget equation."
+    ],
+    "source_location": "Page 2",
+    "common_pitfalls": [
+      "Confusing transmitter and receiver losses or misapplying the wavelength and distance ratio."
+    ]
+  },
+  {
+    "id": "c-course-1792001712774-9snj-1792001776449-3",
+    "course_id": "course-1792001712774-9snj",
+    "name": "Bent-Pipe Transponder Combined C/N Ratio",
+    "description": "Hence, the combined C/N ratio of a bent-pipe transponder satellite link is given by the inverse sum formula.",
+    "category": "Satellite Communications",
+    "subtopic": "Transponder Performance",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Received Carrier Power Equation"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "State the inverse sum formula for combined carrier-to-noise ratios.",
+      "Analyze the combined C/N ratio performance of a bent-pipe transponder satellite link."
+    ],
+    "source_location": "Page 3",
+    "common_pitfalls": [
+      "Adding C/N ratios directly instead of using the inverse sum formula."
+    ]
+  },
+  {
+    "id": "c-course-1792001712774-9snj-1792001776449-4",
+    "course_id": "course-1792001712774-9snj",
+    "name": "Output Back-Off (OBO)",
+    "description": "Output Back-Off (OBO) is the amount by which the actual operating output power is kept below the saturation power of the amplifier.",
+    "category": "Satellite Communications",
+    "subtopic": "Amplifiers and Power",
+    "difficulty_level": 3,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Define Output Back-Off in the context of amplifier operating power.",
+      "Calculate or describe the difference between actual operating output power and saturation power."
+    ],
+    "source_location": "Page 4",
+    "common_pitfalls": [
+      "Confusing Output Back-Off with input power levels or maximum theoretical gain."
+    ]
+  },
+  {
+    "id": "c-course-1792001712774-9snj-1792001776449-5",
+    "course_id": "course-1792001712774-9snj",
+    "name": "Free Space Transmission Loss",
+    "description": "Free space transmission loss is the loss in signal power as the electromagnetic wave propagates through space without any physical medium.",
+    "category": "Satellite Communications",
+    "subtopic": "Signal Propagation",
+    "difficulty_level": 2,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Define free space transmission loss for propagating electromagnetic waves.",
+      "Explain how signal power diminishes as waves travel through space without a physical medium."
+    ],
+    "source_location": "Page 5",
+    "common_pitfalls": [
+      "Assuming free space transmission loss is caused by atmospheric absorption or physical obstacles."
+    ]
+  },
+  {
+    "id": "c-course-1792001712774-9snj-1792001776449-6",
+    "course_id": "course-1792001712774-9snj",
+    "name": "Uplink Transmission",
+    "description": "Information from the transmitting earth station is sent to the satellite through the uplink.",
+    "category": "Satellite Communications",
+    "subtopic": "Network Architecture",
+    "difficulty_level": 1,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Define the uplink as the communication path from an earth station to a satellite.",
+      "Identify the origin and destination of information transmitted via the uplink."
+    ],
+    "source_location": "Page 6",
+    "common_pitfalls": [
+      "Confusing uplink transmission with downlink transmission from the satellite to the earth."
+    ]
+  },
+  {
+    "id": "c-course-1792001712774-9snj-1792001776449-7",
+    "course_id": "course-1792001712774-9snj",
+    "name": "Geostationary Satellite C-Band Parameters",
+    "description": "A geostationary satellite carries a C-band transponder which transmits 20 watts into an antenna with an on-axis gain of 30 dB.",
+    "category": "Satellite Communications",
+    "subtopic": "Hardware Specifications",
+    "difficulty_level": 2,
+    "prerequisites": [
+      "Uplink Transmission"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Identify the typical power and antenna gain specifications for a C-band geostationary satellite transponder.",
+      "Apply given transponder wattage and antenna gain values to basic power calculations."
+    ],
+    "source_location": "Page 7",
+    "common_pitfalls": [
+      "Treating decibel antenna gain values as linear power ratios without proper conversion."
+    ]
+  }
+]

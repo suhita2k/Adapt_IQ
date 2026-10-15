@@ -1,0 +1,13 @@
+{
+  "id": "profile-a2ccaf54-4ba8-4d1a-9c9c-0ab4ad74f87a",
+  "user_id": "a2ccaf54-4ba8-4d1a-9c9c-0ab4ad74f87a",
+  "full_name": "Test User New",
+  "email": "testuser_new_179203@example.com",
+  "preferred_language": "English",
+  "learning_goal": "Exam Preparation",
+  "study_field": "Computer Science",
+  "daily_study_time_minutes": 30,
+  "onboarding_completed": true,
+  "created_at": "2026-10-15T07:34:50.706Z",
+  "updated_at": "2026-10-15T07:34:50.706Z"
+}

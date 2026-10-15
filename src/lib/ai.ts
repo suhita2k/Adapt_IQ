@@ -6,12 +6,15 @@
 
 const GEMINI_MODELS = [
   'gemini-flash-lite-latest',
+  'gemini-2.5-flash',
+  'gemini-2.5-flash-lite',
+  'gemini-3.5-flash-lite',
   'gemini-3.1-flash-lite',
-  'gemma-4-26b-a4b-it',
   'gemini-flash-latest',
   'gemini-3.8-flash',
   'gemini-3.7-flash',
   'gemini-3.5-flash',
+  'gemma-4-26b-a4b-it',
 ];
 
 export interface GeminiPart {
@@ -89,7 +92,12 @@ export async function callGemini(
         }
 
         const data = await res.json();
-        const outputText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        const candParts = data.candidates?.[0]?.content?.parts || [];
+        // Extract text while ignoring internal thought parts from thinking/reasoning models
+        const textParts = candParts.filter((p: any) => p.text && !p.thought);
+        const outputText = textParts.length > 0
+          ? textParts.map((p: any) => p.text).join('')
+          : (candParts[0]?.text || '');
 
         if (outputText) {
           return outputText;

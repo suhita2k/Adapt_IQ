@@ -10,6 +10,7 @@ export interface UserProfile {
   learning_goal: string;
   study_field: string;
   daily_study_time_minutes: number;
+  daily_study_minutes?: number;
   created_at: string;
   updated_at: string;
   onboarding_completed: boolean;
@@ -17,6 +18,7 @@ export interface UserProfile {
 
 export interface Course {
   id: string;
+  course_id?: string;
   owner_id: string;
   title: string;
   code?: string;
@@ -32,7 +34,7 @@ export interface Course {
   last_studied?: string;
 }
 
-export type MaterialType = 'textbook' | 'slides' | 'lecture_video' | 'notes' | 'syllabus' | 'image' | 'figure';
+export type MaterialType = 'textbook' | 'slides' | 'lecture_video' | 'notes' | 'syllabus' | 'image' | 'figure' | string;
 
 export interface VisualElement {
   id: string;
@@ -47,21 +49,24 @@ export interface VisualElement {
 
 export interface CourseMaterial {
   id: string;
+  material_id?: string;
   course_id: string;
   user_id: string;
   title: string;
   file_name: string;
-  file_type: MaterialType;
+  file_type: MaterialType | string;
   file_size_bytes: number;
   file_url?: string;
   page_count?: number;
   slide_count?: number;
+  total_units?: number;
   duration_seconds?: number;
   video_timestamps?: { time: string; label: string }[];
   visual_elements_count?: number;
-  status: 'processing' | 'indexed' | 'failed';
-  extracted_chunks_count: number;
-  uploaded_at: string;
+  status: 'processing' | 'indexed' | 'failed' | 'uploading' | 'processed' | 'error';
+  extracted_chunks_count?: number;
+  uploaded_at?: string;
+  created_at?: string;
 }
 
 export interface SourceEvidence {
@@ -157,16 +162,21 @@ export interface LearningTwinMetrics {
 
 export interface Misconception {
   id: string;
+  misconception_id?: string;
   user_id: string;
   course_id: string;
   concept_id: string;
   concept_name: string;
   title: string;
   description: string;
-  trigger_evidence: string;
-  severity: 'low' | 'medium' | 'high';
+  trigger_evidence?: string;
+  evidence?: string;
+  confidence?: number;
+  severity?: 'low' | 'medium' | 'high';
   detected_at: string;
-  status: 'active' | 'remediated' | 'retested_pass';
+  status: 'active' | 'remediated' | 'retested_pass' | 'Detected' | 'Repairing' | 'Retest Required' | 'Resolved';
+  retest_passed?: boolean;
+  citations?: any[];
   remediation_steps: {
     step_number: number;
     title: string;
@@ -247,41 +257,52 @@ export interface Assessment {
 
 export interface StudyTask {
   id: string;
-  user_id: string;
-  course_id: string;
-  concept_id: string;
-  concept_name: string;
+  task_id?: string;
+  user_id?: string;
+  course_id?: string;
+  concept_id?: string;
+  concept_name?: string;
   title: string;
-  task_type: 'concept_review' | 'practice_quiz' | 'remediation' | 'deep_dive';
+  task_type?: 'concept_review' | 'practice_quiz' | 'remediation' | 'deep_dive';
+  activity?: string;
   estimated_minutes: number;
-  priority: 'urgent' | 'high' | 'medium' | 'low';
+  duration_minutes?: number;
+  priority: 'urgent' | 'high' | 'medium' | 'low' | 'Critical' | 'High' | 'Medium';
   due_date: string;
+  source_ref?: string;
   completed: boolean;
   completed_at?: string;
   reason: string;
 }
 
 export interface StudyPlan {
-  id: string;
-  user_id: string;
-  course_id: string;
+  id?: string;
+  plan_id?: string;
+  user_id?: string;
+  course_id?: string;
   title: string;
   exam_date?: string;
-  daily_goal_minutes: number;
-  streak_days: number;
+  daily_goal_minutes?: number;
+  daily_available_minutes?: number;
+  streak_days?: number;
   tasks: StudyTask[];
-  created_at: string;
-  updated_at: string;
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface Flashcard {
   id: string;
-  user_id: string;
-  course_id: string;
+  card_id?: string;
+  user_id?: string;
+  course_id?: string;
   concept_id: string;
   concept_name?: string;
   front: string;
   back: string;
+  front_prompt?: string;
+  back_solution?: string;
+  source_citation?: string;
+  card_type?: 'concept' | 'formula' | 'code' | string;
   code_front?: string;
   code_back?: string;
   source_ref: string;
@@ -325,13 +346,16 @@ export interface RagasMetricBreakdown {
   answer_relevancy: number;
   context_precision: number;
   context_recall: number;
+  citation_accuracy?: number;
   evidence_gate_accuracy?: number;
   harmonic_mean_ragas?: number;
+  tested_at?: string;
 }
 
 export interface EvaluationTestSetItem {
   id: string;
   question: string;
+  course_id?: string;
   course_title?: string;
   category?: 'grounded_course' | 'off_material' | 'known_location';
   known_source_location?: string;
@@ -343,11 +367,15 @@ export interface EvaluationTestSetItem {
   actual_system_answer?: string;
   actual_answer?: string;
   actual_citation?: string;
-  faithfulness_score: number;
+  faithfulness_score?: number;
   relevancy_score?: number;
   precision_score?: number;
   context_precision_score?: number;
-  status: 'passed' | 'warning' | 'failed';
+  context_recall_score?: number;
+  citation_accuracy_score?: number;
+  latency_ms?: number;
+  status?: 'passed' | 'warning' | 'failed' | 'not_tested';
+  tested_at?: string;
 }
 
 export interface SimulatedStudentProfile {
@@ -360,6 +388,8 @@ export interface SimulatedStudentProfile {
   final_skill_estimate?: number;
   initial_mastery?: number;
   final_mastery?: number;
+  initial_accuracy?: number;
+  final_accuracy?: number;
   sessions_run: number;
   mastery_gains?: number; // e.g. 34%
   mastery_gain_pct?: number;
@@ -370,6 +400,23 @@ export interface SimulatedStudentProfile {
   adaptation_quality: string | number; // e.g. 'Optimal' or 95.1%
   is_simulation?: true;
   labeled_synthetic?: true;
+  status?: 'tested' | 'not_tested';
+  tested_at?: string;
+  diagnostic_details?: string;
+}
+
+export interface EvaluationRun {
+  id: string;
+  run_type: 'rag_benchmark' | 'personalization' | 'security_suite' | 'test_set_gen' | 'full';
+  title: string;
+  course_id?: string;
+  course_title?: string;
+  score?: number; // 0 to 100
+  status: 'passed' | 'warning' | 'failed' | 'completed';
+  latency_ms: number;
+  details: string;
+  created_at: string;
+  metrics?: Record<string, any>;
 }
 
 export interface WeakTopicRevisionPackage {
@@ -523,4 +570,68 @@ export interface QuestionBankGenerateRequest {
   includeSources?: boolean;
   customTitle?: string;
 }
+
+// Legacy / Alternative Aliases and Compatibility Types
+export interface ConceptMastery {
+  concept_id: string;
+  concept_name: string;
+  subconcept?: string;
+  mastery_percentage: number;
+  prior_percentage?: number;
+  attempt_count: number;
+  correct_count: number;
+  incorrect_count: number;
+  confidence: number;
+  forgetting_risk: number;
+  last_practiced: string;
+  difficulty: number;
+}
+
+export interface SourceReference {
+  source_id: string;
+  source_type: "textbook" | "slide" | "video" | "diagram";
+  title: string;
+  location: string;
+  page?: number;
+  slide_number?: number;
+  start_time?: string;
+  end_time?: string;
+  excerpt: string;
+  relevance: number;
+}
+
+export interface AssessmentQuestion {
+  question_id: string;
+  concept: string;
+  question_text: string;
+  code_snippet?: string;
+  options: string[];
+  correct_option_index: number;
+  explanation: string;
+  difficulty: number;
+  citation: SourceReference;
+}
+
+export interface QuestionHistoryItem {
+  id: string;
+  question_id: string;
+  concept: string;
+  question_text: string;
+  selected_option: string;
+  is_correct: boolean;
+  attempted_at: string;
+  prior_mastery: number;
+  updated_mastery: number;
+  delta: number;
+}
+
+export interface EvaluationMetrics {
+  rag_faithfulness: number;
+  answer_relevancy: number;
+  citation_accuracy: number;
+  off_material_refusal_rate: number;
+  sympy_math_verification: number;
+  unique_question_novelty: number;
+}
+
 

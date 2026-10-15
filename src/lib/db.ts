@@ -17,6 +17,8 @@ import {
   TutorMessage,
   SourceEvidence,
   EvaluationCase,
+  EvaluationTestSetItem,
+  EvaluationRun,
   TopicMastery,
   LearningTwinMetrics,
   QuestionBank,
@@ -1116,7 +1118,7 @@ export class DB {
   }
 
   // ==========================================
-  // EVALUATION CASES
+  // EVALUATION & BENCHMARKS
   // ==========================================
   static async getEvaluationCases(userId: string): Promise<EvaluationCase[]> {
     const filePath = getUserFilePath(userId, 'evaluations');
@@ -1128,6 +1130,81 @@ export class DB {
     const cases = readJsonFile<EvaluationCase[]>(filePath, []);
     cases.unshift(testCase);
     writeJsonFile(filePath, cases);
+  }
+
+  static async getEvaluationTestSet(userId: string, courseId?: string): Promise<EvaluationTestSetItem[]> {
+    if (courseId) {
+      const coursePath = getUserFilePath(userId, `test_set_${courseId}`);
+      const courseSet = readJsonFile<EvaluationTestSetItem[]>(coursePath, []);
+      if (courseSet.length > 0) return courseSet;
+    }
+    const defaultPath = getUserFilePath(userId, 'test_set');
+    const defaultSet = readJsonFile<EvaluationTestSetItem[]>(defaultPath, []);
+    if (defaultSet.length > 0) return defaultSet;
+
+    // Search any test set for this user in data directory
+    ensureDataDir();
+    const prefix = `${userId.replace(/[^a-zA-Z0-9_-]/g, '_')}_test_set_`;
+    try {
+      const files = fs.readdirSync(DATA_DIR).filter((f) => f.startsWith(prefix) && f.endsWith('.json'));
+      if (files.length > 0) {
+        return readJsonFile<EvaluationTestSetItem[]>(path.join(DATA_DIR, files[0]), []);
+      }
+    } catch {}
+    return [];
+  }
+
+  static async saveEvaluationTestSet(userId: string, testSet: EvaluationTestSetItem[], courseId?: string): Promise<void> {
+    if (courseId) {
+      const coursePath = getUserFilePath(userId, `test_set_${courseId}`);
+      writeJsonFile(coursePath, testSet);
+    }
+    const defaultPath = getUserFilePath(userId, 'test_set');
+    writeJsonFile(defaultPath, testSet);
+  }
+
+  static async getEvaluationRuns(userId: string): Promise<EvaluationRun[]> {
+    const filePath = getUserFilePath(userId, 'eval_history');
+    return readJsonFile<EvaluationRun[]>(filePath, []);
+  }
+
+  static async saveEvaluationRun(userId: string, run: EvaluationRun): Promise<void> {
+    const filePath = getUserFilePath(userId, 'eval_history');
+    const history = readJsonFile<EvaluationRun[]>(filePath, []);
+    history.unshift(run);
+    writeJsonFile(filePath, history);
+  }
+
+  static async getEvaluationState(userId: string): Promise<any> {
+    const filePath = getUserFilePath(userId, 'eval_state');
+    return readJsonFile<any>(filePath, null);
+  }
+
+  static async saveEvaluationState(userId: string, state: any): Promise<void> {
+    const filePath = getUserFilePath(userId, 'eval_state');
+    writeJsonFile(filePath, state);
+  }
+
+  static async resetEvaluationData(userId: string): Promise<void> {
+    const statePath = getUserFilePath(userId, 'eval_state');
+    const testSetPath = getUserFilePath(userId, 'test_set');
+    const historyPath = getUserFilePath(userId, 'eval_history');
+    const casesPath = getUserFilePath(userId, 'evaluations');
+
+    if (fs.existsSync(statePath)) try { fs.unlinkSync(statePath); } catch {}
+    if (fs.existsSync(testSetPath)) try { fs.unlinkSync(testSetPath); } catch {}
+    if (fs.existsSync(historyPath)) try { fs.unlinkSync(historyPath); } catch {}
+    if (fs.existsSync(casesPath)) try { fs.unlinkSync(casesPath); } catch {}
+
+    // Also remove any test_set_{courseId}.json
+    ensureDataDir();
+    const prefix = `${userId.replace(/[^a-zA-Z0-9_-]/g, '_')}_test_set_`;
+    try {
+      const files = fs.readdirSync(DATA_DIR).filter((f) => f.startsWith(prefix) && f.endsWith('.json'));
+      for (const f of files) {
+        try { fs.unlinkSync(path.join(DATA_DIR, f)); } catch {}
+      }
+    } catch {}
   }
 
   // ==========================================

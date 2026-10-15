@@ -1,0 +1,67 @@
+[
+  {
+    "id": "fc-course-1792001712774-9snj-1792001776513-0",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "course_id": "course-1792001712774-9snj",
+    "concept_id": "c-course-1792001712774-9snj-1792001776449-1",
+    "front": "What is the core principle and definition of Satellite Circuit Interference?",
+    "back": "When many satellite circuits (transponders) are used in the same frequency band, the signal from one circuit may interfere with another circuit.",
+    "source_ref": "Page 1",
+    "next_review_date": "2026-10-14",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1792001712774-9snj-1792001776514-1",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "course_id": "course-1792001712774-9snj",
+    "concept_id": "c-course-1792001712774-9snj-1792001776449-2",
+    "front": "What is the core principle and definition of Received Carrier Power Equation?",
+    "back": "C = P_T G_T G_R \\left( \frac{\\lambda}{4\\pi R} \right)^2 \frac{1}{L_T L_R L_s L_{atm}}",
+    "source_ref": "Page 2",
+    "next_review_date": "2026-10-14",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1792001712774-9snj-1792001776514-2",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "course_id": "course-1792001712774-9snj",
+    "concept_id": "c-course-1792001712774-9snj-1792001776449-3",
+    "front": "What is the core principle and definition of Bent-Pipe Transponder Combined C/N Ratio?",
+    "back": "Hence, the combined C/N ratio of a bent-pipe transponder satellite link is given by the inverse sum formula.",
+    "source_ref": "Page 3",
+    "next_review_date": "2026-10-14",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1792001712774-9snj-1792001776514-3",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "course_id": "course-1792001712774-9snj",
+    "concept_id": "c-course-1792001712774-9snj-1792001776449-4",
+    "front": "What is the core principle and definition of Output Back-Off (OBO)?",
+    "back": "Output Back-Off (OBO) is the amount by which the actual operating output power is kept below the saturation power of the amplifier.",
+    "source_ref": "Page 4",
+    "next_review_date": "2026-10-14",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1792001712774-9snj-1792001776514-4",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "course_id": "course-1792001712774-9snj",
+    "concept_id": "c-course-1792001712774-9snj-1792001776449-5",
+    "front": "What is the core principle and definition of Free Space Transmission Loss?",
+    "back": "Free space transmission loss is the loss in signal power as the electromagnetic wave propagates through space without any physical medium.",
+    "source_ref": "Page 5",
+    "next_review_date": "2026-10-14",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

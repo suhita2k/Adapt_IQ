@@ -18,6 +18,10 @@ import {
   QuestionBank,
   SmartQuestion,
   QuestionBankGenerateRequest,
+  EvaluationTestSetItem,
+  RagasMetricBreakdown,
+  SimulatedStudentProfile,
+  EvaluationRun,
 } from '@/types';
 
 function getAuthHeaders(): HeadersInit {
@@ -207,7 +211,10 @@ export const api = {
       headers: getAuthHeaders(),
       body: JSON.stringify(payload),
     });
-    if (!res.ok) throw new Error('Failed to generate diagnostic assessment');
+    if (!res.ok) {
+      const errData = await res.json().catch(() => null);
+      throw new Error(errData?.error || errData?.message || errData?.details || 'Failed to generate diagnostic assessment');
+    }
     const data = await res.json();
     return data.questions || [];
   },
@@ -226,9 +233,48 @@ export const api = {
       headers: getAuthHeaders(),
       body: JSON.stringify(payload),
     });
-    if (!res.ok) throw new Error('Failed to generate diagnostic assessment');
+    if (!res.ok) {
+      const errData = await res.json().catch(() => null);
+      throw new Error(errData?.error || errData?.message || errData?.details || 'Failed to generate diagnostic assessment');
+    }
     const data = await res.json();
     return { questions: data.questions || [], message: data.message, assessment_id: data.assessment_id };
+  },
+
+  async evaluateAssessment(payload: {
+    assessmentId: string;
+    courseId: string;
+    answers: Record<string, string>;
+  }): Promise<{
+    success: boolean;
+    score: number;
+    total: number;
+    percentage: number;
+    results: {
+      question_id: string;
+      question_text: string;
+      question_type: string;
+      user_answer: string;
+      correct_answer: string;
+      is_correct: boolean;
+      explanation: string;
+      source_citation: {
+        material_title: string;
+        reference: string;
+        quote: string;
+      };
+    }[];
+  }> {
+    const res = await fetch('/api/assessment/evaluate', {
+      method: 'POST',
+      headers: getAuthHeaders(),
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => null);
+      throw new Error(err?.error || 'Assessment evaluation failed');
+    }
+    return res.json();
   },
 
   async evaluateAttempt(payload: {
@@ -404,13 +450,95 @@ export const api = {
     return data.flashcard;
   },
 
-  // Evaluation
-  async getEvaluationMetrics(): Promise<{
+  // Evaluation & Empirical Benchmarks
+  async getEvaluationData(courseId?: string): Promise<{
     metrics: any;
+    ragas_breakdown: RagasMetricBreakdown | null;
+    test_set: EvaluationTestSetItem[];
+    simulated_profiles: SimulatedStudentProfile[];
     cases: EvaluationCase[];
+    history: EvaluationRun[];
+    courses: Course[];
+    selected_course_id?: string;
+    not_tested?: boolean;
   }> {
-    const res = await fetch('/api/evaluation', { headers: getAuthHeaders() });
-    if (!res.ok) throw new Error('Failed to load evaluation metrics');
+    const url = courseId ? `/api/evaluation?courseId=${courseId}` : '/api/evaluation';
+    const res = await fetch(url, { headers: getAuthHeaders() });
+    if (!res.ok) throw new Error('Failed to load evaluation data');
+    return res.json();
+  },
+
+  async getEvaluationMetrics(): Promise<any> {
+    return this.getEvaluationData();
+  },
+
+  async generateTestSet(courseId: string): Promise<{
+    success: boolean;
+    message: string;
+    test_set: EvaluationTestSetItem[];
+  }> {
+    const res = await fetch('/api/evaluation', {
+      method: 'POST',
+      headers: getAuthHeaders(),
+      body: JSON.stringify({ action: 'generate_test_set', courseId }),
+    });
+    if (!res.ok) throw new Error('Failed to generate test set from course materials');
+    return res.json();
+  },
+
+  async runRagBenchmark(courseId?: string): Promise<{
+    success: boolean;
+    ragas: RagasMetricBreakdown;
+    test_set: EvaluationTestSetItem[];
+    metrics: any;
+    run: EvaluationRun;
+  }> {
+    const res = await fetch('/api/evaluation', {
+      method: 'POST',
+      headers: getAuthHeaders(),
+      body: JSON.stringify({ action: 'run_rag_benchmark', courseId }),
+    });
+    if (!res.ok) throw new Error('RAG benchmark evaluation run failed');
+    return res.json();
+  },
+
+  async runPersonalizationSuite(): Promise<{
+    success: boolean;
+    simulated_profiles: SimulatedStudentProfile[];
+    metrics: any;
+    run: EvaluationRun;
+  }> {
+    const res = await fetch('/api/evaluation', {
+      method: 'POST',
+      headers: getAuthHeaders(),
+      body: JSON.stringify({ action: 'run_personalization' }),
+    });
+    if (!res.ok) throw new Error('Personalization evaluation run failed');
+    return res.json();
+  },
+
+  async runSecuritySuite(): Promise<{
+    success: boolean;
+    cases: EvaluationCase[];
+    overall_score: number;
+    run: EvaluationRun;
+  }> {
+    const res = await fetch('/api/evaluation', {
+      method: 'POST',
+      headers: getAuthHeaders(),
+      body: JSON.stringify({ action: 'run_security_suite' }),
+    });
+    if (!res.ok) throw new Error('Security & RLS evaluation run failed');
+    return res.json();
+  },
+
+  async resetEvaluation(): Promise<{ success: boolean; message: string }> {
+    const res = await fetch('/api/evaluation', {
+      method: 'POST',
+      headers: getAuthHeaders(),
+      body: JSON.stringify({ action: 'reset' }),
+    });
+    if (!res.ok) throw new Error('Failed to reset evaluation data');
     return res.json();
   },
 
@@ -418,7 +546,7 @@ export const api = {
     const res = await fetch('/api/evaluation', {
       method: 'POST',
       headers: getAuthHeaders(),
-      body: JSON.stringify({ prompt }),
+      body: JSON.stringify({ action: 'benchmark_prompt', prompt }),
     });
     if (!res.ok) throw new Error('Benchmark run failed');
     return res.json();

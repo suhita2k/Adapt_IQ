@@ -1,0 +1,82 @@
+{
+  "id": "plan-1792047232350",
+  "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+  "course_id": "course-1792031888892-poei",
+  "title": "Adaptive Study Schedule for uj",
+  "daily_goal_minutes": 60,
+  "streak_days": 1,
+  "tasks": [
+    {
+      "id": "task-m-1792047232350",
+      "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+      "course_id": "course-1792031888892-poei",
+      "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+      "concept_name": "Satellite Circuit Interference",
+      "title": "Repair Misconception: Misconception in Satellite Circuit Interference",
+      "task_type": "remediation",
+      "estimated_minutes": 20,
+      "priority": "urgent",
+      "due_date": "2026-10-15",
+      "completed": false,
+      "reason": "Invariant violation detected in recent diagnostic quiz attempt."
+    },
+    {
+      "id": "task-w-1792047232350-1",
+      "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+      "course_id": "course-1792031888892-poei",
+      "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+      "concept_name": "Received Carrier Power and C/N Ratios",
+      "title": "Review Weak Concept: Received Carrier Power and C/N Ratios",
+      "task_type": "concept_review",
+      "estimated_minutes": 15,
+      "priority": "high",
+      "due_date": "2026-10-15",
+      "completed": false,
+      "reason": "Bayesian mastery probability is low (6%). Consult AI course tutor."
+    },
+    {
+      "id": "task-w-1792047232350-2",
+      "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+      "course_id": "course-1792031888892-poei",
+      "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+      "concept_name": "Satellite Circuit Interference",
+      "title": "Review Weak Concept: Satellite Circuit Interference",
+      "task_type": "concept_review",
+      "estimated_minutes": 15,
+      "priority": "high",
+      "due_date": "2026-10-15",
+      "completed": false,
+      "reason": "Bayesian mastery probability is low (6%). Consult AI course tutor."
+    },
+    {
+      "id": "task-rev-1792047232350",
+      "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+      "course_id": "course-1792031888892-poei",
+      "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+      "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+      "title": "Complete SM-2 Flashcard Recall Session",
+      "task_type": "practice_quiz",
+      "estimated_minutes": 10,
+      "priority": "medium",
+      "due_date": "2026-10-15",
+      "completed": false,
+      "reason": "Ebbinghaus forgetting curve interval reached for due flashcards."
+    },
+    {
+      "id": "task-quiz-1792047232350",
+      "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+      "course_id": "course-1792031888892-poei",
+      "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+      "concept_name": "Uplinks and High-Power Amplifiers Architecture",
+      "title": "Daily 5-Question Adaptive Checkpoint",
+      "task_type": "practice_quiz",
+      "estimated_minutes": 15,
+      "priority": "medium",
+      "due_date": "2026-10-15",
+      "completed": false,
+      "reason": "Calibrate Bayesian Learning Twin across recent curriculum nodes."
+    }
+  ],
+  "created_at": "2026-10-15T06:53:52.350Z",
+  "updated_at": "2026-10-15T06:53:52.350Z"
+}

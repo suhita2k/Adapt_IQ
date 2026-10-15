@@ -1,0 +1,17 @@
+[
+  {
+    "id": "course-1792001712774-9snj",
+    "owner_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "title": "cse",
+    "code": "123",
+    "description": "Comprehensive course syllabus.",
+    "category": "Computer Science",
+    "color": "#B1A15A",
+    "icon": "BookOpen",
+    "total_concepts": 7,
+    "mastered_concepts": 0,
+    "materials_count": 1,
+    "created_at": "2026-10-14T18:15:12.774Z",
+    "updated_at": "2026-10-14T18:16:12.327Z"
+  }
+]

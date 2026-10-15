@@ -1,0 +1,86 @@
+[
+  {
+    "id": "c-course-1792031888892-poei-1792031951598-1",
+    "course_id": "course-1792031888892-poei",
+    "name": "Uplinks and High-Power Amplifiers Architecture",
+    "description": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+    "category": "Satellite Communication Systems",
+    "subtopic": "Amplifier Architecture",
+    "difficulty_level": 3,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Examine the architectural role of uplinks in satellite communication",
+      "Define Output Back-Off (OBO) in High-Power Amplifiers"
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Confusing uplink architecture with downlink processing",
+      "Misunderstanding the operational purpose of Output Back-Off"
+    ]
+  },
+  {
+    "id": "c-course-1792031888892-poei-1792031951598-2",
+    "course_id": "course-1792031888892-poei",
+    "name": "Free Space Transmission Loss",
+    "description": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+    "category": "Satellite Communication Systems",
+    "subtopic": "Signal Propagation",
+    "difficulty_level": 3,
+    "prerequisites": [],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Calculate Free Space Transmission Loss using standard parameters",
+      "Understand the factors affecting signal attenuation in free space"
+    ],
+    "source_location": "Page 1",
+    "common_pitfalls": [
+      "Neglecting frequency and distance variables in the calculation",
+      "Confusing free space loss with atmospheric attenuation"
+    ]
+  },
+  {
+    "id": "c-course-1792031888892-poei-1792031951598-3",
+    "course_id": "course-1792031888892-poei",
+    "name": "Received Carrier Power and C/N Ratios",
+    "description": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+    "category": "Satellite Communication Systems",
+    "subtopic": "Signal Performance",
+    "difficulty_level": 4,
+    "prerequisites": [
+      "Free Space Transmission Loss"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Analyze mathematical formulations for Received Carrier Power",
+      "Calculate Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders"
+    ],
+    "source_location": "Page 2",
+    "common_pitfalls": [
+      "Incorrectly combining uplink and downlink noise ratios",
+      "Misapplying the bent-pipe transponder model equations"
+    ]
+  },
+  {
+    "id": "c-course-1792031888892-poei-1792031951598-4",
+    "course_id": "course-1792031888892-poei",
+    "name": "Satellite Circuit Interference",
+    "description": "Analysis of operational characteristics regarding satellite circuit interference.",
+    "category": "Satellite Communication Systems",
+    "subtopic": "Interference Analysis",
+    "difficulty_level": 3,
+    "prerequisites": [
+      "Received Carrier Power and C/N Ratios"
+    ],
+    "subconcepts": [],
+    "learning_objectives": [
+      "Identify sources of satellite circuit interference",
+      "Analyze the operational impact of interference on circuit performance"
+    ],
+    "source_location": "Page 2",
+    "common_pitfalls": [
+      "Confusing internal transponder noise with external circuit interference",
+      "Overlooking the cumulative effect of multiple interference sources"
+    ]
+  }
+]

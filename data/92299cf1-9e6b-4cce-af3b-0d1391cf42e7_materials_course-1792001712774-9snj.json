@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mat-1792001771814-rvte",
+    "course_id": "course-1792001712774-9snj",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "title": "sc unit 3",
+    "file_name": "sc unit 3.pdf",
+    "file_type": "textbook",
+    "file_size_bytes": 5999288,
+    "file_url": "/api/courses/course-1792001712774-9snj/materials/mat-1792001771814-rvte/file",
+    "visual_elements_count": 7,
+    "status": "indexed",
+    "extracted_chunks_count": 7,
+    "uploaded_at": "2026-10-14T18:16:11.850Z"
+  }
+]

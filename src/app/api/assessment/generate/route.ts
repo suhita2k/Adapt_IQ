@@ -11,6 +11,7 @@ import {
   CourseMaterial,
   QuestionType,
   AssessmentType,
+  Assessment,
 } from '@/types';
 import { SupportedLanguage } from '@/lib/i18n';
 
@@ -46,6 +47,53 @@ function normalizeKey(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 80);
 }
 
+// True Fisher-Yates random shuffle for MCQ options with unique ID mapping
+function shuffleAndVerifyOptions(
+  options: { id?: string; text: string; is_correct: boolean; explanation?: string; misconception_tag?: string }[],
+  qIndex: number
+): QuestionOption[] {
+  // 1. Deduplicate options by text
+  const seenTexts = new Set<string>();
+  const uniqueOpts: typeof options = [];
+  for (const opt of options) {
+    const textNorm = String(opt.text || '').trim().toLowerCase();
+    if (textNorm.length > 0 && !seenTexts.has(textNorm)) {
+      seenTexts.add(textNorm);
+      uniqueOpts.push(opt);
+    }
+  }
+
+  // 2. Ensure exactly one correct option exists
+  let correctCount = uniqueOpts.filter((o) => o.is_correct).length;
+  if (correctCount === 0 && uniqueOpts.length > 0) {
+    uniqueOpts[0].is_correct = true;
+  } else if (correctCount > 1) {
+    let kept = false;
+    for (const opt of uniqueOpts) {
+      if (opt.is_correct) {
+        if (!kept) kept = true;
+        else opt.is_correct = false;
+      }
+    }
+  }
+
+  // 3. True Fisher-Yates shuffle (randomize correct answer's position independently)
+  const shuffled = [...uniqueOpts];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  // 4. Map to stable unique option IDs preserving option identity
+  return shuffled.map((opt, idx) => ({
+    id: `opt-${qIndex}-${idx}-${Math.random().toString(36).slice(2, 6)}`,
+    text: opt.text.trim(),
+    is_correct: Boolean(opt.is_correct),
+    explanation: opt.explanation || (opt.is_correct ? 'Correct conceptual formulation.' : 'Distractor hypothesis.'),
+    misconception_tag: opt.is_correct ? undefined : (opt.misconception_tag || 'Conceptual confusion'),
+  }));
+}
+
 function getBestCitation(
   course: Course,
   materials: CourseMaterial[],
@@ -68,7 +116,6 @@ function getBestCitation(
     };
   }
 
-  // Find matching source evidence from course
   if (sources.length > 0) {
     const matched = conceptName
       ? sources.find(
@@ -86,7 +133,6 @@ function getBestCitation(
     };
   }
 
-  // Fallback to first uploaded course material
   const mat = materials[0];
   const isVideo = mat?.file_type === 'lecture_video';
   const isSlide = mat?.file_type === 'slides';
@@ -105,31 +151,35 @@ export async function POST(request: NextRequest) {
     const body = await request.json().catch(() => ({}));
     const {
       courseId: requestedCourseId,
+      questionType: requestedQType, // 'mcq' | 'fill_in_the_blank' | 'short_answer' | 'mixed'
       topic: requestedTopic,
       conceptId: requestedConceptId,
-      difficulty: requestedDifficulty, // 'all' | 'easy' | 'medium' | 'hard'
-      assessmentType: rawAssessmentType, // 'diagnostic' | 'practice' | 'mock_exam' | 'numerical_drill' | 'short_answer' | 'mixed'
+      difficulty: requestedDifficulty, // 'easy' | 'medium' | 'hard' | 'mixed' | 'all'
       language,
-      count = 20,
+      count = 10,
     } = body;
 
-    const assessmentType: AssessmentType = rawAssessmentType || 'diagnostic';
-    const targetCount = Math.max(1, Math.min(30, Number(count) || 20));
+    const targetCount = Math.max(1, Math.min(30, Number(count) || 10));
 
-    // 1. Fetch user's courses from Supabase/DB (no hardcoded subjects)
+    // 1. Fetch user's courses from Supabase/DB
     const userCourses = await DB.getCourses(auth.userId, auth.supabase);
     if (!userCourses || userCourses.length === 0) {
-      return NextResponse.json({
-        questions: [],
-        message: 'No courses found. Create a course and upload learning materials to get started.',
-      });
+      return NextResponse.json(
+        { error: 'No courses found. Please create a course and upload learning materials first.' },
+        { status: 400 }
+      );
     }
 
-    // Resolve target course ID
-    const targetCourseId = requestedCourseId || userCourses[0].id;
+    if (!requestedCourseId) {
+      return NextResponse.json(
+        { error: 'Course selection is mandatory.' },
+        { status: 400 }
+      );
+    }
+
     const course =
-      userCourses.find((c) => c.id === targetCourseId) ||
-      (await DB.getCourseById(auth.userId, targetCourseId, auth.supabase));
+      userCourses.find((c) => c.id === requestedCourseId) ||
+      (await DB.getCourseById(auth.userId, requestedCourseId, auth.supabase));
 
     if (!course) {
       return NextResponse.json(
@@ -138,13 +188,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 2. Fetch actual uploaded course materials (strictly no mock/predefined questions)
+    // 2. Fetch actual uploaded course materials (strictly no predefined or demo questions)
     const materials = await DB.getMaterials(auth.userId, course.id, auth.supabase);
     if (!materials || materials.length === 0) {
-      return NextResponse.json({
-        questions: [],
-        message: `No uploaded learning materials found for "${course.title}". Upload course materials (PDF, PPTX, Video, Images) in Courses to generate questions.`,
-      });
+      return NextResponse.json(
+        {
+          error: `No learning materials found for "${course.title}". Please upload course content (PDF, PPTX, Video) in Courses before starting an assessment.`,
+        },
+        { status: 400 }
+      );
     }
 
     // 3. Fetch extracted concepts and verified source evidence
@@ -165,154 +217,90 @@ export async function POST(request: NextRequest) {
       }));
     }
 
-    // Filter by requested topic or concept if specified
-    if (requestedConceptId && requestedConceptId !== 'all') {
-      const filtered = activeConcepts.filter((c) => c.id === requestedConceptId);
-      if (filtered.length > 0) activeConcepts = filtered;
-    } else if (requestedTopic && requestedTopic !== 'all') {
+    // Filter by requested topic if specified (and not 'all' / 'All Topics')
+    if (requestedTopic && requestedTopic !== 'all' && requestedTopic !== 'All Topics') {
       const filtered = activeConcepts.filter(
         (c) => (c.category || '').toLowerCase() === requestedTopic.toLowerCase()
       );
+      if (filtered.length > 0) {
+        activeConcepts = filtered;
+      }
+    }
+
+    if (requestedConceptId && requestedConceptId !== 'all') {
+      const filtered = activeConcepts.filter((c) => c.id === requestedConceptId);
       if (filtered.length > 0) activeConcepts = filtered;
     }
 
-    // 4. Resolve user preferred language & student adaptive mastery profile
+    // 4. Resolve user preferred language
     const userProfile = await DB.getProfile(auth.userId, auth.supabase);
     const preferredLanguage: SupportedLanguage = (language ||
       userProfile?.preferred_language ||
       'English') as SupportedLanguage;
 
-    // Fetch real mastery & misconceptions to adaptively target the assessment
-    const masteryList = await DB.getMastery(auth.userId, course.id, auth.supabase);
-    const misconceptions = await DB.getMisconceptions(auth.userId, course.id, auth.supabase);
-
-    const weakConceptIds = new Set(masteryList.filter((m) => m.mastery_probability < 0.65).map((m) => m.concept_id));
-    const miscConceptIds = new Set(misconceptions.filter((m) => m.status === 'active').map((m) => m.concept_id));
-
-    // Adaptively prioritize weak concepts and active misconceptions
-    activeConcepts.sort((a, b) => {
-      const aPriority = (weakConceptIds.has(a.id) ? 2 : 0) + (miscConceptIds.has(a.id) ? 3 : 0);
-      const bPriority = (weakConceptIds.has(b.id) ? 2 : 0) + (miscConceptIds.has(b.id) ? 3 : 0);
-      return bPriority - aPriority;
-    });
-
-    const weakSummaryStr = masteryList
-      .filter((m) => m.mastery_probability < 0.65)
-      .map((m) => `"${m.concept_name}" (${Math.round(m.mastery_probability * 100)}% mastery)`)
-      .join(', ');
-
-    const activeMiscSummaryStr = misconceptions
-      .filter((m) => m.status === 'active')
-      .map((m) => `"${m.title}" in concept ${m.concept_name}`)
-      .join(', ');
-
-    // 5. Deduplication: Fetch all previous questions from DB/Supabase to avoid repeats
-    const previousQuestions = await DB.getQuestions(auth.userId, course.id);
-    const previousAttempts = await DB.getAttempts(auth.userId, course.id, auth.supabase);
-    const seenNormalizedQuestions = new Set<string>();
-
-    for (const pq of previousQuestions) {
-      if (pq.question_text) {
-        seenNormalizedQuestions.add(normalizeKey(pq.question_text));
-      }
-    }
-    for (const pa of previousAttempts) {
-      if (pa.question_id) {
-        seenNormalizedQuestions.add(normalizeKey(pa.question_id));
-      }
-    }
-
-    // Determine target distribution across question types based on assessmentType
+    // Determine target distribution across question types based on requestedQType
     let targetMcqCount = 0;
     let targetFitbCount = 0;
     let targetShortAnswerCount = 0;
-    let targetNumericalCount = 0;
 
-    if (assessmentType === 'numerical_drill') {
-      targetNumericalCount = targetCount;
-    } else if (assessmentType === 'short_answer') {
+    const qTypeNorm = (requestedQType || 'mcq').toLowerCase().replace(/\s+/g, '_');
+    if (qTypeNorm === 'fill_in_the_blanks' || qTypeNorm === 'fill_in_the_blank') {
+      targetFitbCount = targetCount;
+    } else if (qTypeNorm === 'short_answer') {
       targetShortAnswerCount = targetCount;
-    } else if (assessmentType === 'mock_exam' || assessmentType === 'diagnostic' || assessmentType === 'mixed') {
-      // Balanced distribution: MCQ (~40%), FITB (~30%), Short Answer (~15%), Numerical (~15%)
-      targetMcqCount = Math.round(targetCount * 0.40);
-      targetFitbCount = Math.round(targetCount * 0.30);
-      targetShortAnswerCount = Math.max(1, Math.round(targetCount * 0.15));
-      targetNumericalCount = targetCount - (targetMcqCount + targetFitbCount + targetShortAnswerCount);
-      if (targetNumericalCount < 1) targetNumericalCount = 1;
+    } else if (qTypeNorm === 'mixed') {
+      targetMcqCount = Math.ceil(targetCount * 0.5);
+      targetFitbCount = Math.floor(targetCount * 0.25);
+      targetShortAnswerCount = targetCount - (targetMcqCount + targetFitbCount);
     } else {
-      // Practice Quiz default
-      targetMcqCount = Math.round(targetCount * 0.50);
-      targetFitbCount = Math.round(targetCount * 0.30);
-      targetShortAnswerCount = Math.round(targetCount * 0.10);
-      targetNumericalCount = targetCount - (targetMcqCount + targetFitbCount + targetShortAnswerCount);
+      // Default: MCQ
+      targetMcqCount = targetCount;
     }
 
-    // Ensure total counts match targetCount
-    const currentSum = targetMcqCount + targetFitbCount + targetShortAnswerCount + targetNumericalCount;
-    if (currentSum < targetCount) {
-      targetMcqCount += targetCount - currentSum;
-    } else if (currentSum > targetCount) {
-      targetMcqCount -= (currentSum - targetCount);
-    }
-
-    // Format context representation
     const materialsListStr = materials
+      .slice(0, 10)
       .map(
-        (m) =>
-          `• Material: "${m.title}" (${m.file_type}, ${m.file_name}, ${
-            m.page_count ? m.page_count + ' pages' : ''
-          } ${m.slide_count ? m.slide_count + ' slides' : ''})`
+        (m, idx) =>
+          `[Material ${idx + 1}]: "${m.title}" (Type: ${m.file_type || 'document'})`
       )
       .join('\n');
 
     const conceptsListStr = activeConcepts
+      .slice(0, 20)
       .map(
         (c) =>
-          `• Concept [ID: ${c.id}]: "${c.name}" (Topic/Category: "${c.category}", Subtopic: "${c.subtopic || 'General'}", Level: ${c.difficulty_level}/5)\n  Definition: ${c.description}\n  Learning Objectives: ${(c.learning_objectives || []).join('; ') || 'Core mastery'}`
+          `• Concept [ID: ${c.id}]: "${c.name}" (Topic: "${c.category || 'General'}")\n  Definition: ${c.description}`
       )
       .join('\n');
 
     const sourcesListStr = sources
-      .slice(0, 20)
+      .slice(0, 15)
       .map(
         (s) =>
-          `• Evidence [${s.material_title} - ${s.location_reference}]: "${s.snippet}"`
+          `• Citation [${s.material_title} - ${s.location_reference}]: "${s.snippet}"`
       )
       .join('\n');
 
-    // Filter requested difficulty
-    const targetDifficultyDirective = requestedDifficulty && requestedDifficulty !== 'all'
-      ? `STRICT DIFFICULTY REQUIREMENT: Generate all questions at the "${requestedDifficulty}" level.`
-      : `DIFFICULTY DISTRIBUTION: Distribute difficulties evenly across easy, medium, and hard.`;
+    const targetDifficultyDirective =
+      requestedDifficulty && requestedDifficulty !== 'all' && requestedDifficulty !== 'mixed' && requestedDifficulty !== 'Mixed'
+        ? `STRICT DIFFICULTY REQUIREMENT: Generate all questions at the "${requestedDifficulty.toLowerCase()}" level.`
+        : `DIFFICULTY DISTRIBUTION: Distribute difficulties evenly across easy, medium, and hard.`;
 
-    // Build Batch Generation Prompt with Question Verification Protocol
-    const buildBatchPrompt = (batchCount: number, batchIdx: number) => {
-      const bMcq = Math.round(batchCount * (targetMcqCount / targetCount));
-      const bFitb = Math.round(batchCount * (targetFitbCount / targetCount));
-      const bShort = Math.round(batchCount * (targetShortAnswerCount / targetCount));
-      const bNum = batchCount - (bMcq + bFitb + bShort);
-
-      return `
-You are the ADAPTIQ Adaptive Question Generator & Academic Psychometrician.
-Generate a verified set of assessment questions strictly grounded in the course materials for: "${course.title}".
+    const prompt = `
+You are the ADAPTIQ Diagnostic Question Generator.
+Generate a verified set of assessment questions strictly grounded in the uploaded course materials for: "${course.title}".
 
 COURSE CONTEXT:
 Course Title: "${course.title}"
 Course Description: "${course.description}"
 
-ASSESSMENT TYPE: ${assessmentType}
-BATCH NUMBER: ${batchIdx + 1}
-BATCH QUESTIONS REQUIRED: ${batchCount}
-- Multiple Choice (MCQ): ${Math.max(0, bMcq)}
-- Fill in the Blank: ${Math.max(0, bFitb)}
-- Short Answer: ${Math.max(0, bShort)}
-- Numerical Problems: ${Math.max(0, bNum)}
+TOPIC FILTER: ${requestedTopic || 'All Topics'}
+TOTAL QUESTIONS REQUIRED: ${targetCount}
+- Multiple Choice (MCQ): ${targetMcqCount}
+- Fill in the Blank: ${targetFitbCount}
+- Short Answer: ${targetShortAnswerCount}
 
 ${targetDifficultyDirective}
-
-STUDENT COGNITIVE ADAPTIVE PROFILE (TARGETING):
-${weakSummaryStr ? `Weak Concepts Needing Assessment: ${weakSummaryStr}` : 'Baseline Calibration across all concepts.'}
-${activeMiscSummaryStr ? `Diagnosed Misconceptions to Target: ${activeMiscSummaryStr}` : ''}
 
 UPLOADED MATERIALS:
 ${materialsListStr}
@@ -323,20 +311,16 @@ ${conceptsListStr}
 SOURCE EVIDENCE CITATIONS:
 ${sourcesListStr || 'Ground strictly in uploaded materials and concepts above.'}
 
-QUESTION VERIFICATION PIPELINE (EXECUTE INTERNALLY FOR EVERY QUESTION):
-1. GENERATE: Draft question strictly grounded in the course material.
-2. SOLVE INDEPENDENTLY: Solve the problem step-by-step to guarantee correctness and unambiguousness.
-3. VERIFY AGAINST SOURCE: Reference exact source location (Page, Slide, Timestamp, Figure).
-4. VALIDATE ANSWER: Ensure exact correct answer is verified. For MCQ, ensure exactly ONE option is correct. For Numerical, provide the exact numeric value and unit. For Short Answer, provide the key criteria/rubric.
-5. VALIDATE DIFFICULTY: Easy = Remember/Understand; Medium = Apply; Hard = Analyze/Evaluate.
-6. CHECK DUPLICATE: Ensure questions are unique and do not repeat previous stems.
+STRICT QUESTION PROTOCOL:
+1. Every question and correct answer must be verified directly against the course material.
+2. For MCQs: Provide exactly 1 correct answer and 3 plausible, clearly incorrect distractors.
+3. For Fill in the Blank: The question text MUST include '_____' where the key term belongs.
+4. For Short Answer: Provide clear criteria in the explanation.
+5. NEVER generate fabricated, demo, or placeholder questions. Ground only in course concepts.
+6. Provide an accurate source_citation object citing the material_title, reference (e.g. Page 12 or Slide 5), and excerpt quote.
 
-LANGUAGE REQUIREMENT:
-Generate ALL question stems, options, and explanations strictly in ${preferredLanguage}.
-${preferredLanguage === 'Tamil' ? 'Use Tamil script (தமிழ்).' : ''}
-${preferredLanguage === 'Hindi' ? 'Use Hindi script (हिन्दी).' : ''}
-${preferredLanguage === 'Spanish' ? 'Use Spanish (Español).' : ''}
-${preferredLanguage === 'French' ? 'Use French (Français).' : ''}
+LANGUAGE:
+Generate stems, options, and explanations in ${preferredLanguage}.
 
 Return ONLY valid JSON matching this schema:
 {
@@ -345,163 +329,100 @@ Return ONLY valid JSON matching this schema:
       "question_text": "...",
       "question_type": "mcq",
       "topic": "...",
-      "subtopic": "...",
       "concept": "...",
       "concept_id": "...",
       "difficulty": "medium",
-      "bloom_level": "Apply",
-      "learning_objective": "...",
-      "independent_solution_check": "Step-by-step verification proving why the answer holds.",
       "options": [
-        { "id": "opt-1", "text": "...", "is_correct": true, "explanation": "..." },
-        { "id": "opt-2", "text": "...", "is_correct": false, "explanation": "...", "misconception_tag": "..." },
-        { "id": "opt-3", "text": "...", "is_correct": false, "explanation": "...", "misconception_tag": "..." },
-        { "id": "opt-4", "text": "...", "is_correct": false, "explanation": "...", "misconception_tag": "..." }
+        { "text": "Correct answer formulation", "is_correct": true, "explanation": "Why correct" },
+        { "text": "Plausible distractor 1", "is_correct": false, "explanation": "Why incorrect" },
+        { "text": "Plausible distractor 2", "is_correct": false, "explanation": "Why incorrect" },
+        { "text": "Plausible distractor 3", "is_correct": false, "explanation": "Why incorrect" }
       ],
       "correct_answer": "...",
       "explanation": "...",
       "source_citation": {
         "material_title": "...",
-        "reference": "Page 24",
+        "reference": "Page 1",
         "quote": "..."
       }
     }
   ]
 }
 `;
-    };
 
     let rawQuestions: RawGeneratedQuestion[] = [];
-    const batchSizes = targetCount > 10
-      ? [Math.ceil(targetCount / 2), targetCount - Math.ceil(targetCount / 2)]
-      : [targetCount];
-
     try {
-      const results = await Promise.allSettled(
-        batchSizes.map((bSize, bIdx) =>
-          callGeminiJson<{ questions: RawGeneratedQuestion[] }>(
-            buildBatchPrompt(bSize, bIdx),
-            `You are a strict psychometric question verifier generating validated assessment questions in ${preferredLanguage}.`
-          )
-        )
+      const val = await callGeminiJson<{ questions: RawGeneratedQuestion[] }>(
+        prompt,
+        `You are a strict academic verifier generating diagnostic questions in ${preferredLanguage}.`
       );
-
-      for (const res of results) {
-        if (res.status === 'fulfilled') {
-          const val = res.value;
-          if (Array.isArray(val)) rawQuestions.push(...val);
-          else if (Array.isArray(val?.questions)) rawQuestions.push(...val.questions);
-        } else {
-          console.warn('Batch generation promise rejected:', res.reason?.message);
-        }
+      if (Array.isArray(val)) {
+        rawQuestions = val;
+      } else if (Array.isArray(val?.questions)) {
+        rawQuestions = val.questions;
       }
-    } catch (err) {
-      console.warn('AI question generation call failed:', err);
+    } catch (aiErr: any) {
+      console.warn('AI question generation call error:', aiErr?.message);
     }
 
-    // =========================================================================
-    // EXECUTE FINAL QUESTION VERIFICATION PIPELINE ON OUTPUTS:
-    // Generate -> Solve independently -> Verify against source -> Validate answer -> Validate difficulty -> Check duplicate -> Approve
-    // =========================================================================
-
+    // Process and verify questions
     const verifiedQuestions: Question[] = [];
     const difficulties: ('easy' | 'medium' | 'hard')[] = ['easy', 'medium', 'hard'];
 
-    let questionIndex = 0;
+    let qIdx = 0;
     for (const raw of rawQuestions) {
       if (verifiedQuestions.length >= targetCount) break;
 
       const qText = raw.question_text;
       if (!qText || qText.length < 5) continue;
 
-      // Duplicate Check against both past question bank and current batch
-      const norm = normalizeKey(qText);
-      if (seenNormalizedQuestions.has(norm)) continue;
-
-      // Concept Resolution
       const c =
         activeConcepts.find(
           (ac) => ac.id === raw.concept_id || ac.name.toLowerCase() === (raw.concept || '').toLowerCase()
-        ) || activeConcepts[questionIndex % activeConcepts.length];
+        ) || activeConcepts[qIdx % activeConcepts.length];
 
-      // Question Type validation
       let qType: QuestionType = raw.question_type || 'mcq';
-      if (!['mcq', 'fill_in_the_blank', 'short_answer', 'numerical'].includes(qType)) {
+      if (!['mcq', 'fill_in_the_blank', 'short_answer'].includes(qType)) {
         qType = 'mcq';
       }
 
-      // Difficulty validation
       let diff = raw.difficulty;
-      if (requestedDifficulty && requestedDifficulty !== 'all') {
-        diff = requestedDifficulty as any;
+      if (requestedDifficulty && requestedDifficulty !== 'all' && requestedDifficulty !== 'mixed' && requestedDifficulty !== 'Mixed') {
+        diff = requestedDifficulty.toLowerCase() as any;
       } else if (!diff || !['easy', 'medium', 'hard'].includes(diff)) {
-        diff = difficulties[questionIndex % 3];
+        diff = difficulties[qIdx % 3];
       }
 
-      // Options handling for MCQ
       let parsedOptions: QuestionOption[] = [];
       let correctAnswer = String(raw.correct_answer || '').trim();
 
       if (qType === 'mcq') {
-        if (Array.isArray(raw.options)) {
-          parsedOptions = raw.options.map((opt, oIdx) => ({
-            id: opt.id || `opt-${questionIndex}-${oIdx}`,
-            text: String(opt.text || opt),
-            is_correct: Boolean(opt.is_correct),
-            explanation: opt.explanation || (opt.is_correct ? 'Correct conceptual formulation.' : 'Distractor hypothesis.'),
-            misconception_tag: opt.is_correct ? undefined : (opt.misconception_tag || 'Conceptual confusion'),
-          }));
-        }
-
-        // Validate answer: Ensure exactly one correct option
-        let correctOpt = parsedOptions.find((o) => o.is_correct);
-        if (!correctOpt && parsedOptions.length > 0) {
-          if (correctAnswer) {
-            const matched = parsedOptions.find(
-              (o) =>
-                o.text.trim().toLowerCase() === correctAnswer.toLowerCase() ||
-                o.id.toUpperCase() === correctAnswer.toUpperCase()
-            );
-            if (matched) {
-              matched.is_correct = true;
-              correctOpt = matched;
-            }
-          }
-          if (!correctOpt) {
-            parsedOptions[0].is_correct = true;
-            correctOpt = parsedOptions[0];
-          }
-        }
-        if (parsedOptions.length < 2) {
-          // Reject MCQ if fewer than 2 genuine options were produced by AI
+        const rawOpts = Array.isArray(raw.options) ? raw.options : [];
+        if (rawOpts.length >= 2) {
+          // Shuffles options and randomizes the correct answer's position independently
+          parsedOptions = shuffleAndVerifyOptions(rawOpts, qIdx);
+          const correctOpt = parsedOptions.find((o) => o.is_correct);
+          correctAnswer = correctOpt?.text || parsedOptions[0].text;
+        } else {
           continue;
         }
-        if (parsedOptions.length > 4) {
-          parsedOptions = parsedOptions.slice(0, 4);
-        }
-        correctAnswer = correctOpt?.text || parsedOptions[0].text;
       } else if (qType === 'fill_in_the_blank') {
-        if (!qText.includes('_____') && !qText.includes('____') && !qText.includes('___')) {
+        if (!qText.includes('_____')) {
           if (correctAnswer && qText.includes(correctAnswer)) {
-            // Replace with blank
             raw.question_text = qText.replace(correctAnswer, '_____');
           } else {
             raw.question_text = `${qText} (_____):`;
           }
         }
         if (!correctAnswer) correctAnswer = c.name;
-      } else if (qType === 'numerical') {
-        if (!correctAnswer) continue;
       } else if (qType === 'short_answer') {
         if (!correctAnswer) correctAnswer = c.description;
       }
 
-      // Verify Against Source
       const citation = getBestCitation(course, materials, sources, c.name, raw.source_citation);
 
-      seenNormalizedQuestions.add(norm);
       verifiedQuestions.push({
-        id: `q-${qType}-${Date.now()}-${questionIndex}`,
+        id: `q-${qType}-${Date.now()}-${qIdx}`,
         course_id: course.id,
         concept_id: c.id,
         concept_name: c.name,
@@ -515,26 +436,25 @@ Return ONLY valid JSON matching this schema:
         options: parsedOptions,
         correct_answer: correctAnswer,
         explanation: raw.explanation || `Grounded in ${citation.material_title} (${citation.reference}).`,
-        learning_objective: raw.learning_objective || `Demonstrate mastery of ${c.name} in ${course.title}.`,
+        learning_objective: raw.learning_objective || `Demonstrate mastery of ${c.name}.`,
         source_citation: citation,
         verification_status: 'verified',
         verifier_notes: raw.independent_solution_check || 'Independently solved and source-grounded.',
       });
 
-      questionIndex++;
+      qIdx++;
     }
 
     if (verifiedQuestions.length === 0) {
       return NextResponse.json(
         {
-          error: 'No verified questions could be generated from the uploaded course materials. Please ensure your course documents are processed and retry.',
-          details: 'The AI verification pipeline could not extract sufficient source-grounded questions from the available material chunks.',
+          error: `Could not generate verified questions from the uploaded materials for "${course.title}". Please verify that course documents have readable text and try again.`,
         },
         { status: 422 }
       );
     }
 
-    // 6. Record Assessment session in Supabase & Local DB
+    // 6. Record Assessment session securely with full answer key on the server
     const assessmentId = `as-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
     await DB.recordAssessment(
       auth.userId,
@@ -542,33 +462,49 @@ Return ONLY valid JSON matching this schema:
         id: assessmentId,
         user_id: auth.userId,
         course_id: course.id,
-        title: `${course.title} ${assessmentType.replace('_', ' ').toUpperCase()} Assessment`,
+        title: `${course.title} Diagnostic Assessment`,
         status: 'in_progress',
         total_questions: verifiedQuestions.length,
         completed_questions: 0,
         score_percentage: 0,
         started_at: new Date().toISOString(),
-        questions: verifiedQuestions,
+        questions: verifiedQuestions, // Complete verified questions stored server-side
         current_index: 0,
         answers: {},
       },
       auth.supabase
     );
 
-    // 7. Save approved verified questions to Question Bank (Supabase & DB)
+    // Save questions to DB for reference
     await DB.saveQuestions(auth.userId, course.id, verifiedQuestions, auth.supabase);
+
+    // 7. Sanitize questions for the client:
+    // STORE CORRECT ANSWER SECURELY AND NEVER EXPOSE IT TO THE FRONTEND BEFORE SUBMISSION!
+    const clientQuestions = verifiedQuestions.map((q) => ({
+      id: q.id,
+      course_id: q.course_id,
+      concept_id: q.concept_id,
+      concept_name: q.concept_name,
+      topic: q.topic,
+      subtopic: q.subtopic,
+      question_type: q.question_type,
+      difficulty: q.difficulty,
+      question_text: q.question_text,
+      code_snippet: q.code_snippet,
+      options: (q.options || []).map((opt) => ({
+        id: opt.id,
+        text: opt.text,
+        // is_correct and explanation are STRIPPED
+      })),
+      // correct_answer, explanation, and source_citation are STRIPPED
+    }));
 
     return NextResponse.json({
       assessment_id: assessmentId,
       course_id: course.id,
       course_title: course.title,
-      assessment_type: assessmentType,
-      total_questions: verifiedQuestions.length,
-      mcq_count: verifiedQuestions.filter((q) => q.question_type === 'mcq').length,
-      fill_in_the_blank_count: verifiedQuestions.filter((q) => q.question_type === 'fill_in_the_blank').length,
-      short_answer_count: verifiedQuestions.filter((q) => q.question_type === 'short_answer').length,
-      numerical_count: verifiedQuestions.filter((q) => q.question_type === 'numerical').length,
-      questions: verifiedQuestions,
+      total_questions: clientQuestions.length,
+      questions: clientQuestions,
     });
   } catch (err: any) {
     console.error('Assessment generation error:', err);

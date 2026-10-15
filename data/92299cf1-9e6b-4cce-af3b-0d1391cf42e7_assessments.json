@@ -1,0 +1,336 @@
+[
+  {
+    "id": "as-1792001921313-kawu",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "course_id": "course-1792001712774-9snj",
+    "title": "cse DIAGNOSTIC Assessment",
+    "status": "in_progress",
+    "total_questions": 9,
+    "completed_questions": 0,
+    "score_percentage": 0,
+    "started_at": "2026-10-14T18:18:41.313Z",
+    "questions": [
+      {
+        "id": "q-mcq-1792001921306-0",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-1",
+        "concept_name": "Satellite Circuit Interference",
+        "topic": "Satellite Communications",
+        "subtopic": "Interference Management",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Understand",
+        "question_text": "What is the primary cause of signal interference when many satellite circuits are deployed in the same frequency band?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "The signal from one circuit may interfere with another circuit.",
+            "is_correct": true,
+            "explanation": "Correct. Operating multiple circuits in the same frequency band directly results in inter-circuit signal interference."
+          },
+          {
+            "id": "opt-2",
+            "text": "The atmospheric temperature increases and entirely blocks the carrier wave.",
+            "is_correct": false,
+            "explanation": "Incorrect. Atmospheric temperature is not the primary cause of circuit-to-circuit frequency interference.",
+            "misconception_tag": "Atmospheric Confusions"
+          },
+          {
+            "id": "opt-3",
+            "text": "The earth station completely stops transmitting data.",
+            "is_correct": false,
+            "explanation": "Incorrect. Transmitting earth stations do not automatically shut down due to frequency band sharing.",
+            "misconception_tag": "Transmitter Failure"
+          },
+          {
+            "id": "opt-4",
+            "text": "The satellite transponder power supply undergoes saturation.",
+            "is_correct": false,
+            "explanation": "Incorrect. Amplifier saturation is related to power back-off, not directly the primary cause of co-frequency interference between separate circuits.",
+            "misconception_tag": "Amplifier Saturation Confusion"
+          }
+        ],
+        "correct_answer": "The signal from one circuit may interfere with another circuit.",
+        "explanation": "When multiple satellite transponders share a frequency band, cross-circuit interference occurs as stated in the course text.",
+        "learning_objective": "Explain how multiple satellite circuits operating in the same frequency band cause signal interference.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 1",
+          "quote": "When many satellite circuits (transponders) are used in the same frequency band, the signal from one circuit may interfere with another circuit."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "According to the course text, when multiple transponders operate in the same frequency band, the signal from one circuit can interfere with another circuit."
+      },
+      {
+        "id": "q-mcq-1792001921306-1",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-6",
+        "concept_name": "Uplink Transmission",
+        "topic": "Satellite Communications",
+        "subtopic": "Network Architecture",
+        "question_type": "mcq",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "Which communication path defines the transmission of information from a transmitting earth station to a satellite?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "Uplink",
+            "is_correct": true,
+            "explanation": "Correct. The uplink is the specific term for the transmission path from the earth station to the satellite."
+          },
+          {
+            "id": "opt-2",
+            "text": "Downlink",
+            "is_correct": false,
+            "explanation": "Incorrect. Downlink is the path from the satellite back to the earth station.",
+            "misconception_tag": "Direction Confusion"
+          },
+          {
+            "id": "opt-3",
+            "text": "Crosslink",
+            "is_correct": false,
+            "explanation": "Incorrect. Crosslink refers to satellite-to-satellite communication paths.",
+            "misconception_tag": "Link Type Confusion"
+          },
+          {
+            "id": "opt-4",
+            "text": "Backbone link",
+            "is_correct": false,
+            "explanation": "Incorrect. Backbone link is a terrestrial network term, not the earth-to-satellite path.",
+            "misconception_tag": "Terrestrial Network Terminology"
+          }
+        ],
+        "correct_answer": "Uplink",
+        "explanation": "Information sent from a transmitting earth station to a satellite travels via the uplink.",
+        "learning_objective": "Define the uplink as the communication path from an earth station to a satellite.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 6",
+          "quote": "Information from the transmitting earth station is sent to the satellite through the uplink."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "The source material explicitly states that information from the transmitting earth station is sent to the satellite through the uplink."
+      },
+      {
+        "id": "q-mcq-1792001921306-2",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-4",
+        "concept_name": "Output Back-Off (OBO)",
+        "topic": "Satellite Communications",
+        "subtopic": "Amplifiers and Power",
+        "question_type": "mcq",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "What does Output Back-Off (OBO) represent in the context of a satellite amplifier?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "The amount by which actual operating output power is kept below saturation power.",
+            "is_correct": true,
+            "explanation": "Correct. This directly matches the definition of Output Back-Off (OBO)."
+          },
+          {
+            "id": "opt-2",
+            "text": "The excess power added above the saturation threshold to boost signal strength.",
+            "is_correct": false,
+            "explanation": "Incorrect. OBO keeps power below saturation, not above it.",
+            "misconception_tag": "Power Excess Confusion"
+          },
+          {
+            "id": "opt-3",
+            "text": "The total transmission loss experienced across free space transmission.",
+            "is_correct": false,
+            "explanation": "Incorrect. Free space transmission loss is separate from amplifier back-off.",
+            "misconception_tag": "Propagation Loss Confusion"
+          },
+          {
+            "id": "opt-4",
+            "text": "The ratio of carrier power to noise power in a bent-pipe transponder.",
+            "is_correct": false,
+            "explanation": "Incorrect. That describes carrier-to-noise ratio (C/N), not OBO.",
+            "misconception_tag": "C/N Ratio Confusion"
+          }
+        ],
+        "correct_answer": "The amount by which actual operating output power is kept below saturation power.",
+        "explanation": "Output Back-Off (OBO) is the power difference maintaining operating output below the amplifier's saturation power.",
+        "learning_objective": "Define Output Back-Off in the context of amplifier operating power.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 4",
+          "quote": "Output Back-Off (OBO) is the amount by which the actual operating output power is kept below the saturation power of the amplifier."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Output Back-Off is defined as the amount by which the actual operating output power is kept below the saturation power of the amplifier."
+      },
+      {
+        "id": "q-mcq-1792001921306-3",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-5",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communications",
+        "subtopic": "Signal Propagation",
+        "question_type": "mcq",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "How is free space transmission loss best described when an electromagnetic wave propagates through space?",
+        "options": [
+          {
+            "id": "opt-1",
+            "text": "The loss in signal power as waves propagate through space without any physical medium.",
+            "is_correct": true,
+            "explanation": "Correct. This is the exact definition of free space transmission loss."
+          },
+          {
+            "id": "opt-2",
+            "text": "The power attenuation caused exclusively by physical waveguides and atmospheric rain.",
+            "is_correct": false,
+            "explanation": "Incorrect. Free space loss occurs independently of physical media like waveguides.",
+            "misconception_tag": "Medium Attenuation Confusion"
+          },
+          {
+            "id": "opt-3",
+            "text": "The intentional power back-off applied at the satellite amplifier output stage.",
+            "is_correct": false,
+            "explanation": "Incorrect. That describes Output Back-Off (OBO), not free space transmission loss.",
+            "misconception_tag": "OBO Confusion"
+          },
+          {
+            "id": "opt-4",
+            "text": "The degradation of carrier-to-noise ratio due to inter-transponder frequency sharing.",
+            "is_correct": false,
+            "explanation": "Incorrect. That describes circuit interference rather than propagation loss.",
+            "misconception_tag": "Interference Confusion"
+          }
+        ],
+        "correct_answer": "The loss in signal power as waves propagate through space without any physical medium.",
+        "explanation": "Free space transmission loss represents the reduction in signal power during propagation through space devoid of physical media.",
+        "learning_objective": "Explain how signal power diminishes as waves travel through space without a physical medium.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 5",
+          "quote": "Free space transmission loss is the loss in signal power as the electromagnetic wave propagates through space without any physical medium."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Free space transmission loss is defined as the loss in signal power as the electromagnetic wave propagates through space without any physical medium."
+      },
+      {
+        "id": "q-fill_in_the_blank-1792001921306-4",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-6",
+        "concept_name": "Uplink Transmission",
+        "topic": "Satellite Communications",
+        "subtopic": "Network Architecture",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "easy",
+        "bloom_level": "Remember",
+        "question_text": "The communication path by which information is sent from a transmitting earth station to a satellite is called the [BLANK]. (_____):",
+        "options": [],
+        "correct_answer": "uplink",
+        "explanation": "The path from an earth station to the satellite is designated as the uplink.",
+        "learning_objective": "Identify the origin and destination of information transmitted via the uplink.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 6",
+          "quote": "Information from the transmitting earth station is sent to the satellite through the uplink."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Source text states: 'Information from the transmitting earth station is sent to the satellite through the uplink.'"
+      },
+      {
+        "id": "q-fill_in_the_blank-1792001921306-5",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-4",
+        "concept_name": "Output Back-Off (OBO)",
+        "topic": "Satellite Communications",
+        "subtopic": "Amplifiers and Power",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Output Back-Off (OBO) is the amount by which the actual operating output power is kept below the [BLANK] power of the amplifier. (_____):",
+        "options": [],
+        "correct_answer": "saturation",
+        "explanation": "OBO is maintained below the saturation power level to ensure linear or optimal amplifier operation.",
+        "learning_objective": "Define Output Back-Off in the context of amplifier operating power.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 4",
+          "quote": "Output Back-Off (OBO) is the amount by which the actual operating output power is kept below the saturation power of the amplifier."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Source text states: 'Output Back-Off (OBO) is the amount by which the actual operating output power is kept below the saturation power of the amplifier.'"
+      },
+      {
+        "id": "q-fill_in_the_blank-1792001921306-6",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-5",
+        "concept_name": "Free Space Transmission Loss",
+        "topic": "Satellite Communications",
+        "subtopic": "Signal Propagation",
+        "question_type": "fill_in_the_blank",
+        "difficulty": "medium",
+        "bloom_level": "Understand",
+        "question_text": "Free space transmission loss refers to the loss in signal power as an electromagnetic wave propagates through space without any physical [BLANK]. (_____):",
+        "options": [],
+        "correct_answer": "medium",
+        "explanation": "Free space propagation occurs in vacuum or space without a physical medium.",
+        "learning_objective": "Define free space transmission loss for propagating electromagnetic waves.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 5",
+          "quote": "Free space transmission loss is the loss in signal power as the electromagnetic wave propagates through space without any physical medium."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Source text states: 'Free space transmission loss is the loss in signal power as the electromagnetic wave propagates through space without any physical medium.'"
+      },
+      {
+        "id": "q-short_answer-1792001921306-7",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-3",
+        "concept_name": "Bent-Pipe Transponder Combined C/N Ratio",
+        "topic": "Satellite Communications",
+        "subtopic": "Transponder Performance",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "What mathematical formulation is used to determine the combined C/N ratio of a bent-pipe transponder satellite link?",
+        "options": [],
+        "correct_answer": "The inverse sum formula",
+        "explanation": "The combined C/N ratio in a bent-pipe transponder link is calculated using the inverse sum formula (i.e., combining uplink and downlink C/N ratios reciprocally).",
+        "learning_objective": "State the inverse sum formula for combined carrier-to-noise ratios.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 3",
+          "quote": "Hence, the combined C/N ratio of a bent-pipe transponder satellite link is given by the inverse sum formula."
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Source text states that the combined C/N ratio of a bent-pipe transponder satellite link is given by the inverse sum formula."
+      },
+      {
+        "id": "q-short_answer-1792001921313-8",
+        "course_id": "course-1792001712774-9snj",
+        "concept_id": "c-course-1792001712774-9snj-1792001776449-2",
+        "concept_name": "Received Carrier Power Equation",
+        "topic": "Satellite Communications",
+        "subtopic": "Link Budget",
+        "question_type": "short_answer",
+        "difficulty": "hard",
+        "bloom_level": "Analyze",
+        "question_text": "Identify the components represented in the received carrier power equation: C = P_T G_T G_R (λ / (4π R))^2 * (1 / (L_T L_R L_s L_{atm})).",
+        "options": [],
+        "correct_answer": "P_T is transmit power, G_T is transmit antenna gain, G_R is receive antenna gain, λ is wavelength, R is distance, and L_T, L_R, L_s, L_atm represent system and atmospheric losses.",
+        "explanation": "The link budget equation accounts for transmit power, antenna gains, free-space geometry via wavelength and distance, and various system/atmospheric losses.",
+        "learning_objective": "Calculate the received carrier power using transmit power, antenna gains, wavelength, and distance.",
+        "source_citation": {
+          "material_title": "sc unit 3",
+          "reference": "Page 2",
+          "quote": "C = P_T G_T G_R \\left( \frac{\\lambda}{4\\pi R} \right)^2 \frac{1}{L_T L_R L_s L_{atm}}"
+        },
+        "verification_status": "verified",
+        "verifier_notes": "Equation: C = P_T G_T G_R (λ / (4π R))^2 * (1 / (L_T L_R L_s L_{atm})). P_T = transmit power, G_T = transmit antenna gain, G_R = receive antenna gain, λ = wavelength, R = distance, L_T, L_R, L_s, L_{atm} = various system and atmospheric losses."
+      }
+    ],
+    "current_index": 0,
+    "answers": {}
+  }
+]

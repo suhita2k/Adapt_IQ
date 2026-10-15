@@ -100,46 +100,21 @@ export default function LearningTwinPage() {
 
   return (
     <AppShell
-      headerTitle="Student Learning Twin (Cognitive Model)"
-      headerSubtitle="Persistent Bayesian Knowledge Tracing (BKT) graph tracking prerequisite mastery probabilities, confidence intervals, and Ebbinghaus forgetting decay rates."
+      headerTitle="Your Learning Twin"
+      headerSubtitle="See your progress, discover weak topics, and know what to learn next."
     >
       <div className="space-y-6">
-        {/* Subject Selector */}
-        {courses.length > 0 && (
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-4 text-xs shadow-xs">
-            <div className="flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-[#B1A15A]" />
-              <span className="text-[#6F7782] font-semibold">Active Subject Knowledge Graph:</span>
-              <select
-                id="twin-subject-selector"
-                value={selectedCourseId}
-                onChange={(e) => handleSelectCourse(e.target.value)}
-                className="rounded-lg border border-[#DDD6C5] bg-[#FAF5E8] px-3 py-1.5 font-bold text-[#26313D] text-xs focus:outline-none focus:ring-1 focus:ring-[#B1A15A]"
-              >
-                {courses.map((c) => (
-                  <option key={c.id} value={c.id}>
-                    {c.title} {c.code ? `(${c.code})` : ''}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <span className="text-[11px] text-[#6F7782]">
-              {concepts.length} concepts tracked in BKT model
-            </span>
-          </div>
-        )}
-
         {loading ? (
           <div className="rounded-2xl border border-[#DDD6C5] bg-[#FFFDF7] p-12 text-center space-y-3 shadow-xs">
             <Loader2 className="w-6 h-6 animate-spin text-[#B1A15A] mx-auto" />
-            <p className="text-xs text-[#6F7782]">Synchronizing Student Learning Twin topology from Supabase...</p>
+            <p className="text-xs text-[#6F7782]">Synchronizing Learning Twin data from Supabase...</p>
           </div>
         ) : courses.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-[#DDD6C5] bg-[#FFFDF7] p-12 text-center space-y-3 max-w-lg mx-auto shadow-xs">
             <Brain className="w-8 h-8 text-[#B1A15A] mx-auto" />
-            <h4 className="text-base font-bold text-[#26313D]">No Subjects Found</h4>
+            <h4 className="text-base font-bold text-[#26313D]">No Courses Found</h4>
             <p className="text-xs text-[#6F7782]">
-              Create a course and upload learning materials to initialize your Student Learning Twin.
+              Create a course and upload learning materials to initialize your Learning Twin.
             </p>
             <Link
               href="/courses"
@@ -151,9 +126,9 @@ export default function LearningTwinPage() {
         ) : concepts.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-[#DDD6C5] bg-[#FFFDF7] p-12 text-center space-y-3 max-w-lg mx-auto shadow-xs">
             <Brain className="w-8 h-8 text-[#B1A15A] mx-auto" />
-            <h4 className="text-base font-bold text-[#26313D]">No Knowledge Graph Indexed Yet</h4>
+            <h4 className="text-base font-bold text-[#26313D]">No Topics Indexed Yet</h4>
             <p className="text-xs text-[#6F7782]">
-              Upload course materials in Courses to extract concepts and visualize your Bayesian Learning Twin for {activeCourse?.title || 'this subject'}.
+              Upload course materials in Courses to extract topics and visualize your Learning Twin for {activeCourse?.title || 'this course'}.
             </p>
             <Link
               href="/courses"
@@ -166,6 +141,8 @@ export default function LearningTwinPage() {
           <LearningTwinGraph
             course={activeCourse}
             allCourses={courses}
+            selectedCourseId={selectedCourseId}
+            onSelectCourse={handleSelectCourse}
             concepts={concepts}
             relationships={relationships}
             masteryList={masteryList}

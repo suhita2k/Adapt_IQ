@@ -1,0 +1,68 @@
+{
+  "id": "plan-course-1792001712774-9snj",
+  "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+  "course_id": "course-1792001712774-9snj",
+  "title": "cse Study Plan",
+  "daily_goal_minutes": 60,
+  "streak_days": 1,
+  "tasks": [
+    {
+      "id": "task-1792001776520-0",
+      "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+      "course_id": "course-1792001712774-9snj",
+      "concept_id": "c-course-1792001712774-9snj-1792001776449-1",
+      "concept_name": "Satellite Circuit Interference",
+      "title": "Study Concept: Satellite Circuit Interference",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "high",
+      "due_date": "2026-10-14",
+      "completed": false,
+      "reason": "Indexed from sc unit 3 (Page 1)."
+    },
+    {
+      "id": "task-1792001776520-1",
+      "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+      "course_id": "course-1792001712774-9snj",
+      "concept_id": "c-course-1792001712774-9snj-1792001776449-2",
+      "concept_name": "Received Carrier Power Equation",
+      "title": "Study Concept: Received Carrier Power Equation",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-14",
+      "completed": false,
+      "reason": "Indexed from sc unit 3 (Page 2)."
+    },
+    {
+      "id": "task-1792001776520-2",
+      "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+      "course_id": "course-1792001712774-9snj",
+      "concept_id": "c-course-1792001712774-9snj-1792001776449-3",
+      "concept_name": "Bent-Pipe Transponder Combined C/N Ratio",
+      "title": "Study Concept: Bent-Pipe Transponder Combined C/N Ratio",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-14",
+      "completed": false,
+      "reason": "Indexed from sc unit 3 (Page 3)."
+    },
+    {
+      "id": "task-1792001776520-3",
+      "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+      "course_id": "course-1792001712774-9snj",
+      "concept_id": "c-course-1792001712774-9snj-1792001776449-4",
+      "concept_name": "Output Back-Off (OBO)",
+      "title": "Study Concept: Output Back-Off (OBO)",
+      "task_type": "concept_review",
+      "estimated_minutes": 20,
+      "priority": "medium",
+      "due_date": "2026-10-14",
+      "completed": false,
+      "reason": "Indexed from sc unit 3 (Page 4)."
+    }
+  ],
+  "created_at": "2026-10-14T18:16:16.520Z",
+  "updated_at": "2026-10-14T18:16:16.520Z"
+}

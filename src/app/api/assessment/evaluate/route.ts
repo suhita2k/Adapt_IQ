@@ -22,6 +22,196 @@ export async function POST(request: NextRequest) {
   if (!auth) return unauthorizedResponse();
 
   try {
+    const body = await request.json();
+
+    // =========================================================================
+    // 1. BATCH ASSESSMENT EVALUATION (Step 5: Answer Evaluation)
+    // =========================================================================
+    if (body.assessmentId && body.answers) {
+      const { assessmentId, courseId, answers = {} } = body;
+
+      // Find the secure assessment record in DB
+      let assessment = null;
+      try {
+        const assessments = await DB.getAssessments(auth.userId, courseId, auth.supabase);
+        assessment = assessments.find((a) => a.id === assessmentId) || null;
+      } catch (err) {
+        console.warn('DB getAssessments error:', err);
+      }
+
+      let assessmentQuestions = assessment?.questions;
+
+      // Fallback: look in saved course questions
+      if (!assessmentQuestions || assessmentQuestions.length === 0) {
+        try {
+          const storedQuestions = await DB.getQuestions(auth.userId, courseId);
+          const answerKeys = Object.keys(answers);
+          assessmentQuestions = storedQuestions.filter((sq) => answerKeys.includes(sq.id));
+        } catch (err) {
+          console.warn('DB getQuestions fallback error:', err);
+        }
+      }
+
+      if (!assessmentQuestions || assessmentQuestions.length === 0) {
+        return NextResponse.json(
+          { error: 'Assessment session not found. Please start a new assessment.' },
+          { status: 404 }
+        );
+      }
+
+      let totalScore = 0;
+      const results = [];
+
+      for (const q of assessmentQuestions) {
+        const userSelection = String(answers[q.id] || '').trim();
+        let isCorrect = false;
+        let userAnswerText = userSelection;
+        let correctText = q.correct_answer || '';
+
+        if (q.question_type === 'mcq') {
+          const correctOpt = (q.options || []).find((o) => o.is_correct);
+          correctText = correctOpt?.text || q.correct_answer || '';
+          const userOpt = (q.options || []).find(
+            (o) => o.id === userSelection || o.text.trim().toLowerCase() === userSelection.toLowerCase()
+          );
+          userAnswerText = userOpt?.text || (userSelection ? userSelection : '(No option selected)');
+          isCorrect = Boolean(userOpt?.is_correct);
+        } else if (q.question_type === 'fill_in_the_blank') {
+          const cleanUser = userSelection.toLowerCase().trim();
+          const cleanTarget = correctText.toLowerCase().trim();
+          isCorrect = cleanUser === cleanTarget || (cleanUser.length > 2 && cleanTarget.includes(cleanUser));
+        } else if (q.question_type === 'numerical') {
+          const userNum = parseFloat(userSelection.replace(/[^0-9.-]/g, ''));
+          const targetNum = parseFloat(correctText.replace(/[^0-9.-]/g, ''));
+          if (!isNaN(userNum) && !isNaN(targetNum)) {
+            isCorrect = Math.abs(userNum - targetNum) <= Math.max(0.01, Math.abs(targetNum) * 0.03);
+          } else {
+            isCorrect = userSelection.toLowerCase() === correctText.toLowerCase();
+          }
+        } else if (q.question_type === 'short_answer') {
+          const userTokens = userSelection.toLowerCase().split(/\s+/).filter((w) => w.length > 3);
+          const targetTokens = correctText.toLowerCase().split(/\s+/).filter((w) => w.length > 3);
+          const matched = targetTokens.filter((t) => userTokens.includes(t));
+          isCorrect = userSelection.length >= 8 && (matched.length >= 1 || userSelection.toLowerCase().includes(correctText.toLowerCase()));
+        }
+
+        if (isCorrect) totalScore++;
+
+        // 1. Update Learning Twin BKT mastery in DB for tested concepts
+        if (q.concept_id) {
+          try {
+            await DB.updateMasteryBKT(
+              auth.userId,
+              q.concept_id,
+              isCorrect,
+              courseId,
+              q.concept_name,
+              auth.supabase
+            );
+          } catch (e) {
+            console.warn('Mastery BKT update error:', e);
+          }
+        }
+
+        // 2. Record individual question attempt
+        try {
+          await DB.recordAttempt(
+            auth.userId,
+            {
+              id: `att-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+              user_id: auth.userId,
+              question_id: q.id,
+              course_id: courseId,
+              concept_id: q.concept_id || 'concept-core',
+              selected_option_id: userSelection,
+              is_correct: isCorrect,
+              time_spent_seconds: 15,
+              attempted_at: new Date().toISOString(),
+              misconception_detected: !isCorrect ? `Gap in ${q.concept_name || 'core topic'}` : undefined,
+            },
+            auth.supabase
+          );
+        } catch (e) {
+          console.warn('Record attempt error:', e);
+        }
+
+        // 3. Record misconception if incorrect
+        if (!isCorrect && q.concept_id) {
+          try {
+            const detectedMisconception: Misconception = {
+              id: `misc-${Date.now()}-${q.concept_id}`,
+              user_id: auth.userId,
+              course_id: courseId,
+              concept_id: q.concept_id,
+              concept_name: q.concept_name || 'Core Topic',
+              title: `Misconception in ${q.concept_name || q.topic || 'Subject'}`,
+              description: `Incorrect response on assessment: "${userAnswerText}". Correct principle: "${correctText}".`,
+              trigger_evidence: `Assessment question: "${q.question_text}". Selected: "${userAnswerText}".`,
+              severity: 'medium',
+              detected_at: new Date().toISOString(),
+              status: 'active',
+              remediation_steps: [
+                {
+                  step_number: 1,
+                  title: 'Review Source Material',
+                  explanation: q.explanation || 'Re-ground mental models in verified course definitions.',
+                  verified_quote: q.source_citation?.quote || 'Fundamental invariants must hold.',
+                  source_ref: q.source_citation ? `${q.source_citation.material_title} (${q.source_citation.reference})` : 'Course Materials',
+                },
+              ],
+              verification_question_id: `retest-${Date.now()}`,
+            };
+            await DB.recordMisconception(auth.userId, detectedMisconception, auth.supabase);
+          } catch (mErr) {
+            console.warn('Misconception recording error:', mErr);
+          }
+        }
+
+        results.push({
+          question_id: q.id,
+          question_text: q.question_text,
+          question_type: q.question_type || 'mcq',
+          user_answer: userAnswerText || '(No answer provided)',
+          correct_answer: correctText,
+          is_correct: isCorrect,
+          explanation: q.explanation || `Verified against course materials for ${q.concept_name}.`,
+          source_citation: q.source_citation || {
+            material_title: 'Course Syllabus',
+            reference: 'Core Document',
+            quote: 'Core invariants and principles.',
+          },
+        });
+      }
+
+      const total = assessmentQuestions.length;
+      const percentage = Math.round((totalScore / Math.max(1, total)) * 100);
+
+      // Update assessment record status in DB
+      if (assessment) {
+        assessment.status = 'completed';
+        assessment.score_percentage = percentage;
+        assessment.completed_questions = total;
+        assessment.completed_at = new Date().toISOString();
+        assessment.answers = answers;
+        try {
+          await DB.recordAssessment(auth.userId, assessment, auth.supabase);
+        } catch (recErr) {
+          console.warn('Record assessment completed error:', recErr);
+        }
+      }
+
+      return NextResponse.json({
+        success: true,
+        score: totalScore,
+        total,
+        percentage,
+        results,
+      });
+    }
+
+    // =========================================================================
+    // 2. SINGLE QUESTION EVALUATION (Fallback / Granular)
+    // =========================================================================
     const {
       questionId,
       conceptId,
@@ -36,20 +226,17 @@ export async function POST(request: NextRequest) {
       misconceptionTag: rawMisconceptionTag,
       timeSpentSeconds = 15,
       language,
-    } = await request.json();
+    } = body;
 
-    // Resolve real course ID (no hardcoded fallback)
     let targetCourseId = courseId;
     if (!targetCourseId) {
       const userCourses = await DB.getCourses(auth.userId, auth.supabase);
       targetCourseId = userCourses[0]?.id || 'unassigned';
     }
 
-    // Resolve user's preferred language
     const userProfile = await DB.getProfile(auth.userId, auth.supabase);
     const preferredLanguage: SupportedLanguage = (language || userProfile?.preferred_language || 'English') as SupportedLanguage;
 
-    // Evaluate correctness based on question type
     let isCorrect = Boolean(clientIsCorrect);
 
     if (questionType === 'numerical' && correctAnswer) {
@@ -57,7 +244,7 @@ export async function POST(request: NextRequest) {
       const targetNum = parseFloat(String(correctAnswer).replace(/[^0-9.-]/g, ''));
       if (!isNaN(userNum) && !isNaN(targetNum)) {
         const diff = Math.abs(userNum - targetNum);
-        const tolerance = Math.max(0.01, Math.abs(targetNum) * 0.03); // 3% tolerance
+        const tolerance = Math.max(0.01, Math.abs(targetNum) * 0.03);
         isCorrect = diff <= tolerance;
       } else {
         isCorrect = String(selectedOptionText).trim().toLowerCase() === String(correctAnswer).trim().toLowerCase();
@@ -70,7 +257,6 @@ export async function POST(request: NextRequest) {
       isCorrect = userStr.length >= 10 && matchedTokens.length >= Math.ceil(targetTokens.length * 0.4);
     }
 
-    // 1. Record Attempt in Supabase & Persistent storage
     await DB.recordAttempt(
       auth.userId,
       {
@@ -88,7 +274,6 @@ export async function POST(request: NextRequest) {
       auth.supabase
     );
 
-    // 2. Update Student Mastery via Bayesian Knowledge Tracing (BKT)
     const updatedMastery = await DB.updateMasteryBKT(
       auth.userId,
       conceptId || 'concept-core',
@@ -98,145 +283,6 @@ export async function POST(request: NextRequest) {
       auth.supabase
     );
 
-    let detectedMisconception: Misconception | null = null;
-    const misconceptionTag = rawMisconceptionTag || (!isCorrect ? `Invariant Misconception: ${conceptName || 'Core Concept'}` : undefined);
-
-    // 3. If incorrect, detect and record misconception with remediation steps
-    if (!isCorrect && misconceptionTag) {
-      let desc = preferredLanguage === 'Tamil'
-        ? `மாணவர் தேர்ந்தெடுத்த பதில்: "${selectedOptionText}". இது ${conceptName || 'இப்பாடத்தின்'} அடிப்படை விதியை தவறாக புரிந்துகொண்டதை காட்டுகிறது.`
-        : preferredLanguage === 'Hindi'
-        ? `विद्यार्थी ने चुना: "${selectedOptionText}"। यह ${conceptName || 'इस विषय'} के मूल सिद्धांत की गलत समझ को दर्शाता है।`
-        : preferredLanguage === 'Spanish'
-        ? `El estudiante seleccionó: "${selectedOptionText}". Esto revela una confusión fundamental sobre ${conceptName || 'el tema'}.`
-        : preferredLanguage === 'French'
-        ? `L'étudiant a sélectionné: "${selectedOptionText}". Cela révèle une incompréhension fondamentale de ${conceptName || 'ce sujet'}.`
-        : `Student response: "${selectedOptionText}". This reveals a conceptual misconception regarding ${conceptName || 'the topic'}.`;
-
-      let steps = [
-        {
-          step_number: 1,
-          title: preferredLanguage === 'Tamil' ? 'தவறான அனுமானத்தை பகுப்பாய்வு செய்க'
-            : preferredLanguage === 'Hindi' ? 'गलत धारणा का विश्लेषण करें'
-            : preferredLanguage === 'Spanish' ? 'Deconstruir el contraejemplo'
-            : preferredLanguage === 'French' ? 'Déconstruire le contre-exemple'
-            : 'Deconstruct the Counter-Example',
-          explanation: preferredLanguage === 'Tamil' ? 'இந்த அனுமானத்தை எல்லையோர நிபந்தனைக்கு பயன்படுத்தும்போது என்ன நிகழ்கிறது என்பதை கவனியுங்கள்.'
-            : preferredLanguage === 'Hindi' ? 'ध्यान दें कि जब इस धारणा को सीमांत स्थिति पर लागू किया जाता है तो क्या होता है।'
-            : preferredLanguage === 'Spanish' ? 'Considera lo que sucede cuando esta suposición se aplica a un caso extremo.'
-            : preferredLanguage === 'French' ? 'Observez ce qui se produit lorsque cette hypothèse est appliquée à un cas limite.'
-            : 'Examine boundary conditions where this assumption fails.',
-          verified_quote: sourceCitation?.quote || 'Fundamental invariants must hold across initialization and maintenance.',
-          source_ref: sourceCitation ? `${sourceCitation.material_title} (${sourceCitation.reference})` : 'Course Syllabus, Page 1',
-        },
-        {
-          step_number: 2,
-          title: preferredLanguage === 'Tamil' ? 'முறையான கோட்பாடு மற்றும் சரிபார்ப்பு'
-            : preferredLanguage === 'Hindi' ? 'औपचारिक सिद्धांत एवं सत्यापन'
-            : preferredLanguage === 'Spanish' ? 'Formulación formal del concepto'
-            : preferredLanguage === 'French' ? 'Formulation formelle du concept'
-            : 'Formal Concept Formulation',
-          explanation: preferredLanguage === 'Tamil' ? 'பாடநூலில் குறிப்பிடப்பட்டுள்ளவாறு முறையான விதியைப் பின்பற்றவும்.'
-            : preferredLanguage === 'Hindi' ? 'पाठ्यक्रम सामग्री में उल्लिखित औपचारिक नियम का पालन करें।'
-            : preferredLanguage === 'Spanish' ? 'Aplica la regla formal establecida en el material del curso.'
-            : preferredLanguage === 'French' ? 'Appliquez la règle formelle énoncée dans le cours.'
-            : 'Trace the formal definition and verified properties in the course materials.',
-          code_example: `// Core Invariant Verification\nassert condition == True`,
-          verified_quote: providedExplanation || 'Properties must hold invariant across all execution paths.',
-          source_ref: sourceCitation ? `${sourceCitation.material_title} (${sourceCitation.reference})` : 'Course Text',
-        },
-        {
-          step_number: 3,
-          title: preferredLanguage === 'Tamil' ? 'சுய-விளக்கம் மற்றும் மறுமதிப்பீடு'
-            : preferredLanguage === 'Hindi' ? 'स्व-व्याख्या एवं पुनरावलोकन'
-            : preferredLanguage === 'Spanish' ? 'Autoexplicación y verificación'
-            : preferredLanguage === 'French' ? 'Auto-explication et vérification'
-            : 'Self-Explanation & Validation',
-          explanation: preferredLanguage === 'Tamil' ? 'விடைக்கான சரியான காரணத்தை உங்கள் சொந்த வார்த்தைகளில் உறுதிப்படுத்தவும்.'
-            : preferredLanguage === 'Hindi' ? 'अपने शब्दों में पुष्टि करें कि सही उत्तर क्यों मान्य है।'
-            : preferredLanguage === 'Spanish' ? 'Verifica con tus propias palabras por qué la respuesta correcta es válida.'
-            : preferredLanguage === 'French' ? 'Vérifiez par vos propres mots pourquoi la réponse est correcte.'
-            : 'Articulate why the correct rule holds for all inputs and state transitions.',
-          verified_quote: 'Verified grounding against course syllabus.',
-          source_ref: sourceCitation ? `${sourceCitation.material_title}` : 'Course Reference',
-        },
-      ];
-
-      try {
-        const remediationPrompt = `
-A student answered an assessment question incorrectly.
-Course: "${targetCourseId}"
-Topic/Concept: "${conceptName || 'Academic Subject'}"
-Identified Misconception: "${misconceptionTag}"
-Student's Selected Option / Answer: "${selectedOptionText}"
-Target Language: ${preferredLanguage}
-
-CRITICAL LANGUAGE REQUIREMENT:
-Generate the misconception description and all 3 remediation steps strictly in ${preferredLanguage}.
-
-Return JSON matching:
-{
-  "description": "Pedagogical explanation in ${preferredLanguage} analyzing why the student selected this answer and how to correct their mental model.",
-  "remediation_steps": [
-    {
-      "step_number": 1,
-      "title": "Step 1 title in ${preferredLanguage}",
-      "explanation": "Detailed explanation in ${preferredLanguage}",
-      "verified_quote": "Core principle quote",
-      "source_ref": "Reference"
-    },
-    {
-      "step_number": 2,
-      "title": "Step 2 title in ${preferredLanguage}",
-      "explanation": "Step 2 conceptual formulation in ${preferredLanguage}",
-      "code_example": "// optional example",
-      "verified_quote": "Rule statement",
-      "source_ref": "Course Text"
-    },
-    {
-      "step_number": 3,
-      "title": "Step 3 title in ${preferredLanguage}",
-      "explanation": "Self-check verification exercise in ${preferredLanguage}",
-      "verified_quote": "Summary rule",
-      "source_ref": "Textbook Reference"
-    }
-  ]
-}
-`;
-
-        const aiRemediation = await callGeminiJson<RemediationAiPayload>(
-          remediationPrompt,
-          `You are an expert academic tutor and psychometrician specializing in cognitive remediation in ${preferredLanguage}.`
-        );
-
-        if (aiRemediation?.description && aiRemediation.remediation_steps?.length > 0) {
-          desc = aiRemediation.description;
-          steps = aiRemediation.remediation_steps;
-        }
-      } catch (aiErr) {
-        console.warn('AI remediation generation fallback:', aiErr);
-      }
-
-      detectedMisconception = {
-        id: `misc-${Date.now()}-${conceptId}`,
-        user_id: auth.userId,
-        course_id: targetCourseId,
-        concept_id: conceptId || 'concept-core',
-        concept_name: conceptName || 'Core Concept',
-        title: misconceptionTag,
-        description: desc,
-        trigger_evidence: `Assessment attempt on question ${questionId || 'N/A'}. Given answer: "${selectedOptionText}".`,
-        severity: 'high',
-        detected_at: new Date().toISOString(),
-        status: 'active',
-        remediation_steps: steps,
-        verification_question_id: `retest-${Date.now()}`,
-      };
-
-      await DB.recordMisconception(auth.userId, detectedMisconception, auth.supabase);
-    }
-
-    // Cited feedback metadata
     const whyCorrect = isCorrect
       ? `This answer satisfies the invariant rules of "${conceptName || 'the concept'}" verified in the course materials.`
       : `The expected answer is "${correctAnswer || 'the verified formulation'}" based on the course materials.`;
@@ -248,14 +294,13 @@ Return JSON matching:
       explanation: providedExplanation || `Verified conceptual formulation for ${conceptName}.`,
       source_citation: sourceCitation || null,
       relevant_concept: {
-        id: conceptId,
-        name: conceptName,
+        id: conceptId || 'concept-core',
+        name: conceptName || 'Subject Concept',
       },
-      mastery: updatedMastery,
-      misconception: detectedMisconception,
+      updated_mastery: updatedMastery,
     });
   } catch (err: any) {
-    console.error('Assessment evaluation error:', err);
+    console.error('Answer evaluation error:', err);
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }

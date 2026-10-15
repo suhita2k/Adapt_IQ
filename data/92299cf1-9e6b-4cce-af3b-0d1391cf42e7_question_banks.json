@@ -1,0 +1,385 @@
+[
+  {
+    "id": "qb-2m-1792001842620",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "course_id": "course-1792001712774-9snj",
+    "course_title": "cse",
+    "title": "cse - 2-Mark Question Paper with Answers",
+    "description": "Comprehensive 2-mark diagnostic questions with verified answers analyzed from 1 course material(s).",
+    "topics": [
+      "Power Flow Diagram",
+      "Free Space Loss",
+      "Non-linearity in HPA",
+      "Bent-Pipe Transponder",
+      "Link Budget Analysis",
+      "Satellite Interference",
+      "Numerical Problem"
+    ],
+    "total_questions": 7,
+    "total_marks": 14,
+    "config": {
+      "course_id": "course-1792001712774-9snj",
+      "title": "cse - 2-Mark Question Paper",
+      "question_types": [
+        "2_mark"
+      ],
+      "total_questions": 7,
+      "difficulty": "medium",
+      "include_answers": true,
+      "include_sources": true,
+      "max_marks": 14
+    },
+    "questions": [
+      {
+        "id": "sq-2m-1792001842350-1-jrby",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 1,
+        "question_text": "State the purpose of an uplink in a satellite communication system.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Power Flow Diagram",
+        "difficulty": "easy",
+        "answer": "The uplink is the communication link used to send information from the transmitting earth station to the satellite. It forms the first major stage of the satellite transmission path before the signal is processed and retransmitted.",
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 6",
+          "quote": "Information from the transmitting earth station is sent to the satellite through the uplink.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.350Z"
+      },
+      {
+        "id": "sq-2m-1792001842350-2-2uy0",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 2,
+        "question_text": "Define Free Space Transmission Loss.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Free Space Loss",
+        "difficulty": "easy",
+        "answer": "Free space transmission loss is defined as the loss in signal power as the electromagnetic wave propagates through free space without encountering any physical medium.",
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 5",
+          "quote": "Free space transmission loss is the loss in signal power as the electromagnetic wave propagates through space without any physical medium.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.350Z"
+      },
+      {
+        "id": "sq-2m-1792001842350-3-eua7",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 3,
+        "question_text": "Define Output Back-Off (OBO) in the context of high-power amplifiers.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Non-linearity in HPA",
+        "difficulty": "medium",
+        "answer": "Output Back-Off (OBO) is the specific amount by which the actual operating output power is kept below the saturation power of the amplifier to prevent non-linear distortion.",
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 4",
+          "quote": "Output Back-Off (OBO) is the amount by which the actual operating output power is kept below the saturation power of the amplifier.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.350Z"
+      },
+      {
+        "id": "sq-2m-1792001842350-4-t7oq",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 4,
+        "question_text": "How is the combined Carrier-to-Noise (C/N) ratio of a bent-pipe transponder satellite link calculated?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Bent-Pipe Transponder",
+        "difficulty": "medium",
+        "answer": "The combined C/N ratio of a bent-pipe transponder satellite link is determined using the inverse sum formula, combining the individual uplink and downlink C/N contributions.",
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 3",
+          "quote": "Hence, the combined C/N ratio of a bent-pipe transponder satellite link is given by the inverse sum formula.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.350Z"
+      },
+      {
+        "id": "sq-2m-1792001842350-5-hjen",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 5,
+        "question_text": "Write the formula for received carrier power (C) in a satellite link budget analysis and define its parameters.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Link Budget Analysis",
+        "difficulty": "hard",
+        "answer": "The received carrier power is given by C = P_T G_T G_R (lambda / 4 pi R)^2 * (1 / (L_T L_R L_s L_atm)), where P_T is transmitter power, G_T and G_R are antenna gains, lambda is wavelength, R is range, and L terms represent various system and atmospheric losses.",
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 2",
+          "quote": "C = P_T G_T G_R \\left( \\frac{\\lambda}{4\\pi R} \\right)^2 \\frac{1}{L_T L_R L_s L_{atm}}",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.350Z"
+      },
+      {
+        "id": "sq-2m-1792001842350-6-adz9",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 6,
+        "question_text": "What causes satellite circuit interference when multiple transponders are utilized?",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Satellite Interference",
+        "difficulty": "medium",
+        "answer": "When many satellite circuits or transponders are operated within the same frequency band, interference occurs because the signal from one circuit may bleed into or disrupt another circuit.",
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 1",
+          "quote": "When many satellite circuits (transponders) are used in the same frequency band, the signal from one circuit may interfere with another circuit.",
+          "verified": true
+        },
+        "bloom_level": "Understand",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.350Z"
+      },
+      {
+        "id": "sq-2m-1792001842350-7-wzb4",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 7,
+        "question_text": "Identify the transmission specifications of the C-band transponder carried by a geostationary satellite from the numerical problem setup.",
+        "marks": 2,
+        "question_type": "2_mark",
+        "topic": "Numerical Problem",
+        "difficulty": "easy",
+        "answer": "The geostationary satellite carries a C-band transponder that transmits an output power of 20 watts into an antenna possessing an on-axis gain of 30 dB.",
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 7",
+          "quote": "A geostationary satellite carries a C-band transponder which transmits 20 watts into an antenna with an on-axis gain of 30 dB.",
+          "verified": true
+        },
+        "bloom_level": "Remember",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.350Z"
+      }
+    ],
+    "created_at": "2026-10-14T18:17:22.621Z",
+    "updated_at": "2026-10-14T18:17:22.621Z"
+  },
+  {
+    "id": "qb-16m-1792001842620",
+    "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+    "course_id": "course-1792001712774-9snj",
+    "course_title": "cse",
+    "title": "cse - 16-Mark Comprehensive Question Paper with Solutions",
+    "description": "In-depth 16-mark architectural and essay questions with evaluated solutions analyzed from 1 course material(s).",
+    "topics": [
+      "Link Budget Analysis and Power Optimization",
+      "Bent-Pipe Transponders and Satellite Interference"
+    ],
+    "total_questions": 2,
+    "total_marks": 32,
+    "config": {
+      "course_id": "course-1792001712774-9snj",
+      "title": "cse - 16-Mark Question Paper",
+      "question_types": [
+        "16_mark"
+      ],
+      "total_questions": 2,
+      "difficulty": "hard",
+      "include_answers": true,
+      "include_sources": true,
+      "max_marks": 32
+    },
+    "questions": [
+      {
+        "id": "sq-16m-1792001842351-1-gcz5",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 1,
+        "question_text": "Analyze the components of the Link Budget Analysis equation and evaluate the impact of free space transmission loss and high-power amplifier non-linearities in a geostationary satellite link carrying a C-band transponder.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "Link Budget Analysis and Power Optimization",
+        "difficulty": "hard",
+        "answer": "Comprehensive evaluation of satellite link budget, free space loss, power equations, and high-power amplifier characteristics.",
+        "structured_16_mark": {
+          "introduction": "Satellite communication systems rely heavily on precise link budget calculations to ensure reliable signal transmission between earth stations and spaceborne transponders. Information from the transmitting earth station is sent to the satellite through the uplink, encountering various losses and non-linear transformations along the path. Understanding the received carrier power equation and the effects of components such as High Power Amplifiers (HPAs) is vital for optimal design.",
+          "headings": [
+            {
+              "title": "Link Budget Analysis and Received Carrier Power Equation",
+              "content": "The link budget evaluates all power gains and losses from the transmitter, through the medium, to the receiver. The received carrier power C is expressed mathematically taking into account transmission powers, antenna gains, wavelength, distance, and various system losses.",
+              "bullet_points": [
+                "Calculates received carrier power using transmitting power, transmitter gain, and receiver gain.",
+                "Incorporates wavelength and slant range to account for geometric spreading.",
+                "Accounts for feeder, atmospheric, and free space propagation losses."
+              ]
+            },
+            {
+              "title": "Free Space Transmission Loss and HPA Non-linearity",
+              "content": "Free space transmission loss represents the signal power loss as electromagnetic waves propagate through space without a physical medium. Furthermore, HPAs operating near saturation exhibit non-linear distortion, requiring Output Back-Off (OBO) to maintain signal integrity.",
+              "bullet_points": [
+                "Free space loss depends directly on frequency and distance.",
+                "Non-linearities in HPAs cause intermodulation distortion and spectral regrowth.",
+                "Output Back-Off (OBO) reduces operating output power below saturation power to ensure linearity."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Satellite Uplink and Downlink Power Flow with Transponder Back-Off",
+              "description": "Schematic showing earth station transmission, uplink path, satellite HPA with back-off, and free space propagation.",
+              "ascii_representation": "[Earth Station] ---> (Uplink: L_s, L_atm) ---> [Satellite HPA (OBO)] ---> [Transponder]"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Geostationary Satellite C-Band Transponder Power Analysis",
+              "steps": [
+                "Step 1: Identify transmitted power P_T = 20 Watts and on-axis antenna gain G_T = 30 dB (linear gain = 1000).",
+                "Step 2: Apply the link budget parameter components to evaluate effective isotropic radiated power (EIRP) = P_T * G_T.",
+                "Step 3: Calculate EIRP in dBW: 10 * log10(20) + 30 dB = 13.01 + 30 = 43.01 dBW."
+              ],
+              "result": "EIRP = 43.01 dBW"
+            }
+          ],
+          "advantages": [
+            "Ensures reliable communication links over vast geographical areas.",
+            "Output Back-Off prevents saturation and maintains signal fidelity."
+          ],
+          "disadvantages": [
+            "Free space and atmospheric losses severely attenuate high-frequency signals.",
+            "HPA back-off reduces the maximum DC-to-RF conversion efficiency of the amplifier."
+          ],
+          "conclusion": "A rigorous link budget analysis integrating free space loss models and proper HPA back-off management is essential for designing resilient geostationary satellite communication systems.",
+          "source_citation": {
+            "material_title": "sc unit 3",
+            "reference": "Page 2, 4, 5, 6",
+            "quote": "C = P_T G_T G_R \\left( \frac{\\lambda}{4\\pi R} \right)^2 \frac{1}{L_T L_R L_s L_{atm}}"
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 7",
+          "quote": "A geostationary satellite carries a C-band transponder which transmits 20 watts into an antenna with an on-axis gain of 30 dB.",
+          "verified": true
+        },
+        "bloom_level": "Analyze",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.351Z"
+      },
+      {
+        "id": "sq-16m-1792001842351-2-79ew",
+        "user_id": "92299cf1-9e6b-4cce-af3b-0d1391cf42e7",
+        "course_id": "course-1792001712774-9snj",
+        "question_number": 2,
+        "question_text": "Examine the operational characteristics of bent-pipe transponders, combined C/N ratios using the inverse sum formula, and the mitigation of satellite circuit interference in shared frequency bands.",
+        "marks": 16,
+        "question_type": "16_mark",
+        "topic": "Bent-Pipe Transponders and Satellite Interference",
+        "difficulty": "hard",
+        "answer": "Comprehensive evaluation of bent-pipe transponder architecture, carrier-to-noise ratios, and inter-circuit interference mitigation.",
+        "structured_16_mark": {
+          "introduction": "Modern satellite networks frequently employ bent-pipe transponder architectures to relay signals from uplinks to downlinks with frequency translation but without onboard demodulation. When many satellite circuits and transponders operate within the same frequency band, complex engineering challenges arise regarding noise accumulation and inter-circuit interference.",
+          "headings": [
+            {
+              "title": "Bent-Pipe Transponder Architecture and Combined C/N Ratio",
+              "content": "A bent-pipe transponder simply receives, amplifies, and retransmits the RF signal. Because noise is introduced on both the uplink and downlink paths, the overall performance of the link is evaluated by combining individual carrier-to-noise ratios.",
+              "bullet_points": [
+                "Uplink noise and downlink noise combine to degrade overall link quality.",
+                "The combined C/N ratio of a bent-pipe transponder satellite link is determined using the inverse sum formula.",
+                "Transparently translates frequencies without processing digital baseband data."
+              ]
+            },
+            {
+              "title": "Satellite Circuit Interference in Shared Frequency Bands",
+              "content": "When numerous satellite circuits and transponders are deployed within identical frequency bands, signal leakage and spatial overlap create significant cross-circuit interference, necessitating robust frequency planning and polarization techniques.",
+              "bullet_points": [
+                "Co-channel interference degrades system throughput and bit error rate.",
+                "Interference management requires careful antenna beam shaping and spatial isolation.",
+                "Cross-polarization discrimination (XPD) helps segregate overlapping signals."
+              ]
+            }
+          ],
+          "diagrams": [
+            {
+              "caption": "Bent-Pipe Transponder Link Noise Interaction",
+              "description": "Flow diagram showing uplink C/N_up, transponder translation, downlink C/N_down, and combined output C/N_total.",
+              "ascii_representation": "[Uplink C/N_up] ---> [Bent-Pipe Transponder] ---> [Downlink C/N_down] ---> [Combined (C/N)_total]"
+            }
+          ],
+          "worked_examples": [
+            {
+              "title": "Inverse Sum Formula Calculation for Bent-Pipe C/N Ratio",
+              "steps": [
+                "Step 1: Define uplink carrier-to-noise ratio (C/N)_up = 20 dB (linear ratio = 100).",
+                "Step 2: Define downlink carrier-to-noise ratio (C/N)_down = 13 dB (linear ratio = 20).",
+                "Step 3: Apply the inverse sum formula: 1 / (C/N)_total = 1 / (C/N)_up + 1 / (C/N)_down = 1/100 + 1/20 = 0.01 + 0.05 = 0.06.",
+                "Step 4: Compute final (C/N)_total = 1 / 0.06 = 16.67 (approx 12.22 dB)."
+              ],
+              "result": "(C/N)_total = 12.22 dB"
+            }
+          ],
+          "advantages": [
+            "Bent-pipe transponders are highly reliable, cost-effective, and format-independent.",
+            "Enables transparent relay of multiple modulation schemes."
+          ],
+          "disadvantages": [
+            "Noise accumulates from both uplink and downlink paths.",
+            "Vulnerability to inter-circuit interference when sharing frequency bands."
+          ],
+          "conclusion": "Bent-pipe transponders offer transparent and robust signal relay, but careful calculation of combined C/N ratios via the inverse sum formula and mitigation of co-channel interference are mandatory for optimal network performance.",
+          "source_citation": {
+            "material_title": "sc unit 3",
+            "reference": "Page 1, 3",
+            "quote": "Hence, the combined C/N ratio of a bent-pipe transponder satellite link is given by the inverse sum formula."
+          }
+        },
+        "source_citation": {
+          "material_id": "mat-1792001771814-rvte",
+          "material_title": "sc unit 3",
+          "material_type": "textbook",
+          "reference": "Page 7",
+          "quote": "A geostationary satellite carries a C-band transponder which transmits 20 watts into an antenna with an on-axis gain of 30 dB.",
+          "verified": true
+        },
+        "bloom_level": "Analyze",
+        "is_saved": false,
+        "created_at": "2026-10-14T18:17:22.351Z"
+      }
+    ],
+    "created_at": "2026-10-14T18:17:22.621Z",
+    "updated_at": "2026-10-14T18:17:22.621Z"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "fc-course-1792031888892-poei-1792031951625-0",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "concept_id": "c-course-1792031888892-poei-1792031951598-1",
+    "front": "What is the core principle and definition of Uplinks and High-Power Amplifiers Architecture?",
+    "back": "Examination of the architectural role of uplinks and the definition of Output Back-Off (OBO) in High-Power Amplifiers within satellite communication systems.",
+    "source_ref": "Page 1",
+    "next_review_date": "2026-10-15",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1792031888892-poei-1792031951625-1",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "concept_id": "c-course-1792031888892-poei-1792031951598-2",
+    "front": "What is the core principle and definition of Free Space Transmission Loss?",
+    "back": "Calculation of Free Space Transmission Loss within satellite communication systems.",
+    "source_ref": "Page 1",
+    "next_review_date": "2026-10-15",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1792031888892-poei-1792031951625-2",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+    "front": "What is the core principle and definition of Received Carrier Power and C/N Ratios?",
+    "back": "Mathematical formulations and operational characteristics of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders.",
+    "source_ref": "Page 2",
+    "next_review_date": "2026-10-15",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  },
+  {
+    "id": "fc-course-1792031888892-poei-1792031951625-3",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+    "front": "What is the core principle and definition of Satellite Circuit Interference?",
+    "back": "Analysis of operational characteristics regarding satellite circuit interference.",
+    "source_ref": "Page 2",
+    "next_review_date": "2026-10-15",
+    "interval_days": 1,
+    "repetitions": 0,
+    "ease_factor": 2.5
+  }
+]

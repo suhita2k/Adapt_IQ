@@ -1,0 +1,48 @@
+[
+  {
+    "id": "misc-1792039470853-c-course-1792031888892-poei-1792031951598-4",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "concept_id": "c-course-1792031888892-poei-1792031951598-4",
+    "concept_name": "Satellite Circuit Interference",
+    "title": "Misconception in Satellite Circuit Interference",
+    "description": "Incorrect response on assessment: \"Launcher trajectory deviation\". Correct principle: \"Satellite circuit interference\".",
+    "trigger_evidence": "Assessment question: \"Which operational characteristic is analyzed alongside Received Carrier Power and C/N ratios according to the course material?\". Selected: \"Launcher trajectory deviation\".",
+    "severity": "medium",
+    "detected_at": "2026-10-15T04:44:30.853Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Review Source Material",
+        "explanation": "Satellite circuit interference is analyzed along with carrier power and C/N ratios.",
+        "verified_quote": "Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference.",
+        "source_ref": "16_Mark_Questions_and_Answers (Page 2)"
+      }
+    ],
+    "verification_question_id": "retest-1792039470853"
+  },
+  {
+    "id": "misc-1792039464919-c-course-1792031888892-poei-1792031951598-3",
+    "user_id": "862d091d-6563-46d3-a389-8608454f02f1",
+    "course_id": "course-1792031888892-poei",
+    "concept_id": "c-course-1792031888892-poei-1792031951598-3",
+    "concept_name": "Received Carrier Power and C/N Ratios",
+    "title": "Misconception in Received Carrier Power and C/N Ratios",
+    "description": "Incorrect response on assessment: \"Regenerative digital transponders\". Correct principle: \"Bent-pipe transponders\".",
+    "trigger_evidence": "Assessment question: \"What type of transponders are associated with the analysis of Received Carrier Power (C) and Combined Carrier-to-Noise (C/N) ratios?\". Selected: \"Regenerative digital transponders\".",
+    "severity": "medium",
+    "detected_at": "2026-10-15T04:44:24.919Z",
+    "status": "active",
+    "remediation_steps": [
+      {
+        "step_number": 1,
+        "title": "Review Source Material",
+        "explanation": "The course material analyzes C/N ratios specifically in bent-pipe transponders.",
+        "verified_quote": "Analyze the mathematical formulations and operational characteristics of Received Carrier Power (C), Combined Carrier-to-Noise (C/N) ratios in bent-pipe transponders, and satellite circuit interference.",
+        "source_ref": "16_Mark_Questions_and_Answers (Page 2)"
+      }
+    ],
+    "verification_question_id": "retest-1792039464919"
+  }
+]

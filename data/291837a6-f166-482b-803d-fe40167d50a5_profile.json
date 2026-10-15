@@ -1,0 +1,13 @@
+{
+  "id": "profile-291837a6-f166-482b-803d-fe40167d50a5",
+  "user_id": "291837a6-f166-482b-803d-fe40167d50a5",
+  "full_name": "Test User",
+  "email": "testuser_179203@example.com",
+  "preferred_language": "Spanish",
+  "learning_goal": "Exam preparation",
+  "study_field": "Mathematics",
+  "daily_study_time_minutes": 60,
+  "onboarding_completed": true,
+  "created_at": "2026-10-15T02:33:42.100Z",
+  "updated_at": "2026-10-15T02:33:42.100Z"
+}
